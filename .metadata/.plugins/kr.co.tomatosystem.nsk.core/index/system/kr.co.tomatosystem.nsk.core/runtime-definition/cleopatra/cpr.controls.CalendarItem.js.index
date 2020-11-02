@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.CalendarItem.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="225" endIndex="1030" startLine="9" endLine="57"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CalendarItem" description="CalendarItem. label, start, end를 가지고 value를 옵션으로 가지는 아이템. 아이템을 생성합니다." baseSymbolName="cpr.controls.Item" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="253" endIndex="288" startLine="9" endLine="9"/>
+          <params name="label" description="아이템의 display되는 text" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="262" endIndex="266" startLine="9" endLine="9"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="start" description="아이템이 표시되는 날짜" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="269" endIndex="273" startLine="9" endLine="9"/>
+            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="end" description="아이템이 표시되는 날짜" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="276" endIndex="278" startLine="9" endLine="9"/>
+            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="281" endIndex="285" startLine="9" endLine="9"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="start">
+              <value xsi:type="index:VariableSymbol" name="start" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 캘린더 아이템의 start 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 캘린더 아이템의 start 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="594" endIndex="598"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="end">
+              <value xsi:type="index:VariableSymbol" name="end" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 캘린더 아이템의 end 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 캘린더 아이템의 end 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="850" endIndex="852"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="range">
+              <value xsi:type="index:VariableSymbol" name="range" description="&lt;b>Readonly&lt;/b> 시작 날짜와 마지막 날짜의 범위 객체를 반환합니다.">
+                <region startIndex="995" endIndex="999"/>
+                <inferredType name="cpr.utils.DateRange" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.CalendarItem">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.CalendarItem" originalSymbolName="__anonymous1">
+          <region startIndex="238" endIndex="249"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="253" endIndex="288" startLine="9" endLine="9"/>
+        <childScopes>
+          <region startIndex="288" endIndex="288"/>
+          <symbolMap key="label">
+            <value xsi:type="index:ParameterSymbol" name="label" description="아이템의 display되는 text" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="262" endIndex="266" startLine="9" endLine="9"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="start">
+            <value xsi:type="index:ParameterSymbol" name="start" description="아이템이 표시되는 날짜" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="269" endIndex="273" startLine="9" endLine="9"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="end">
+            <value xsi:type="index:ParameterSymbol" name="end" description="아이템이 표시되는 날짜" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="276" endIndex="278" startLine="9" endLine="9"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="281" endIndex="285" startLine="9" endLine="9"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.CalendarItem">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.CalendarItem" description="CalendarItem. label, start, end를 가지고 value를 옵션으로 가지는 아이템. 아이템을 생성합니다." baseSymbolName="cpr.controls.Item" anonymousFunction="true">
+        <region startIndex="238" endIndex="249"/>
+        <params name="label" description="아이템의 display되는 text">
+          <region xsi:type="index:RegionWithLine" startIndex="262" endIndex="266" startLine="9" endLine="9"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="start" description="아이템이 표시되는 날짜" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="269" endIndex="273" startLine="9" endLine="9"/>
+          <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="end" description="아이템이 표시되는 날짜" parameterIndex="2">
+          <region xsi:type="index:RegionWithLine" startIndex="276" endIndex="278" startLine="9" endLine="9"/>
+          <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="value" description="" parameterIndex="3">
+          <region xsi:type="index:RegionWithLine" startIndex="281" endIndex="285" startLine="9" endLine="9"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="start">
+            <value xsi:type="index:VariableSymbol" name="start" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 캘린더 아이템의 start 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 캘린더 아이템의 start 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="594" endIndex="598"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="end">
+            <value xsi:type="index:VariableSymbol" name="end" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 캘린더 아이템의 end 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 캘린더 아이템의 end 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="850" endIndex="852"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="range">
+            <value xsi:type="index:VariableSymbol" name="range" description="&lt;b>Readonly&lt;/b> 시작 날짜와 마지막 날짜의 범위 객체를 반환합니다.">
+              <region startIndex="995" endIndex="999"/>
+              <inferredType name="cpr.utils.DateRange" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

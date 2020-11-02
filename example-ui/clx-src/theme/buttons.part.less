@@ -1,0 +1,516 @@
+
+/******************************************************************* 
+ * 버튼 
+ *******************************************************************/
+.cl-button.navy {
+	background-image: linear-gradient(#475168, #3A4456);
+	color: white;
+	text-shadow: none;
+	border-color: #2C3646;
+}
+
+/******************************************************************* 
+ * 플랫 버튼 
+ *******************************************************************/
+.cl-button.flat-button {
+	background-image: none;
+	color: white;
+	text-shadow: none;
+	font-size: 13px;
+	border: none;
+	
+	&.flat-button-navy {
+		background-color: #2a384a;
+		color: white;
+
+		&:hover, &.cl-hover{
+			background-color: #2a384a;
+			color: white;
+		}
+
+		&:active, &.cl-active {
+			background-color: #2a384a;
+			background-image: none;
+			opacity: 0.8;
+			color: white;
+		}
+	}
+	
+	
+	&.flat-button-blue {
+		background-color: #2e85d3;
+		color: white;
+
+		&:hover, &.cl-hover{
+			background-color: #2e85d3;
+			color: white;
+		}
+
+		&:active, &.cl-active {
+			color: white;
+			background-color: #2e85d3;
+			background-image: none;
+			opacity: 0.8;
+		}
+	}
+
+	&.flat-button-red {
+		color: white;
+		background-color: #e52222;
+
+		&:hover, &.cl-hover{
+			color: white;
+			background-color: #e52222;
+		}
+
+		&:active, &.cl-active {
+			color: white;
+			background-color: #e52222;
+			background-image: none;
+			opacity: 0.8;
+		}
+	}
+}
+
+
+
+
+/******************************************************************* 
+ * 타입 A 버튼들
+ *******************************************************************/
+
+.cl-button.type-a {
+	font-size: 13px;
+	background-position: 8px center, left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+	color: #767f87;
+}
+
+.cl-button.type-a:active, .cl-button.type-a.cl-active {
+	opacity: 0.6;
+}
+
+.cl-button.type-a.no-icon {
+	padding: 0px;
+	background-image: none;
+	text-align: center;
+}
+
+.cl-button.type-a.icon-only {
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* close button style */
+.cl-button.type-a.close {
+	background-image: 
+		url("images/btnA_ico_close.png"),
+		linear-gradient(#fff, #f2f2f2);
+
+		&.cl-disabled{
+			opacity: 0.4;
+			cursor: default;
+		}
+ }
+ 
+.cl-button.type-a.close:hover, .cl-button.type-a.close.cl-hover {
+	color: #767f87;
+}
+
+.cl-button.type-a.close.highlighted {
+	color: white;
+	text-shadow: none;
+	border-color: #2070b8;
+	background-image: 
+		url("images/btnA_ico_close_w.png"),
+		linear-gradient(#2e85d3, #2c7fc9);
+		
+		&.cl-disabled{
+			opacity: 0.4;
+			cursor: default;
+		}
+}
+
+/* close2 button style */
+.cl-button.type-a.close2 {
+	background-image: 
+		url("images/btnA_ico_close2.png"), linear-gradient(#fff, #f2f2f2);
+
+	 &.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+.cl-button.type-a.close2:hover, .cl-button.type-a.close2.cl-hover {
+	color: #767f87;
+}
+
+.cl-button.type-a.close2.highlighted {
+	color: white;
+	text-shadow: none;
+	border-color: #2070b8;
+	background-image: url("images/btnA_ico_close2_w.png"), linear-gradient(#2e85d3, #2c7fc9);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+/* copy button style */
+.cl-button.type-a.copy {
+	 background-image: url("images/btnA_ico_copy.png"), linear-gradient(#fff, #f2f2f2);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+.cl-button.type-a.copy:hover, .cl-button.type-a.copy.cl-hover {
+	color: #767f87;
+}
+
+.cl-button.type-a.copy.highlighted {
+	color: white;
+	text-shadow: none;
+	border-color: #2070b8;
+	background-image: url("images/btnA_ico_copy_w.png"), linear-gradient(#2e85d3, #2c7fc9);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+/* del button style */
+.cl-button.type-a.del {
+	background-image: url("images/btnA_ico_del.png"), linear-gradient(#fff, #f2f2f2);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+.cl-button.type-a.del:hover, .cl-button.type-a.del.cl-hover {
+	color: #767f87;
+}
+
+.cl-button.type-a.del.highlighted {
+	color: white;
+	text-shadow: none;
+	border-color: #2070b8;
+	background-image:  url("images/btnA_ico_del_w.png"), linear-gradient(#2e85d3, #2c7fc9);
+		
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+/* mail button style */
+.cl-button.type-a.mail {
+	background-image: url("images/btnA_ico_mail.png"), linear-gradient(#fff, #f2f2f2);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+ 
+.cl-button.type-a.mail:hover, .cl-button.type-a.mail.cl-hover {
+	color: #767f87;
+}
+
+.cl-button.type-a.mail.highlighted {
+	color: white;
+	text-shadow: none;
+	border-color: #2070b8;
+	background-image: url("images/btnA_ico_mail_w.png"), linear-gradient(#2e85d3, #2c7fc9);
+		 
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+/* plus button style */
+.cl-button.type-a.plus {
+	background-image: url("images/btnA_ico_plus.png"), linear-gradient(#fff, #f2f2f2);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+.cl-button.type-a.plus:hover, .cl-button.type-a.plus.cl-hover {
+	color: #767f87;
+}
+
+.cl-button.type-a.plus.highlighted {
+	color: white;
+	text-shadow: none;
+	border-color: #2070b8;
+	background-image: url("images/btnA_ico_plus_w.png"), linear-gradient(#2e85d3, #2c7fc9);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+
+/* plus popbutton style */
+.cl-button.type-p.plus {
+	background-image: url("images/btnA_ico_plus_w.png"), linear-gradient(#465268, #3a4457);
+	background-repeat: no-repeat;
+	background-position:center;
+	vertical-align: middle;
+	color: white;
+	background-color: #30384B;
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+.cl-button.type-p.write {
+	background-image: url("images/btnA_ico_plus_w.png"), linear-gradient(#465268, #3a4457);
+	background-repeat: no-repeat;
+	background-position:left;
+	vertical-align: middle;
+	color: white;
+	background-color: #30384B;
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+.cl-button.type-p.plus:hover, .cl-button.type-p.plus.cl-hover {
+	color: #ffb900;
+}
+
+
+/* print button style */
+.cl-button.type-a.print {
+	background-image: url("images/btnA_ico_print.png"), linear-gradient(#fff, #f2f2f2);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+.cl-button.type-a.print:hover, .cl-button.type-a.print.cl-hover {
+	color: #767f87;
+}
+
+.cl-button.type-a.print.highlighted {
+	color: white;
+	text-shadow: none;
+	border-color: #2070b8;
+	background-image: url("images/btnA_ico_print_w.png"), linear-gradient(#2e85d3, #2c7fc9);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+/* save button style */
+.cl-button.type-a.save {
+	background-image: url("images/btnA_ico_save.png"), linear-gradient(#fff, #f2f2f2);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+.cl-button.type-a.save:hover, .cl-button.type-a.save.cl-hover {
+	color: #767f87;
+}
+
+.cl-button.type-a.save.highlighted {
+	color: white;
+	text-shadow: none;
+	border-color: #2070b8;
+	background-image: url("images/btnA_ico_save_w.png"), linear-gradient(#2e85d3, #2c7fc9);
+
+	&.cl-disabled{
+		opacity: 0.4;
+		cursor: default;
+	}
+}
+
+/******************************************************************* 
+ * 타입 B 버튼들
+ *******************************************************************/
+
+.cl-button.type-b {
+	font-size: 13px;
+	background-image: none;
+	background-color: white;
+	color : #9faab5;
+	border-color: #b0b3ba;
+	background-repeat: no-repeat;
+	background-position: 3px center;
+	text-align: left;
+	padding-left: 20px;
+	
+	&:not(.cl-disabled){
+		&:active, &.cl-actvie {
+			opacity: 0.6;
+		}
+	}
+	
+	&.no-icon {
+		padding: 0px;
+		background-image: none;
+		text-align: center;
+	}
+	
+	&.icon-only {
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	
+	&.highlighted {
+		color: white;
+		text-shadow: none;
+		border-color: #2c3647;
+		background-color: #465268;
+	}
+}
+
+/* prev button style */
+.cl-button.type-b.prev {
+	background-image: url("images/btnB_ico_prev.png");
+}
+
+.cl-button.type-b.prev:hover, .cl-button.type-b.prev.cl-hover {
+	color : #9faab5;
+}
+ 
+.cl-button.type-b.prev.highlighted {
+	background-image: url("images/btnB_ico_prev_w.png");
+}
+
+/* next button style */
+.cl-button.type-b.next {
+	background-image: url("images/btnB_ico_next.png");
+}
+
+.cl-button.type-b.next:hover, .cl-button.type-b.next.cl-hover {
+	color : #9faab5;
+}
+
+.cl-button.type-b.next.highlighted {
+	background-image: url("images/btnB_ico_next_w.png");
+}
+
+/* chart1 button style */
+.cl-button.type-b.chart1 {
+	background-image: url("images/btnB_ico_chart1.png");
+}
+
+.cl-button.type-b.chart1:hover, .cl-button.type-b.chart1.cl-hover {
+	color : #9faab5;
+}
+
+.cl-button.type-b.chart1.highlighted {
+	background-image: url("images/btnB_ico_chart1_w.png");
+}
+
+/* chart2 button style */
+.cl-button.type-b.chart2 {
+	background-image: url("images/btnB_ico_chart2.png");
+}
+
+.cl-button.type-b.chart2:hover, .cl-button.type-b.chart2.cl-hover {
+	color : #9faab5;
+}
+
+.cl-button.type-b.chart2.highlighted {
+	background-image: url("images/btnB_ico_chart2_w.png");
+}
+
+/* img button style */
+.cl-button.type-b.img {
+	background-image: url("images/btnB_ico_img.png");
+}
+
+.cl-button.type-b.img:hover, .cl-button.type-b.img.cl-hover {
+	color : #9faab5;
+}
+
+.cl-button.type-b.img.highlighted {
+	background-image: url("images/btnB_ico_img_w.png");
+}
+
+/* list1 button style */
+.cl-button.type-b.list1 {
+	background-image: url("images/btnB_ico_list1.png");
+}
+
+.cl-button.type-b.list1:hover, .cl-button.type-b.list1.cl-hover {
+	color : #9faab5;
+}
+
+.cl-button.type-b.list1.highlighted {
+	background-image: url("images/btnB_ico_list1_w.png");
+}
+
+/* list2 button style */
+.cl-button.type-b.list2 {
+	background-image: url("images/btnB_ico_list2.png");
+}
+
+.cl-button.type-b.list2:hover, .cl-button.type-b.list2.cl-hover {
+	color : #9faab5;
+}
+
+.cl-button.type-b.list2.highlighted {
+	background-image: url("images/btnB_ico_list2_w.png");
+}
+
+/* search button style */
+.cl-button.type-b.search {
+	background-image: url("images/btnB_ico_search.png");
+}
+
+.cl-button.type-b.search:hover, .cl-button.type-b.search.cl-hover {
+	color : #9faab5;
+}
+
+.cl-button.type-b.search.highlighted {
+	background-image: url("images/btnB_ico_search_w.png");
+}
+
+/* copy button style */
+.cl-button.type-b.copy {
+	background-image: url("images/btnB_ico_copy.png");
+}
+
+.cl-button.type-b.copy:hover, .cl-button.type-b.copy.cl-hover {
+	color : #9faab5;
+}
+
+.cl-button.type-b.copy.highlighted {
+	background-image: url("images/btnB_ico_copy_w.png");
+}
+
+.cl-button.type-b.right-icon {
+	background-position: ~"calc(100% - 3px) center";
+	padding-right:20px;
+	padding-left: 0px;
+	text-align: right;
+}

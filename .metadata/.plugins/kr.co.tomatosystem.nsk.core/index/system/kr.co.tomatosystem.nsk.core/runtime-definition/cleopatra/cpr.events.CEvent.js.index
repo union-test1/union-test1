@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="205" endIndex="6338" startLine="11" endLine="277"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CEvent" description="이벤트 클래스. 다른 이벤트 클래스의 상위 클래스. 이벤트 객체를 생성합니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="225" endIndex="249" startLine="11" endLine="11"/>
+          <params name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="234" endIndex="237" startLine="11" endLine="11"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="240" endIndex="246" startLine="11" endLine="11"/>
+            <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="userData">
+              <value xsi:type="index:VariableSymbol" name="userData">
+                <region startIndex="355" endIndex="362"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="option">
+              <value xsi:type="index:VariableSymbol" name="option" description="&lt;b>Readonly&lt;/b> CEvent 객체의 부가정보를 리턴합니다.">
+                <region startIndex="498" endIndex="503"/>
+                <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="targetControl">
+              <value xsi:type="index:VariableSymbol" name="targetControl" description="&lt;b>Readonly&lt;/b> 최초 이벤트를 발생 시킨 컨트롤을 반환합니다.">
+                <region startIndex="658" endIndex="670"/>
+                <inferredType name="cpr.events.IEventTarget" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="targetObject">
+              <value xsi:type="index:VariableSymbol" name="targetObject" description="&lt;b>Readonly&lt;/b> 최초 이벤트가 발생된 컨트롤의 관련 오브젝트를 반환합니다. Grid와 같이 내부에 자식 오브젝트를 가지는 컨트롤에서 자식 오브젝트에서 이벤트가 발생한 경우에는 자식오브젝트의 정보가 반환됩니다. 반환되는 객체는 없을 수도 있고 이벤트 발생 컨트롤에 따라 달라집니다.">
+                <region startIndex="936" endIndex="947"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="control">
+              <value xsi:type="index:VariableSymbol" name="control" description="&lt;b>Readonly&lt;/b> 현재 이벤트를 전달한 컨트롤을 반환합니다.">
+                <region startIndex="1083" endIndex="1089"/>
+                <inferredType name="cpr.events.IEventTarget" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="immediatePropagationStopped">
+              <value xsi:type="index:VariableSymbol" name="immediatePropagationStopped" description="&lt;b>Readonly&lt;/b> 같은 이벤트에서 다른 리스너들이 불려지는 것이 차단되었는지 여부를 얻습니다.">
+                <region startIndex="1245" endIndex="1271"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="propagationStopped">
+              <value xsi:type="index:VariableSymbol" name="propagationStopped" description="&lt;b>Readonly&lt;/b> 이벤트의 전파가 차단되었는지 여부를 얻습니다.">
+                <region startIndex="1394" endIndex="1411"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="isWrapper">
+              <value xsi:type="index:VariableSymbol" name="isWrapper" description="&lt;b>Readonly&lt;/b> 래퍼인지 여부를 반환합니다.">
+                <region startIndex="1524" endIndex="1532"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="bubbles">
+              <value xsi:type="index:VariableSymbol" name="bubbles" description="&lt;b>Readonly&lt;/b> 지정된 이벤트가 DOM을 통해 버블링되는지 여부를 나타냅니다.">
+                <region startIndex="1664" endIndex="1670"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="cancelBubble">
+              <value xsi:type="index:VariableSymbol" name="cancelBubble" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> stopPropagation() 메소드의 기록 별칭입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> stopPropagation() 메소드의 기록 별칭입니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1940" endIndex="1951"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="cancelable">
+              <value xsi:type="index:VariableSymbol" name="cancelable" description="&lt;b>Readonly&lt;/b> 이벤트가 취소 가능한지 어떤지를 나타냅니다.">
+                <region startIndex="2073" endIndex="2082"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="composed">
+              <value xsi:type="index:VariableSymbol" name="composed" description="&lt;b>Readonly&lt;/b> 이벤트가 Shadow DOM 영역과 표준 DOM 영역에 걸쳐 전파되었는지 여부를 나타냅니다.">
+                <region startIndex="2231" endIndex="2238"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="currentTarget">
+              <value xsi:type="index:VariableSymbol" name="currentTarget" description="&lt;b>Readonly&lt;/b> 이벤트가 DOM을 통과 할 때 이벤트의 현재 대상을 식별합니다.">
+                <region startIndex="2375" endIndex="2387"/>
+                <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="defaultPrevented">
+              <value xsi:type="index:VariableSymbol" name="defaultPrevented" description="&lt;b>Readonly&lt;/b> 이벤트에서 preventDefault() 메소드가 호출되었는지 여부를 나타내는 부울을 반환합니다.">
+                <region startIndex="2543" endIndex="2558"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="eventPhase">
+              <value xsi:type="index:VariableSymbol" name="eventPhase" description="&lt;b>Readonly&lt;/b> 현재 평가중인 이벤트 흐름의 단계를 나타냅니다.">
+                <region startIndex="2681" endIndex="2690"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="isTrusted">
+              <value xsi:type="index:VariableSymbol" name="isTrusted" description="&lt;b>Readonly&lt;/b> 사용자 작업에 의해 생성되었을 때 true이고 스크립트로 이벤트가 작성되거나 수정되거나 dispatchEvent를 통해 전달되면 false 인 값입니다.">
+                <region startIndex="2872" endIndex="2880"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="returnValue">
+              <value xsi:type="index:VariableSymbol" name="returnValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 이벤트의 기본 동작이 방지되었는지 여부를 나타냅니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 이벤트의 기본 동작이 방지되었는지 여부를 설정합니다.&lt;br> 기본적으로 true로 설정되어 기본 동작을 허용합니다.&lt;br> 이 등록 정보를 false로 설정하면 기본 조치가 금지됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3224" endIndex="3234"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="srcElement">
+              <value xsi:type="index:VariableSymbol" name="srcElement" description="&lt;b>Readonly&lt;/b> 표준 Event.target 속성에 대한 독점적인 별칭입니다.&lt;br> 이전 버전의 Microsoft Internet Explorer에만 적용됩니다.">
+                <region startIndex="3421" endIndex="3430"/>
+                <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="target">
+              <value xsi:type="index:VariableSymbol" name="target" description="&lt;b>Readonly&lt;/b> 이벤트를 전달한 객체에 대한 참조입니다.&lt;br> 이벤트의 버블링 또는 캡처 단계에서 이벤트 핸들러가 호출 될 때 event.currentTarget과 다릅니다.">
+                <region startIndex="3628" endIndex="3633"/>
+                <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="timeStamp">
+              <value xsi:type="index:VariableSymbol" name="timeStamp" description="&lt;b>Readonly&lt;/b> ms(milliseconds) 기준으로 이벤트가 발생한 시점을 반환합니다.">
+                <region startIndex="3775" endIndex="3783"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="type">
+              <value xsi:type="index:VariableSymbol" name="type" description="&lt;b>Readonly&lt;/b> 이벤트 유형을 포함하는 문자열을 반환합니다.&lt;br> 이벤트가 생성 될 때 설정되며 특정 이벤트를 참조하는 데 일반적으로 사용되는 이름입니다.">
+                <region startIndex="3960" endIndex="3963"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="scoped">
+              <value xsi:type="index:VariableSymbol" name="scoped" description="&lt;b>Readonly&lt;/b> Shadow DOM과 일반 DOM 사이의 경계에서 이벤트가 버블링 될 수 있는지 여부를 나타내는 부울 값입니다.">
+                <region startIndex="4122" endIndex="4127"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="AT_TARGET">
+              <value xsi:type="index:VariableSymbol" name="AT_TARGET" description="&lt;b>Readonly&lt;/b> eventPhase 상수. 이 단계에서 등록 된 이벤트 리스너가이 때 호출됩니다.">
+                <region startIndex="4269" endIndex="4277"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="BUBBLING_PHASE">
+              <value xsi:type="index:VariableSymbol" name="BUBBLING_PHASE" description="&lt;b>Readonly&lt;/b> eventPhase 상수. 이 이벤트는 대상의 조상을 역순으로 역순으로 전파하고 부모부터 시작하여 결국 포함 된 Window에 도달합니다.">
+                <region startIndex="4450" endIndex="4463"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="CAPTURING_PHASE">
+              <value xsi:type="index:VariableSymbol" name="CAPTURING_PHASE" description="&lt;b>Readonly&lt;/b> eventPhase 상수. 이벤트가 대상의 조상 개체를 통해 전파됩니다. 이 프로세스는 창, 문서, HTMLHtmlElement 등으로 시작하여 대상의 부모에 도달 할 때까지 요소를 통해 진행됩니다.">
+                <region startIndex="4670" endIndex="4684"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="NONE">
+              <value xsi:type="index:VariableSymbol" name="NONE" description="&lt;b>Readonly&lt;/b> Commits on Mar 29, 2018">
+                <region startIndex="4803" endIndex="4806"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clipboardData">
+              <value xsi:type="index:VariableSymbol" name="clipboardData" description="&lt;b>Readonly&lt;/b> ClipboardEvent의 clipboardData 속성에는 사용할 수있는 DataTransfer 개체가 들어 있습니다.&lt;br> 일반적으로 setData (format, data) 호출로 잘라 내기 및 복사 이벤트 핸들러에서 클립 보드에 넣어야하는 데이터를 지정합니다.&lt;br> 일반적으로 getData (format) 호출을 사용하여 붙여 넣기 이벤트 핸들러에서 붙여 넣을 데이터를 가져옵니다.">
+                <region startIndex="5135" endIndex="5147"/>
+                <inferredType name="DataTransfer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="setCurrentTarget">
+              <value xsi:type="index:FunctionVariableSymbol" name="setCurrentTarget" originalSymbolName="__anonymous2">
+                <region startIndex="5268" endIndex="5283"/>
+              </value>
+            </symbols>
+            <symbols key="composedPath">
+              <value xsi:type="index:FunctionVariableSymbol" name="composedPath" originalSymbolName="__anonymous3">
+                <region startIndex="5418" endIndex="5429"/>
+              </value>
+            </symbols>
+            <symbols key="initEvent">
+              <value xsi:type="index:FunctionVariableSymbol" name="initEvent" originalSymbolName="__anonymous4">
+                <region startIndex="5772" endIndex="5780"/>
+              </value>
+            </symbols>
+            <symbols key="preventDefault">
+              <value xsi:type="index:FunctionVariableSymbol" name="preventDefault" originalSymbolName="__anonymous5">
+                <region startIndex="5896" endIndex="5909"/>
+              </value>
+            </symbols>
+            <symbols key="stopImmediatePropagation">
+              <value xsi:type="index:FunctionVariableSymbol" name="stopImmediatePropagation" originalSymbolName="__anonymous6">
+                <region startIndex="5997" endIndex="6020"/>
+              </value>
+            </symbols>
+            <symbols key="stopPropagation">
+              <value xsi:type="index:FunctionVariableSymbol" name="stopPropagation" originalSymbolName="__anonymous7">
+                <region startIndex="6148" endIndex="6162"/>
+              </value>
+            </symbols>
+            <symbols key="deepPath">
+              <value xsi:type="index:FunctionVariableSymbol" name="deepPath" originalSymbolName="__anonymous8">
+                <region startIndex="6313" endIndex="6320"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CEvent" originalSymbolName="__anonymous1">
+          <region startIndex="216" endIndex="221"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="setCurrentTarget" description="이벤트 타겟 엘리먼트를 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5287" endIndex="5309" startLine="239" endLine="239"/>
+          <params name="eventTarget" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5296" endIndex="5306" startLine="239" endLine="239"/>
+            <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="composedPath" description="이벤트의 실행될 Listener 객체의 배열로 된 경로를 리턴합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5433" endIndex="5444" startLine="245" endLine="245"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="initEvent" description="'Event'유형의 createEvent 메서드로 만든 이벤트 객체를 초기화합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5784" endIndex="5836" startLine="253" endLine="253"/>
+          <params name="eventTypeArg" description="초기화 할 이벤트의 이름 (유형)을 지정하는 문자열." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5793" endIndex="5804" startLine="253" endLine="253"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="canBubbleArg" description="이벤트가 버블 링 될지 어떨지를 지정합니다. 이벤트 객체의 bubbles 속성을 설정합니다." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5807" endIndex="5818" startLine="253" endLine="253"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="cancelableArg" description="이벤트를 취소 할 수 있는지 여부를 지정합니다. 이벤트 객체의 cancelable 속성을 설정합니다." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5821" endIndex="5833" startLine="253" endLine="253"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="preventDefault" description="다음 기본 동작을 방지합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5913" endIndex="5924" startLine="258" endLine="258"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="stopImmediatePropagation" description="동일한 이벤트의 다른 리스너가 호출되지 않도록합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6024" endIndex="6035" startLine="263" endLine="263"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="stopPropagation" description="캡처 및 버블 링 단계에서 현재 이벤트의 추가 전파를 방지합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6166" endIndex="6187" startLine="269" endLine="269"/>
+          <params name="nativeCall" optional="true" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6175" endIndex="6184" startLine="269" endLine="269"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="deepPath" description="Event 인터페이스의 deepPath 속성은 이벤트가 부풀인 노드 배열을 반환합니다." returnDescription="노드 배열." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6324" endIndex="6335" startLine="275" endLine="275"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="225" endIndex="249" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="249" endIndex="249"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="234" endIndex="237" startLine="11" endLine="11"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="240" endIndex="246" startLine="11" endLine="11"/>
+              <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5287" endIndex="5309" startLine="239" endLine="239"/>
+        <childScopes>
+          <region startIndex="5309" endIndex="5309"/>
+          <symbolMap key="eventTarget">
+            <value xsi:type="index:ParameterSymbol" name="eventTarget" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5296" endIndex="5306" startLine="239" endLine="239"/>
+              <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5433" endIndex="5444" startLine="245" endLine="245"/>
+        <childScopes>
+          <region startIndex="5444" endIndex="5444"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5784" endIndex="5836" startLine="253" endLine="253"/>
+        <childScopes>
+          <region startIndex="5836" endIndex="5836"/>
+          <symbolMap key="eventTypeArg">
+            <value xsi:type="index:ParameterSymbol" name="eventTypeArg" description="초기화 할 이벤트의 이름 (유형)을 지정하는 문자열." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5793" endIndex="5804" startLine="253" endLine="253"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="canBubbleArg">
+            <value xsi:type="index:ParameterSymbol" name="canBubbleArg" description="이벤트가 버블 링 될지 어떨지를 지정합니다. 이벤트 객체의 bubbles 속성을 설정합니다." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="5807" endIndex="5818" startLine="253" endLine="253"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="cancelableArg">
+            <value xsi:type="index:ParameterSymbol" name="cancelableArg" description="이벤트를 취소 할 수 있는지 여부를 지정합니다. 이벤트 객체의 cancelable 속성을 설정합니다." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="5821" endIndex="5833" startLine="253" endLine="253"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5913" endIndex="5924" startLine="258" endLine="258"/>
+        <childScopes>
+          <region startIndex="5924" endIndex="5924"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6024" endIndex="6035" startLine="263" endLine="263"/>
+        <childScopes>
+          <region startIndex="6035" endIndex="6035"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6166" endIndex="6187" startLine="269" endLine="269"/>
+        <childScopes>
+          <region startIndex="6187" endIndex="6187"/>
+          <symbolMap key="nativeCall">
+            <value xsi:type="index:ParameterSymbol" name="nativeCall" optional="true" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="6175" endIndex="6184" startLine="269" endLine="269"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6324" endIndex="6335" startLine="275" endLine="275"/>
+        <childScopes>
+          <region startIndex="6335" endIndex="6335"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CEvent" description="이벤트 클래스. 다른 이벤트 클래스의 상위 클래스. 이벤트 객체를 생성합니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="216" endIndex="221"/>
+        <params name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~">
+          <region xsi:type="index:RegionWithLine" startIndex="234" endIndex="237" startLine="11" endLine="11"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="240" endIndex="246" startLine="11" endLine="11"/>
+          <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="userData">
+            <value xsi:type="index:VariableSymbol" name="userData">
+              <region startIndex="355" endIndex="362"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="option">
+            <value xsi:type="index:VariableSymbol" name="option" description="&lt;b>Readonly&lt;/b> CEvent 객체의 부가정보를 리턴합니다.">
+              <region startIndex="498" endIndex="503"/>
+              <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="targetControl">
+            <value xsi:type="index:VariableSymbol" name="targetControl" description="&lt;b>Readonly&lt;/b> 최초 이벤트를 발생 시킨 컨트롤을 반환합니다.">
+              <region startIndex="658" endIndex="670"/>
+              <inferredType name="cpr.events.IEventTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="targetObject">
+            <value xsi:type="index:VariableSymbol" name="targetObject" description="&lt;b>Readonly&lt;/b> 최초 이벤트가 발생된 컨트롤의 관련 오브젝트를 반환합니다. Grid와 같이 내부에 자식 오브젝트를 가지는 컨트롤에서 자식 오브젝트에서 이벤트가 발생한 경우에는 자식오브젝트의 정보가 반환됩니다. 반환되는 객체는 없을 수도 있고 이벤트 발생 컨트롤에 따라 달라집니다.">
+              <region startIndex="936" endIndex="947"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="control">
+            <value xsi:type="index:VariableSymbol" name="control" description="&lt;b>Readonly&lt;/b> 현재 이벤트를 전달한 컨트롤을 반환합니다.">
+              <region startIndex="1083" endIndex="1089"/>
+              <inferredType name="cpr.events.IEventTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="immediatePropagationStopped">
+            <value xsi:type="index:VariableSymbol" name="immediatePropagationStopped" description="&lt;b>Readonly&lt;/b> 같은 이벤트에서 다른 리스너들이 불려지는 것이 차단되었는지 여부를 얻습니다.">
+              <region startIndex="1245" endIndex="1271"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="propagationStopped">
+            <value xsi:type="index:VariableSymbol" name="propagationStopped" description="&lt;b>Readonly&lt;/b> 이벤트의 전파가 차단되었는지 여부를 얻습니다.">
+              <region startIndex="1394" endIndex="1411"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="isWrapper">
+            <value xsi:type="index:VariableSymbol" name="isWrapper" description="&lt;b>Readonly&lt;/b> 래퍼인지 여부를 반환합니다.">
+              <region startIndex="1524" endIndex="1532"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="bubbles">
+            <value xsi:type="index:VariableSymbol" name="bubbles" description="&lt;b>Readonly&lt;/b> 지정된 이벤트가 DOM을 통해 버블링되는지 여부를 나타냅니다.">
+              <region startIndex="1664" endIndex="1670"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="cancelBubble">
+            <value xsi:type="index:VariableSymbol" name="cancelBubble" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> stopPropagation() 메소드의 기록 별칭입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> stopPropagation() 메소드의 기록 별칭입니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1940" endIndex="1951"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="cancelable">
+            <value xsi:type="index:VariableSymbol" name="cancelable" description="&lt;b>Readonly&lt;/b> 이벤트가 취소 가능한지 어떤지를 나타냅니다.">
+              <region startIndex="2073" endIndex="2082"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="composed">
+            <value xsi:type="index:VariableSymbol" name="composed" description="&lt;b>Readonly&lt;/b> 이벤트가 Shadow DOM 영역과 표준 DOM 영역에 걸쳐 전파되었는지 여부를 나타냅니다.">
+              <region startIndex="2231" endIndex="2238"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="currentTarget">
+            <value xsi:type="index:VariableSymbol" name="currentTarget" description="&lt;b>Readonly&lt;/b> 이벤트가 DOM을 통과 할 때 이벤트의 현재 대상을 식별합니다.">
+              <region startIndex="2375" endIndex="2387"/>
+              <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="defaultPrevented">
+            <value xsi:type="index:VariableSymbol" name="defaultPrevented" description="&lt;b>Readonly&lt;/b> 이벤트에서 preventDefault() 메소드가 호출되었는지 여부를 나타내는 부울을 반환합니다.">
+              <region startIndex="2543" endIndex="2558"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="eventPhase">
+            <value xsi:type="index:VariableSymbol" name="eventPhase" description="&lt;b>Readonly&lt;/b> 현재 평가중인 이벤트 흐름의 단계를 나타냅니다.">
+              <region startIndex="2681" endIndex="2690"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="isTrusted">
+            <value xsi:type="index:VariableSymbol" name="isTrusted" description="&lt;b>Readonly&lt;/b> 사용자 작업에 의해 생성되었을 때 true이고 스크립트로 이벤트가 작성되거나 수정되거나 dispatchEvent를 통해 전달되면 false 인 값입니다.">
+              <region startIndex="2872" endIndex="2880"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="returnValue">
+            <value xsi:type="index:VariableSymbol" name="returnValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 이벤트의 기본 동작이 방지되었는지 여부를 나타냅니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 이벤트의 기본 동작이 방지되었는지 여부를 설정합니다.&lt;br> 기본적으로 true로 설정되어 기본 동작을 허용합니다.&lt;br> 이 등록 정보를 false로 설정하면 기본 조치가 금지됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3224" endIndex="3234"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="srcElement">
+            <value xsi:type="index:VariableSymbol" name="srcElement" description="&lt;b>Readonly&lt;/b> 표준 Event.target 속성에 대한 독점적인 별칭입니다.&lt;br> 이전 버전의 Microsoft Internet Explorer에만 적용됩니다.">
+              <region startIndex="3421" endIndex="3430"/>
+              <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="target">
+            <value xsi:type="index:VariableSymbol" name="target" description="&lt;b>Readonly&lt;/b> 이벤트를 전달한 객체에 대한 참조입니다.&lt;br> 이벤트의 버블링 또는 캡처 단계에서 이벤트 핸들러가 호출 될 때 event.currentTarget과 다릅니다.">
+              <region startIndex="3628" endIndex="3633"/>
+              <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="timeStamp">
+            <value xsi:type="index:VariableSymbol" name="timeStamp" description="&lt;b>Readonly&lt;/b> ms(milliseconds) 기준으로 이벤트가 발생한 시점을 반환합니다.">
+              <region startIndex="3775" endIndex="3783"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="type">
+            <value xsi:type="index:VariableSymbol" name="type" description="&lt;b>Readonly&lt;/b> 이벤트 유형을 포함하는 문자열을 반환합니다.&lt;br> 이벤트가 생성 될 때 설정되며 특정 이벤트를 참조하는 데 일반적으로 사용되는 이름입니다.">
+              <region startIndex="3960" endIndex="3963"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="scoped">
+            <value xsi:type="index:VariableSymbol" name="scoped" description="&lt;b>Readonly&lt;/b> Shadow DOM과 일반 DOM 사이의 경계에서 이벤트가 버블링 될 수 있는지 여부를 나타내는 부울 값입니다.">
+              <region startIndex="4122" endIndex="4127"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="AT_TARGET">
+            <value xsi:type="index:VariableSymbol" name="AT_TARGET" description="&lt;b>Readonly&lt;/b> eventPhase 상수. 이 단계에서 등록 된 이벤트 리스너가이 때 호출됩니다.">
+              <region startIndex="4269" endIndex="4277"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="BUBBLING_PHASE">
+            <value xsi:type="index:VariableSymbol" name="BUBBLING_PHASE" description="&lt;b>Readonly&lt;/b> eventPhase 상수. 이 이벤트는 대상의 조상을 역순으로 역순으로 전파하고 부모부터 시작하여 결국 포함 된 Window에 도달합니다.">
+              <region startIndex="4450" endIndex="4463"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="CAPTURING_PHASE">
+            <value xsi:type="index:VariableSymbol" name="CAPTURING_PHASE" description="&lt;b>Readonly&lt;/b> eventPhase 상수. 이벤트가 대상의 조상 개체를 통해 전파됩니다. 이 프로세스는 창, 문서, HTMLHtmlElement 등으로 시작하여 대상의 부모에 도달 할 때까지 요소를 통해 진행됩니다.">
+              <region startIndex="4670" endIndex="4684"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="NONE">
+            <value xsi:type="index:VariableSymbol" name="NONE" description="&lt;b>Readonly&lt;/b> Commits on Mar 29, 2018">
+              <region startIndex="4803" endIndex="4806"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="clipboardData">
+            <value xsi:type="index:VariableSymbol" name="clipboardData" description="&lt;b>Readonly&lt;/b> ClipboardEvent의 clipboardData 속성에는 사용할 수있는 DataTransfer 개체가 들어 있습니다.&lt;br> 일반적으로 setData (format, data) 호출로 잘라 내기 및 복사 이벤트 핸들러에서 클립 보드에 넣어야하는 데이터를 지정합니다.&lt;br> 일반적으로 getData (format) 호출을 사용하여 붙여 넣기 이벤트 핸들러에서 붙여 넣을 데이터를 가져옵니다.">
+              <region startIndex="5135" endIndex="5147"/>
+              <inferredType name="DataTransfer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="setCurrentTarget">
+            <value xsi:type="index:FunctionVariableSymbol" name="setCurrentTarget" originalSymbolName="__anonymous2">
+              <region startIndex="5268" endIndex="5283"/>
+            </value>
+          </symbols>
+          <symbols key="composedPath">
+            <value xsi:type="index:FunctionVariableSymbol" name="composedPath" originalSymbolName="__anonymous3">
+              <region startIndex="5418" endIndex="5429"/>
+            </value>
+          </symbols>
+          <symbols key="initEvent">
+            <value xsi:type="index:FunctionVariableSymbol" name="initEvent" originalSymbolName="__anonymous4">
+              <region startIndex="5772" endIndex="5780"/>
+            </value>
+          </symbols>
+          <symbols key="preventDefault">
+            <value xsi:type="index:FunctionVariableSymbol" name="preventDefault" originalSymbolName="__anonymous5">
+              <region startIndex="5896" endIndex="5909"/>
+            </value>
+          </symbols>
+          <symbols key="stopImmediatePropagation">
+            <value xsi:type="index:FunctionVariableSymbol" name="stopImmediatePropagation" originalSymbolName="__anonymous6">
+              <region startIndex="5997" endIndex="6020"/>
+            </value>
+          </symbols>
+          <symbols key="stopPropagation">
+            <value xsi:type="index:FunctionVariableSymbol" name="stopPropagation" originalSymbolName="__anonymous7">
+              <region startIndex="6148" endIndex="6162"/>
+            </value>
+          </symbols>
+          <symbols key="deepPath">
+            <value xsi:type="index:FunctionVariableSymbol" name="deepPath" originalSymbolName="__anonymous8">
+              <region startIndex="6313" endIndex="6320"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

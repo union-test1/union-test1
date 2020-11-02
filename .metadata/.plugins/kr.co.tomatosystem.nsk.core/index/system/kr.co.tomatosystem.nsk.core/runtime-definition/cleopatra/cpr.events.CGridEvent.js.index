@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CGridEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="365" endIndex="2521" startLine="11" endLine="118"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CGridEvent" description="Grid 내부 변경 시 발생하는 이벤트. 사용하는 이벤트 :  copy, before-paste, paste, row-check, row-uncheck, header-check, header-uncheck,  expand, collapse, before-editrow-change, insert, before-insert, delete, before-delete update, before-update, selection-dispose, filterdialog-open" baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="389" endIndex="413" startLine="11" endLine="11"/>
+          <params name="type" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="398" endIndex="401" startLine="11" endLine="11"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="404" endIndex="410" startLine="11" endLine="11"/>
+            <inferredType name="cpr.events.CGridEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="row">
+              <value xsi:type="index:VariableSymbol" name="row" description="&lt;b>Readonly&lt;/b> GridRow 객체를 반환합니다.">
+                <region startIndex="598" endIndex="600"/>
+                <inferredType name="cpr.controls.provider.GridRow" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rowIndex">
+              <value xsi:type="index:VariableSymbol" name="rowIndex" description="&lt;b>Readonly&lt;/b> Grid rowIndex를 반환합니다.">
+                <region startIndex="744" endIndex="751"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rowgroup">
+              <value xsi:type="index:VariableSymbol" name="rowgroup" description="&lt;b>Readonly&lt;/b> GridRowGroup 객체를 반환합니다.">
+                <region startIndex="902" endIndex="909"/>
+                <inferredType name="cpr.controls.provider.GridRowGroup" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="cellIndex">
+              <value xsi:type="index:VariableSymbol" name="cellIndex" description="&lt;b>Readonly&lt;/b> Cell index를 반환합니다.">
+                <region startIndex="1055" endIndex="1063"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="oldSelection">
+              <value xsi:type="index:VariableSymbol" name="oldSelection" description="&lt;b>Readonly&lt;/b> 이전 셀렉션을 반환합니다.">
+                <region startIndex="1177" endIndex="1188"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="newSelection">
+              <value xsi:type="index:VariableSymbol" name="newSelection" description="&lt;b>Readonly&lt;/b> 새로운 셀렉션을 반환합니다.">
+                <region startIndex="1303" endIndex="1314"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="isCommit">
+              <value xsi:type="index:VariableSymbol" name="isCommit" description="&lt;b>Readonly&lt;/b> before-editrow-change 이벤트에서 편집 중인 데이터에 대한 반영 여부를 반환합니다.">
+                <region startIndex="1470" endIndex="1477"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="oldValue">
+              <value xsi:type="index:VariableSymbol" name="oldValue" description="&lt;b>Readonly&lt;/b> 변경되기 전 값을 반환합니다.">
+                <region startIndex="1594" endIndex="1601"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="newValue">
+              <value xsi:type="index:VariableSymbol" name="newValue" description="&lt;b>Readonly&lt;/b> 현재 값을 반환합니다.">
+                <region startIndex="1713" endIndex="1720"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnName">
+              <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;b>Readonly&lt;/b> 이벤트가 발생한 컬럼명을 반환합니다.">
+                <region startIndex="1840" endIndex="1849"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="data">
+              <value xsi:type="index:VariableSymbol" name="data" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 이벤트를 통해 전달되는 데이터를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 이벤트를 통해 전달되는 데이터를 세팅합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2105" endIndex="2108"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="relativeTargetName">
+              <value xsi:type="index:VariableSymbol" name="relativeTargetName" description="&lt;b>Readonly&lt;/b> 이벤트가 발생한 그리드 내의 타겟명을 반환합니다.">
+                <region startIndex="2272" endIndex="2289"/>
+                <inferredType name="AnonymousEnum" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CGridEvent.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol description="&quot;detail&quot; | &quot;footer&quot; | &quot;header&quot; | &quot;rowgroup&quot;" baseSymbolName="String" classType="enum">
+                    <region startIndex="2191" endIndex="2233"/>
+                    <symbols key="detail">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="detail" literal="detail">
+                        <region startIndex="2191" endIndex="2198"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="footer">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="footer" literal="footer">
+                        <region startIndex="2202" endIndex="2209"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="header">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="header" literal="header">
+                        <region startIndex="2213" endIndex="2220"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="rowgroup">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="rowgroup" literal="rowgroup">
+                        <region startIndex="2224" endIndex="2233"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                  </selfDeclaringTypeSymbol>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="cellBoundingRect">
+              <value xsi:type="index:VariableSymbol" name="cellBoundingRect" description="&lt;b>Readonly&lt;/b> 이벤트가 발생한 디테일 셀이 실제 그려진 사이즈를 반환합니다. cell-mouseover 이벤트에서 사용가능합니다.">
+                <region startIndex="2472" endIndex="2487"/>
+                <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CGridEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CGridEvent" originalSymbolName="__anonymous1">
+          <region startIndex="376" endIndex="385"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="389" endIndex="413" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="413" endIndex="413"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="398" endIndex="401" startLine="11" endLine="11"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="404" endIndex="410" startLine="11" endLine="11"/>
+              <inferredType name="cpr.events.CGridEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CGridEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CGridEvent" description="Grid 내부 변경 시 발생하는 이벤트. 사용하는 이벤트 :  copy, before-paste, paste, row-check, row-uncheck, header-check, header-uncheck,  expand, collapse, before-editrow-change, insert, before-insert, delete, before-delete update, before-update, selection-dispose, filterdialog-open" baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="376" endIndex="385"/>
+        <params name="type" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="398" endIndex="401" startLine="11" endLine="11"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="404" endIndex="410" startLine="11" endLine="11"/>
+          <inferredType name="cpr.events.CGridEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="row">
+            <value xsi:type="index:VariableSymbol" name="row" description="&lt;b>Readonly&lt;/b> GridRow 객체를 반환합니다.">
+              <region startIndex="598" endIndex="600"/>
+              <inferredType name="cpr.controls.provider.GridRow" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rowIndex">
+            <value xsi:type="index:VariableSymbol" name="rowIndex" description="&lt;b>Readonly&lt;/b> Grid rowIndex를 반환합니다.">
+              <region startIndex="744" endIndex="751"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rowgroup">
+            <value xsi:type="index:VariableSymbol" name="rowgroup" description="&lt;b>Readonly&lt;/b> GridRowGroup 객체를 반환합니다.">
+              <region startIndex="902" endIndex="909"/>
+              <inferredType name="cpr.controls.provider.GridRowGroup" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="cellIndex">
+            <value xsi:type="index:VariableSymbol" name="cellIndex" description="&lt;b>Readonly&lt;/b> Cell index를 반환합니다.">
+              <region startIndex="1055" endIndex="1063"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="oldSelection">
+            <value xsi:type="index:VariableSymbol" name="oldSelection" description="&lt;b>Readonly&lt;/b> 이전 셀렉션을 반환합니다.">
+              <region startIndex="1177" endIndex="1188"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="newSelection">
+            <value xsi:type="index:VariableSymbol" name="newSelection" description="&lt;b>Readonly&lt;/b> 새로운 셀렉션을 반환합니다.">
+              <region startIndex="1303" endIndex="1314"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="isCommit">
+            <value xsi:type="index:VariableSymbol" name="isCommit" description="&lt;b>Readonly&lt;/b> before-editrow-change 이벤트에서 편집 중인 데이터에 대한 반영 여부를 반환합니다.">
+              <region startIndex="1470" endIndex="1477"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="oldValue">
+            <value xsi:type="index:VariableSymbol" name="oldValue" description="&lt;b>Readonly&lt;/b> 변경되기 전 값을 반환합니다.">
+              <region startIndex="1594" endIndex="1601"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="newValue">
+            <value xsi:type="index:VariableSymbol" name="newValue" description="&lt;b>Readonly&lt;/b> 현재 값을 반환합니다.">
+              <region startIndex="1713" endIndex="1720"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnName">
+            <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;b>Readonly&lt;/b> 이벤트가 발생한 컬럼명을 반환합니다.">
+              <region startIndex="1840" endIndex="1849"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="data">
+            <value xsi:type="index:VariableSymbol" name="data" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 이벤트를 통해 전달되는 데이터를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 이벤트를 통해 전달되는 데이터를 세팅합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2105" endIndex="2108"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="relativeTargetName">
+            <value xsi:type="index:VariableSymbol" name="relativeTargetName" description="&lt;b>Readonly&lt;/b> 이벤트가 발생한 그리드 내의 타겟명을 반환합니다.">
+              <region startIndex="2272" endIndex="2289"/>
+              <inferredType name="AnonymousEnum" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CGridEvent.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol description="&quot;detail&quot; | &quot;footer&quot; | &quot;header&quot; | &quot;rowgroup&quot;" baseSymbolName="String" classType="enum">
+                  <region startIndex="2191" endIndex="2233"/>
+                  <symbols key="detail">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="detail" literal="detail">
+                      <region startIndex="2191" endIndex="2198"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="footer">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="footer" literal="footer">
+                      <region startIndex="2202" endIndex="2209"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="header">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="header" literal="header">
+                      <region startIndex="2213" endIndex="2220"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="rowgroup">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="rowgroup" literal="rowgroup">
+                      <region startIndex="2224" endIndex="2233"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                </selfDeclaringTypeSymbol>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="cellBoundingRect">
+            <value xsi:type="index:VariableSymbol" name="cellBoundingRect" description="&lt;b>Readonly&lt;/b> 이벤트가 발생한 디테일 셀이 실제 그려진 사이즈를 반환합니다. cell-mouseover 이벤트에서 사용가능합니다.">
+              <region startIndex="2472" endIndex="2487"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

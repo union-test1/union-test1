@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/timeline/HolidayCalendar.js" fileModificationTimestamp="6409947" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.timeline.HolidayCalendar" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="179" endIndex="4215" startLine="7" endLine="142"/>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/timeline/HolidayCalendar 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.timeline.HolidayCalendar">
+        <value xsi:type="index:FunctionSymbol" name="udc.timeline.HolidayCalendar" labelForOutline="HolidayCalendar" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="getDates">
+              <value xsi:type="index:FunctionVariableSymbol" name="getDates" originalSymbolName="__anonymous1">
+                <region startIndex="3246" endIndex="3253"/>
+              </value>
+            </symbols>
+            <symbols key="setDates">
+              <value xsi:type="index:FunctionVariableSymbol" name="setDates" originalSymbolName="__anonymous2">
+                <region startIndex="3480" endIndex="3487"/>
+              </value>
+            </symbols>
+            <symbols key="clearCalendar">
+              <value xsi:type="index:FunctionVariableSymbol" name="clearCalendar" originalSymbolName="__anonymous3">
+                <region startIndex="4097" endIndex="4109"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="calArr">
+        <value xsi:type="index:VariableSymbol" name="calArr">
+          <region startIndex="291" endIndex="296"/>
+          <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+            <typeParameters name="Object" instance="true"/>
+          </inferredType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getDates" description="선택한 날짜를 가져옵니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3257" endIndex="3405" startLine="106" endLine="112"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="setDates" description="목록으로 조회한 데이터를 바인딩합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3491" endIndex="4051" startLine="118" endLine="132"/>
+          <params name="dateStr" description="날짜 문자열" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3510" endIndex="3516" startLine="118" endLine="118"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onUIControlShellInit">
+        <value xsi:type="index:FunctionSymbol" name="onUIControlShellInit">
+          <region xsi:type="index:RegionWithLine" startIndex="376" endIndex="395" startLine="14" endLine="14"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="423" endIndex="423" startLine="14" endLine="14"/>
+            <inferredType name="cpr.events.CUIEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="clearCalendar" description="캘린더 데이터를 초기화합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4113" endIndex="4215" startLine="138" endLine="142"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="i">
+        <value xsi:type="index:VariableSymbol" name="i">
+          <region startIndex="524" endIndex="524"/>
+          <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="dataSourceArr">
+        <value xsi:type="index:VariableSymbol" name="dataSourceArr">
+          <region startIndex="235" endIndex="247"/>
+          <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+            <typeParameters name="Object" instance="true"/>
+          </inferredType>
+        </value>
+      </symbolMap>
+      <symbolMap key="onUIControlShellLoad">
+        <value xsi:type="index:FunctionSymbol" name="onUIControlShellLoad">
+          <region xsi:type="index:RegionWithLine" startIndex="576" endIndex="595" startLine="26" endLine="26"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="623" endIndex="623" startLine="26" endLine="26"/>
+            <inferredType name="cpr.events.CUIEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="calendar">
+        <value xsi:type="index:VariableSymbol" name="calendar">
+          <region startIndex="183" endIndex="190"/>
+          <inferredType kind="UNKNOWN"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.timeline.HolidayCalendar" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes name="onUIControlShellInit" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region startIndex="426" endIndex="515"/>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="423" endIndex="423" startLine="14" endLine="14"/>
+            <inferredType name="cpr.events.CUIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CUIEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="uIControlShell">
+          <value xsi:type="index:VariableSymbol" name="uIControlShell">
+            <region startIndex="484" endIndex="497"/>
+            <inferredType name="cpr.controls.UIControlShell" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="332" endIndex="515" startLine="14" endLine="20"/>
+      </childScopes>
+      <childScopes name="onUIControlShellLoad" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region startIndex="626" endIndex="3174"/>
+        <symbolMap key="oShell">
+          <value xsi:type="index:VariableSymbol" name="oShell">
+            <region startIndex="718" endIndex="723"/>
+            <inferredType name="HTMLDivElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="holidayCalendar">
+          <value xsi:type="index:VariableSymbol" name="holidayCalendar">
+            <region startIndex="808" endIndex="822"/>
+            <inferredType kind="UNKNOWN"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="880" endIndex="3169" startLine="34" endLine="98"/>
+            <prototype>
+              <symbols key="clickDay">
+                <value xsi:type="index:FunctionVariableSymbol" name="clickDay" originalSymbolName="__anonymous1">
+                  <region startIndex="1157" endIndex="1164"/>
+                </value>
+              </symbols>
+              <symbols key="dataSource">
+                <value xsi:type="index:VariableSymbol" name="dataSource">
+                  <region startIndex="3141" endIndex="3150"/>
+                  <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                    <typeParameters name="Object" instance="true"/>
+                  </inferredType>
+                </value>
+              </symbols>
+              <symbols key="minDate">
+                <value xsi:type="index:VariableSymbol" name="minDate">
+                  <region startIndex="1022" endIndex="1028"/>
+                  <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                </value>
+              </symbols>
+              <symbols key="style">
+                <value xsi:type="index:VariableSymbol" name="style">
+                  <region startIndex="922" endIndex="926"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+              <symbols key="maxDate">
+                <value xsi:type="index:VariableSymbol" name="maxDate">
+                  <region startIndex="1100" endIndex="1106"/>
+                  <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                </value>
+              </symbols>
+            </prototype>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="623" endIndex="623" startLine="26" endLine="26"/>
+            <inferredType name="cpr.events.CUIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CUIEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="uIControlShell">
+          <value xsi:type="index:VariableSymbol" name="uIControlShell">
+            <region startIndex="684" endIndex="697"/>
+            <inferredType name="cpr.controls.UIControlShell" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <childScopes name="onUIControlShellLoad">
+          <region xsi:type="index:RegionWithLine" startIndex="880" endIndex="3169" startLine="34" endLine="98"/>
+          <symbolMap key="__anonymous1">
+            <value xsi:type="index:FunctionSymbol" name="clickDay" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="1167" endIndex="3135" startLine="38" endLine="96"/>
+              <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.3/@value">
+                <region xsi:type="index:RegionWithLine" startIndex="1176" endIndex="1176" startLine="38" endLine="38"/>
+                <inferredType kind="UNKNOWN"/>
+              </params>
+              <inferredReturnType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <childScopes name="onUIControlShellLoad" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1167" endIndex="3135" startLine="38" endLine="96"/>
+            <childScopes name="onUIControlShellLoad">
+              <region startIndex="1179" endIndex="3135"/>
+              <symbolMap key="startDate">
+                <value xsi:type="index:VariableSymbol" name="startDate">
+                  <region startIndex="1603" endIndex="1611"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="__anonymous1">
+                <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+                  <region xsi:type="index:RegionWithLine" startIndex="2597" endIndex="2669" startLine="78" endLine="82"/>
+                  <prototype>
+                    <symbols key="startDate">
+                      <value xsi:type="index:VariableSymbol" name="startDate">
+                        <region startIndex="2624" endIndex="2632"/>
+                        <inferredType kind="UNKNOWN"/>
+                      </value>
+                    </symbols>
+                    <symbols key="id">
+                      <value xsi:type="index:VariableSymbol" name="id">
+                        <region startIndex="2608" endIndex="2609"/>
+                        <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="endDate">
+                      <value xsi:type="index:VariableSymbol" name="endDate">
+                        <region startIndex="2650" endIndex="2656"/>
+                        <inferredType kind="UNKNOWN"/>
+                      </value>
+                    </symbols>
+                  </prototype>
+                </value>
+              </symbolMap>
+              <symbolMap key="dataSource">
+                <value xsi:type="index:VariableSymbol" name="dataSource">
+                  <region startIndex="1240" endIndex="1249"/>
+                  <inferredType kind="UNKNOWN"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="e">
+                <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value/@params.0">
+                  <region xsi:type="index:RegionWithLine" startIndex="1176" endIndex="1176" startLine="38" endLine="38"/>
+                  <inferredType kind="UNKNOWN"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="clickDate">
+                <value xsi:type="index:VariableSymbol" name="clickDate">
+                  <region startIndex="1476" endIndex="1484"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="clickMonth">
+                <value xsi:type="index:VariableSymbol" name="clickMonth">
+                  <region startIndex="1342" endIndex="1351"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="check">
+                <value xsi:type="index:VariableSymbol" name="check">
+                  <region startIndex="2359" endIndex="2363"/>
+                  <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="i">
+                <value xsi:type="index:VariableSymbol" name="i">
+                  <region startIndex="1772" endIndex="1772"/>
+                  <duplicatedSymbols xsi:type="index:VariableSymbol" name="i">
+                    <region startIndex="1905" endIndex="1905"/>
+                    <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                  </duplicatedSymbols>
+                  <duplicatedSymbols xsi:type="index:VariableSymbol" name="i">
+                    <region startIndex="2387" endIndex="2387"/>
+                    <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                  </duplicatedSymbols>
+                  <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="dateObj">
+                <value xsi:type="index:VariableSymbol" name="dateObj">
+                  <region startIndex="2587" endIndex="2593"/>
+                  <inferredType name="__anonymous1" decalringInputURI="platform:/resource/AlpetaClient/clx-src/udc/timeline/HolidayCalendar.js" declaringSymbolReference="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.1/@value" instance="true">
+                    <selfDeclaringTypeSymbol name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+                      <region xsi:type="index:RegionWithLine" startIndex="2597" endIndex="2669" startLine="78" endLine="82"/>
+                      <prototype>
+                        <symbols key="endDate">
+                          <value xsi:type="index:VariableSymbol" name="endDate">
+                            <region startIndex="2650" endIndex="2656"/>
+                            <inferredType kind="UNKNOWN"/>
+                          </value>
+                        </symbols>
+                        <symbols key="id">
+                          <value xsi:type="index:VariableSymbol" name="id">
+                            <region startIndex="2608" endIndex="2609"/>
+                            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="startDate">
+                          <value xsi:type="index:VariableSymbol" name="startDate">
+                            <region startIndex="2624" endIndex="2632"/>
+                            <inferredType kind="UNKNOWN"/>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </inferredType>
+                </value>
+              </symbolMap>
+              <symbolMap key="element">
+                <value xsi:type="index:VariableSymbol" name="element">
+                  <region startIndex="1211" endIndex="1217"/>
+                  <inferredType kind="UNKNOWN"/>
+                </value>
+              </symbolMap>
+              <childScopes name="dateObj">
+                <region xsi:type="index:RegionWithLine" startIndex="2597" endIndex="2669" startLine="78" endLine="82"/>
+                <symbolMap key="__anonymous1"/>
+              </childScopes>
+              <fullRegion xsi:type="index:RegionWithLine" startIndex="532" endIndex="3174" startLine="26" endLine="99"/>
+            </childScopes>
+          </childScopes>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="532" endIndex="3174" startLine="26" endLine="99"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3257" endIndex="3405" startLine="106" endLine="112"/>
+        <childScopes>
+          <region startIndex="3268" endIndex="3405"/>
+          <symbolMap key="value">
+            <value xsi:type="index:VariableSymbol" name="value">
+              <region startIndex="3275" endIndex="3279"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                <typeParameters name="Object" instance="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="__anonymous1">
+            <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="3304" endIndex="3356" startLine="108" endLine="110"/>
+              <params name="each" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+                <region xsi:type="index:RegionWithLine" startIndex="3326" endIndex="3329" startLine="108" endLine="108"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </params>
+            </value>
+          </symbolMap>
+          <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3304" endIndex="3356" startLine="108" endLine="110"/>
+            <childScopes>
+              <region startIndex="3332" endIndex="3356"/>
+              <symbolMap key="each">
+                <value xsi:type="index:ParameterSymbol" name="each" symbolInFunction="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value/@params.0">
+                  <region xsi:type="index:RegionWithLine" startIndex="3326" endIndex="3329" startLine="108" endLine="108"/>
+                  <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </value>
+              </symbolMap>
+            </childScopes>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3491" endIndex="4051" startLine="118" endLine="132"/>
+        <childScopes>
+          <region startIndex="3519" endIndex="4051"/>
+          <symbolMap key="dateStr">
+            <value xsi:type="index:ParameterSymbol" name="dateStr" description="날짜 문자열" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3510" endIndex="3516" startLine="118" endLine="118"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="__anonymous1">
+            <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="3574" endIndex="3982" startLine="120" endLine="130"/>
+              <params name="each" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.4/@value">
+                <region xsi:type="index:RegionWithLine" startIndex="3596" endIndex="3599" startLine="120" endLine="120"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true" documentedType="true"/>
+              </params>
+            </value>
+          </symbolMap>
+          <symbolMap key="dateArr">
+            <value xsi:type="index:VariableSymbol" name="dateArr">
+              <region startIndex="3526" endIndex="3532"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3574" endIndex="3982" startLine="120" endLine="130"/>
+            <childScopes>
+              <region startIndex="3602" endIndex="3982"/>
+              <symbolMap key="day">
+                <value xsi:type="index:VariableSymbol" name="day">
+                  <region startIndex="3644" endIndex="3646"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true" documentedType="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="dataSource">
+                <value xsi:type="index:VariableSymbol" name="dataSource">
+                  <region startIndex="3676" endIndex="3685"/>
+                  <inferredType name="__anonymous1" decalringInputURI="platform:/resource/AlpetaClient/clx-src/udc/timeline/HolidayCalendar.js" declaringSymbolReference="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.2/@value" instance="true">
+                    <selfDeclaringTypeSymbol name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+                      <region xsi:type="index:RegionWithLine" startIndex="3689" endIndex="3690" startLine="123" endLine="123"/>
+                      <prototype>
+                        <symbols key="endDate">
+                          <value xsi:type="index:VariableSymbol" name="endDate">
+                            <region startIndex="3826" endIndex="3832"/>
+                            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="id">
+                          <value xsi:type="index:VariableSymbol" name="id">
+                            <region startIndex="3707" endIndex="3708"/>
+                            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="startDate">
+                          <value xsi:type="index:VariableSymbol" name="startDate">
+                            <region startIndex="3732" endIndex="3740"/>
+                            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </inferredType>
+                </value>
+              </symbolMap>
+              <symbolMap key="__anonymous1">
+                <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+                  <region xsi:type="index:RegionWithLine" startIndex="3689" endIndex="3690" startLine="123" endLine="123"/>
+                  <prototype/>
+                </value>
+              </symbolMap>
+              <symbolMap key="month">
+                <value xsi:type="index:VariableSymbol" name="month">
+                  <region startIndex="3610" endIndex="3614"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true" documentedType="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="each">
+                <value xsi:type="index:ParameterSymbol" name="each" symbolInFunction="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value/@params.0">
+                  <region xsi:type="index:RegionWithLine" startIndex="3596" endIndex="3599" startLine="120" endLine="120"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true" documentedType="true"/>
+                </value>
+              </symbolMap>
+              <childScopes name="dataSource">
+                <region xsi:type="index:RegionWithLine" startIndex="3689" endIndex="3690" startLine="123" endLine="123"/>
+                <symbolMap key="__anonymous1"/>
+              </childScopes>
+            </childScopes>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4113" endIndex="4215" startLine="138" endLine="142"/>
+        <childScopes>
+          <region startIndex="4124" endIndex="4215"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.timeline.HolidayCalendar">
+      <value xsi:type="index:FunctionSymbol" name="udc.timeline.HolidayCalendar" labelForOutline="HolidayCalendar" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="getDates">
+            <value xsi:type="index:FunctionVariableSymbol" name="getDates" originalSymbolName="__anonymous1">
+              <region startIndex="3246" endIndex="3253"/>
+            </value>
+          </symbols>
+          <symbols key="setDates">
+            <value xsi:type="index:FunctionVariableSymbol" name="setDates" originalSymbolName="__anonymous2">
+              <region startIndex="3480" endIndex="3487"/>
+            </value>
+          </symbols>
+          <symbols key="clearCalendar">
+            <value xsi:type="index:FunctionVariableSymbol" name="clearCalendar" originalSymbolName="__anonymous3">
+              <region startIndex="4097" endIndex="4109"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-67b02d05" version="1.0.0.0">
+  <head std:sid="head-26f9ffb7">
+    <title>07-UDC</title>
+    <screen std:sid="screen-bf078883" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-02417c74" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-71a593dd" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-ef7e2814">
+      <cl:dataset std:sid="d-set-07e1567e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" name="weekday"/>
+          <cl:datacolumn datatype="number" name="start"/>
+          <cl:datacolumn datatype="number" name="end"/>
+          <cl:datacolumn datatype="string" name="text"/>
+          <cl:datacolumn name="color"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">1</cl:datavalue>
+            <cl:datavalue columnname="start">1</cl:datavalue>
+            <cl:datavalue columnname="end">2</cl:datavalue>
+            <cl:datavalue columnname="text">text1</cl:datavalue>
+            <cl:datavalue columnname="color">red</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">0</cl:datavalue>
+            <cl:datavalue columnname="start">3</cl:datavalue>
+            <cl:datavalue columnname="end">4</cl:datavalue>
+            <cl:datavalue columnname="text">text2</cl:datavalue>
+            <cl:datavalue columnname="color">orange</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">2</cl:datavalue>
+            <cl:datavalue columnname="start">7</cl:datavalue>
+            <cl:datavalue columnname="end">9</cl:datavalue>
+            <cl:datavalue columnname="text">text3</cl:datavalue>
+            <cl:datavalue columnname="color">blue</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">3</cl:datavalue>
+            <cl:datavalue columnname="start">1</cl:datavalue>
+            <cl:datavalue columnname="end">3</cl:datavalue>
+            <cl:datavalue columnname="text">text4</cl:datavalue>
+            <cl:datavalue columnname="color">magenta</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">5</cl:datavalue>
+            <cl:datavalue columnname="start">4</cl:datavalue>
+            <cl:datavalue columnname="end">7</cl:datavalue>
+            <cl:datavalue columnname="text">text5</cl:datavalue>
+            <cl:datavalue columnname="color">aliceblue</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">4</cl:datavalue>
+            <cl:datavalue columnname="start">5</cl:datavalue>
+            <cl:datavalue columnname="end">9</cl:datavalue>
+            <cl:datavalue columnname="text">text6</cl:datavalue>
+            <cl:datavalue columnname="color">cornflowerblue</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">6</cl:datavalue>
+            <cl:datavalue columnname="start">3</cl:datavalue>
+            <cl:datavalue columnname="end">6</cl:datavalue>
+            <cl:datavalue columnname="text">text7</cl:datavalue>
+            <cl:datavalue columnname="color">green</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-bc3afa80" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" name="weekday"/>
+          <cl:datacolumn datatype="number" name="start"/>
+          <cl:datacolumn datatype="number" name="end"/>
+          <cl:datacolumn datatype="string" name="text"/>
+          <cl:datacolumn name="color"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">1</cl:datavalue>
+            <cl:datavalue columnname="start">7</cl:datavalue>
+            <cl:datavalue columnname="end">8</cl:datavalue>
+            <cl:datavalue columnname="text"><![CDATA[History]]></cl:datavalue>
+            <cl:datavalue columnname="color">red</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">0</cl:datavalue>
+            <cl:datavalue columnname="start">1</cl:datavalue>
+            <cl:datavalue columnname="end">2</cl:datavalue>
+            <cl:datavalue columnname="text"><![CDATA[English]]></cl:datavalue>
+            <cl:datavalue columnname="color">orange</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">2</cl:datavalue>
+            <cl:datavalue columnname="start">3</cl:datavalue>
+            <cl:datavalue columnname="end">6</cl:datavalue>
+            <cl:datavalue columnname="text"><![CDATA[Math]]></cl:datavalue>
+            <cl:datavalue columnname="color">blue</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">3</cl:datavalue>
+            <cl:datavalue columnname="start">4</cl:datavalue>
+            <cl:datavalue columnname="end">6</cl:datavalue>
+            <cl:datavalue columnname="text"><![CDATA[Topology]]></cl:datavalue>
+            <cl:datavalue columnname="color">magenta</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">5</cl:datavalue>
+            <cl:datavalue columnname="start">3</cl:datavalue>
+            <cl:datavalue columnname="end">6</cl:datavalue>
+            <cl:datavalue columnname="text"><![CDATA[Science]]></cl:datavalue>
+            <cl:datavalue columnname="color">aliceblue</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">4</cl:datavalue>
+            <cl:datavalue columnname="start">2</cl:datavalue>
+            <cl:datavalue columnname="end">3</cl:datavalue>
+            <cl:datavalue columnname="text"><![CDATA[Art]]></cl:datavalue>
+            <cl:datavalue columnname="color">cornflowerblue</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="weekday">6</cl:datavalue>
+            <cl:datavalue columnname="start">7</cl:datavalue>
+            <cl:datavalue columnname="end">8</cl:datavalue>
+            <cl:datavalue columnname="text"><![CDATA[Coding]]></cl:datavalue>
+            <cl:datavalue columnname="color">green</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-eb56bad1" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn defaultvalue="데이터 맵의 타이틀" name="title"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-20802085" id="buttonData">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Red]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Green]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[green]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Blue]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[blue]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Orange]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[orange]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-73db7349" id="buttonValue">
+        <cl:datacolumnlist>
+          <cl:datacolumn defaultvalue="green" name="value"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-81d9bc88" id="segBtnList">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="column1"/>
+          <cl:datacolumn name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[orange]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[green]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column14</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[blue]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column15</cl:datavalue>
+            <cl:datavalue columnname="column2"><![CDATA[red]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-056bf6f7" id="density">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="eruptions"/>
+          <cl:datacolumn name="waiting"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="eruptions"><![CDATA[1.1]]></cl:datavalue>
+            <cl:datavalue columnname="waiting"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="eruptions"><![CDATA[1.2]]></cl:datavalue>
+            <cl:datavalue columnname="waiting"><![CDATA[40]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="eruptions"><![CDATA[0.9]]></cl:datavalue>
+            <cl:datavalue columnname="waiting"><![CDATA[35]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="eruptions"><![CDATA[1.09]]></cl:datavalue>
+            <cl:datavalue columnname="waiting"><![CDATA[35]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-e2f7b3e0" id="graph">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[토마토 시스템]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[tomato_system]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[기술연구소]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[lab]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[tomato_system]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[eXbulder 6 팀]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[eb6-team]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[lab]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대학 사업부]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[univ]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[tomato_system]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[전략 사업 본부]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[strategy]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[tomato_system]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[테스트 팀]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[test]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[lab]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-078460d5" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-7981aaf8" handler="onBodyClick" name="click"/>
+    <cl:output std:sid="output-4aa01db0" class="note" removeOnBuild="true" value="Embedded App and UDC">
+      <cl:xylayoutdata std:sid="xyl-data-39b4c77b" height="74px" horizontalAnchor="LEFT" left="685px" top="20px" verticalAnchor="TOP" width="281px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-80a8623e"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

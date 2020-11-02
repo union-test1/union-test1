@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CAppEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="86" endIndex="841" startLine="6" endLine="36"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CAppEvent" baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="109" endIndex="133" startLine="6" endLine="6"/>
+          <params name="type" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="118" endIndex="121" startLine="6" endLine="6"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="130" startLine="6" endLine="6"/>
+            <inferredType name="cpr.events.CAppEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="bubbles">
+              <value xsi:type="index:VariableSymbol" name="bubbles" description="지정된 이벤트가 DOM을 통해 버블링되는지 여부를 나타냅니다.">
+                <region startIndex="291" endIndex="297"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="appIntance">
+              <value xsi:type="index:VariableSymbol" name="appIntance" description="&lt;b>Readonly&lt;/b> 이벤트를 발송한 앱 인스턴스를 얻습니다.">
+                <region startIndex="433" endIndex="442"/>
+                <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="targetAppInstance">
+              <value xsi:type="index:VariableSymbol" name="targetAppInstance" description="&lt;b>Readonly&lt;/b> 최초 이벤트를 발송한 앱 인스턴스를 얻습니다.">
+                <region startIndex="594" endIndex="610"/>
+                <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="targetHostControl">
+              <value xsi:type="index:VariableSymbol" name="targetHostControl" description="&lt;b>Readonly&lt;/b> 최초 이벤트를 발송한 앱인스턴스를 실행중인 UDC 컨트롤 또는 임베디드 앱을 얻습니다.">
+                <region startIndex="789" endIndex="805"/>
+                <inferredType name="cpr.controls.EmbeddedApp" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CAppEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CAppEvent" originalSymbolName="__anonymous1">
+          <region startIndex="97" endIndex="105"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="109" endIndex="133" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="133" endIndex="133"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="118" endIndex="121" startLine="6" endLine="6"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="130" startLine="6" endLine="6"/>
+              <inferredType name="cpr.events.CAppEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CAppEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CAppEvent" baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="97" endIndex="105"/>
+        <params name="type" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="118" endIndex="121" startLine="6" endLine="6"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="130" startLine="6" endLine="6"/>
+          <inferredType name="cpr.events.CAppEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="bubbles">
+            <value xsi:type="index:VariableSymbol" name="bubbles" description="지정된 이벤트가 DOM을 통해 버블링되는지 여부를 나타냅니다.">
+              <region startIndex="291" endIndex="297"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="appIntance">
+            <value xsi:type="index:VariableSymbol" name="appIntance" description="&lt;b>Readonly&lt;/b> 이벤트를 발송한 앱 인스턴스를 얻습니다.">
+              <region startIndex="433" endIndex="442"/>
+              <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="targetAppInstance">
+            <value xsi:type="index:VariableSymbol" name="targetAppInstance" description="&lt;b>Readonly&lt;/b> 최초 이벤트를 발송한 앱 인스턴스를 얻습니다.">
+              <region startIndex="594" endIndex="610"/>
+              <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="targetHostControl">
+            <value xsi:type="index:VariableSymbol" name="targetHostControl" description="&lt;b>Readonly&lt;/b> 최초 이벤트를 발송한 앱인스턴스를 실행중인 UDC 컨트롤 또는 임베디드 앱을 얻습니다.">
+              <region startIndex="789" endIndex="805"/>
+              <inferredType name="cpr.controls.EmbeddedApp" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

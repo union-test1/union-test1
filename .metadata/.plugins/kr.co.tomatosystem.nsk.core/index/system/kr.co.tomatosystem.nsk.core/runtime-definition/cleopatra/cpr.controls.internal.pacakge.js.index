@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.internal.pacakge.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="75" endIndex="133" startLine="5" endLine="7"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="_checkCyclic" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="130" startLine="5" endLine="5"/>
+          <params name="context" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="121" endIndex="127" startLine="5" endLine="5"/>
+            <inferredType name="cpr.controls.EmbeddedApp" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.internal._checkCyclic">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.internal._checkCyclic" originalSymbolName="__anonymous1">
+          <region startIndex="97" endIndex="108"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="130" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="130" endIndex="130"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="121" endIndex="127" startLine="5" endLine="5"/>
+              <inferredType name="cpr.controls.EmbeddedApp" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.internal._checkCyclic">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.internal._checkCyclic" returnDescription="" anonymousFunction="true">
+        <region startIndex="97" endIndex="108"/>
+        <params name="context" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="121" endIndex="127" startLine="5" endLine="5"/>
+          <inferredType name="cpr.controls.EmbeddedApp" instance="true" documentedType="true"/>
+        </params>
+        <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

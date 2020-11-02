@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.SubmissionEventType.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="34" endIndex="1593" startLine="5" endLine="73"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="SubmissionEventType" description="submission 이벤트 유형." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="67" endIndex="78" startLine="5" endLine="5"/>
+          <prototype/>
+          <symbols key="BEFORE">
+            <value xsi:type="index:VariableSymbol" name="BEFORE" description="통신을 시작하기전에 발생하는 이벤트.">
+              <region startIndex="220" endIndex="225"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ERROR_STATUS">
+            <value xsi:type="index:VariableSymbol" name="ERROR_STATUS" description="서버로 부터 에러로 분류되는 HTTP상태 코드를 전송받았을 때 발생하는 이벤트. 상태코드가 200이 아니면 서버의 응답처리를 중단하고 submit-error 이벤트가 발생하나 error-status 이벤트 핸들러에서 e.preventDefault()를 호출하면 서버의 응답데이터를 모두 처리한 후 submit-error 이벤트가 발생합니다.">
+              <region startIndex="504" endIndex="515"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="RECEIVE">
+            <value xsi:type="index:VariableSymbol" name="RECEIVE" description="서버로 부터 데이터를 모두 전송받았을 때 발생하는 이벤트.">
+              <region startIndex="627" endIndex="633"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="SUCCESS">
+            <value xsi:type="index:VariableSymbol" name="SUCCESS" description="통신이 성공하면 발생하는 이벤트.">
+              <region startIndex="731" endIndex="737"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ERROR">
+            <value xsi:type="index:VariableSymbol" name="ERROR" description="통신 중 문제가 생기면 발생하는 이벤트.">
+              <region startIndex="839" endIndex="843"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="DONE">
+            <value xsi:type="index:VariableSymbol" name="DONE" description="응답처리가 모두 종료되면 발생하는 이벤트.">
+              <region startIndex="946" endIndex="949"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="LOAD_PROGRESS">
+            <value xsi:type="index:VariableSymbol" name="LOAD_PROGRESS" description="응답 데이터컨트롤에 데이터가 부분적으로 적재되었을 때 발생하는 이벤트. submit-progress는 데이터 적재여부와 상관없이 호출되는 반면 submit-load-progress는 부분적재가 가능한 응답프로토콜에서 데이터의 부분적재가 일어났을 때 발생.">
+              <region startIndex="1177" endIndex="1189"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="UPLOAD_PROGRESS">
+            <value xsi:type="index:VariableSymbol" name="UPLOAD_PROGRESS" description="multipart/form-data 일 때 서버로 일정 크기의 데이터를 전송했을 때 발생하는 이벤트.">
+              <region startIndex="1325" endIndex="1339"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="PROGRESS">
+            <value xsi:type="index:VariableSymbol" name="PROGRESS" description="Submission이 종료되기 전 정기적으로 호출되는 이벤트.">
+              <region startIndex="1453" endIndex="1460"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="TIMEOUT">
+            <value xsi:type="index:VariableSymbol" name="TIMEOUT" description="통신 중 Timeout이 발생했을 때 호출되는 이벤트">
+              <region startIndex="1569" endIndex="1575"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.SubmissionEventType">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.SubmissionEventType" originalSymbolName="__anonymous1">
+          <region startIndex="45" endIndex="63"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="67" endIndex="78" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="78" endIndex="78"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.SubmissionEventType">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.SubmissionEventType" description="submission 이벤트 유형." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="45" endIndex="63"/>
+        <prototype/>
+        <symbols key="BEFORE">
+          <value xsi:type="index:VariableSymbol" name="BEFORE" description="통신을 시작하기전에 발생하는 이벤트.">
+            <region startIndex="220" endIndex="225"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="ERROR_STATUS">
+          <value xsi:type="index:VariableSymbol" name="ERROR_STATUS" description="서버로 부터 에러로 분류되는 HTTP상태 코드를 전송받았을 때 발생하는 이벤트. 상태코드가 200이 아니면 서버의 응답처리를 중단하고 submit-error 이벤트가 발생하나 error-status 이벤트 핸들러에서 e.preventDefault()를 호출하면 서버의 응답데이터를 모두 처리한 후 submit-error 이벤트가 발생합니다.">
+            <region startIndex="504" endIndex="515"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="RECEIVE">
+          <value xsi:type="index:VariableSymbol" name="RECEIVE" description="서버로 부터 데이터를 모두 전송받았을 때 발생하는 이벤트.">
+            <region startIndex="627" endIndex="633"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="SUCCESS">
+          <value xsi:type="index:VariableSymbol" name="SUCCESS" description="통신이 성공하면 발생하는 이벤트.">
+            <region startIndex="731" endIndex="737"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="ERROR">
+          <value xsi:type="index:VariableSymbol" name="ERROR" description="통신 중 문제가 생기면 발생하는 이벤트.">
+            <region startIndex="839" endIndex="843"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="DONE">
+          <value xsi:type="index:VariableSymbol" name="DONE" description="응답처리가 모두 종료되면 발생하는 이벤트.">
+            <region startIndex="946" endIndex="949"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="LOAD_PROGRESS">
+          <value xsi:type="index:VariableSymbol" name="LOAD_PROGRESS" description="응답 데이터컨트롤에 데이터가 부분적으로 적재되었을 때 발생하는 이벤트. submit-progress는 데이터 적재여부와 상관없이 호출되는 반면 submit-load-progress는 부분적재가 가능한 응답프로토콜에서 데이터의 부분적재가 일어났을 때 발생.">
+            <region startIndex="1177" endIndex="1189"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="UPLOAD_PROGRESS">
+          <value xsi:type="index:VariableSymbol" name="UPLOAD_PROGRESS" description="multipart/form-data 일 때 서버로 일정 크기의 데이터를 전송했을 때 발생하는 이벤트.">
+            <region startIndex="1325" endIndex="1339"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="PROGRESS">
+          <value xsi:type="index:VariableSymbol" name="PROGRESS" description="Submission이 종료되기 전 정기적으로 호출되는 이벤트.">
+            <region startIndex="1453" endIndex="1460"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="TIMEOUT">
+          <value xsi:type="index:VariableSymbol" name="TIMEOUT" description="통신 중 Timeout이 발생했을 때 호출되는 이벤트">
+            <region startIndex="1569" endIndex="1575"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

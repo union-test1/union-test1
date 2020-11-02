@@ -1,0 +1,50 @@
+/************************************************
+ * setCardLayOut.js
+ * Created at 2019. 7. 30. 오전 8:58:37.
+ *
+ * @author joymrk
+ ************************************************/
+// iCardInfo <-  일반카드와 지문카드에 따라 사용하는 데이터가 틀림
+// 시리얼번호 사용시 L_TemplateSize = 표시형식임
+// 표시형식은 0:Default, 1:Hex String, 2:Decimal String, 3:3,5 Decimal 임
+// 카드 정보가 없는 경우 Default로 처리됨(SC카드:HEX String, RF카드:3,5 Decimal)
+var dataManager = cpr.core.Module.require("lib/DataManager");
+var comLib;
+function onBodyLoad(/* cpr.events.CEvent */ e){
+	dataManager = getDataManager();	
+	comLib = createComUtil(app);
+	
+	comLib.showLoadMask( "", "카드 레이아웃 정보", "",0);
+	var requestData = app.lookup("sms_getCardInfo");
+	requestData.send(); // 초기 값 얻어 오기	
+}
+
+function onSms_getCardInfoSubmitDone(/* cpr.events.CSubmissionEvent */ e){
+	var resultCode = app.lookup("Result").getValue("ResultCode");
+	if (resultCode == COMERROR_NONE) {
+		// 0. 일반 카드 // 1. 지문 카드 분기   <- 둘다 쓸수는 없다.
+		var nCardType = app.lookup("dmCardInfo").getValue("CardType");// 일반카드 / 지문카드 구분자 
+		
+		var tabitems = app.lookup("SCALA_tfdMain").getTabItems();	
+		app.lookup("SCALA_tfdMain").setSelectedTabItem(tabitems[nCardType]);	
+		app.lookup("SCALA_tfdMain").redraw();
+		
+		// 초기값 세팅
+		if (nCardType == 0) { // 일반
+			
+		} else if (nCardType == 1) { //지문
+			
+		}
+	} else {
+		// 가져오기 실패 
+	}
+	
+}
+
+function onSms_getCardInfoSubmitError(/* cpr.events.CSubmissionEvent */ e){
+	app.lookup("Result").setValue("ResultCode", COMERROR_NET_ERROR);
+}
+
+function onSms_getCardInfoSubmitTimeout(/* cpr.events.CSubmissionEvent */ e){
+	app.lookup("Result").setValue("ResultCode", COMERROR_NET_TIMEOUT);
+}

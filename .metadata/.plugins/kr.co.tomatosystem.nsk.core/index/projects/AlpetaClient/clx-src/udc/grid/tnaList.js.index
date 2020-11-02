@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/grid/tnaList.js" fileModificationTimestamp="6409907" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.grid.tnaList" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="234" endIndex="3889" startLine="11" endLine="153"/>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/grid/tnaList 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onTnaListPageIndexerSelectionChange">
+        <value xsi:type="index:FunctionSymbol" name="onTnaListPageIndexerSelectionChange">
+          <region xsi:type="index:RegionWithLine" startIndex="2918" endIndex="2952" startLine="115" endLine="115"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2987" endIndex="2987" startLine="115" endLine="115"/>
+            <inferredType name="cpr.events.CSelectionEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onTnaListPageIndexerBeforeSelectionChange">
+        <value xsi:type="index:FunctionSymbol" name="onTnaListPageIndexerBeforeSelectionChange">
+          <region xsi:type="index:RegionWithLine" startIndex="3420" endIndex="3460" startLine="134" endLine="134"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.11/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3495" endIndex="3495" startLine="134" endLine="134"/>
+            <inferredType name="cpr.events.CSelectionEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getText" description="UDC 컨트롤이 그리드의 뷰 모드에서 표시할 텍스트를 반환합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="252" endIndex="332" startLine="11" endLine="14"/>
+          <inferredReturnType name="String" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="deleteColumn" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="363" endIndex="570" startLine="17" endLine="25"/>
+          <params name="indices" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="372" endIndex="378" startLine="17" endLine="17"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <inferredReturnType kind="UNKNOWN"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="setUserList" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="598" endIndex="899" startLine="27" endLine="37"/>
+          <params name="tnaDataSet" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="628" endIndex="637" startLine="27" endLine="27"/>
+            <inferredType name="cpr.data.DataSet" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.grid.tnaList">
+        <value xsi:type="index:FunctionSymbol" name="udc.grid.tnaList" labelForOutline="tnaList" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="getCurrentPageIndex">
+              <value xsi:type="index:FunctionVariableSymbol" name="getCurrentPageIndex" originalSymbolName="__anonymous7">
+                <region startIndex="2258" endIndex="2276"/>
+              </value>
+            </symbols>
+            <symbols key="deleteColumn">
+              <value xsi:type="index:FunctionVariableSymbol" name="deleteColumn" originalSymbolName="__anonymous2">
+                <region startIndex="348" endIndex="359"/>
+              </value>
+            </symbols>
+            <symbols key="getText">
+              <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+                <region startIndex="242" endIndex="248"/>
+              </value>
+            </symbols>
+            <symbols key="setPageRowCount">
+              <value xsi:type="index:FunctionVariableSymbol" name="setPageRowCount" originalSymbolName="__anonymous9">
+                <region startIndex="2543" endIndex="2557"/>
+              </value>
+            </symbols>
+            <symbols key="getPageRowCount">
+              <value xsi:type="index:FunctionVariableSymbol" name="getPageRowCount" originalSymbolName="__anonymous10">
+                <region startIndex="2682" endIndex="2696"/>
+              </value>
+            </symbols>
+            <symbols key="setUserList">
+              <value xsi:type="index:FunctionVariableSymbol" name="setUserList" originalSymbolName="__anonymous3">
+                <region startIndex="584" endIndex="594"/>
+              </value>
+            </symbols>
+            <symbols key="setCurrentPageIndex">
+              <value xsi:type="index:FunctionVariableSymbol" name="setCurrentPageIndex" originalSymbolName="__anonymous8">
+                <region startIndex="2396" endIndex="2414"/>
+              </value>
+            </symbols>
+            <symbols key="setTotalCount">
+              <value xsi:type="index:FunctionVariableSymbol" name="setTotalCount" originalSymbolName="__anonymous6">
+                <region startIndex="1983" endIndex="1995"/>
+              </value>
+            </symbols>
+            <symbols key="setPaging">
+              <value xsi:type="index:FunctionVariableSymbol" name="setPaging" originalSymbolName="__anonymous4">
+                <region startIndex="953" endIndex="961"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="setPaging" description="근태 리스트 컨트롤의 페이징 정보를 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="965" endIndex="1463" startLine="42" endLine="57"/>
+          <params name="totalCount" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="975" endIndex="984" startLine="42" endLine="42"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <params name="currentPageIndex" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="987" endIndex="1002" startLine="42" endLine="42"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <params name="pageRowCount" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1005" endIndex="1016" startLine="42" endLine="42"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <params name="viewPageCount" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1019" endIndex="1031" startLine="42" endLine="42"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="__anonymous5" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1488" endIndex="1970" startLine="59" endLine="73"/>
+          <params name="totalCount" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1498" endIndex="1507" startLine="59" endLine="59"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <params name="pageRowCount" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1510" endIndex="1521" startLine="59" endLine="59"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <params name="viewPageCount" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1524" endIndex="1536" startLine="59" endLine="59"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="setTotalCount" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1999" endIndex="2243" startLine="75" endLine="87"/>
+          <params name="totalCount" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2008" endIndex="2017" startLine="75" endLine="75"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="getCurrentPageIndex" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2280" endIndex="2383" startLine="90" endLine="93"/>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="setCurrentPageIndex" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2418" endIndex="2530" startLine="95" endLine="98"/>
+          <params name="index" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2427" endIndex="2431" startLine="95" endLine="95"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="setPageRowCount" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2561" endIndex="2669" startLine="100" endLine="103"/>
+          <params name="count" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2570" endIndex="2574" startLine="100" endLine="100"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="getPageRowCount" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2700" endIndex="2802" startLine="105" endLine="108"/>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.grid.tnaList" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="252" endIndex="332" startLine="11" endLine="14"/>
+        <childScopes>
+          <region startIndex="263" endIndex="332"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="363" endIndex="570" startLine="17" endLine="25"/>
+        <childScopes>
+          <region startIndex="381" endIndex="570"/>
+          <symbolMap key="__anonymous1">
+            <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="509" endIndex="564" startLine="22" endLine="24"/>
+              <params name="index" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+                <region xsi:type="index:RegionWithLine" startIndex="518" endIndex="522" startLine="22" endLine="22"/>
+                <inferredType kind="UNKNOWN"/>
+              </params>
+            </value>
+          </symbolMap>
+          <symbolMap key="indices">
+            <value xsi:type="index:ParameterSymbol" name="indices" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="372" endIndex="378" startLine="17" endLine="17"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="gridTnaList">
+            <value xsi:type="index:VariableSymbol" name="gridTnaList">
+              <region startIndex="450" endIndex="460"/>
+              <inferredType name="cpr.controls.Grid" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Grid.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+          <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="509" endIndex="564" startLine="22" endLine="24"/>
+            <childScopes>
+              <region startIndex="525" endIndex="564"/>
+              <symbolMap key="index">
+                <value xsi:type="index:ParameterSymbol" name="index" symbolInFunction="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value/@params.0">
+                  <region xsi:type="index:RegionWithLine" startIndex="518" endIndex="522" startLine="22" endLine="22"/>
+                  <inferredType kind="UNKNOWN"/>
+                </value>
+              </symbolMap>
+            </childScopes>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="598" endIndex="899" startLine="27" endLine="37"/>
+        <childScopes>
+          <region startIndex="641" endIndex="899"/>
+          <symbolMap key="tnaDataSet">
+            <value xsi:type="index:ParameterSymbol" name="tnaDataSet" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="628" endIndex="637" startLine="27" endLine="27"/>
+              <inferredType name="cpr.data.DataSet" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="tnaList">
+            <value xsi:type="index:VariableSymbol" name="tnaList">
+              <region startIndex="840" endIndex="846"/>
+              <inferredType name="cpr.controls.Grid" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Grid.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="tnaListSet">
+            <value xsi:type="index:VariableSymbol" name="tnaListSet">
+              <region startIndex="653" endIndex="662"/>
+              <inferredType name="cpr.data.DataSet" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.DataSet.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="965" endIndex="1463" startLine="42" endLine="57"/>
+        <childScopes>
+          <region startIndex="1036" endIndex="1463"/>
+          <symbolMap key="currentPageIndex">
+            <value xsi:type="index:ParameterSymbol" name="currentPageIndex" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="987" endIndex="1002" startLine="42" endLine="42"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="viewPageCount">
+            <value xsi:type="index:ParameterSymbol" name="viewPageCount" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="1019" endIndex="1031" startLine="42" endLine="42"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pageRowCount">
+            <value xsi:type="index:ParameterSymbol" name="pageRowCount" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="1005" endIndex="1016" startLine="42" endLine="42"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="totalCount">
+            <value xsi:type="index:ParameterSymbol" name="totalCount" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="975" endIndex="984" startLine="42" endLine="42"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pageIndex">
+            <value xsi:type="index:VariableSymbol" name="pageIndex">
+              <region startIndex="1043" endIndex="1051"/>
+              <inferredType name="cpr.controls.PageIndexer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.PageIndexer.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1488" endIndex="1970" startLine="59" endLine="73"/>
+        <childScopes>
+          <region startIndex="1541" endIndex="1970"/>
+          <symbolMap key="viewPageCount">
+            <value xsi:type="index:ParameterSymbol" name="viewPageCount" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="1524" endIndex="1536" startLine="59" endLine="59"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pageRowCount">
+            <value xsi:type="index:ParameterSymbol" name="pageRowCount" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1510" endIndex="1521" startLine="59" endLine="59"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="totalCount">
+            <value xsi:type="index:ParameterSymbol" name="totalCount" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1498" endIndex="1507" startLine="59" endLine="59"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pageIndex">
+            <value xsi:type="index:VariableSymbol" name="pageIndex">
+              <region startIndex="1548" endIndex="1556"/>
+              <inferredType name="cpr.controls.PageIndexer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.PageIndexer.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1999" endIndex="2243" startLine="75" endLine="87"/>
+        <childScopes>
+          <region startIndex="2021" endIndex="2243"/>
+          <symbolMap key="totalCount">
+            <value xsi:type="index:ParameterSymbol" name="totalCount" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2008" endIndex="2017" startLine="75" endLine="75"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pageIndex">
+            <value xsi:type="index:VariableSymbol" name="pageIndex">
+              <region startIndex="2031" endIndex="2039"/>
+              <inferredType name="cpr.controls.PageIndexer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.PageIndexer.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2280" endIndex="2383" startLine="90" endLine="93"/>
+        <childScopes>
+          <region startIndex="2292" endIndex="2383"/>
+          <symbolMap key="pageIndex">
+            <value xsi:type="index:VariableSymbol" name="pageIndex">
+              <region startIndex="2300" endIndex="2308"/>
+              <inferredType name="cpr.controls.PageIndexer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.PageIndexer.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2418" endIndex="2530" startLine="95" endLine="98"/>
+        <childScopes>
+          <region startIndex="2435" endIndex="2530"/>
+          <symbolMap key="index">
+            <value xsi:type="index:ParameterSymbol" name="index" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2427" endIndex="2431" startLine="95" endLine="95"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pageIndex">
+            <value xsi:type="index:VariableSymbol" name="pageIndex">
+              <region startIndex="2443" endIndex="2451"/>
+              <inferredType name="cpr.controls.PageIndexer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.PageIndexer.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.12/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2561" endIndex="2669" startLine="100" endLine="103"/>
+        <childScopes>
+          <region startIndex="2578" endIndex="2669"/>
+          <symbolMap key="count">
+            <value xsi:type="index:ParameterSymbol" name="count" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.12/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2570" endIndex="2574" startLine="100" endLine="100"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pageIndex">
+            <value xsi:type="index:VariableSymbol" name="pageIndex">
+              <region startIndex="2586" endIndex="2594"/>
+              <inferredType name="cpr.controls.PageIndexer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.PageIndexer.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.13/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2700" endIndex="2802" startLine="105" endLine="108"/>
+        <childScopes>
+          <region startIndex="2712" endIndex="2802"/>
+          <symbolMap key="pageIndex">
+            <value xsi:type="index:VariableSymbol" name="pageIndex">
+              <region startIndex="2720" endIndex="2728"/>
+              <inferredType name="cpr.controls.PageIndexer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.PageIndexer.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onTnaListPageIndexerSelectionChange" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region startIndex="2990" endIndex="3263"/>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="3149" endIndex="3218" startLine="121" endLine="124"/>
+            <prototype>
+              <symbols key="oldSelection">
+                <value xsi:type="index:VariableSymbol" name="oldSelection">
+                  <region startIndex="3154" endIndex="3165"/>
+                  <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+              <symbols key="newSelection">
+                <value xsi:type="index:VariableSymbol" name="newSelection">
+                  <region startIndex="3187" endIndex="3198"/>
+                  <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+            </prototype>
+          </value>
+        </symbolMap>
+        <symbolMap key="selectionEvent">
+          <value xsi:type="index:VariableSymbol" name="selectionEvent">
+            <region startIndex="3087" endIndex="3100"/>
+            <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="2987" endIndex="2987" startLine="115" endLine="115"/>
+            <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="tnaListPageIndexer">
+          <value xsi:type="index:VariableSymbol" name="tnaListPageIndexer">
+            <region startIndex="3046" endIndex="3063"/>
+            <inferredType name="cpr.controls.PageIndexer" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <childScopes name="selectionEvent">
+          <region xsi:type="index:RegionWithLine" startIndex="3149" endIndex="3218" startLine="121" endLine="124"/>
+          <symbolMap key="__anonymous1"/>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="2809" endIndex="3263" startLine="115" endLine="127"/>
+      </childScopes>
+      <childScopes name="onTnaListPageIndexerBeforeSelectionChange" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region startIndex="3498" endIndex="3882"/>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="3665" endIndex="3734" startLine="140" endLine="143"/>
+            <prototype>
+              <symbols key="oldSelection">
+                <value xsi:type="index:VariableSymbol" name="oldSelection">
+                  <region startIndex="3670" endIndex="3681"/>
+                  <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+              <symbols key="newSelection">
+                <value xsi:type="index:VariableSymbol" name="newSelection">
+                  <region startIndex="3703" endIndex="3714"/>
+                  <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+            </prototype>
+          </value>
+        </symbolMap>
+        <symbolMap key="selectionEvent">
+          <value xsi:type="index:VariableSymbol" name="selectionEvent">
+            <region startIndex="3596" endIndex="3609"/>
+            <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="3495" endIndex="3495" startLine="134" endLine="134"/>
+            <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="tnaListPageIndexer">
+          <value xsi:type="index:VariableSymbol" name="tnaListPageIndexer">
+            <region startIndex="3554" endIndex="3571"/>
+            <inferredType name="cpr.controls.PageIndexer" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <childScopes name="selectionEvent">
+          <region xsi:type="index:RegionWithLine" startIndex="3665" endIndex="3734" startLine="140" endLine="143"/>
+          <symbolMap key="__anonymous1"/>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="3270" endIndex="3882" startLine="134" endLine="150"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.grid.tnaList">
+      <value xsi:type="index:FunctionSymbol" name="udc.grid.tnaList" labelForOutline="tnaList" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="setUserList">
+            <value xsi:type="index:FunctionVariableSymbol" name="setUserList" originalSymbolName="__anonymous3">
+              <region startIndex="584" endIndex="594"/>
+            </value>
+          </symbols>
+          <symbols key="getPageRowCount">
+            <value xsi:type="index:FunctionVariableSymbol" name="getPageRowCount" originalSymbolName="__anonymous10">
+              <region startIndex="2682" endIndex="2696"/>
+            </value>
+          </symbols>
+          <symbols key="getCurrentPageIndex">
+            <value xsi:type="index:FunctionVariableSymbol" name="getCurrentPageIndex" originalSymbolName="__anonymous7">
+              <region startIndex="2258" endIndex="2276"/>
+            </value>
+          </symbols>
+          <symbols key="setPaging">
+            <value xsi:type="index:FunctionVariableSymbol" name="setPaging" originalSymbolName="__anonymous4">
+              <region startIndex="953" endIndex="961"/>
+            </value>
+          </symbols>
+          <symbols key="setPageRowCount">
+            <value xsi:type="index:FunctionVariableSymbol" name="setPageRowCount" originalSymbolName="__anonymous9">
+              <region startIndex="2543" endIndex="2557"/>
+            </value>
+          </symbols>
+          <symbols key="getText">
+            <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+              <region startIndex="242" endIndex="248"/>
+            </value>
+          </symbols>
+          <symbols key="deleteColumn">
+            <value xsi:type="index:FunctionVariableSymbol" name="deleteColumn" originalSymbolName="__anonymous2">
+              <region startIndex="348" endIndex="359"/>
+            </value>
+          </symbols>
+          <symbols key="setTotalCount">
+            <value xsi:type="index:FunctionVariableSymbol" name="setTotalCount" originalSymbolName="__anonymous6">
+              <region startIndex="1983" endIndex="1995"/>
+            </value>
+          </symbols>
+          <symbols key="setCurrentPageIndex">
+            <value xsi:type="index:FunctionVariableSymbol" name="setCurrentPageIndex" originalSymbolName="__anonymous8">
+              <region startIndex="2396" endIndex="2414"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

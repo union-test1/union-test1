@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CUIEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="1254" startLine="7" endLine="59"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CUIEvent" description="UI 관련 이벤트 UI 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="146" endIndex="170" startLine="7" endLine="7"/>
+          <params name="type" description="이벤트 유형" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="155" endIndex="158" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트 옵션" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="167" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="content">
+              <value xsi:type="index:VariableSymbol" name="content" description="&lt;b>Readonly&lt;/b> 컨트롤에 전달되는 내용을 다양한 타입으로 전달됩니다.">
+                <region startIndex="339" endIndex="345"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="detail">
+              <value xsi:type="index:VariableSymbol" name="detail" description="&lt;b>Readonly&lt;/b> 이벤트에 대한 추가 정보를 지정하는 정수 값을 리턴합니다.">
+                <region startIndex="475" endIndex="480"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="view">
+              <value xsi:type="index:VariableSymbol" name="view" description="&lt;b>Readonly&lt;/b> 이벤트가 발생한 AbstractView 객체에 대한 참조를 반환합니다.">
+                <region startIndex="617" endIndex="620"/>
+                <inferredType name="Window" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=HOT_INDEX" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="which">
+              <value xsi:type="index:VariableSymbol" name="which" description="&lt;b>Readonly&lt;/b> 누른 키의 숫자 키 코드 또는 누른 영숫자 키의 문자 코드 (charCode)를 반환합니다.">
+                <region startIndex="769" endIndex="773"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="data">
+              <value xsi:type="index:VariableSymbol" name="data" description="&lt;b>Readonly&lt;/b> textInput 이벤트의 경우 입력된 문자 또는 onmessage 이벤트의 메시지 내용을 반환합니다.">
+                <region startIndex="928" endIndex="931"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="inputType">
+              <value xsi:type="index:VariableSymbol" name="inputType" description="&lt;b>Readonly&lt;/b> Input Event Level2에서 지원하는 inputType를 반환합니다.">
+                <region startIndex="1072" endIndex="1080"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="isComposing">
+              <value xsi:type="index:VariableSymbol" name="isComposing" description="&lt;b>Readonly&lt;/b> textInput 이벤트의 경우 입력된 문자가 조합형인지 아닌지 여부를 반환합니다.">
+                <region startIndex="1225" endIndex="1235"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CUIEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CUIEvent" originalSymbolName="__anonymous1">
+          <region startIndex="135" endIndex="142"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="146" endIndex="170" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="170" endIndex="170"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="155" endIndex="158" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트 옵션" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="167" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CUIEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CUIEvent" description="UI 관련 이벤트 UI 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="135" endIndex="142"/>
+        <params name="type" description="이벤트 유형">
+          <region xsi:type="index:RegionWithLine" startIndex="155" endIndex="158" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트 옵션" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="167" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="content">
+            <value xsi:type="index:VariableSymbol" name="content" description="&lt;b>Readonly&lt;/b> 컨트롤에 전달되는 내용을 다양한 타입으로 전달됩니다.">
+              <region startIndex="339" endIndex="345"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="detail">
+            <value xsi:type="index:VariableSymbol" name="detail" description="&lt;b>Readonly&lt;/b> 이벤트에 대한 추가 정보를 지정하는 정수 값을 리턴합니다.">
+              <region startIndex="475" endIndex="480"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="view">
+            <value xsi:type="index:VariableSymbol" name="view" description="&lt;b>Readonly&lt;/b> 이벤트가 발생한 AbstractView 객체에 대한 참조를 반환합니다.">
+              <region startIndex="617" endIndex="620"/>
+              <inferredType name="Window" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=HOT_INDEX" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="which">
+            <value xsi:type="index:VariableSymbol" name="which" description="&lt;b>Readonly&lt;/b> 누른 키의 숫자 키 코드 또는 누른 영숫자 키의 문자 코드 (charCode)를 반환합니다.">
+              <region startIndex="769" endIndex="773"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="data">
+            <value xsi:type="index:VariableSymbol" name="data" description="&lt;b>Readonly&lt;/b> textInput 이벤트의 경우 입력된 문자 또는 onmessage 이벤트의 메시지 내용을 반환합니다.">
+              <region startIndex="928" endIndex="931"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="inputType">
+            <value xsi:type="index:VariableSymbol" name="inputType" description="&lt;b>Readonly&lt;/b> Input Event Level2에서 지원하는 inputType를 반환합니다.">
+              <region startIndex="1072" endIndex="1080"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="isComposing">
+            <value xsi:type="index:VariableSymbol" name="isComposing" description="&lt;b>Readonly&lt;/b> textInput 이벤트의 경우 입력된 문자가 조합형인지 아닌지 여부를 반환합니다.">
+              <region startIndex="1225" endIndex="1235"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

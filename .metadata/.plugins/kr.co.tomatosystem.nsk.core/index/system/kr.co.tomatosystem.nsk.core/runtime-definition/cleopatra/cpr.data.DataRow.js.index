@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.DataRow.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="105" endIndex="1832" startLine="6" endLine="59"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DataRow" baseSymbolName="cpr.data.IDataRow" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="151" startLine="6" endLine="6"/>
+          <params name="dataSet" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="133" endIndex="139" startLine="6" endLine="6"/>
+            <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+          </params>
+          <params name="rowData" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="142" endIndex="148" startLine="6" endLine="6"/>
+            <inferredType name="cpr.data.tabledata.RowData" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="getIndex">
+              <value xsi:type="index:FunctionVariableSymbol" name="getIndex" originalSymbolName="__anonymous2">
+                <region startIndex="337" endIndex="344"/>
+              </value>
+            </symbols>
+            <symbols key="getValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="getValue" originalSymbolName="__anonymous3">
+                <region startIndex="510" endIndex="517"/>
+              </value>
+            </symbols>
+            <symbols key="setValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="setValue" originalSymbolName="__anonymous4">
+                <region startIndex="730" endIndex="737"/>
+              </value>
+            </symbols>
+            <symbols key="getRowData">
+              <value xsi:type="index:FunctionVariableSymbol" name="getRowData" originalSymbolName="__anonymous5">
+                <region startIndex="1064" endIndex="1073"/>
+              </value>
+            </symbols>
+            <symbols key="setRowData">
+              <value xsi:type="index:FunctionVariableSymbol" name="setRowData" originalSymbolName="__anonymous6">
+                <region startIndex="1269" endIndex="1278"/>
+              </value>
+            </symbols>
+            <symbols key="setState">
+              <value xsi:type="index:FunctionVariableSymbol" name="setState" originalSymbolName="__anonymous7">
+                <region startIndex="1802" endIndex="1809"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.data.DataRow">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.data.DataRow" originalSymbolName="__anonymous1">
+          <region startIndex="114" endIndex="120"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getIndex" description="현재 Row의 index를 반환합니다.&lt;br> (DataRow는 지원하지 않습니다. -1반환.)" returnDescription="현재 row index" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="348" endIndex="359" startLine="14" endLine="14"/>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getValue" description="입력 받은 컬럼명에 해당하는 값을 반환합니다." returnDescription="해당 데이터" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="521" endIndex="542" startLine="21" endLine="21"/>
+          <params name="columnName" description="값을 가져올 column의 columnName" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="530" endIndex="539" startLine="21" endLine="21"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="setValue" description="입력 받은 columnName에 해당되는 데이터를 수정합니다." returnDescription="값 수정 성공 여부" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="741" endIndex="769" startLine="29" endLine="29"/>
+          <params name="columnName" description="수정할 column의 columnName" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="750" endIndex="759" startLine="29" endLine="29"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="762" endIndex="766" startLine="29" endLine="29"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="getRowData" description="현재 row의 row data를  { columnName : value } 형식으로 반환합니다." returnDescription="현재 row의 row data (key: columnName, value: 해당 value형태의 json object).&lt;br> {[columnName: string]: string | number}" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1077" endIndex="1098" startLine="37" endLine="37"/>
+          <params name="columntype" optional="true" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1086" endIndex="1095" startLine="37" endLine="37"/>
+            <inferredType name="cpr.data.header.HeaderType" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.data.RowConfigInfo" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="setRowData" description="{ columnName : value } 형식의 데이터를 받아 현재 row의 데이터를 전체 변경합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1282" endIndex="1306" startLine="44" endLine="44"/>
+          <params name="rowConfigInfo" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1291" endIndex="1303" startLine="44" endLine="44"/>
+            <inferredType name="cpr.data.RowConfigInfo" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="setState" description="현재 row의 상태값을 변경합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1813" endIndex="1829" startLine="57" endLine="57"/>
+          <params name="state" description="변경할 row의 상태값.&lt;br> &lt;state 종류>&lt;br> cpr.data.tabledata.RowState.EMPTIED : 삭제된 행을 커밋시 배열에서 제거하기 위한 임시 상태.&lt;br> cpr.data.tabledata.RowState.UNCHANGED : 변경되지 않은 상태.&lt;br> cpr.data.tabledata.RowState.INSERTED : 행이 신규로 추가된 상태.&lt;br> cpr.data.tabledata.RowState.UPDATED : 행이 수정된 상태.&lt;br> cpr.data.tabledata.RowState.DELETED : 행이 삭제된 상태.&lt;br> cpr.data.tabledata.RowState.INSERTDELETED : 행이 추가되었다가 삭제된 상태." symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1822" endIndex="1826" startLine="57" endLine="57"/>
+            <inferredType name="cpr.data.tabledata.RowState" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="151" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="151" endIndex="151"/>
+          <symbolMap key="dataSet">
+            <value xsi:type="index:ParameterSymbol" name="dataSet" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="133" endIndex="139" startLine="6" endLine="6"/>
+              <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="rowData">
+            <value xsi:type="index:ParameterSymbol" name="rowData" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="142" endIndex="148" startLine="6" endLine="6"/>
+              <inferredType name="cpr.data.tabledata.RowData" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="348" endIndex="359" startLine="14" endLine="14"/>
+        <childScopes>
+          <region startIndex="359" endIndex="359"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="521" endIndex="542" startLine="21" endLine="21"/>
+        <childScopes>
+          <region startIndex="542" endIndex="542"/>
+          <symbolMap key="columnName">
+            <value xsi:type="index:ParameterSymbol" name="columnName" description="값을 가져올 column의 columnName" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="530" endIndex="539" startLine="21" endLine="21"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="741" endIndex="769" startLine="29" endLine="29"/>
+        <childScopes>
+          <region startIndex="769" endIndex="769"/>
+          <symbolMap key="columnName">
+            <value xsi:type="index:ParameterSymbol" name="columnName" description="수정할 column의 columnName" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="750" endIndex="759" startLine="29" endLine="29"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="762" endIndex="766" startLine="29" endLine="29"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1077" endIndex="1098" startLine="37" endLine="37"/>
+        <childScopes>
+          <region startIndex="1098" endIndex="1098"/>
+          <symbolMap key="columntype">
+            <value xsi:type="index:ParameterSymbol" name="columntype" optional="true" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1086" endIndex="1095" startLine="37" endLine="37"/>
+              <inferredType name="cpr.data.header.HeaderType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1282" endIndex="1306" startLine="44" endLine="44"/>
+        <childScopes>
+          <region startIndex="1306" endIndex="1306"/>
+          <symbolMap key="rowConfigInfo">
+            <value xsi:type="index:ParameterSymbol" name="rowConfigInfo" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1291" endIndex="1303" startLine="44" endLine="44"/>
+              <inferredType name="cpr.data.RowConfigInfo" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1813" endIndex="1829" startLine="57" endLine="57"/>
+        <childScopes>
+          <region startIndex="1829" endIndex="1829"/>
+          <symbolMap key="state">
+            <value xsi:type="index:ParameterSymbol" name="state" description="변경할 row의 상태값.&lt;br> &lt;state 종류>&lt;br> cpr.data.tabledata.RowState.EMPTIED : 삭제된 행을 커밋시 배열에서 제거하기 위한 임시 상태.&lt;br> cpr.data.tabledata.RowState.UNCHANGED : 변경되지 않은 상태.&lt;br> cpr.data.tabledata.RowState.INSERTED : 행이 신규로 추가된 상태.&lt;br> cpr.data.tabledata.RowState.UPDATED : 행이 수정된 상태.&lt;br> cpr.data.tabledata.RowState.DELETED : 행이 삭제된 상태.&lt;br> cpr.data.tabledata.RowState.INSERTDELETED : 행이 추가되었다가 삭제된 상태." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1822" endIndex="1826" startLine="57" endLine="57"/>
+              <inferredType name="cpr.data.tabledata.RowState" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.data.DataRow">
+      <value xsi:type="index:FunctionSymbol" name="cpr.data.DataRow" baseSymbolName="cpr.data.IDataRow" anonymousFunction="true">
+        <region startIndex="114" endIndex="120"/>
+        <params name="dataSet" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="133" endIndex="139" startLine="6" endLine="6"/>
+          <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+        </params>
+        <params name="rowData" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="142" endIndex="148" startLine="6" endLine="6"/>
+          <inferredType name="cpr.data.tabledata.RowData" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="getIndex">
+            <value xsi:type="index:FunctionVariableSymbol" name="getIndex" originalSymbolName="__anonymous2">
+              <region startIndex="337" endIndex="344"/>
+            </value>
+          </symbols>
+          <symbols key="getValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="getValue" originalSymbolName="__anonymous3">
+              <region startIndex="510" endIndex="517"/>
+            </value>
+          </symbols>
+          <symbols key="setValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="setValue" originalSymbolName="__anonymous4">
+              <region startIndex="730" endIndex="737"/>
+            </value>
+          </symbols>
+          <symbols key="getRowData">
+            <value xsi:type="index:FunctionVariableSymbol" name="getRowData" originalSymbolName="__anonymous5">
+              <region startIndex="1064" endIndex="1073"/>
+            </value>
+          </symbols>
+          <symbols key="setRowData">
+            <value xsi:type="index:FunctionVariableSymbol" name="setRowData" originalSymbolName="__anonymous6">
+              <region startIndex="1269" endIndex="1278"/>
+            </value>
+          </symbols>
+          <symbols key="setState">
+            <value xsi:type="index:FunctionVariableSymbol" name="setState" originalSymbolName="__anonymous7">
+              <region startIndex="1802" endIndex="1809"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

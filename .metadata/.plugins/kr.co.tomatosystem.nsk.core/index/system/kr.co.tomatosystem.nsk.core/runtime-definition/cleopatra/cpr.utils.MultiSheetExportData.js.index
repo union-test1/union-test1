@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.MultiSheetExportData.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="624" startLine="4" endLine="24"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="MultiSheetExportData" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="55" endIndex="66" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="metadata">
+              <value xsi:type="index:VariableSymbol" name="metadata" description="엑셀 export시 설정 정보. (암호, 출력용지방향)">
+                <region startIndex="257" endIndex="264"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="sheets">
+              <value xsi:type="index:VariableSymbol" name="sheets" description="시트 정보.">
+                <region startIndex="602" endIndex="607"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.MultiSheetExportData.js" instance="true" documentedType="true">
+                    <selfDeclaringTypeSymbol classType="interface">
+                      <region startIndex="307" endIndex="552"/>
+                      <prototype>
+                        <symbols key="name">
+                          <value xsi:type="index:VariableSymbol" name="name" description="시트명.">
+                            <region startIndex="314" endIndex="317"/>
+                            <inferredType name="String" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="freezepane">
+                          <value xsi:type="index:VariableSymbol" name="freezepane" optional="true" description="컬럼과 로우의 틀고정 갯수.">
+                            <region startIndex="347" endIndex="356"/>
+                            <inferredType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.MultiSheetExportData.js" instance="true" documentedType="true">
+                              <selfDeclaringTypeSymbol classType="interface">
+                                <region startIndex="360" endIndex="395"/>
+                                <prototype>
+                                  <symbols key="colsplit">
+                                    <value xsi:type="index:VariableSymbol" name="colsplit">
+                                      <region startIndex="361" endIndex="368"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="rowsplit">
+                                    <value xsi:type="index:VariableSymbol" name="rowsplit">
+                                      <region startIndex="379" endIndex="386"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                </prototype>
+                              </selfDeclaringTypeSymbol>
+                            </inferredType>
+                          </value>
+                        </symbols>
+                        <symbols key="cols">
+                          <value xsi:type="index:VariableSymbol" name="cols" description="컬럼 레이아웃 정보.">
+                            <region startIndex="428" endIndex="431"/>
+                            <inferredType name="Array" instance="true" documentedType="true">
+                              <typeParameters name="cpr.controls.gridpart.GridColumnConfig" instance="true" documentedType="true"/>
+                            </inferredType>
+                          </value>
+                        </symbols>
+                        <symbols key="rowgroups">
+                          <value xsi:type="index:VariableSymbol" name="rowgroups" description="행 정보.">
+                            <region startIndex="502" endIndex="510"/>
+                            <inferredType name="Array" instance="true" documentedType="true">
+                              <typeParameters name="cpr.utils.RowGroup" instance="true" documentedType="true"/>
+                            </inferredType>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </typeParameters>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.MultiSheetExportData">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.MultiSheetExportData" originalSymbolName="__anonymous1">
+          <region startIndex="32" endIndex="51"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="55" endIndex="66" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="66" endIndex="66"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.utils.MultiSheetExportData">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.MultiSheetExportData" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="32" endIndex="51"/>
+        <prototype>
+          <symbols key="metadata">
+            <value xsi:type="index:VariableSymbol" name="metadata" description="엑셀 export시 설정 정보. (암호, 출력용지방향)">
+              <region startIndex="257" endIndex="264"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="sheets">
+            <value xsi:type="index:VariableSymbol" name="sheets" description="시트 정보.">
+              <region startIndex="602" endIndex="607"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.MultiSheetExportData.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="307" endIndex="552"/>
+                    <prototype>
+                      <symbols key="name">
+                        <value xsi:type="index:VariableSymbol" name="name" description="시트명.">
+                          <region startIndex="314" endIndex="317"/>
+                          <inferredType name="String" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="freezepane">
+                        <value xsi:type="index:VariableSymbol" name="freezepane" optional="true" description="컬럼과 로우의 틀고정 갯수.">
+                          <region startIndex="347" endIndex="356"/>
+                          <inferredType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.MultiSheetExportData.js" instance="true" documentedType="true">
+                            <selfDeclaringTypeSymbol classType="interface">
+                              <region startIndex="360" endIndex="395"/>
+                              <prototype>
+                                <symbols key="colsplit">
+                                  <value xsi:type="index:VariableSymbol" name="colsplit">
+                                    <region startIndex="361" endIndex="368"/>
+                                    <inferredType name="Number" instance="true" documentedType="true"/>
+                                  </value>
+                                </symbols>
+                                <symbols key="rowsplit">
+                                  <value xsi:type="index:VariableSymbol" name="rowsplit">
+                                    <region startIndex="379" endIndex="386"/>
+                                    <inferredType name="Number" instance="true" documentedType="true"/>
+                                  </value>
+                                </symbols>
+                              </prototype>
+                            </selfDeclaringTypeSymbol>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                      <symbols key="cols">
+                        <value xsi:type="index:VariableSymbol" name="cols" description="컬럼 레이아웃 정보.">
+                          <region startIndex="428" endIndex="431"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="cpr.controls.gridpart.GridColumnConfig" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                      <symbols key="rowgroups">
+                        <value xsi:type="index:VariableSymbol" name="rowgroups" description="행 정보.">
+                          <region startIndex="502" endIndex="510"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="cpr.utils.RowGroup" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </typeParameters>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

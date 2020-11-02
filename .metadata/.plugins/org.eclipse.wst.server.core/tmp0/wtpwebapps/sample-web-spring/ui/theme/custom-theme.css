@@ -1,0 +1,204 @@
+@CHARSET "UTF-8";
+
+/* 초기 설정 Start */
+/**********************************
+  전역 설정 
+ **********************************/
+.cl-control {
+	font-family : 'Dotum', 돋움, Tahoma, arial, serif, sans-serif;
+	font-size : 12px;
+	color : #333;
+}
+
+.cl-notifier-item {
+	font-family : 'Dotum', 돋움, Tahoma, arial, serif, sans-serif;
+	font-size : 12px;
+	font-weight : bold;
+}
+
+.modal-output{
+	background-color : #ededed;
+	text-align : center;
+}
+
+.cl-tree {
+	line-height : 20px;
+}
+
+.cl-tree .cl-tree-item {
+	padding: 1px 0px;
+}
+
+.cl-grid-header {
+	text-align : center;
+}
+
+.cl-pageindexer {
+	padding : 0;
+}
+
+.cl-grid .cl-nodatamsg {
+	font-size : 14px;
+	font-weight : bold;
+	padding : 10px 10px;
+}
+
+.cl-grid .cl-viewing .cl-disabled {
+	background-color : transparent;
+}
+
+/** CUSTOM CLASS **/
+.cl-main {
+	min-width : 1024px;
+}
+
+.cl-loadmask.cl-overlay {
+	background-color : rgba(37, 158, 241, 0.4);
+}
+
+.cl-loadmask .cl-dialog {
+	background-color : #ffffff;
+}
+
+.grp-title {
+	
+}
+
+.grp-title .cl-output {
+	font-size : 14px;
+	font-weight : bold;	
+}
+
+.grp-search {
+	background-color : #ededed;
+	padding : 5px 5px;
+}
+
+.grp-search .cl-output {
+	text-align : center;
+}
+
+.grp-freeform {
+	background-color : #f4f4f4;
+	border : 1px solid #999999;
+}
+
+.grp-freeform .cl-output {
+	text-align : center;
+}
+
+.grp-freeform .cl-output.ctl-header {
+	background-color : #e3f4fa;
+}
+
+.grp-freeform .cl-output.ctl-grpheader {
+	background-color : #b6e0ef;
+}
+
+.frm-hseparator {
+  background-color : #999999;
+}
+
+.frm-vseparator {
+  background-color : #999999;
+}
+
+.grp-buttons {
+	background-color : #ededed;
+	padding : 5px 5px;
+}
+
+.required {
+	/* Grid 내부에서 컨트롤의 background 를 cell에서 상속 받도록 하는 문제가 있음 */
+	background-image : url('../images/required.png');
+	background-position-x : left;
+	background-position-y : top;
+	background-repeat : no-repeat;
+}
+
+.cl-viewing .required {
+	background : transparent;
+}
+
+.cl-editing .required {
+	background-image : url('../images/required.png');
+	background-position-x : left;
+	background-position-y : top;
+	background-repeat : no-repeat;
+}
+
+.help-button {
+	background-image: url('../images/bullet_help.png')
+					  ,linear-gradient(#FCFEFF, #E0E1E2);
+	background-position-x: 10px, left;
+	background-position-y: center;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.cl-menu-item .cl-text, .cl-navigationbar-listitem .cl-text {
+	vertical-align : middle;
+}
+
+/**********************************
+ 폼 레이아웃
+ **********************************/
+.cl-formlayout-column-shade {
+  /* 컬럼 음역 스타일 */
+}
+.cl-formlayout-vertical-separator,
+.cl-formlayout-horizontal-separator {
+  /* 구분 선 스타일 */
+}
+
+/* 초기 설정 End */
+
+.cl-text {
+	font-family : Dotum;
+	font-size : 12px;
+}
+
+.cl-control {
+	font-family : Dotum;
+	font-size : 12px;
+}
+
+.cl-control.cl-tree, .cl-control.cl-tree .cl-text {
+	font-size : 13px;
+	vertical-align : middle;
+}
+
+.cl-grid-header {
+	text-align : center;
+}
+
+.cl-grid [role='row'].cl-viewing.cl-selected .cl-grid-cell[role='gridcell'] {
+	background-color : rgba(37, 158, 241, 0.4);
+}
+
+.cl-loadmask.cl-overlay {
+	background-color : rgba(37, 158, 241, 0.4);
+}
+
+.cl-loadmask .cl-dialog {
+	background-color : #ffffff;
+}
+
+.cl-control.component-css {
+	background-color: #e3f4fa;
+}
+
+/*****************************************************************/
+
+.button-close-icon {
+	background-image: url("images/close.png"), linear-gradient(#FCFEFF, #E0E1E2);
+	background-position: 8px center, left top;
+	background-repeat: no-repeat;
+	text-align: left;
+	padding-left: 25px;
+}
+.cl-control.cl-disabled {
+	background-image: none;
+	background-color: rgba(119, 119, 119, 0.5);
+}

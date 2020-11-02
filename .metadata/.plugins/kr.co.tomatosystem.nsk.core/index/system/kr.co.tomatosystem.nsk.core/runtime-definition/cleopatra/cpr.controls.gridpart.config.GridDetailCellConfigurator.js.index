@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.config.GridDetailCellConfigurator.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="2816" startLine="5" endLine="138"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridDetailCellConfigurator" baseSymbolName="cpr.controls.gridpart.config.GridCellConfigurator" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="106" endIndex="121" startLine="5" endLine="5"/>
+          <params name="grid" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+            <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="columnType">
+              <value xsi:type="index:VariableSymbol" name="columnType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 기본 컬럼일 경우 column의 종류를 반환합니다.&lt;br> header : &quot;rowindex&quot;, &quot;checkbox&quot;, &quot;normal&quot;&lt;br> detail : &quot;checkbox&quot;, &quot;normal&quot; &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 기본 컬럼일 경우 column의 종류를 설정합니다.&lt;br> header : &quot;rowindex&quot;, &quot;checkbox&quot;, &quot;normal&quot;&lt;br> detail : &quot;checkbox&quot;, &quot;normal&quot; &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="701" endIndex="710"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnName">
+              <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 셀에 연결할 데이터셋 컬럼명을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 셀에 연결할 데이터셋 컬럼명을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="998" endIndex="1007"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="mergeToIndexExpr">
+              <value xsi:type="index:VariableSymbol" name="mergeToIndexExpr" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 병합할 셀의 인덱스를 리턴하는 표현식을 반환합니다. 설정되지 않거나 자기자신의 인덱스를 리턴할 경우 병합하지 않습니다. 셀병합은 자동높이를 지원하지 않습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 병합할 셀의 인덱스를 리턴하는 표현식을 설정합니다. 설정되지 않거나 자기자신의 인덱스를 리턴할 경우 병합하지 않습니다. 셀병합은 자동높이를 지원하지 않습니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1442" endIndex="1457"/>
+                <inferredType name="String" sematicsQualifier="expression" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="mergedColumnName">
+              <value xsi:type="index:VariableSymbol" name="mergedColumnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 셀이 병합될 경우 표현할 DataSet의 컬럼명을 반환합니다. 셀이 병합되지 않을 경우 columnName 속성에 설정된 컬럼의 값이 표현됩니다. 셀병합은 자동높이를 지원하지 않습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 셀이 병합될 경우 표현할 DataSet의 컬럼명을 설정합니다. 셀이 병합되지 않을 경우 columnName 속성에 설정된 컬럼의 값이 표현됩니다. 셀병합은 자동높이를 지원하지 않습니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1917" endIndex="1932"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="suppressible">
+              <value xsi:type="index:VariableSymbol" name="suppressible" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 바로 직전 로우의 값과 일치하는 셀은 텍스트를 숨기도록 할지 여부를 설정값을 반환합니다. (셀 병합 효과 제공) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 바로 직전 로우의 값과 일치하는 셀은 텍스트를 숨기도록 할지 여부를 설정합니다. (셀 병합 효과 제공) &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2300" endIndex="2311"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="suppressRef">
+              <value xsi:type="index:VariableSymbol" name="suppressRef" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> suppressible (셀 텍스트 숨김) 효과에 영향을 줄 다른 컬럼 인덱스 설정값을 반환합니다.&lt;br> (관련 속성 : [suppressible] suppressible=ture일 때 유효한 속성입니다.) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> suppressible (셀 텍스트 숨김) 효과에 영향을 줄 다른 컬럼 인덱스를 설정합니다.&lt;br> (관련 속성 : [suppressible] suppressible=ture일 때 유효한 속성입니다.) &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2788" endIndex="2798"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.config.GridDetailCellConfigurator">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.config.GridDetailCellConfigurator" originalSymbolName="__anonymous1">
+          <region startIndex="77" endIndex="102"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="106" endIndex="121" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="121" endIndex="121"/>
+          <symbolMap key="grid">
+            <value xsi:type="index:ParameterSymbol" name="grid" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+              <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.config.GridDetailCellConfigurator">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.config.GridDetailCellConfigurator" baseSymbolName="cpr.controls.gridpart.config.GridCellConfigurator" anonymousFunction="true">
+        <region startIndex="77" endIndex="102"/>
+        <params name="grid" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+          <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="columnType">
+            <value xsi:type="index:VariableSymbol" name="columnType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 기본 컬럼일 경우 column의 종류를 반환합니다.&lt;br> header : &quot;rowindex&quot;, &quot;checkbox&quot;, &quot;normal&quot;&lt;br> detail : &quot;checkbox&quot;, &quot;normal&quot; &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 기본 컬럼일 경우 column의 종류를 설정합니다.&lt;br> header : &quot;rowindex&quot;, &quot;checkbox&quot;, &quot;normal&quot;&lt;br> detail : &quot;checkbox&quot;, &quot;normal&quot; &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="701" endIndex="710"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnName">
+            <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 셀에 연결할 데이터셋 컬럼명을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 셀에 연결할 데이터셋 컬럼명을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="998" endIndex="1007"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="mergeToIndexExpr">
+            <value xsi:type="index:VariableSymbol" name="mergeToIndexExpr" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 병합할 셀의 인덱스를 리턴하는 표현식을 반환합니다. 설정되지 않거나 자기자신의 인덱스를 리턴할 경우 병합하지 않습니다. 셀병합은 자동높이를 지원하지 않습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 병합할 셀의 인덱스를 리턴하는 표현식을 설정합니다. 설정되지 않거나 자기자신의 인덱스를 리턴할 경우 병합하지 않습니다. 셀병합은 자동높이를 지원하지 않습니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1442" endIndex="1457"/>
+              <inferredType name="String" sematicsQualifier="expression" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="mergedColumnName">
+            <value xsi:type="index:VariableSymbol" name="mergedColumnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 셀이 병합될 경우 표현할 DataSet의 컬럼명을 반환합니다. 셀이 병합되지 않을 경우 columnName 속성에 설정된 컬럼의 값이 표현됩니다. 셀병합은 자동높이를 지원하지 않습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 셀이 병합될 경우 표현할 DataSet의 컬럼명을 설정합니다. 셀이 병합되지 않을 경우 columnName 속성에 설정된 컬럼의 값이 표현됩니다. 셀병합은 자동높이를 지원하지 않습니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1917" endIndex="1932"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="suppressible">
+            <value xsi:type="index:VariableSymbol" name="suppressible" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 바로 직전 로우의 값과 일치하는 셀은 텍스트를 숨기도록 할지 여부를 설정값을 반환합니다. (셀 병합 효과 제공) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 바로 직전 로우의 값과 일치하는 셀은 텍스트를 숨기도록 할지 여부를 설정합니다. (셀 병합 효과 제공) &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2300" endIndex="2311"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="suppressRef">
+            <value xsi:type="index:VariableSymbol" name="suppressRef" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> suppressible (셀 텍스트 숨김) 효과에 영향을 줄 다른 컬럼 인덱스 설정값을 반환합니다.&lt;br> (관련 속성 : [suppressible] suppressible=ture일 때 유효한 속성입니다.) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> suppressible (셀 텍스트 숨김) 효과에 영향을 줄 다른 컬럼 인덱스를 설정합니다.&lt;br> (관련 속성 : [suppressible] suppressible=ture일 때 유효한 속성입니다.) &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2788" endIndex="2798"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.DataEventType.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="31" endIndex="1420" startLine="5" endLine="71"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DataEventType" description="DataSet 이벤트 유형." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="58" endIndex="69" startLine="5" endLine="5"/>
+          <prototype/>
+          <symbols key="LOAD">
+            <value xsi:type="index:VariableSymbol" name="LOAD" description="build 메소드에 의해 데이터 구조가 재구성될 때 발생하는 이벤트.&lt;br> 초기 생성시에도 발생합니다.">
+              <region startIndex="240" endIndex="243"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="INSERT">
+            <value xsi:type="index:VariableSymbol" name="INSERT" description="로우가 추가되는 경우 발생하는 이벤트. &lt;br> 발생 메소드 : addRow, addRowData, insertRow, insertRowData">
+              <region startIndex="400" endIndex="405"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="BEFORE_INSERT">
+            <value xsi:type="index:VariableSymbol" name="BEFORE_INSERT" description="로우가 추가되기 전에 발생하는 이벤트. &lt;br> 발생 메소드 : addRow, addRowData, insertRow, insertRowData">
+              <region startIndex="562" endIndex="574"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="DELETE">
+            <value xsi:type="index:VariableSymbol" name="DELETE" description="로우가 삭제되는 경우 발생하는 이벤트.&lt;br> 발생 메소드 : deleteRow">
+              <region startIndex="695" endIndex="700"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="BEFORE_DELETE">
+            <value xsi:type="index:VariableSymbol" name="BEFORE_DELETE" description="로우가 삭제되기 전에 발생하는 이벤트.&lt;br> 발생 메소드 : deleteRow">
+              <region startIndex="821" endIndex="833"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="UPDATE">
+            <value xsi:type="index:VariableSymbol" name="UPDATE" description="로우가 업데이트되는 경우 발생하는 이벤트. &lt;br> 발생 메소드 : setValue, updateRow">
+              <region startIndex="967" endIndex="972"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="BEFORE_UPDATE">
+            <value xsi:type="index:VariableSymbol" name="BEFORE_UPDATE" description="로우가 업데이트되기 전에 발생하는 이벤트. &lt;br> 발생 메소드 : setValue, updateRow">
+              <region startIndex="1106" endIndex="1118"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="SORT">
+            <value xsi:type="index:VariableSymbol" name="SORT" description="정렬시 발생하는 이벤트.&lt;br> 발생 메소드 : setSort, setSortExpr, clearSort">
+              <region startIndex="1253" endIndex="1256"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="FILTER">
+            <value xsi:type="index:VariableSymbol" name="FILTER" description="필터시 발생하는 이벤트.&lt;br> 발생 메소드 : setFilter, setFilterExpr, clearFilter">
+              <region startIndex="1397" endIndex="1402"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.DataEventType">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.DataEventType" originalSymbolName="__anonymous1">
+          <region startIndex="42" endIndex="54"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="58" endIndex="69" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="69" endIndex="69"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.DataEventType">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.DataEventType" description="DataSet 이벤트 유형." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="42" endIndex="54"/>
+        <prototype/>
+        <symbols key="LOAD">
+          <value xsi:type="index:VariableSymbol" name="LOAD" description="build 메소드에 의해 데이터 구조가 재구성될 때 발생하는 이벤트.&lt;br> 초기 생성시에도 발생합니다.">
+            <region startIndex="240" endIndex="243"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="INSERT">
+          <value xsi:type="index:VariableSymbol" name="INSERT" description="로우가 추가되는 경우 발생하는 이벤트. &lt;br> 발생 메소드 : addRow, addRowData, insertRow, insertRowData">
+            <region startIndex="400" endIndex="405"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="BEFORE_INSERT">
+          <value xsi:type="index:VariableSymbol" name="BEFORE_INSERT" description="로우가 추가되기 전에 발생하는 이벤트. &lt;br> 발생 메소드 : addRow, addRowData, insertRow, insertRowData">
+            <region startIndex="562" endIndex="574"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="DELETE">
+          <value xsi:type="index:VariableSymbol" name="DELETE" description="로우가 삭제되는 경우 발생하는 이벤트.&lt;br> 발생 메소드 : deleteRow">
+            <region startIndex="695" endIndex="700"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="BEFORE_DELETE">
+          <value xsi:type="index:VariableSymbol" name="BEFORE_DELETE" description="로우가 삭제되기 전에 발생하는 이벤트.&lt;br> 발생 메소드 : deleteRow">
+            <region startIndex="821" endIndex="833"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="UPDATE">
+          <value xsi:type="index:VariableSymbol" name="UPDATE" description="로우가 업데이트되는 경우 발생하는 이벤트. &lt;br> 발생 메소드 : setValue, updateRow">
+            <region startIndex="967" endIndex="972"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="BEFORE_UPDATE">
+          <value xsi:type="index:VariableSymbol" name="BEFORE_UPDATE" description="로우가 업데이트되기 전에 발생하는 이벤트. &lt;br> 발생 메소드 : setValue, updateRow">
+            <region startIndex="1106" endIndex="1118"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="SORT">
+          <value xsi:type="index:VariableSymbol" name="SORT" description="정렬시 발생하는 이벤트.&lt;br> 발생 메소드 : setSort, setSortExpr, clearSort">
+            <region startIndex="1253" endIndex="1256"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="FILTER">
+          <value xsi:type="index:VariableSymbol" name="FILTER" description="필터시 발생하는 이벤트.&lt;br> 발생 메소드 : setFilter, setFilterExpr, clearFilter">
+            <region startIndex="1397" endIndex="1402"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

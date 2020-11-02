@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.IDataRows.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="87" endIndex="501" startLine="5" endLine="16"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="IDataRows" description="그리드에서 filterdialog-open 이벤트에서 사용자가 데이터를 정렬할 수 있도록 제공하기 위한 클래스" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="123" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="sort">
+              <value xsi:type="index:FunctionVariableSymbol" name="sort" originalSymbolName="__anonymous2">
+                <region startIndex="471" endIndex="474"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.IDataRows">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.IDataRows" originalSymbolName="__anonymous1">
+          <region startIndex="100" endIndex="108"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="sort" description="필터 팝업에 보여질 데이터를 정렬합니다. &lt;pre>&lt;code>그리드의 filterdialog-open 이벤트에서 e.data로 접근하여 그리드 헤더셀에 적용된 sort를 필터팝업에 적용하고 싶은 경우. =>  e.data.sort(grid.header.header.getSortCondition())&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="478" endIndex="498" startLine="14" endLine="14"/>
+          <params name="condition" description="정렬 조건. (ex. column1, column2 desc)" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="487" endIndex="495" startLine="14" endLine="14"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="123" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="123" endIndex="123"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="478" endIndex="498" startLine="14" endLine="14"/>
+        <childScopes>
+          <region startIndex="498" endIndex="498"/>
+          <symbolMap key="condition">
+            <value xsi:type="index:ParameterSymbol" name="condition" description="정렬 조건. (ex. column1, column2 desc)" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="487" endIndex="495" startLine="14" endLine="14"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.IDataRows">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.IDataRows" description="그리드에서 filterdialog-open 이벤트에서 사용자가 데이터를 정렬할 수 있도록 제공하기 위한 클래스" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="100" endIndex="108"/>
+        <prototype>
+          <symbols key="sort">
+            <value xsi:type="index:FunctionVariableSymbol" name="sort" originalSymbolName="__anonymous2">
+              <region startIndex="471" endIndex="474"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

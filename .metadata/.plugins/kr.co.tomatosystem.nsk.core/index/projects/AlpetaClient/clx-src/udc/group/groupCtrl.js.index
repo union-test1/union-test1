@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/group/groupCtrl.js" fileModificationTimestamp="6409919" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.group.groupCtrl" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="235" endIndex="2738" startLine="11" endLine="105"/>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/group/groupCtrl 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.group.groupCtrl">
+        <value xsi:type="index:FunctionSymbol" name="udc.group.groupCtrl" labelForOutline="groupCtrl" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="getText">
+              <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+                <region startIndex="243" endIndex="249"/>
+              </value>
+            </symbols>
+            <symbols key="setData">
+              <value xsi:type="index:FunctionVariableSymbol" name="setData" originalSymbolName="__anonymous2">
+                <region startIndex="347" endIndex="353"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getText" description="UDC 컨트롤이 그리드의 뷰 모드에서 표시할 텍스트를 반환합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="253" endIndex="333" startLine="11" endLine="14"/>
+          <inferredReturnType name="String" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="setData" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="357" endIndex="1078" startLine="16" endLine="37"/>
+          <params name="groupDataSet" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="387" endIndex="398" startLine="16" endLine="16"/>
+            <inferredType name="cpr.data.DataSet" instance="true" documentedType="true"/>
+          </params>
+          <params name="accessGroupDataSet" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="421" endIndex="438" startLine="16" endLine="16"/>
+            <inferredType name="cpr.data.DataSet" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onTreeGroupSelectionChange">
+        <value xsi:type="index:FunctionSymbol" name="onTreeGroupSelectionChange">
+          <region xsi:type="index:RegionWithLine" startIndex="1175" endIndex="1200" startLine="44" endLine="44"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1235" endIndex="1235" startLine="44" endLine="44"/>
+            <inferredType name="cpr.events.CSelectionEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onTreeAccessGroupSelectionChange">
+        <value xsi:type="index:FunctionSymbol" name="onTreeAccessGroupSelectionChange">
+          <region xsi:type="index:RegionWithLine" startIndex="1710" endIndex="1741" startLine="68" endLine="68"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1776" endIndex="1776" startLine="68" endLine="68"/>
+            <inferredType name="cpr.events.CSelectionEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.group.groupCtrl" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="253" endIndex="333" startLine="11" endLine="14"/>
+        <childScopes>
+          <region startIndex="264" endIndex="333"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="357" endIndex="1078" startLine="16" endLine="37"/>
+        <childScopes>
+          <region startIndex="442" endIndex="1078"/>
+          <symbolMap key="dsGroupList">
+            <value xsi:type="index:VariableSymbol" name="dsGroupList">
+              <region startIndex="476" endIndex="486"/>
+              <inferredType name="cpr.data.DataSet" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.DataSet.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="groupDataSet">
+            <value xsi:type="index:ParameterSymbol" name="groupDataSet" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="387" endIndex="398" startLine="16" endLine="16"/>
+              <inferredType name="cpr.data.DataSet" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="accessGroupDataSet">
+            <value xsi:type="index:ParameterSymbol" name="accessGroupDataSet" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="421" endIndex="438" startLine="16" endLine="16"/>
+              <inferredType name="cpr.data.DataSet" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="treeGroup">
+            <value xsi:type="index:VariableSymbol" name="treeGroup">
+              <region startIndex="666" endIndex="674"/>
+              <inferredType name="cpr.controls.Tree" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Tree.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="dsAccessGroupTree">
+            <value xsi:type="index:VariableSymbol" name="dsAccessGroupTree">
+              <region startIndex="768" endIndex="784"/>
+              <inferredType name="cpr.data.DataSet" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.DataSet.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="treeAccessGroup">
+            <value xsi:type="index:VariableSymbol" name="treeAccessGroup">
+              <region startIndex="994" endIndex="1008"/>
+              <inferredType name="cpr.controls.Tree" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Tree.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onTreeGroupSelectionChange" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region startIndex="1238" endIndex="1613"/>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1393" endIndex="1462" startLine="50" endLine="53"/>
+            <prototype>
+              <symbols key="oldSelection">
+                <value xsi:type="index:VariableSymbol" name="oldSelection">
+                  <region startIndex="1398" endIndex="1409"/>
+                  <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                    <typeParameters name="cpr.controls.TreeItem" instance="true"/>
+                  </inferredType>
+                </value>
+              </symbols>
+              <symbols key="newSelection">
+                <value xsi:type="index:VariableSymbol" name="newSelection">
+                  <region startIndex="1431" endIndex="1442"/>
+                  <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                    <typeParameters name="cpr.controls.TreeItem" instance="true"/>
+                  </inferredType>
+                </value>
+              </symbols>
+            </prototype>
+          </value>
+        </symbolMap>
+        <symbolMap key="selectionEvent">
+          <value xsi:type="index:VariableSymbol" name="selectionEvent">
+            <region startIndex="1319" endIndex="1332"/>
+            <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="treeGroup">
+          <value xsi:type="index:VariableSymbol" name="treeGroup">
+            <region startIndex="1287" endIndex="1295"/>
+            <inferredType name="cpr.controls.Tree" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="1235" endIndex="1235" startLine="44" endLine="44"/>
+            <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <childScopes name="selectionEvent">
+          <region xsi:type="index:RegionWithLine" startIndex="1393" endIndex="1462" startLine="50" endLine="53"/>
+          <symbolMap key="__anonymous1"/>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1085" endIndex="1613" startLine="44" endLine="61"/>
+      </childScopes>
+      <childScopes name="onTreeAccessGroupSelectionChange" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region startIndex="1779" endIndex="2736"/>
+        <symbolMap key="item">
+          <value xsi:type="index:VariableSymbol" name="item">
+            <region startIndex="2241" endIndex="2244"/>
+            <inferredType name="cpr.data.Row" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.Row.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1990" endIndex="2062" startLine="75" endLine="78"/>
+            <prototype>
+              <symbols key="oldSelection">
+                <value xsi:type="index:VariableSymbol" name="oldSelection">
+                  <region startIndex="1996" endIndex="2007"/>
+                  <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                    <typeParameters name="cpr.controls.TreeItem" instance="true"/>
+                  </inferredType>
+                </value>
+              </symbols>
+              <symbols key="newSelection">
+                <value xsi:type="index:VariableSymbol" name="newSelection">
+                  <region startIndex="2030" endIndex="2041"/>
+                  <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                    <typeParameters name="cpr.controls.TreeItem" instance="true"/>
+                  </inferredType>
+                </value>
+              </symbols>
+            </prototype>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="1776" endIndex="1776" startLine="68" endLine="68"/>
+            <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous2">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous2" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="2506" endIndex="2578" startLine="91" endLine="94"/>
+            <prototype>
+              <symbols key="oldSelection">
+                <value xsi:type="index:VariableSymbol" name="oldSelection">
+                  <region startIndex="2512" endIndex="2523"/>
+                  <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                    <typeParameters name="cpr.controls.TreeItem" instance="true"/>
+                  </inferredType>
+                </value>
+              </symbols>
+              <symbols key="newSelection">
+                <value xsi:type="index:VariableSymbol" name="newSelection">
+                  <region startIndex="2546" endIndex="2557"/>
+                  <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                    <typeParameters name="cpr.controls.TreeItem" instance="true"/>
+                  </inferredType>
+                </value>
+              </symbols>
+            </prototype>
+          </value>
+        </symbolMap>
+        <symbolMap key="dsAccessGroupTree">
+          <value xsi:type="index:VariableSymbol" name="dsAccessGroupTree">
+            <region startIndex="2086" endIndex="2102"/>
+            <inferredType name="cpr.data.DataSet" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.DataSet.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="treeAccessGroup">
+          <value xsi:type="index:VariableSymbol" name="treeAccessGroup">
+            <region startIndex="1828" endIndex="1842"/>
+            <inferredType name="cpr.controls.Tree" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="idx">
+          <value xsi:type="index:VariableSymbol" name="idx">
+            <region startIndex="2201" endIndex="2203"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="selectionEvent">
+          <value xsi:type="index:VariableSymbol" name="selectionEvent">
+            <region startIndex="1910" endIndex="1923"/>
+            <duplicatedSymbols xsi:type="index:VariableSymbol" name="selectionEvent">
+              <region startIndex="2427" endIndex="2440"/>
+              <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+            </duplicatedSymbols>
+            <inferredType name="cpr.events.CSelectionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="count">
+          <value xsi:type="index:VariableSymbol" name="count">
+            <region startIndex="2144" endIndex="2148"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <childScopes name="selectionEvent">
+          <region xsi:type="index:RegionWithLine" startIndex="1990" endIndex="2062" startLine="75" endLine="78"/>
+          <symbolMap key="__anonymous1"/>
+        </childScopes>
+        <childScopes name="selectionEvent">
+          <region xsi:type="index:RegionWithLine" startIndex="2506" endIndex="2578" startLine="91" endLine="94"/>
+          <symbolMap key="__anonymous2"/>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1620" endIndex="2736" startLine="68" endLine="104"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.group.groupCtrl">
+      <value xsi:type="index:FunctionSymbol" name="udc.group.groupCtrl" labelForOutline="groupCtrl" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="setData">
+            <value xsi:type="index:FunctionVariableSymbol" name="setData" originalSymbolName="__anonymous2">
+              <region startIndex="347" endIndex="353"/>
+            </value>
+          </symbols>
+          <symbols key="getText">
+            <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+              <region startIndex="243" endIndex="249"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

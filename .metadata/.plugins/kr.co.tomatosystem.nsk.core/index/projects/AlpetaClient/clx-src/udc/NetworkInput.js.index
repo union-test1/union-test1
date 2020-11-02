@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/NetworkInput.js" fileModificationTimestamp="6408281" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.NetworkInput" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="239" endIndex="2386" startLine="11" endLine="114"/>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/NetworkInput 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getText" description="UDC 컨트롤이 그리드의 뷰 모드에서 표시할 텍스트를 반환합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="257" endIndex="337" startLine="11" endLine="14"/>
+          <inferredReturnType name="String" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onBodyBeforeDraw">
+        <value xsi:type="index:FunctionSymbol" name="onBodyBeforeDraw">
+          <region xsi:type="index:RegionWithLine" startIndex="1522" endIndex="1537" startLine="72" endLine="72"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1565" endIndex="1565" startLine="72" endLine="72"/>
+            <inferredType name="cpr.events.CUIEvent" instance="true"/>
+          </params>
+          <inferredReturnType kind="UNKNOWN"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onIpbValueChange">
+        <value xsi:type="index:FunctionSymbol" name="onIpbValueChange">
+          <region xsi:type="index:RegionWithLine" startIndex="435" endIndex="450" startLine="22" endLine="22"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="487" endIndex="487" startLine="22" endLine="22"/>
+            <inferredType name="cpr.events.CValueChangeEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onIpbKeydown">
+        <value xsi:type="index:FunctionSymbol" name="onIpbKeydown">
+          <region xsi:type="index:RegionWithLine" startIndex="703" endIndex="714" startLine="36" endLine="36"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="748" endIndex="748" startLine="36" endLine="36"/>
+            <inferredType name="cpr.events.CKeyboardEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.NetworkInput">
+        <value xsi:type="index:FunctionSymbol" name="udc.NetworkInput" labelForOutline="NetworkInput" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="strIP">
+              <value xsi:type="index:AppPropertySymbol" name="strIP" bindable="true">
+                <region/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="getText">
+              <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+                <region startIndex="247" endIndex="253"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="onIpbKeyup">
+        <value xsi:type="index:FunctionSymbol" name="onIpbKeyup">
+          <region xsi:type="index:RegionWithLine" startIndex="962" endIndex="971" startLine="51" endLine="51"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1005" endIndex="1005" startLine="51" endLine="51"/>
+            <inferredType name="cpr.events.CKeyboardEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.NetworkInput" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="257" endIndex="337" startLine="11" endLine="14"/>
+        <childScopes>
+          <region startIndex="268" endIndex="337"/>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onIpbValueChange" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region startIndex="490" endIndex="618"/>
+        <symbolMap key="ipb">
+          <value xsi:type="index:VariableSymbol" name="ipb">
+            <region startIndex="543" endIndex="545"/>
+            <inferredType name="cpr.controls.InputBox" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="487" endIndex="487" startLine="22" endLine="22"/>
+            <inferredType name="cpr.events.CValueChangeEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CValueChangeEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="347" endIndex="618" startLine="22" endLine="29"/>
+      </childScopes>
+      <childScopes name="onIpbKeydown" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region startIndex="751" endIndex="876"/>
+        <symbolMap key="ipb">
+          <value xsi:type="index:VariableSymbol" name="ipb">
+            <region startIndex="804" endIndex="806"/>
+            <inferredType name="cpr.controls.InputBox" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="748" endIndex="748" startLine="36" endLine="36"/>
+            <inferredType name="cpr.events.CKeyboardEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CKeyboardEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="625" endIndex="876" startLine="36" endLine="44"/>
+      </childScopes>
+      <childScopes name="onIpbKeyup" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region startIndex="1008" endIndex="1394"/>
+        <symbolMap key="ipb">
+          <value xsi:type="index:VariableSymbol" name="ipb">
+            <region startIndex="1061" endIndex="1063"/>
+            <inferredType name="cpr.controls.InputBox" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="1005" endIndex="1005" startLine="51" endLine="51"/>
+            <inferredType name="cpr.events.CKeyboardEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CKeyboardEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="883" endIndex="1394" startLine="51" endLine="65"/>
+      </childScopes>
+      <childScopes name="onBodyBeforeDraw" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region startIndex="1568" endIndex="2384"/>
+        <symbolMap key="strIP">
+          <value xsi:type="index:VariableSymbol" name="strIP">
+            <region startIndex="1575" endIndex="1579"/>
+            <inferredType name="String" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="1565" endIndex="1565" startLine="72" endLine="72"/>
+            <inferredType name="cpr.events.CUIEvent" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="ipSplit">
+          <value xsi:type="index:VariableSymbol" name="ipSplit">
+            <region startIndex="1686" endIndex="1692"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="String" instance="true" documentedType="true"/>
+            </inferredType>
+          </value>
+        </symbolMap>
+        <symbolMap key="ipMap">
+          <value xsi:type="index:VariableSymbol" name="ipMap">
+            <region startIndex="1796" endIndex="1800"/>
+            <inferredType name="cpr.data.DataMap" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.DataMap.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1401" endIndex="2384" startLine="72" endLine="113"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.NetworkInput">
+      <value xsi:type="index:FunctionSymbol" name="udc.NetworkInput" labelForOutline="NetworkInput" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="getText">
+            <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+              <region startIndex="247" endIndex="253"/>
+            </value>
+          </symbols>
+          <symbols key="strIP">
+            <value xsi:type="index:AppPropertySymbol" name="strIP" bindable="true">
+              <region/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

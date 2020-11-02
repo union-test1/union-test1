@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-67e77558" version="1.0.0.0">
+  <head std:sid="head-953dd77c">
+    <title>Basics</title>
+    <screen std:sid="screen-f662b67f" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-6e10767c" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-cfcbe28f" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-72ff759c"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-3770b8ec" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-351ca42a" handler="onBodyInit" name="init"/>
+    <cl:group std:sid="group-e3ed6607" class="cl-form-group">
+      <cl:xylayoutdata std:sid="xyl-data-25378643" height="300px" horizontalAnchor="BOTH" left="40px" right="40px" top="40px" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-d75bd726" id="btn1" value="Button" visible="false">
+        <cl:formdata std:sid="f-data-0590fb17" col="0" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-fd61953e" id="btn2" value="Button">
+        <cl:formdata std:sid="f-data-26c9b939" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-47a0242f" id="btn3" value="Button">
+        <cl:formdata std:sid="f-data-31259093" col="2" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-eff83793" value="나타나기">
+        <cl:listener std:sid="listener-003e0487" handler="onButtonClick" name="click"/>
+        <cl:formdata std:sid="f-data-8deebf24" col="0" row="1"/>
+      </cl:button>
+      <cl:button std:sid="button-c16644be" value="강조">
+        <cl:listener std:sid="listener-e389402b" handler="onButtonClick2" name="click"/>
+        <cl:formdata std:sid="f-data-1330c636" col="1" row="1"/>
+      </cl:button>
+      <cl:button std:sid="button-55d00caf" value="사라지기">
+        <cl:listener std:sid="listener-cf22db4c" handler="onButtonClick3" name="click"/>
+        <cl:formdata std:sid="f-data-fa40b9a3" col="2" row="1"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-ef953c65" hmargin="5" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10" vmargin="5" vseparatortype="BY_CLASS" vseparatorwidth="1" vspace="10">
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-6fa67b4c"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

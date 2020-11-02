@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.header.Header.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="625" endIndex="2683" startLine="14" endLine="94"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="Header" description="데이터셋의 헤더를 생성합니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="650" endIndex="701" startLine="14" endLine="14"/>
+          <params name="name" description="헤더명." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="659" endIndex="662" startLine="14" endLine="14"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="datatype" description="데이터 타입. &lt;br> cpr.data.tabledata.DataType.STRING = &quot;string&quot;;&lt;br> cpr.data.tabledata.DataType.NUMBER = &quot;number&quot;;&lt;br> cpr.data.tabledata.DataType.DECIMAL = &quot;decimal&quot;;&lt;br> cpr.data.tabledata.DataType.EXPRESSION = &quot;expression&quot;;&lt;br>" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="665" endIndex="672" startLine="14" endLine="14"/>
+            <inferredType name="cpr.data.tabledata.DataType" instance="true" documentedType="true"/>
+          </params>
+          <params name="columntype" description="해당 컬럼 타입 &lt;br> cpr.data.header.HeaderType.ORIGINAL_COLUMN : 원본 값과 현재 값을 따로 관리하고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼칩니다.&lt;br> cpr.data.header.HeaderType.DISPLAY_COLUMN : 현재 값만 가지고 있고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼치지 않습니다.&lt;br>" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="675" endIndex="684" startLine="14" endLine="14"/>
+            <inferredType name="cpr.data.header.HeaderType" instance="true" documentedType="true"/>
+          </params>
+          <params name="defaultValue" description="기본값." parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="687" endIndex="698" startLine="14" endLine="14"/>
+            <inferredType name="any" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="info">
+              <value xsi:type="index:VariableSymbol" name="info" deprecated="true" deprecationDescription="2018.11.05 API 통일화 작업. setInfo를 사용하세요. 컬럼 정보값을 설정합니다.">
+                <region startIndex="886" endIndex="889"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="setInfo">
+              <value xsi:type="index:FunctionVariableSymbol" name="setInfo" originalSymbolName="__anonymous2">
+                <region startIndex="999" endIndex="1005"/>
+              </value>
+            </symbols>
+            <symbols key="getInfo">
+              <value xsi:type="index:FunctionVariableSymbol" name="getInfo" originalSymbolName="__anonymous3">
+                <region startIndex="1112" endIndex="1118"/>
+              </value>
+            </symbols>
+            <symbols key="getName">
+              <value xsi:type="index:FunctionVariableSymbol" name="getName" originalSymbolName="__anonymous4">
+                <region startIndex="1198" endIndex="1204"/>
+              </value>
+            </symbols>
+            <symbols key="getDataType">
+              <value xsi:type="index:FunctionVariableSymbol" name="getDataType" originalSymbolName="__anonymous5">
+                <region startIndex="1532" endIndex="1542"/>
+              </value>
+            </symbols>
+            <symbols key="getColumnType">
+              <value xsi:type="index:FunctionVariableSymbol" name="getColumnType" originalSymbolName="__anonymous6">
+                <region startIndex="1847" endIndex="1859"/>
+              </value>
+            </symbols>
+            <symbols key="userAttr">
+              <value xsi:type="index:FunctionVariableSymbol" name="userAttr" originalSymbolName="__anonymous7">
+                <region startIndex="2268" endIndex="2275"/>
+              </value>
+            </symbols>
+            <symbols key="removeUserAttr">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeUserAttr" originalSymbolName="__anonymous8">
+                <region startIndex="2405" endIndex="2418"/>
+              </value>
+            </symbols>
+            <symbols key="removeAllUserAttr">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeAllUserAttr" originalSymbolName="__anonymous9">
+                <region startIndex="2506" endIndex="2522"/>
+              </value>
+            </symbols>
+            <symbols key="getUserAttrNames">
+              <value xsi:type="index:FunctionVariableSymbol" name="getUserAttrNames" originalSymbolName="__anonymous10">
+                <region startIndex="2650" endIndex="2665"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.data.header.Header">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.data.header.Header" originalSymbolName="__anonymous1">
+          <region startIndex="641" endIndex="646"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="setInfo" description="컬럼 정보값을 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1009" endIndex="1024" startLine="29" endLine="29"/>
+          <params name="info" description="설정할 정보값" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1018" endIndex="1021" startLine="29" endLine="29"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getInfo" description="컬럼 정보값을 반환합니다." returnDescription="정보값." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1122" endIndex="1133" startLine="35" endLine="35"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="getName" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1208" endIndex="1219" startLine="40" endLine="40"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="getDataType" returnDescription="데이터 타입. &lt;br> cpr.data.tabledata.DataType.STRING = &quot;string&quot;;&lt;br> cpr.data.tabledata.DataType.NUMBER = &quot;number&quot;;&lt;br> cpr.data.tabledata.DataType.DECIMAL = &quot;decimal&quot;;&lt;br> cpr.data.tabledata.DataType.EXPRESSION = &quot;expression&quot;;&lt;br>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1546" endIndex="1557" startLine="49" endLine="49"/>
+          <inferredReturnType name="cpr.data.tabledata.DataType" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="getColumnType" returnDescription="컬럼 타입 &lt;br> cpr.data.header.HeaderType.ORIGINAL_COLUMN : 원본 값과 현재 값을 따로 관리하고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼칩니다.&lt;br> cpr.data.header.HeaderType.DISPLAY_COLUMN : 현재 값만 가지고 있고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼치지 않습니다.&lt;br>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1863" endIndex="1874" startLine="56" endLine="56"/>
+          <inferredReturnType name="cpr.data.header.HeaderType" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="userAttr" description="사용자 정의 속성을 지정합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2279" endIndex="2290" startLine="75" endLine="75"/>
+          <alternateSignatures name="userAttr" description="사용자 정의 속성을 반환합니다." returnDescription="">
+            <params name="key" description="얻을 속성 이름.">
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </params>
+            <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </alternateSignatures>
+          <alternateSignatures name="userAttr" description="한번에 여러 사용자 정의 속성을 지정합니다." returnDescription="">
+            <params description="">
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </params>
+            <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </alternateSignatures>
+          <alternateSignatures name="userAttr" description="모든 사용자 정의 속성을 맵 형태로 얻습니다." returnDescription="">
+            <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredReturnType>
+          </alternateSignatures>
+          <params name="key" description="지정할 속성명">
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="지정할 속성 값.">
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="removeUserAttr" description="특정 속성 명의 사용자 정의 속성을 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2422" endIndex="2436" startLine="81" endLine="81"/>
+          <params name="key" description="제거할 사용자 정의 속성 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2431" endIndex="2433" startLine="81" endLine="81"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="removeAllUserAttr" description="모든 사용자 정의 속성들을 삭제합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2526" endIndex="2537" startLine="86" endLine="86"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="getUserAttrNames" description="모든 사용자 정의 속성 명을 반환합니다." returnDescription="모든 사용자 정의 속성 명의 배열." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2669" endIndex="2680" startLine="92" endLine="92"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="650" endIndex="701" startLine="14" endLine="14"/>
+        <childScopes>
+          <region startIndex="701" endIndex="701"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="헤더명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="659" endIndex="662" startLine="14" endLine="14"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="datatype">
+            <value xsi:type="index:ParameterSymbol" name="datatype" description="데이터 타입. &lt;br> cpr.data.tabledata.DataType.STRING = &quot;string&quot;;&lt;br> cpr.data.tabledata.DataType.NUMBER = &quot;number&quot;;&lt;br> cpr.data.tabledata.DataType.DECIMAL = &quot;decimal&quot;;&lt;br> cpr.data.tabledata.DataType.EXPRESSION = &quot;expression&quot;;&lt;br>" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="665" endIndex="672" startLine="14" endLine="14"/>
+              <inferredType name="cpr.data.tabledata.DataType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="columntype">
+            <value xsi:type="index:ParameterSymbol" name="columntype" description="해당 컬럼 타입 &lt;br> cpr.data.header.HeaderType.ORIGINAL_COLUMN : 원본 값과 현재 값을 따로 관리하고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼칩니다.&lt;br> cpr.data.header.HeaderType.DISPLAY_COLUMN : 현재 값만 가지고 있고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼치지 않습니다.&lt;br>" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="675" endIndex="684" startLine="14" endLine="14"/>
+              <inferredType name="cpr.data.header.HeaderType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="defaultValue">
+            <value xsi:type="index:ParameterSymbol" name="defaultValue" description="기본값." parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="687" endIndex="698" startLine="14" endLine="14"/>
+              <inferredType name="any" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1009" endIndex="1024" startLine="29" endLine="29"/>
+        <childScopes>
+          <region startIndex="1024" endIndex="1024"/>
+          <symbolMap key="info">
+            <value xsi:type="index:ParameterSymbol" name="info" description="설정할 정보값" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1018" endIndex="1021" startLine="29" endLine="29"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1122" endIndex="1133" startLine="35" endLine="35"/>
+        <childScopes>
+          <region startIndex="1133" endIndex="1133"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1208" endIndex="1219" startLine="40" endLine="40"/>
+        <childScopes>
+          <region startIndex="1219" endIndex="1219"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1546" endIndex="1557" startLine="49" endLine="49"/>
+        <childScopes>
+          <region startIndex="1557" endIndex="1557"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1863" endIndex="1874" startLine="56" endLine="56"/>
+        <childScopes>
+          <region startIndex="1874" endIndex="1874"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2279" endIndex="2290" startLine="75" endLine="75"/>
+        <childScopes>
+          <region startIndex="2290" endIndex="2290"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2422" endIndex="2436" startLine="81" endLine="81"/>
+        <childScopes>
+          <region startIndex="2436" endIndex="2436"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="제거할 사용자 정의 속성 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2431" endIndex="2433" startLine="81" endLine="81"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2526" endIndex="2537" startLine="86" endLine="86"/>
+        <childScopes>
+          <region startIndex="2537" endIndex="2537"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2669" endIndex="2680" startLine="92" endLine="92"/>
+        <childScopes>
+          <region startIndex="2680" endIndex="2680"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.data.header.Header">
+      <value xsi:type="index:FunctionSymbol" name="cpr.data.header.Header" description="데이터셋의 헤더를 생성합니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="641" endIndex="646"/>
+        <params name="name" description="헤더명.">
+          <region xsi:type="index:RegionWithLine" startIndex="659" endIndex="662" startLine="14" endLine="14"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="datatype" description="데이터 타입. &lt;br> cpr.data.tabledata.DataType.STRING = &quot;string&quot;;&lt;br> cpr.data.tabledata.DataType.NUMBER = &quot;number&quot;;&lt;br> cpr.data.tabledata.DataType.DECIMAL = &quot;decimal&quot;;&lt;br> cpr.data.tabledata.DataType.EXPRESSION = &quot;expression&quot;;&lt;br>" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="665" endIndex="672" startLine="14" endLine="14"/>
+          <inferredType name="cpr.data.tabledata.DataType" instance="true" documentedType="true"/>
+        </params>
+        <params name="columntype" description="해당 컬럼 타입 &lt;br> cpr.data.header.HeaderType.ORIGINAL_COLUMN : 원본 값과 현재 값을 따로 관리하고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼칩니다.&lt;br> cpr.data.header.HeaderType.DISPLAY_COLUMN : 현재 값만 가지고 있고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼치지 않습니다.&lt;br>" parameterIndex="2">
+          <region xsi:type="index:RegionWithLine" startIndex="675" endIndex="684" startLine="14" endLine="14"/>
+          <inferredType name="cpr.data.header.HeaderType" instance="true" documentedType="true"/>
+        </params>
+        <params name="defaultValue" description="기본값." parameterIndex="3">
+          <region xsi:type="index:RegionWithLine" startIndex="687" endIndex="698" startLine="14" endLine="14"/>
+          <inferredType name="any" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="info">
+            <value xsi:type="index:VariableSymbol" name="info" deprecated="true" deprecationDescription="2018.11.05 API 통일화 작업. setInfo를 사용하세요. 컬럼 정보값을 설정합니다.">
+              <region startIndex="886" endIndex="889"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="setInfo">
+            <value xsi:type="index:FunctionVariableSymbol" name="setInfo" originalSymbolName="__anonymous2">
+              <region startIndex="999" endIndex="1005"/>
+            </value>
+          </symbols>
+          <symbols key="getInfo">
+            <value xsi:type="index:FunctionVariableSymbol" name="getInfo" originalSymbolName="__anonymous3">
+              <region startIndex="1112" endIndex="1118"/>
+            </value>
+          </symbols>
+          <symbols key="getName">
+            <value xsi:type="index:FunctionVariableSymbol" name="getName" originalSymbolName="__anonymous4">
+              <region startIndex="1198" endIndex="1204"/>
+            </value>
+          </symbols>
+          <symbols key="getDataType">
+            <value xsi:type="index:FunctionVariableSymbol" name="getDataType" originalSymbolName="__anonymous5">
+              <region startIndex="1532" endIndex="1542"/>
+            </value>
+          </symbols>
+          <symbols key="getColumnType">
+            <value xsi:type="index:FunctionVariableSymbol" name="getColumnType" originalSymbolName="__anonymous6">
+              <region startIndex="1847" endIndex="1859"/>
+            </value>
+          </symbols>
+          <symbols key="userAttr">
+            <value xsi:type="index:FunctionVariableSymbol" name="userAttr" originalSymbolName="__anonymous7">
+              <region startIndex="2268" endIndex="2275"/>
+            </value>
+          </symbols>
+          <symbols key="removeUserAttr">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeUserAttr" originalSymbolName="__anonymous8">
+              <region startIndex="2405" endIndex="2418"/>
+            </value>
+          </symbols>
+          <symbols key="removeAllUserAttr">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeAllUserAttr" originalSymbolName="__anonymous9">
+              <region startIndex="2506" endIndex="2522"/>
+            </value>
+          </symbols>
+          <symbols key="getUserAttrNames">
+            <value xsi:type="index:FunctionVariableSymbol" name="getUserAttrNames" originalSymbolName="__anonymous10">
+              <region startIndex="2650" endIndex="2665"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

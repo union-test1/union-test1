@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/ajax.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="761" endIndex="2747" startLine="21" endLine="105"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="createRequest" description="function createRequest" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="793" endIndex="832" startLine="21" endLine="21"/>
+          <inferredReturnType name="XMLHttpRequest" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="XMLHttpRequest">
+        <value xsi:type="index:FunctionSymbol" name="XMLHttpRequest" baseSymbolName="Object">
+          <region xsi:type="index:RegionWithLine" startIndex="934" endIndex="947" startLine="27" endLine="27"/>
+          <prototype>
+            <symbols key="onreadystatechange">
+              <value xsi:type="index:FunctionVariableSymbol" name="onreadystatechange" originalSymbolName="__anonymous2">
+                <region startIndex="1047" endIndex="1064"/>
+              </value>
+            </symbols>
+            <symbols key="readyState">
+              <value xsi:type="index:VariableSymbol" name="readyState" description="property readyState">
+                <region startIndex="1180" endIndex="1189"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="responseText">
+              <value xsi:type="index:VariableSymbol" name="responseText" description="property responseText">
+                <region startIndex="1296" endIndex="1307"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="responseXML">
+              <value xsi:type="index:VariableSymbol" name="responseXML" description="property responseXML">
+                <region startIndex="1416" endIndex="1426"/>
+                <inferredType name="Document" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="status">
+              <value xsi:type="index:VariableSymbol" name="status" description="property status">
+                <region startIndex="1540" endIndex="1545"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="statusText">
+              <value xsi:type="index:VariableSymbol" name="statusText" description="property statusText">
+                <region startIndex="1650" endIndex="1659"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="abort">
+              <value xsi:type="index:FunctionVariableSymbol" name="abort" originalSymbolName="__anonymous3">
+                <region startIndex="1746" endIndex="1750"/>
+              </value>
+            </symbols>
+            <symbols key="getAllResponseHeaders">
+              <value xsi:type="index:FunctionVariableSymbol" name="getAllResponseHeaders" originalSymbolName="__anonymous4">
+                <region startIndex="1875" endIndex="1895"/>
+              </value>
+            </symbols>
+            <symbols key="open">
+              <value xsi:type="index:FunctionVariableSymbol" name="open" originalSymbolName="__anonymous5">
+                <region startIndex="2189" endIndex="2192"/>
+              </value>
+            </symbols>
+            <symbols key="send">
+              <value xsi:type="index:FunctionVariableSymbol" name="send" originalSymbolName="__anonymous6">
+                <region startIndex="2350" endIndex="2353"/>
+              </value>
+            </symbols>
+            <symbols key="setRequestHeader">
+              <value xsi:type="index:FunctionVariableSymbol" name="setRequestHeader" originalSymbolName="__anonymous7">
+                <region startIndex="2523" endIndex="2538"/>
+              </value>
+            </symbols>
+            <symbols key="getResponseHeader">
+              <value xsi:type="index:FunctionVariableSymbol" name="getResponseHeader" originalSymbolName="__anonymous8">
+                <region startIndex="2700" endIndex="2716"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="onreadystatechange" description="function onreadystatechange" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1066" endIndex="1077" startLine="33" endLine="33"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="abort" description="function abort()" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1752" endIndex="1763" startLine="68" endLine="68"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="getAllResponseHeaders" description="function getAllResponseHeaders()" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1897" endIndex="1918" startLine="74" endLine="74"/>
+          <inferredReturnType name="String" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="open" description="function open(method, url, async, username, password)" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2194" endIndex="2243" startLine="84" endLine="84"/>
+          <params name="method" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2203" endIndex="2208" startLine="84" endLine="84"/>
+            <inferredType name="String" instance="true" documentedType="true"/>
+          </params>
+          <params name="url" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2211" endIndex="2213" startLine="84" endLine="84"/>
+            <inferredType name="String" instance="true" documentedType="true"/>
+          </params>
+          <params name="async" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2216" endIndex="2220" startLine="84" endLine="84"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <params name="username" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2223" endIndex="2230" startLine="84" endLine="84"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <params name="password" parameterIndex="4" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.4/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2233" endIndex="2240" startLine="84" endLine="84"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="send" description="function send(body)" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2355" endIndex="2370" startLine="90" endLine="90"/>
+          <params name="body" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2364" endIndex="2367" startLine="90" endLine="90"/>
+            <inferredType name="Object" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="setRequestHeader" description="function setRequestHeader(header,value)" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2540" endIndex="2563" startLine="97" endLine="97"/>
+          <params name="header" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2549" endIndex="2554" startLine="97" endLine="97"/>
+            <inferredType name="String" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2556" endIndex="2560" startLine="97" endLine="97"/>
+            <inferredType name="String" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="getResponseHeader" description="function getAllResponseHeaders()" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2718" endIndex="2745" startLine="104" endLine="104"/>
+          <params name="header" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2727" endIndex="2732" startLine="104" endLine="104"/>
+            <inferredType name="String" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="793" endIndex="832" startLine="21" endLine="21"/>
+        <childScopes>
+          <region startIndex="804" endIndex="832"/>
+        </childScopes>
+      </childScopes>
+      <childScopes name="XMLHttpRequest" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region startIndex="951" endIndex="951"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="925" endIndex="951" startLine="27" endLine="27"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1066" endIndex="1077" startLine="33" endLine="33"/>
+        <childScopes>
+          <region startIndex="1077" endIndex="1077"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1752" endIndex="1763" startLine="68" endLine="68"/>
+        <childScopes>
+          <region startIndex="1763" endIndex="1763"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1897" endIndex="1918" startLine="74" endLine="74"/>
+        <childScopes>
+          <region startIndex="1908" endIndex="1918"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2194" endIndex="2243" startLine="84" endLine="84"/>
+        <childScopes>
+          <region startIndex="2243" endIndex="2243"/>
+          <symbolMap key="method">
+            <value xsi:type="index:ParameterSymbol" name="method" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2203" endIndex="2208" startLine="84" endLine="84"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="url">
+            <value xsi:type="index:ParameterSymbol" name="url" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2211" endIndex="2213" startLine="84" endLine="84"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="async">
+            <value xsi:type="index:ParameterSymbol" name="async" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="2216" endIndex="2220" startLine="84" endLine="84"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="username">
+            <value xsi:type="index:ParameterSymbol" name="username" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="2223" endIndex="2230" startLine="84" endLine="84"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="password">
+            <value xsi:type="index:ParameterSymbol" name="password" parameterIndex="4" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.4">
+              <region xsi:type="index:RegionWithLine" startIndex="2233" endIndex="2240" startLine="84" endLine="84"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2355" endIndex="2370" startLine="90" endLine="90"/>
+        <childScopes>
+          <region startIndex="2370" endIndex="2370"/>
+          <symbolMap key="body">
+            <value xsi:type="index:ParameterSymbol" name="body" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2364" endIndex="2367" startLine="90" endLine="90"/>
+              <inferredType name="Object" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2540" endIndex="2563" startLine="97" endLine="97"/>
+        <childScopes>
+          <region startIndex="2563" endIndex="2563"/>
+          <symbolMap key="header">
+            <value xsi:type="index:ParameterSymbol" name="header" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2549" endIndex="2554" startLine="97" endLine="97"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2556" endIndex="2560" startLine="97" endLine="97"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2718" endIndex="2745" startLine="104" endLine="104"/>
+        <childScopes>
+          <region startIndex="2735" endIndex="2745"/>
+          <symbolMap key="header">
+            <value xsi:type="index:ParameterSymbol" name="header" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2727" endIndex="2732" startLine="104" endLine="104"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="Window">
+      <value xsi:type="index:FunctionSymbol" name="Window">
+        <prototype>
+          <symbols key="createRequest">
+            <value xsi:type="index:FunctionVariableSymbol" name="createRequest" originalSymbolName="__anonymous1">
+              <region startIndex="778" endIndex="790"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="XMLHttpRequest">
+      <value xsi:type="index:FunctionSymbol" name="XMLHttpRequest" baseSymbolName="Object">
+        <region xsi:type="index:RegionWithLine" startIndex="934" endIndex="947" startLine="27" endLine="27"/>
+        <prototype>
+          <symbols key="onreadystatechange">
+            <value xsi:type="index:FunctionVariableSymbol" name="onreadystatechange" originalSymbolName="__anonymous2">
+              <region startIndex="1047" endIndex="1064"/>
+            </value>
+          </symbols>
+          <symbols key="readyState">
+            <value xsi:type="index:VariableSymbol" name="readyState" description="property readyState">
+              <region startIndex="1180" endIndex="1189"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="responseText">
+            <value xsi:type="index:VariableSymbol" name="responseText" description="property responseText">
+              <region startIndex="1296" endIndex="1307"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="responseXML">
+            <value xsi:type="index:VariableSymbol" name="responseXML" description="property responseXML">
+              <region startIndex="1416" endIndex="1426"/>
+              <inferredType name="Document" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="status">
+            <value xsi:type="index:VariableSymbol" name="status" description="property status">
+              <region startIndex="1540" endIndex="1545"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="statusText">
+            <value xsi:type="index:VariableSymbol" name="statusText" description="property statusText">
+              <region startIndex="1650" endIndex="1659"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="abort">
+            <value xsi:type="index:FunctionVariableSymbol" name="abort" originalSymbolName="__anonymous3">
+              <region startIndex="1746" endIndex="1750"/>
+            </value>
+          </symbols>
+          <symbols key="getAllResponseHeaders">
+            <value xsi:type="index:FunctionVariableSymbol" name="getAllResponseHeaders" originalSymbolName="__anonymous4">
+              <region startIndex="1875" endIndex="1895"/>
+            </value>
+          </symbols>
+          <symbols key="open">
+            <value xsi:type="index:FunctionVariableSymbol" name="open" originalSymbolName="__anonymous5">
+              <region startIndex="2189" endIndex="2192"/>
+            </value>
+          </symbols>
+          <symbols key="send">
+            <value xsi:type="index:FunctionVariableSymbol" name="send" originalSymbolName="__anonymous6">
+              <region startIndex="2350" endIndex="2353"/>
+            </value>
+          </symbols>
+          <symbols key="setRequestHeader">
+            <value xsi:type="index:FunctionVariableSymbol" name="setRequestHeader" originalSymbolName="__anonymous7">
+              <region startIndex="2523" endIndex="2538"/>
+            </value>
+          </symbols>
+          <symbols key="getResponseHeader">
+            <value xsi:type="index:FunctionVariableSymbol" name="getResponseHeader" originalSymbolName="__anonymous8">
+              <region startIndex="2700" endIndex="2716"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

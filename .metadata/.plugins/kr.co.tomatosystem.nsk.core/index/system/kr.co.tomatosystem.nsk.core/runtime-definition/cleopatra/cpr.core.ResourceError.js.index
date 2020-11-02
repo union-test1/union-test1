@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.ResourceError.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="39" endIndex="284" startLine="5" endLine="15"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ResourceError" baseSymbolName="cpr.exceptions.CError" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="64" endIndex="82" startLine="5" endLine="5"/>
+          <params name="entries" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="73" endIndex="79" startLine="5" endLine="5"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="entries">
+              <value xsi:type="index:VariableSymbol" name="entries" description="&lt;b>Readonly&lt;/b> 리소스 로드 과정중에 문제를 일으킨 요소들을 얻습니다.">
+                <region startIndex="261" endIndex="267"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.ResourceError">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.ResourceError" originalSymbolName="__anonymous1">
+          <region startIndex="48" endIndex="60"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="64" endIndex="82" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="82" endIndex="82"/>
+          <symbolMap key="entries">
+            <value xsi:type="index:ParameterSymbol" name="entries" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="73" endIndex="79" startLine="5" endLine="5"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.ResourceError">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.ResourceError" baseSymbolName="cpr.exceptions.CError" anonymousFunction="true">
+        <region startIndex="48" endIndex="60"/>
+        <params name="entries" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="73" endIndex="79" startLine="5" endLine="5"/>
+          <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="entries">
+            <value xsi:type="index:VariableSymbol" name="entries" description="&lt;b>Readonly&lt;/b> 리소스 로드 과정중에 문제를 일으킨 요소들을 얻습니다.">
+              <region startIndex="261" endIndex="267"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

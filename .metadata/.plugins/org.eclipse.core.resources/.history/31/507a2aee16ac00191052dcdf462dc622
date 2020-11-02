@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5d9740be" version="1.0.0.0">
+  <head std:sid="head-a578d27b">
+    <title>AuthServer</title>
+    <screen std:sid="screen-e7c0a7bc" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-cbbfcd78" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-bd560d49" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-08a9b631">
+      <cl:datamap std:sid="d-map-ec4e5e3b" id="ASConfig">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" defaultvalue="101" name="ServerID"/>
+          <cl:datacolumn datatype="number" defaultvalue="0" name="ServerMode"/>
+          <cl:datacolumn defaultvalue="" name="DSServerAddress"/>
+          <cl:datacolumn datatype="number" defaultvalue="9101" name="DSServerPort"/>
+          <cl:datacolumn defaultvalue="mssql" name="DBDriverName"/>
+          <cl:datacolumn defaultvalue="" name="DBAddress"/>
+          <cl:datacolumn name="InstanceName"/>
+          <cl:datacolumn datatype="number" defaultvalue="1433" name="DBPort"/>
+          <cl:datacolumn defaultvalue="" name="DBID"/>
+          <cl:datacolumn defaultvalue="" name="DBPassword"/>
+          <cl:datacolumn defaultvalue="false" name="IsEncrypt"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-48a1646c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-21c775dd" handler="onBodyLoad" name="load"/>
+    <cl:listener std:sid="listener-04985852" handler="onBodyUnload" name="unload"/>
+    <cl:group std:sid="group-e03590ca" id="AUSIN_grpMain">
+      <cl:xylayoutdata std:sid="xyl-data-f5f2cca8" height="461px" horizontalAnchor="LEFT" left="10px" top="10px" verticalAnchor="TOP" width="544px"/>
+      <cl:output std:sid="output-fb4fdacf" style="font-weight:700; font-size:14px; text-align:left;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_BasicSetting"/>
+        <cl:formdata std:sid="f-data-d6263a29" col="0" colspan="2" row="0" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-e7b6202f" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_Id"/>
+        <cl:formdata std:sid="f-data-0a485a0f" col="0" row="1"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-b079bee6" id="cmb1" style="font-size:14px;" tabindex="0">
+        <cl:datamapbind property="value" columnname="ServerID" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-d568167e" col="1" row="1"/>
+        <cl:item label="101" value="101"/>
+        <cl:item label="102" value="102"/>
+      </cl:combobox>
+      <cl:output std:sid="output-a6340922" style="font-weight:700; font-size:14px; text-align:left;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_DataServerConnectionSettings"/>
+        <cl:formdata std:sid="f-data-23181287" col="0" colspan="2" row="3" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-0cd4fac2" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_Ip"/>
+        <cl:formdata std:sid="f-data-e2368188" col="0" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-735e7d47" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_Port"/>
+        <cl:formdata std:sid="f-data-86fa5e19" col="0" row="5"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-7c96d56b" id="ASC_ipbDSAddress" style="font-size:14px;">
+        <cl:datamapbind property="value" columnname="DSServerAddress" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-b410007b" col="1" row="4"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-20fc2404" style="font-weight:700; font-size:14px; text-align:left;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_DataBaseConnectionSettings"/>
+        <cl:formdata std:sid="f-data-e4092f39" col="0" colspan="2" row="7" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-1bcf1afb" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_Ip"/>
+        <cl:formdata std:sid="f-data-fc216cac" col="0" row="9"/>
+      </cl:output>
+      <cl:output std:sid="output-4ec0e92c" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_Port"/>
+        <cl:formdata std:sid="f-data-e71f75e4" col="0" row="10"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-c3265ca5" id="ASC_ipbDBAddress" style="font-size:14px;">
+        <cl:datamapbind property="value" columnname="DBAddress" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-c788fc57" col="1" row="9"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-62e72318" id="AUSIN_outputInstanceName" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_InstanceName"/>
+        <cl:formdata std:sid="f-data-b219e53b" col="0" row="11"/>
+      </cl:output>
+      <cl:output std:sid="output-ef892309" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_Id"/>
+        <cl:formdata std:sid="f-data-42790a4c" col="0" row="12"/>
+      </cl:output>
+      <cl:output std:sid="output-6834ad89" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_Password"/>
+        <cl:formdata std:sid="f-data-4beb36de" col="0" row="13"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-8264fc23" id="ipb5" style="font-size:14px;">
+        <cl:datamapbind property="value" columnname="InstanceName" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-20cb3711" col="1" row="11"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-bfc810d1" id="ipb6" style="font-size:14px;">
+        <cl:datamapbind property="value" columnname="DBID" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-2fe40e3e" col="1" row="12"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-6b0e19f0" id="ipb7" style="font-size:14px;" secret="true">
+        <cl:datamapbind property="value" columnname="DBPassword" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-dc6b0d88" col="1" row="13"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-26d65d5c" style="background-color:#f6f6f6; border-right-style:solid; border-bottom-color:#c5c5c5; border-top-width:1px; border-right-width:2px; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-right-color:#c5c5c5; border-top-style:solid; text-align:center;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_DBKinds"/>
+        <cl:formdata std:sid="f-data-40c0a369" col="0" row="8"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-a9a24a44" id="cmb2" style="font-size:14px;" preventinput="true" readonly="false" tabindex="0">
+        <cl:listener std:sid="listener-7f34ec4a" handler="onCmb2SelectionChange" name="selection-change"/>
+        <cl:datamapbind property="value" columnname="DBDriverName" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-5532d344" col="1" row="8"/>
+        <cl:item label="MS SQL Server" value="mssql"/>
+        <cl:item label="Maria DB" value="maria"/>
+      </cl:combobox>
+      <cl:numbereditor std:sid="n-editor-d440ac20" id="nbe1" style="font-size:14px;" spinbutton="false">
+        <cl:datamapbind property="value" columnname="DSServerPort" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-98315e7f" col="1" row="5"/>
+      </cl:numbereditor>
+      <cl:numbereditor std:sid="n-editor-aee900cc" id="nbe2" style="font-size:14px;" spinbutton="false">
+        <cl:datamapbind property="value" columnname="DBPort" datacontrolid="ASConfig"/>
+        <cl:formdata std:sid="f-data-5df19c42" col="1" row="10"/>
+      </cl:numbereditor>
+      <cl:formlayout std:sid="f-layout-aceee5fb">
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="10" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="2" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-0a3539ae"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

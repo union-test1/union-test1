@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.exceptions.ErrorContext.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="30" endIndex="978" startLine="5" endLine="48"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ErrorContext" description="에러의 발생 문맥" baseSymbolName="String" anonymousFunction="true" classType="enum">
+          <region xsi:type="index:RegionWithLine" startIndex="60" endIndex="71" startLine="5" endLine="5"/>
+          <prototype/>
+          <symbols key="UNKNOWN">
+            <value xsi:type="index:StringEnumFieldSymbol" name="UNKNOWN" description="오류가 문맥을 특정할 수 없는 경우를 가리킵니다." literal="unknown">
+              <region startIndex="196" endIndex="202"/>
+              <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="EVENT_LISTENER">
+            <value xsi:type="index:StringEnumFieldSymbol" name="EVENT_LISTENER" description="사용자 이벤트 리스너가 오류를 일으킨 경우를 나타냅니다." literal="event-listener">
+              <region startIndex="289" endIndex="302"/>
+              <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="RENDERING_FAIL">
+            <value xsi:type="index:StringEnumFieldSymbol" name="RENDERING_FAIL" description="컨트롤 렌더링에 실패한 경우를 가리킵니다. 일반적으로 잘못된 설정에서 비롯합니다." literal="rendering-fail">
+              <region startIndex="410" endIndex="423"/>
+              <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="DEFERRED_TASK">
+            <value xsi:type="index:StringEnumFieldSymbol" name="DEFERRED_TASK" description="디퍼드 업데이트 매니저에 async()로 예약된 함수가 오류를 일으킨 경우를 가리킵니다." literal="deferred-task">
+              <region startIndex="535" endIndex="547"/>
+              <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="NOTIFICATION_SUBSCRIBER">
+            <value xsi:type="index:StringEnumFieldSymbol" name="NOTIFICATION_SUBSCRIBER" description="노티피케이션 구독 함수가 오류를 일으킨 경우를 가리킵니다." literal="notification-subscriber">
+              <region startIndex="641" endIndex="663"/>
+              <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="EXPRESSION">
+            <value xsi:type="index:StringEnumFieldSymbol" name="EXPRESSION" description="익스프레션 실행 도중의 일어난 오류를 가리킵니다." literal="expression">
+              <region startIndex="762" endIndex="771"/>
+              <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="PROMISE">
+            <value xsi:type="index:StringEnumFieldSymbol" name="PROMISE" description="프로미스 then() 구문으로 연결된 함수의 오류를 가리킵니다." literal="promise">
+              <region startIndex="865" endIndex="871"/>
+              <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="SUBMISSION">
+            <value xsi:type="index:StringEnumFieldSymbol" name="SUBMISSION" description="서브미션 처리중에 발생한 에러를 가리킵니다." literal="submission">
+              <region startIndex="951" endIndex="960"/>
+              <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.exceptions.ErrorContext">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.exceptions.ErrorContext" originalSymbolName="__anonymous1">
+          <region startIndex="45" endIndex="56"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="60" endIndex="71" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="71" endIndex="71"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.exceptions.ErrorContext">
+      <value xsi:type="index:FunctionSymbol" name="cpr.exceptions.ErrorContext" description="에러의 발생 문맥" baseSymbolName="String" anonymousFunction="true" classType="enum">
+        <region startIndex="45" endIndex="56"/>
+        <prototype/>
+        <symbols key="UNKNOWN">
+          <value xsi:type="index:StringEnumFieldSymbol" name="UNKNOWN" description="오류가 문맥을 특정할 수 없는 경우를 가리킵니다." literal="unknown">
+            <region startIndex="196" endIndex="202"/>
+            <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="EVENT_LISTENER">
+          <value xsi:type="index:StringEnumFieldSymbol" name="EVENT_LISTENER" description="사용자 이벤트 리스너가 오류를 일으킨 경우를 나타냅니다." literal="event-listener">
+            <region startIndex="289" endIndex="302"/>
+            <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="RENDERING_FAIL">
+          <value xsi:type="index:StringEnumFieldSymbol" name="RENDERING_FAIL" description="컨트롤 렌더링에 실패한 경우를 가리킵니다. 일반적으로 잘못된 설정에서 비롯합니다." literal="rendering-fail">
+            <region startIndex="410" endIndex="423"/>
+            <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="DEFERRED_TASK">
+          <value xsi:type="index:StringEnumFieldSymbol" name="DEFERRED_TASK" description="디퍼드 업데이트 매니저에 async()로 예약된 함수가 오류를 일으킨 경우를 가리킵니다." literal="deferred-task">
+            <region startIndex="535" endIndex="547"/>
+            <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="NOTIFICATION_SUBSCRIBER">
+          <value xsi:type="index:StringEnumFieldSymbol" name="NOTIFICATION_SUBSCRIBER" description="노티피케이션 구독 함수가 오류를 일으킨 경우를 가리킵니다." literal="notification-subscriber">
+            <region startIndex="641" endIndex="663"/>
+            <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="EXPRESSION">
+          <value xsi:type="index:StringEnumFieldSymbol" name="EXPRESSION" description="익스프레션 실행 도중의 일어난 오류를 가리킵니다." literal="expression">
+            <region startIndex="762" endIndex="771"/>
+            <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="PROMISE">
+          <value xsi:type="index:StringEnumFieldSymbol" name="PROMISE" description="프로미스 then() 구문으로 연결된 함수의 오류를 가리킵니다." literal="promise">
+            <region startIndex="865" endIndex="871"/>
+            <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="SUBMISSION">
+          <value xsi:type="index:StringEnumFieldSymbol" name="SUBMISSION" description="서브미션 처리중에 발생한 에러를 가리킵니다." literal="submission">
+            <region startIndex="951" endIndex="960"/>
+            <inferredType name="cpr.exceptions.ErrorContext" instance="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

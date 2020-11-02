@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.bind.ItemSelectionContext.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="211" endIndex="347" startLine="6" endLine="9"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ItemSelectionContext" description="아이템 선택 행 컨텍스트, 트리 및 리스트 박스등과 같은 컨트롤의 선택 문맥에 따라 바인딩 컨텍스트를 제공합니다." baseSymbolName="cpr.bind.DataBindContext" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="243" endIndex="270" startLine="6" endLine="6"/>
+          <params name="itemBasedControl" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="252" endIndex="267" startLine="6" endLine="6"/>
+            <inferredType name="cpr.controls.provider.AbstractListDataProvider" instance="true" documentedType="true">
+              <typeParameters name="cpr.controls.Item" instance="true" documentedType="true"/>
+              <typeParameters name="cpr.controls.ItemSetConfig" instance="true" documentedType="true"/>
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <prototype/>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.bind.ItemSelectionContext">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.bind.ItemSelectionContext" originalSymbolName="__anonymous1">
+          <region startIndex="220" endIndex="239"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="243" endIndex="270" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="270" endIndex="270"/>
+          <symbolMap key="itemBasedControl">
+            <value xsi:type="index:ParameterSymbol" name="itemBasedControl" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="252" endIndex="267" startLine="6" endLine="6"/>
+              <inferredType name="cpr.controls.provider.AbstractListDataProvider" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.Item" instance="true" documentedType="true"/>
+                <typeParameters name="cpr.controls.ItemSetConfig" instance="true" documentedType="true"/>
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.bind.ItemSelectionContext">
+      <value xsi:type="index:FunctionSymbol" name="cpr.bind.ItemSelectionContext" description="아이템 선택 행 컨텍스트, 트리 및 리스트 박스등과 같은 컨트롤의 선택 문맥에 따라 바인딩 컨텍스트를 제공합니다." baseSymbolName="cpr.bind.DataBindContext" anonymousFunction="true">
+        <region startIndex="220" endIndex="239"/>
+        <params name="itemBasedControl" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="252" endIndex="267" startLine="6" endLine="6"/>
+          <inferredType name="cpr.controls.provider.AbstractListDataProvider" instance="true" documentedType="true">
+            <typeParameters name="cpr.controls.Item" instance="true" documentedType="true"/>
+            <typeParameters name="cpr.controls.ItemSetConfig" instance="true" documentedType="true"/>
+            <typeParameters name="Object" instance="true" documentedType="true"/>
+          </inferredType>
+        </params>
+        <prototype/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

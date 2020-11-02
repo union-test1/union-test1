@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.protocols.ResponseData.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="83" endIndex="561" startLine="5" endLine="26"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ResponseData" description="서브미션을 통해 서버로 부터 전달받은 데이터로 갱신할 Data 컴포넌트의 정보를 담고 있는 객체입니다." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="123" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="data">
+              <value xsi:type="index:VariableSymbol" name="data" description="서브미션을 통해 갱신 할 Data 컴포넌트 객체입니다.">
+                <region startIndex="277" endIndex="280"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="isadd">
+              <value xsi:type="index:VariableSymbol" name="isadd" description="기존 데이터를 유지한 상태로 추가할지 기존 데이터를 전달받은 데이터로 교체할지 여부를 결정합니다.">
+                <region startIndex="421" endIndex="425"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="alias">
+              <value xsi:type="index:VariableSymbol" name="alias" description="서버로 부터 전달받은 데이터를 매핑할 별칭입니다.">
+                <region startIndex="539" endIndex="543"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.protocols.ResponseData">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.protocols.ResponseData" originalSymbolName="__anonymous1">
+          <region startIndex="97" endIndex="108"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="123" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="123" endIndex="123"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.protocols.ResponseData">
+      <value xsi:type="index:FunctionSymbol" name="cpr.protocols.ResponseData" description="서브미션을 통해 서버로 부터 전달받은 데이터로 갱신할 Data 컴포넌트의 정보를 담고 있는 객체입니다." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="97" endIndex="108"/>
+        <prototype>
+          <symbols key="data">
+            <value xsi:type="index:VariableSymbol" name="data" description="서브미션을 통해 갱신 할 Data 컴포넌트 객체입니다.">
+              <region startIndex="277" endIndex="280"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="isadd">
+            <value xsi:type="index:VariableSymbol" name="isadd" description="기존 데이터를 유지한 상태로 추가할지 기존 데이터를 전달받은 데이터로 교체할지 여부를 결정합니다.">
+              <region startIndex="421" endIndex="425"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="alias">
+            <value xsi:type="index:VariableSymbol" name="alias" description="서버로 부터 전달받은 데이터를 매핑할 별칭입니다.">
+              <region startIndex="539" endIndex="543"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

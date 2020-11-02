@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.header.DataHeader.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="117" endIndex="257" startLine="7" endLine="10"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DataHeader" baseSymbolName="cpr.data.header.Header" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="146" endIndex="185" startLine="7" endLine="7"/>
+          <params name="name" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="155" endIndex="158" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="datatype" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="168" startLine="7" endLine="7"/>
+            <inferredType name="cpr.data.tabledata.DataType" instance="true" documentedType="true"/>
+          </params>
+          <params name="defaultValue" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="171" endIndex="182" startLine="7" endLine="7"/>
+            <inferredType name="any" instance="true" documentedType="true"/>
+          </params>
+          <prototype/>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.data.header.DataHeader">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.data.header.DataHeader" originalSymbolName="__anonymous1">
+          <region startIndex="133" endIndex="142"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="146" endIndex="185" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="185" endIndex="185"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="155" endIndex="158" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="datatype">
+            <value xsi:type="index:ParameterSymbol" name="datatype" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="168" startLine="7" endLine="7"/>
+              <inferredType name="cpr.data.tabledata.DataType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="defaultValue">
+            <value xsi:type="index:ParameterSymbol" name="defaultValue" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="171" endIndex="182" startLine="7" endLine="7"/>
+              <inferredType name="any" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.data.header.DataHeader">
+      <value xsi:type="index:FunctionSymbol" name="cpr.data.header.DataHeader" baseSymbolName="cpr.data.header.Header" anonymousFunction="true">
+        <region startIndex="133" endIndex="142"/>
+        <params name="name" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="155" endIndex="158" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="datatype" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="168" startLine="7" endLine="7"/>
+          <inferredType name="cpr.data.tabledata.DataType" instance="true" documentedType="true"/>
+        </params>
+        <params name="defaultValue" description="" parameterIndex="2">
+          <region xsi:type="index:RegionWithLine" startIndex="171" endIndex="182" startLine="7" endLine="7"/>
+          <inferredType name="any" instance="true" documentedType="true"/>
+        </params>
+        <prototype/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

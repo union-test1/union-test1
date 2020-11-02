@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c3922db9" version="1.0.0.0">
+  <head std:sid="head-610afe86">
+    <title>SplitMDI</title>
+    <screen std:sid="screen-81e433e7" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-a3ae0424" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-782fb34a" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-5ed95e58"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-609122e0" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-b14ed593" handler="updateButtonEnabilities" name="init"/>
+    <cl:group std:sid="group-686545ff" id="mdiGroup">
+      <cl:xylayoutdata std:sid="xyl-data-b37cd8ee" bottom="40px" horizontalAnchor="BOTH" left="40px" right="40px" top="40px" verticalAnchor="BOTH"/>
+      <cl:mdifolder std:sid="mdifolder-b91c589e" id="leftMDI">
+        <cl:listener std:sid="listener-6c05e7f7" handler="updateButtonEnabilities" name="selection-change"/>
+        <cl:formdata std:sid="f-data-64991fdf" col="0" row="1"/>
+        <cl:tabitem std:sid="t-item-546f8d9d" selected="true" text="SubA">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:embeddedapp std:sid="e-app-7c9337b3" src="SubA.clx">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+          </cl:embeddedapp>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-58a4f1c9" text="SubB">
+          <cl:embeddedapp std:sid="e-app-0aa0bf7d" src="SubB.clx">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+          </cl:embeddedapp>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-33a066a5" text="SubC">
+          <cl:embeddedapp std:sid="e-app-544820d9" src="SubC.clx">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+          </cl:embeddedapp>
+        </cl:tabitem>
+      </cl:mdifolder>
+      <cl:group std:sid="group-c070c176" id="buttonGroup">
+        <cl:formdata std:sid="f-data-907f11f0" col="0" halign="RIGHT" row="0"/>
+        <cl:button std:sid="button-bfdb2cb5" id="toLeftBtn" value="&lt;&lt;">
+          <cl:listener std:sid="listener-0967fccb" handler="moveToLeft" name="click"/>
+          <cl:formdata std:sid="f-data-ed467df1" col="0" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-e44510ba" id="toRightBtn" value=">>">
+          <cl:listener std:sid="listener-d2f8c722" handler="moveToRight" name="click"/>
+          <cl:formdata std:sid="f-data-323770f9" col="1" row="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-7b856dad">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-34945dc2">
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-88d345ff"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

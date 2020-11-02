@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.header.Headers.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="12" endIndex="246" startLine="4" endLine="13"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="Headers" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="38" endIndex="49" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="clear">
+              <value xsi:type="index:FunctionVariableSymbol" name="clear" originalSymbolName="__anonymous2">
+                <region startIndex="214" endIndex="218"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.data.header.Headers">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.data.header.Headers" originalSymbolName="__anonymous1">
+          <region startIndex="28" endIndex="34"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="clear" description="헤더들 모두 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="222" endIndex="243" startLine="11" endLine="11"/>
+          <params name="headerType" optional="true" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="231" endIndex="240" startLine="11" endLine="11"/>
+            <inferredType name="cpr.data.header.HeaderType" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="38" endIndex="49" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="49" endIndex="49"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="222" endIndex="243" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="243" endIndex="243"/>
+          <symbolMap key="headerType">
+            <value xsi:type="index:ParameterSymbol" name="headerType" optional="true" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="231" endIndex="240" startLine="11" endLine="11"/>
+              <inferredType name="cpr.data.header.HeaderType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.data.header.Headers">
+      <value xsi:type="index:FunctionSymbol" name="cpr.data.header.Headers" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="28" endIndex="34"/>
+        <prototype>
+          <symbols key="clear">
+            <value xsi:type="index:FunctionVariableSymbol" name="clear" originalSymbolName="__anonymous2">
+              <region startIndex="214" endIndex="218"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

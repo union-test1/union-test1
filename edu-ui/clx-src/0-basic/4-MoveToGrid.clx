@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d79bddfc" version="1.0.0.0">
+  <head std:sid="head-025b4051">
+    <title>MoveToGrid</title>
+    <screen std:sid="screen-018897c0" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-a2e5eb55" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-973ec81e" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-844f558d">
+      <cl:dataset std:sid="d-set-39a05583" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="div"/>
+          <cl:datacolumn name="name"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="div"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[이름]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="div"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[사용번호]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="div"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[부서]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="div"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[학위]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="div"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[사진]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-e9738f7e" id="ds2">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="div"/>
+          <cl:datacolumn name="name"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-aa490243" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-14854561">
+      <cl:xylayoutdata bottom="50px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+      <cl:grid std:sid="grid-a6073f4b" id="grd1" columnMovable="false" columnResizable="true" datasetid="ds1" readonly="true" selectionmulti="multi" showdeletedrow="false">
+        <cl:formdata std:sid="f-data-6296b46c" col="0" row="0"/>
+        <cl:gridcolumn std:sid="g-column-be362830"/>
+        <cl:gridcolumn std:sid="g-column-b48db6e7"/>
+        <cl:gridheader>
+          <cl:gridrow std:sid="g-row-ed4ee1ad"/>
+          <cl:gridcell std:sid="gh-cell-0ed7cb16" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="div" text="구분"/>
+          <cl:gridcell std:sid="gh-cell-fe38613e" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="name" text="이름"/>
+        </cl:gridheader>
+        <cl:griddetail>
+          <cl:gridrow std:sid="g-row-3fc21396"/>
+          <cl:gridcell std:sid="gd-cell-954078e7" colindex="0" rowindex="0" columnname="div">
+            <cl:inputbox std:sid="i-box-1564429d" id="ipb1"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-ccf2bb19" colindex="1" rowindex="0" columnname="name">
+            <cl:inputbox std:sid="i-box-e19cf8ac" id="ipb2"/>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:grid std:sid="grid-142538ef" id="grd2" columnMovable="false" columnResizable="true" datasetid="ds2" readonly="true" selectionmulti="multi" showdeletedrow="false">
+        <cl:formdata std:sid="f-data-4895c7dc" col="2" row="0"/>
+        <cl:gridcolumn std:sid="g-column-00f8386b"/>
+        <cl:gridcolumn std:sid="g-column-3d0cf2b5"/>
+        <cl:gridheader>
+          <cl:gridrow std:sid="g-row-b91297e3"/>
+          <cl:gridcell std:sid="gh-cell-e200a47b" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="div" text="구분"/>
+          <cl:gridcell std:sid="gh-cell-8f150e0b" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="name" text="이름"/>
+        </cl:gridheader>
+        <cl:griddetail>
+          <cl:gridrow std:sid="g-row-21bb6ce3"/>
+          <cl:gridcell std:sid="gd-cell-ec46d2bd" colindex="0" rowindex="0" columnname="div">
+            <cl:inputbox std:sid="i-box-65b3f799" id="ipb3"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-718fc447" colindex="1" rowindex="0" columnname="name">
+            <cl:inputbox std:sid="i-box-82e21e79" id="ipb4"/>
+          </cl:gridcell>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:group std:sid="group-ee863c3b">
+        <cl:formdata std:sid="f-data-883f121f" col="1" row="0"/>
+        <cl:button std:sid="button-a129df41" value=">">
+          <cl:listener std:sid="listener-3f020d66" handler="onButtonClick" name="click"/>
+          <cl:formdata std:sid="f-data-dff75b36" col="0" row="1"/>
+        </cl:button>
+        <cl:button std:sid="button-dd453be5" value=">>">
+          <cl:listener std:sid="listener-4ce7d310" handler="onButtonClick3" name="click"/>
+          <cl:formdata std:sid="f-data-7436ad33" col="0" row="2"/>
+        </cl:button>
+        <cl:button std:sid="button-a30f099e" value="&lt;">
+          <cl:listener std:sid="listener-121f0de2" handler="onButtonClick2" name="click"/>
+          <cl:formdata std:sid="f-data-c59c6f03" col="0" row="3"/>
+        </cl:button>
+        <cl:button std:sid="button-540467f8" value="&lt;&lt;">
+          <cl:listener std:sid="listener-f1105804" handler="onButtonClick4" name="click"/>
+          <cl:formdata std:sid="f-data-5817bd87" col="0" row="4"/>
+        </cl:button>
+        <cl:formlayout>
+          <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="25" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-8b071829" value="적용">
+      <cl:listener std:sid="listener-9860902a" handler="onButtonClick5" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-658b4acd" bottom="20px" height="25px" horizontalAnchor="RIGHT" right="20px" verticalAnchor="BOTTOM" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-ccf94733"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

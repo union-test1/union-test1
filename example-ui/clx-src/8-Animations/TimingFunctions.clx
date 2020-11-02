@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-845ef2ee" version="1.0.0.0">
+  <head std:sid="head-413efc24">
+    <title>TimingFunctions</title>
+    <screen std:sid="screen-1df6a4c7" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-5aac858b" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-22d82a94" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-a076a92c"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-648374e6" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-3aa86f9e" handler="onBodyInit" name="init"/>
+    <cl:button std:sid="button-64ae0268" value="All">
+      <cl:listener std:sid="listener-e0dd45f0" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-9a43c206" height="20px" horizontalAnchor="LEFT" left="20px" top="6px" verticalAnchor="TOP" width="169px"/>
+    </cl:button>
+    <cl:group std:sid="group-f06c2e3b" id="grp" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-color:gray; border-right-color:gray; border-left-width:1px; border-top-style:solid; background-color:#eeeeee; border-left-style:solid; border-bottom-width:1px; border-top-color:gray; border-bottom-style:solid; background-image:none;">
+      <cl:xylayoutdata std:sid="xyl-data-fcf68acd" height="344px" horizontalAnchor="LEFT" left="20px" top="36px" verticalAnchor="TOP" width="553px"/>
+      <cl:button std:sid="button-22ebee4d" value="EASE_IN_BACK">
+        <cl:listener std:sid="listener-a023523c" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-a4ba5e4f" height="20px" horizontalAnchor="LEFT" left="35px" top="230px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-b5b641ac" value="EASE_IN_CUBIC">
+        <cl:listener std:sid="listener-32edb88f" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-ba673317" height="20px" horizontalAnchor="LEFT" left="35px" top="140px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-7891b017" value="EASE_OUT_BACK">
+        <cl:listener std:sid="listener-0407407e" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-6c3734a5" height="20px" horizontalAnchor="LEFT" left="35px" top="260px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-54e0efed" value="EASE_OUT_CUBIC">
+        <cl:listener std:sid="listener-7adb7804" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-4f451c14" height="20px" horizontalAnchor="LEFT" left="35px" top="170px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-96e6d506" value="LINEAR">
+        <cl:listener std:sid="listener-d7d8fa88" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-2f197d22" height="20px" horizontalAnchor="LEFT" left="35px" top="20px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-106eed77" value="EASE_IN">
+        <cl:listener std:sid="listener-765920c5" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-7acd2ef5" height="20px" horizontalAnchor="LEFT" left="35px" top="50px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-2943857c" value="EASE_IN_OUT">
+        <cl:listener std:sid="listener-f8846679" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-638aa0a8" height="20px" horizontalAnchor="LEFT" left="35px" top="110px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-187fe81d" value="EASE_IN_OUT_CUBIC">
+        <cl:listener std:sid="listener-b55eaed2" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-d3329f5a" height="20px" horizontalAnchor="LEFT" left="35px" top="200px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-8511675d" value="EASE_OUT">
+        <cl:listener std:sid="listener-d234fe99" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-a833518f" height="20px" horizontalAnchor="LEFT" left="35px" top="80px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-d23b73af" value="EASE_IN_OUT_BACK">
+        <cl:listener std:sid="listener-3bf91f1e" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-b116ffd3" height="20px" horizontalAnchor="LEFT" left="35px" top="290px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-9ee6b2f7"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-655cee3e"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-df67fde3" version="1.0.0.0">
+  <head std:sid="head-a2c28708">
+    <title>OptionSystem</title>
+    <screen std:sid="screen-f0ae8f14" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" useCustomHeight="true" useCustomWidth="true" width="1024px"/>
+    <screen std:sid="screen-9174cd6e" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-f05b9afb" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-6e5beb31">
+      <cl:datamap std:sid="d-map-ee71e7db" id="OptionSystem">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" defaultvalue="1" name="DBVersion"/>
+          <cl:datacolumn datatype="number" defaultvalue="4" name="UserIDLength"/>
+          <cl:datacolumn datatype="number" name="GuestIDRangeMin"/>
+          <cl:datacolumn datatype="number" name="GuestIDRangeMax"/>
+          <cl:datacolumn datatype="number" defaultvalue="0" name="APBLevel"/>
+          <cl:datacolumn datatype="number" defaultvalue="1" name="BrandType"/>
+          <cl:datacolumn name="MasterPW"/>
+          <cl:datacolumn datatype="number" name="UserInfoEncrypt"/>
+          <cl:datacolumn datatype="number" name="AuthDataEncrypt"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-a8376713" id="sms_test" action="/v1/cardInfo" method="get">
+        <cl:listener std:sid="listener-a737c98a" handler="onSms_testSubmitDone" name="submit-done"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec dev-comment="- SELBA : 기본정보 접두어 "/>
+  </head>
+  <body std:sid="body-5548523c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-7a660506" handler="onBodyLoad" name="load"/>
+    <cl:listener std:sid="listener-8ffd8e5a" handler="onBodyUnload" name="unload"/>
+    <cl:group std:sid="group-813630ec" id="SESYS_grpMain">
+      <cl:xylayoutdata std:sid="xyl-data-c964e779" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-3f93be60" style="font-weight:700; font-size:16px;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionGeneralInfo"/>
+        <cl:formdata std:sid="f-data-4399869c" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-221e19b8" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionProgramVersion"/>
+        <cl:formdata std:sid="f-data-e3145760" halign="FILL" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-bf248257" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionDatabaseVersion"/>
+        <cl:formdata std:sid="f-data-802a4e0a" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-f0dbe451" id="SESBA_opbSystemVersion" style="border-top-width:1px; border-bottom-color:#c5c5c5; font-weight:700; border-bottom-width:1px; font-size:14px; border-top-color:#c5c5c5; border-bottom-style:solid; border-top-style:solid; text-align:center;" value="0.0.1.0">
+        <cl:formdata std:sid="f-data-9d3113d9" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-ffc8c335" style="border-bottom-color:#c5c5c5; font-weight:700; border-bottom-width:1px; font-size:14px; border-bottom-style:solid; text-align:center;">
+        <cl:datamapbind property="value" columnname="DBVersion" datacontrolid="OptionSystem"/>
+        <cl:formdata std:sid="f-data-42d7e81d" col="1" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-17e80aa7" style="font-weight:700; font-size:16px;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionSetUserDLengthLimit"/>
+        <cl:formdata std:sid="f-data-fbc20b5f" col="0" row="11"/>
+      </cl:output>
+      <cl:output std:sid="output-aeb65822" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionUserIDLength"/>
+        <cl:formdata std:sid="f-data-3505a192" col="0" row="12"/>
+      </cl:output>
+      <cl:output std:sid="output-b01cb639" class="common-controllabel" value="방문자 ID 범위" visible="false">
+        <cl:formdata std:sid="f-data-86d8fc0c" col="0" row="13"/>
+      </cl:output>
+      <cl:group std:sid="group-c83cbd47">
+        <cl:formdata std:sid="f-data-ce875285" col="1" row="13"/>
+        <cl:inputbox std:sid="i-box-a4622bb3" id="SELBA_ipbGuestIDRangeMin" style="font-size:14px; text-align:center;" visible="false">
+          <cl:datamapbind property="value" columnname="GuestIDRangeMin" datacontrolid="OptionSystem"/>
+          <cl:formdata std:sid="f-data-95b06136" col="0" row="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-c42d4168" id="SELBA_ipbGuestIDRangeMax" style="font-size:14px; text-align:center;" visible="false">
+          <cl:datamapbind property="value" columnname="GuestIDRangeMax" datacontrolid="OptionSystem"/>
+          <cl:formdata std:sid="f-data-4f3519b0" col="2" row="0"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-129692d5" style="font-weight:700; font-size:14px; text-align:center;" value="~" visible="false">
+          <cl:formdata std:sid="f-data-4896022d" col="1" row="0"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-e7b0b745">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns autoSizing="false" length="20" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-ce45a029" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionBrandType"/>
+        <cl:formdata std:sid="f-data-51390b77" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-b14f8837" style="font-weight:700; font-size:16px;" value="AntiPassback">
+        <cl:formdata std:sid="f-data-3bd34187" col="0" row="5"/>
+      </cl:output>
+      <cl:output std:sid="output-ab361630" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionLevel"/>
+        <cl:formdata std:sid="f-data-a3d00e59" col="0" row="6"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-7f3a7aa2" id="cmb1" style="font-size:14px; text-align:center;" preventinput="true">
+        <cl:datamapbind property="value" columnname="APBLevel" datacontrolid="OptionSystem"/>
+        <cl:formdata std:sid="f-data-bdbe04c6" col="1" row="6"/>
+        <cl:item label="Low" value="0"/>
+        <cl:item label="High" value="1"/>
+      </cl:combobox>
+      <cl:output std:sid="output-7c742573" style="font-weight:700; font-size:16px;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionETC"/>
+        <cl:formdata std:sid="f-data-778124ac" col="0" row="8"/>
+      </cl:output>
+      <cl:output std:sid="output-ebbf19a2" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_OptionMasterIDpassword"/>
+        <cl:formdata std:sid="f-data-7b7b684d" col="0" row="9"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-b3223a6c" id="OPSET_ipbMasterPwd" style="font-size:14px; text-align:center;" secret="true">
+        <cl:datamapbind property="value" columnname="MasterPW" datacontrolid="OptionSystem"/>
+        <cl:formdata std:sid="f-data-f7855626" col="1" row="9"/>
+      </cl:inputbox>
+      <cl:combobox std:sid="c-box-13dce097" id="cmb2" style="font-weight:bold; font-size:14px; text-align:center;" autoselect="true" hidebutton="true" preventinput="true" readonly="true">
+        <cl:datamapbind category="PROPERTY" property="value" columnname="BrandType" datacontrolid="OptionSystem"/>
+        <cl:formdata std:sid="f-data-22c4deb8" col="1" row="3"/>
+        <cl:item label="NITGEN" value="0"/>
+        <cl:item label="VIRDI" value="1"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-66fe13a1" id="SELBA_cmbUserIDLength" style="font-size:14px; text-align:center;" preventinput="true">
+        <cl:listener std:sid="listener-0d4dcd22" handler="onSELBA_cmbUserIDLengthSelectionChange" name="selection-change"/>
+        <cl:datamapbind property="value" columnname="UserIDLength" datacontrolid="OptionSystem"/>
+        <cl:formdata std:sid="f-data-16feec46" col="1" row="12"/>
+      </cl:combobox>
+      <cl:output std:sid="output-40d4648c" style="font-weight:700; font-size:16px;">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_AleptaEncrypt"/>
+        <cl:formdata std:sid="f-data-0e9a0ea4" col="0" row="15"/>
+      </cl:output>
+      <cl:output std:sid="output-85b5770c" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_UserBasicInfoEncrypt"/>
+        <cl:formdata std:sid="f-data-9d9ab229" col="0" row="16"/>
+      </cl:output>
+      <cl:output std:sid="output-ee4f72c7" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_AuthDataEncrypt"/>
+        <cl:formdata std:sid="f-data-768d1273" col="0" row="17"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-cb1745f9" id="SESFP_cmbSimilarFpCheck" style="font-size:14px; text-align:center;" preventinput="true">
+        <cl:datamapbind property="value" columnname="UserInfoEncrypt" datacontrolid="OptionSystem"/>
+        <cl:formdata std:sid="f-data-c5b29f7c" col="1" row="16"/>
+        <cl:item label="OFF" value="0"/>
+        <cl:item label="ON" value="1"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-2d259605" id="cmb3" style="font-size:14px; text-align:center;" preventinput="true">
+        <cl:datamapbind property="value" columnname="AuthDataEncrypt" datacontrolid="OptionSystem"/>
+        <cl:formdata std:sid="f-data-96a5cf1e" col="1" row="17"/>
+        <cl:item label="OFF" value="0"/>
+        <cl:item label="ON" value="1"/>
+      </cl:combobox>
+      <cl:formlayout std:sid="f-layout-6c2f29ed" hspace="0px" vspace="0px">
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="false" length="300" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-7964a111"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

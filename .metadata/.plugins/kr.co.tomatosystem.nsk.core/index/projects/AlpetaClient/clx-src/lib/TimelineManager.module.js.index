@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/lib/TimelineManager.module.js" fileModificationTimestamp="3204091" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="lib.TimelineManager" indexingType="USER_WORKSPACE_MODULE">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="329" endIndex="3190" startLine="14" endLine="123"/>
+      <symbolMap key="globals">
+        <value xsi:type="index:VariableSymbol" name="globals" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="GlobalContribution" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="lib.TimelineManager">
+        <value xsi:type="index:FunctionSymbol" name="lib.TimelineManager" labelForOutline="TimelineManager" hideFromProposal="true" baseSymbolName="cpr.core.Module">
+          <region/>
+          <prototype/>
+        </value>
+      </symbolMap>
+      <symbolMap key="GlobalContribution">
+        <value xsi:type="index:FunctionSymbol" name="GlobalContribution" hideFromProposal="true">
+          <region/>
+          <prototype>
+            <symbols key="createTzUtil">
+              <value xsi:type="index:FunctionVariableSymbol" name="createTzUtil" originalSymbolName="__anonymous6">
+                <region startIndex="3046" endIndex="3057"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="TzUtil" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="342" endIndex="597" startLine="14" endLine="20"/>
+          <params name="appInstance" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="376" endIndex="386" startLine="14" endLine="14"/>
+            <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+          </params>
+          <params name="arr" description="타임라인 배열" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="400" endIndex="402" startLine="14" endLine="14"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="mdtype" description="N 니트젠 V 버디" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="413" endIndex="418" startLine="14" endLine="14"/>
+            <inferredType name="mdtype" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="_mdtype">
+              <value xsi:type="index:VariableSymbol" name="_mdtype">
+                <region startIndex="578" endIndex="584"/>
+                <inferredType name="mdtype" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="_arr">
+              <value xsi:type="index:VariableSymbol" name="_arr">
+                <region startIndex="457" endIndex="460"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="_app">
+              <value xsi:type="index:VariableSymbol" name="_app">
+                <region startIndex="430" endIndex="433"/>
+                <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="_clssName">
+              <value xsi:type="index:VariableSymbol" name="_clssName">
+                <region startIndex="476" endIndex="484"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                  <typeParameters name="String" instance="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="allTzClear">
+              <value xsi:type="index:FunctionVariableSymbol" name="allTzClear" originalSymbolName="__anonymous5">
+                <region startIndex="2811" endIndex="2820"/>
+              </value>
+            </symbols>
+            <symbols key="addTmList">
+              <value xsi:type="index:FunctionVariableSymbol" name="addTmList" originalSymbolName="__anonymous3">
+                <region startIndex="2024" endIndex="2032"/>
+              </value>
+            </symbols>
+            <symbols key="_content">
+              <value xsi:type="index:VariableSymbol" name="_content">
+                <region startIndex="528" endIndex="535"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                  <typeParameters name="String" instance="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="selectTzClear">
+              <value xsi:type="index:FunctionVariableSymbol" name="selectTzClear" originalSymbolName="__anonymous4">
+                <region startIndex="2642" endIndex="2654"/>
+              </value>
+            </symbols>
+            <symbols key="addTmItem">
+              <value xsi:type="index:FunctionVariableSymbol" name="addTmItem" originalSymbolName="__anonymous2">
+                <region startIndex="712" endIndex="720"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="addTmItem" description="콤보박스에서 선택된 타임라인에 아이템을 넣는다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="724" endIndex="1935" startLine="29" endLine="64"/>
+          <params name="index" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="751" endIndex="755" startLine="29" endLine="29"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+          <params name="value" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="771" endIndex="775" startLine="29" endLine="29"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+          <params name="data" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.7/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="797" endIndex="800" startLine="29" endLine="29"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+          <inferredReturnType kind="UNKNOWN"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="addTmList" description="조회된 타임라인 리스트를 넣는다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2036" endIndex="2554" startLine="72" endLine="87"/>
+          <params name="json" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.4/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2045" endIndex="2048" startLine="72" endLine="72"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+          <params name="data" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.6/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2071" endIndex="2074" startLine="72" endLine="72"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="selectTzClear" description="선택한 타임라인 아이템 제거" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2658" endIndex="2758" startLine="94" endLine="100"/>
+          <params name="index" description="선택한 타임라인 객체의 인덱스" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2667" endIndex="2671" startLine="94" endLine="94"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+          <inferredReturnType kind="UNKNOWN"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="TzUtil">
+        <value xsi:type="index:FunctionVariableSymbol" name="TzUtil" originalSymbolName="__anonymous1">
+          <region startIndex="333" endIndex="338"/>
+          <inferredType name="__anonymous1" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/TimelineManager.module.js"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="allTzClear" description="타임라인 전체 아이템 제거" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2824" endIndex="2965" startLine="106" endLine="114"/>
+          <inferredReturnType kind="UNKNOWN"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="createTzUtil" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3061" endIndex="3190" startLine="121" endLine="123"/>
+          <params name="appInstance" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3095" endIndex="3105" startLine="121" endLine="121"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+          <params name="arr" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3119" endIndex="3121" startLine="121" endLine="121"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+          <params name="mdtype" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3132" endIndex="3137" startLine="121" endLine="121"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </params>
+          <inferredReturnType name="TzUtil" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/TimelineManager.module.js" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="module">
+        <value xsi:type="index:VariableSymbol" name="module">
+          <region/>
+          <inferredType name="cpr.core.ModuleDescriber" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="lib.TimelineManager" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes name="TzUtil" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="342" endIndex="597" startLine="14" endLine="20"/>
+        <childScopes name="TzUtil">
+          <region startIndex="422" endIndex="597"/>
+          <symbolMap key="appInstance">
+            <value xsi:type="index:ParameterSymbol" name="appInstance" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="376" endIndex="386" startLine="14" endLine="14"/>
+              <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="arr">
+            <value xsi:type="index:ParameterSymbol" name="arr" description="타임라인 배열" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="400" endIndex="402" startLine="14" endLine="14"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="mdtype">
+            <value xsi:type="index:ParameterSymbol" name="mdtype" description="N 니트젠 V 버디" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="413" endIndex="418" startLine="14" endLine="14"/>
+              <inferredType name="mdtype" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="724" endIndex="1935" startLine="29" endLine="64"/>
+        <childScopes>
+          <region startIndex="803" endIndex="1935"/>
+          <symbolMap key="timelineArr">
+            <value xsi:type="index:VariableSymbol" name="timelineArr">
+              <region startIndex="810" endIndex="820"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="771" endIndex="775" startLine="29" endLine="29"/>
+              <inferredType name="selectVal" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="index">
+            <value xsi:type="index:ParameterSymbol" name="index" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="751" endIndex="755" startLine="29" endLine="29"/>
+              <inferredType name="timelineIndex" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="clssName">
+            <value xsi:type="index:VariableSymbol" name="clssName">
+              <region startIndex="841" endIndex="848"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                <typeParameters name="String" instance="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="__anonymous1">
+            <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="1064" endIndex="1930" startLine="41" endLine="63"/>
+              <params name="row" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.6/@value">
+                <region xsi:type="index:RegionWithLine" startIndex="1092" endIndex="1094" startLine="41" endLine="41"/>
+                <inferredType name="cpr.data.Row" instance="true" documentedType="true"/>
+              </params>
+            </value>
+          </symbolMap>
+          <symbolMap key="filter">
+            <value xsi:type="index:VariableSymbol" name="filter">
+              <region startIndex="989" endIndex="994"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.data.Row" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="content">
+            <value xsi:type="index:VariableSymbol" name="content">
+              <region startIndex="874" endIndex="880"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                <typeParameters name="String" instance="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="data">
+            <value xsi:type="index:ParameterSymbol" name="data" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="797" endIndex="800" startLine="29" endLine="29"/>
+              <inferredType name="cpr.data.DataSet" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.DataSet.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="code">
+            <value xsi:type="index:VariableSymbol" name="code">
+              <region startIndex="905" endIndex="908"/>
+              <inferredType name="mdtype" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.4/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1064" endIndex="1930" startLine="41" endLine="63"/>
+            <childScopes>
+              <region startIndex="1097" endIndex="1930"/>
+              <symbolMap key="startDate">
+                <value xsi:type="index:VariableSymbol" name="startDate">
+                  <region startIndex="1188" endIndex="1196"/>
+                  <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="vType">
+                <value xsi:type="index:VariableSymbol" name="vType">
+                  <region startIndex="1641" endIndex="1645"/>
+                  <inferredType kind="UNKNOWN"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="iteminfo">
+                <value xsi:type="index:VariableSymbol" name="iteminfo">
+                  <region startIndex="1140" endIndex="1147"/>
+                  <inferredType kind="UNKNOWN"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="rowData">
+                <value xsi:type="index:VariableSymbol" name="rowData">
+                  <region startIndex="1105" endIndex="1111"/>
+                  <inferredType name="cpr.data.RowConfigInfo" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.RowConfigInfo.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="__anonymous1">
+                <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+                  <region xsi:type="index:RegionWithLine" startIndex="1380" endIndex="1579" startLine="48" endLine="55"/>
+                  <prototype>
+                    <symbols key="start">
+                      <value xsi:type="index:VariableSymbol" name="start">
+                        <region startIndex="1428" endIndex="1432"/>
+                        <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="content">
+                      <value xsi:type="index:VariableSymbol" name="content">
+                        <region startIndex="1389" endIndex="1395"/>
+                        <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" weakInference="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="className">
+                      <value xsi:type="index:VariableSymbol" name="className">
+                        <region startIndex="1474" endIndex="1482"/>
+                        <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" weakInference="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="authType">
+                      <value xsi:type="index:VariableSymbol" name="authType">
+                        <region startIndex="1548" endIndex="1555"/>
+                        <inferredType kind="UNKNOWN"/>
+                      </value>
+                    </symbols>
+                    <symbols key="end">
+                      <value xsi:type="index:VariableSymbol" name="end">
+                        <region startIndex="1453" endIndex="1455"/>
+                        <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="inoutType">
+                      <value xsi:type="index:VariableSymbol" name="inoutType">
+                        <region startIndex="1516" endIndex="1524"/>
+                        <inferredType kind="UNKNOWN"/>
+                      </value>
+                    </symbols>
+                  </prototype>
+                </value>
+              </symbolMap>
+              <symbolMap key="endDate">
+                <value xsi:type="index:VariableSymbol" name="endDate">
+                  <region startIndex="1287" endIndex="1293"/>
+                  <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="row">
+                <value xsi:type="index:ParameterSymbol" name="row" symbolInFunction="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.4/@value/@params.0">
+                  <region xsi:type="index:RegionWithLine" startIndex="1092" endIndex="1094" startLine="41" endLine="41"/>
+                  <inferredType name="cpr.data.Row" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.Row.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="intoData">
+                <value xsi:type="index:VariableSymbol" name="intoData">
+                  <region startIndex="1369" endIndex="1376"/>
+                  <inferredType name="__anonymous1" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/TimelineManager.module.js" declaringSymbolReference="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.4/@value" instance="true">
+                    <selfDeclaringTypeSymbol name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+                      <region xsi:type="index:RegionWithLine" startIndex="1380" endIndex="1579" startLine="48" endLine="55"/>
+                      <prototype>
+                        <symbols key="group">
+                          <value xsi:type="index:VariableSymbol" name="group">
+                            <region startIndex="1679" endIndex="1683"/>
+                            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="start">
+                          <value xsi:type="index:VariableSymbol" name="start">
+                            <region startIndex="1428" endIndex="1432"/>
+                            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="content">
+                          <value xsi:type="index:VariableSymbol" name="content">
+                            <region startIndex="1389" endIndex="1395"/>
+                            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" weakInference="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="inoutType">
+                          <value xsi:type="index:VariableSymbol" name="inoutType">
+                            <region startIndex="1516" endIndex="1524"/>
+                            <inferredType kind="UNKNOWN"/>
+                          </value>
+                        </symbols>
+                        <symbols key="className">
+                          <value xsi:type="index:VariableSymbol" name="className">
+                            <region startIndex="1474" endIndex="1482"/>
+                            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" weakInference="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="end">
+                          <value xsi:type="index:VariableSymbol" name="end">
+                            <region startIndex="1453" endIndex="1455"/>
+                            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="authType">
+                          <value xsi:type="index:VariableSymbol" name="authType">
+                            <region startIndex="1548" endIndex="1555"/>
+                            <inferredType kind="UNKNOWN"/>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </inferredType>
+                </value>
+              </symbolMap>
+              <childScopes name="intoData">
+                <region xsi:type="index:RegionWithLine" startIndex="1380" endIndex="1579" startLine="48" endLine="55"/>
+                <symbolMap key="__anonymous1"/>
+              </childScopes>
+            </childScopes>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2036" endIndex="2554" startLine="72" endLine="87"/>
+        <childScopes>
+          <region startIndex="2077" endIndex="2554"/>
+          <symbolMap key="timelineArr">
+            <value xsi:type="index:VariableSymbol" name="timelineArr">
+              <region startIndex="2103" endIndex="2113"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="clssName">
+            <value xsi:type="index:VariableSymbol" name="clssName">
+              <region startIndex="2191" endIndex="2198"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                <typeParameters name="String" instance="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="__anonymous1">
+            <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="2394" endIndex="2549" startLine="81" endLine="86"/>
+              <params name="each" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+                <region xsi:type="index:RegionWithLine" startIndex="2416" endIndex="2419" startLine="81" endLine="81"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </params>
+              <params name="index" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+                <region xsi:type="index:RegionWithLine" startIndex="2422" endIndex="2426" startLine="81" endLine="81"/>
+                <inferredType name="Object" instance="true"/>
+              </params>
+            </value>
+          </symbolMap>
+          <symbolMap key="that">
+            <value xsi:type="index:VariableSymbol" name="that">
+              <region startIndex="2084" endIndex="2087"/>
+              <inferredType name="TzUtil" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/TimelineManager.module.js" instance="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="json">
+            <value xsi:type="index:ParameterSymbol" name="json" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2045" endIndex="2048" startLine="72" endLine="72"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="content">
+            <value xsi:type="index:VariableSymbol" name="content">
+              <region startIndex="2160" endIndex="2166"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                <typeParameters name="String" instance="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="data">
+            <value xsi:type="index:ParameterSymbol" name="data" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2071" endIndex="2074" startLine="72" endLine="72"/>
+              <inferredType name="cpr.data.DataSet" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="appIns">
+            <value xsi:type="index:VariableSymbol" name="appIns">
+              <region startIndex="2134" endIndex="2139"/>
+              <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="code">
+            <value xsi:type="index:VariableSymbol" name="code">
+              <region startIndex="2224" endIndex="2227"/>
+              <inferredType name="mdtype" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="order">
+            <value xsi:type="index:VariableSymbol" name="order">
+              <region startIndex="2251" endIndex="2255"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                <typeParameters name="Object" instance="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2394" endIndex="2549" startLine="81" endLine="86"/>
+            <childScopes>
+              <region startIndex="2429" endIndex="2549"/>
+              <symbolMap key="index">
+                <value xsi:type="index:ParameterSymbol" name="index" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.2/@value/@params.1">
+                  <region xsi:type="index:RegionWithLine" startIndex="2422" endIndex="2426" startLine="81" endLine="81"/>
+                  <inferredType name="Object" instance="true"/>
+                </value>
+              </symbolMap>
+              <symbolMap key="each">
+                <value xsi:type="index:ParameterSymbol" name="each" symbolInFunction="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.2/@value/@params.0">
+                  <region xsi:type="index:RegionWithLine" startIndex="2416" endIndex="2419" startLine="81" endLine="81"/>
+                  <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </value>
+              </symbolMap>
+            </childScopes>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2658" endIndex="2758" startLine="94" endLine="100"/>
+        <childScopes>
+          <region startIndex="2674" endIndex="2758"/>
+          <symbolMap key="arr">
+            <value xsi:type="index:VariableSymbol" name="arr">
+              <region startIndex="2681" endIndex="2683"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="index">
+            <value xsi:type="index:ParameterSymbol" name="index" description="선택한 타임라인 객체의 인덱스" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2667" endIndex="2671" startLine="94" endLine="94"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2824" endIndex="2965" startLine="106" endLine="114"/>
+        <childScopes>
+          <region startIndex="2835" endIndex="2965"/>
+          <symbolMap key="arr">
+            <value xsi:type="index:VariableSymbol" name="arr">
+              <region startIndex="2842" endIndex="2844"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="__anonymous1">
+            <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="2900" endIndex="2960" startLine="111" endLine="113"/>
+              <params name="each" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+                <region xsi:type="index:RegionWithLine" startIndex="2924" endIndex="2927" startLine="111" endLine="111"/>
+                <inferredType name="eachType" instance="true" documentedType="true"/>
+              </params>
+            </value>
+          </symbolMap>
+          <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2900" endIndex="2960" startLine="111" endLine="113"/>
+            <childScopes>
+              <region startIndex="2930" endIndex="2960"/>
+              <symbolMap key="each">
+                <value xsi:type="index:ParameterSymbol" name="each" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value/@params.0">
+                  <region xsi:type="index:RegionWithLine" startIndex="2924" endIndex="2927" startLine="111" endLine="111"/>
+                  <inferredType name="eachType" instance="true" documentedType="true"/>
+                </value>
+              </symbolMap>
+            </childScopes>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3061" endIndex="3190" startLine="121" endLine="123"/>
+        <childScopes>
+          <region startIndex="3141" endIndex="3190"/>
+          <symbolMap key="appInstance">
+            <value xsi:type="index:ParameterSymbol" name="appInstance" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3095" endIndex="3105" startLine="121" endLine="121"/>
+              <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="arr">
+            <value xsi:type="index:ParameterSymbol" name="arr" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="3119" endIndex="3121" startLine="121" endLine="121"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="mdtype">
+            <value xsi:type="index:ParameterSymbol" name="mdtype" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="3132" endIndex="3137" startLine="121" endLine="121"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="createTzUtil">
+      <value xsi:type="index:FunctionVariableSymbol" name="createTzUtil" originalSymbolName="__anonymous6" persistOriginalSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region startIndex="3046" endIndex="3057"/>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="lib.TimelineManager">
+      <value xsi:type="index:FunctionSymbol" name="lib.TimelineManager" labelForOutline="TimelineManager" hideFromProposal="true" baseSymbolName="cpr.core.Module">
+        <region/>
+        <prototype/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

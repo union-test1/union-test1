@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Output.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="81" endIndex="3751" startLine="7" endLine="208"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="Output" description="Output 데이터를 출력하는 컨트롤. 아웃풋을 생성합니다." baseSymbolName="cpr.controls.AccessableUIControl" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="103" endIndex="116" startLine="7" endLine="7"/>
+          <params name="id" description="아웃풋의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="113" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="value">
+              <value xsi:type="index:VariableSymbol" name="value" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤의 값을 설정하고, value-change이벤트가 발생됩니다. Date 타입의 경우 YYYYMMDDmmss로 값이 설정되어야 포맷이 적용됩니다. ex) 20190402 or 201806052113 &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="508" endIndex="512"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="text">
+              <value xsi:type="index:VariableSymbol" name="text" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> display되는 text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤에 보이는 텍스트를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="760" endIndex="763"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dataType">
+              <value xsi:type="index:VariableSymbol" name="dataType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 값의 형식에 대한 데이터 유형을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 값의 형식에 대한 데이터 유형을 설정합니다.&lt;br> 관련 속성 : [format] number, date 유형일 경우 포맷이 지정된 값이 표현됩니다. 정해진 포맷이 없다면 지정된 value 그대로 텍스트에 보여집니다.&lt;br/> [string] : 모든 문자를 입력받습니다.&lt;br> [number] : 숫자만을 입력받습니다. [date] : 날짜 형식의 값을 받을 수 있습니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1218" endIndex="1225"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="displayExp">
+              <value xsi:type="index:VariableSymbol" name="displayExp" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 화면에 보여지는 텍스트의 Expression을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 화면에 보여지는 텍스트의 Expression을 반환합니다.&lt;br> &lt;pre>&lt;code>control.displayExp = &quot;'$' + text + '원'&quot;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1571" endIndex="1580"/>
+                <inferredType name="String" sematicsQualifier="expression" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="format">
+              <value xsi:type="index:VariableSymbol" name="format" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 데이터를 표기하는 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 데이터를 표기하는 형식을 설정합니다. null 또는 &quot;&quot;을 지정하면 포맷이 제거됩니다. 관련 속성 : [datatype] 값의 형식에 대한 데이터 유형에 따라 설정합니다. [number] : s[-+], 0[0-9], 9[0-9], #[0-9](무한 숫자 입력) 옵션으로 가능합니다.&lt;br> [string] : 0 숫자만, a 영문 소문자, A 영문 대문자, z 영문 소문자 숫자, Z 영문 대문자 숫자, x 유니코드 소문자, X 유니코드 대문자, *[0-9a-zA-Z]시크릿으로 옵션으로 가능합니다.&lt;br> [date] : YYYY | MM |  M | DD | D | HH | H | hh | h | mm | m | ss | s &lt;br> &lt;pre>&lt;code>&lt;br> //string의 경우&lt;br> output.datatype = &quot;string&quot;;&lt;br> output.format = &quot;0000-00A&quot;;&lt;br> //number의 경우&lt;br> output.datatype = &quot;number&quot;;&lt;br> output.format = &quot;0.000&quot;;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2384" endIndex="2389"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="writingMode">
+              <value xsi:type="index:VariableSymbol" name="writingMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 텍스트의 쓰기 방식 및 방향을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 텍스트의 쓰기 방식 및 방향을 설정합니다.&lt;br> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2645" endIndex="2655"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="unselectable">
+              <value xsi:type="index:VariableSymbol" name="unselectable" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 텍스트의 선택 가능 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 텍스트의 선택 가능 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2904" endIndex="2915"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="ellipsis">
+              <value xsi:type="index:VariableSymbol" name="ellipsis" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 말줄임표 사용 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 말줄임표 사용 여부를 설정합니다.&lt;br/> true 설정 시 output의 크기보다 내용이 많을 경우 말줄임표가 사용됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3213" endIndex="3220"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dateValueFormat">
+              <value xsi:type="index:VariableSymbol" name="dateValueFormat" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> date타입으로 설정되어 있는 경우 value의 형식을 분석하는 포맷값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> date타입으로 설정되어 있는 경우 value의 형식을 분석하는 포맷값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3521" endIndex="3535"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="putValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous2">
+                <region startIndex="3721" endIndex="3728"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.Output">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.Output" originalSymbolName="__anonymous1">
+          <region startIndex="94" endIndex="99"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="putValue" description="컨트롤의 값을 설정합니다. Date 타입의 경우 YYYYMMDDmmss로 값이 설정되어야 포맷이 적용됩니다. ex) 20190402 or 201806052113" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3732" endIndex="3748" startLine="206" endLine="206"/>
+          <params name="value" description="컨트롤의 값." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3741" endIndex="3745" startLine="206" endLine="206"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="103" endIndex="116" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="116" endIndex="116"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="아웃풋의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="113" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3732" endIndex="3748" startLine="206" endLine="206"/>
+        <childScopes>
+          <region startIndex="3748" endIndex="3748"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="컨트롤의 값." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3741" endIndex="3745" startLine="206" endLine="206"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.Output">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.Output" description="Output 데이터를 출력하는 컨트롤. 아웃풋을 생성합니다." baseSymbolName="cpr.controls.AccessableUIControl" anonymousFunction="true">
+        <region startIndex="94" endIndex="99"/>
+        <params name="id" description="아웃풋의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="113" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="value">
+            <value xsi:type="index:VariableSymbol" name="value" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤의 값을 설정하고, value-change이벤트가 발생됩니다. Date 타입의 경우 YYYYMMDDmmss로 값이 설정되어야 포맷이 적용됩니다. ex) 20190402 or 201806052113 &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="508" endIndex="512"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="text">
+            <value xsi:type="index:VariableSymbol" name="text" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> display되는 text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤에 보이는 텍스트를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="760" endIndex="763"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dataType">
+            <value xsi:type="index:VariableSymbol" name="dataType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 값의 형식에 대한 데이터 유형을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 값의 형식에 대한 데이터 유형을 설정합니다.&lt;br> 관련 속성 : [format] number, date 유형일 경우 포맷이 지정된 값이 표현됩니다. 정해진 포맷이 없다면 지정된 value 그대로 텍스트에 보여집니다.&lt;br/> [string] : 모든 문자를 입력받습니다.&lt;br> [number] : 숫자만을 입력받습니다. [date] : 날짜 형식의 값을 받을 수 있습니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1218" endIndex="1225"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="displayExp">
+            <value xsi:type="index:VariableSymbol" name="displayExp" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 화면에 보여지는 텍스트의 Expression을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 화면에 보여지는 텍스트의 Expression을 반환합니다.&lt;br> &lt;pre>&lt;code>control.displayExp = &quot;'$' + text + '원'&quot;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1571" endIndex="1580"/>
+              <inferredType name="String" sematicsQualifier="expression" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="format">
+            <value xsi:type="index:VariableSymbol" name="format" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 데이터를 표기하는 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 데이터를 표기하는 형식을 설정합니다. null 또는 &quot;&quot;을 지정하면 포맷이 제거됩니다. 관련 속성 : [datatype] 값의 형식에 대한 데이터 유형에 따라 설정합니다. [number] : s[-+], 0[0-9], 9[0-9], #[0-9](무한 숫자 입력) 옵션으로 가능합니다.&lt;br> [string] : 0 숫자만, a 영문 소문자, A 영문 대문자, z 영문 소문자 숫자, Z 영문 대문자 숫자, x 유니코드 소문자, X 유니코드 대문자, *[0-9a-zA-Z]시크릿으로 옵션으로 가능합니다.&lt;br> [date] : YYYY | MM |  M | DD | D | HH | H | hh | h | mm | m | ss | s &lt;br> &lt;pre>&lt;code>&lt;br> //string의 경우&lt;br> output.datatype = &quot;string&quot;;&lt;br> output.format = &quot;0000-00A&quot;;&lt;br> //number의 경우&lt;br> output.datatype = &quot;number&quot;;&lt;br> output.format = &quot;0.000&quot;;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2384" endIndex="2389"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="writingMode">
+            <value xsi:type="index:VariableSymbol" name="writingMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 텍스트의 쓰기 방식 및 방향을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 텍스트의 쓰기 방식 및 방향을 설정합니다.&lt;br> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2645" endIndex="2655"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="unselectable">
+            <value xsi:type="index:VariableSymbol" name="unselectable" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 텍스트의 선택 가능 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 텍스트의 선택 가능 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2904" endIndex="2915"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ellipsis">
+            <value xsi:type="index:VariableSymbol" name="ellipsis" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 말줄임표 사용 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 말줄임표 사용 여부를 설정합니다.&lt;br/> true 설정 시 output의 크기보다 내용이 많을 경우 말줄임표가 사용됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3213" endIndex="3220"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dateValueFormat">
+            <value xsi:type="index:VariableSymbol" name="dateValueFormat" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> date타입으로 설정되어 있는 경우 value의 형식을 분석하는 포맷값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> date타입으로 설정되어 있는 경우 value의 형식을 분석하는 포맷값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3521" endIndex="3535"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="putValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous2">
+              <region startIndex="3721" endIndex="3728"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

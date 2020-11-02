@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CValueChangeEventOptions.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="46" endIndex="746" startLine="5" endLine="37"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CValueChangeEventOptions" description="value 변경 이벤트에 대한 옵션." baseSymbolName="cpr.events.CEventOption" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="84" endIndex="95" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="oldValue">
+              <value xsi:type="index:VariableSymbol" name="oldValue" optional="true" description="이전 값.">
+                <region startIndex="272" endIndex="279"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="newValue">
+              <value xsi:type="index:VariableSymbol" name="newValue" optional="true" description="새로운 값.">
+                <region startIndex="393" endIndex="400"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="context">
+              <value xsi:type="index:VariableSymbol" name="context" optional="true" description="바인드컨텍스트. cpr.bind.DataBindContext">
+                <region startIndex="562" endIndex="568"/>
+                <inferredType name="cpr.bind.DataBindContext" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnName">
+              <value xsi:type="index:VariableSymbol" name="columnName" optional="true" description="바인드컨텍스트를 통해 변경하려고 하는 컬럼명.">
+                <region startIndex="719" endIndex="728"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CValueChangeEventOptions">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CValueChangeEventOptions" originalSymbolName="__anonymous1">
+          <region startIndex="57" endIndex="80"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="84" endIndex="95" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="95" endIndex="95"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CValueChangeEventOptions">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CValueChangeEventOptions" description="value 변경 이벤트에 대한 옵션." baseSymbolName="cpr.events.CEventOption" anonymousFunction="true" classType="interface">
+        <region startIndex="57" endIndex="80"/>
+        <prototype>
+          <symbols key="oldValue">
+            <value xsi:type="index:VariableSymbol" name="oldValue" optional="true" description="이전 값.">
+              <region startIndex="272" endIndex="279"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="newValue">
+            <value xsi:type="index:VariableSymbol" name="newValue" optional="true" description="새로운 값.">
+              <region startIndex="393" endIndex="400"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="context">
+            <value xsi:type="index:VariableSymbol" name="context" optional="true" description="바인드컨텍스트. cpr.bind.DataBindContext">
+              <region startIndex="562" endIndex="568"/>
+              <inferredType name="cpr.bind.DataBindContext" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnName">
+            <value xsi:type="index:VariableSymbol" name="columnName" optional="true" description="바인드컨텍스트를 통해 변경하려고 하는 컬럼명.">
+              <region startIndex="719" endIndex="728"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

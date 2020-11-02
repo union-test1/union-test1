@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-be20313d" version="1.0.0.0">
+  <head std:sid="head-44b649a6">
+    <title>Embb</title>
+    <screen std:sid="screen-53105e41" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-e8ce3a1a" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-b34ef75b" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-eabc62f7"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-cfe200a1" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-19f169ab" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-a0a7df0c" id="grpButtons">
+      <cl:xylayoutdata std:sid="xyl-data-dc2367b7" height="100px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-c18916b8" id="btnGrid" style="background-image:none;" value="Grid">
+        <cl:listener std:sid="listener-72f7aea8" handler="onBtnGridClick" name="click"/>
+        <cl:attribute name="src" value="1-tutorial/Grid"/>
+        <cl:formdata std:sid="f-data-c5a8cbf7" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-9dc83d59" id="btnPractice" style="background-image:none;" value="Practice">
+        <cl:listener std:sid="listener-3871411f" handler="onBtnPracticeClick" name="click"/>
+        <cl:attribute name="src" value="3-practice/Practice"/>
+        <cl:formdata std:sid="f-data-33bb469b" col="2" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-5ac52638">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="150" unit="PIXEL"/>
+        <cl:columns length="150" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:embeddedapp std:sid="e-app-f4392b94" id="emb" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#dddddd; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:#dddddd; border-top-color:#dddddd; border-bottom-style:solid; border-right-color:#dddddd; border-left-width:1px; border-top-style:solid;">
+      <cl:listener std:sid="listener-2a019e29" handler="onEmbLoad" name="load"/>
+      <cl:xylayoutdata std:sid="xyl-data-ad60a1cd" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="130px" verticalAnchor="BOTH"/>
+    </cl:embeddedapp>
+    <cl:notifier std:sid="notifier-1c0bad0f" id="noti" animation="bounce" dangeranimation="bounce" infoanimation="bounce" maxnotifycount="1" successanimation="bounce" warninganimation="bounce">
+      <cl:xylayoutdata std:sid="xyl-data-a289c542" height="50px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="500px"/>
+    </cl:notifier>
+    <cl:xylayout std:sid="xylayout-8a8e02e8"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

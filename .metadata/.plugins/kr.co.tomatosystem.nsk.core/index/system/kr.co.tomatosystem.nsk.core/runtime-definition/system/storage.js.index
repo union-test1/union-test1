@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/storage.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="2003" startLine="4" endLine="54"/>
+      <symbolMap key="Storage">
+        <value xsi:type="index:FunctionSymbol" name="Storage" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="31" endIndex="37" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="length">
+              <value xsi:type="index:VariableSymbol" name="length" description="Returns an integer representing the number of data items stored in the Storage object.">
+                <region startIndex="164" endIndex="169"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="key">
+              <value xsi:type="index:FunctionVariableSymbol" name="key" originalSymbolName="__anonymous1">
+                <region startIndex="588" endIndex="590"/>
+              </value>
+            </symbols>
+            <symbols key="getItem">
+              <value xsi:type="index:FunctionVariableSymbol" name="getItem" originalSymbolName="__anonymous2">
+                <region startIndex="1010" endIndex="1016"/>
+              </value>
+            </symbols>
+            <symbols key="setItem">
+              <value xsi:type="index:FunctionVariableSymbol" name="setItem" originalSymbolName="__anonymous3">
+                <region startIndex="1462" endIndex="1468"/>
+              </value>
+            </symbols>
+            <symbols key="removeItem">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeItem" originalSymbolName="__anonymous4">
+                <region startIndex="1834" endIndex="1843"/>
+              </value>
+            </symbols>
+            <symbols key="clear">
+              <value xsi:type="index:FunctionVariableSymbol" name="clear" originalSymbolName="__anonymous5">
+                <region startIndex="1982" endIndex="1986"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="key" description="The key() method of the Storage interface, when passed a number n, returns the name of the nth key in the storage. The order of keys is user-agent defined, so you should not rely on it." returnDescription="A DOMString containing the name of the key." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="594" endIndex="623" startLine="19" endLine="21"/>
+          <params name="index" description="An integer representing the number of the key you want to get the name of. This is a zero-based index." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="603" endIndex="607" startLine="19" endLine="19"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getItem" description="The getItem() method of the Storage interface, when passed a key name, will return that key's value or null if the key does not exist." returnDescription="A DOMString containing the value of the key. If the key does not exist, null is returned." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1020" endIndex="1051" startLine="29" endLine="31"/>
+          <params name="keyName" description="A DOMString containing the name of the key you want to retrieve the value of." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1029" endIndex="1035" startLine="29" endLine="29"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="setItem" description="The setItem() method of the Storage interface, when passed a key name and value, will add that key to the storage, or update that key's value if it already exists." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1472" endIndex="1501" startLine="39" endLine="40"/>
+          <params name="keyName" description="A DOMString containing the name of the key you want to create/update." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1481" endIndex="1487" startLine="39" endLine="39"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="keyValue" description="A DOMString containing the value you want to give the key you are creating/updating." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1490" endIndex="1497" startLine="39" endLine="39"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="removeItem" description="The removeItem() method of the Storage interface, when passed a key name, will remove that key from the storage if it exists. If there is no item associated with the given key, this method will do nothing." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1847" endIndex="1866" startLine="47" endLine="48"/>
+          <params name="keyName" description="A DOMString containing the name of the key you want to remove." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1856" endIndex="1862" startLine="47" endLine="47"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="clear" description="The clear() method of the Storage interface, when invoked, clears all stored keys." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1990" endIndex="2002" startLine="53" endLine="54"/>
+        </value>
+      </symbolMap>
+      <childScopes name="Storage" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="42" endIndex="45"/>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="45" startLine="4" endLine="6"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="594" endIndex="623" startLine="19" endLine="21"/>
+        <childScopes>
+          <region startIndex="610" endIndex="623"/>
+          <symbolMap key="index">
+            <value xsi:type="index:ParameterSymbol" name="index" description="An integer representing the number of the key you want to get the name of. This is a zero-based index." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="603" endIndex="607" startLine="19" endLine="19"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1020" endIndex="1051" startLine="29" endLine="31"/>
+        <childScopes>
+          <region startIndex="1038" endIndex="1051"/>
+          <symbolMap key="keyName">
+            <value xsi:type="index:ParameterSymbol" name="keyName" description="A DOMString containing the name of the key you want to retrieve the value of." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1029" endIndex="1035" startLine="29" endLine="29"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1472" endIndex="1501" startLine="39" endLine="40"/>
+        <childScopes>
+          <region startIndex="1500" endIndex="1501"/>
+          <symbolMap key="keyName">
+            <value xsi:type="index:ParameterSymbol" name="keyName" description="A DOMString containing the name of the key you want to create/update." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1481" endIndex="1487" startLine="39" endLine="39"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="keyValue">
+            <value xsi:type="index:ParameterSymbol" name="keyValue" description="A DOMString containing the value you want to give the key you are creating/updating." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1490" endIndex="1497" startLine="39" endLine="39"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1847" endIndex="1866" startLine="47" endLine="48"/>
+        <childScopes>
+          <region startIndex="1865" endIndex="1866"/>
+          <symbolMap key="keyName">
+            <value xsi:type="index:ParameterSymbol" name="keyName" description="A DOMString containing the name of the key you want to remove." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1856" endIndex="1862" startLine="47" endLine="47"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1990" endIndex="2002" startLine="53" endLine="54"/>
+        <childScopes>
+          <region startIndex="2001" endIndex="2002"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="Storage">
+      <value xsi:type="index:FunctionSymbol" name="Storage" classType="interface">
+        <region xsi:type="index:RegionWithLine" startIndex="31" endIndex="37" startLine="4" endLine="4"/>
+        <prototype>
+          <symbols key="length">
+            <value xsi:type="index:VariableSymbol" name="length" description="Returns an integer representing the number of data items stored in the Storage object.">
+              <region startIndex="164" endIndex="169"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="key">
+            <value xsi:type="index:FunctionVariableSymbol" name="key" originalSymbolName="__anonymous1">
+              <region startIndex="588" endIndex="590"/>
+            </value>
+          </symbols>
+          <symbols key="getItem">
+            <value xsi:type="index:FunctionVariableSymbol" name="getItem" originalSymbolName="__anonymous2">
+              <region startIndex="1010" endIndex="1016"/>
+            </value>
+          </symbols>
+          <symbols key="setItem">
+            <value xsi:type="index:FunctionVariableSymbol" name="setItem" originalSymbolName="__anonymous3">
+              <region startIndex="1462" endIndex="1468"/>
+            </value>
+          </symbols>
+          <symbols key="removeItem">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeItem" originalSymbolName="__anonymous4">
+              <region startIndex="1834" endIndex="1843"/>
+            </value>
+          </symbols>
+          <symbols key="clear">
+            <value xsi:type="index:FunctionVariableSymbol" name="clear" originalSymbolName="__anonymous5">
+              <region startIndex="1982" endIndex="1986"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

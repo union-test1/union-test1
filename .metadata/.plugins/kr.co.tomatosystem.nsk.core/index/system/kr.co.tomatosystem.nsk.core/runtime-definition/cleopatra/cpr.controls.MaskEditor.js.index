@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.MaskEditor.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="163" endIndex="3146" startLine="8" endLine="159"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="MaskEditor" description="MaskEditor 입력 형식을 지정할 수 있는 컨트롤. 사용자는 (날짜, 전화번호 등)으로 데이터를 입력하고자하는 고정폭 입력을 보다 쉽게 입력 할 수 있습니다. 마스크 에디터를 생성합니다." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="202" startLine="8" endLine="8"/>
+          <params name="id" description="마스크 에디터의 id." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="198" endIndex="199" startLine="8" endLine="8"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="text">
+              <value xsi:type="index:VariableSymbol" name="text" description="&lt;b>Readonly&lt;/b> 컨트롤의 value가 변경된 내용을 기준으로 포맷이 된 text를 반환합니다.">
+                <region startIndex="399" endIndex="402"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="mask">
+              <value xsi:type="index:VariableSymbol" name="mask" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> maskeditor 내 데이터 유형 별 입력 받을 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> maskeditor 내 데이터 유형 별 입력 받을 형식을 설정합니다.&lt;br> 형식&lt;br> * 0: [0-9]&lt;br> * a: [a-z]&lt;br> * A: [A-Z]&lt;br> * z: [a-Z0-9]&lt;br> * Z: [A-Z0-9]&lt;br> * x: [a-zA-Z]&lt;br> * X: [a-zA-Z0-9]&lt;br> * \: escapeChar 포맷문자를 일반 문자로 변경합니다. \x로 작성하면 x가 고정문자가 됩니다.&lt;br> * *: [0-9a-zA-Z]를 *로 변환하여 보여줍니다. (시크릿 문자) &lt;br> &lt;pre>&lt;code>maskeditor.mask = &quot;0000-00A&quot;;&lt;br> maskeditor.mask = &quot;0000\\x0000&quot;;&lt;br>&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1063" endIndex="1066"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoSelect">
+              <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1347" endIndex="1356"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="length">
+              <value xsi:type="index:VariableSymbol" name="length">
+                <region startIndex="1440" endIndex="1445"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="imeMode">
+              <value xsi:type="index:VariableSymbol" name="imeMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> IE, FireFox 브라우저에서 한영 변환 설정을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> IE, FireFox 브라우저에서 키보드 IME에 대한 한영 변환을 설정합니다. &lt;br> [auto] : 현재 inputbox의 ime 설정에 대해 아무것도 하지않음. [active] : 기본 값으로 한글을 입력받습니다. &lt;br> [inactive] : 기본 값으로 영문을 입력받습니다.&lt;br> [disabled] : 영문만을 입력받습니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1892" endIndex="1898"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="inputLetter">
+              <value xsi:type="index:VariableSymbol" name="inputLetter" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력시 알파벳문자에 대한 처리 방식 [none, uppercase, lowercase] &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력시 알파벳문자에 대한 처리 방식 [none, uppercase, lowercase] &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2204" endIndex="2214"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="overwrite">
+              <value xsi:type="index:VariableSymbol" name="overwrite" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력시 커서 위치의 값을 덮어쓰는 설정. 기본값 false &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력시 커서 위치의 값을 덮어쓰는 설정. 기본값 false &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2489" endIndex="2497"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="addCustomPattern">
+              <value xsi:type="index:FunctionVariableSymbol" name="addCustomPattern" originalSymbolName="__anonymous2">
+                <region startIndex="2744" endIndex="2759"/>
+              </value>
+            </symbols>
+            <symbols key="deleteCustomPattern">
+              <value xsi:type="index:FunctionVariableSymbol" name="deleteCustomPattern" originalSymbolName="__anonymous3">
+                <region startIndex="2954" endIndex="2972"/>
+              </value>
+            </symbols>
+            <symbols key="getCustomPatterns">
+              <value xsi:type="index:FunctionVariableSymbol" name="getCustomPatterns" originalSymbolName="__anonymous4">
+                <region startIndex="3112" endIndex="3128"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.MaskEditor">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.MaskEditor" originalSymbolName="__anonymous1">
+          <region startIndex="176" endIndex="185"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="addCustomPattern" description="사용자 정의 패턴을 추가합니다.&lt;br> &lt;pre>&lt;code>maskeditor.addCustomPattern(&quot;k&quot;, /[a-c]/); //a부터c까지만 입력.&lt;/code>&lt;/pre>&lt;br>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2763" endIndex="2786" startLine="142" endLine="142"/>
+          <params name="key" description="패턴 정의 문자." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2772" endIndex="2774" startLine="142" endLine="142"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="pattern" description="패턴에 대한 정규식." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2777" endIndex="2783" startLine="142" endLine="142"/>
+            <inferredType name="RegExp" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="deleteCustomPattern" description="사용자 정의 패턴을 삭제합니다. &lt;pre>&lt;code>maskeditor.deleteCustomPattern(&quot;k&quot;);&lt;/code>&lt;/pre>&lt;br>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2976" endIndex="2990" startLine="149" endLine="149"/>
+          <params name="key" description="패턴 정의 문자." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2985" endIndex="2987" startLine="149" endLine="149"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="getCustomPatterns" description="사용자 정의 패턴을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3132" endIndex="3143" startLine="157" endLine="157"/>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.MaskEditor.js" instance="true" documentedType="true">
+              <selfDeclaringTypeSymbol classType="interface">
+                <region startIndex="3045" endIndex="3071"/>
+                <prototype>
+                  <symbols key="pattern">
+                    <value xsi:type="index:VariableSymbol" name="pattern">
+                      <region startIndex="3052" endIndex="3058"/>
+                      <inferredType name="RegExp" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                </prototype>
+              </selfDeclaringTypeSymbol>
+            </typeParameters>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="202" startLine="8" endLine="8"/>
+        <childScopes>
+          <region startIndex="202" endIndex="202"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="마스크 에디터의 id." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="198" endIndex="199" startLine="8" endLine="8"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2763" endIndex="2786" startLine="142" endLine="142"/>
+        <childScopes>
+          <region startIndex="2786" endIndex="2786"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="패턴 정의 문자." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2772" endIndex="2774" startLine="142" endLine="142"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pattern">
+            <value xsi:type="index:ParameterSymbol" name="pattern" description="패턴에 대한 정규식." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2777" endIndex="2783" startLine="142" endLine="142"/>
+              <inferredType name="RegExp" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2976" endIndex="2990" startLine="149" endLine="149"/>
+        <childScopes>
+          <region startIndex="2990" endIndex="2990"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="패턴 정의 문자." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2985" endIndex="2987" startLine="149" endLine="149"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3132" endIndex="3143" startLine="157" endLine="157"/>
+        <childScopes>
+          <region startIndex="3143" endIndex="3143"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.MaskEditor">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.MaskEditor" description="MaskEditor 입력 형식을 지정할 수 있는 컨트롤. 사용자는 (날짜, 전화번호 등)으로 데이터를 입력하고자하는 고정폭 입력을 보다 쉽게 입력 할 수 있습니다. 마스크 에디터를 생성합니다." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+        <region startIndex="176" endIndex="185"/>
+        <params name="id" description="마스크 에디터의 id.">
+          <region xsi:type="index:RegionWithLine" startIndex="198" endIndex="199" startLine="8" endLine="8"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="text">
+            <value xsi:type="index:VariableSymbol" name="text" description="&lt;b>Readonly&lt;/b> 컨트롤의 value가 변경된 내용을 기준으로 포맷이 된 text를 반환합니다.">
+              <region startIndex="399" endIndex="402"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="mask">
+            <value xsi:type="index:VariableSymbol" name="mask" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> maskeditor 내 데이터 유형 별 입력 받을 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> maskeditor 내 데이터 유형 별 입력 받을 형식을 설정합니다.&lt;br> 형식&lt;br> * 0: [0-9]&lt;br> * a: [a-z]&lt;br> * A: [A-Z]&lt;br> * z: [a-Z0-9]&lt;br> * Z: [A-Z0-9]&lt;br> * x: [a-zA-Z]&lt;br> * X: [a-zA-Z0-9]&lt;br> * \: escapeChar 포맷문자를 일반 문자로 변경합니다. \x로 작성하면 x가 고정문자가 됩니다.&lt;br> * *: [0-9a-zA-Z]를 *로 변환하여 보여줍니다. (시크릿 문자) &lt;br> &lt;pre>&lt;code>maskeditor.mask = &quot;0000-00A&quot;;&lt;br> maskeditor.mask = &quot;0000\\x0000&quot;;&lt;br>&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1063" endIndex="1066"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoSelect">
+            <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1347" endIndex="1356"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="length">
+            <value xsi:type="index:VariableSymbol" name="length">
+              <region startIndex="1440" endIndex="1445"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="imeMode">
+            <value xsi:type="index:VariableSymbol" name="imeMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> IE, FireFox 브라우저에서 한영 변환 설정을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> IE, FireFox 브라우저에서 키보드 IME에 대한 한영 변환을 설정합니다. &lt;br> [auto] : 현재 inputbox의 ime 설정에 대해 아무것도 하지않음. [active] : 기본 값으로 한글을 입력받습니다. &lt;br> [inactive] : 기본 값으로 영문을 입력받습니다.&lt;br> [disabled] : 영문만을 입력받습니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1892" endIndex="1898"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="inputLetter">
+            <value xsi:type="index:VariableSymbol" name="inputLetter" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력시 알파벳문자에 대한 처리 방식 [none, uppercase, lowercase] &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력시 알파벳문자에 대한 처리 방식 [none, uppercase, lowercase] &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2204" endIndex="2214"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="overwrite">
+            <value xsi:type="index:VariableSymbol" name="overwrite" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력시 커서 위치의 값을 덮어쓰는 설정. 기본값 false &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력시 커서 위치의 값을 덮어쓰는 설정. 기본값 false &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2489" endIndex="2497"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="addCustomPattern">
+            <value xsi:type="index:FunctionVariableSymbol" name="addCustomPattern" originalSymbolName="__anonymous2">
+              <region startIndex="2744" endIndex="2759"/>
+            </value>
+          </symbols>
+          <symbols key="deleteCustomPattern">
+            <value xsi:type="index:FunctionVariableSymbol" name="deleteCustomPattern" originalSymbolName="__anonymous3">
+              <region startIndex="2954" endIndex="2972"/>
+            </value>
+          </symbols>
+          <symbols key="getCustomPatterns">
+            <value xsi:type="index:FunctionVariableSymbol" name="getCustomPatterns" originalSymbolName="__anonymous4">
+              <region startIndex="3112" endIndex="3128"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

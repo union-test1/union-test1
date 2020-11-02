@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.renderer.TreeCell.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="84" endIndex="5651" startLine="7" endLine="321"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="TreeCell" description="TreeCell 그리드를 treegrid 형태로 표현되도록 도와주는 컨트롤." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="126" endIndex="139" startLine="7" endLine="7"/>
+          <params name="id" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="135" endIndex="136" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="level">
+              <value xsi:type="index:VariableSymbol" name="level" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 트리 노드의 깊이를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 트리 노드의 깊이를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="464" endIndex="468"/>
+                <inferredType name="any" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="nodeType">
+              <value xsi:type="index:VariableSymbol" name="nodeType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> TreeCell 의 타입을 반환합니다. 반환되는 값은 folder 또는 leaf 또는 &quot;auto&quot; 값이 반환됩니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> TreeCell 의 타입을 설정합니다. &quot;folder&quot;, &quot;leaf&quot; 또는 &quot;auto&quot; 값을 설정할 수 있습니다. &quot;auto&quot; 로 설정할 경우 다음행의 Level이 본 행보다 크면 folder로 같거나 작으면 leaf로 설정됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="893" endIndex="900"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="startCollapseLevel">
+              <value xsi:type="index:VariableSymbol" name="startCollapseLevel" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 초기에 접을 Level을 반환합니다. Level 값 또는 null 이 반환됩니다. 반환값이 null인 경우 모든 행이 펼쳐진 상태로 보여집니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 초기에 접을 Level을 설정합니다. Level 값 또는 null 을 설정합니다. 설정값이 null인 경우 모든 행이 펼쳐진 상태로 보여집니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1298" endIndex="1315"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="maxLength">
+              <value xsi:type="index:VariableSymbol" name="maxLength" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력이 가능한 최대 문자 수를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력이 가능한 최대 문자 수를 설정합니다. 관련 속성 : [lengthUnit] lengthUnit 속성에 따라 설정됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1636" endIndex="1644"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoSelect">
+              <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1941" endIndex="1950"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="lengthUnit">
+              <value xsi:type="index:VariableSymbol" name="lengthUnit" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 편집 영역의 전체 문자열 길이의 단위를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 편집 영역의 전체 문자열 길이의 단위를 설정합니다. [char] : 문자의 길이. [utf8] : utf8 기준의 문자 byte size. [ascii] : ascii 기준의 문자 byte size. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2325" endIndex="2334"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="length">
+              <value xsi:type="index:VariableSymbol" name="length" description="&lt;b>Readonly&lt;/b> inputbox의 입력된 값(문자열)의 길이를 반환합니다.">
+                <region startIndex="2484" endIndex="2489"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="indent">
+              <value xsi:type="index:VariableSymbol" name="indent" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 자식 트리 노드의 들여쓰기 간격을 얻습니다. 기본값은 20입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 자식 트리 노드의 들여쓰기 간격을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2776" endIndex="2781"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="folderImage">
+              <value xsi:type="index:VariableSymbol" name="folderImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> folder 상태의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> folder 상태의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3051" endIndex="3061"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="leafImage">
+              <value xsi:type="index:VariableSymbol" name="leafImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> leaf 상태의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> leaf 상태의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3327" endIndex="3335"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="expandImage">
+              <value xsi:type="index:VariableSymbol" name="expandImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 펼쳐진 상태의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 펼쳐진 상태의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3599" endIndex="3609"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="collapseImage">
+              <value xsi:type="index:VariableSymbol" name="collapseImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 접혀진 상태의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 접혀진 상태의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3873" endIndex="3885"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="useIcon">
+              <value xsi:type="index:VariableSymbol" name="useIcon" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 아이콘을 사용할지 여부를 반환합니다. (folderImage, leafImage) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 아이콘을 사용할지 여부를 설정합니다. (folderImage, leafImage) &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="4202" endIndex="4208"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="showLines">
+              <value xsi:type="index:VariableSymbol" name="showLines" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 트리 셀에 연결선이 보여줄지 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 트리 셀에 연결선이 보여줄지 여부를 설정합니다. 선을 표시하는 엘리먼트의 너비는 indent 속성에 의해 정해집니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="4527" endIndex="4535"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="showRootLines">
+              <value xsi:type="index:VariableSymbol" name="showRootLines" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 트리 셀에 최상위 연결선이 보여줄지 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 트리 셀에 최상위 연결선이 보여줄지 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="4823" endIndex="4835"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="style">
+              <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+                <region startIndex="5062" endIndex="5066"/>
+                <inferredType name="cpr.controls.gridpart.renderer.TreeCell$Styler" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dispose">
+              <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous2">
+                <region startIndex="5210" endIndex="5216"/>
+              </value>
+            </symbols>
+            <symbols key="isFolder">
+              <value xsi:type="index:FunctionVariableSymbol" name="isFolder" originalSymbolName="__anonymous3">
+                <region startIndex="5412" endIndex="5419"/>
+              </value>
+            </symbols>
+            <symbols key="isExpanded">
+              <value xsi:type="index:FunctionVariableSymbol" name="isExpanded" originalSymbolName="__anonymous4">
+                <region startIndex="5616" endIndex="5625"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.renderer.TreeCell">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.renderer.TreeCell" originalSymbolName="__anonymous1">
+          <region startIndex="115" endIndex="122"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="dispose" description="컨트롤에 포함되어있는 객체들을 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5220" endIndex="5231" startLine="305" endLine="305"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="isFolder" description="해당 행에 자식 행이 있는지 여부를 반환합니다." returnDescription="자식 행이 있는지 여부." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5423" endIndex="5442" startLine="312" endLine="312"/>
+          <params name="rowIndex" description="자식행 정보를 알고자 하는 row index." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5432" endIndex="5439" startLine="312" endLine="312"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="isExpanded" description="해당 행이 펼쳐진 상태인지 여부를 반환합니다." returnDescription="펼쳐진 상태." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5629" endIndex="5648" startLine="319" endLine="319"/>
+          <params name="rowIndex" description="펼쳐진 상태를 알고자 하는 row index." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5638" endIndex="5645" startLine="319" endLine="319"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="126" endIndex="139" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="139" endIndex="139"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="135" endIndex="136" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5220" endIndex="5231" startLine="305" endLine="305"/>
+        <childScopes>
+          <region startIndex="5231" endIndex="5231"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5423" endIndex="5442" startLine="312" endLine="312"/>
+        <childScopes>
+          <region startIndex="5442" endIndex="5442"/>
+          <symbolMap key="rowIndex">
+            <value xsi:type="index:ParameterSymbol" name="rowIndex" description="자식행 정보를 알고자 하는 row index." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5432" endIndex="5439" startLine="312" endLine="312"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5629" endIndex="5648" startLine="319" endLine="319"/>
+        <childScopes>
+          <region startIndex="5648" endIndex="5648"/>
+          <symbolMap key="rowIndex">
+            <value xsi:type="index:ParameterSymbol" name="rowIndex" description="펼쳐진 상태를 알고자 하는 row index." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5638" endIndex="5645" startLine="319" endLine="319"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.renderer.TreeCell">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.renderer.TreeCell" description="TreeCell 그리드를 treegrid 형태로 표현되도록 도와주는 컨트롤." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+        <region startIndex="115" endIndex="122"/>
+        <params name="id" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="135" endIndex="136" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="level">
+            <value xsi:type="index:VariableSymbol" name="level" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 트리 노드의 깊이를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 트리 노드의 깊이를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="464" endIndex="468"/>
+              <inferredType name="any" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="nodeType">
+            <value xsi:type="index:VariableSymbol" name="nodeType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> TreeCell 의 타입을 반환합니다. 반환되는 값은 folder 또는 leaf 또는 &quot;auto&quot; 값이 반환됩니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> TreeCell 의 타입을 설정합니다. &quot;folder&quot;, &quot;leaf&quot; 또는 &quot;auto&quot; 값을 설정할 수 있습니다. &quot;auto&quot; 로 설정할 경우 다음행의 Level이 본 행보다 크면 folder로 같거나 작으면 leaf로 설정됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="893" endIndex="900"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="startCollapseLevel">
+            <value xsi:type="index:VariableSymbol" name="startCollapseLevel" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 초기에 접을 Level을 반환합니다. Level 값 또는 null 이 반환됩니다. 반환값이 null인 경우 모든 행이 펼쳐진 상태로 보여집니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 초기에 접을 Level을 설정합니다. Level 값 또는 null 을 설정합니다. 설정값이 null인 경우 모든 행이 펼쳐진 상태로 보여집니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1298" endIndex="1315"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="maxLength">
+            <value xsi:type="index:VariableSymbol" name="maxLength" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력이 가능한 최대 문자 수를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력이 가능한 최대 문자 수를 설정합니다. 관련 속성 : [lengthUnit] lengthUnit 속성에 따라 설정됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1636" endIndex="1644"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoSelect">
+            <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1941" endIndex="1950"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="lengthUnit">
+            <value xsi:type="index:VariableSymbol" name="lengthUnit" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 편집 영역의 전체 문자열 길이의 단위를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 편집 영역의 전체 문자열 길이의 단위를 설정합니다. [char] : 문자의 길이. [utf8] : utf8 기준의 문자 byte size. [ascii] : ascii 기준의 문자 byte size. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2325" endIndex="2334"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="length">
+            <value xsi:type="index:VariableSymbol" name="length" description="&lt;b>Readonly&lt;/b> inputbox의 입력된 값(문자열)의 길이를 반환합니다.">
+              <region startIndex="2484" endIndex="2489"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="indent">
+            <value xsi:type="index:VariableSymbol" name="indent" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 자식 트리 노드의 들여쓰기 간격을 얻습니다. 기본값은 20입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 자식 트리 노드의 들여쓰기 간격을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2776" endIndex="2781"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="folderImage">
+            <value xsi:type="index:VariableSymbol" name="folderImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> folder 상태의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> folder 상태의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3051" endIndex="3061"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="leafImage">
+            <value xsi:type="index:VariableSymbol" name="leafImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> leaf 상태의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> leaf 상태의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3327" endIndex="3335"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="expandImage">
+            <value xsi:type="index:VariableSymbol" name="expandImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 펼쳐진 상태의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 펼쳐진 상태의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3599" endIndex="3609"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="collapseImage">
+            <value xsi:type="index:VariableSymbol" name="collapseImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 접혀진 상태의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 접혀진 상태의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3873" endIndex="3885"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="useIcon">
+            <value xsi:type="index:VariableSymbol" name="useIcon" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 아이콘을 사용할지 여부를 반환합니다. (folderImage, leafImage) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 아이콘을 사용할지 여부를 설정합니다. (folderImage, leafImage) &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="4202" endIndex="4208"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="showLines">
+            <value xsi:type="index:VariableSymbol" name="showLines" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 트리 셀에 연결선이 보여줄지 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 트리 셀에 연결선이 보여줄지 여부를 설정합니다. 선을 표시하는 엘리먼트의 너비는 indent 속성에 의해 정해집니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="4527" endIndex="4535"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="showRootLines">
+            <value xsi:type="index:VariableSymbol" name="showRootLines" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 트리 셀에 최상위 연결선이 보여줄지 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 트리 셀에 최상위 연결선이 보여줄지 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="4823" endIndex="4835"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="style">
+            <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+              <region startIndex="5062" endIndex="5066"/>
+              <inferredType name="cpr.controls.gridpart.renderer.TreeCell$Styler" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dispose">
+            <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous2">
+              <region startIndex="5210" endIndex="5216"/>
+            </value>
+          </symbols>
+          <symbols key="isFolder">
+            <value xsi:type="index:FunctionVariableSymbol" name="isFolder" originalSymbolName="__anonymous3">
+              <region startIndex="5412" endIndex="5419"/>
+            </value>
+          </symbols>
+          <symbols key="isExpanded">
+            <value xsi:type="index:FunctionVariableSymbol" name="isExpanded" originalSymbolName="__anonymous4">
+              <region startIndex="5616" endIndex="5625"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

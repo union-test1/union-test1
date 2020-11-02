@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-2782e44d" version="1.0.0.0">
+  <head std:sid="head-1f181d06">
+    <title>TNASearch</title>
+    <screen std:sid="screen-ac8ccc74" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-9dd8dcab" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-2935e0b8" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-c78dcc23"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-76017a11" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-52747666">
+      <cl:xylayoutdata bottom="1px" horizontalAnchor="BOTH" left="1px" right="1px" top="1px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-057addb6">
+        <cl:formdata std:sid="f-data-6f2c5d19" col="0" row="0"/>
+        <cl:button std:sid="button-0d420d68" value="사원근태처리">
+          <cl:formdata std:sid="f-data-87df445d" col="0" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-7a8ce47f" value="근태집계처리">
+          <cl:formdata std:sid="f-data-b0b84ed0" col="1" row="0"/>
+        </cl:button>
+        <cl:formlayout>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="80" minlength="0" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="80" minlength="0" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="80" minlength="0" unit="PIXEL"/>
+          <cl:columns autoSizing="false" length="80" minlength="0" unit="PIXEL"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:tabfolder std:sid="t-folder-1c089235">
+        <cl:formdata std:sid="f-data-b0335c66" col="0" row="1"/>
+        <cl:tabitem std:sid="t-item-e14036f3" selected="true" text="전체">
+          <cl:group std:sid="group-fafd2645">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-91396673">
+              <cl:xylayoutdata bottom="1px" horizontalAnchor="BOTH" left="1px" right="1px" top="1px" verticalAnchor="BOTH"/>
+              <cl:group std:sid="group-86db09fc">
+                <cl:formdata std:sid="f-data-399c56a4" col="0" row="0"/>
+                <cl:output std:sid="output-4773d119" style="text-align:center;" value="월">
+                  <cl:formdata std:sid="f-data-55773766" col="1" row="0"/>
+                </cl:output>
+                <cl:output std:sid="output-c678b73d" style="text-align:center;" value="화">
+                  <cl:formdata std:sid="f-data-7c83548b" col="2" row="0"/>
+                </cl:output>
+                <cl:output std:sid="output-21ee32f2" style="text-align:center;" value="수">
+                  <cl:formdata std:sid="f-data-5d3ac50e" col="3" row="0"/>
+                </cl:output>
+                <cl:output std:sid="output-663f4028" style="text-align:center;" value="목">
+                  <cl:formdata std:sid="f-data-ee342058" col="4" row="0"/>
+                </cl:output>
+                <cl:output std:sid="output-9186f836" style="text-align:center;" value="금">
+                  <cl:formdata std:sid="f-data-67a7437f" col="5" row="0"/>
+                </cl:output>
+                <cl:output std:sid="output-64a01591" style="text-align:center;" value="토">
+                  <cl:formdata std:sid="f-data-2279f9cd" col="6" row="0"/>
+                </cl:output>
+                <cl:output std:sid="output-a4925ce7" style="text-align:center;" value="일">
+                  <cl:formdata std:sid="f-data-0b32eb9a" col="0" row="0"/>
+                </cl:output>
+                <cl:formlayout>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:group std:sid="group-ebd0d6b1">
+                <cl:formdata std:sid="f-data-f8b43abc" col="0" row="1"/>
+                <cl:group std:sid="group-87fc5861">
+                  <cl:formdata std:sid="f-data-fcda5efa" col="0" row="0"/>
+                  <cl:output std:sid="output-e909c5f8" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-345abea9" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-2cb19058" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-53a43fc6" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-f69a537b" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-f4054818" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-9768aaf8"/>
+                </cl:group>
+                <cl:group std:sid="group-cc349c6d">
+                  <cl:formdata std:sid="f-data-4d4af786" col="1" row="0"/>
+                  <cl:output std:sid="output-5e9795c5" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-16fe97e1" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-a12a2a59" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-50ad44dc" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-f478dd07" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-5bc78c7a" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-19d58860"/>
+                </cl:group>
+                <cl:group std:sid="group-ec6a897e">
+                  <cl:formdata std:sid="f-data-47355cfe" col="3" row="0"/>
+                  <cl:output std:sid="output-e18fe892" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-7c69d3c9" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-997fea4e" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-dc8e7178" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-c2141742" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-a0ad3b09" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-a467d0aa"/>
+                </cl:group>
+                <cl:group std:sid="group-d31b2716">
+                  <cl:formdata std:sid="f-data-7a167f82" col="2" row="1"/>
+                  <cl:output std:sid="output-f38bbe21" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-9f9fad03" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-8a7d0c52" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-23561ade" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-b66b1143" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-df2eceac" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-31228ec3"/>
+                </cl:group>
+                <cl:group std:sid="group-62cb4368">
+                  <cl:formdata std:sid="f-data-850785bb" col="2" row="0"/>
+                  <cl:output std:sid="output-5b2264f4" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-f27b689f" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-9d0eecf0" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-36bc1d0c" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-399ffd76" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-abc7e282" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-c05fbd72"/>
+                </cl:group>
+                <cl:group std:sid="group-3ce402d4">
+                  <cl:formdata std:sid="f-data-5164aa4b" col="4" row="0"/>
+                  <cl:output std:sid="output-ef4f0207" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-089839f8" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-81a4c5d5" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-b33455f2" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-504013e6" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-97f4bd94" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-4f54329b"/>
+                </cl:group>
+                <cl:group std:sid="group-1d9263d0">
+                  <cl:formdata std:sid="f-data-9ea7f6d5" col="6" row="0"/>
+                  <cl:output std:sid="output-e22dcd4a" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-e8a42776" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-3478bdee" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-72c96d6e" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-fed23925" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-32fc184d" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-1660b015"/>
+                </cl:group>
+                <cl:group std:sid="group-13b192ab">
+                  <cl:formdata std:sid="f-data-12996b8c" col="5" row="0"/>
+                  <cl:output std:sid="output-f76d46f5" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-344a5b90" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-d5163c54" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-6e778ca2" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-8e41acc7" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-6fe12335" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-b19390b2"/>
+                </cl:group>
+                <cl:group std:sid="group-aa45f7ef">
+                  <cl:formdata std:sid="f-data-3d97696c" col="0" row="1"/>
+                  <cl:output std:sid="output-0cac53a6" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-ca40c388" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-61cae83f" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-c843cafa" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-4a6b8bd4" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-f79f2e43" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-22357dca"/>
+                </cl:group>
+                <cl:group std:sid="group-da564344">
+                  <cl:formdata std:sid="f-data-42b2a9c4" col="1" row="1"/>
+                  <cl:output std:sid="output-78663770" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-ffd18295" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-0d44de6d" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-4ad13f95" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-ebe1bd6d" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-7a089117" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-dc510ebe"/>
+                </cl:group>
+                <cl:group std:sid="group-514dd4c1">
+                  <cl:formdata std:sid="f-data-febff863" col="3" row="1"/>
+                  <cl:output std:sid="output-ecfc811e" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-db4ce1b9" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-a3fd77a3" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-8d870773" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-1e613ef3" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-f3d5f26e" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-35446338"/>
+                </cl:group>
+                <cl:group std:sid="group-26b05760">
+                  <cl:formdata std:sid="f-data-4dbb206a" col="4" row="1"/>
+                  <cl:output std:sid="output-e33af3d0" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-e020feb1" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-a32eb1ed" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-a4659885" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-77a893ee" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-5c87182d" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-6a5a5d21"/>
+                </cl:group>
+                <cl:group std:sid="group-8ae79112">
+                  <cl:formdata std:sid="f-data-7c334d6e" col="5" row="1"/>
+                  <cl:output std:sid="output-c3b8724a" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-22347246" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-36e21fc3" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-9cdadcaa" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-4bb95a2e" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-c3d84567" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-d091fe10"/>
+                </cl:group>
+                <cl:group std:sid="group-8b24a3c1">
+                  <cl:formdata std:sid="f-data-f8e21ca5" col="6" row="1"/>
+                  <cl:output std:sid="output-36e3c823" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-5a7c157f" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-ef487b89" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-ca9f3600" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-e882c5c3" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-d3a00c25" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-63a51fc4"/>
+                </cl:group>
+                <cl:group std:sid="group-3d2a1c39">
+                  <cl:formdata std:sid="f-data-9de94c8f" col="0" row="2"/>
+                  <cl:output std:sid="output-c1a8956b" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-2092aa91" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-f402075b" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-01fad85c" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-49c98b15" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-a51cd324" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-cb7e5c20"/>
+                </cl:group>
+                <cl:group std:sid="group-33a11269">
+                  <cl:formdata std:sid="f-data-6b781280" col="1" row="2"/>
+                  <cl:output std:sid="output-7b95e3b9" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-e94a9cdb" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-ef2e3a6c" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-4029522a" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-828e9ac5" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-36360498" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-2e548ce7"/>
+                </cl:group>
+                <cl:group std:sid="group-8b087b77">
+                  <cl:formdata std:sid="f-data-a2ce6b6e" col="2" row="2"/>
+                  <cl:output std:sid="output-e5bf3081" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-38fd3abf" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-9b5d2cb2" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-04aad13d" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-e3667b82" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-e2dec60e" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-08676f51"/>
+                </cl:group>
+                <cl:group std:sid="group-11d3ab12">
+                  <cl:formdata std:sid="f-data-a157f030" col="4" row="2"/>
+                  <cl:output std:sid="output-ef5bd837" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-1e06d67c" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-7795d157" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-71a7f4e6" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-7c30e53b" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-b2d681d0" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-fff45b78"/>
+                </cl:group>
+                <cl:group std:sid="group-496c1631">
+                  <cl:formdata std:sid="f-data-a508304a" col="3" row="2"/>
+                  <cl:output std:sid="output-5ac0085f" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-390c4892" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-2dab936d" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-e371059d" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-88a38ffb" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-393d7f6a" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-1bb991af"/>
+                </cl:group>
+                <cl:group std:sid="group-a9303d82">
+                  <cl:formdata std:sid="f-data-c6d394b4" col="5" row="2"/>
+                  <cl:output std:sid="output-46cf59a0" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-ab4518e5" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-53ad5cb8" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-0d07249e" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-22762e23" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-fe893f3c" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-6fa0e5fc"/>
+                </cl:group>
+                <cl:group std:sid="group-bb4d93d7">
+                  <cl:formdata std:sid="f-data-40828ee7" col="6" row="2"/>
+                  <cl:output std:sid="output-86ca26c1" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-b95db0e3" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-80baecc7" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-63da2dd5" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-46f1b14a" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-d15859ea" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-9234a0a9"/>
+                </cl:group>
+                <cl:group std:sid="group-0b659d03">
+                  <cl:formdata std:sid="f-data-4de90e97" col="0" row="3"/>
+                  <cl:output std:sid="output-0b2d1fcb" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-f63a3c4a" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-a59d5e25" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-3c7a88b3" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-7095c211" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-35fe2511" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-e993f542"/>
+                </cl:group>
+                <cl:group std:sid="group-915932a0">
+                  <cl:formdata std:sid="f-data-3ec634ee" col="1" row="3"/>
+                  <cl:output std:sid="output-a6dea23f" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-6081f2aa" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-cfa25d32" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-14c03e4c" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-698fb676" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-a1b42826" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-2b06f63b"/>
+                </cl:group>
+                <cl:group std:sid="group-599b5021">
+                  <cl:formdata std:sid="f-data-a24a8d7f" col="2" row="3"/>
+                  <cl:output std:sid="output-040b7d71" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-670935e8" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-43bf3407" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-c75f8247" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-474117e7" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-d69d3e6a" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-62e55c0b"/>
+                </cl:group>
+                <cl:group std:sid="group-edd4012a">
+                  <cl:formdata std:sid="f-data-9b18c97c" col="3" row="3"/>
+                  <cl:output std:sid="output-9d4191d8" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-b79decc4" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-f685ca73" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-4ed6faef" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-548e8253" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-a952d4a7" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-6de15923"/>
+                </cl:group>
+                <cl:group std:sid="group-a6ee853e">
+                  <cl:formdata std:sid="f-data-478a006a" col="4" row="3"/>
+                  <cl:output std:sid="output-9094849a" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-dcd171f1" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-dd2e2e5c" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-71ff6bc0" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-e4211dc6" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-7f6a1e92" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-1ffcbd21"/>
+                </cl:group>
+                <cl:group std:sid="group-23f149ec">
+                  <cl:formdata std:sid="f-data-4cd028b0" col="6" row="3"/>
+                  <cl:output std:sid="output-a531993a" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-aaadd881" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-7a3507a0" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-349a298b" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-fc0dec61" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-6ae92600" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-1ba7280c"/>
+                </cl:group>
+                <cl:group std:sid="group-a094a5c7">
+                  <cl:formdata std:sid="f-data-4a064aca" col="5" row="3"/>
+                  <cl:output std:sid="output-68c05b65" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-c8688684" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-f2306eed" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-7f7363c0" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-97a837ad" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-1c7b8e5f" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-429146ae"/>
+                </cl:group>
+                <cl:group std:sid="group-f32a37a2">
+                  <cl:formdata std:sid="f-data-51539742" col="0" row="4"/>
+                  <cl:output std:sid="output-6b228d22" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-78b33038" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-28e130a2" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-6faf176c" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-2ace82de" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-a18302cb" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-dfc783c9"/>
+                </cl:group>
+                <cl:group std:sid="group-6c2efd07">
+                  <cl:formdata std:sid="f-data-0c8014d6" col="1" row="4"/>
+                  <cl:output std:sid="output-e555118c" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-c0431e3d" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-af885276" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-73728664" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-417dfc99" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-c449a2c6" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-210970d7"/>
+                </cl:group>
+                <cl:group std:sid="group-9d02dc1c">
+                  <cl:formdata std:sid="f-data-cc7eff5c" col="2" row="4"/>
+                  <cl:output std:sid="output-1a0d3b8e" style="font-size:9pt;" value="출근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-47556878" height="20px" horizontalAnchor="LEFT" left="7px" top="37px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-d3438d31" style="font-size:9pt;" value="지각: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-30785024" height="20px" horizontalAnchor="LEFT" left="7px" top="75px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:output std:sid="output-7cfe4428" style="font-size:9pt;" value="결근: 00">
+                    <cl:xylayoutdata std:sid="xyl-data-e088fc88" height="20px" horizontalAnchor="LEFT" left="7px" top="56px" verticalAnchor="TOP" width="50px"/>
+                  </cl:output>
+                  <cl:xylayout std:sid="xylayout-90cf6717"/>
+                </cl:group>
+                <cl:formlayout>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout>
+                <cl:rows autoSizing="false" length="35" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:xylayout std:sid="xylayout-5a121789"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-e40e1de3" text="근태처리 결과 조회">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-550bf5f3">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-7b88664f">
+              <cl:xylayoutdata bottom="1px" horizontalAnchor="BOTH" left="1px" right="1px" top="1px" verticalAnchor="BOTH"/>
+              <cl:tabfolder std:sid="t-folder-0a5ef45d" class="common-snbtab" style="padding:10px;">
+                <cl:formdata std:sid="f-data-212183fc" col="0" row="0"/>
+                <cl:tabitem std:sid="t-item-c8904079" selected="true" text="그룹">
+                  <std:metadata>
+                    <std:property key="is-active-item" value="true"/>
+                  </std:metadata>
+                  <cl:langbind category="PROPERTY" property="text" keypath="Str_GroupList"/>
+                  <cl:group std:sid="group-daac93d9" style="background-color:#F2F1EF; border-right-style:none; border-left-style:none; border-bottom-style:none; border-top-style:none;">
+                    <cl:tree std:sid="tree-af6dcd25" id="USMAG_treeGroup" class="user_list" style="border-right-style:none; padding:0px 0px 0px 10px; border-left-style:none; border-bottom-style:none; border-top-style:none;">
+                      <cl:xylayoutdata std:sid="xyl-data-7c7729e7" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+                      <cl:treeitem label="그룹1" value="0"/>
+                      <cl:treeitem label="그룹2" value="1"/>
+                      <cl:treeitem label="그룹3" value="2"/>
+                      <cl:treeitem label="그룹4" value="3" parent="0"/>
+                    </cl:tree>
+                    <cl:xylayout std:sid="xylayout-dfe473d4"/>
+                  </cl:group>
+                </cl:tabitem>
+              </cl:tabfolder>
+              <cl:group std:sid="group-4180f9a1">
+                <cl:formdata std:sid="f-data-276e6456" col="1" row="0"/>
+                <cl:formlayout>
+                  <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                  <cl:rows autoSizing="false" length="2" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:columns autoSizing="false" length="200" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:xylayout std:sid="xylayout-25501ffc"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-730407bd" text="주간근태결과 조회">
+          <cl:group std:sid="group-72e14fc5">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-fee615a6"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-02a9f534" text="집계처리 결과 조회">
+          <cl:group std:sid="group-98dffd65">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-f26547fb"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-5b028aba" text="근무현황 조회">
+          <cl:group std:sid="group-54cef015">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:xylayout std:sid="xylayout-7ae612aa"/>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:formlayout>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-fd1dc712"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.ResourceLoader.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="108" endIndex="1474" startLine="6" endLine="54"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ResourceLoader" description="모듈을 로더는 특정 앱 및 외부 스크립트, CSS 자원등을 준비 시킨 후, 코드를 실행할 수 있도록 도와줍니다. 같은 자원이 여러번 로드되지 않음을 보장합니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="134" endIndex="145" startLine="6" endLine="6"/>
+          <prototype>
+            <symbols key="load">
+              <value xsi:type="index:FunctionVariableSymbol" name="load" originalSymbolName="__anonymous2">
+                <region startIndex="463" endIndex="466"/>
+              </value>
+            </symbols>
+            <symbols key="needToLoad">
+              <value xsi:type="index:FunctionVariableSymbol" name="needToLoad" originalSymbolName="__anonymous3">
+                <region startIndex="629" endIndex="638"/>
+              </value>
+            </symbols>
+            <symbols key="addApp">
+              <value xsi:type="index:FunctionVariableSymbol" name="addApp" originalSymbolName="__anonymous4">
+                <region startIndex="794" endIndex="799"/>
+              </value>
+            </symbols>
+            <symbols key="addModule">
+              <value xsi:type="index:FunctionVariableSymbol" name="addModule" originalSymbolName="__anonymous5">
+                <region startIndex="1039" endIndex="1047"/>
+              </value>
+            </symbols>
+            <symbols key="addCSS">
+              <value xsi:type="index:FunctionVariableSymbol" name="addCSS" originalSymbolName="__anonymous6">
+                <region startIndex="1277" endIndex="1282"/>
+              </value>
+            </symbols>
+            <symbols key="addScript">
+              <value xsi:type="index:FunctionVariableSymbol" name="addScript" originalSymbolName="__anonymous7">
+                <region startIndex="1445" endIndex="1453"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.ResourceLoader">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.ResourceLoader" originalSymbolName="__anonymous1">
+          <region startIndex="117" endIndex="130"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="load" description="모든 자원을 준비시키고, 준비가 완료되면 주어진 프로시져를 수행합니다. 이미 모든 자원이 준비된 상태라면, 즉시 주어진 프로시져를 수행합니다." returnDescription="모든 자원이 준비되는 프로미스 문맥." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="470" endIndex="492" startLine="15" endLine="15"/>
+          <params name="doneHandler" optional="true" description="모든 자원이 준비된 후 실행할 프로시져. 인자로 에러 객체가 전달 됩니다." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="479" endIndex="489" startLine="15" endLine="15"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Error" variableName="error" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="void" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="needToLoad" description="하나라도 로드해야할 리소스가 존재하는지 여부를 반환합니다. 모든 리소스가 준비된 상태라면 false가 반환됩니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="642" endIndex="653" startLine="22" endLine="22"/>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="addApp" description="로드할 자원으로 App을 추가합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="803" endIndex="820" startLine="29" endLine="29"/>
+          <params name="appURL" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="812" endIndex="817" startLine="29" endLine="29"/>
+            <inferredType name="cpr.utils.URL" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.ResourceLoader" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="addModule" description="로드할 자원으로 Module을 추가합니다." hideFromProposal="true" deprecated="true" deprecationDescription="모든 공통 모듈은 단일 파일로 컴파일 되어 사전 준비되므로 이 API는 필요가 없습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1051" endIndex="1070" startLine="37" endLine="37"/>
+          <params name="moduleId" description="추가할 Module의 id." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1060" endIndex="1067" startLine="37" endLine="37"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.ResourceLoader" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="addCSS" description="로드할 자원으로 CSS를 추가합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1286" endIndex="1306" startLine="45" endLine="45"/>
+          <params name="src" description="추가할 css." symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1295" endIndex="1297" startLine="45" endLine="45"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="wait" description="대기 여부. 이 값이 true일 때에만 CSS가 로드될 때 까지 대기합니다." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1300" endIndex="1303" startLine="45" endLine="45"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.ResourceLoader" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="addScript" description="로드할 스크립트를 추가합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1457" endIndex="1471" startLine="52" endLine="52"/>
+          <params name="src" description="로드할 스크립트 src" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1466" endIndex="1468" startLine="52" endLine="52"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.ResourceLoader" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="134" endIndex="145" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="145" endIndex="145"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="470" endIndex="492" startLine="15" endLine="15"/>
+        <childScopes>
+          <region startIndex="492" endIndex="492"/>
+          <symbolMap key="doneHandler">
+            <value xsi:type="index:ParameterSymbol" name="doneHandler" optional="true" description="모든 자원이 준비된 후 실행할 프로시져. 인자로 에러 객체가 전달 됩니다." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="479" endIndex="489" startLine="15" endLine="15"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Error" variableName="error" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="642" endIndex="653" startLine="22" endLine="22"/>
+        <childScopes>
+          <region startIndex="653" endIndex="653"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="803" endIndex="820" startLine="29" endLine="29"/>
+        <childScopes>
+          <region startIndex="820" endIndex="820"/>
+          <symbolMap key="appURL">
+            <value xsi:type="index:ParameterSymbol" name="appURL" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="812" endIndex="817" startLine="29" endLine="29"/>
+              <inferredType name="cpr.utils.URL" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1051" endIndex="1070" startLine="37" endLine="37"/>
+        <childScopes>
+          <region startIndex="1070" endIndex="1070"/>
+          <symbolMap key="moduleId">
+            <value xsi:type="index:ParameterSymbol" name="moduleId" description="추가할 Module의 id." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1060" endIndex="1067" startLine="37" endLine="37"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1286" endIndex="1306" startLine="45" endLine="45"/>
+        <childScopes>
+          <region startIndex="1306" endIndex="1306"/>
+          <symbolMap key="src">
+            <value xsi:type="index:ParameterSymbol" name="src" description="추가할 css." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1295" endIndex="1297" startLine="45" endLine="45"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="wait">
+            <value xsi:type="index:ParameterSymbol" name="wait" description="대기 여부. 이 값이 true일 때에만 CSS가 로드될 때 까지 대기합니다." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1300" endIndex="1303" startLine="45" endLine="45"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1457" endIndex="1471" startLine="52" endLine="52"/>
+        <childScopes>
+          <region startIndex="1471" endIndex="1471"/>
+          <symbolMap key="src">
+            <value xsi:type="index:ParameterSymbol" name="src" description="로드할 스크립트 src" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1466" endIndex="1468" startLine="52" endLine="52"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.ResourceLoader">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.ResourceLoader" description="모듈을 로더는 특정 앱 및 외부 스크립트, CSS 자원등을 준비 시킨 후, 코드를 실행할 수 있도록 도와줍니다. 같은 자원이 여러번 로드되지 않음을 보장합니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="117" endIndex="130"/>
+        <prototype>
+          <symbols key="load">
+            <value xsi:type="index:FunctionVariableSymbol" name="load" originalSymbolName="__anonymous2">
+              <region startIndex="463" endIndex="466"/>
+            </value>
+          </symbols>
+          <symbols key="needToLoad">
+            <value xsi:type="index:FunctionVariableSymbol" name="needToLoad" originalSymbolName="__anonymous3">
+              <region startIndex="629" endIndex="638"/>
+            </value>
+          </symbols>
+          <symbols key="addApp">
+            <value xsi:type="index:FunctionVariableSymbol" name="addApp" originalSymbolName="__anonymous4">
+              <region startIndex="794" endIndex="799"/>
+            </value>
+          </symbols>
+          <symbols key="addModule">
+            <value xsi:type="index:FunctionVariableSymbol" name="addModule" originalSymbolName="__anonymous5">
+              <region startIndex="1039" endIndex="1047"/>
+            </value>
+          </symbols>
+          <symbols key="addCSS">
+            <value xsi:type="index:FunctionVariableSymbol" name="addCSS" originalSymbolName="__anonymous6">
+              <region startIndex="1277" endIndex="1282"/>
+            </value>
+          </symbols>
+          <symbols key="addScript">
+            <value xsi:type="index:FunctionVariableSymbol" name="addScript" originalSymbolName="__anonymous7">
+              <region startIndex="1445" endIndex="1453"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

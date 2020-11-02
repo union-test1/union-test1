@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cbcc8080" version="1.0.0.0">
+  <head std:sid="head-0626d12d">
+    <title>SegmentedButton</title>
+    <screen std:sid="screen-8eca4fe1" id="default" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-d7a536f4" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-b31242ab" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <link std:sid="link-e9d18525" href="segmented-button.less" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-fa95e49d"/>
+    <cl:appspec dev-description="데이터에 따라 복수의 버튼을 만들고 한 개를 선택할 수 있는 컨트롤" dev-icon="iVBORw0KGgoAAAANSUhEUgAAACAAAAAKCAYAAADVTVykAAABGUlEQVR4nM2UPUtCYRSAXwtRKBTawrW9IaE2IWqIgpSEfkM05HCnhoKgpbhdIgqiofLSVrwKtkQQ1FAQCn0RGC2BNZRcir5Vnl64Y8O9OnQ78HA403k4nHOE+A/RndS0CV3K1EJ9jM1JGRyVsmmkfgIJ0/RHolHhC4ZC26flMg2E9Q5tM9A82Rj+fl0XIhAOZ/KW5YWAr88wfgl8VmDnAjJXcPYA9y+q0Qc8K57enAU6F2E8a+fWaWiZsmmfdSlQfIS9IlRrsHwM6YISugTjCPRDeP1ynkDchIF10HZhcAOSWzCcht41FwLfVchd25zcwbmaQqEEB7ewfwOVmrNAzwp0LcHQJsRW7TqhpDrmXQj8+Q54fwUe/4Efmikk+QyOOQIAAAAASUVORK5CYII=">
+      <cl:property bindable="true" name="value" type="string"/>
+      <cl:property bindable="true" name="dataSet" type="control"/>
+      <cl:property default="label" std:desc="데이터 셋에서 레이블로 사용할 컬럼 명" name="labelColumn" type="string"/>
+      <cl:property default="value" std:desc="데이터 셋에서 값으로 사용할 컬럼 명" name="valueColumn" type="string"/>
+      <cl:event name="value-change" type="cpr.events.CSelectionEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-cb296917" style="top:0px; left:0px; width:300px; height:30px;">
+    <cl:listener std:sid="listener-4fa0ea50" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:listener std:sid="listener-21e61b16" handler="onBodyBeforeDraw" name="before-draw"/>
+    <cl:listener std:sid="listener-98a35d52" handler="onBodyInit" name="init"/>
+    <cl:group std:sid="group-7b5d6a51" id="group" class="segmented-button">
+      <cl:xylayoutdata std:sid="xyl-data-6cbf6ab6" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:button std:sid="button-62edaf3c" value="A">
+        <cl:formdata std:sid="f-data-5e8edd03" col="0" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-5f2518db" class="cl-selected" value="B">
+        <cl:formdata std:sid="f-data-848e4dc9" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-539ec28e" value="C">
+        <cl:formdata std:sid="f-data-d29c0149" col="2" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-b0984be9" hspace="-1">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-55dd1668"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

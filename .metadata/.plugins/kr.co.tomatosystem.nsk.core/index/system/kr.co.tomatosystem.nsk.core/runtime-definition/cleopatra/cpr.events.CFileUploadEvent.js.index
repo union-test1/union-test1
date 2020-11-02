@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CFileUploadEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="199" endIndex="441" startLine="11" endLine="21"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CFileUploadEvent" description="파일 업로드 컨트롤에서 발생하는 이벤트. 이벤트 객체를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="229" endIndex="253" startLine="11" endLine="11"/>
+          <params name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="238" endIndex="241" startLine="11" endLine="11"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="244" endIndex="250" startLine="11" endLine="11"/>
+            <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="files">
+              <value xsi:type="index:VariableSymbol" name="files" description="&lt;b>Readonly&lt;/b> 파일들을 반환합니다.">
+                <region startIndex="420" endIndex="424"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CFileUploadEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CFileUploadEvent" originalSymbolName="__anonymous1">
+          <region startIndex="210" endIndex="225"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="229" endIndex="253" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="253" endIndex="253"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="238" endIndex="241" startLine="11" endLine="11"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="244" endIndex="250" startLine="11" endLine="11"/>
+              <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CFileUploadEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CFileUploadEvent" description="파일 업로드 컨트롤에서 발생하는 이벤트. 이벤트 객체를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="210" endIndex="225"/>
+        <params name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~">
+          <region xsi:type="index:RegionWithLine" startIndex="238" endIndex="241" startLine="11" endLine="11"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="244" endIndex="250" startLine="11" endLine="11"/>
+          <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="files">
+            <value xsi:type="index:VariableSymbol" name="files" description="&lt;b>Readonly&lt;/b> 파일들을 반환합니다.">
+              <region startIndex="420" endIndex="424"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

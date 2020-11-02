@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CDateEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="137" endIndex="363" startLine="7" endLine="17"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CDateEvent" description="Date 클릭할 때 발생하는 이벤트. 마우스 이벤트를 생성합니다." baseSymbolName="cpr.events.CMouseEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="185" startLine="7" endLine="7"/>
+          <params name="type" description="이벤트 유형" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="170" endIndex="173" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트 옵션." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="176" endIndex="182" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="date">
+              <value xsi:type="index:VariableSymbol" name="date" description="&lt;b>Readonly&lt;/b> Date를 반환합니다.">
+                <region startIndex="344" endIndex="347"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CDateEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CDateEvent" originalSymbolName="__anonymous1">
+          <region startIndex="148" endIndex="157"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="185" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="185" endIndex="185"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="170" endIndex="173" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트 옵션." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="176" endIndex="182" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CDateEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CDateEvent" description="Date 클릭할 때 발생하는 이벤트. 마우스 이벤트를 생성합니다." baseSymbolName="cpr.events.CMouseEvent" anonymousFunction="true">
+        <region startIndex="148" endIndex="157"/>
+        <params name="type" description="이벤트 유형">
+          <region xsi:type="index:RegionWithLine" startIndex="170" endIndex="173" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트 옵션." parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="176" endIndex="182" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="date">
+            <value xsi:type="index:VariableSymbol" name="date" description="&lt;b>Readonly&lt;/b> Date를 반환합니다.">
+              <region startIndex="344" endIndex="347"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CFileUploadEventOptions.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="47" endIndex="288" startLine="5" endLine="15"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CFileUploadEventOptions" description="FileUpload 이벤트에 대한 옵션" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="84" endIndex="95" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="files">
+              <value xsi:type="index:VariableSymbol" name="files" optional="true" description="FileUpload 이벤트의 파일.">
+                <region startIndex="267" endIndex="271"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CFileUploadEventOptions">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CFileUploadEventOptions" originalSymbolName="__anonymous1">
+          <region startIndex="58" endIndex="80"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="84" endIndex="95" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="95" endIndex="95"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CFileUploadEventOptions">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CFileUploadEventOptions" description="FileUpload 이벤트에 대한 옵션" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="58" endIndex="80"/>
+        <prototype>
+          <symbols key="files">
+            <value xsi:type="index:VariableSymbol" name="files" optional="true" description="FileUpload 이벤트의 파일.">
+              <region startIndex="267" endIndex="271"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

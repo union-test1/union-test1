@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSelectionEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="156" endIndex="537" startLine="7" endLine="24"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CSelectionEvent" description="item을 select 할 시 발생하는 이벤트. select 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="185" endIndex="209" startLine="7" endLine="7"/>
+          <params name="type" description="이벤트 유형" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="194" endIndex="197" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트에 대한 옵션" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="200" endIndex="206" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CSelectionEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="oldSelection">
+              <value xsi:type="index:VariableSymbol" name="oldSelection" description="&lt;b>Readonly&lt;/b> 이전 셀렉션을 반환합니다.">
+                <region startIndex="377" endIndex="388"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="newSelection">
+              <value xsi:type="index:VariableSymbol" name="newSelection" description="&lt;b>Readonly&lt;/b> 새로운 셀렉션을 반환합니다.">
+                <region startIndex="508" endIndex="519"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CSelectionEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CSelectionEvent" originalSymbolName="__anonymous1">
+          <region startIndex="167" endIndex="181"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="185" endIndex="209" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="209" endIndex="209"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="194" endIndex="197" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트에 대한 옵션" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="200" endIndex="206" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CSelectionEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CSelectionEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CSelectionEvent" description="item을 select 할 시 발생하는 이벤트. select 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="167" endIndex="181"/>
+        <params name="type" description="이벤트 유형">
+          <region xsi:type="index:RegionWithLine" startIndex="194" endIndex="197" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트에 대한 옵션" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="200" endIndex="206" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CSelectionEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="oldSelection">
+            <value xsi:type="index:VariableSymbol" name="oldSelection" description="&lt;b>Readonly&lt;/b> 이전 셀렉션을 반환합니다.">
+              <region startIndex="377" endIndex="388"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="newSelection">
+            <value xsi:type="index:VariableSymbol" name="newSelection" description="&lt;b>Readonly&lt;/b> 새로운 셀렉션을 반환합니다.">
+              <region startIndex="508" endIndex="519"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

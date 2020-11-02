@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.FileUploadEventType.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="34" endIndex="1155" startLine="5" endLine="52"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="FileUploadEventType" description="FileUpload 이벤트 유형." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="67" endIndex="78" startLine="5" endLine="5"/>
+          <prototype/>
+          <symbols key="MAXSIZE_EXCEED">
+            <value xsi:type="index:VariableSymbol" name="MAXSIZE_EXCEED" description="파일을 추가 시 파일의 크기가 최대 일 경우 발생하는 이벤트.&lt;br> 추가할 파일이 최대 크기보다 큰 경우 발생합니다.&lt;br> 추가된 파일들이 최대 크기보다 큰 경우 발생합니다.">
+              <region startIndex="305" endIndex="318"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="MAXCOUNT_EXCEED">
+            <value xsi:type="index:VariableSymbol" name="MAXCOUNT_EXCEED" description="파일을 추가 할 때 파일의 개수가 최대 일 경우 발생하는 이벤트.">
+              <region startIndex="434" endIndex="448"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="EXTENSION_VIOLATE">
+            <value xsi:type="index:VariableSymbol" name="EXTENSION_VIOLATE" description="파일 추가 시 파일의 확장자와 기존에 등록된 확장자의 유형이 다를 경우 발생하는 이벤트.">
+              <region startIndex="577" endIndex="593"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ADD_BEFORE_FILE">
+            <value xsi:type="index:VariableSymbol" name="ADD_BEFORE_FILE" description="파일을 추가 하기전에 발생하는 이벤트입니다. event.preventDefault()를 하면 파일을 추가하지 않습니다.">
+              <region startIndex="739" endIndex="753"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ADD_FILE">
+            <value xsi:type="index:VariableSymbol" name="ADD_FILE" description="파일을 추가 후 발생하는 이벤트입니다.">
+              <region startIndex="854" endIndex="861"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="REMOVE_BEFORE_FILE">
+            <value xsi:type="index:VariableSymbol" name="REMOVE_BEFORE_FILE" description="파일을 삭제 하기 전에 발생하는 이벤트 입니다. event.preventDefault()를 하면 파일을 삭제하지 않습니다.">
+              <region startIndex="1009" endIndex="1026"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="REMOVE_FILE">
+            <value xsi:type="index:VariableSymbol" name="REMOVE_FILE" description="파일을 삭제 후 발생하는 이벤트입니다.">
+              <region startIndex="1127" endIndex="1137"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.FileUploadEventType">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.FileUploadEventType" originalSymbolName="__anonymous1">
+          <region startIndex="45" endIndex="63"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="67" endIndex="78" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="78" endIndex="78"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.FileUploadEventType">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.FileUploadEventType" description="FileUpload 이벤트 유형." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="45" endIndex="63"/>
+        <prototype/>
+        <symbols key="MAXSIZE_EXCEED">
+          <value xsi:type="index:VariableSymbol" name="MAXSIZE_EXCEED" description="파일을 추가 시 파일의 크기가 최대 일 경우 발생하는 이벤트.&lt;br> 추가할 파일이 최대 크기보다 큰 경우 발생합니다.&lt;br> 추가된 파일들이 최대 크기보다 큰 경우 발생합니다.">
+            <region startIndex="305" endIndex="318"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="MAXCOUNT_EXCEED">
+          <value xsi:type="index:VariableSymbol" name="MAXCOUNT_EXCEED" description="파일을 추가 할 때 파일의 개수가 최대 일 경우 발생하는 이벤트.">
+            <region startIndex="434" endIndex="448"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="EXTENSION_VIOLATE">
+          <value xsi:type="index:VariableSymbol" name="EXTENSION_VIOLATE" description="파일 추가 시 파일의 확장자와 기존에 등록된 확장자의 유형이 다를 경우 발생하는 이벤트.">
+            <region startIndex="577" endIndex="593"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="ADD_BEFORE_FILE">
+          <value xsi:type="index:VariableSymbol" name="ADD_BEFORE_FILE" description="파일을 추가 하기전에 발생하는 이벤트입니다. event.preventDefault()를 하면 파일을 추가하지 않습니다.">
+            <region startIndex="739" endIndex="753"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="ADD_FILE">
+          <value xsi:type="index:VariableSymbol" name="ADD_FILE" description="파일을 추가 후 발생하는 이벤트입니다.">
+            <region startIndex="854" endIndex="861"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="REMOVE_BEFORE_FILE">
+          <value xsi:type="index:VariableSymbol" name="REMOVE_BEFORE_FILE" description="파일을 삭제 하기 전에 발생하는 이벤트 입니다. event.preventDefault()를 하면 파일을 삭제하지 않습니다.">
+            <region startIndex="1009" endIndex="1026"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="REMOVE_FILE">
+          <value xsi:type="index:VariableSymbol" name="REMOVE_FILE" description="파일을 삭제 후 발생하는 이벤트입니다.">
+            <region startIndex="1127" endIndex="1137"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

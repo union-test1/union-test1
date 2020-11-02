@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CInputFilterEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="141" endIndex="392" startLine="7" endLine="17"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CInputFilterEvent" description="인풋 박스의 텍스트가 변경될때 발생하는 이벤트. UI 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="172" endIndex="196" startLine="7" endLine="7"/>
+          <params name="type" description="이벤트 유형" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="181" endIndex="184" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트 옵션" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="187" endIndex="193" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="text">
+              <value xsi:type="index:VariableSymbol" name="text" description="&lt;b>Readonly&lt;/b> 입력된 텍스트를 반환합니다.">
+                <region startIndex="371" endIndex="374"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CInputFilterEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CInputFilterEvent" originalSymbolName="__anonymous1">
+          <region startIndex="152" endIndex="168"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="172" endIndex="196" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="196" endIndex="196"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="181" endIndex="184" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트 옵션" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="187" endIndex="193" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CInputFilterEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CInputFilterEvent" description="인풋 박스의 텍스트가 변경될때 발생하는 이벤트. UI 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+        <region startIndex="152" endIndex="168"/>
+        <params name="type" description="이벤트 유형">
+          <region xsi:type="index:RegionWithLine" startIndex="181" endIndex="184" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트 옵션" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="187" endIndex="193" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="text">
+            <value xsi:type="index:VariableSymbol" name="text" description="&lt;b>Readonly&lt;/b> 입력된 텍스트를 반환합니다.">
+              <region startIndex="371" endIndex="374"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CValueChangeEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="136" endIndex="786" startLine="7" endLine="37"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CValueChangeEvent" description="value가 바뀔 시 발생하는 이벤트. UI 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="167" endIndex="191" startLine="7" endLine="7"/>
+          <params name="type" description="이벤트 유형" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="176" endIndex="179" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트 옵션" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="182" endIndex="188" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="oldValue">
+              <value xsi:type="index:VariableSymbol" name="oldValue" description="&lt;b>Readonly&lt;/b> 이전 값을 반환합니다.">
+                <region startIndex="363" endIndex="370"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="newValue">
+              <value xsi:type="index:VariableSymbol" name="newValue" description="&lt;b>Readonly&lt;/b> 새로운 값을 반환합니다.">
+                <region startIndex="490" endIndex="497"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="context">
+              <value xsi:type="index:VariableSymbol" name="context">
+                <region startIndex="603" endIndex="609"/>
+                <inferredType name="cpr.bind.DataBindContext" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnName">
+              <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;b>Readonly&lt;/b> 바인드컨텍스트를 통해 변경하려고 하는 컬럼명.">
+                <region startIndex="759" endIndex="768"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CValueChangeEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CValueChangeEvent" originalSymbolName="__anonymous1">
+          <region startIndex="147" endIndex="163"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="167" endIndex="191" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="191" endIndex="191"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="176" endIndex="179" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트 옵션" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="182" endIndex="188" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CValueChangeEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CValueChangeEvent" description="value가 바뀔 시 발생하는 이벤트. UI 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+        <region startIndex="147" endIndex="163"/>
+        <params name="type" description="이벤트 유형">
+          <region xsi:type="index:RegionWithLine" startIndex="176" endIndex="179" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트 옵션" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="182" endIndex="188" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="oldValue">
+            <value xsi:type="index:VariableSymbol" name="oldValue" description="&lt;b>Readonly&lt;/b> 이전 값을 반환합니다.">
+              <region startIndex="363" endIndex="370"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="newValue">
+            <value xsi:type="index:VariableSymbol" name="newValue" description="&lt;b>Readonly&lt;/b> 새로운 값을 반환합니다.">
+              <region startIndex="490" endIndex="497"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="context">
+            <value xsi:type="index:VariableSymbol" name="context">
+              <region startIndex="603" endIndex="609"/>
+              <inferredType name="cpr.bind.DataBindContext" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnName">
+            <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;b>Readonly&lt;/b> 바인드컨텍스트를 통해 변경하려고 하는 컬럼명.">
+              <region startIndex="759" endIndex="768"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

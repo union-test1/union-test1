@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.EmbeddedApp.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="137" endIndex="4105" startLine="7" endLine="173"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="EmbeddedApp" description="app안에 app을 내장 할 수 있는 컴포넌트. 임베디드 앱을 생성합니다." baseSymbolName="cpr.controls.EnableUIControl" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="164" endIndex="182" startLine="7" endLine="7"/>
+          <params name="id" description="임베디드 앱의 id." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="173" endIndex="174" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="app" description="임베디드 앱 내부에 들어갈 앱." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="177" endIndex="179" startLine="7" endLine="7"/>
+            <inferredType name="cpr.core.App" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="initValue">
+              <value xsi:type="index:VariableSymbol" name="initValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 임베디드앱이 시작시 전달받은 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 임베디드앱의 시작시 전달할 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="500" endIndex="508"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="returnValue">
+              <value xsi:type="index:VariableSymbol" name="returnValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 임베디드앱이 반환되는 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 임베디드앱이 반환되는 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="761" endIndex="771"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="app">
+              <value xsi:type="index:VariableSymbol" name="app" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> app을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> app을 설정합니다. app이 변경된 경우, ready()로 예약된 작업들은 모두 취소됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1051" endIndex="1053"/>
+                <inferredType name="cpr.core.App" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="module">
+              <value xsi:type="index:VariableSymbol" name="module" description="&lt;b>Readonly&lt;/b> Embedded App의 module을 반환합니다.">
+                <region startIndex="1190" endIndex="1195"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="forceRun">
+              <value xsi:type="index:FunctionVariableSymbol" name="forceRun" originalSymbolName="__anonymous2">
+                <region startIndex="1508" endIndex="1515"/>
+              </value>
+            </symbols>
+            <symbols key="getEmbeddedAppInstance">
+              <value xsi:type="index:FunctionVariableSymbol" name="getEmbeddedAppInstance" originalSymbolName="__anonymous3">
+                <region startIndex="1675" endIndex="1696"/>
+              </value>
+            </symbols>
+            <symbols key="setAppProperty">
+              <value xsi:type="index:FunctionVariableSymbol" name="setAppProperty" originalSymbolName="__anonymous4">
+                <region startIndex="1864" endIndex="1877"/>
+              </value>
+            </symbols>
+            <symbols key="setAppProperties">
+              <value xsi:type="index:FunctionVariableSymbol" name="setAppProperties" originalSymbolName="__anonymous5">
+                <region startIndex="2016" endIndex="2031"/>
+              </value>
+            </symbols>
+            <symbols key="unsetAppProperty">
+              <value xsi:type="index:FunctionVariableSymbol" name="unsetAppProperty" originalSymbolName="__anonymous6">
+                <region startIndex="2182" endIndex="2197"/>
+              </value>
+            </symbols>
+            <symbols key="unsetAllAppProperties">
+              <value xsi:type="index:FunctionVariableSymbol" name="unsetAllAppProperties" originalSymbolName="__anonymous7">
+                <region startIndex="2394" endIndex="2414"/>
+              </value>
+            </symbols>
+            <symbols key="getAppProperty">
+              <value xsi:type="index:FunctionVariableSymbol" name="getAppProperty" originalSymbolName="__anonymous8">
+                <region startIndex="2584" endIndex="2597"/>
+              </value>
+            </symbols>
+            <symbols key="getAllAppProperties">
+              <value xsi:type="index:FunctionVariableSymbol" name="getAllAppProperties" originalSymbolName="__anonymous9">
+                <region startIndex="2724" endIndex="2742"/>
+              </value>
+            </symbols>
+            <symbols key="getAppPropertyAsString">
+              <value xsi:type="index:FunctionVariableSymbol" name="getAppPropertyAsString" originalSymbolName="__anonymous10">
+                <region startIndex="2857" endIndex="2878"/>
+              </value>
+            </symbols>
+            <symbols key="getAppPropertyAsNumber">
+              <value xsi:type="index:FunctionVariableSymbol" name="getAppPropertyAsNumber" originalSymbolName="__anonymous11">
+                <region startIndex="3005" endIndex="3026"/>
+              </value>
+            </symbols>
+            <symbols key="getAppPropertyAsBoolean">
+              <value xsi:type="index:FunctionVariableSymbol" name="getAppPropertyAsBoolean" originalSymbolName="__anonymous12">
+                <region startIndex="3154" endIndex="3176"/>
+              </value>
+            </symbols>
+            <symbols key="hasAppMethod">
+              <value xsi:type="index:FunctionVariableSymbol" name="hasAppMethod" originalSymbolName="__anonymous13">
+                <region startIndex="3358" endIndex="3369"/>
+              </value>
+            </symbols>
+            <symbols key="callAppMethod">
+              <value xsi:type="index:FunctionVariableSymbol" name="callAppMethod" originalSymbolName="__anonymous14">
+                <region startIndex="3626" endIndex="3638"/>
+              </value>
+            </symbols>
+            <symbols key="ready">
+              <value xsi:type="index:FunctionVariableSymbol" name="ready" originalSymbolName="__anonymous15">
+                <region startIndex="3981" endIndex="3985"/>
+              </value>
+            </symbols>
+            <symbols key="dispose">
+              <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous16">
+                <region startIndex="4081" endIndex="4087"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.EmbeddedApp">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.EmbeddedApp" originalSymbolName="__anonymous1">
+          <region startIndex="150" endIndex="160"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="forceRun" description="임베디드 앱이 화면에 표시중이 아니어서 실행할 필요가 없더라도 강제로 앱을 시작 시킵니다. 아직 앱이 지정되지 않았다면, 나중에 앱이 지정될 때 강제로 앱이 바로 시작됩니다. 이 동작은 취소할 수 없습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1519" endIndex="1538" startLine="80" endLine="80"/>
+          <params name="callback" optional="true" description="앱이 시작된 후의 콜백." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1528" endIndex="1535" startLine="80" endLine="80"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.controls.EmbeddedApp" variableName="embeddedApp" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="cpr.controls.EmbeddedApp" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getEmbeddedAppInstance" description="Embedded App Instance를 반환합니다." returnDescription="Embedded App Instance." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1700" endIndex="1711" startLine="86" endLine="86"/>
+          <inferredReturnType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="setAppProperty" description="App의 property를 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1881" endIndex="1911" startLine="93" endLine="93"/>
+          <params name="propertyName" description="property 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1890" endIndex="1901" startLine="93" endLine="93"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="property 값." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1904" endIndex="1908" startLine="93" endLine="93"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="setAppProperties" description="여러 앱 속성들을 한 번에 지정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2035" endIndex="2056" startLine="99" endLine="99"/>
+          <params name="properties" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2044" endIndex="2053" startLine="99" endLine="99"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="unsetAppProperty" description="특정 앱 속성의 값을 기본값으로 복귀시킵니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2201" endIndex="2224" startLine="105" endLine="105"/>
+          <params name="propertyName" description="기본값으로 복귀할 앱 속성 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2210" endIndex="2221" startLine="105" endLine="105"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="unsetAllAppProperties" description="기본값을 가진 모든 앱 속성들을 초기값 상태로 되돌립니다. declareAppProperty() 및 declareBindableAppProperty()로 선언된 모든 앱 속성들의 값을 초기 값으로 되될립니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2418" endIndex="2429" startLine="111" endLine="111"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="getAppProperty" description="App의 해당 property의 값을 반환합니다." returnDescription="property의 값." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2601" endIndex="2624" startLine="118" endLine="118"/>
+          <params name="propertyName" description="property 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2610" endIndex="2621" startLine="118" endLine="118"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="getAllAppProperties" description="모든 앱 속성들을 얻습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2746" endIndex="2757" startLine="124" endLine="124"/>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="getAppPropertyAsString" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2882" endIndex="2905" startLine="130" endLine="130"/>
+          <params name="propertyName" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2891" endIndex="2902" startLine="130" endLine="130"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous11">
+        <value xsi:type="index:FunctionSymbol" name="getAppPropertyAsNumber" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3030" endIndex="3053" startLine="136" endLine="136"/>
+          <params name="propertyName" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3039" endIndex="3050" startLine="136" endLine="136"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous12">
+        <value xsi:type="index:FunctionSymbol" name="getAppPropertyAsBoolean" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3180" endIndex="3203" startLine="142" endLine="142"/>
+          <params name="propertyName" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.11/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3189" endIndex="3200" startLine="142" endLine="142"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous13">
+        <value xsi:type="index:FunctionSymbol" name="hasAppMethod" description="App의 method를 가지고 있는지에 대한 여부를 반환합니다." returnDescription="method 포함 여부." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3373" endIndex="3388" startLine="149" endLine="149"/>
+          <params name="name" description="method 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.12/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3382" endIndex="3385" startLine="149" endLine="149"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous14">
+        <value xsi:type="index:FunctionSymbol" name="callAppMethod" description="App의 method를 호출합니다." returnDescription="string|object|number|undefined 호출한 메소드의 결과 반환하며, 반환이 없는 경우 undefined를 반환합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3642" endIndex="3663" startLine="157" endLine="157"/>
+          <params name="name" description="method 명" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3651" endIndex="3654" startLine="157" endLine="157"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="args" description="method 내 파라미터." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3657" endIndex="3660" startLine="157" endLine="157"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous15">
+        <value xsi:type="index:FunctionSymbol" name="ready" description="임베딩 된 앱이 준비된 후에 처리할 작업을 등록합니다. 앱이 이미 실행중인 경우, 곧바로 수행 되며, 앱이 실행중이지 않은 경우, 앱이 준비되어 실행되기 직전에 호출됩니다. 이 작업이 실행되기전 app이 변경되면, 작업들이 취소됩니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3989" endIndex="4007" startLine="166" endLine="166"/>
+          <params name="handler" optional="true" description="앱이 준비된 후 처리할 작업을 담은 함수." symbolInScope="//@hotIndex/@rootScope/@childScopes.14/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3998" endIndex="4004" startLine="166" endLine="166"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.controls.EmbeddedApp" variableName="app" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="cpr.controls.EmbeddedApp" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous16">
+        <value xsi:type="index:FunctionSymbol" name="dispose" description="컨트롤에 포함되어있는 객체들을 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4091" endIndex="4102" startLine="171" endLine="171"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="164" endIndex="182" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="182" endIndex="182"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="임베디드 앱의 id." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="173" endIndex="174" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="app">
+            <value xsi:type="index:ParameterSymbol" name="app" description="임베디드 앱 내부에 들어갈 앱." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="177" endIndex="179" startLine="7" endLine="7"/>
+              <inferredType name="cpr.core.App" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1519" endIndex="1538" startLine="80" endLine="80"/>
+        <childScopes>
+          <region startIndex="1538" endIndex="1538"/>
+          <symbolMap key="callback">
+            <value xsi:type="index:ParameterSymbol" name="callback" optional="true" description="앱이 시작된 후의 콜백." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1528" endIndex="1535" startLine="80" endLine="80"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.EmbeddedApp" variableName="embeddedApp" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1700" endIndex="1711" startLine="86" endLine="86"/>
+        <childScopes>
+          <region startIndex="1711" endIndex="1711"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1881" endIndex="1911" startLine="93" endLine="93"/>
+        <childScopes>
+          <region startIndex="1911" endIndex="1911"/>
+          <symbolMap key="propertyName">
+            <value xsi:type="index:ParameterSymbol" name="propertyName" description="property 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1890" endIndex="1901" startLine="93" endLine="93"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="property 값." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1904" endIndex="1908" startLine="93" endLine="93"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2035" endIndex="2056" startLine="99" endLine="99"/>
+        <childScopes>
+          <region startIndex="2056" endIndex="2056"/>
+          <symbolMap key="properties">
+            <value xsi:type="index:ParameterSymbol" name="properties" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2044" endIndex="2053" startLine="99" endLine="99"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2201" endIndex="2224" startLine="105" endLine="105"/>
+        <childScopes>
+          <region startIndex="2224" endIndex="2224"/>
+          <symbolMap key="propertyName">
+            <value xsi:type="index:ParameterSymbol" name="propertyName" description="기본값으로 복귀할 앱 속성 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2210" endIndex="2221" startLine="105" endLine="105"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2418" endIndex="2429" startLine="111" endLine="111"/>
+        <childScopes>
+          <region startIndex="2429" endIndex="2429"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2601" endIndex="2624" startLine="118" endLine="118"/>
+        <childScopes>
+          <region startIndex="2624" endIndex="2624"/>
+          <symbolMap key="propertyName">
+            <value xsi:type="index:ParameterSymbol" name="propertyName" description="property 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2610" endIndex="2621" startLine="118" endLine="118"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2746" endIndex="2757" startLine="124" endLine="124"/>
+        <childScopes>
+          <region startIndex="2757" endIndex="2757"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2882" endIndex="2905" startLine="130" endLine="130"/>
+        <childScopes>
+          <region startIndex="2905" endIndex="2905"/>
+          <symbolMap key="propertyName">
+            <value xsi:type="index:ParameterSymbol" name="propertyName" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.10/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2891" endIndex="2902" startLine="130" endLine="130"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3030" endIndex="3053" startLine="136" endLine="136"/>
+        <childScopes>
+          <region startIndex="3053" endIndex="3053"/>
+          <symbolMap key="propertyName">
+            <value xsi:type="index:ParameterSymbol" name="propertyName" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3039" endIndex="3050" startLine="136" endLine="136"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.12/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3180" endIndex="3203" startLine="142" endLine="142"/>
+        <childScopes>
+          <region startIndex="3203" endIndex="3203"/>
+          <symbolMap key="propertyName">
+            <value xsi:type="index:ParameterSymbol" name="propertyName" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.12/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3189" endIndex="3200" startLine="142" endLine="142"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.13/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3373" endIndex="3388" startLine="149" endLine="149"/>
+        <childScopes>
+          <region startIndex="3388" endIndex="3388"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="method 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.13/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3382" endIndex="3385" startLine="149" endLine="149"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.14/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3642" endIndex="3663" startLine="157" endLine="157"/>
+        <childScopes>
+          <region startIndex="3663" endIndex="3663"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="method 명" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3651" endIndex="3654" startLine="157" endLine="157"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="args">
+            <value xsi:type="index:ParameterSymbol" name="args" description="method 내 파라미터." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="3657" endIndex="3660" startLine="157" endLine="157"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.15/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3989" endIndex="4007" startLine="166" endLine="166"/>
+        <childScopes>
+          <region startIndex="4007" endIndex="4007"/>
+          <symbolMap key="handler">
+            <value xsi:type="index:ParameterSymbol" name="handler" optional="true" description="앱이 준비된 후 처리할 작업을 담은 함수." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.15/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3998" endIndex="4004" startLine="166" endLine="166"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.EmbeddedApp" variableName="app" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.16/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4091" endIndex="4102" startLine="171" endLine="171"/>
+        <childScopes>
+          <region startIndex="4102" endIndex="4102"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.EmbeddedApp">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.EmbeddedApp" description="app안에 app을 내장 할 수 있는 컴포넌트. 임베디드 앱을 생성합니다." baseSymbolName="cpr.controls.EnableUIControl" anonymousFunction="true">
+        <region startIndex="150" endIndex="160"/>
+        <params name="id" description="임베디드 앱의 id.">
+          <region xsi:type="index:RegionWithLine" startIndex="173" endIndex="174" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="app" description="임베디드 앱 내부에 들어갈 앱." parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="177" endIndex="179" startLine="7" endLine="7"/>
+          <inferredType name="cpr.core.App" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="initValue">
+            <value xsi:type="index:VariableSymbol" name="initValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 임베디드앱이 시작시 전달받은 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 임베디드앱의 시작시 전달할 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="500" endIndex="508"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="returnValue">
+            <value xsi:type="index:VariableSymbol" name="returnValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 임베디드앱이 반환되는 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 임베디드앱이 반환되는 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="761" endIndex="771"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="app">
+            <value xsi:type="index:VariableSymbol" name="app" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> app을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> app을 설정합니다. app이 변경된 경우, ready()로 예약된 작업들은 모두 취소됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1051" endIndex="1053"/>
+              <inferredType name="cpr.core.App" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="module">
+            <value xsi:type="index:VariableSymbol" name="module" description="&lt;b>Readonly&lt;/b> Embedded App의 module을 반환합니다.">
+              <region startIndex="1190" endIndex="1195"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="forceRun">
+            <value xsi:type="index:FunctionVariableSymbol" name="forceRun" originalSymbolName="__anonymous2">
+              <region startIndex="1508" endIndex="1515"/>
+            </value>
+          </symbols>
+          <symbols key="getEmbeddedAppInstance">
+            <value xsi:type="index:FunctionVariableSymbol" name="getEmbeddedAppInstance" originalSymbolName="__anonymous3">
+              <region startIndex="1675" endIndex="1696"/>
+            </value>
+          </symbols>
+          <symbols key="setAppProperty">
+            <value xsi:type="index:FunctionVariableSymbol" name="setAppProperty" originalSymbolName="__anonymous4">
+              <region startIndex="1864" endIndex="1877"/>
+            </value>
+          </symbols>
+          <symbols key="setAppProperties">
+            <value xsi:type="index:FunctionVariableSymbol" name="setAppProperties" originalSymbolName="__anonymous5">
+              <region startIndex="2016" endIndex="2031"/>
+            </value>
+          </symbols>
+          <symbols key="unsetAppProperty">
+            <value xsi:type="index:FunctionVariableSymbol" name="unsetAppProperty" originalSymbolName="__anonymous6">
+              <region startIndex="2182" endIndex="2197"/>
+            </value>
+          </symbols>
+          <symbols key="unsetAllAppProperties">
+            <value xsi:type="index:FunctionVariableSymbol" name="unsetAllAppProperties" originalSymbolName="__anonymous7">
+              <region startIndex="2394" endIndex="2414"/>
+            </value>
+          </symbols>
+          <symbols key="getAppProperty">
+            <value xsi:type="index:FunctionVariableSymbol" name="getAppProperty" originalSymbolName="__anonymous8">
+              <region startIndex="2584" endIndex="2597"/>
+            </value>
+          </symbols>
+          <symbols key="getAllAppProperties">
+            <value xsi:type="index:FunctionVariableSymbol" name="getAllAppProperties" originalSymbolName="__anonymous9">
+              <region startIndex="2724" endIndex="2742"/>
+            </value>
+          </symbols>
+          <symbols key="getAppPropertyAsString">
+            <value xsi:type="index:FunctionVariableSymbol" name="getAppPropertyAsString" originalSymbolName="__anonymous10">
+              <region startIndex="2857" endIndex="2878"/>
+            </value>
+          </symbols>
+          <symbols key="getAppPropertyAsNumber">
+            <value xsi:type="index:FunctionVariableSymbol" name="getAppPropertyAsNumber" originalSymbolName="__anonymous11">
+              <region startIndex="3005" endIndex="3026"/>
+            </value>
+          </symbols>
+          <symbols key="getAppPropertyAsBoolean">
+            <value xsi:type="index:FunctionVariableSymbol" name="getAppPropertyAsBoolean" originalSymbolName="__anonymous12">
+              <region startIndex="3154" endIndex="3176"/>
+            </value>
+          </symbols>
+          <symbols key="hasAppMethod">
+            <value xsi:type="index:FunctionVariableSymbol" name="hasAppMethod" originalSymbolName="__anonymous13">
+              <region startIndex="3358" endIndex="3369"/>
+            </value>
+          </symbols>
+          <symbols key="callAppMethod">
+            <value xsi:type="index:FunctionVariableSymbol" name="callAppMethod" originalSymbolName="__anonymous14">
+              <region startIndex="3626" endIndex="3638"/>
+            </value>
+          </symbols>
+          <symbols key="ready">
+            <value xsi:type="index:FunctionVariableSymbol" name="ready" originalSymbolName="__anonymous15">
+              <region startIndex="3981" endIndex="3985"/>
+            </value>
+          </symbols>
+          <symbols key="dispose">
+            <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous16">
+              <region startIndex="4081" endIndex="4087"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

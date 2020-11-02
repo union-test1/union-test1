@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/worker.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="47" endIndex="452" startLine="5" endLine="26"/>
+      <symbolMap key="Worker">
+        <value xsi:type="index:FunctionSymbol" name="Worker" baseSymbolName="EventTarget">
+          <region xsi:type="index:RegionWithLine" startIndex="56" endIndex="61" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="onerror">
+              <value xsi:type="index:VariableSymbol" name="onerror">
+                <region startIndex="123" endIndex="129"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="ErrorEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="onmessage">
+              <value xsi:type="index:VariableSymbol" name="onmessage">
+                <region startIndex="208" endIndex="216"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="MessageEvent" variableName="e" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="onmessageerror">
+              <value xsi:type="index:VariableSymbol" name="onmessageerror">
+                <region startIndex="295" endIndex="308"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="MessageEvent" variableName="e" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="postMessage">
+              <value xsi:type="index:FunctionVariableSymbol" name="postMessage" originalSymbolName="__anonymous1">
+                <region startIndex="379" endIndex="389"/>
+              </value>
+            </symbols>
+            <symbols key="terminate">
+              <value xsi:type="index:FunctionVariableSymbol" name="terminate" originalSymbolName="__anonymous2">
+                <region startIndex="428" endIndex="436"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="postMessage" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="393" endIndex="408" startLine="25" endLine="25"/>
+          <params name="data" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="402" endIndex="405" startLine="25" endLine="25"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="terminate" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="440" endIndex="451" startLine="26" endLine="26"/>
+        </value>
+      </symbolMap>
+      <childScopes name="Worker" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="65" endIndex="65"/>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="65" startLine="5" endLine="5"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="393" endIndex="408" startLine="25" endLine="25"/>
+        <childScopes>
+          <region startIndex="408" endIndex="408"/>
+          <symbolMap key="data">
+            <value xsi:type="index:ParameterSymbol" name="data" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="402" endIndex="405" startLine="25" endLine="25"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="440" endIndex="451" startLine="26" endLine="26"/>
+        <childScopes>
+          <region startIndex="451" endIndex="451"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="Worker">
+      <value xsi:type="index:FunctionSymbol" name="Worker" baseSymbolName="EventTarget">
+        <region xsi:type="index:RegionWithLine" startIndex="56" endIndex="61" startLine="5" endLine="5"/>
+        <prototype>
+          <symbols key="onerror">
+            <value xsi:type="index:VariableSymbol" name="onerror">
+              <region startIndex="123" endIndex="129"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="ErrorEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="onmessage">
+            <value xsi:type="index:VariableSymbol" name="onmessage">
+              <region startIndex="208" endIndex="216"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="MessageEvent" variableName="e" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="onmessageerror">
+            <value xsi:type="index:VariableSymbol" name="onmessageerror">
+              <region startIndex="295" endIndex="308"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="MessageEvent" variableName="e" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="postMessage">
+            <value xsi:type="index:FunctionVariableSymbol" name="postMessage" originalSymbolName="__anonymous1">
+              <region startIndex="379" endIndex="389"/>
+            </value>
+          </symbols>
+          <symbols key="terminate">
+            <value xsi:type="index:FunctionVariableSymbol" name="terminate" originalSymbolName="__anonymous2">
+              <region startIndex="428" endIndex="436"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

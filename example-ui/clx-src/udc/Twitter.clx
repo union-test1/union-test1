@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4b64feec" version="1.0.0.0">
+  <head std:sid="head-430aa327">
+    <title>Twitter</title>
+    <screen std:sid="screen-e95c4e9f" id="default" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-711d6182" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-815fcee8" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <link std:sid="link-c0ea3e12" href="segmented-button.less" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-540d61f2"/>
+    <cl:appspec dev-description="트위터 검색 컨트롤" dev-icon="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC/ElEQVR4nO2We0hTYRiHf6mZ1mQqRupAQSdaZuqgEpfZzYpKlGoW4bJQlDQSyqwwSjItjEgim3RhZRaZlpe8X2ri5kwsQ7K00EKsFEo0b+kup2+Cpe521P0VPvCww3i/9/3tO9/OBswzz3/DYoYJdkcEITU7A5mSYgjKsxGTFAcHF/spdQymGXnPRnujvVHBYFpbzGi4naMdHkiL0KRQEqkpivu+IiR6D7y47iTQceR/EMGN46S5EdPaDKIfn5FRkUOuGbSGM5jmyGqoxms5pUMZUT5udFIMFpkbE03Um3n4uKNRriRSuC8tUds+TYTFR47X61eJZ+8rEX89BclZSeSWmWoIsNYLDTLqryWdHxF4aBeMjLUHuFdXNmWNPvPa6sFystXczNbBEuLBXrwaoyYpg6DqCfwCuTAxXaC2prCjfVq9doUkrK3DMt1bmporhJQUqyvHwzc1OHIxHr47uONhVRR0tGqpV3d/bLju4SpcvV1Q+q0LdaOUTmuH+5Hf3kJeB/TWTsiLCdU9nLNhFRLupCEx8zLEv4eIlEH1D9qqO4CjKwuiwWHUkmKDOyID20PL938y10rzUDNCGdzs1maNh1gNb38Oyn/2QjRMGdQzt9P0D59gE287npOD+IIsNIhDCvjuXE8/gOVSBgIObEF6TQ6qh0aJ1JwUiF+S7TeiH8CGZYWnnZ2oHKQMoByb9+2gP3wCXiwfFQMyVJAmc/FSQRZ5lNM4fNNRPf/5CVEoIgeybICalY8+tYHF1v+DphO2lzMiUxKQLqlC6S8lkaJlfk83vDeumdtwFSYLjRAQGgjhu2YUk8Z0fPylC+uC/WY66N+1hZUZVnI9ERJ3FOnSGhT1K4gULQUNEritXjHzT8q0MUfo2QjcaqpH7vceFPYpiRRts7u6EZ58ivRZMvPhk3H2dELUlUTcbXmLgj4FkdLhGASNEhL8BOydtfzJmC2mZkZY7uOBbYf5CLtwDsdupuGk8Aai066Cf/40Ag7ywOawp9y6eeaZBX8ANnnz/muXia0AAAAASUVORK5CYII=">
+      <cl:property bindable="true" name="value" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-c6953b25" style="top:0px; left:0px; width:300px; height:30px;">
+    <cl:group std:sid="group-56e62f1c" class="segmented-button">
+      <cl:xylayoutdata std:sid="xyl-data-b6d3742d" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:button std:sid="button-947faa4f" value="@">
+        <cl:listener std:sid="listener-9c98e125" handler="onButtonClick" name="click"/>
+        <cl:formdata std:sid="f-data-d5a01d33" col="0" row="0"/>
+      </cl:button>
+      <cl:inputbox std:sid="i-box-8d564b80" id="ipb1" style="background-color:white; background-image:none;">
+        <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+        <cl:formdata std:sid="f-data-5d3d7173" col="1" row="0"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-b10882f7" value="Search">
+        <cl:formdata std:sid="f-data-91c3a08e" col="2" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-845bd5b0" hspace="-1">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="25" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="80" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-f9fad7a6"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

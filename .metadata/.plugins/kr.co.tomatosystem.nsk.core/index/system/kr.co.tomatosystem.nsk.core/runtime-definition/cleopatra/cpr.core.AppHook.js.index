@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppHook.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="61" endIndex="780" startLine="5" endLine="29"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="AppHook" description="앱의 로드 및 초기화 과정에 개입할 수 있는 인터페이스 입니다." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="80" endIndex="91" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="onLoad">
+              <value xsi:type="index:FunctionVariableSymbol" name="onLoad" originalSymbolName="__anonymous2">
+                <region startIndex="303" endIndex="308"/>
+              </value>
+            </symbols>
+            <symbols key="onPrepare">
+              <value xsi:type="index:FunctionVariableSymbol" name="onPrepare" originalSymbolName="__anonymous3">
+                <region startIndex="515" endIndex="523"/>
+              </value>
+            </symbols>
+            <symbols key="onCreate">
+              <value xsi:type="index:FunctionVariableSymbol" name="onCreate" originalSymbolName="__anonymous4">
+                <region startIndex="743" endIndex="750"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.AppHook">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.AppHook" originalSymbolName="__anonymous1">
+          <region startIndex="70" endIndex="76"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="onLoad" description="앱의 로드 요청을 만들 때, 추가 리소스 요청을 포함시킬 수 있습니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="312" endIndex="336" startLine="13" endLine="13"/>
+          <params name="appId" description="로드할 앱의 ID." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="321" endIndex="325" startLine="13" endLine="13"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="loader" description="리소스 로더." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="328" endIndex="333" startLine="13" endLine="13"/>
+            <inferredType name="cpr.core.ResourceLoader" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="onPrepare" description="앱 인스턴스가 시작되기 직전에 추가 리소스를 요청할 수 있습니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="527" endIndex="549" startLine="20" endLine="20"/>
+          <params name="app" description="실행될 앱 인스턴스." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="536" endIndex="538" startLine="20" endLine="20"/>
+            <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+          </params>
+          <params name="loader" description="리소스 로더." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="541" endIndex="546" startLine="20" endLine="20"/>
+            <inferredType name="cpr.core.ResourceLoader" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="onCreate" description="앱 인스턴스의 모든 구성요소가 만들어진 직후의 동작을 개인화 할 수 있습니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="754" endIndex="777" startLine="27" endLine="27"/>
+          <params name="app" description="실행될 앱 인스턴스." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="763" endIndex="765" startLine="27" endLine="27"/>
+            <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+          </params>
+          <params name="exports" description="실행될 앱의 출판 인터페이스. (앱 속성 및 앱 메소드)" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="768" endIndex="774" startLine="27" endLine="27"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="80" endIndex="91" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="91" endIndex="91"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="312" endIndex="336" startLine="13" endLine="13"/>
+        <childScopes>
+          <region startIndex="336" endIndex="336"/>
+          <symbolMap key="appId">
+            <value xsi:type="index:ParameterSymbol" name="appId" description="로드할 앱의 ID." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="321" endIndex="325" startLine="13" endLine="13"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="loader">
+            <value xsi:type="index:ParameterSymbol" name="loader" description="리소스 로더." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="328" endIndex="333" startLine="13" endLine="13"/>
+              <inferredType name="cpr.core.ResourceLoader" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="527" endIndex="549" startLine="20" endLine="20"/>
+        <childScopes>
+          <region startIndex="549" endIndex="549"/>
+          <symbolMap key="app">
+            <value xsi:type="index:ParameterSymbol" name="app" description="실행될 앱 인스턴스." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="536" endIndex="538" startLine="20" endLine="20"/>
+              <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="loader">
+            <value xsi:type="index:ParameterSymbol" name="loader" description="리소스 로더." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="541" endIndex="546" startLine="20" endLine="20"/>
+              <inferredType name="cpr.core.ResourceLoader" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="754" endIndex="777" startLine="27" endLine="27"/>
+        <childScopes>
+          <region startIndex="777" endIndex="777"/>
+          <symbolMap key="app">
+            <value xsi:type="index:ParameterSymbol" name="app" description="실행될 앱 인스턴스." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="763" endIndex="765" startLine="27" endLine="27"/>
+              <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="exports">
+            <value xsi:type="index:ParameterSymbol" name="exports" description="실행될 앱의 출판 인터페이스. (앱 속성 및 앱 메소드)" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="768" endIndex="774" startLine="27" endLine="27"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.AppHook">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.AppHook" description="앱의 로드 및 초기화 과정에 개입할 수 있는 인터페이스 입니다." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="70" endIndex="76"/>
+        <prototype>
+          <symbols key="onLoad">
+            <value xsi:type="index:FunctionVariableSymbol" name="onLoad" originalSymbolName="__anonymous2">
+              <region startIndex="303" endIndex="308"/>
+            </value>
+          </symbols>
+          <symbols key="onPrepare">
+            <value xsi:type="index:FunctionVariableSymbol" name="onPrepare" originalSymbolName="__anonymous3">
+              <region startIndex="515" endIndex="523"/>
+            </value>
+          </symbols>
+          <symbols key="onCreate">
+            <value xsi:type="index:FunctionVariableSymbol" name="onCreate" originalSymbolName="__anonymous4">
+              <region startIndex="743" endIndex="750"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

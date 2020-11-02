@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3e4a5b1c" version="1.0.0.0">
+  <head std:sid="head-242915a8">
+    <title>Practice</title>
+    <screen std:sid="screen-f784a991" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-f2cc8970" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-e5ecfb71" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-e2431e15"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-1c6c55ed" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-2a609fa8" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-cbf0ce6e">
+      <cl:xylayoutdata std:sid="xyl-data-49de12fd" height="150px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-e4a525a7" value="이름">
+        <cl:formdata std:sid="f-data-38fe20dd" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-5f772aa2" value="부서">
+        <cl:formdata std:sid="f-data-9723ea3d" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-294ab8e1" value="급여">
+        <cl:formdata std:sid="f-data-e5eb9aaa" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-f6091d6d" value="성과금">
+        <cl:formdata std:sid="f-data-aca37803" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-069eb84c" value="합계">
+        <cl:formdata std:sid="f-data-51359c51" col="0" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-0eae23c4" value="a">
+        <cl:formdata std:sid="f-data-35073c0a" col="2" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-934fd41d" value="b">
+        <cl:formdata std:sid="f-data-85572140" col="2" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-51042e48" value="c">
+        <cl:formdata std:sid="f-data-1fba1e0b" col="2" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-f95d7e1f" value="d">
+        <cl:formdata std:sid="f-data-da69f5a9" col="2" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-e4304915" value="e">
+        <cl:formdata std:sid="f-data-616a5b28" col="2" row="4"/>
+      </cl:output>
+      <cl:udc std:sid="ud-control-a3dc4891" type="udc.SearchButton">
+        <cl:listener std:sid="listener-4461c4d4" handler="onSearchButtonSearch" name="search"/>
+        <cl:formdata std:sid="f-data-1233f599" col="1" row="0"/>
+        <cl:property name="placeholder" type="string" value="이름을 입력하세요."/>
+      </cl:udc>
+      <cl:inputbox std:sid="i-box-c59e6f48" id="ipb1" readonly="true">
+        <cl:formdata std:sid="f-data-b16f2d1d" col="1" row="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-7366cf4e" id="ipb2" readonly="true">
+        <cl:formdata std:sid="f-data-42e0a949" col="1" row="2"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-71ec92c1" id="ipb3" readonly="true">
+        <cl:formdata std:sid="f-data-bf8530b6" col="1" row="3"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-ee518f2e" id="ipb4" readonly="true">
+        <cl:formdata std:sid="f-data-38c7d2b4" col="1" row="4"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-c617dc29" id="ipb5">
+        <cl:formdata std:sid="f-data-37463f80" col="3" row="4"/>
+      </cl:inputbox>
+      <cl:dateinput std:sid="d-input-323a4fac" id="dti1">
+        <cl:formdata std:sid="f-data-c496c069" col="3" row="3"/>
+      </cl:dateinput>
+      <cl:radiobutton std:sid="r-button-9aef6736" id="rdb1">
+        <cl:formdata std:sid="f-data-8bd8b0c3" col="3" row="2"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+      </cl:radiobutton>
+      <cl:combobox std:sid="c-box-9af202c8" id="cmb1">
+        <cl:formdata std:sid="f-data-0a3b79a2" col="3" row="1"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+      </cl:combobox>
+      <cl:checkbox std:sid="c-box-a33fff2d" id="cbx1" text="Check">
+        <cl:formdata std:sid="f-data-1d9d35ae" col="3" row="0"/>
+      </cl:checkbox>
+      <cl:formlayout std:sid="f-layout-3cac986a" allowResize="false">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-194a3f2e" id="btnMsg" value="Message">
+      <cl:listener std:sid="listener-f13db898" handler="onBtnMsgClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-e34e1794" height="25px" horizontalAnchor="RIGHT" right="20px" top="180px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-43f57858"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

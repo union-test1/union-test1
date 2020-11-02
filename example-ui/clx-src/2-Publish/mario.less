@@ -1,0 +1,95 @@
+.mario {
+	transition: all ease-in-out 0.2s;
+	background-color: white;
+	
+	background-image: 
+		url("images/mario.png"), 
+		linear-gradient(
+			white, 
+			cornflowerblue ~"calc(100% - 100px)",
+			brown ~"calc(100% - 100px)", 
+			black
+		);
+	
+	background-size: 
+		auto 100px, 
+		auto;
+		
+	background-repeat: no-repeat;
+	background-position: 
+		20px ~"calc(100% - 100px)", 
+		left top;
+	
+	border-radius: 20px;
+	border: solid 1px gray;
+	
+	&:active {
+		background-position: 
+			20px ~"calc(100% - 200px)", 
+			left 20px;
+	}
+}
+
+.cl-button {
+	&.mario-button, 
+	&.mario-button:hover {
+		background-image: 
+			url(images/mario.png), 
+			url(images/pattern9.gif);
+			
+		background-size: 
+			30px auto, 
+			auto auto;
+			
+		background-repeat: 
+			no-repeat, 
+			repeat;
+			
+		background-position: 
+			10px center, 
+			0px 0px;
+			
+		text-align: left;
+		padding-left: 50px;
+		font-size: 25px;
+		color: white;
+		text-shadow: 0px 1px 1px navy;
+		border: solid 1px navy;
+		
+		&:active {
+			background-position: 20px center, 0px 0px;
+		}
+	}
+	
+	&.daisy-button, &.daisy-button:hover {
+		background-image: 
+			url(images/daisy.png), 
+			url(images/pattern9.gif);
+			
+		background-size: 
+			30px auto, 
+			auto auto;
+			
+		background-repeat: 
+			no-repeat, 
+			repeat;
+			
+		background-position: 
+			10px center, 
+			0px 0px;
+			
+		text-align: left;
+		padding-left: 50px;
+		font-size: 25px;
+		color: white;
+		text-shadow: 0px 1px 1px navy;
+		border: solid 1px navy;
+		
+		&:active {
+			background-position: 20px center, 0px 0px;
+		}
+	}
+}
+
+
+

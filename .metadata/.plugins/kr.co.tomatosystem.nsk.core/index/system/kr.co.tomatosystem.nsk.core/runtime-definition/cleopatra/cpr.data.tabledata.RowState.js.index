@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.tabledata.RowState.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="44" endIndex="853" startLine="5" endLine="48"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="RowState" description="로우의 상태 값에 대한 key, value" baseSymbolName="Object" anonymousFunction="true" classType="enum">
+          <region xsi:type="index:RegionWithLine" startIndex="74" endIndex="85" startLine="5" endLine="5"/>
+          <prototype/>
+          <symbols key="EMPTIED">
+            <value xsi:type="index:VariableSymbol" name="EMPTIED" description="삭제된 로우 커밋 시 삭제 배열에서 제거하기 위한 임시 상태.">
+              <region startIndex="217" endIndex="223"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="UNCHANGED">
+            <value xsi:type="index:VariableSymbol" name="UNCHANGED" description="변경되지 않은 상태.">
+              <region startIndex="293" endIndex="301"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="INSERTED">
+            <value xsi:type="index:VariableSymbol" name="INSERTED" description="행이 신규로 추가된 상태.">
+              <region startIndex="374" endIndex="381"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="UPDATED">
+            <value xsi:type="index:VariableSymbol" name="UPDATED" description="행이 수정된 상태.">
+              <region startIndex="450" endIndex="456"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="DELETED">
+            <value xsi:type="index:VariableSymbol" name="DELETED" description="행이 삭제된 상태.">
+              <region startIndex="525" endIndex="531"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="INSERTDELETED">
+            <value xsi:type="index:VariableSymbol" name="INSERTDELETED" description="행이 추가되었다가 삭제된 상태.">
+              <region startIndex="607" endIndex="619"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="MODIFIED">
+            <value xsi:type="index:VariableSymbol" name="MODIFIED" description="MODIFIED는 변경된 상태(INSERTED, UPDATED, DELETED)를 의미합니다.">
+              <region startIndex="730" endIndex="737"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="ALL">
+            <value xsi:type="index:VariableSymbol" name="ALL" description="ALL은 INSERTDELETED를 제외한 모든 상태를 의미합니다.">
+              <region startIndex="833" endIndex="835"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.data.tabledata.RowState">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.data.tabledata.RowState" originalSymbolName="__anonymous1">
+          <region startIndex="63" endIndex="70"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="74" endIndex="85" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="85" endIndex="85"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.data.tabledata.RowState">
+      <value xsi:type="index:FunctionSymbol" name="cpr.data.tabledata.RowState" description="로우의 상태 값에 대한 key, value" baseSymbolName="Object" anonymousFunction="true" classType="enum">
+        <region startIndex="63" endIndex="70"/>
+        <prototype/>
+        <symbols key="EMPTIED">
+          <value xsi:type="index:VariableSymbol" name="EMPTIED" description="삭제된 로우 커밋 시 삭제 배열에서 제거하기 위한 임시 상태.">
+            <region startIndex="217" endIndex="223"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="UNCHANGED">
+          <value xsi:type="index:VariableSymbol" name="UNCHANGED" description="변경되지 않은 상태.">
+            <region startIndex="293" endIndex="301"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="INSERTED">
+          <value xsi:type="index:VariableSymbol" name="INSERTED" description="행이 신규로 추가된 상태.">
+            <region startIndex="374" endIndex="381"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="UPDATED">
+          <value xsi:type="index:VariableSymbol" name="UPDATED" description="행이 수정된 상태.">
+            <region startIndex="450" endIndex="456"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="DELETED">
+          <value xsi:type="index:VariableSymbol" name="DELETED" description="행이 삭제된 상태.">
+            <region startIndex="525" endIndex="531"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="INSERTDELETED">
+          <value xsi:type="index:VariableSymbol" name="INSERTDELETED" description="행이 추가되었다가 삭제된 상태.">
+            <region startIndex="607" endIndex="619"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="MODIFIED">
+          <value xsi:type="index:VariableSymbol" name="MODIFIED" description="MODIFIED는 변경된 상태(INSERTED, UPDATED, DELETED)를 의미합니다.">
+            <region startIndex="730" endIndex="737"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="ALL">
+          <value xsi:type="index:VariableSymbol" name="ALL" description="ALL은 INSERTDELETED를 제외한 모든 상태를 의미합니다.">
+            <region startIndex="833" endIndex="835"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

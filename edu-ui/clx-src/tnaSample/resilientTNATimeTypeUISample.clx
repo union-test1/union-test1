@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-07be8020" version="1.0.0.0">
+  <head std:sid="head-38fc5243">
+    <title>resilientTNATimeTypeUISample</title>
+    <screen std:sid="screen-f423e799" id="default" customHeight="550" customWidth="800" height="768px" minwidth="1024px" name="default" useCustomHeight="true" useCustomWidth="true" width="1024px"/>
+    <screen std:sid="screen-279c2bc5" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-ee52bcc6" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-c639b015">
+      <cl:dataset std:sid="d-set-3b9301fc" id="dsWorkTypeTinyList">
+        <cl:datacolumnlist>
+          <cl:datacolumn info="" name="Code"/>
+          <cl:datacolumn name="Name"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="Code"><![CDATA[0001]]></cl:datavalue>
+            <cl:datavalue columnname="Name"><![CDATA[고정근무형태]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Code"><![CDATA[0002]]></cl:datavalue>
+            <cl:datavalue columnname="Name"><![CDATA[선택근무제]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Code"><![CDATA[0003]]></cl:datavalue>
+            <cl:datavalue columnname="Name"><![CDATA[탄력근무제]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="Code"><![CDATA[0004]]></cl:datavalue>
+            <cl:datavalue columnname="Name"><![CDATA[재택근무제]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-c6702284" id="dsWorkScheduleList">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="string" name="workDate"/>
+          <cl:datacolumn datatype="string" name="workDay"/>
+          <cl:datacolumn datatype="string" name="workShift"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="workDate"><![CDATA[2019-08-19]]></cl:datavalue>
+            <cl:datavalue columnname="workDay"><![CDATA[월]]></cl:datavalue>
+            <cl:datavalue columnname="workShift"><![CDATA[**: 미지정]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="workDate"><![CDATA[2019-08-20]]></cl:datavalue>
+            <cl:datavalue columnname="workDay"><![CDATA[화]]></cl:datavalue>
+            <cl:datavalue columnname="workShift"><![CDATA[**: 미지정]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="workDate"><![CDATA[2019-08-21]]></cl:datavalue>
+            <cl:datavalue columnname="workDay"><![CDATA[수]]></cl:datavalue>
+            <cl:datavalue columnname="workShift"><![CDATA[**: 미지정]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="workDate"><![CDATA[2019-08-22]]></cl:datavalue>
+            <cl:datavalue columnname="workDay"><![CDATA[목]]></cl:datavalue>
+            <cl:datavalue columnname="workShift"><![CDATA[**: 미지정]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="workDate"><![CDATA[2019-08-23]]></cl:datavalue>
+            <cl:datavalue columnname="workDay"><![CDATA[금]]></cl:datavalue>
+            <cl:datavalue columnname="workShift"><![CDATA[**: 미지정]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-400bf42c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-a6fc4426" style="padding:5px;">
+      <cl:xylayoutdata std:sid="xyl-data-c97c44a8" bottom="1px" horizontalAnchor="BOTH" left="1px" right="1px" top="1px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-da330a19">
+        <cl:formdata std:sid="f-data-d1df826b" col="0" row="1"/>
+        <cl:group std:sid="group-eb29a72d">
+          <cl:formdata std:sid="f-data-d453178e" col="1" row="0"/>
+          <cl:output std:sid="output-080e95e7" style="background-color:#e8e8e8; background-image:none;" value="입력 정보">
+            <cl:formdata std:sid="f-data-9c96eefb" col="0" row="0"/>
+          </cl:output>
+          <cl:group std:sid="group-488dee79">
+            <cl:formdata std:sid="f-data-c7a672aa" col="0" row="1"/>
+            <cl:output std:sid="output-69b55936" style="background-color:#e8e8e8; background-image:none; text-align:center;" value="코드">
+              <cl:formdata std:sid="f-data-e4e7b883" col="0" row="0"/>
+            </cl:output>
+            <cl:output std:sid="output-c264c140" style="background-color:#e8e8e8; background-image:none; text-align:center;" value="이름">
+              <cl:formdata std:sid="f-data-fbd67960" col="2" row="0"/>
+            </cl:output>
+            <cl:inputbox std:sid="i-box-0a1c1fbd" id="ipb1">
+              <cl:formdata std:sid="f-data-01fe9a49" col="1" row="0"/>
+            </cl:inputbox>
+            <cl:inputbox std:sid="i-box-da73902e" id="ipb2">
+              <cl:formdata std:sid="f-data-6eb8e679" col="3" row="0"/>
+            </cl:inputbox>
+            <cl:formlayout std:sid="f-layout-dd67f6ef">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-db51067f">
+            <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-ea4caafc">
+          <cl:formdata std:sid="f-data-8befc18c" col="0" colspan="1" row="0" rowspan="4"/>
+          <cl:grid std:sid="grid-117aae23" id="grd1" columnMovable="false" columnResizable="false" datasetid="dsWorkTypeTinyList" readonly="true">
+            <cl:formdata std:sid="f-data-6d56435b" col="0" row="0"/>
+            <cl:gridcolumn std:sid="g-column-30b62446" width="80px"/>
+            <cl:gridcolumn std:sid="g-column-38dc005f"/>
+            <cl:gridheader std:sid="gh-band-e4c9eb2d">
+              <cl:gridrow std:sid="g-row-1f758bab"/>
+              <cl:gridcell std:sid="gh-cell-6c41d3c1" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="Code" text="Code"/>
+              <cl:gridcell std:sid="gh-cell-08b926d3" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="Name" text="Name"/>
+            </cl:gridheader>
+            <cl:griddetail std:sid="gd-band-4f3c1d25">
+              <cl:gridrow std:sid="g-row-183428b2"/>
+              <cl:gridcell std:sid="gd-cell-517e26b1" colindex="0" rowindex="0" columnname="Code"/>
+              <cl:gridcell std:sid="gd-cell-baf5142a" colindex="1" rowindex="0" columnname="Name"/>
+            </cl:griddetail>
+          </cl:grid>
+          <cl:formlayout std:sid="f-layout-c5d3c3d3">
+            <cl:rows length="1" unit="FRACTION"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-c68ecbc0">
+          <cl:formdata std:sid="f-data-165f7513" col="1" row="1"/>
+          <cl:group std:sid="group-bf7a4b4b">
+            <cl:formdata std:sid="f-data-e7dd90e8" col="0" row="1"/>
+            <cl:output std:sid="output-5a3b1b18" style="background-color:#e8e8e8; background-image:none; text-align:center;" value="적용 공휴일 코드">
+              <cl:formdata std:sid="f-data-d2e6564c" col="0" row="0"/>
+            </cl:output>
+            <cl:combobox std:sid="c-box-de0c3455" id="cmb1" style="text-align:center;" value="0">
+              <cl:formdata std:sid="f-data-a0ff2a71" halign="CENTER" width="150" col="1" row="0"/>
+              <cl:item label="**: 미지정" value="0"/>
+            </cl:combobox>
+            <cl:formlayout std:sid="f-layout-89f0afba">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:group std:sid="group-472b3f46">
+            <cl:formdata std:sid="f-data-228026fc" col="0" row="2"/>
+            <cl:output std:sid="output-34e80c54" style="background-color:#e8e8e8; background-image:none; text-align:center;" value="적용 공휴일 근무">
+              <cl:formdata std:sid="f-data-c57efd9c" col="0" row="0"/>
+            </cl:output>
+            <cl:combobox std:sid="c-box-d1b78ae2" id="cmb2" style="text-align:center;" value="0">
+              <cl:formdata std:sid="f-data-45e91157" halign="CENTER" width="150" col="1" row="0"/>
+              <cl:item label="**: 미지정" value="0"/>
+            </cl:combobox>
+            <cl:formlayout std:sid="f-layout-60e58f03">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:output std:sid="output-20ddf265" style="background-color:#e8e8e8; background-image:none;" value="적용 공휴일 코드">
+            <cl:formdata std:sid="f-data-5a7fa79a" col="0" row="0"/>
+          </cl:output>
+          <cl:formlayout std:sid="f-layout-280dae8f">
+            <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:group std:sid="group-d4c5684f">
+          <cl:formdata std:sid="f-data-8f45862c" col="1" row="2"/>
+          <cl:output std:sid="output-26c89edd" style="background-color:#e8e8e8; background-image:none;" value="근무일정 세팅">
+            <cl:formdata std:sid="f-data-401ec566" col="0" row="0"/>
+          </cl:output>
+          <cl:group std:sid="group-26522a56">
+            <cl:formdata std:sid="f-data-7a59671a" col="0" row="1"/>
+            <cl:output std:sid="output-ad63e528" style="background-color:#e8e8e8; background-image:none; text-align:center;" value="시작일">
+              <cl:formdata std:sid="f-data-4097aa6a" col="0" row="0"/>
+            </cl:output>
+            <cl:output std:sid="output-0e268603" style="background-color:#e8e8e8; background-image:none; text-align:center;" value="설정 일수">
+              <cl:formdata std:sid="f-data-784359f9" col="3" row="0"/>
+            </cl:output>
+            <cl:combobox std:sid="c-box-b1d5e6bb" id="cmb3" style="text-align:center;" value="1">
+              <cl:formdata std:sid="f-data-7d7e2cc8" col="4" row="0"/>
+              <cl:item label="1" value="1"/>
+            </cl:combobox>
+            <cl:output std:sid="output-cb1606fc" value="일">
+              <cl:formdata std:sid="f-data-9ab01be1" col="5" row="0"/>
+            </cl:output>
+            <cl:dateinput std:sid="d-input-064c3f73" id="dti1" style="text-align:center;" value="20190819">
+              <cl:formdata std:sid="f-data-22c67a0d" col="1" row="0"/>
+            </cl:dateinput>
+            <cl:formlayout std:sid="f-layout-e2261adc">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+              <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+              <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+              <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+              <cl:columns autoSizing="false" length="70" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+              <cl:columns autoSizing="false" length="50" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:formlayout std:sid="f-layout-28c98d1a">
+            <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+            <cl:columns length="1" unit="FRACTION"/>
+          </cl:formlayout>
+        </cl:group>
+        <cl:grid std:sid="grid-68c783f6" id="grd2" columnMovable="false" columnResizable="false" datasetid="dsWorkScheduleList" readonly="true">
+          <cl:formdata std:sid="f-data-b60becd5" col="1" row="3"/>
+          <cl:gridcolumn std:sid="g-column-693f0e99"/>
+          <cl:gridcolumn std:sid="g-column-62c2fa6f" width="50px"/>
+          <cl:gridcolumn std:sid="g-column-f4b38ec4"/>
+          <cl:gridheader std:sid="gh-band-7d369a9f">
+            <cl:gridrow std:sid="g-row-3206f264"/>
+            <cl:gridcell std:sid="gh-cell-8eb131b8" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="workDate" text="workDate"/>
+            <cl:gridcell std:sid="gh-cell-7830bcf6" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="workDay" text="workDay"/>
+            <cl:gridcell std:sid="gh-cell-29059259" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="workShift" text="workShift"/>
+          </cl:gridheader>
+          <cl:griddetail std:sid="gd-band-b3c0e44c">
+            <cl:gridrow std:sid="g-row-1aae5a10"/>
+            <cl:gridcell std:sid="gd-cell-89764a55" colindex="0" rowindex="0" columnname="workDate"/>
+            <cl:gridcell std:sid="gd-cell-3d6553a2" colindex="1" rowindex="0" columnname="workDay"/>
+            <cl:gridcell std:sid="gd-cell-a907df85" colindex="2" rowindex="0" columnname="workShift"/>
+          </cl:griddetail>
+        </cl:grid>
+        <cl:formlayout std:sid="f-layout-da149492">
+          <cl:rows autoSizing="false" length="70" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="70" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns autoSizing="false" length="190" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-62faca48">
+        <cl:formdata std:sid="f-data-59f7219b" col="0" row="2"/>
+        <cl:button std:sid="button-6c2b4430" value="저장">
+          <cl:formdata std:sid="f-data-204ad7b4" col="2" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-34f1b2b9" value="삭제">
+          <cl:formdata std:sid="f-data-08b17afa" col="3" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-ab220c93" value="닫기">
+          <cl:formdata std:sid="f-data-3c885a06" col="4" row="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-a6b40af7">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-b5cb395d">
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-e25641d8"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

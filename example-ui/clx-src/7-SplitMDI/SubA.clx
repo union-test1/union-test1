@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c69aaaa8" version="1.0.0.0">
+  <head std:sid="head-2444cdb6">
+    <title>SubA</title>
+    <screen std:sid="screen-5ae6d65c" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-c433b54f" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-460a151e" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-7f281df1">
+      <cl:dataset std:sid="d-set-b676b0e3" id="people">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn name="favoriteColor"/>
+          <cl:datacolumn datatype="number" name="kor"/>
+          <cl:datacolumn datatype="number" name="eng"/>
+          <cl:datacolumn datatype="number" name="math"/>
+          <cl:datacolumn datatype="expression" expression="kor + eng + math" name="total"/>
+          <cl:datacolumn datatype="expression" expression="ceil((kor + eng + math) / 3)" name="avg"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Tomato]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[red]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[50]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Bulider Kim]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[blue]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[70]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[90]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[Nobody]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Nobody]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[orange]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[60]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[60]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Jeeeyul Lee]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[magenta]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[95]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[80]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="total">total4</cl:datavalue>
+            <cl:datavalue columnname="avg">avg4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[Tomato]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-a497bd30" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-a27671de" value="Program A">
+      <cl:xylayoutdata std:sid="xyl-data-4fe1f167" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:grid std:sid="grid-9986a2b6" id="grd1" datasetid="people">
+      <cl:xylayoutdata std:sid="xyl-data-68def964" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="50px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-2c2bbe3e"/>
+      <cl:gridcolumn std:sid="g-column-302d54ff"/>
+      <cl:gridcolumn std:sid="g-column-24238c09"/>
+      <cl:gridcolumn std:sid="g-column-14ddf091"/>
+      <cl:gridcolumn std:sid="g-column-d6fa90c9"/>
+      <cl:gridcolumn std:sid="g-column-fa3fd6b9"/>
+      <cl:gridcolumn std:sid="g-column-47c4d7f3"/>
+      <cl:gridcolumn std:sid="g-column-45576515"/>
+      <cl:gridheader std:sid="gh-band-4580f9a9">
+        <cl:gridrow std:sid="g-row-9348e5e7"/>
+        <cl:gridcell std:sid="gh-cell-96a0aa65" colindex="0" rowindex="0" text="name"/>
+        <cl:gridcell std:sid="gh-cell-af28d5ab" colindex="1" rowindex="0" text="favoriteColor"/>
+        <cl:gridcell std:sid="gh-cell-09dc76ac" colindex="2" rowindex="0" text="kor"/>
+        <cl:gridcell std:sid="gh-cell-fcbc5e71" colindex="3" rowindex="0" text="eng"/>
+        <cl:gridcell std:sid="gh-cell-85e9a220" colindex="4" rowindex="0" text="math"/>
+        <cl:gridcell std:sid="gh-cell-ff4c6835" colindex="5" rowindex="0" text="total"/>
+        <cl:gridcell std:sid="gh-cell-92f747c2" colindex="6" rowindex="0" text="avg"/>
+        <cl:gridcell std:sid="gh-cell-10faf727" colindex="7" rowindex="0" text="parent"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-d4279af4">
+        <cl:gridrow std:sid="g-row-5fabbbe2"/>
+        <cl:gridcell std:sid="gd-cell-def580ec" colindex="0" rowindex="0" columnname="name"/>
+        <cl:gridcell std:sid="gd-cell-f1929d02" colindex="1" rowindex="0" columnname="favoriteColor"/>
+        <cl:gridcell std:sid="gd-cell-d73c6648" colindex="2" rowindex="0" columnname="kor"/>
+        <cl:gridcell std:sid="gd-cell-c910b1c8" colindex="3" rowindex="0" columnname="eng"/>
+        <cl:gridcell std:sid="gd-cell-9603eeaf" colindex="4" rowindex="0" columnname="math"/>
+        <cl:gridcell std:sid="gd-cell-dc3da7b0" colindex="5" rowindex="0" columnname="total"/>
+        <cl:gridcell std:sid="gd-cell-43bafbdc" colindex="6" rowindex="0" columnname="avg"/>
+        <cl:gridcell std:sid="gd-cell-7610d285" colindex="7" rowindex="0" columnname="parent"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-a0d3cc8f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

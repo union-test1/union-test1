@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CDataEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="132" endIndex="889" startLine="8" endLine="46"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CDataEvent" description="DataSet 이벤트. DataSet의 변화 시 이벤트가 발생합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="156" endIndex="180" startLine="8" endLine="8"/>
+          <params name="type" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="168" startLine="8" endLine="8"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="171" endIndex="177" startLine="8" endLine="8"/>
+            <inferredType name="cpr.events.CDataEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="row">
+              <value xsi:type="index:VariableSymbol" name="row" description="&lt;b>Readonly&lt;/b> 로우 객체를 반환합니다.">
+                <region startIndex="343" endIndex="345"/>
+                <inferredType name="cpr.data.Row" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="baseRow">
+              <value xsi:type="index:VariableSymbol" name="baseRow" description="&lt;b>Readonly&lt;/b> insertRow시 insert에 기준이 된row 반환.">
+                <region startIndex="488" endIndex="494"/>
+                <inferredType name="cpr.data.Row" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="beforeValue">
+              <value xsi:type="index:VariableSymbol" name="beforeValue" description="&lt;b>Readonly&lt;/b> 변경되기 전 값을 반환합니다.">
+                <region startIndex="616" endIndex="626"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="currentValue">
+              <value xsi:type="index:VariableSymbol" name="currentValue" description="&lt;b>Readonly&lt;/b> 현재 값을 반환합니다.">
+                <region startIndex="738" endIndex="749"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnName">
+              <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;b>Readonly&lt;/b> 컬럼 이름을 반환합니다.">
+                <region startIndex="862" endIndex="871"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CDataEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CDataEvent" originalSymbolName="__anonymous1">
+          <region startIndex="143" endIndex="152"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="156" endIndex="180" startLine="8" endLine="8"/>
+        <childScopes>
+          <region startIndex="180" endIndex="180"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="168" startLine="8" endLine="8"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="171" endIndex="177" startLine="8" endLine="8"/>
+              <inferredType name="cpr.events.CDataEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CDataEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CDataEvent" description="DataSet 이벤트. DataSet의 변화 시 이벤트가 발생합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="143" endIndex="152"/>
+        <params name="type" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="168" startLine="8" endLine="8"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="171" endIndex="177" startLine="8" endLine="8"/>
+          <inferredType name="cpr.events.CDataEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="row">
+            <value xsi:type="index:VariableSymbol" name="row" description="&lt;b>Readonly&lt;/b> 로우 객체를 반환합니다.">
+              <region startIndex="343" endIndex="345"/>
+              <inferredType name="cpr.data.Row" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="baseRow">
+            <value xsi:type="index:VariableSymbol" name="baseRow" description="&lt;b>Readonly&lt;/b> insertRow시 insert에 기준이 된row 반환.">
+              <region startIndex="488" endIndex="494"/>
+              <inferredType name="cpr.data.Row" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="beforeValue">
+            <value xsi:type="index:VariableSymbol" name="beforeValue" description="&lt;b>Readonly&lt;/b> 변경되기 전 값을 반환합니다.">
+              <region startIndex="616" endIndex="626"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="currentValue">
+            <value xsi:type="index:VariableSymbol" name="currentValue" description="&lt;b>Readonly&lt;/b> 현재 값을 반환합니다.">
+              <region startIndex="738" endIndex="749"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnName">
+            <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;b>Readonly&lt;/b> 컬럼 이름을 반환합니다.">
+              <region startIndex="862" endIndex="871"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

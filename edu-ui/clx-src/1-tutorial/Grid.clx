@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-bd15a512" version="1.0.0.0">
+  <head std:sid="head-6894fa17">
+    <title>Grid</title>
+    <screen std:sid="screen-fdbae56b" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-1b8bb6aa" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-7b6d0296" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-5ad94f75">
+      <cl:dataset std:sid="d-set-9f8ceed2" id="ds1" sortcondition="DEPT">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="ID"/>
+          <cl:datacolumn name="NAME"/>
+          <cl:datacolumn name="GENDER"/>
+          <cl:datacolumn name="DEPT"/>
+          <cl:datacolumn datatype="number" name="SALARY"/>
+          <cl:datacolumn datatype="number" name="BONUS"/>
+          <cl:datacolumn datatype="expression" expression="SALARY + BONUS + &quot;원&quot;" info="" name="SUM"/>
+          <cl:datacolumn datatype="number" name="TOTAL"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-f5a5a50c" id="subList" action="data/emp.json">
+        <cl:listener std:sid="listener-bfc943dc" handler="onSubListSubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="ds1"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-c64139d0" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-1e7bb407" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-21f36674">
+      <cl:xylayoutdata std:sid="xyl-data-9335cb4a" height="25px" horizontalAnchor="RIGHT" right="20px" top="20px" verticalAnchor="TOP" width="210px"/>
+      <cl:button std:sid="button-1681b258" id="btnAdd" value="추가">
+        <cl:listener std:sid="listener-1bf5e32e" handler="onBtnAddClick" name="click"/>
+        <cl:formdata std:sid="f-data-94c062ce" col="0" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-bc6001b2" id="btnDel" value="삭제">
+        <cl:listener std:sid="listener-bac8beb4" handler="onBtnDelClick" name="click"/>
+        <cl:formdata std:sid="f-data-e9100b43" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-b64b736a" id="btnSave" value="저장">
+        <cl:listener std:sid="listener-a8d07650" handler="onBtnSaveClick" name="click"/>
+        <cl:formdata std:sid="f-data-144d8b1c" col="2" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-ede17d0b">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:grid std:sid="grid-494c8354" id="grd1" autofit="2, 3, 4, 5, 6, 7, 8, 9" collapsible="true" columnMovable="false" columnResizable="false" datasetid="ds1" readonly="false">
+      <cl:xylayoutdata std:sid="xyl-data-287363dc" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="55px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-591cc72e" width="25px"/>
+      <cl:gridcolumn std:sid="g-column-eabb9f35" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-50384bb8"/>
+      <cl:gridcolumn std:sid="g-column-111cc871"/>
+      <cl:gridcolumn std:sid="g-column-10337328"/>
+      <cl:gridcolumn std:sid="g-column-b0f69479"/>
+      <cl:gridcolumn std:sid="g-column-4a31e12f"/>
+      <cl:gridcolumn std:sid="g-column-5d595b18"/>
+      <cl:gridcolumn std:sid="g-column-c23c3519"/>
+      <cl:gridcolumn std:sid="g-column-0ee28a10"/>
+      <cl:gridheader std:sid="gh-band-0c35c70a">
+        <cl:gridrow std:sid="g-row-ad77b452"/>
+        <cl:gridcell std:sid="gh-cell-6040fdd4" colindex="0" rowindex="0" columntype="checkbox" filterable="false" sortable="false"/>
+        <cl:gridcell std:sid="gh-cell-f5cc860a" colindex="1" rowindex="0" filterable="false" sortable="false"/>
+        <cl:gridcell std:sid="gh-cell-cd543ad3" colindex="2" rowindex="0" filterable="false" sortable="true" targetcolumnname="ID" text="사번"/>
+        <cl:gridcell std:sid="gh-cell-dd0ccddf" colindex="3" rowindex="0" filterable="false" sortable="true" targetcolumnname="NAME" text="이름"/>
+        <cl:gridcell std:sid="gh-cell-5c5bdab3" colindex="4" rowindex="0" filterable="false" sortable="true" targetcolumnname="GENDER" text="성별"/>
+        <cl:gridcell std:sid="gh-cell-bc7cd844" colindex="5" rowindex="0" filterable="false" sortable="true" targetcolumnname="DEPARTMENT" text="부서"/>
+        <cl:gridcell std:sid="gh-cell-f343f76b" colindex="6" rowindex="0" filterable="false" sortable="true" targetcolumnname="SALARY" text="급여"/>
+        <cl:gridcell std:sid="gh-cell-6b3fdb74" colindex="7" rowindex="0" filterable="false" sortable="true" targetcolumnname="BONUS" text="상여금"/>
+        <cl:gridcell std:sid="gh-cell-9ece6937" colindex="8" rowindex="0" filterable="false" sortable="true" targetcolumnname="TOTAL" text="합계"/>
+        <cl:gridcell std:sid="gh-cell-219d959b" colindex="9" rowindex="0" filterable="false" sortable="true" targetcolumnname="SUM" text="합계" visible="false"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-4e3ff475">
+        <cl:gridrow std:sid="g-row-29e0099a"/>
+        <cl:gridcell std:sid="gd-cell-63387376" colindex="0" rowindex="0" columntype="checkbox"/>
+        <cl:gridcell std:sid="gd-cell-97ba0c57" colindex="1" rowindex="0" style="text-align:center;" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-9203592c" colindex="2" rowindex="0" columnname="ID">
+          <cl:inputbox std:sid="i-box-5f8fed46" id="ipb1"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-3eba3334" colindex="3" rowindex="0" columnname="NAME">
+          <cl:inputbox std:sid="i-box-b07d83f2" id="ipb2"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-4e79c501" colindex="4" rowindex="0" columnname="GENDER">
+          <cl:combobox std:sid="c-box-62bddaf2" id="cmb1">
+            <cl:item label="여성" value="F"/>
+            <cl:item label="남성" value="M"/>
+          </cl:combobox>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-8a791b4b" colindex="5" rowindex="0" columnname="DEPT">
+          <cl:inputbox std:sid="i-box-0ee9d748" id="ipb3"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-f761932c" colindex="6" rowindex="0" style="text-align:right;" columnname="SALARY">
+          <cl:numbereditor std:sid="n-editor-1820aa77" id="nbe1" style="text-align:right;"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-7b2cce4b" colindex="7" rowindex="0" style="text-align:right;" columnname="BONUS">
+          <cl:numbereditor std:sid="n-editor-c1df7ad9" id="nbe2" style="text-align:right;"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-f846959a" colindex="8" rowindex="0" style="text-align:right;" columnname="TOTAL">
+          <cl:output std:sid="output-963269e0" style="text-align:right;" datatype="number"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-cd938d00" colindex="9" rowindex="0" style="text-align:right;" columnname="SUM">
+          <cl:output std:sid="output-23b4acf4" style="text-align:right;"/>
+        </cl:gridcell>
+      </cl:griddetail>
+      <cl:gridfooter std:sid="gf-band-6871b225">
+        <cl:gridrow std:sid="g-row-d5ea482f"/>
+        <cl:gridrow std:sid="g-row-2d2bb679"/>
+        <cl:gridcell std:sid="gf-cell-5c13b202" colindex="0" colspan="6" rowindex="0" rowspan="1" style="background-color:#f0f0f0; text-align:right;" expr="&quot;SUM&quot;"/>
+        <cl:gridcell std:sid="gf-cell-1dde880d" colindex="6" rowindex="0" style="text-align:right;" expr="getSum(&quot;SALARY&quot;) + &quot;원&quot;"/>
+        <cl:gridcell std:sid="gf-cell-7949e220" colindex="7" rowindex="0" style="text-align:right;" expr="getSum(&quot;BONUS&quot;) + &quot;원&quot;"/>
+        <cl:gridcell std:sid="gf-cell-19936f9d" colindex="8" rowindex="0" style="text-align:right;" expr="getSum(&quot;TOTAL&quot;) + &quot;원&quot;"/>
+        <cl:gridcell std:sid="gf-cell-3356a89d" colindex="9" rowindex="0"/>
+        <cl:gridcell std:sid="gf-cell-dda7934d" colindex="0" colspan="6" rowindex="1" rowspan="1" style="background-color:#f0f0f0; text-align:right;" expr="&quot;AVG&quot;"/>
+        <cl:gridcell std:sid="gf-cell-0f560300" colindex="6" rowindex="1" style="text-align:right;" expr="round(getAvg(&quot;SALARY&quot;)) + &quot;원&quot;"/>
+        <cl:gridcell std:sid="gf-cell-51753ed5" colindex="7" rowindex="1" style="text-align:right;" expr="round(getAvg(&quot;BONUS&quot;)) + &quot;원&quot;"/>
+        <cl:gridcell std:sid="gf-cell-94dfbbb6" colindex="8" rowindex="1" style="text-align:right;" expr="round(getAvg(&quot;TOTAL&quot;)) + &quot;원&quot;"/>
+        <cl:gridcell std:sid="gf-cell-5bf5499e" colindex="9" rowindex="1"/>
+      </cl:gridfooter>
+      <cl:gridrowgrouplist std:sid="grg-list-6e2ff041">
+        <cl:gridrowgroup std:sid="gr-group-ddb569bf" groupcondition="DEPT" startcollapse="true">
+          <cl:gridgroupheader std:sid="gf-band-e727da9a">
+            <cl:gridrow std:sid="g-row-934f665a" height="24px"/>
+            <cl:gridcell std:sid="gf-cell-efc6adf3" colindex="0" colspan="10" rowindex="0" rowspan="1" style="background-color:#fffee0;" expr="DEPT"/>
+          </cl:gridgroupheader>
+          <cl:gridgroupfooter std:sid="gf-band-1117af99">
+            <cl:gridrow std:sid="g-row-694b7d63" height="24px"/>
+            <cl:gridrow std:sid="g-row-8c8ccbe5"/>
+            <cl:gridcell std:sid="gf-cell-5cf59f2e" colindex="0" colspan="8" rowindex="0" rowspan="1" style="background-color:#f0f0f0; text-align:right;" expr="&quot;MAX&quot;"/>
+            <cl:gridcell std:sid="gf-cell-fe1ef29b" colindex="8" colspan="1" rowindex="0" rowspan="1" style="text-align:right;" expr="getMax(&quot;TOTAL&quot;) + &quot;원&quot;"/>
+            <cl:gridcell std:sid="gf-cell-54f9315a" colindex="9" rowindex="0"/>
+            <cl:gridcell std:sid="gf-cell-e38e2ebd" colindex="0" colspan="8" rowindex="1" rowspan="1" style="background-color:#f0f0f0; text-align:right;" expr="&quot;MIN&quot;"/>
+            <cl:gridcell std:sid="gf-cell-cb25523d" colindex="8" rowindex="1" style="text-align:right;" expr="getMin(&quot;TOTAL&quot;) + &quot;원&quot;"/>
+            <cl:gridcell std:sid="gf-cell-45638bd5" colindex="9" rowindex="1"/>
+          </cl:gridgroupfooter>
+        </cl:gridrowgroup>
+      </cl:gridrowgrouplist>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-c01c7589"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

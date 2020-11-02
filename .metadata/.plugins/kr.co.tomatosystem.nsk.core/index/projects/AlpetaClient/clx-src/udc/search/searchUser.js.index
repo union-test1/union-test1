@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/search/searchUser.js" fileModificationTimestamp="6409993" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.search.searchUser" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="187" endIndex="1230" startLine="7" endLine="39"/>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/search/searchUser 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onBtnSearchClick">
+        <value xsi:type="index:FunctionSymbol" name="onBtnSearchClick">
+          <region xsi:type="index:RegionWithLine" startIndex="386" endIndex="401" startLine="15" endLine="15"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="403" endIndex="403" startLine="15" endLine="15"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="dataManager">
+        <value xsi:type="index:VariableSymbol" name="dataManager">
+          <region startIndex="191" endIndex="201"/>
+          <inferredType name="DataManager" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/DataManager.module.js?type=HOT_INDEX" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getText" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="311" endIndex="338" startLine="10" endLine="12"/>
+          <inferredReturnType name="String" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="removeItem" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1150" endIndex="1228" startLine="36" endLine="38"/>
+          <params name="value" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1159" endIndex="1163" startLine="36" endLine="36"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onBodyLoad">
+        <value xsi:type="index:FunctionSymbol" name="onBodyLoad">
+          <region xsi:type="index:RegionWithLine" startIndex="504" endIndex="513" startLine="21" endLine="21"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="539" endIndex="539" startLine="21" endLine="21"/>
+            <inferredType name="cpr.events.CEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.search.searchUser" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.search.searchUser">
+        <value xsi:type="index:FunctionSymbol" name="udc.search.searchUser" labelForOutline="searchUser" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="searchKeyword">
+              <value xsi:type="index:AppPropertySymbol" name="searchKeyword">
+                <region/>
+                <inferredType name="String" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="getText">
+              <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+                <region startIndex="301" endIndex="307"/>
+              </value>
+            </symbols>
+            <symbols key="searchCategory">
+              <value xsi:type="index:AppPropertySymbol" name="searchCategory">
+                <region/>
+                <inferredType name="String" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="removeItem">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeItem" originalSymbolName="__anonymous2">
+                <region startIndex="1137" endIndex="1146"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="311" endIndex="338" startLine="10" endLine="12"/>
+        <childScopes>
+          <region startIndex="322" endIndex="338"/>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onBtnSearchClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region startIndex="406" endIndex="486"/>
+        <symbolMap key="event">
+          <value xsi:type="index:VariableSymbol" name="event">
+            <region startIndex="414" endIndex="418"/>
+            <inferredType name="cpr.events.CUIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CUIEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="403" endIndex="403" startLine="15" endLine="15"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="377" endIndex="486" startLine="15" endLine="18"/>
+      </childScopes>
+      <childScopes name="onBodyLoad" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region startIndex="542" endIndex="1124"/>
+        <symbolMap key="cmbSearchCategory">
+          <value xsi:type="index:VariableSymbol" name="cmbSearchCategory">
+            <region startIndex="636" endIndex="652"/>
+            <duplicatedSymbols xsi:type="index:VariableSymbol" name="cmbSearchCategory">
+              <region startIndex="1029" endIndex="1045"/>
+              <inferredType name="cpr.controls.ComboBox" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.ComboBox.js?type=EXPORTED" instance="true"/>
+            </duplicatedSymbols>
+            <inferredType name="cpr.controls.ComboBox" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.ComboBox.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="cardItem">
+          <value xsi:type="index:VariableSymbol" name="cardItem">
+            <region startIndex="733" endIndex="740"/>
+            <inferredType name="cpr.controls.Item" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Item.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="539" endIndex="539" startLine="21" endLine="21"/>
+            <inferredType name="cpr.events.CEvent" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="495" endIndex="1124" startLine="21" endLine="34"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1150" endIndex="1228" startLine="36" endLine="38"/>
+        <childScopes>
+          <region startIndex="1166" endIndex="1228"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1159" endIndex="1163" startLine="36" endLine="36"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.search.searchUser">
+      <value xsi:type="index:FunctionSymbol" name="udc.search.searchUser" labelForOutline="searchUser" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="getText">
+            <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+              <region startIndex="301" endIndex="307"/>
+            </value>
+          </symbols>
+          <symbols key="searchCategory">
+            <value xsi:type="index:AppPropertySymbol" name="searchCategory">
+              <region/>
+              <inferredType name="String" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="removeItem">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeItem" originalSymbolName="__anonymous2">
+              <region startIndex="1137" endIndex="1146"/>
+            </value>
+          </symbols>
+          <symbols key="searchKeyword">
+            <value xsi:type="index:AppPropertySymbol" name="searchKeyword">
+              <region/>
+              <inferredType name="String" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

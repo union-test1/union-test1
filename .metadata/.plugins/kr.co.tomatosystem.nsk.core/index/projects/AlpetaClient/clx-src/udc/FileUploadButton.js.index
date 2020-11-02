@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/FileUploadButton.js" fileModificationTimestamp="6408273" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.FileUploadButton" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="249" endIndex="1081" startLine="12" endLine="48"/>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/FileUploadButton 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getText" description="UDC 컨트롤이 그리드의 뷰 모드에서 표시할 텍스트를 반환합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="267" endIndex="347" startLine="12" endLine="15"/>
+          <inferredReturnType name="String" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getFile" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="371" endIndex="425" startLine="17" endLine="19"/>
+          <inferredReturnType name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onFileUploadValueChange">
+        <value xsi:type="index:FunctionSymbol" name="onFileUploadValueChange">
+          <region xsi:type="index:RegionWithLine" startIndex="538" endIndex="560" startLine="25" endLine="25"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="597" endIndex="597" startLine="25" endLine="25"/>
+            <inferredType name="cpr.events.CValueChangeEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onButtonClick">
+        <value xsi:type="index:FunctionSymbol" name="onButtonClick">
+          <region xsi:type="index:RegionWithLine" startIndex="861" endIndex="873" startLine="39" endLine="39"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="904" endIndex="904" startLine="39" endLine="39"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.FileUploadButton">
+        <value xsi:type="index:FunctionSymbol" name="udc.FileUploadButton" labelForOutline="FileUploadButton" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="getFile">
+              <value xsi:type="index:FunctionVariableSymbol" name="getFile" originalSymbolName="__anonymous2">
+                <region startIndex="361" endIndex="367"/>
+              </value>
+            </symbols>
+            <symbols key="value">
+              <value xsi:type="index:AppPropertySymbol" name="value">
+                <region/>
+                <inferredType name="String" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="getText">
+              <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+                <region startIndex="257" endIndex="263"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.FileUploadButton" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="267" endIndex="347" startLine="12" endLine="15"/>
+        <childScopes>
+          <region startIndex="278" endIndex="347"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="371" endIndex="425" startLine="17" endLine="19"/>
+        <childScopes>
+          <region startIndex="383" endIndex="425"/>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onFileUploadValueChange" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region startIndex="600" endIndex="777"/>
+        <symbolMap key="event">
+          <value xsi:type="index:VariableSymbol" name="event">
+            <region startIndex="687" endIndex="691"/>
+            <inferredType name="cpr.events.CValueChangeEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CValueChangeEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="597" endIndex="597" startLine="25" endLine="25"/>
+            <inferredType name="cpr.events.CValueChangeEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CValueChangeEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="fileUpload">
+          <value xsi:type="index:VariableSymbol" name="fileUpload">
+            <region startIndex="654" endIndex="663"/>
+            <inferredType name="cpr.controls.FileInput" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="431" endIndex="777" startLine="25" endLine="33"/>
+      </childScopes>
+      <childScopes name="onButtonClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region startIndex="907" endIndex="1079"/>
+        <symbolMap key="button">
+          <value xsi:type="index:VariableSymbol" name="button">
+            <region startIndex="958" endIndex="963"/>
+            <inferredType name="cpr.controls.Button" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="904" endIndex="904" startLine="39" endLine="39"/>
+            <inferredType name="cpr.events.CMouseEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CMouseEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="782" endIndex="1079" startLine="39" endLine="47"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.FileUploadButton">
+      <value xsi:type="index:FunctionSymbol" name="udc.FileUploadButton" labelForOutline="FileUploadButton" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="value">
+            <value xsi:type="index:AppPropertySymbol" name="value">
+              <region/>
+              <inferredType name="String" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="getFile">
+            <value xsi:type="index:FunctionVariableSymbol" name="getFile" originalSymbolName="__anonymous2">
+              <region startIndex="361" endIndex="367"/>
+            </value>
+          </symbols>
+          <symbols key="getText">
+            <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+              <region startIndex="257" endIndex="263"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

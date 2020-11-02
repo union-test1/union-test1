@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CTransitionEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="119" endIndex="438" startLine="6" endLine="21"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CTransitionEvent" description="터치 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="149" endIndex="173" startLine="6" endLine="6"/>
+          <params name="type" description="이벤트 유형." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="158" endIndex="161" startLine="6" endLine="6"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트 옵션." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="164" endIndex="170" startLine="6" endLine="6"/>
+            <inferredType name="cpr.events.CTranstionEventOption" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="elapsedTime">
+              <value xsi:type="index:VariableSymbol" name="elapsedTime">
+                <region startIndex="310" endIndex="320"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="propertyNames">
+              <value xsi:type="index:VariableSymbol" name="propertyNames">
+                <region startIndex="409" endIndex="421"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CTransitionEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CTransitionEvent" originalSymbolName="__anonymous1">
+          <region startIndex="130" endIndex="145"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="149" endIndex="173" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="173" endIndex="173"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="158" endIndex="161" startLine="6" endLine="6"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트 옵션." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="164" endIndex="170" startLine="6" endLine="6"/>
+              <inferredType name="cpr.events.CTranstionEventOption" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CTransitionEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CTransitionEvent" description="터치 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="130" endIndex="145"/>
+        <params name="type" description="이벤트 유형.">
+          <region xsi:type="index:RegionWithLine" startIndex="158" endIndex="161" startLine="6" endLine="6"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트 옵션." parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="164" endIndex="170" startLine="6" endLine="6"/>
+          <inferredType name="cpr.events.CTranstionEventOption" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="elapsedTime">
+            <value xsi:type="index:VariableSymbol" name="elapsedTime">
+              <region startIndex="310" endIndex="320"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="propertyNames">
+            <value xsi:type="index:VariableSymbol" name="propertyNames">
+              <region startIndex="409" endIndex="421"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/canvas.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="39" endIndex="14613" startLine="5" endLine="540"/>
+      <symbolMap key="HTMLCanvasElement">
+        <value xsi:type="index:FunctionSymbol" name="HTMLCanvasElement" baseSymbolName="HTMLElement" canBeUsedAsConstructor="false">
+          <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="64" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="width">
+              <value xsi:type="index:VariableSymbol" name="width">
+                <region startIndex="176" endIndex="180"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="height">
+              <value xsi:type="index:VariableSymbol" name="height">
+                <region startIndex="242" endIndex="247"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="toDataURL">
+              <value xsi:type="index:FunctionVariableSymbol" name="toDataURL" originalSymbolName="__anonymous1">
+                <region startIndex="403" endIndex="411"/>
+              </value>
+            </symbols>
+            <symbols key="getContext">
+              <value xsi:type="index:FunctionVariableSymbol" name="getContext" originalSymbolName="__anonymous2">
+                <region startIndex="633" endIndex="642"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="toDataURL" description="Returns a &lt;b>data:&lt;/b> URL containing a representation of the image as a PNG file" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="415" endIndex="428" startLine="25" endLine="26"/>
+          <inferredReturnType name="String" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getContext" description="Returns a reference to drawing context" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="646" endIndex="668" startLine="35" endLine="36"/>
+          <params name="contextId" description="ID of context (only &quot;2d&quot; is supported)" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="655" endIndex="663" startLine="35" endLine="35"/>
+            <inferredType name="String" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="CanvasRenderingContext2D" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="CanvasRenderingContext2D">
+        <value xsi:type="index:FunctionSymbol" name="CanvasRenderingContext2D" description="The 2D context, representing a flat Cartesian surface whose origin (0,0) is at the top left corner, with the coordinate space having x values increasing when going right, and y values increasing when going down." canBeUsedAsConstructor="false">
+          <region xsi:type="index:RegionWithLine" startIndex="925" endIndex="948" startLine="44" endLine="44"/>
+          <prototype>
+            <symbols key="canvas">
+              <value xsi:type="index:VariableSymbol" name="canvas" description="Back-reference to the canvas">
+                <region startIndex="1075" endIndex="1080"/>
+                <inferredType name="HTMLCanvasElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/canvas.js" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="save">
+              <value xsi:type="index:FunctionVariableSymbol" name="save" originalSymbolName="__anonymous2">
+                <region startIndex="1138" endIndex="1141"/>
+              </value>
+            </symbols>
+            <symbols key="restore">
+              <value xsi:type="index:FunctionVariableSymbol" name="restore" originalSymbolName="__anonymous3">
+                <region startIndex="1212" endIndex="1218"/>
+              </value>
+            </symbols>
+            <symbols key="scale">
+              <value xsi:type="index:FunctionVariableSymbol" name="scale" originalSymbolName="__anonymous4">
+                <region startIndex="1636" endIndex="1640"/>
+              </value>
+            </symbols>
+            <symbols key="rotate">
+              <value xsi:type="index:FunctionVariableSymbol" name="rotate" originalSymbolName="__anonymous5">
+                <region startIndex="1932" endIndex="1937"/>
+              </value>
+            </symbols>
+            <symbols key="translate">
+              <value xsi:type="index:FunctionVariableSymbol" name="translate" originalSymbolName="__anonymous6">
+                <region startIndex="2398" endIndex="2406"/>
+              </value>
+            </symbols>
+            <symbols key="transform">
+              <value xsi:type="index:FunctionVariableSymbol" name="transform" originalSymbolName="__anonymous7">
+                <region startIndex="2809" endIndex="2817"/>
+              </value>
+            </symbols>
+            <symbols key="setTransform">
+              <value xsi:type="index:FunctionVariableSymbol" name="setTransform" originalSymbolName="__anonymous8">
+                <region startIndex="3324" endIndex="3335"/>
+              </value>
+            </symbols>
+            <symbols key="globalAlpha">
+              <value xsi:type="index:VariableSymbol" name="globalAlpha" description="The &lt;code>globalAlpha&lt;/code> attribute gives an alpha value that is applied to shapes and images before they are composited onto the canvas. The value must be in the range from 0.0 (fully transparent) to 1.0 (no additional transparency). If an attempt is made to set the attribute to a value outside this range, the attribute must retain its previous value. When the context is created, the &lt;code>globalAlpha&lt;/code> attribute must initially have the value 1.0.">
+                <region startIndex="3907" endIndex="3917"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="globalCompositeOperation">
+              <value xsi:type="index:VariableSymbol" name="globalCompositeOperation" description="The globalCompositeOperation attribute sets how shapes and images are drawn onto the existing bitmap, once they have had &lt;code>globalAlpha&lt;/code> and the current transformation matrix applied. It must be set to a value from the following list. In the descriptions below, the source image, A, is the shape or image being rendered, and the destination image, B, is the current state of the bitmap.&lt;br> &lt;br> &lt;b>source-atop&lt;/b> : A atop B. Display the source image wherever both images are opaque. Display the destination image wherever the destination image is opaque but the source image is transparent. Display transparency elsewhere.&lt;br> &lt;b>source-in&lt;/b> : A in B. Display the source image wherever both the source image and destination image are opaque. Display transparency elsewhere.&lt;br> &lt;b>source-out&lt;/b> : A out B. Display the source image wherever the source image is opaque and the destination image is transparent. Display transparency elsewhere.&lt;br> &lt;b>source-over&lt;/b> (default) : A over B. Display the source image wherever the source image is opaque. Display the destination image elsewhere.&lt;br> &lt;b>destination-atop&lt;/b> : B atop A. Same as &lt;i>source-atop&lt;/i> but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-in&lt;/b> : B in A. Same as source-in but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-out&lt;/b> : B out A. Same as &lt;i>source-out&lt;/i>, but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-over&lt;/b> : B over A. Same as &lt;i>source-over&lt;/i> but using the destination image instead of the source image and vice versa. &lt;br> &lt;b>lighter&lt;/b> A plus B. Display the sum of the source image and destination image, with color values approaching 1 as a limit.&lt;br> &lt;b>copy&lt;/b> : A (B is ignored). Display the source image instead of the destination image.&lt;br> &lt;b>xor&lt;/b> : A xor B. Exclusive OR of the source image and destination image.">
+                <region startIndex="6077" endIndex="6100"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="strokeStyle">
+              <value xsi:type="index:VariableSymbol" name="strokeStyle" description="Represents the color or style to use for the lines around shapes. Can be either string (CSS &lt;i>color&lt;/i> value), &lt;code>CanvasGradient&lt;/code>, or &lt;code>CanvasPattern&lt;/code>.">
+                <region startIndex="6340" endIndex="6350"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="fillStyle">
+              <value xsi:type="index:VariableSymbol" name="fillStyle" description="Represents the color or style to use inside the shapes. Can be either string (CSS &lt;i>color&lt;/i> value), &lt;code>CanvasGradients&lt;/code>, or &lt;code>CanvasPatterns&lt;/code>.">
+                <region startIndex="6578" endIndex="6586"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="createLinearGradient">
+              <value xsi:type="index:FunctionVariableSymbol" name="createLinearGradient" originalSymbolName="__anonymous9">
+                <region startIndex="7027" endIndex="7046"/>
+              </value>
+            </symbols>
+            <symbols key="createRadialGradient">
+              <value xsi:type="index:FunctionVariableSymbol" name="createRadialGradient" originalSymbolName="__anonymous10">
+                <region startIndex="7788" endIndex="7807"/>
+              </value>
+            </symbols>
+            <symbols key="createPattern">
+              <value xsi:type="index:FunctionVariableSymbol" name="createPattern" originalSymbolName="__anonymous11">
+                <region startIndex="8098" endIndex="8110"/>
+              </value>
+            </symbols>
+            <symbols key="lineWidth">
+              <value xsi:type="index:VariableSymbol" name="lineWidth" description="Width of shape lines, in coordinate space units">
+                <region startIndex="8236" endIndex="8244"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="lineCap">
+              <value xsi:type="index:VariableSymbol" name="lineCap" description="Defines the type of endings on the end of lines. The three valid values are:&lt;br> &lt;br> &lt;b>butt&lt;/b> : the end of each line has a flat edge perpendicular to the direction of the line (no additional line cap is added)&lt;br> &lt;b>round&lt;/b> : a semi-circle with the diameter equal to the width of the line added on to the end of the line.&lt;br> &lt;b>square&lt;/b> : a rectangle with the length of the line width and the width of half the line width, placed flat against the edge perpendicular to the direction of the line, added at the end of each line.">
+                <region startIndex="8864" endIndex="8870"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="lineJoin">
+              <value xsi:type="index:VariableSymbol" name="lineJoin" description="Defines the type of corners that will be placed where two lines meet. The three valid values are 'bevel', 'round', and 'miter' (default).">
+                <region startIndex="9064" endIndex="9071"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="miterLimit">
+              <value xsi:type="index:VariableSymbol" name="miterLimit" description="The miter limit ratio">
+                <region startIndex="9146" endIndex="9155"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shadowColor">
+              <value xsi:type="index:VariableSymbol" name="shadowColor" description="Sets the color of the shadow in CSS &lt;i>color&lt;/i> notation">
+                <region startIndex="9261" endIndex="9271"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shadowOffsetX">
+              <value xsi:type="index:VariableSymbol" name="shadowOffsetX" description="The distance that the shadow will be offset in the positive horizontal direction">
+                <region startIndex="9411" endIndex="9423"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shadowOffsetY">
+              <value xsi:type="index:VariableSymbol" name="shadowOffsetY" description="The distance that the shadow will be offset in the positive vertical direction">
+                <region startIndex="9553" endIndex="9565"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shadowBlur">
+              <value xsi:type="index:VariableSymbol" name="shadowBlur" description="Size of the blurring effect">
+                <region startIndex="9640" endIndex="9649"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clearRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="clearRect" originalSymbolName="__anonymous12">
+                <region startIndex="10141" endIndex="10149"/>
+              </value>
+            </symbols>
+            <symbols key="fillRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="fillRect" originalSymbolName="__anonymous13">
+                <region startIndex="10510" endIndex="10517"/>
+              </value>
+            </symbols>
+            <symbols key="strokeRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="strokeRect" originalSymbolName="__anonymous14">
+                <region startIndex="10993" endIndex="11002"/>
+              </value>
+            </symbols>
+            <symbols key="beginPath">
+              <value xsi:type="index:FunctionVariableSymbol" name="beginPath" originalSymbolName="__anonymous15">
+                <region startIndex="11130" endIndex="11138"/>
+              </value>
+            </symbols>
+            <symbols key="moveTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="moveTo" originalSymbolName="__anonymous16">
+                <region startIndex="11335" endIndex="11340"/>
+              </value>
+            </symbols>
+            <symbols key="closePath">
+              <value xsi:type="index:FunctionVariableSymbol" name="closePath" originalSymbolName="__anonymous17">
+                <region startIndex="11558" endIndex="11566"/>
+              </value>
+            </symbols>
+            <symbols key="lineTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="lineTo" originalSymbolName="__anonymous18">
+                <region startIndex="11816" endIndex="11821"/>
+              </value>
+            </symbols>
+            <symbols key="quadraticCurveTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="quadraticCurveTo" originalSymbolName="__anonymous19">
+                <region startIndex="12209" endIndex="12224"/>
+              </value>
+            </symbols>
+            <symbols key="bezierCurveTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="bezierCurveTo" originalSymbolName="__anonymous20">
+                <region startIndex="12613" endIndex="12625"/>
+              </value>
+            </symbols>
+            <symbols key="arc">
+              <value xsi:type="index:FunctionVariableSymbol" name="arc" originalSymbolName="__anonymous21">
+                <region startIndex="13074" endIndex="13076"/>
+              </value>
+            </symbols>
+            <symbols key="rect">
+              <value xsi:type="index:FunctionVariableSymbol" name="rect" originalSymbolName="__anonymous22">
+                <region startIndex="13289" endIndex="13292"/>
+              </value>
+            </symbols>
+            <symbols key="fill">
+              <value xsi:type="index:FunctionVariableSymbol" name="fill" originalSymbolName="__anonymous23">
+                <region startIndex="13407" endIndex="13410"/>
+              </value>
+            </symbols>
+            <symbols key="stroke">
+              <value xsi:type="index:FunctionVariableSymbol" name="stroke" originalSymbolName="__anonymous24">
+                <region startIndex="13499" endIndex="13504"/>
+              </value>
+            </symbols>
+            <symbols key="clip">
+              <value xsi:type="index:FunctionVariableSymbol" name="clip" originalSymbolName="__anonymous25">
+                <region startIndex="13673" endIndex="13676"/>
+              </value>
+            </symbols>
+            <symbols key="isPointInPath">
+              <value xsi:type="index:FunctionVariableSymbol" name="isPointInPath" originalSymbolName="__anonymous26">
+                <region startIndex="13834" endIndex="13846"/>
+              </value>
+            </symbols>
+            <symbols key="drawImage">
+              <value xsi:type="index:FunctionVariableSymbol" name="drawImage" originalSymbolName="__anonymous27">
+                <region startIndex="14205" endIndex="14213"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="__anonymous3" hideFromProposal="true" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="994" endIndex="14250" startLine="47" endLine="519"/>
+          <prototype>
+            <symbols key="canvas">
+              <value xsi:type="index:VariableSymbol" name="canvas" description="Back-reference to the canvas">
+                <region startIndex="1075" endIndex="1080"/>
+                <inferredType name="HTMLCanvasElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/canvas.js" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="save">
+              <value xsi:type="index:FunctionVariableSymbol" name="save" originalSymbolName="__anonymous2">
+                <region startIndex="1138" endIndex="1141"/>
+              </value>
+            </symbols>
+            <symbols key="restore">
+              <value xsi:type="index:FunctionVariableSymbol" name="restore" originalSymbolName="__anonymous3">
+                <region startIndex="1212" endIndex="1218"/>
+              </value>
+            </symbols>
+            <symbols key="scale">
+              <value xsi:type="index:FunctionVariableSymbol" name="scale" originalSymbolName="__anonymous4">
+                <region startIndex="1636" endIndex="1640"/>
+              </value>
+            </symbols>
+            <symbols key="rotate">
+              <value xsi:type="index:FunctionVariableSymbol" name="rotate" originalSymbolName="__anonymous5">
+                <region startIndex="1932" endIndex="1937"/>
+              </value>
+            </symbols>
+            <symbols key="translate">
+              <value xsi:type="index:FunctionVariableSymbol" name="translate" originalSymbolName="__anonymous6">
+                <region startIndex="2398" endIndex="2406"/>
+              </value>
+            </symbols>
+            <symbols key="transform">
+              <value xsi:type="index:FunctionVariableSymbol" name="transform" originalSymbolName="__anonymous7">
+                <region startIndex="2809" endIndex="2817"/>
+              </value>
+            </symbols>
+            <symbols key="setTransform">
+              <value xsi:type="index:FunctionVariableSymbol" name="setTransform" originalSymbolName="__anonymous8">
+                <region startIndex="3324" endIndex="3335"/>
+              </value>
+            </symbols>
+            <symbols key="globalAlpha">
+              <value xsi:type="index:VariableSymbol" name="globalAlpha" description="The &lt;code>globalAlpha&lt;/code> attribute gives an alpha value that is applied to shapes and images before they are composited onto the canvas. The value must be in the range from 0.0 (fully transparent) to 1.0 (no additional transparency). If an attempt is made to set the attribute to a value outside this range, the attribute must retain its previous value. When the context is created, the &lt;code>globalAlpha&lt;/code> attribute must initially have the value 1.0.">
+                <region startIndex="3907" endIndex="3917"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="globalCompositeOperation">
+              <value xsi:type="index:VariableSymbol" name="globalCompositeOperation" description="The globalCompositeOperation attribute sets how shapes and images are drawn onto the existing bitmap, once they have had &lt;code>globalAlpha&lt;/code> and the current transformation matrix applied. It must be set to a value from the following list. In the descriptions below, the source image, A, is the shape or image being rendered, and the destination image, B, is the current state of the bitmap.&lt;br> &lt;br> &lt;b>source-atop&lt;/b> : A atop B. Display the source image wherever both images are opaque. Display the destination image wherever the destination image is opaque but the source image is transparent. Display transparency elsewhere.&lt;br> &lt;b>source-in&lt;/b> : A in B. Display the source image wherever both the source image and destination image are opaque. Display transparency elsewhere.&lt;br> &lt;b>source-out&lt;/b> : A out B. Display the source image wherever the source image is opaque and the destination image is transparent. Display transparency elsewhere.&lt;br> &lt;b>source-over&lt;/b> (default) : A over B. Display the source image wherever the source image is opaque. Display the destination image elsewhere.&lt;br> &lt;b>destination-atop&lt;/b> : B atop A. Same as &lt;i>source-atop&lt;/i> but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-in&lt;/b> : B in A. Same as source-in but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-out&lt;/b> : B out A. Same as &lt;i>source-out&lt;/i>, but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-over&lt;/b> : B over A. Same as &lt;i>source-over&lt;/i> but using the destination image instead of the source image and vice versa. &lt;br> &lt;b>lighter&lt;/b> A plus B. Display the sum of the source image and destination image, with color values approaching 1 as a limit.&lt;br> &lt;b>copy&lt;/b> : A (B is ignored). Display the source image instead of the destination image.&lt;br> &lt;b>xor&lt;/b> : A xor B. Exclusive OR of the source image and destination image.">
+                <region startIndex="6077" endIndex="6100"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="strokeStyle">
+              <value xsi:type="index:VariableSymbol" name="strokeStyle" description="Represents the color or style to use for the lines around shapes. Can be either string (CSS &lt;i>color&lt;/i> value), &lt;code>CanvasGradient&lt;/code>, or &lt;code>CanvasPattern&lt;/code>.">
+                <region startIndex="6340" endIndex="6350"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="fillStyle">
+              <value xsi:type="index:VariableSymbol" name="fillStyle" description="Represents the color or style to use inside the shapes. Can be either string (CSS &lt;i>color&lt;/i> value), &lt;code>CanvasGradients&lt;/code>, or &lt;code>CanvasPatterns&lt;/code>.">
+                <region startIndex="6578" endIndex="6586"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="createLinearGradient">
+              <value xsi:type="index:FunctionVariableSymbol" name="createLinearGradient" originalSymbolName="__anonymous9">
+                <region startIndex="7027" endIndex="7046"/>
+              </value>
+            </symbols>
+            <symbols key="createRadialGradient">
+              <value xsi:type="index:FunctionVariableSymbol" name="createRadialGradient" originalSymbolName="__anonymous10">
+                <region startIndex="7788" endIndex="7807"/>
+              </value>
+            </symbols>
+            <symbols key="createPattern">
+              <value xsi:type="index:FunctionVariableSymbol" name="createPattern" originalSymbolName="__anonymous11">
+                <region startIndex="8098" endIndex="8110"/>
+              </value>
+            </symbols>
+            <symbols key="lineWidth">
+              <value xsi:type="index:VariableSymbol" name="lineWidth" description="Width of shape lines, in coordinate space units">
+                <region startIndex="8236" endIndex="8244"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="lineCap">
+              <value xsi:type="index:VariableSymbol" name="lineCap" description="Defines the type of endings on the end of lines. The three valid values are:&lt;br> &lt;br> &lt;b>butt&lt;/b> : the end of each line has a flat edge perpendicular to the direction of the line (no additional line cap is added)&lt;br> &lt;b>round&lt;/b> : a semi-circle with the diameter equal to the width of the line added on to the end of the line.&lt;br> &lt;b>square&lt;/b> : a rectangle with the length of the line width and the width of half the line width, placed flat against the edge perpendicular to the direction of the line, added at the end of each line.">
+                <region startIndex="8864" endIndex="8870"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="lineJoin">
+              <value xsi:type="index:VariableSymbol" name="lineJoin" description="Defines the type of corners that will be placed where two lines meet. The three valid values are 'bevel', 'round', and 'miter' (default).">
+                <region startIndex="9064" endIndex="9071"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="miterLimit">
+              <value xsi:type="index:VariableSymbol" name="miterLimit" description="The miter limit ratio">
+                <region startIndex="9146" endIndex="9155"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shadowColor">
+              <value xsi:type="index:VariableSymbol" name="shadowColor" description="Sets the color of the shadow in CSS &lt;i>color&lt;/i> notation">
+                <region startIndex="9261" endIndex="9271"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shadowOffsetX">
+              <value xsi:type="index:VariableSymbol" name="shadowOffsetX" description="The distance that the shadow will be offset in the positive horizontal direction">
+                <region startIndex="9411" endIndex="9423"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shadowOffsetY">
+              <value xsi:type="index:VariableSymbol" name="shadowOffsetY" description="The distance that the shadow will be offset in the positive vertical direction">
+                <region startIndex="9553" endIndex="9565"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shadowBlur">
+              <value xsi:type="index:VariableSymbol" name="shadowBlur" description="Size of the blurring effect">
+                <region startIndex="9640" endIndex="9649"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clearRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="clearRect" originalSymbolName="__anonymous12">
+                <region startIndex="10141" endIndex="10149"/>
+              </value>
+            </symbols>
+            <symbols key="fillRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="fillRect" originalSymbolName="__anonymous13">
+                <region startIndex="10510" endIndex="10517"/>
+              </value>
+            </symbols>
+            <symbols key="strokeRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="strokeRect" originalSymbolName="__anonymous14">
+                <region startIndex="10993" endIndex="11002"/>
+              </value>
+            </symbols>
+            <symbols key="beginPath">
+              <value xsi:type="index:FunctionVariableSymbol" name="beginPath" originalSymbolName="__anonymous15">
+                <region startIndex="11130" endIndex="11138"/>
+              </value>
+            </symbols>
+            <symbols key="moveTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="moveTo" originalSymbolName="__anonymous16">
+                <region startIndex="11335" endIndex="11340"/>
+              </value>
+            </symbols>
+            <symbols key="closePath">
+              <value xsi:type="index:FunctionVariableSymbol" name="closePath" originalSymbolName="__anonymous17">
+                <region startIndex="11558" endIndex="11566"/>
+              </value>
+            </symbols>
+            <symbols key="lineTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="lineTo" originalSymbolName="__anonymous18">
+                <region startIndex="11816" endIndex="11821"/>
+              </value>
+            </symbols>
+            <symbols key="quadraticCurveTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="quadraticCurveTo" originalSymbolName="__anonymous19">
+                <region startIndex="12209" endIndex="12224"/>
+              </value>
+            </symbols>
+            <symbols key="bezierCurveTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="bezierCurveTo" originalSymbolName="__anonymous20">
+                <region startIndex="12613" endIndex="12625"/>
+              </value>
+            </symbols>
+            <symbols key="arc">
+              <value xsi:type="index:FunctionVariableSymbol" name="arc" originalSymbolName="__anonymous21">
+                <region startIndex="13074" endIndex="13076"/>
+              </value>
+            </symbols>
+            <symbols key="rect">
+              <value xsi:type="index:FunctionVariableSymbol" name="rect" originalSymbolName="__anonymous22">
+                <region startIndex="13289" endIndex="13292"/>
+              </value>
+            </symbols>
+            <symbols key="fill">
+              <value xsi:type="index:FunctionVariableSymbol" name="fill" originalSymbolName="__anonymous23">
+                <region startIndex="13407" endIndex="13410"/>
+              </value>
+            </symbols>
+            <symbols key="stroke">
+              <value xsi:type="index:FunctionVariableSymbol" name="stroke" originalSymbolName="__anonymous24">
+                <region startIndex="13499" endIndex="13504"/>
+              </value>
+            </symbols>
+            <symbols key="clip">
+              <value xsi:type="index:FunctionVariableSymbol" name="clip" originalSymbolName="__anonymous25">
+                <region startIndex="13673" endIndex="13676"/>
+              </value>
+            </symbols>
+            <symbols key="isPointInPath">
+              <value xsi:type="index:FunctionVariableSymbol" name="isPointInPath" originalSymbolName="__anonymous26">
+                <region startIndex="13834" endIndex="13846"/>
+              </value>
+            </symbols>
+            <symbols key="drawImage">
+              <value xsi:type="index:FunctionVariableSymbol" name="drawImage" originalSymbolName="__anonymous27">
+                <region startIndex="14205" endIndex="14213"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="CanvasGradient">
+        <value xsi:type="index:FunctionSymbol" name="CanvasGradient" canBeUsedAsConstructor="false">
+          <region xsi:type="index:RegionWithLine" startIndex="14296" endIndex="14309" startLine="525" endLine="525"/>
+          <prototype>
+            <symbols key="addColorStop">
+              <value xsi:type="index:FunctionVariableSymbol" name="addColorStop" originalSymbolName="__anonymous1">
+                <region startIndex="14511" endIndex="14522"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="__anonymous4" hideFromProposal="true" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="14344" endIndex="14551" startLine="527" endLine="534"/>
+          <prototype>
+            <symbols key="addColorStop">
+              <value xsi:type="index:FunctionVariableSymbol" name="addColorStop" originalSymbolName="__anonymous1">
+                <region startIndex="14511" endIndex="14522"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="CanvasPattern">
+        <value xsi:type="index:FunctionSymbol" name="CanvasPattern" canBeUsedAsConstructor="false">
+          <region xsi:type="index:RegionWithLine" startIndex="14597" endIndex="14609" startLine="540" endLine="540"/>
+        </value>
+      </symbolMap>
+      <childScopes name="HTMLCanvasElement" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="69" endIndex="70"/>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="70" startLine="5" endLine="6"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="415" endIndex="428" startLine="25" endLine="26"/>
+        <childScopes>
+          <region startIndex="427" endIndex="428"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="646" endIndex="668" startLine="35" endLine="36"/>
+        <childScopes>
+          <region startIndex="667" endIndex="668"/>
+          <symbolMap key="contextId">
+            <value xsi:type="index:ParameterSymbol" name="contextId" description="ID of context (only &quot;2d&quot; is supported)" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="655" endIndex="663" startLine="35" endLine="35"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes name="CanvasRenderingContext2D" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region startIndex="953" endIndex="954"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="672" endIndex="954" startLine="44" endLine="45"/>
+      </childScopes>
+      <childScopes>
+        <region xsi:type="index:RegionWithLine" startIndex="994" endIndex="14250" startLine="47" endLine="519"/>
+        <symbolMap key="__anonymous3">
+          <value xsi:type="index:FunctionSymbol" name="restore" description="Pop state stack and restore state" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1222" endIndex="1236" startLine="64" endLine="65"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1084" endIndex="1085" startLine="53" endLine="53"/>
+            <prototype/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous2">
+          <value xsi:type="index:FunctionSymbol" name="save" description="Push current state on state stack" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1145" endIndex="1159" startLine="58" endLine="59"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous4">
+          <value xsi:type="index:FunctionSymbol" name="scale" description="Add the scaling transformation described by the arguments to the transformation matrix. The &lt;code>x&lt;/code> argument represents the scale factor in the horizontal direction and the &lt;code>y&lt;/code> argument represents the scale factor in the vertical direction. The factors are multiples." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1644" endIndex="1662" startLine="79" endLine="80"/>
+            <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="1653" endIndex="1653" startLine="79" endLine="79"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="1656" endIndex="1656" startLine="79" endLine="79"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous5">
+          <value xsi:type="index:FunctionSymbol" name="rotate" description="Add the rotation transformation described by the argument to the transformation matrix. The &lt;code>angle&lt;/code> argument represents a clockwise rotation angle expressed in radians." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1941" endIndex="1960" startLine="90" endLine="91"/>
+            <params name="angle" description="Angle in radians" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="1950" endIndex="1954" startLine="90" endLine="90"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous6">
+          <value xsi:type="index:FunctionSymbol" name="translate" description="Add the translation transformation described by the arguments to the transformation matrix. The &lt;code>x&lt;/code> argument represents the translation distance in the horizontal direction and the &lt;code>y&lt;/code> argument represents the translation distance in the vertical direction. The arguments are in coordinate space units." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="2410" endIndex="2428" startLine="105" endLine="106"/>
+            <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2419" endIndex="2419" startLine="105" endLine="105"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.5/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2422" endIndex="2422" startLine="105" endLine="105"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous7">
+          <value xsi:type="index:FunctionSymbol" name="transform" description="Multiply the current transformation matrix with the matrix described by:&lt;br> m11 m21 dx&lt;br> m12 m22 dy&lt;br> 0 0 1" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="2821" endIndex="2861" startLine="127" endLine="128"/>
+            <params name="m11" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2830" endIndex="2832" startLine="127" endLine="127"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="m12" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.6/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2835" endIndex="2837" startLine="127" endLine="127"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="m21" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.6/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2840" endIndex="2842" startLine="127" endLine="127"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="m22" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.6/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2845" endIndex="2847" startLine="127" endLine="127"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="dx" description="" parameterIndex="4" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.6/@childScopes.0/@symbolMap.4/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2850" endIndex="2851" startLine="127" endLine="127"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="dy" description="" parameterIndex="5" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.6/@childScopes.0/@symbolMap.5/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2854" endIndex="2855" startLine="127" endLine="127"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous8">
+          <value xsi:type="index:FunctionSymbol" name="setTransform" description="Reset the current transform to the identity matrix, and then invoke the &lt;code>transform(m11, m12, m21, m22, dx, dy)&lt;/code> method with the same arguments." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="3339" endIndex="3379" startLine="149" endLine="150"/>
+            <params name="m11" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="3348" endIndex="3350" startLine="149" endLine="149"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="m12" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.7/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="3353" endIndex="3355" startLine="149" endLine="149"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="m21" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.7/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="3358" endIndex="3360" startLine="149" endLine="149"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="m22" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.7/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="3363" endIndex="3365" startLine="149" endLine="149"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="dx" description="" parameterIndex="4" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.7/@childScopes.0/@symbolMap.4/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="3368" endIndex="3369" startLine="149" endLine="149"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="dy" description="" parameterIndex="5" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.7/@childScopes.0/@symbolMap.5/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="3372" endIndex="3373" startLine="149" endLine="149"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous9">
+          <value xsi:type="index:FunctionSymbol" name="createLinearGradient" description="Takes four arguments that represent the start point (&lt;code>x0&lt;/code>, &lt;code>y0&lt;/code>) and end point (&lt;code>x1&lt;/code>, &lt;code>y1&lt;/code>) and creates linear gradient" returnDescription="" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="7050" endIndex="7078" startLine="240" endLine="241"/>
+            <params name="x0" description="Start point X" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7059" endIndex="7060" startLine="240" endLine="240"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y0" description="Start point Y" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.8/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7063" endIndex="7064" startLine="240" endLine="240"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="x1" description="End point X" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.8/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7067" endIndex="7068" startLine="240" endLine="240"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y1" description="End point Y" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.8/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7071" endIndex="7072" startLine="240" endLine="240"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <inferredReturnType name="CanvasGradient" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous10">
+          <value xsi:type="index:FunctionSymbol" name="createRadialGradient" description="Takes six arguments, the first three representing the start circle with origin (&lt;code>x0&lt;/code>, &lt;code>y0&lt;/code>) and radius &lt;code>r0&lt;/code>, and the last three representing the end circle with origin (&lt;code>x1&lt;/code>, &lt;code>y1&lt;/code>) and radius &lt;code>r1&lt;/code> and creates radial gradient" returnDescription="" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="7811" endIndex="7847" startLine="264" endLine="265"/>
+            <params name="x0" description="Start circle origin X" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.9/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7820" endIndex="7821" startLine="264" endLine="264"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y0" description="Start circle origin Y" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.9/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7824" endIndex="7825" startLine="264" endLine="264"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="r0" description="Start circle radius" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.9/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7828" endIndex="7829" startLine="264" endLine="264"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="x1" description="End circle origin X" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.9/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7832" endIndex="7833" startLine="264" endLine="264"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y1" description="End circle origin Y" parameterIndex="4" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.9/@childScopes.0/@symbolMap.4/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7836" endIndex="7837" startLine="264" endLine="264"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="r1" description="End circle radius" parameterIndex="5" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.9/@childScopes.0/@symbolMap.5/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="7840" endIndex="7841" startLine="264" endLine="264"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <inferredReturnType name="CanvasGradient" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous11">
+          <value xsi:type="index:FunctionSymbol" name="createPattern" description="Creates image pattern" returnDescription="" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="8114" endIndex="8145" startLine="277" endLine="278"/>
+            <params name="image" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.10/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="8123" endIndex="8127" startLine="277" endLine="277"/>
+              <inferredType name="Image" instance="true" documentedType="true"/>
+            </params>
+            <params name="repetition" description="Pattern repetition: 'repeat' (default), 'repeat-x', 'repeat-y', 'no-repeat'" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.10/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="8130" endIndex="8139" startLine="277" endLine="277"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </params>
+            <inferredReturnType name="CanvasPattern" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous12">
+          <value xsi:type="index:FunctionSymbol" name="clearRect" description="Clear the pixels in the specified rectangle that also intersect the current clipping region to a fully transparent black, erasing any previous image. If either height or width are zero, this method has no effect." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="10153" endIndex="10177" startLine="363" endLine="364"/>
+            <params name="x" description="X-coordinate of rectangle" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.11/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="10162" endIndex="10162" startLine="363" endLine="363"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="Y-coordinate of rectangle" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.11/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="10165" endIndex="10165" startLine="363" endLine="363"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="w" description="Width of rectangle" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.11/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="10168" endIndex="10168" startLine="363" endLine="363"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="h" description="Height of rectangle" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.11/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="10171" endIndex="10171" startLine="363" endLine="363"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous13">
+          <value xsi:type="index:FunctionSymbol" name="fillRect" description="Paint the specified rectangular area using the &lt;code>fillStyle&lt;/code>" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="10521" endIndex="10545" startLine="378" endLine="379"/>
+            <params name="x" description="X-coordinate of rectangle" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.12/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="10530" endIndex="10530" startLine="378" endLine="378"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="Y-coordinate of rectangle" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.12/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="10533" endIndex="10533" startLine="378" endLine="378"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="w" description="Width of rectangle" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.12/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="10536" endIndex="10536" startLine="378" endLine="378"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="h" description="Height of rectangle" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.12/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="10539" endIndex="10539" startLine="378" endLine="378"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous14">
+          <value xsi:type="index:FunctionSymbol" name="strokeRect" description="Stroke the specified rectangle's path using the &lt;code>strokeStyle&lt;/code>, &lt;code>lineWidth&lt;/code>, &lt;code>lineJoin&lt;/code>, and (if appropriate) &lt;code>miterLimit&lt;/code> attributes" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="11006" endIndex="11030" startLine="395" endLine="396"/>
+            <params name="x" description="X-coordinate of rectangle" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.13/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="11015" endIndex="11015" startLine="395" endLine="395"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="Y-coordinate of rectangle" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.13/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="11018" endIndex="11018" startLine="395" endLine="395"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="w" description="Width of rectangle" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.13/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="11021" endIndex="11021" startLine="395" endLine="395"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="h" description="Height of rectangle" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.13/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="11024" endIndex="11024" startLine="395" endLine="395"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous15">
+          <value xsi:type="index:FunctionSymbol" name="beginPath" description="Empty the list of subpaths so that the context once again has zero subpaths." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="11142" endIndex="11156" startLine="402" endLine="403"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous16">
+          <value xsi:type="index:FunctionSymbol" name="moveTo" description="Create a new subpath with the specified point as its first (and only) point." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="11344" endIndex="11362" startLine="414" endLine="415"/>
+            <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.15/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="11353" endIndex="11353" startLine="414" endLine="414"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.15/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="11356" endIndex="11356" startLine="414" endLine="414"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous17">
+          <value xsi:type="index:FunctionSymbol" name="closePath" description="Mark the last subpath as closed, create a new subpath whose first point is the same as the previous subpath's first point, and finally add this new subpath to the path." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="11570" endIndex="11584" startLine="422" endLine="423"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous18">
+          <value xsi:type="index:FunctionSymbol" name="lineTo" description="Connect the last point in the subpath to the given point using a straight line, and must then add the given point to the subpath." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="11825" endIndex="11843" startLine="434" endLine="435"/>
+            <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.17/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="11834" endIndex="11834" startLine="434" endLine="434"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.17/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="11837" endIndex="11837" startLine="434" endLine="434"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous19">
+          <value xsi:type="index:FunctionSymbol" name="quadraticCurveTo" description="Connect the last point in the subpath to the given point (x, y) using a quadratic Bézier curve with control point (cpx, cpy), and must then add the given point (x, y) to the subpath" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="12228" endIndex="12256" startLine="451" endLine="452"/>
+            <params name="cpx" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.18/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12237" endIndex="12239" startLine="451" endLine="451"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="cpy" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.18/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12242" endIndex="12244" startLine="451" endLine="451"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="x" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.18/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12247" endIndex="12247" startLine="451" endLine="451"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.18/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12250" endIndex="12250" startLine="451" endLine="451"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous20">
+          <value xsi:type="index:FunctionSymbol" name="bezierCurveTo" description="Connect the last point in the subpath to the given point (x, y) using a cubic Bézier curve with control points (cp1x, cp1y) and (cp2x, cp2y). Then, it must add the point (x, y) to the subpath." anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="12628" endIndex="12667" startLine="463" endLine="463"/>
+            <params name="cp1x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.19/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12637" endIndex="12640" startLine="463" endLine="463"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="cp1y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.19/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12643" endIndex="12646" startLine="463" endLine="463"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="cp2x" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.19/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12649" endIndex="12652" startLine="463" endLine="463"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="cp2y" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.19/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12655" endIndex="12658" startLine="463" endLine="463"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="x" description="" parameterIndex="4" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.19/@childScopes.0/@symbolMap.4/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12661" endIndex="12661" startLine="463" endLine="463"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="5" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.19/@childScopes.0/@symbolMap.5/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="12664" endIndex="12664" startLine="463" endLine="463"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous21">
+          <value xsi:type="index:FunctionSymbol" name="arc" description="Draw arc of &lt;code>radius&lt;/code> at point (&lt;code>x&lt;/code>, &lt;code>y&lt;/code>), starting from angle &lt;code>startAngle&lt;/code> and ending in &lt;code>endAngle&lt;/code>" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="13079" endIndex="13139" startLine="475" endLine="475"/>
+            <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.20/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13088" endIndex="13088" startLine="475" endLine="475"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.20/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13091" endIndex="13091" startLine="475" endLine="475"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="radius" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.20/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13094" endIndex="13099" startLine="475" endLine="475"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="startAngle" description="Start angle in radians" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.20/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13102" endIndex="13111" startLine="475" endLine="475"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="endAngle" description="End angle in radians" parameterIndex="4" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.20/@childScopes.0/@symbolMap.4/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13114" endIndex="13121" startLine="475" endLine="475"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="anticlockwise" description="Drawing direction" parameterIndex="5" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.20/@childScopes.0/@symbolMap.5/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13124" endIndex="13136" startLine="475" endLine="475"/>
+              <inferredType name="Boolean" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous22">
+          <value xsi:type="index:FunctionSymbol" name="rect" description="Creates four closed subpaths as rectangle" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="13295" endIndex="13316" startLine="484" endLine="484"/>
+            <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.21/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13304" endIndex="13304" startLine="484" endLine="484"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.21/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13307" endIndex="13307" startLine="484" endLine="484"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="w" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.21/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13310" endIndex="13310" startLine="484" endLine="484"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="h" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.21/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13313" endIndex="13313" startLine="484" endLine="484"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous23">
+          <value xsi:type="index:FunctionSymbol" name="fill" description="Fill all the subpaths of the current path using &lt;code>fillStyle&lt;/code>" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="13413" endIndex="13424" startLine="489" endLine="489"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous24">
+          <value xsi:type="index:FunctionSymbol" name="stroke" description="Strokes all the subpaths with &lt;code>strokeStyle&lt;/code>" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="13507" endIndex="13518" startLine="494" endLine="494"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous25">
+          <value xsi:type="index:FunctionSymbol" name="clip" description="Create a new clipping region by calculating the intersection of the current clipping region and the area described by the current path" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="13679" endIndex="13690" startLine="499" endLine="499"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous26">
+          <value xsi:type="index:FunctionSymbol" name="isPointInPath" description="Check if the point given by the x and y coordinates  is inside the current path" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="13849" endIndex="13864" startLine="506" endLine="506"/>
+            <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.25/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13858" endIndex="13858" startLine="506" endLine="506"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.25/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="13861" endIndex="13861" startLine="506" endLine="506"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous27">
+          <value xsi:type="index:FunctionSymbol" name="drawImage" description="Draw image on canvas&lt;br>&lt;br> &lt;b>Alternative:&lt;/b>&lt;br> drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="14216" endIndex="14248" startLine="518" endLine="518"/>
+            <params name="image" description="Image to draw" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.26/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="14225" endIndex="14229" startLine="518" endLine="518"/>
+              <inferredType name="HTMLImageElement" instance="true" documentedType="true"/>
+            </params>
+            <params name="dx" description="Destination X" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.26/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="14232" endIndex="14233" startLine="518" endLine="518"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="dy" description="Destination Y" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.26/@childScopes.0/@symbolMap.2/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="14236" endIndex="14237" startLine="518" endLine="518"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="dw" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.26/@childScopes.0/@symbolMap.3/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="14240" endIndex="14241" startLine="518" endLine="518"/>
+              <inferredType name="Object" instance="true" weakInference="true"/>
+            </params>
+            <params name="dh" parameterIndex="4" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.26/@childScopes.0/@symbolMap.4/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="14244" endIndex="14245" startLine="518" endLine="518"/>
+              <inferredType name="Object" instance="true" weakInference="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <childScopes>
+          <region xsi:type="index:RegionWithLine" startIndex="1084" endIndex="1085" startLine="53" endLine="53"/>
+          <symbolMap key="__anonymous1"/>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.2/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="1145" endIndex="1159" startLine="58" endLine="59"/>
+          <childScopes>
+            <region startIndex="1157" endIndex="1159"/>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.0/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="1222" endIndex="1236" startLine="64" endLine="65"/>
+          <childScopes>
+            <region startIndex="1234" endIndex="1236"/>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.3/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="1644" endIndex="1662" startLine="79" endLine="80"/>
+          <childScopes>
+            <region startIndex="1660" endIndex="1662"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.3/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="1653" endIndex="1653" startLine="79" endLine="79"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.3/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="1656" endIndex="1656" startLine="79" endLine="79"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.4/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="1941" endIndex="1960" startLine="90" endLine="91"/>
+          <childScopes>
+            <region startIndex="1958" endIndex="1960"/>
+            <symbolMap key="angle">
+              <value xsi:type="index:ParameterSymbol" name="angle" description="Angle in radians" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.4/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="1950" endIndex="1954" startLine="90" endLine="90"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.5/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="2410" endIndex="2428" startLine="105" endLine="106"/>
+          <childScopes>
+            <region startIndex="2426" endIndex="2428"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.5/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="2419" endIndex="2419" startLine="105" endLine="105"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.5/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="2422" endIndex="2422" startLine="105" endLine="105"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.6/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="2821" endIndex="2861" startLine="127" endLine="128"/>
+          <childScopes>
+            <region startIndex="2859" endIndex="2861"/>
+            <symbolMap key="m11">
+              <value xsi:type="index:ParameterSymbol" name="m11" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.6/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="2830" endIndex="2832" startLine="127" endLine="127"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="m12">
+              <value xsi:type="index:ParameterSymbol" name="m12" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.6/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="2835" endIndex="2837" startLine="127" endLine="127"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="m21">
+              <value xsi:type="index:ParameterSymbol" name="m21" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.6/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="2840" endIndex="2842" startLine="127" endLine="127"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="m22">
+              <value xsi:type="index:ParameterSymbol" name="m22" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.6/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="2845" endIndex="2847" startLine="127" endLine="127"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dx">
+              <value xsi:type="index:ParameterSymbol" name="dx" description="" parameterIndex="4" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.6/@value/@params.4">
+                <region xsi:type="index:RegionWithLine" startIndex="2850" endIndex="2851" startLine="127" endLine="127"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dy">
+              <value xsi:type="index:ParameterSymbol" name="dy" description="" parameterIndex="5" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.6/@value/@params.5">
+                <region xsi:type="index:RegionWithLine" startIndex="2854" endIndex="2855" startLine="127" endLine="127"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.7/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="3339" endIndex="3379" startLine="149" endLine="150"/>
+          <childScopes>
+            <region startIndex="3377" endIndex="3379"/>
+            <symbolMap key="m11">
+              <value xsi:type="index:ParameterSymbol" name="m11" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.7/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="3348" endIndex="3350" startLine="149" endLine="149"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="m12">
+              <value xsi:type="index:ParameterSymbol" name="m12" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.7/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="3353" endIndex="3355" startLine="149" endLine="149"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="m21">
+              <value xsi:type="index:ParameterSymbol" name="m21" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.7/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="3358" endIndex="3360" startLine="149" endLine="149"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="m22">
+              <value xsi:type="index:ParameterSymbol" name="m22" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.7/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="3363" endIndex="3365" startLine="149" endLine="149"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dx">
+              <value xsi:type="index:ParameterSymbol" name="dx" description="" parameterIndex="4" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.7/@value/@params.4">
+                <region xsi:type="index:RegionWithLine" startIndex="3368" endIndex="3369" startLine="149" endLine="149"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dy">
+              <value xsi:type="index:ParameterSymbol" name="dy" description="" parameterIndex="5" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.7/@value/@params.5">
+                <region xsi:type="index:RegionWithLine" startIndex="3372" endIndex="3373" startLine="149" endLine="149"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.8/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="7050" endIndex="7078" startLine="240" endLine="241"/>
+          <childScopes>
+            <region startIndex="7076" endIndex="7078"/>
+            <symbolMap key="x0">
+              <value xsi:type="index:ParameterSymbol" name="x0" description="Start point X" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.8/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="7059" endIndex="7060" startLine="240" endLine="240"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y0">
+              <value xsi:type="index:ParameterSymbol" name="y0" description="Start point Y" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.8/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="7063" endIndex="7064" startLine="240" endLine="240"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="x1">
+              <value xsi:type="index:ParameterSymbol" name="x1" description="End point X" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.8/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="7067" endIndex="7068" startLine="240" endLine="240"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y1">
+              <value xsi:type="index:ParameterSymbol" name="y1" description="End point Y" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.8/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="7071" endIndex="7072" startLine="240" endLine="240"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.9/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="7811" endIndex="7847" startLine="264" endLine="265"/>
+          <childScopes>
+            <region startIndex="7845" endIndex="7847"/>
+            <symbolMap key="x0">
+              <value xsi:type="index:ParameterSymbol" name="x0" description="Start circle origin X" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.9/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="7820" endIndex="7821" startLine="264" endLine="264"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y0">
+              <value xsi:type="index:ParameterSymbol" name="y0" description="Start circle origin Y" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.9/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="7824" endIndex="7825" startLine="264" endLine="264"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="r0">
+              <value xsi:type="index:ParameterSymbol" name="r0" description="Start circle radius" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.9/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="7828" endIndex="7829" startLine="264" endLine="264"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="x1">
+              <value xsi:type="index:ParameterSymbol" name="x1" description="End circle origin X" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.9/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="7832" endIndex="7833" startLine="264" endLine="264"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y1">
+              <value xsi:type="index:ParameterSymbol" name="y1" description="End circle origin Y" parameterIndex="4" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.9/@value/@params.4">
+                <region xsi:type="index:RegionWithLine" startIndex="7836" endIndex="7837" startLine="264" endLine="264"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="r1">
+              <value xsi:type="index:ParameterSymbol" name="r1" description="End circle radius" parameterIndex="5" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.9/@value/@params.5">
+                <region xsi:type="index:RegionWithLine" startIndex="7840" endIndex="7841" startLine="264" endLine="264"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.10/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="8114" endIndex="8145" startLine="277" endLine="278"/>
+          <childScopes>
+            <region startIndex="8143" endIndex="8145"/>
+            <symbolMap key="image">
+              <value xsi:type="index:ParameterSymbol" name="image" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.10/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="8123" endIndex="8127" startLine="277" endLine="277"/>
+                <inferredType name="Image" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="repetition">
+              <value xsi:type="index:ParameterSymbol" name="repetition" description="Pattern repetition: 'repeat' (default), 'repeat-x', 'repeat-y', 'no-repeat'" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.10/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="8130" endIndex="8139" startLine="277" endLine="277"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.11/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="10153" endIndex="10177" startLine="363" endLine="364"/>
+          <childScopes>
+            <region startIndex="10175" endIndex="10177"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="X-coordinate of rectangle" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.11/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="10162" endIndex="10162" startLine="363" endLine="363"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="Y-coordinate of rectangle" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.11/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="10165" endIndex="10165" startLine="363" endLine="363"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="w">
+              <value xsi:type="index:ParameterSymbol" name="w" description="Width of rectangle" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.11/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="10168" endIndex="10168" startLine="363" endLine="363"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="h">
+              <value xsi:type="index:ParameterSymbol" name="h" description="Height of rectangle" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.11/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="10171" endIndex="10171" startLine="363" endLine="363"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.12/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="10521" endIndex="10545" startLine="378" endLine="379"/>
+          <childScopes>
+            <region startIndex="10543" endIndex="10545"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="X-coordinate of rectangle" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.12/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="10530" endIndex="10530" startLine="378" endLine="378"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="Y-coordinate of rectangle" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.12/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="10533" endIndex="10533" startLine="378" endLine="378"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="w">
+              <value xsi:type="index:ParameterSymbol" name="w" description="Width of rectangle" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.12/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="10536" endIndex="10536" startLine="378" endLine="378"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="h">
+              <value xsi:type="index:ParameterSymbol" name="h" description="Height of rectangle" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.12/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="10539" endIndex="10539" startLine="378" endLine="378"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.13/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="11006" endIndex="11030" startLine="395" endLine="396"/>
+          <childScopes>
+            <region startIndex="11028" endIndex="11030"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="X-coordinate of rectangle" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.13/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="11015" endIndex="11015" startLine="395" endLine="395"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="Y-coordinate of rectangle" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.13/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="11018" endIndex="11018" startLine="395" endLine="395"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="w">
+              <value xsi:type="index:ParameterSymbol" name="w" description="Width of rectangle" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.13/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="11021" endIndex="11021" startLine="395" endLine="395"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="h">
+              <value xsi:type="index:ParameterSymbol" name="h" description="Height of rectangle" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.13/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="11024" endIndex="11024" startLine="395" endLine="395"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.14/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="11142" endIndex="11156" startLine="402" endLine="403"/>
+          <childScopes>
+            <region startIndex="11154" endIndex="11156"/>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.15/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="11344" endIndex="11362" startLine="414" endLine="415"/>
+          <childScopes>
+            <region startIndex="11360" endIndex="11362"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.15/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="11353" endIndex="11353" startLine="414" endLine="414"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.15/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="11356" endIndex="11356" startLine="414" endLine="414"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.16/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="11570" endIndex="11584" startLine="422" endLine="423"/>
+          <childScopes>
+            <region startIndex="11582" endIndex="11584"/>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.17/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="11825" endIndex="11843" startLine="434" endLine="435"/>
+          <childScopes>
+            <region startIndex="11841" endIndex="11843"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.17/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="11834" endIndex="11834" startLine="434" endLine="434"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.17/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="11837" endIndex="11837" startLine="434" endLine="434"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.18/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="12228" endIndex="12256" startLine="451" endLine="452"/>
+          <childScopes>
+            <region startIndex="12254" endIndex="12256"/>
+            <symbolMap key="cpx">
+              <value xsi:type="index:ParameterSymbol" name="cpx" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.18/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="12237" endIndex="12239" startLine="451" endLine="451"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="cpy">
+              <value xsi:type="index:ParameterSymbol" name="cpy" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.18/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="12242" endIndex="12244" startLine="451" endLine="451"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.18/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="12247" endIndex="12247" startLine="451" endLine="451"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.18/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="12250" endIndex="12250" startLine="451" endLine="451"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.19/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="12628" endIndex="12667" startLine="463" endLine="463"/>
+          <childScopes>
+            <region startIndex="12667" endIndex="12667"/>
+            <symbolMap key="cp1x">
+              <value xsi:type="index:ParameterSymbol" name="cp1x" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.19/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="12637" endIndex="12640" startLine="463" endLine="463"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="cp1y">
+              <value xsi:type="index:ParameterSymbol" name="cp1y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.19/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="12643" endIndex="12646" startLine="463" endLine="463"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="cp2x">
+              <value xsi:type="index:ParameterSymbol" name="cp2x" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.19/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="12649" endIndex="12652" startLine="463" endLine="463"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="cp2y">
+              <value xsi:type="index:ParameterSymbol" name="cp2y" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.19/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="12655" endIndex="12658" startLine="463" endLine="463"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" parameterIndex="4" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.19/@value/@params.4">
+                <region xsi:type="index:RegionWithLine" startIndex="12661" endIndex="12661" startLine="463" endLine="463"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="5" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.19/@value/@params.5">
+                <region xsi:type="index:RegionWithLine" startIndex="12664" endIndex="12664" startLine="463" endLine="463"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.20/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="13079" endIndex="13139" startLine="475" endLine="475"/>
+          <childScopes>
+            <region startIndex="13139" endIndex="13139"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.20/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="13088" endIndex="13088" startLine="475" endLine="475"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.20/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="13091" endIndex="13091" startLine="475" endLine="475"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="radius">
+              <value xsi:type="index:ParameterSymbol" name="radius" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.20/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="13094" endIndex="13099" startLine="475" endLine="475"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="startAngle">
+              <value xsi:type="index:ParameterSymbol" name="startAngle" description="Start angle in radians" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.20/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="13102" endIndex="13111" startLine="475" endLine="475"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="endAngle">
+              <value xsi:type="index:ParameterSymbol" name="endAngle" description="End angle in radians" parameterIndex="4" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.20/@value/@params.4">
+                <region xsi:type="index:RegionWithLine" startIndex="13114" endIndex="13121" startLine="475" endLine="475"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="anticlockwise">
+              <value xsi:type="index:ParameterSymbol" name="anticlockwise" description="Drawing direction" parameterIndex="5" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.20/@value/@params.5">
+                <region xsi:type="index:RegionWithLine" startIndex="13124" endIndex="13136" startLine="475" endLine="475"/>
+                <inferredType name="Boolean" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.21/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="13295" endIndex="13316" startLine="484" endLine="484"/>
+          <childScopes>
+            <region startIndex="13316" endIndex="13316"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.21/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="13304" endIndex="13304" startLine="484" endLine="484"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.21/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="13307" endIndex="13307" startLine="484" endLine="484"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="w">
+              <value xsi:type="index:ParameterSymbol" name="w" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.21/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="13310" endIndex="13310" startLine="484" endLine="484"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="h">
+              <value xsi:type="index:ParameterSymbol" name="h" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.21/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="13313" endIndex="13313" startLine="484" endLine="484"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.22/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="13413" endIndex="13424" startLine="489" endLine="489"/>
+          <childScopes>
+            <region startIndex="13424" endIndex="13424"/>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.23/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="13507" endIndex="13518" startLine="494" endLine="494"/>
+          <childScopes>
+            <region startIndex="13518" endIndex="13518"/>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.24/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="13679" endIndex="13690" startLine="499" endLine="499"/>
+          <childScopes>
+            <region startIndex="13690" endIndex="13690"/>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.25/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="13849" endIndex="13864" startLine="506" endLine="506"/>
+          <childScopes>
+            <region startIndex="13864" endIndex="13864"/>
+            <symbolMap key="x">
+              <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.25/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="13858" endIndex="13858" startLine="506" endLine="506"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="y">
+              <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.25/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="13861" endIndex="13861" startLine="506" endLine="506"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.26/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="14216" endIndex="14248" startLine="518" endLine="518"/>
+          <childScopes>
+            <region startIndex="14248" endIndex="14248"/>
+            <symbolMap key="image">
+              <value xsi:type="index:ParameterSymbol" name="image" description="Image to draw" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.26/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="14225" endIndex="14229" startLine="518" endLine="518"/>
+                <inferredType name="HTMLImageElement" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dx">
+              <value xsi:type="index:ParameterSymbol" name="dx" description="Destination X" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.26/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="14232" endIndex="14233" startLine="518" endLine="518"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dy">
+              <value xsi:type="index:ParameterSymbol" name="dy" description="Destination Y" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.26/@value/@params.2">
+                <region xsi:type="index:RegionWithLine" startIndex="14236" endIndex="14237" startLine="518" endLine="518"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dw">
+              <value xsi:type="index:ParameterSymbol" name="dw" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.26/@value/@params.3">
+                <region xsi:type="index:RegionWithLine" startIndex="14240" endIndex="14241" startLine="518" endLine="518"/>
+                <inferredType name="Object" instance="true" weakInference="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dh">
+              <value xsi:type="index:ParameterSymbol" name="dh" parameterIndex="4" symbolInFunction="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.26/@value/@params.4">
+                <region xsi:type="index:RegionWithLine" startIndex="14244" endIndex="14245" startLine="518" endLine="518"/>
+                <inferredType name="Object" instance="true" weakInference="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes name="CanvasGradient" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region startIndex="14313" endIndex="14313"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="14254" endIndex="14313" startLine="525" endLine="525"/>
+      </childScopes>
+      <childScopes>
+        <region xsi:type="index:RegionWithLine" startIndex="14344" endIndex="14551" startLine="527" endLine="534"/>
+        <symbolMap key="__anonymous4"/>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="addColorStop" description="Adds a new stop to a gradient" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="14525" endIndex="14549" startLine="533" endLine="533"/>
+            <params name="offset" description="Color stop offset (from 0 to 1)" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="14534" endIndex="14539" startLine="533" endLine="533"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </params>
+            <params name="color" description="Color in CSS &lt;i>color&lt;/i> notation" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="14542" endIndex="14546" startLine="533" endLine="533"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.6/@symbolMap.1/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="14525" endIndex="14549" startLine="533" endLine="533"/>
+          <childScopes>
+            <region startIndex="14549" endIndex="14549"/>
+            <symbolMap key="offset">
+              <value xsi:type="index:ParameterSymbol" name="offset" description="Color stop offset (from 0 to 1)" symbolInFunction="//@hotIndex/@rootScope/@childScopes.6/@symbolMap.1/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="14534" endIndex="14539" startLine="533" endLine="533"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="color">
+              <value xsi:type="index:ParameterSymbol" name="color" description="Color in CSS &lt;i>color&lt;/i> notation" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@childScopes.6/@symbolMap.1/@value/@params.1">
+                <region xsi:type="index:RegionWithLine" startIndex="14542" endIndex="14546" startLine="533" endLine="533"/>
+                <inferredType name="String" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes name="CanvasPattern" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region startIndex="14613" endIndex="14613"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="14555" endIndex="14613" startLine="540" endLine="540"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="HTMLCanvasElement">
+      <value xsi:type="index:FunctionSymbol" name="HTMLCanvasElement" baseSymbolName="HTMLElement" canBeUsedAsConstructor="false">
+        <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="64" startLine="5" endLine="5"/>
+        <prototype>
+          <symbols key="width">
+            <value xsi:type="index:VariableSymbol" name="width">
+              <region startIndex="176" endIndex="180"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="height">
+            <value xsi:type="index:VariableSymbol" name="height">
+              <region startIndex="242" endIndex="247"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="toDataURL">
+            <value xsi:type="index:FunctionVariableSymbol" name="toDataURL" originalSymbolName="__anonymous1">
+              <region startIndex="403" endIndex="411"/>
+            </value>
+          </symbols>
+          <symbols key="getContext">
+            <value xsi:type="index:FunctionVariableSymbol" name="getContext" originalSymbolName="__anonymous2">
+              <region startIndex="633" endIndex="642"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="CanvasRenderingContext2D">
+      <value xsi:type="index:FunctionSymbol" name="CanvasRenderingContext2D" description="The 2D context, representing a flat Cartesian surface whose origin (0,0) is at the top left corner, with the coordinate space having x values increasing when going right, and y values increasing when going down." canBeUsedAsConstructor="false">
+        <region xsi:type="index:RegionWithLine" startIndex="925" endIndex="948" startLine="44" endLine="44"/>
+        <prototype>
+          <symbols key="canvas">
+            <value xsi:type="index:VariableSymbol" name="canvas" description="Back-reference to the canvas">
+              <region startIndex="1075" endIndex="1080"/>
+              <inferredType name="HTMLCanvasElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/canvas.js" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="save">
+            <value xsi:type="index:FunctionVariableSymbol" name="save" originalSymbolName="__anonymous2">
+              <region startIndex="1138" endIndex="1141"/>
+            </value>
+          </symbols>
+          <symbols key="restore">
+            <value xsi:type="index:FunctionVariableSymbol" name="restore" originalSymbolName="__anonymous3">
+              <region startIndex="1212" endIndex="1218"/>
+            </value>
+          </symbols>
+          <symbols key="scale">
+            <value xsi:type="index:FunctionVariableSymbol" name="scale" originalSymbolName="__anonymous4">
+              <region startIndex="1636" endIndex="1640"/>
+            </value>
+          </symbols>
+          <symbols key="rotate">
+            <value xsi:type="index:FunctionVariableSymbol" name="rotate" originalSymbolName="__anonymous5">
+              <region startIndex="1932" endIndex="1937"/>
+            </value>
+          </symbols>
+          <symbols key="translate">
+            <value xsi:type="index:FunctionVariableSymbol" name="translate" originalSymbolName="__anonymous6">
+              <region startIndex="2398" endIndex="2406"/>
+            </value>
+          </symbols>
+          <symbols key="transform">
+            <value xsi:type="index:FunctionVariableSymbol" name="transform" originalSymbolName="__anonymous7">
+              <region startIndex="2809" endIndex="2817"/>
+            </value>
+          </symbols>
+          <symbols key="setTransform">
+            <value xsi:type="index:FunctionVariableSymbol" name="setTransform" originalSymbolName="__anonymous8">
+              <region startIndex="3324" endIndex="3335"/>
+            </value>
+          </symbols>
+          <symbols key="globalAlpha">
+            <value xsi:type="index:VariableSymbol" name="globalAlpha" description="The &lt;code>globalAlpha&lt;/code> attribute gives an alpha value that is applied to shapes and images before they are composited onto the canvas. The value must be in the range from 0.0 (fully transparent) to 1.0 (no additional transparency). If an attempt is made to set the attribute to a value outside this range, the attribute must retain its previous value. When the context is created, the &lt;code>globalAlpha&lt;/code> attribute must initially have the value 1.0.">
+              <region startIndex="3907" endIndex="3917"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="globalCompositeOperation">
+            <value xsi:type="index:VariableSymbol" name="globalCompositeOperation" description="The globalCompositeOperation attribute sets how shapes and images are drawn onto the existing bitmap, once they have had &lt;code>globalAlpha&lt;/code> and the current transformation matrix applied. It must be set to a value from the following list. In the descriptions below, the source image, A, is the shape or image being rendered, and the destination image, B, is the current state of the bitmap.&lt;br> &lt;br> &lt;b>source-atop&lt;/b> : A atop B. Display the source image wherever both images are opaque. Display the destination image wherever the destination image is opaque but the source image is transparent. Display transparency elsewhere.&lt;br> &lt;b>source-in&lt;/b> : A in B. Display the source image wherever both the source image and destination image are opaque. Display transparency elsewhere.&lt;br> &lt;b>source-out&lt;/b> : A out B. Display the source image wherever the source image is opaque and the destination image is transparent. Display transparency elsewhere.&lt;br> &lt;b>source-over&lt;/b> (default) : A over B. Display the source image wherever the source image is opaque. Display the destination image elsewhere.&lt;br> &lt;b>destination-atop&lt;/b> : B atop A. Same as &lt;i>source-atop&lt;/i> but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-in&lt;/b> : B in A. Same as source-in but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-out&lt;/b> : B out A. Same as &lt;i>source-out&lt;/i>, but using the destination image instead of the source image and vice versa.&lt;br> &lt;b>destination-over&lt;/b> : B over A. Same as &lt;i>source-over&lt;/i> but using the destination image instead of the source image and vice versa. &lt;br> &lt;b>lighter&lt;/b> A plus B. Display the sum of the source image and destination image, with color values approaching 1 as a limit.&lt;br> &lt;b>copy&lt;/b> : A (B is ignored). Display the source image instead of the destination image.&lt;br> &lt;b>xor&lt;/b> : A xor B. Exclusive OR of the source image and destination image.">
+              <region startIndex="6077" endIndex="6100"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="strokeStyle">
+            <value xsi:type="index:VariableSymbol" name="strokeStyle" description="Represents the color or style to use for the lines around shapes. Can be either string (CSS &lt;i>color&lt;/i> value), &lt;code>CanvasGradient&lt;/code>, or &lt;code>CanvasPattern&lt;/code>.">
+              <region startIndex="6340" endIndex="6350"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="fillStyle">
+            <value xsi:type="index:VariableSymbol" name="fillStyle" description="Represents the color or style to use inside the shapes. Can be either string (CSS &lt;i>color&lt;/i> value), &lt;code>CanvasGradients&lt;/code>, or &lt;code>CanvasPatterns&lt;/code>.">
+              <region startIndex="6578" endIndex="6586"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="createLinearGradient">
+            <value xsi:type="index:FunctionVariableSymbol" name="createLinearGradient" originalSymbolName="__anonymous9">
+              <region startIndex="7027" endIndex="7046"/>
+            </value>
+          </symbols>
+          <symbols key="createRadialGradient">
+            <value xsi:type="index:FunctionVariableSymbol" name="createRadialGradient" originalSymbolName="__anonymous10">
+              <region startIndex="7788" endIndex="7807"/>
+            </value>
+          </symbols>
+          <symbols key="createPattern">
+            <value xsi:type="index:FunctionVariableSymbol" name="createPattern" originalSymbolName="__anonymous11">
+              <region startIndex="8098" endIndex="8110"/>
+            </value>
+          </symbols>
+          <symbols key="lineWidth">
+            <value xsi:type="index:VariableSymbol" name="lineWidth" description="Width of shape lines, in coordinate space units">
+              <region startIndex="8236" endIndex="8244"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="lineCap">
+            <value xsi:type="index:VariableSymbol" name="lineCap" description="Defines the type of endings on the end of lines. The three valid values are:&lt;br> &lt;br> &lt;b>butt&lt;/b> : the end of each line has a flat edge perpendicular to the direction of the line (no additional line cap is added)&lt;br> &lt;b>round&lt;/b> : a semi-circle with the diameter equal to the width of the line added on to the end of the line.&lt;br> &lt;b>square&lt;/b> : a rectangle with the length of the line width and the width of half the line width, placed flat against the edge perpendicular to the direction of the line, added at the end of each line.">
+              <region startIndex="8864" endIndex="8870"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="lineJoin">
+            <value xsi:type="index:VariableSymbol" name="lineJoin" description="Defines the type of corners that will be placed where two lines meet. The three valid values are 'bevel', 'round', and 'miter' (default).">
+              <region startIndex="9064" endIndex="9071"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="miterLimit">
+            <value xsi:type="index:VariableSymbol" name="miterLimit" description="The miter limit ratio">
+              <region startIndex="9146" endIndex="9155"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="shadowColor">
+            <value xsi:type="index:VariableSymbol" name="shadowColor" description="Sets the color of the shadow in CSS &lt;i>color&lt;/i> notation">
+              <region startIndex="9261" endIndex="9271"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="shadowOffsetX">
+            <value xsi:type="index:VariableSymbol" name="shadowOffsetX" description="The distance that the shadow will be offset in the positive horizontal direction">
+              <region startIndex="9411" endIndex="9423"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="shadowOffsetY">
+            <value xsi:type="index:VariableSymbol" name="shadowOffsetY" description="The distance that the shadow will be offset in the positive vertical direction">
+              <region startIndex="9553" endIndex="9565"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="shadowBlur">
+            <value xsi:type="index:VariableSymbol" name="shadowBlur" description="Size of the blurring effect">
+              <region startIndex="9640" endIndex="9649"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="clearRect">
+            <value xsi:type="index:FunctionVariableSymbol" name="clearRect" originalSymbolName="__anonymous12">
+              <region startIndex="10141" endIndex="10149"/>
+            </value>
+          </symbols>
+          <symbols key="fillRect">
+            <value xsi:type="index:FunctionVariableSymbol" name="fillRect" originalSymbolName="__anonymous13">
+              <region startIndex="10510" endIndex="10517"/>
+            </value>
+          </symbols>
+          <symbols key="strokeRect">
+            <value xsi:type="index:FunctionVariableSymbol" name="strokeRect" originalSymbolName="__anonymous14">
+              <region startIndex="10993" endIndex="11002"/>
+            </value>
+          </symbols>
+          <symbols key="beginPath">
+            <value xsi:type="index:FunctionVariableSymbol" name="beginPath" originalSymbolName="__anonymous15">
+              <region startIndex="11130" endIndex="11138"/>
+            </value>
+          </symbols>
+          <symbols key="moveTo">
+            <value xsi:type="index:FunctionVariableSymbol" name="moveTo" originalSymbolName="__anonymous16">
+              <region startIndex="11335" endIndex="11340"/>
+            </value>
+          </symbols>
+          <symbols key="closePath">
+            <value xsi:type="index:FunctionVariableSymbol" name="closePath" originalSymbolName="__anonymous17">
+              <region startIndex="11558" endIndex="11566"/>
+            </value>
+          </symbols>
+          <symbols key="lineTo">
+            <value xsi:type="index:FunctionVariableSymbol" name="lineTo" originalSymbolName="__anonymous18">
+              <region startIndex="11816" endIndex="11821"/>
+            </value>
+          </symbols>
+          <symbols key="quadraticCurveTo">
+            <value xsi:type="index:FunctionVariableSymbol" name="quadraticCurveTo" originalSymbolName="__anonymous19">
+              <region startIndex="12209" endIndex="12224"/>
+            </value>
+          </symbols>
+          <symbols key="bezierCurveTo">
+            <value xsi:type="index:FunctionVariableSymbol" name="bezierCurveTo" originalSymbolName="__anonymous20">
+              <region startIndex="12613" endIndex="12625"/>
+            </value>
+          </symbols>
+          <symbols key="arc">
+            <value xsi:type="index:FunctionVariableSymbol" name="arc" originalSymbolName="__anonymous21">
+              <region startIndex="13074" endIndex="13076"/>
+            </value>
+          </symbols>
+          <symbols key="rect">
+            <value xsi:type="index:FunctionVariableSymbol" name="rect" originalSymbolName="__anonymous22">
+              <region startIndex="13289" endIndex="13292"/>
+            </value>
+          </symbols>
+          <symbols key="fill">
+            <value xsi:type="index:FunctionVariableSymbol" name="fill" originalSymbolName="__anonymous23">
+              <region startIndex="13407" endIndex="13410"/>
+            </value>
+          </symbols>
+          <symbols key="stroke">
+            <value xsi:type="index:FunctionVariableSymbol" name="stroke" originalSymbolName="__anonymous24">
+              <region startIndex="13499" endIndex="13504"/>
+            </value>
+          </symbols>
+          <symbols key="clip">
+            <value xsi:type="index:FunctionVariableSymbol" name="clip" originalSymbolName="__anonymous25">
+              <region startIndex="13673" endIndex="13676"/>
+            </value>
+          </symbols>
+          <symbols key="isPointInPath">
+            <value xsi:type="index:FunctionVariableSymbol" name="isPointInPath" originalSymbolName="__anonymous26">
+              <region startIndex="13834" endIndex="13846"/>
+            </value>
+          </symbols>
+          <symbols key="drawImage">
+            <value xsi:type="index:FunctionVariableSymbol" name="drawImage" originalSymbolName="__anonymous27">
+              <region startIndex="14205" endIndex="14213"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="CanvasGradient">
+      <value xsi:type="index:FunctionSymbol" name="CanvasGradient" canBeUsedAsConstructor="false">
+        <region xsi:type="index:RegionWithLine" startIndex="14296" endIndex="14309" startLine="525" endLine="525"/>
+        <prototype>
+          <symbols key="addColorStop">
+            <value xsi:type="index:FunctionVariableSymbol" name="addColorStop" originalSymbolName="__anonymous1">
+              <region startIndex="14511" endIndex="14522"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="CanvasPattern">
+      <value xsi:type="index:FunctionSymbol" name="CanvasPattern" canBeUsedAsConstructor="false">
+        <region xsi:type="index:RegionWithLine" startIndex="14597" endIndex="14609" startLine="540" endLine="540"/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

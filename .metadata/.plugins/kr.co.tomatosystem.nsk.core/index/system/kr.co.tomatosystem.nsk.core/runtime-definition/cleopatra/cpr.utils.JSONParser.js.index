@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.JSONParser.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="12" endIndex="205" startLine="4" endLine="13"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="JSONParser" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="35" endIndex="46" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="parse">
+              <value xsi:type="index:FunctionVariableSymbol" name="parse" originalSymbolName="__anonymous2">
+                <region startIndex="180" endIndex="184"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.JSONParser">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.JSONParser" originalSymbolName="__anonymous1">
+          <region startIndex="22" endIndex="31"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="parse" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="188" endIndex="202" startLine="11" endLine="11"/>
+          <params name="str" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="197" endIndex="199" startLine="11" endLine="11"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="35" endIndex="46" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="46" endIndex="46"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="188" endIndex="202" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="202" endIndex="202"/>
+          <symbolMap key="str">
+            <value xsi:type="index:ParameterSymbol" name="str" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="197" endIndex="199" startLine="11" endLine="11"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.utils.JSONParser">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.JSONParser" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="22" endIndex="31"/>
+        <prototype>
+          <symbols key="parse">
+            <value xsi:type="index:FunctionVariableSymbol" name="parse" originalSymbolName="__anonymous2">
+              <region startIndex="180" endIndex="184"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

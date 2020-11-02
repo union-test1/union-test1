@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7e1a3c92" version="1.0.0.0">
+  <head std:sid="head-32a8f99b">
+    <title>DynamicContent</title>
+    <screen std:sid="screen-30ddac1e" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-48830589" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-5de453c6" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-753fbc7b"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-a6136996" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-ba6a968d" handler="onBodyInit" name="init"/>
+    <cl:group std:sid="group-d20986fe" id="contentPane" style="background-color:orange; background-image:none;">
+      <cl:xylayoutdata std:sid="xyl-data-d346ad4c" bottom="40px" horizontalAnchor="BOTH" left="146px" right="0px" top="39px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-e70357dc" id="header">
+        <cl:xylayoutdata std:sid="xyl-data-2687cc6f" height="51px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="679px"/>
+        <cl:button std:sid="button-065e9aad" value="+ 콘텐트 추가">
+          <cl:listener std:sid="listener-4f48e4ce" handler="onButtonClick" name="click"/>
+          <cl:xylayoutdata std:sid="xyl-data-d89bdcca" height="20px" horizontalAnchor="RIGHT" right="20px" verticalAnchor="CENTER" width="100px"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-ac13adac"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-0824cdec"/>
+    </cl:group>
+    <cl:navigationbar std:sid="n-bar-23c45233" id="top">
+      <cl:xylayoutdata std:sid="xyl-data-899e5764" height="40px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="TOP"/>
+      <cl:menuitem label="label1" value="value1"/>
+      <cl:menuitem label="label2" value="value2"/>
+      <cl:menuitem label="label3" value="value3"/>
+      <cl:menuitem label="label4" value="value4"/>
+      <cl:menuitem label="label5" value="value5"/>
+      <cl:menuitem label="label6" value="value6"/>
+      <cl:menuitem label="label7" value="value7"/>
+      <cl:menuitem label="label8" value="value8"/>
+    </cl:navigationbar>
+    <cl:listbox std:sid="l-box-87b4287b" id="left">
+      <cl:xylayoutdata std:sid="xyl-data-8888018a" bottom="0px" horizontalAnchor="LEFT" left="0px" top="39px" verticalAnchor="BOTH" width="147px"/>
+      <cl:item label="label1" value="value1"/>
+      <cl:item label="label2" value="value2"/>
+      <cl:item label="label3" value="value3"/>
+      <cl:item label="label4" value="value4"/>
+      <cl:item label="label5" value="value5"/>
+      <cl:item label="label6" value="value6"/>
+      <cl:item label="label7" value="value7"/>
+    </cl:listbox>
+    <cl:button std:sid="button-5e5b25ddd2" value="Footer">
+      <cl:xylayoutdata std:sid="xyl-data-6a31491e" bottom="0px" height="41px" horizontalAnchor="BOTH" left="146px" right="0px" verticalAnchor="BOTTOM"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-27d8f392"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

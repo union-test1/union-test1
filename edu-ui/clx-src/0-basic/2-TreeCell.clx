@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e87e716e" version="1.0.0.0">
+  <head std:sid="head-c14c28df">
+    <title>TreeCell</title>
+    <screen std:sid="screen-5dcc5ae6" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-351a4f89" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-62227162" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-32c2d4e8">
+      <cl:dataset std:sid="d-set-d9ef419e" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="file"/>
+          <cl:datacolumn datatype="string" name="size"/>
+          <cl:datacolumn name="level"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file1</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[1MB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file2</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[2GB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file3</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[3MB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file4</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[4MB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file5</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[5KB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file6</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[6GB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file7</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[7KB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file8</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[8MB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[3]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file9</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[9MB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[4]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="file">file10</cl:datavalue>
+            <cl:datavalue columnname="size"><![CDATA[10KB]]></cl:datavalue>
+            <cl:datavalue columnname="level"><![CDATA[1]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-406adfb9" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-bd4002b4" id="grd1" collapsible="true" columnMovable="true" columnResizable="true" datasetid="ds1" readonly="true">
+      <cl:xylayoutdata bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-99e993e9"/>
+      <cl:gridcolumn std:sid="g-column-7b9dc1db"/>
+      <cl:gridheader>
+        <cl:gridrow std:sid="g-row-a485f429"/>
+        <cl:gridcell std:sid="gh-cell-bad046e8" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="file" text="file"/>
+        <cl:gridcell std:sid="gh-cell-916090d9" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="size" text="size"/>
+      </cl:gridheader>
+      <cl:griddetail>
+        <cl:gridrow std:sid="g-row-c9c9afcc"/>
+        <cl:gridcell std:sid="gd-cell-e3490123" colindex="0" rowindex="0" columnname="file">
+          <cl:treecell std:sid="t-cell-fac07dcd">
+            <cl:relativebind category="PROPERTY" property="level" columnname="level"/>
+          </cl:treecell>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-27a6c756" colindex="1" rowindex="0" columnname="size">
+          <cl:inputbox/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-18fe682a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

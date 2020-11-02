@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.config.GridCellConfigurator.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="2186" startLine="5" endLine="102"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridCellConfigurator" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="100" endIndex="115" startLine="5" endLine="5"/>
+          <params name="grid" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="109" endIndex="112" startLine="5" endLine="5"/>
+            <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="style">
+              <value xsi:type="index:VariableSymbol" name="style" description="&lt;b>Readonly&lt;/b> 셀의 스타일 설정을 반환합니다.">
+                <region startIndex="347" endIndex="351"/>
+                <inferredType name="cpr.controls.gridpart.GridStyler" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="control">
+              <value xsi:type="index:VariableSymbol" name="control" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 셀에 배치된 컨트롤을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 셀의 컨트롤을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="661" endIndex="667"/>
+                <inferredType name="cpr.controls.UIControl" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="controlConstraint">
+              <value xsi:type="index:VariableSymbol" name="controlConstraint" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤 Constraints를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤 Constraints를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="998" endIndex="1014"/>
+                <inferredType name="cpr.controls.gridpart.ControlConstraint" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="formula">
+              <value xsi:type="index:VariableSymbol" name="formula" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 엑셀 익스포트시 셀에 표현할 함수식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 엑셀 익스포트시 셀에 표현할 함수식을 설정합니다.&lt;br/> 지원 내장함수 : &lt;br/> #C(number?) 설정된 셀인덱스 또는 현재 셀인덱스를 엑셀컬럼명으로 변환 #R(number?) 설정된 행인덱스를 사용하거나 현재 행인덱스를 엑셀행인덱스로 변환 &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1463" endIndex="1469"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="isBindable">
+              <value xsi:type="index:FunctionVariableSymbol" name="isBindable" originalSymbolName="__anonymous2">
+                <region startIndex="1632" endIndex="1641"/>
+              </value>
+            </symbols>
+            <symbols key="bind">
+              <value xsi:type="index:FunctionVariableSymbol" name="bind" originalSymbolName="__anonymous3">
+                <region startIndex="1839" endIndex="1842"/>
+              </value>
+            </symbols>
+            <symbols key="unbind">
+              <value xsi:type="index:FunctionVariableSymbol" name="unbind" originalSymbolName="__anonymous4">
+                <region startIndex="1958" endIndex="1963"/>
+              </value>
+            </symbols>
+            <symbols key="getBindInfo">
+              <value xsi:type="index:FunctionVariableSymbol" name="getBindInfo" originalSymbolName="__anonymous5">
+                <region startIndex="2154" endIndex="2164"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.config.GridCellConfigurator">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.config.GridCellConfigurator" originalSymbolName="__anonymous1">
+          <region startIndex="77" endIndex="96"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="isBindable" description="바인딩 가능한 속성인지 확인합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1645" endIndex="1660" startLine="81" endLine="81"/>
+          <params name="name" description="확인할 속성." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1654" endIndex="1657" startLine="81" endLine="81"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="bind" description="주어진 속성명에 대해 바인드 팩토리를 얻습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1846" endIndex="1861" startLine="88" endLine="88"/>
+          <params name="name" description="바인드 팩토리를 얻을 속성 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1855" endIndex="1858" startLine="88" endLine="88"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.bind.IBindFactory" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="unbind" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1967" endIndex="1982" startLine="93" endLine="93"/>
+          <params name="name" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1976" endIndex="1979" startLine="93" endLine="93"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="getBindInfo" description="바인드 속성 정보를 반환합니다." returnDescription="BindInfo 속성" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2168" endIndex="2183" startLine="100" endLine="100"/>
+          <params name="name" description="bind된 속성 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2177" endIndex="2180" startLine="100" endLine="100"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.bind.BindInfo" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="100" endIndex="115" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="115" endIndex="115"/>
+          <symbolMap key="grid">
+            <value xsi:type="index:ParameterSymbol" name="grid" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="109" endIndex="112" startLine="5" endLine="5"/>
+              <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1645" endIndex="1660" startLine="81" endLine="81"/>
+        <childScopes>
+          <region startIndex="1660" endIndex="1660"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="확인할 속성." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1654" endIndex="1657" startLine="81" endLine="81"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1846" endIndex="1861" startLine="88" endLine="88"/>
+        <childScopes>
+          <region startIndex="1861" endIndex="1861"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="바인드 팩토리를 얻을 속성 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1855" endIndex="1858" startLine="88" endLine="88"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1967" endIndex="1982" startLine="93" endLine="93"/>
+        <childScopes>
+          <region startIndex="1982" endIndex="1982"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1976" endIndex="1979" startLine="93" endLine="93"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2168" endIndex="2183" startLine="100" endLine="100"/>
+        <childScopes>
+          <region startIndex="2183" endIndex="2183"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="bind된 속성 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2177" endIndex="2180" startLine="100" endLine="100"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.config.GridCellConfigurator">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.config.GridCellConfigurator" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="77" endIndex="96"/>
+        <params name="grid" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="109" endIndex="112" startLine="5" endLine="5"/>
+          <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="style">
+            <value xsi:type="index:VariableSymbol" name="style" description="&lt;b>Readonly&lt;/b> 셀의 스타일 설정을 반환합니다.">
+              <region startIndex="347" endIndex="351"/>
+              <inferredType name="cpr.controls.gridpart.GridStyler" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="control">
+            <value xsi:type="index:VariableSymbol" name="control" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 셀에 배치된 컨트롤을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 셀의 컨트롤을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="661" endIndex="667"/>
+              <inferredType name="cpr.controls.UIControl" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="controlConstraint">
+            <value xsi:type="index:VariableSymbol" name="controlConstraint" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤 Constraints를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤 Constraints를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="998" endIndex="1014"/>
+              <inferredType name="cpr.controls.gridpart.ControlConstraint" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="formula">
+            <value xsi:type="index:VariableSymbol" name="formula" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 엑셀 익스포트시 셀에 표현할 함수식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 엑셀 익스포트시 셀에 표현할 함수식을 설정합니다.&lt;br/> 지원 내장함수 : &lt;br/> #C(number?) 설정된 셀인덱스 또는 현재 셀인덱스를 엑셀컬럼명으로 변환 #R(number?) 설정된 행인덱스를 사용하거나 현재 행인덱스를 엑셀행인덱스로 변환 &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1463" endIndex="1469"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="isBindable">
+            <value xsi:type="index:FunctionVariableSymbol" name="isBindable" originalSymbolName="__anonymous2">
+              <region startIndex="1632" endIndex="1641"/>
+            </value>
+          </symbols>
+          <symbols key="bind">
+            <value xsi:type="index:FunctionVariableSymbol" name="bind" originalSymbolName="__anonymous3">
+              <region startIndex="1839" endIndex="1842"/>
+            </value>
+          </symbols>
+          <symbols key="unbind">
+            <value xsi:type="index:FunctionVariableSymbol" name="unbind" originalSymbolName="__anonymous4">
+              <region startIndex="1958" endIndex="1963"/>
+            </value>
+          </symbols>
+          <symbols key="getBindInfo">
+            <value xsi:type="index:FunctionVariableSymbol" name="getBindInfo" originalSymbolName="__anonymous5">
+              <region startIndex="2154" endIndex="2164"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

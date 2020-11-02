@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.DateRange.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="81" endIndex="3188" startLine="7" endLine="104"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DateRange" description="날짜의 범위에서 계산" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="103" endIndex="132" startLine="7" endLine="7"/>
+          <params name="startDate" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="120" startLine="7" endLine="7"/>
+            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="endDate" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="123" endIndex="129" startLine="7" endLine="7"/>
+            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="start">
+              <value xsi:type="index:VariableSymbol" name="start" description="&lt;b>Readonly&lt;/b> 시작 날짜 객체를 반환합니다." experimental="true" experimentalDescription="">
+                <region startIndex="293" endIndex="297"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="end">
+              <value xsi:type="index:VariableSymbol" name="end" description="&lt;b>Readonly&lt;/b> 마지막 날짜 객체를 반환합니다." experimental="true" experimentalDescription="">
+                <region startIndex="426" endIndex="428"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clone">
+              <value xsi:type="index:FunctionVariableSymbol" name="clone" originalSymbolName="__anonymous2">
+                <region startIndex="548" endIndex="552"/>
+              </value>
+            </symbols>
+            <symbols key="contains">
+              <value xsi:type="index:FunctionVariableSymbol" name="contains" originalSymbolName="__anonymous3">
+                <region startIndex="931" endIndex="938"/>
+              </value>
+            </symbols>
+            <symbols key="isStart">
+              <value xsi:type="index:FunctionVariableSymbol" name="isStart" originalSymbolName="__anonymous4">
+                <region startIndex="1341" endIndex="1347"/>
+              </value>
+            </symbols>
+            <symbols key="isEnd">
+              <value xsi:type="index:FunctionVariableSymbol" name="isEnd" originalSymbolName="__anonymous5">
+                <region startIndex="1768" endIndex="1772"/>
+              </value>
+            </symbols>
+            <symbols key="length">
+              <value xsi:type="index:FunctionVariableSymbol" name="length" originalSymbolName="__anonymous6">
+                <region startIndex="2179" endIndex="2184"/>
+              </value>
+            </symbols>
+            <symbols key="extractDateString">
+              <value xsi:type="index:FunctionVariableSymbol" name="extractDateString" originalSymbolName="__anonymous7">
+                <region startIndex="2665" endIndex="2681"/>
+              </value>
+            </symbols>
+            <symbols key="extractDate">
+              <value xsi:type="index:FunctionVariableSymbol" name="extractDate" originalSymbolName="__anonymous8">
+                <region startIndex="3154" endIndex="3164"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.DateRange">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.DateRange" originalSymbolName="__anonymous1">
+          <region startIndex="91" endIndex="99"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="clone" description="객체를 복제합니다." experimental="true" experimentalDescription="" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="556" endIndex="567" startLine="31" endLine="31"/>
+          <inferredReturnType name="cpr.utils.DateRange" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="contains" description="range 안에 날짜가 포함되는지 여부를 반환합니다. target 기본값은 &quot;day&quot;입니다.&lt;br> year인 경우 범위에 날짜의 년도가 포함되는지 확인합니다.&lt;br> month인 경우 범위에 날짜의 년,월이 포함되는지 확인합니다.&lt;br> day인 경우 범위에 날짜의 년,월,일이 포합되는지 확인합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="942" endIndex="965" startLine="42" endLine="42"/>
+          <params name="date" description="날짜 객체." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="951" endIndex="954" startLine="42" endLine="42"/>
+            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="target" optional="true" description="&quot;year&quot;,&quot;month&quot;,&quot;day&quot;중에 하나만 선택하여 포함여부 방법 설정." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="957" endIndex="962" startLine="42" endLine="42"/>
+            <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="isStart" description="시작 날짜 여부를 반환합니다. target 기본값은 &quot;day&quot;입니다.&lt;br> year인 경우 범위의 시작 날짜가 년도와 같은지 비교합니다.&lt;br> month인 경우 범위의 시작 날짜가 년,월이 같은지 비교합니다.&lt;br> day인 경우 범위의 시작 날짜가 년,월,일이 같은지 비교합니다." experimental="true" experimentalDescription="" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1351" endIndex="1374" startLine="54" endLine="54"/>
+          <params name="date" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1360" endIndex="1363" startLine="54" endLine="54"/>
+            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="target" optional="true" description="optional [&quot;year&quot;,&quot;month&quot;,&quot;day&quot;] 중에 하나만 선택하여 비교 방법 설정." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1366" endIndex="1371" startLine="54" endLine="54"/>
+            <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="isEnd" description="입력한 날짜가 범위의 마지막 날짜인지 여부를 반환합니다. target 기본값은 &quot;day&quot;입니다.&lt;br> year인 경우 범위의 마지막 날짜가 년도와 같은지 비교합니다.&lt;br> month인 경우 범위의 마지막 날짜가 년,월이 같은지 비교합니다.&lt;br> day인 경우 범위의 마지막 날짜가 년,월,일이 같은지 비교합니다." experimental="true" experimentalDescription="" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1776" endIndex="1799" startLine="66" endLine="66"/>
+          <params name="date" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1785" endIndex="1788" startLine="66" endLine="66"/>
+            <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="target" optional="true" description="optional [&quot;year&quot;,&quot;month&quot;,&quot;day&quot;] 중에 하나만 선택하여 비교 방법 설정." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1791" endIndex="1796" startLine="66" endLine="66"/>
+            <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="length" description="시작날짜와 마지막 날짜 사이의 길이를 반환합니다. target 기본값은 &quot;day&quot;입니다.&lt;br> year인 경우 start와 end를 millisecond로 차이를 계산하여 년도를 반환&lt;br> month인 경우 start와 end를 millisecond로 차이를 계산하여 월을 반환&lt;br> day인 경우 start와 end를 millisecond로 차이를 계산하여 일을 반환" experimental="true" experimentalDescription="" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2188" endIndex="2205" startLine="77" endLine="77"/>
+          <params name="target" optional="true" description="길이 계산 형식.['year','month','day']" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2197" endIndex="2202" startLine="77" endLine="77"/>
+            <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="extractDateString" description="범위 안에 날짜 문자열을 반환합니다. type에 따라 반환되는 날짜가 개수가 달라집니다. target 기본값은 &quot;day&quot;입니다.&lt;br> type이 &quot;months&quot;인 경우 [&quot;2018-08-01&quot;,&quot;2018-09-01&quot;, ...]&lt;br> type이 &quot;days&quot;인 경우 [&quot;2018-08-01&quot;,&quot;2018-08-02&quot;, ...]&lt;br> type이 &quot;years&quot;인 경우 [&quot;2018-08-01&quot;,&quot;2019-08-01&quot;, ...]&lt;br>" experimental="true" experimentalDescription="" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2685" endIndex="2710" startLine="90" endLine="90"/>
+          <params name="format" optional="true" description="반환하는 문자열의 포맷을 설정합니다." symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2694" endIndex="2699" startLine="90" endLine="90"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="target" optional="true" description="&quot;days&quot;, &quot;months&quot;, &quot;years&quot;" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2702" endIndex="2707" startLine="90" endLine="90"/>
+            <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="extractDate" description="범위 안에 Date 객체를 반환합니다. type에 따라 반환되는 날짜 개수가 달라집니다. target 기본값은 &quot;day&quot;입니다.&lt;br> type이 &quot;months&quot;인 경우 [Date(&quot;2018-08-01&quot;),Date(&quot;2018-09-01&quot;), ...]&lt;br> type이 &quot;days&quot;인 경우 [Date(&quot;2018-08-01&quot;),Date(&quot;2018-08-02&quot;), ...]&lt;br> type이 &quot;years&quot;인 경우 [Date(&quot;2018-08-01&quot;),Date(&quot;2019-08-01&quot;), ...]&lt;br>" experimental="true" experimentalDescription="" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3168" endIndex="3185" startLine="102" endLine="102"/>
+          <params name="target" optional="true" description="&quot;days&quot;,&quot;months&quot;,&quot;years&quot;" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3177" endIndex="3182" startLine="102" endLine="102"/>
+            <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="103" endIndex="132" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="132" endIndex="132"/>
+          <symbolMap key="startDate">
+            <value xsi:type="index:ParameterSymbol" name="startDate" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="120" startLine="7" endLine="7"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="endDate">
+            <value xsi:type="index:ParameterSymbol" name="endDate" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="123" endIndex="129" startLine="7" endLine="7"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="556" endIndex="567" startLine="31" endLine="31"/>
+        <childScopes>
+          <region startIndex="567" endIndex="567"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="942" endIndex="965" startLine="42" endLine="42"/>
+        <childScopes>
+          <region startIndex="965" endIndex="965"/>
+          <symbolMap key="date">
+            <value xsi:type="index:ParameterSymbol" name="date" description="날짜 객체." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="951" endIndex="954" startLine="42" endLine="42"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" optional="true" description="&quot;year&quot;,&quot;month&quot;,&quot;day&quot;중에 하나만 선택하여 포함여부 방법 설정." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="957" endIndex="962" startLine="42" endLine="42"/>
+              <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1351" endIndex="1374" startLine="54" endLine="54"/>
+        <childScopes>
+          <region startIndex="1374" endIndex="1374"/>
+          <symbolMap key="date">
+            <value xsi:type="index:ParameterSymbol" name="date" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1360" endIndex="1363" startLine="54" endLine="54"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" optional="true" description="optional [&quot;year&quot;,&quot;month&quot;,&quot;day&quot;] 중에 하나만 선택하여 비교 방법 설정." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1366" endIndex="1371" startLine="54" endLine="54"/>
+              <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1776" endIndex="1799" startLine="66" endLine="66"/>
+        <childScopes>
+          <region startIndex="1799" endIndex="1799"/>
+          <symbolMap key="date">
+            <value xsi:type="index:ParameterSymbol" name="date" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1785" endIndex="1788" startLine="66" endLine="66"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" optional="true" description="optional [&quot;year&quot;,&quot;month&quot;,&quot;day&quot;] 중에 하나만 선택하여 비교 방법 설정." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1791" endIndex="1796" startLine="66" endLine="66"/>
+              <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2188" endIndex="2205" startLine="77" endLine="77"/>
+        <childScopes>
+          <region startIndex="2205" endIndex="2205"/>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" optional="true" description="길이 계산 형식.['year','month','day']" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2197" endIndex="2202" startLine="77" endLine="77"/>
+              <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2685" endIndex="2710" startLine="90" endLine="90"/>
+        <childScopes>
+          <region startIndex="2710" endIndex="2710"/>
+          <symbolMap key="format">
+            <value xsi:type="index:ParameterSymbol" name="format" optional="true" description="반환하는 문자열의 포맷을 설정합니다." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2694" endIndex="2699" startLine="90" endLine="90"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" optional="true" description="&quot;days&quot;, &quot;months&quot;, &quot;years&quot;" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2702" endIndex="2707" startLine="90" endLine="90"/>
+              <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3168" endIndex="3185" startLine="102" endLine="102"/>
+        <childScopes>
+          <region startIndex="3185" endIndex="3185"/>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" optional="true" description="&quot;days&quot;,&quot;months&quot;,&quot;years&quot;" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3177" endIndex="3182" startLine="102" endLine="102"/>
+              <inferredType name="cpr.utils.DateRangeTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.utils.DateRange">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.DateRange" description="날짜의 범위에서 계산" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="91" endIndex="99"/>
+        <params name="startDate" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="120" startLine="7" endLine="7"/>
+          <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="endDate" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="123" endIndex="129" startLine="7" endLine="7"/>
+          <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="start">
+            <value xsi:type="index:VariableSymbol" name="start" description="&lt;b>Readonly&lt;/b> 시작 날짜 객체를 반환합니다." experimental="true" experimentalDescription="">
+              <region startIndex="293" endIndex="297"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="end">
+            <value xsi:type="index:VariableSymbol" name="end" description="&lt;b>Readonly&lt;/b> 마지막 날짜 객체를 반환합니다." experimental="true" experimentalDescription="">
+              <region startIndex="426" endIndex="428"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="clone">
+            <value xsi:type="index:FunctionVariableSymbol" name="clone" originalSymbolName="__anonymous2">
+              <region startIndex="548" endIndex="552"/>
+            </value>
+          </symbols>
+          <symbols key="contains">
+            <value xsi:type="index:FunctionVariableSymbol" name="contains" originalSymbolName="__anonymous3">
+              <region startIndex="931" endIndex="938"/>
+            </value>
+          </symbols>
+          <symbols key="isStart">
+            <value xsi:type="index:FunctionVariableSymbol" name="isStart" originalSymbolName="__anonymous4">
+              <region startIndex="1341" endIndex="1347"/>
+            </value>
+          </symbols>
+          <symbols key="isEnd">
+            <value xsi:type="index:FunctionVariableSymbol" name="isEnd" originalSymbolName="__anonymous5">
+              <region startIndex="1768" endIndex="1772"/>
+            </value>
+          </symbols>
+          <symbols key="length">
+            <value xsi:type="index:FunctionVariableSymbol" name="length" originalSymbolName="__anonymous6">
+              <region startIndex="2179" endIndex="2184"/>
+            </value>
+          </symbols>
+          <symbols key="extractDateString">
+            <value xsi:type="index:FunctionVariableSymbol" name="extractDateString" originalSymbolName="__anonymous7">
+              <region startIndex="2665" endIndex="2681"/>
+            </value>
+          </symbols>
+          <symbols key="extractDate">
+            <value xsi:type="index:FunctionVariableSymbol" name="extractDate" originalSymbolName="__anonymous8">
+              <region startIndex="3154" endIndex="3164"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

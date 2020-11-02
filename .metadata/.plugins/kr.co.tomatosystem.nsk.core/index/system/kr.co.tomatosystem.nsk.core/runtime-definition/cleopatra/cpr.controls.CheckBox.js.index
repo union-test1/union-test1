@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.CheckBox.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="114" endIndex="2092" startLine="7" endLine="126"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CheckBox" description="Checkbox 박스 내의 선택되거나 선택되지 않은 상태를 토글하면서 체크를 표현하는 컨트롤. 체크박스를 생성합니다." baseSymbolName="cpr.controls.AccessableUIControl" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="138" endIndex="151" startLine="7" endLine="7"/>
+          <params name="id" description="체크박스의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="147" endIndex="148" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="value">
+              <value xsi:type="index:VariableSymbol" name="value" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤의 값을 설정하고, value-change 이벤트가 발생됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="470" endIndex="474"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="text">
+              <value xsi:type="index:VariableSymbol" name="text" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> checkbox의 텍스트를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> checkbox의 텍스트를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="724" endIndex="727"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="checked">
+              <value xsi:type="index:VariableSymbol" name="checked" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> check 표시의 상태를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> check 상태를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="972" endIndex="978"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="falseValue">
+              <value xsi:type="index:VariableSymbol" name="falseValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> checked 상태가 false 일 경우 가지는 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> checked 상태가 false 일 경우 가지는 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1259" endIndex="1268"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="trueValue">
+              <value xsi:type="index:VariableSymbol" name="trueValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> checked 상태가 true 일 경우 가지는 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> checked 상태가 false 일 경우 가지는 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1547" endIndex="1555"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="style">
+              <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+                <region startIndex="1745" endIndex="1749"/>
+                <inferredType name="cpr.controls.CheckBox$Styler" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="putValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous2">
+                <region startIndex="1881" endIndex="1888"/>
+              </value>
+            </symbols>
+            <symbols key="toggle">
+              <value xsi:type="index:FunctionVariableSymbol" name="toggle" originalSymbolName="__anonymous3">
+                <region startIndex="2069" endIndex="2074"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.CheckBox">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.CheckBox" originalSymbolName="__anonymous1">
+          <region startIndex="127" endIndex="134"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="putValue" description="컨트롤의 값을 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1892" endIndex="1908" startLine="117" endLine="117"/>
+          <params name="value" description="컨트롤의 값." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1901" endIndex="1905" startLine="117" endLine="117"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="toggle" description="checkbox의 checked 값을 반대의 값으로 전환하여 반환합니다.&lt;br> 두가지 밖에 없는 상황에서 반대의 값으로 설정합니다." returnDescription="전환된 checked 값." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2078" endIndex="2089" startLine="124" endLine="124"/>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="138" endIndex="151" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="151" endIndex="151"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="체크박스의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="147" endIndex="148" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1892" endIndex="1908" startLine="117" endLine="117"/>
+        <childScopes>
+          <region startIndex="1908" endIndex="1908"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="컨트롤의 값." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1901" endIndex="1905" startLine="117" endLine="117"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2078" endIndex="2089" startLine="124" endLine="124"/>
+        <childScopes>
+          <region startIndex="2089" endIndex="2089"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.CheckBox">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.CheckBox" description="Checkbox 박스 내의 선택되거나 선택되지 않은 상태를 토글하면서 체크를 표현하는 컨트롤. 체크박스를 생성합니다." baseSymbolName="cpr.controls.AccessableUIControl" anonymousFunction="true">
+        <region startIndex="127" endIndex="134"/>
+        <params name="id" description="체크박스의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="147" endIndex="148" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="value">
+            <value xsi:type="index:VariableSymbol" name="value" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤의 값을 설정하고, value-change 이벤트가 발생됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="470" endIndex="474"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="text">
+            <value xsi:type="index:VariableSymbol" name="text" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> checkbox의 텍스트를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> checkbox의 텍스트를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="724" endIndex="727"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="checked">
+            <value xsi:type="index:VariableSymbol" name="checked" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> check 표시의 상태를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> check 상태를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="972" endIndex="978"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="falseValue">
+            <value xsi:type="index:VariableSymbol" name="falseValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> checked 상태가 false 일 경우 가지는 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> checked 상태가 false 일 경우 가지는 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1259" endIndex="1268"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="trueValue">
+            <value xsi:type="index:VariableSymbol" name="trueValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> checked 상태가 true 일 경우 가지는 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> checked 상태가 false 일 경우 가지는 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1547" endIndex="1555"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="style">
+            <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+              <region startIndex="1745" endIndex="1749"/>
+              <inferredType name="cpr.controls.CheckBox$Styler" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="putValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous2">
+              <region startIndex="1881" endIndex="1888"/>
+            </value>
+          </symbols>
+          <symbols key="toggle">
+            <value xsi:type="index:FunctionVariableSymbol" name="toggle" originalSymbolName="__anonymous3">
+              <region startIndex="2069" endIndex="2074"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

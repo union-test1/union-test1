@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Video.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="91" endIndex="723" startLine="6" endLine="47"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="Video" description="영상(MP4,WebM,Ogg) 출력이 가능한 Vieo 컨트롤. 비디오를 생성합니다." baseSymbolName="cpr.controls.media.Media" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="125" startLine="6" endLine="6"/>
+          <params name="id" description="비디오의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="121" endIndex="122" startLine="6" endLine="6"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="poster">
+              <value xsi:type="index:VariableSymbol" name="poster" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 영상 재생 시작 전에 표시하는 이미지 경로를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 영상 재생 시작 전에 표시하는 이미지 경로를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="440" endIndex="445"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="src">
+              <value xsi:type="index:VariableSymbol" name="src" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 소스의 경로 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 소스의 경로 값을 설정합니다. 모든 브라우저는 MP4를 지원합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="703" endIndex="705"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.Video">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.Video" originalSymbolName="__anonymous1">
+          <region startIndex="104" endIndex="108"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="125" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="125" endIndex="125"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="비디오의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="121" endIndex="122" startLine="6" endLine="6"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.Video">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.Video" description="영상(MP4,WebM,Ogg) 출력이 가능한 Vieo 컨트롤. 비디오를 생성합니다." baseSymbolName="cpr.controls.media.Media" anonymousFunction="true">
+        <region startIndex="104" endIndex="108"/>
+        <params name="id" description="비디오의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="121" endIndex="122" startLine="6" endLine="6"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="poster">
+            <value xsi:type="index:VariableSymbol" name="poster" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 영상 재생 시작 전에 표시하는 이미지 경로를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 영상 재생 시작 전에 표시하는 이미지 경로를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="440" endIndex="445"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="src">
+            <value xsi:type="index:VariableSymbol" name="src" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 소스의 경로 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 소스의 경로 값을 설정합니다. 모든 브라우저는 MP4를 지원합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="703" endIndex="705"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

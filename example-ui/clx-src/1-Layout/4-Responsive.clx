@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d852d185" version="1.0.0.0">
+  <head std:sid="head-ca603e23">
+    <title>02-Responsive</title>
+    <screen std:sid="screen-5b739239" id="default" active="true" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-e5107496" id="tablet" active="false" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-fb310caa" id="mobile" active="false" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-cafb8617">
+      <cl:dataset std:sid="d-set-4d0a92ce" id="ds1">
+        <cl:dataview std:sid="d-view-54ebe76c" id="dv1" filtercondition="column1 *= &quot;2&quot;"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn name="id"/>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn name="start"/>
+          <cl:datacolumn datatype="number" name="progress"/>
+          <cl:datacolumn name="note"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="id">id1</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Caramelize Onion]]></cl:datavalue>
+            <cl:datavalue columnname="start"><![CDATA[20180510]]></cl:datavalue>
+            <cl:datavalue columnname="progress"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="note">note1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id">id2</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Buy a milk]]></cl:datavalue>
+            <cl:datavalue columnname="start"><![CDATA[20180501]]></cl:datavalue>
+            <cl:datavalue columnname="progress"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="note">note2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id">id3</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Trip to Saipan]]></cl:datavalue>
+            <cl:datavalue columnname="start"><![CDATA[20180421]]></cl:datavalue>
+            <cl:datavalue columnname="progress"><![CDATA[50]]></cl:datavalue>
+            <cl:datavalue columnname="note">note3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id">id4</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Book a conert ticket]]></cl:datavalue>
+            <cl:datavalue columnname="start"><![CDATA[20180309]]></cl:datavalue>
+            <cl:datavalue columnname="progress"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="note">note4</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-d1c637b2" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-539bb3f5" id="grd1" datasetid="ds1">
+      <cl:listener std:sid="listener-0c3a23d8" handler="onGrd1SelectionChange" name="selection-change"/>
+      <cl:responsivexylayoutdata std:sid="rxyl-data-eae51997">
+        <cl:xylayoutdata std:sid="sxyl-data-2ee4d266" bottom="20px" horizontalAnchor="BOTH" left="20px" right="543px" top="20px" verticalAnchor="BOTH" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-b4806a1b" bottom="210px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH" screenid="tablet"/>
+        <cl:xylayoutdata std:sid="sxyl-data-b4806a1b" bottom="210px" horizontalAnchor="BOTH" left="14px" right="14px" top="20px" verticalAnchor="BOTH" screenid="mobile"/>
+      </cl:responsivexylayoutdata>
+      <cl:gridcolumn std:sid="g-column-75597450"/>
+      <cl:gridcolumn std:sid="g-column-c07e3cfc"/>
+      <cl:gridcolumn std:sid="g-column-41743632"/>
+      <cl:gridcolumn std:sid="g-column-5f0b8d74"/>
+      <cl:gridcolumn std:sid="g-column-9c21835d"/>
+      <cl:gridheader std:sid="gh-band-72f42b3a">
+        <cl:gridrow std:sid="g-row-6864361d"/>
+        <cl:gridcell std:sid="gh-cell-1265afaf" colindex="0" rowindex="0" text="ID"/>
+        <cl:gridcell std:sid="gh-cell-6059b043" colindex="1" rowindex="0" text="Task"/>
+        <cl:gridcell std:sid="gh-cell-b8c67ac6" colindex="2" rowindex="0" text="Start"/>
+        <cl:gridcell std:sid="gh-cell-806e3b3d" colindex="3" rowindex="0" text="Progress"/>
+        <cl:gridcell std:sid="gh-cell-5e1812e5" colindex="4" rowindex="0" text="Note"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-b6548346">
+        <cl:gridrow std:sid="g-row-79361c2f"/>
+        <cl:gridcell std:sid="gd-cell-1c507219" colindex="0" rowindex="0" style="text-align:center;" columnname="id"/>
+        <cl:gridcell std:sid="gd-cell-2a0dd1f2" colindex="1" rowindex="0" style="text-align:center;" columnname="name"/>
+        <cl:gridcell std:sid="gd-cell-3750de27" colindex="2" rowindex="0" columnname="start">
+          <cl:dateinput std:sid="d-input-80b7d72e" id="dti2"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-769cc10c" colindex="3" rowindex="0" columnname="progress">
+          <cl:output std:sid="output-8812b287" style="padding:0px 10px 0px 0px; text-align:right;">
+            <cl:expbind category="PROPERTY" property="value" expression="progress + &quot;%&quot;"/>
+          </cl:output>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-795e7af8" colindex="4" rowindex="0" style="text-align:center;" columnname="note"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:group std:sid="group-2459b9d6" id="detail" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:gray; border-top-color:gray; border-bottom-style:solid; border-right-color:gray; border-left-width:1px; border-top-style:solid;">
+      <cl:datarowcontext datacontrolid="ds1" rowindex="0"/>
+      <cl:responsivexylayoutdata std:sid="rxyl-data-791c9ce0">
+        <cl:xylayoutdata std:sid="sxyl-data-c38c3c9d" bottom="20px" horizontalAnchor="RIGHT" right="20px" top="20px" verticalAnchor="BOTH" width="513px" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-5447fc4a" bottom="20px" height="180px" horizontalAnchor="BOTH" left="20px" right="20px" verticalAnchor="BOTTOM" screenid="tablet"/>
+        <cl:xylayoutdata std:sid="sxyl-data-5447fc4a" bottom="20px" height="180px" horizontalAnchor="BOTH" left="14px" right="14px" verticalAnchor="BOTTOM" screenid="mobile"/>
+      </cl:responsivexylayoutdata>
+      <cl:output std:sid="output-5b05f144" style="text-align:right;" value="ID">
+        <cl:formdata col="0" row="0" valign="FILL"/>
+      </cl:output>
+      <cl:output std:sid="output-aabf9742" style="text-align:right;" value="Task">
+        <cl:formdata col="0" row="1" valign="FILL"/>
+      </cl:output>
+      <cl:output std:sid="output-b8b56395" style="text-align:right;" value="Start">
+        <cl:formdata col="0" row="2" valign="FILL"/>
+      </cl:output>
+      <cl:output std:sid="output-313417a5" style="text-align:right;" value="Progress">
+        <cl:formdata col="0" row="3" valign="FILL"/>
+      </cl:output>
+      <cl:output std:sid="output-e01345d1" style="text-align:right;" value="Note">
+        <cl:formdata col="0" row="4" valign="TOP"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-4ee76850" id="ipb1" nextcontrol="#i-box-a9dde51e">
+        <cl:relativebind property="value" columnname="id"/>
+        <cl:formdata col="1" row="0"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-a9dde51e" id="ipb2" prevcontrol="#i-box-4ee76850">
+        <cl:relativebind property="value" columnname="name"/>
+        <cl:formdata col="1" row="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-0f56854e" id="ipb5">
+        <cl:relativebind property="value" columnname="note"/>
+        <cl:formdata col="1" row="4"/>
+      </cl:inputbox>
+      <cl:dateinput std:sid="d-input-8c8eea8f" id="dti1">
+        <cl:relativebind property="value" columnname="start"/>
+        <cl:formdata std:sid="f-data-3cd4c3d3" col="1" row="2"/>
+      </cl:dateinput>
+      <cl:progress std:sid="progress-18804dc6" value="50">
+        <cl:relativebind property="value" columnname="progress"/>
+        <cl:formdata std:sid="f-data-4523cc52" col="1" row="3"/>
+      </cl:progress>
+      <cl:formlayout hmargin="5" hseparatortype="BY_CLASS" hseparatorwidth="1" vmargin="5" vseparatortype="BY_CLASS" vseparatorwidth="1">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-ce4dfb3c" class="note" removeOnBuild="true" value="데이터 뷰 간략히 소개">
+      <cl:responsivexylayoutdata std:sid="rxyl-data-b81bd46c">
+        <cl:xylayoutdata std:sid="sxyl-data-906111af" height="87px" horizontalAnchor="LEFT" left="42px" top="79px" verticalAnchor="TOP" width="177px" screenid="default"/>
+      </cl:responsivexylayoutdata>
+    </cl:output>
+    <cl:responsivexylayout std:sid="r-xylayout-65b4db3f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

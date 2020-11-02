@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.TextEditor.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="94" endIndex="1159" startLine="6" endLine="42"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="TextEditor" description="인풋 계열 컴포넌트의 상위 클래스 인풋 계열 컴포넌트의 상위 클래스를 생성합니다." baseSymbolName="cpr.controls.TextInput" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="120" endIndex="133" startLine="6" endLine="6"/>
+          <params name="id" description="텍스트 에디터의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="129" endIndex="130" startLine="6" endLine="6"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="confirmEvent">
+              <value xsi:type="index:FunctionVariableSymbol" name="confirmEvent" originalSymbolName="__anonymous2">
+                <region startIndex="396" endIndex="407"/>
+              </value>
+            </symbols>
+            <symbols key="getSelection">
+              <value xsi:type="index:FunctionVariableSymbol" name="getSelection" originalSymbolName="__anonymous3">
+                <region startIndex="685" endIndex="696"/>
+              </value>
+            </symbols>
+            <symbols key="setSelection">
+              <value xsi:type="index:FunctionVariableSymbol" name="setSelection" originalSymbolName="__anonymous4">
+                <region startIndex="1121" endIndex="1132"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.TextEditor">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.TextEditor" originalSymbolName="__anonymous1">
+          <region startIndex="107" endIndex="116"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="confirmEvent" description="Control의 상태에 따라 Control의 Default Event Handler를 실행할 지 여부를 결정합니다." returnDescription="컨트롤의 Event Handler 실행 여부." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="411" endIndex="423" startLine="14" endLine="14"/>
+          <params name="e" description="이벤트" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="420" endIndex="420" startLine="14" endLine="14"/>
+            <inferredType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getSelection" description="선택된 cursor(start, end, text)을 반환합니다.&lt;br> cursor은 텍스트 cursor의 시작 위치, 종료 위치, 선택할 텍스트를 가진 정보를 나타냅니다.&lt;br> 선택된 텍스트가 없는 경우 해당 범위를 선택만 합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="700" endIndex="711" startLine="26" endLine="26"/>
+          <inferredReturnType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.TextEditor.js" instance="true" documentedType="true">
+            <selfDeclaringTypeSymbol classType="interface">
+              <region startIndex="584" endIndex="645"/>
+              <prototype>
+                <symbols key="start">
+                  <value xsi:type="index:VariableSymbol" name="start">
+                    <region startIndex="591" endIndex="595"/>
+                    <inferredType name="Number" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+                <symbols key="end">
+                  <value xsi:type="index:VariableSymbol" name="end">
+                    <region startIndex="611" endIndex="613"/>
+                    <inferredType name="Number" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+                <symbols key="text">
+                  <value xsi:type="index:VariableSymbol" name="text">
+                    <region startIndex="629" endIndex="632"/>
+                    <inferredType name="String" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+              </prototype>
+            </selfDeclaringTypeSymbol>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="setSelection" description="cursor(start, end, text)를 설정하고 포커스가 이동됩니다.&lt;br> start,end만 지정하는 경우 selection이 지정된다. start,end,text를 지정하는 경우 selection된 기존 텍스트를 지우고 입력된 text를 삽입한다. &lt;pre>&lt;code>editor.setSelection( {start: 0, end: 8} ); OR editor.setSelection( {start: 0, end: 8, text: &quot;inputbox&quot;} );&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1136" endIndex="1156" startLine="40" endLine="40"/>
+          <params name="selection" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1145" endIndex="1153" startLine="40" endLine="40"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="120" endIndex="133" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="133" endIndex="133"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="텍스트 에디터의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="129" endIndex="130" startLine="6" endLine="6"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="411" endIndex="423" startLine="14" endLine="14"/>
+        <childScopes>
+          <region startIndex="423" endIndex="423"/>
+          <symbolMap key="e">
+            <value xsi:type="index:ParameterSymbol" name="e" description="이벤트" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="420" endIndex="420" startLine="14" endLine="14"/>
+              <inferredType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="700" endIndex="711" startLine="26" endLine="26"/>
+        <childScopes>
+          <region startIndex="711" endIndex="711"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1136" endIndex="1156" startLine="40" endLine="40"/>
+        <childScopes>
+          <region startIndex="1156" endIndex="1156"/>
+          <symbolMap key="selection">
+            <value xsi:type="index:ParameterSymbol" name="selection" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1145" endIndex="1153" startLine="40" endLine="40"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.TextEditor">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.TextEditor" description="인풋 계열 컴포넌트의 상위 클래스 인풋 계열 컴포넌트의 상위 클래스를 생성합니다." baseSymbolName="cpr.controls.TextInput" anonymousFunction="true">
+        <region startIndex="107" endIndex="116"/>
+        <params name="id" description="텍스트 에디터의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="129" endIndex="130" startLine="6" endLine="6"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="confirmEvent">
+            <value xsi:type="index:FunctionVariableSymbol" name="confirmEvent" originalSymbolName="__anonymous2">
+              <region startIndex="396" endIndex="407"/>
+            </value>
+          </symbols>
+          <symbols key="getSelection">
+            <value xsi:type="index:FunctionVariableSymbol" name="getSelection" originalSymbolName="__anonymous3">
+              <region startIndex="685" endIndex="696"/>
+            </value>
+          </symbols>
+          <symbols key="setSelection">
+            <value xsi:type="index:FunctionVariableSymbol" name="setSelection" originalSymbolName="__anonymous4">
+              <region startIndex="1121" endIndex="1132"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

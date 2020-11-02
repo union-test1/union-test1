@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.ExportUtil.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="12" endIndex="1782" startLine="4" endLine="53"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ExportUtil" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="35" endIndex="46" startLine="4" endLine="4"/>
+          <prototype/>
+          <symbols key="INSTANCE">
+            <value xsi:type="index:VariableSymbol" name="INSTANCE">
+              <region startIndex="162" endIndex="169"/>
+              <inferredType name="cpr.utils.ExportUtil" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="merge">
+            <value xsi:type="index:FunctionVariableSymbol" name="merge" originalSymbolName="__anonymous2">
+              <region startIndex="423" endIndex="427"/>
+            </value>
+          </symbols>
+          <symbols key="getExportData">
+            <value xsi:type="index:FunctionVariableSymbol" name="getExportData" originalSymbolName="__anonymous3">
+              <region startIndex="1731" endIndex="1743"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.ExportUtil">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.ExportUtil" originalSymbolName="__anonymous1">
+          <region startIndex="22" endIndex="31"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="merge" description="멀티 시트 익스포트시 여러 그리드의 데이터를 합쳐서 하나의 멀티 시트 익스포트 데이터로 반환합니다." returnDescription="여러 그리드 데이터가 합쳐진 하나의 익스포트 데이터." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="431" endIndex="453" startLine="18" endLine="18"/>
+          <params name="exportDatas" description="그리드 데이터 배열." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="440" endIndex="450" startLine="18" endLine="18"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.utils.ExportData" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="cpr.utils.MultiSheetExportData" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getExportData" description="Grid 또는 DataSet의 Data를 JSON 형식으로 반환합니다. &lt;br>" returnDescription="Export Data.&lt;br> {&#xA;metadata : {password: string, printPageOrientation: &quot;PORTRAIT&quot; | &quot;LANDSCAPE&quot;, wrapLineBreak : true | false},&lt;br>&#xA;name? : string,&lt;br>&#xA;freezepane? : {colsplit: number, rowsplit: number},&lt;br>&#xA;cols: { width: string }[],&lt;br>&#xA;rowgroups: {&lt;br>&#xA;&amp;emsp; region: string, // header, detail, footer, gheader, gfooter&lt;br>&#xA;&amp;emsp; style?: {&lt;br>&#xA;&amp;emsp;&amp;emsp; type: string, // string|number&lt;br>&#xA;&amp;emsp;&amp;emsp; rowindex: number,&lt;br>&#xA;&amp;emsp;&amp;emsp; colIndex: number,&lt;br>&#xA;&amp;emsp;&amp;emsp; rowSpan: number,&lt;br>&#xA;&amp;emsp;&amp;emsp; colSpan: number,&lt;br>&#xA;&amp;emsp;&amp;emsp; style?: {&lt;br>&#xA;&amp;emsp;&amp;emsp;&amp;emsp; [styleName: string]: (string | number)&lt;br>&#xA;&amp;emsp;&amp;emsp; }}[],&lt;br>&#xA;&amp;emsp; data: (string | number)[][]&lt;br>&#xA;&amp;emsp; }[]&#xA;}" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1747" endIndex="1779" startLine="51" endLine="51"/>
+          <params name="control" description="Grid 또는 DataSet" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1756" endIndex="1762" startLine="51" endLine="51"/>
+            <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+          </params>
+          <params name="exportOption" optional="true" description="Grid export 옵션.(Grid Only)&lt;br> exceptStyle : Style을 Export시 제외할 지 여부. default true.&lt;br> applyFormat : Export시 포맷을 적용시킬 지 여부. default true. number 데이터 타입을 익스포트하기 위해서는 해당 옵션을 false로 주어야 합니다.&lt;br> excludeCols : Export시 제외시킬 header cellIndex 배열.&lt;br> rows : Export시킬 특정 row index 배열.&lt;br> freezeHeader : Excel Export 시 그리드의 헤더 영역을 틀고정할지 여부. default false.&lt;br>" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1765" endIndex="1776" startLine="51" endLine="51"/>
+            <inferredType name="cpr.utils.ExportOption" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.utils.ExportData" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="35" endIndex="46" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="46" endIndex="46"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="431" endIndex="453" startLine="18" endLine="18"/>
+        <childScopes>
+          <region startIndex="453" endIndex="453"/>
+          <symbolMap key="exportDatas">
+            <value xsi:type="index:ParameterSymbol" name="exportDatas" description="그리드 데이터 배열." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="440" endIndex="450" startLine="18" endLine="18"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.utils.ExportData" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1747" endIndex="1779" startLine="51" endLine="51"/>
+        <childScopes>
+          <region startIndex="1779" endIndex="1779"/>
+          <symbolMap key="control">
+            <value xsi:type="index:ParameterSymbol" name="control" description="Grid 또는 DataSet" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1756" endIndex="1762" startLine="51" endLine="51"/>
+              <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="exportOption">
+            <value xsi:type="index:ParameterSymbol" name="exportOption" optional="true" description="Grid export 옵션.(Grid Only)&lt;br> exceptStyle : Style을 Export시 제외할 지 여부. default true.&lt;br> applyFormat : Export시 포맷을 적용시킬 지 여부. default true. number 데이터 타입을 익스포트하기 위해서는 해당 옵션을 false로 주어야 합니다.&lt;br> excludeCols : Export시 제외시킬 header cellIndex 배열.&lt;br> rows : Export시킬 특정 row index 배열.&lt;br> freezeHeader : Excel Export 시 그리드의 헤더 영역을 틀고정할지 여부. default false.&lt;br>" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1765" endIndex="1776" startLine="51" endLine="51"/>
+              <inferredType name="cpr.utils.ExportOption" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.utils.ExportUtil">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.ExportUtil" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="22" endIndex="31"/>
+        <prototype/>
+        <symbols key="INSTANCE">
+          <value xsi:type="index:VariableSymbol" name="INSTANCE">
+            <region startIndex="162" endIndex="169"/>
+            <inferredType name="cpr.utils.ExportUtil" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="merge">
+          <value xsi:type="index:FunctionVariableSymbol" name="merge" originalSymbolName="__anonymous2">
+            <region startIndex="423" endIndex="427"/>
+          </value>
+        </symbols>
+        <symbols key="getExportData">
+          <value xsi:type="index:FunctionVariableSymbol" name="getExportData" originalSymbolName="__anonymous3">
+            <region startIndex="1731" endIndex="1743"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

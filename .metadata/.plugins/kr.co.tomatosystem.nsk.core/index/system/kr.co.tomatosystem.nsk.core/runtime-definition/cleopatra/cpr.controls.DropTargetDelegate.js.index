@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.DropTargetDelegate.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="1703" startLine="4" endLine="59"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DropTargetDelegate" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="56" endIndex="67" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="options">
+              <value xsi:type="index:VariableSymbol" name="options" optional="true">
+                <region startIndex="238" endIndex="244"/>
+                <inferredType name="cpr.controls.DropTargetOptions" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="isImportant">
+              <value xsi:type="index:FunctionVariableSymbol" name="isImportant" originalSymbolName="__anonymous2">
+                <region startIndex="542" endIndex="552"/>
+              </value>
+            </symbols>
+            <symbols key="onDragEnter">
+              <value xsi:type="index:FunctionVariableSymbol" name="onDragEnter" originalSymbolName="__anonymous3">
+                <region startIndex="742" endIndex="752"/>
+              </value>
+            </symbols>
+            <symbols key="onDragMove">
+              <value xsi:type="index:FunctionVariableSymbol" name="onDragMove" originalSymbolName="__anonymous4">
+                <region startIndex="947" endIndex="956"/>
+              </value>
+            </symbols>
+            <symbols key="onDragLeave">
+              <value xsi:type="index:FunctionVariableSymbol" name="onDragLeave" originalSymbolName="__anonymous5">
+                <region startIndex="1145" endIndex="1155"/>
+              </value>
+            </symbols>
+            <symbols key="onDragIdle">
+              <value xsi:type="index:FunctionVariableSymbol" name="onDragIdle" originalSymbolName="__anonymous6">
+                <region startIndex="1387" endIndex="1396"/>
+              </value>
+            </symbols>
+            <symbols key="onDrop">
+              <value xsi:type="index:FunctionVariableSymbol" name="onDrop" originalSymbolName="__anonymous7">
+                <region startIndex="1673" endIndex="1678"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.DropTargetDelegate">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.DropTargetDelegate" originalSymbolName="__anonymous1">
+          <region startIndex="35" endIndex="52"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="isImportant" description="특정 드래그 소스를 처리할 것인지 여부를 반환해야 합니다. 구현을 생략한 경우, source의 dataType 이 &quot;default&quot; 인 경우에만 작동하게 됩니다. false를 리턴하면, 해당 드래그 소스를 무시하게 됩니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="556" endIndex="573" startLine="21" endLine="21"/>
+          <params name="source" description="드래그 소스" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="565" endIndex="570" startLine="21" endLine="21"/>
+            <inferredType name="cpr.controls.DragSource" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="onDragEnter" description="드래그 소스가 드롭 타겟 컨트롤 위에 진입 했을 때 호출 됩니다. 필요한 경우 드랍 타겟 피드백을 표시하십시오." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="756" endIndex="774" startLine="28" endLine="28"/>
+          <params name="context" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="765" endIndex="771" startLine="28" endLine="28"/>
+            <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="onDragMove" description="드래그 소스가 드롭 타겟 컨트롤 위에서 이동 했을 때 호출 됩니다. 필요한 경우 드랍 타겟 피드백을 업데이트 하십시오." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="960" endIndex="978" startLine="35" endLine="35"/>
+          <params name="context" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="969" endIndex="975" startLine="35" endLine="35"/>
+            <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="onDragLeave" description="드래그 소스가 드롭 타겟 컨트롤을 벗어났을 때 호출 됩니다. 필요한 경우, 드랍 타겟 피드백을 제거하십시오." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1159" endIndex="1177" startLine="42" endLine="42"/>
+          <params name="context" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1168" endIndex="1174" startLine="42" endLine="42"/>
+            <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="onDragIdle" description="드래그 앤 드랍 도중 드랍 타겟에 마우스 포인터가 일정 시간이상 머문 경우 콜백 됩니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1400" endIndex="1429" startLine="49" endLine="49"/>
+          <params name="context" description="드랍 컨텍스트." symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1409" endIndex="1415" startLine="49" endLine="49"/>
+            <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+          </params>
+          <params name="repeating" description="반복적으로 호출 된 것인지 여부." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1418" endIndex="1426" startLine="49" endLine="49"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="onDrop" description="드래그 소스가 드랍 타겟 컨트롤 위에 드랍 되었을 때 호출 됩니다. false 를 리턴하면 드래그 앤 드랍 동작이 취소 되며, DragSource의 delegate의 onDragCancel()이 호출 됩니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1682" endIndex="1700" startLine="57" endLine="57"/>
+          <params name="context" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1691" endIndex="1697" startLine="57" endLine="57"/>
+            <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="56" endIndex="67" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="67" endIndex="67"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="556" endIndex="573" startLine="21" endLine="21"/>
+        <childScopes>
+          <region startIndex="573" endIndex="573"/>
+          <symbolMap key="source">
+            <value xsi:type="index:ParameterSymbol" name="source" description="드래그 소스" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="565" endIndex="570" startLine="21" endLine="21"/>
+              <inferredType name="cpr.controls.DragSource" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="756" endIndex="774" startLine="28" endLine="28"/>
+        <childScopes>
+          <region startIndex="774" endIndex="774"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="765" endIndex="771" startLine="28" endLine="28"/>
+              <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="960" endIndex="978" startLine="35" endLine="35"/>
+        <childScopes>
+          <region startIndex="978" endIndex="978"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="969" endIndex="975" startLine="35" endLine="35"/>
+              <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1159" endIndex="1177" startLine="42" endLine="42"/>
+        <childScopes>
+          <region startIndex="1177" endIndex="1177"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1168" endIndex="1174" startLine="42" endLine="42"/>
+              <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1400" endIndex="1429" startLine="49" endLine="49"/>
+        <childScopes>
+          <region startIndex="1429" endIndex="1429"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="드랍 컨텍스트." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1409" endIndex="1415" startLine="49" endLine="49"/>
+              <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="repeating">
+            <value xsi:type="index:ParameterSymbol" name="repeating" description="반복적으로 호출 된 것인지 여부." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1418" endIndex="1426" startLine="49" endLine="49"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1682" endIndex="1700" startLine="57" endLine="57"/>
+        <childScopes>
+          <region startIndex="1700" endIndex="1700"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1691" endIndex="1697" startLine="57" endLine="57"/>
+              <inferredType name="cpr.controls.DropContext" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.DropTargetDelegate">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.DropTargetDelegate" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="35" endIndex="52"/>
+        <prototype>
+          <symbols key="options">
+            <value xsi:type="index:VariableSymbol" name="options" optional="true">
+              <region startIndex="238" endIndex="244"/>
+              <inferredType name="cpr.controls.DropTargetOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="isImportant">
+            <value xsi:type="index:FunctionVariableSymbol" name="isImportant" originalSymbolName="__anonymous2">
+              <region startIndex="542" endIndex="552"/>
+            </value>
+          </symbols>
+          <symbols key="onDragEnter">
+            <value xsi:type="index:FunctionVariableSymbol" name="onDragEnter" originalSymbolName="__anonymous3">
+              <region startIndex="742" endIndex="752"/>
+            </value>
+          </symbols>
+          <symbols key="onDragMove">
+            <value xsi:type="index:FunctionVariableSymbol" name="onDragMove" originalSymbolName="__anonymous4">
+              <region startIndex="947" endIndex="956"/>
+            </value>
+          </symbols>
+          <symbols key="onDragLeave">
+            <value xsi:type="index:FunctionVariableSymbol" name="onDragLeave" originalSymbolName="__anonymous5">
+              <region startIndex="1145" endIndex="1155"/>
+            </value>
+          </symbols>
+          <symbols key="onDragIdle">
+            <value xsi:type="index:FunctionVariableSymbol" name="onDragIdle" originalSymbolName="__anonymous6">
+              <region startIndex="1387" endIndex="1396"/>
+            </value>
+          </symbols>
+          <symbols key="onDrop">
+            <value xsi:type="index:FunctionVariableSymbol" name="onDrop" originalSymbolName="__anonymous7">
+              <region startIndex="1673" endIndex="1678"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

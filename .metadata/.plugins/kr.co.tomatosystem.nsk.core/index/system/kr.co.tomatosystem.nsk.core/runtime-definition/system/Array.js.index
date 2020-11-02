@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="183" endIndex="7428" startLine="10" endLine="270"/>
+      <symbolMap key="Array">
+        <value xsi:type="index:FunctionSymbol" name="Array" description="Object Array()" returnDescription="" baseSymbolName="Object">
+          <region xsi:type="index:RegionWithLine" startIndex="192" endIndex="196" startLine="10" endLine="10"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+          <prototype>
+            <symbols key="length">
+              <value xsi:type="index:VariableSymbol" name="length" description="Property length">
+                <region startIndex="431" endIndex="436"/>
+                <inferredType name="Number" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="concat">
+              <value xsi:type="index:FunctionVariableSymbol" name="concat" originalSymbolName="__anonymous1">
+                <region startIndex="684" endIndex="689"/>
+              </value>
+            </symbols>
+            <symbols key="join">
+              <value xsi:type="index:FunctionVariableSymbol" name="join" originalSymbolName="__anonymous2">
+                <region startIndex="976" endIndex="979"/>
+              </value>
+            </symbols>
+            <symbols key="pop">
+              <value xsi:type="index:FunctionVariableSymbol" name="pop" originalSymbolName="__anonymous3">
+                <region startIndex="1218" endIndex="1220"/>
+              </value>
+            </symbols>
+            <symbols key="push">
+              <value xsi:type="index:FunctionVariableSymbol" name="push" originalSymbolName="__anonymous4">
+                <region startIndex="1481" endIndex="1484"/>
+              </value>
+            </symbols>
+            <symbols key="reverse">
+              <value xsi:type="index:FunctionVariableSymbol" name="reverse" originalSymbolName="__anonymous5">
+                <region startIndex="1709" endIndex="1715"/>
+              </value>
+            </symbols>
+            <symbols key="shift">
+              <value xsi:type="index:FunctionVariableSymbol" name="shift" originalSymbolName="__anonymous6">
+                <region startIndex="1947" endIndex="1951"/>
+              </value>
+            </symbols>
+            <symbols key="slice">
+              <value xsi:type="index:FunctionVariableSymbol" name="slice" originalSymbolName="__anonymous7">
+                <region startIndex="2278" endIndex="2282"/>
+              </value>
+            </symbols>
+            <symbols key="sort">
+              <value xsi:type="index:FunctionVariableSymbol" name="sort" originalSymbolName="__anonymous8">
+                <region startIndex="2568" endIndex="2571"/>
+              </value>
+            </symbols>
+            <symbols key="splice">
+              <value xsi:type="index:FunctionVariableSymbol" name="splice" originalSymbolName="__anonymous9">
+                <region startIndex="2955" endIndex="2960"/>
+              </value>
+            </symbols>
+            <symbols key="unshift">
+              <value xsi:type="index:FunctionVariableSymbol" name="unshift" originalSymbolName="__anonymous10">
+                <region startIndex="3264" endIndex="3270"/>
+              </value>
+            </symbols>
+            <symbols key="indexOf">
+              <value xsi:type="index:FunctionVariableSymbol" name="indexOf" originalSymbolName="__anonymous11">
+                <region startIndex="3324" endIndex="3330"/>
+              </value>
+            </symbols>
+            <symbols key="lastIndexOf">
+              <value xsi:type="index:FunctionVariableSymbol" name="lastIndexOf" originalSymbolName="__anonymous12">
+                <region startIndex="3582" endIndex="3592"/>
+              </value>
+            </symbols>
+            <symbols key="every">
+              <value xsi:type="index:FunctionVariableSymbol" name="every" originalSymbolName="__anonymous13">
+                <region startIndex="4002" endIndex="4006"/>
+              </value>
+            </symbols>
+            <symbols key="some">
+              <value xsi:type="index:FunctionVariableSymbol" name="some" originalSymbolName="__anonymous14">
+                <region startIndex="4394" endIndex="4397"/>
+              </value>
+            </symbols>
+            <symbols key="filter">
+              <value xsi:type="index:FunctionVariableSymbol" name="filter" originalSymbolName="__anonymous15">
+                <region startIndex="4681" endIndex="4686"/>
+              </value>
+            </symbols>
+            <symbols key="forEach">
+              <value xsi:type="index:FunctionVariableSymbol" name="forEach" originalSymbolName="__anonymous16">
+                <region startIndex="4916" endIndex="4922"/>
+              </value>
+            </symbols>
+            <symbols key="map">
+              <value xsi:type="index:FunctionVariableSymbol" name="map" originalSymbolName="__anonymous17">
+                <region startIndex="5307" endIndex="5309"/>
+              </value>
+            </symbols>
+            <symbols key="reduce">
+              <value xsi:type="index:FunctionVariableSymbol" name="reduce" originalSymbolName="__anonymous18">
+                <region startIndex="5678" endIndex="5683"/>
+              </value>
+            </symbols>
+            <symbols key="reduceRight">
+              <value xsi:type="index:FunctionVariableSymbol" name="reduceRight" originalSymbolName="__anonymous19">
+                <region startIndex="6054" endIndex="6064"/>
+              </value>
+            </symbols>
+            <symbols key="find">
+              <value xsi:type="index:FunctionVariableSymbol" name="find" originalSymbolName="__anonymous20">
+                <region startIndex="6720" endIndex="6723"/>
+              </value>
+            </symbols>
+            <symbols key="findIndex">
+              <value xsi:type="index:FunctionVariableSymbol" name="findIndex" originalSymbolName="__anonymous21">
+                <region startIndex="7386" endIndex="7394"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="concat" description="function concat(args)" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="693" endIndex="722" startLine="34" endLine="36"/>
+          <params name="args" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="702" endIndex="705" startLine="34" endLine="34"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="join" description="function join(seperator)" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="983" endIndex="1017" startLine="48" endLine="50"/>
+          <params name="seperator" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="992" endIndex="1000" startLine="48" endLine="48"/>
+            <inferredType name="String" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="pop" description="function pop()" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1224" endIndex="1259" startLine="60" endLine="62"/>
+          <inferredReturnType name="Object" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="push" description="function push(args)" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1488" endIndex="1505" startLine="73" endLine="74"/>
+          <params name="args" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1497" endIndex="1500" startLine="73" endLine="73"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="reverse" description="function reverse()" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1719" endIndex="1744" startLine="84" endLine="86"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="shift" description="function shift()" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1955" endIndex="1990" startLine="96" endLine="98"/>
+          <inferredReturnType name="Object" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="slice" description="function slice(start, end)" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2286" endIndex="2321" startLine="112" endLine="114"/>
+          <params name="start" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2295" endIndex="2299" startLine="112" endLine="112"/>
+            <inferredType name="Number" instance="true" documentedType="true"/>
+          </params>
+          <params name="end" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2302" endIndex="2304" startLine="112" endLine="112"/>
+            <inferredType name="Number" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="sort" description="function sort(funct)" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2575" endIndex="2605" startLine="126" endLine="128"/>
+          <params name="funct" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2584" endIndex="2588" startLine="126" endLine="126"/>
+            <inferredType name="Function" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="splice" description="function splice(start, deletecount, items)" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2964" endIndex="3014" startLine="144" endLine="146"/>
+          <params name="start" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2973" endIndex="2977" startLine="144" endLine="144"/>
+            <inferredType name="Number" instance="true" documentedType="true"/>
+          </params>
+          <params name="deletecount" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2980" endIndex="2990" startLine="144" endLine="144"/>
+            <inferredType name="Number" instance="true" documentedType="true"/>
+          </params>
+          <params name="items" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2993" endIndex="2997" startLine="144" endLine="144"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="unshift" description="function unshift(items)" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3274" endIndex="3304" startLine="158" endLine="160"/>
+          <params name="values" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3283" endIndex="3288" startLine="158" endLine="158"/>
+            <inferredType name="Object" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Number" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous11">
+        <value xsi:type="index:FunctionSymbol" name="indexOf" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3334" endIndex="3361" startLine="162" endLine="164"/>
+          <params name="obj" symbolInScope="//@hotIndex/@rootScope/@childScopes.11/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3343" endIndex="3345" startLine="162" endLine="162"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <inferredReturnType name="Number" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous12">
+        <value xsi:type="index:FunctionSymbol" name="lastIndexOf" description="The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3596" endIndex="3633" startLine="171" endLine="173"/>
+          <params name="searchElement" symbolInScope="//@hotIndex/@rootScope/@childScopes.12/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3605" endIndex="3617" startLine="171" endLine="171"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <inferredReturnType name="Number" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous13">
+        <value xsi:type="index:FunctionSymbol" name="every" description="The every() method tests whether all elements in the array pass the test implemented by the provided function." returnDescription="true if the callback function returns a truthy value for every array element; otherwise, false." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4010" endIndex="4031" startLine="185" endLine="186"/>
+          <params name="callback" description="Function to test for each element." symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4019" endIndex="4026" startLine="185" endLine="185"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Boolean" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Boolean" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous14">
+        <value xsi:type="index:FunctionSymbol" name="some" description="The some() method tests whether at least one element in the array passes the test implemented by the provided function." returnDescription="true if the callback function returns a truthy value for any array element; otherwise, false." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4401" endIndex="4422" startLine="197" endLine="198"/>
+          <params name="callback" description="Function to test for each element." symbolInScope="//@hotIndex/@rootScope/@childScopes.14/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4410" endIndex="4417" startLine="197" endLine="197"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Boolean" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Boolean" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous15">
+        <value xsi:type="index:FunctionSymbol" name="filter" returnDescription="A new array with the elements that pass the test. If no elements pass the test, an empty array will be returned." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4690" endIndex="4711" startLine="206" endLine="207"/>
+          <params name="callback" description="Function to test for each element." symbolInScope="//@hotIndex/@rootScope/@childScopes.15/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4699" endIndex="4706" startLine="206" endLine="206"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Boolean" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous16">
+        <value xsi:type="index:FunctionSymbol" name="forEach" description="The forEach() method executes a provided function once for each array element." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4926" endIndex="4947" startLine="216" endLine="217"/>
+          <params name="callback" description="Function to execute for each element." symbolInScope="//@hotIndex/@rootScope/@childScopes.16/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4935" endIndex="4942" startLine="216" endLine="216"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous17">
+        <value xsi:type="index:FunctionSymbol" name="map" description="The map() method creates a new array with the results of calling a provided function on every element in the calling array." returnDescription="A new array with each element being the result of the callback function." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5313" endIndex="5333" startLine="228" endLine="230"/>
+          <params name="mapper" description="Function that produces an element of the new Array." symbolInScope="//@hotIndex/@rootScope/@childScopes.17/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5322" endIndex="5327" startLine="228" endLine="228"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous18">
+        <value xsi:type="index:FunctionSymbol" name="reduce" description="The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value." returnDescription="The value that results from the reduction." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5687" endIndex="5708" startLine="240" endLine="242"/>
+          <params name="reducer" description="Function to execute on each element in the array" symbolInScope="//@hotIndex/@rootScope/@childScopes.18/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5696" endIndex="5702" startLine="240" endLine="240"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Object" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous19">
+        <value xsi:type="index:FunctionSymbol" name="reduceRight" description="The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value." returnDescription="The value that results from the reduction." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6068" endIndex="6089" startLine="252" endLine="254"/>
+          <params name="reducer" description="Function to execute on each element in the array" symbolInScope="//@hotIndex/@rootScope/@childScopes.19/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6077" endIndex="6083" startLine="252" endLine="252"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Object" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous20">
+        <value xsi:type="index:FunctionSymbol" name="find" description="The find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise undefined is returned." returnDescription="The value of the first element in the array that satisfies the provided testing function. Otherwise, undefined is returned." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6727" endIndex="6756" startLine="262" endLine="262"/>
+          <params name="predicate" description="A function to execute on each value in the array until the function returns true, indicating that the satisfying element was found. It takes three arguments:" symbolInScope="//@hotIndex/@rootScope/@childScopes.20/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6736" endIndex="6744" startLine="262" endLine="262"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Number" instance="true" documentedType="true"/>
+              <typeParameters name="Array" instance="true" documentedType="true"/>
+              <typeParameters name="Boolean" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <params name="thisArg" optional="true" description="(Optional) Optional object to use as this when executing callback." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.20/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6747" endIndex="6753" startLine="262" endLine="262"/>
+            <inferredType name="Object" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous21">
+        <value xsi:type="index:FunctionSymbol" name="findIndex" description="The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test." returnDescription="The index of the first element in the array that passes the test. Otherwise, -1." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="7398" endIndex="7427" startLine="270" endLine="270"/>
+          <params name="predicate" description="A function to execute on each value in the array until the function returns true, indicating that the satisfying element was found. It takes three arguments:" symbolInScope="//@hotIndex/@rootScope/@childScopes.21/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7407" endIndex="7415" startLine="270" endLine="270"/>
+            <inferredType name="Function" instance="true" documentedType="true">
+              <typeParameters name="Object" instance="true" documentedType="true"/>
+              <typeParameters name="Number" instance="true" documentedType="true"/>
+              <typeParameters name="Array" instance="true" documentedType="true"/>
+              <typeParameters name="Boolean" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <params name="thisArg" optional="true" description="(Optional) Optional object to use as this when executing callback." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.21/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7418" endIndex="7424" startLine="270" endLine="270"/>
+            <inferredType name="Object" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Number" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes name="Array" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="201" endIndex="202"/>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="202" startLine="10" endLine="11"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="693" endIndex="722" startLine="34" endLine="36"/>
+        <childScopes>
+          <region startIndex="709" endIndex="722"/>
+          <symbolMap key="args">
+            <value xsi:type="index:ParameterSymbol" name="args" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="702" endIndex="705" startLine="34" endLine="34"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="983" endIndex="1017" startLine="48" endLine="50"/>
+        <childScopes>
+          <region startIndex="1004" endIndex="1017"/>
+          <symbolMap key="seperator">
+            <value xsi:type="index:ParameterSymbol" name="seperator" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="992" endIndex="1000" startLine="48" endLine="48"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1224" endIndex="1259" startLine="60" endLine="62"/>
+        <childScopes>
+          <region startIndex="1236" endIndex="1259"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1488" endIndex="1505" startLine="73" endLine="74"/>
+        <childScopes>
+          <region startIndex="1504" endIndex="1505"/>
+          <symbolMap key="args">
+            <value xsi:type="index:ParameterSymbol" name="args" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1497" endIndex="1500" startLine="73" endLine="73"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1719" endIndex="1744" startLine="84" endLine="86"/>
+        <childScopes>
+          <region startIndex="1731" endIndex="1744"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1955" endIndex="1990" startLine="96" endLine="98"/>
+        <childScopes>
+          <region startIndex="1967" endIndex="1990"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2286" endIndex="2321" startLine="112" endLine="114"/>
+        <childScopes>
+          <region startIndex="2308" endIndex="2321"/>
+          <symbolMap key="start">
+            <value xsi:type="index:ParameterSymbol" name="start" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2295" endIndex="2299" startLine="112" endLine="112"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="end">
+            <value xsi:type="index:ParameterSymbol" name="end" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2302" endIndex="2304" startLine="112" endLine="112"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2575" endIndex="2605" startLine="126" endLine="128"/>
+        <childScopes>
+          <region startIndex="2592" endIndex="2605"/>
+          <symbolMap key="funct">
+            <value xsi:type="index:ParameterSymbol" name="funct" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2584" endIndex="2588" startLine="126" endLine="126"/>
+              <inferredType name="Function" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2964" endIndex="3014" startLine="144" endLine="146"/>
+        <childScopes>
+          <region startIndex="3001" endIndex="3014"/>
+          <symbolMap key="start">
+            <value xsi:type="index:ParameterSymbol" name="start" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2973" endIndex="2977" startLine="144" endLine="144"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="deletecount">
+            <value xsi:type="index:ParameterSymbol" name="deletecount" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2980" endIndex="2990" startLine="144" endLine="144"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="items">
+            <value xsi:type="index:ParameterSymbol" name="items" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="2993" endIndex="2997" startLine="144" endLine="144"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3274" endIndex="3304" startLine="158" endLine="160"/>
+        <childScopes>
+          <region startIndex="3292" endIndex="3304"/>
+          <symbolMap key="values">
+            <value xsi:type="index:ParameterSymbol" name="values" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.10/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3283" endIndex="3288" startLine="158" endLine="158"/>
+              <inferredType name="Object" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3334" endIndex="3361" startLine="162" endLine="164"/>
+        <childScopes>
+          <region startIndex="3349" endIndex="3361"/>
+          <symbolMap key="obj">
+            <value xsi:type="index:ParameterSymbol" name="obj" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3343" endIndex="3345" startLine="162" endLine="162"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.12/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3596" endIndex="3633" startLine="171" endLine="173"/>
+        <childScopes>
+          <region startIndex="3621" endIndex="3633"/>
+          <symbolMap key="searchElement">
+            <value xsi:type="index:ParameterSymbol" name="searchElement" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.12/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3605" endIndex="3617" startLine="171" endLine="171"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.13/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4010" endIndex="4031" startLine="185" endLine="186"/>
+        <childScopes>
+          <region startIndex="4030" endIndex="4031"/>
+          <symbolMap key="callback">
+            <value xsi:type="index:ParameterSymbol" name="callback" description="Function to test for each element." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.13/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4019" endIndex="4026" startLine="185" endLine="185"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Boolean" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.14/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4401" endIndex="4422" startLine="197" endLine="198"/>
+        <childScopes>
+          <region startIndex="4421" endIndex="4422"/>
+          <symbolMap key="callback">
+            <value xsi:type="index:ParameterSymbol" name="callback" description="Function to test for each element." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4410" endIndex="4417" startLine="197" endLine="197"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Boolean" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.15/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4690" endIndex="4711" startLine="206" endLine="207"/>
+        <childScopes>
+          <region startIndex="4710" endIndex="4711"/>
+          <symbolMap key="callback">
+            <value xsi:type="index:ParameterSymbol" name="callback" description="Function to test for each element." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.15/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4699" endIndex="4706" startLine="206" endLine="206"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Boolean" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.16/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4926" endIndex="4947" startLine="216" endLine="217"/>
+        <childScopes>
+          <region startIndex="4946" endIndex="4947"/>
+          <symbolMap key="callback">
+            <value xsi:type="index:ParameterSymbol" name="callback" description="Function to execute for each element." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.16/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4935" endIndex="4942" startLine="216" endLine="216"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.17/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5313" endIndex="5333" startLine="228" endLine="230"/>
+        <childScopes>
+          <region startIndex="5331" endIndex="5333"/>
+          <symbolMap key="mapper">
+            <value xsi:type="index:ParameterSymbol" name="mapper" description="Function that produces an element of the new Array." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.17/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5322" endIndex="5327" startLine="228" endLine="228"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.18/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5687" endIndex="5708" startLine="240" endLine="242"/>
+        <childScopes>
+          <region startIndex="5706" endIndex="5708"/>
+          <symbolMap key="reducer">
+            <value xsi:type="index:ParameterSymbol" name="reducer" description="Function to execute on each element in the array" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.18/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5696" endIndex="5702" startLine="240" endLine="240"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.19/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6068" endIndex="6089" startLine="252" endLine="254"/>
+        <childScopes>
+          <region startIndex="6087" endIndex="6089"/>
+          <symbolMap key="reducer">
+            <value xsi:type="index:ParameterSymbol" name="reducer" description="Function to execute on each element in the array" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.19/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="6077" endIndex="6083" startLine="252" endLine="252"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.20/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6727" endIndex="6756" startLine="262" endLine="262"/>
+        <childScopes>
+          <region startIndex="6756" endIndex="6756"/>
+          <symbolMap key="predicate">
+            <value xsi:type="index:ParameterSymbol" name="predicate" description="A function to execute on each value in the array until the function returns true, indicating that the satisfying element was found. It takes three arguments:" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.20/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="6736" endIndex="6744" startLine="262" endLine="262"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Number" instance="true" documentedType="true"/>
+                <typeParameters name="Array" instance="true" documentedType="true"/>
+                <typeParameters name="Boolean" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="thisArg">
+            <value xsi:type="index:ParameterSymbol" name="thisArg" optional="true" description="(Optional) Optional object to use as this when executing callback." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.20/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="6747" endIndex="6753" startLine="262" endLine="262"/>
+              <inferredType name="Object" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.21/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="7398" endIndex="7427" startLine="270" endLine="270"/>
+        <childScopes>
+          <region startIndex="7427" endIndex="7427"/>
+          <symbolMap key="predicate">
+            <value xsi:type="index:ParameterSymbol" name="predicate" description="A function to execute on each value in the array until the function returns true, indicating that the satisfying element was found. It takes three arguments:" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.21/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="7407" endIndex="7415" startLine="270" endLine="270"/>
+              <inferredType name="Function" instance="true" documentedType="true">
+                <typeParameters name="Object" instance="true" documentedType="true"/>
+                <typeParameters name="Number" instance="true" documentedType="true"/>
+                <typeParameters name="Array" instance="true" documentedType="true"/>
+                <typeParameters name="Boolean" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="thisArg">
+            <value xsi:type="index:ParameterSymbol" name="thisArg" optional="true" description="(Optional) Optional object to use as this when executing callback." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.21/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="7418" endIndex="7424" startLine="270" endLine="270"/>
+              <inferredType name="Object" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="Array">
+      <value xsi:type="index:FunctionSymbol" name="Array" description="Object Array()" returnDescription="" baseSymbolName="Object">
+        <region xsi:type="index:RegionWithLine" startIndex="192" endIndex="196" startLine="10" endLine="10"/>
+        <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js" instance="true" documentedType="true"/>
+        <prototype>
+          <symbols key="length">
+            <value xsi:type="index:VariableSymbol" name="length" description="Property length">
+              <region startIndex="431" endIndex="436"/>
+              <inferredType name="Number" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="concat">
+            <value xsi:type="index:FunctionVariableSymbol" name="concat" originalSymbolName="__anonymous1">
+              <region startIndex="684" endIndex="689"/>
+            </value>
+          </symbols>
+          <symbols key="join">
+            <value xsi:type="index:FunctionVariableSymbol" name="join" originalSymbolName="__anonymous2">
+              <region startIndex="976" endIndex="979"/>
+            </value>
+          </symbols>
+          <symbols key="pop">
+            <value xsi:type="index:FunctionVariableSymbol" name="pop" originalSymbolName="__anonymous3">
+              <region startIndex="1218" endIndex="1220"/>
+            </value>
+          </symbols>
+          <symbols key="push">
+            <value xsi:type="index:FunctionVariableSymbol" name="push" originalSymbolName="__anonymous4">
+              <region startIndex="1481" endIndex="1484"/>
+            </value>
+          </symbols>
+          <symbols key="reverse">
+            <value xsi:type="index:FunctionVariableSymbol" name="reverse" originalSymbolName="__anonymous5">
+              <region startIndex="1709" endIndex="1715"/>
+            </value>
+          </symbols>
+          <symbols key="shift">
+            <value xsi:type="index:FunctionVariableSymbol" name="shift" originalSymbolName="__anonymous6">
+              <region startIndex="1947" endIndex="1951"/>
+            </value>
+          </symbols>
+          <symbols key="slice">
+            <value xsi:type="index:FunctionVariableSymbol" name="slice" originalSymbolName="__anonymous7">
+              <region startIndex="2278" endIndex="2282"/>
+            </value>
+          </symbols>
+          <symbols key="sort">
+            <value xsi:type="index:FunctionVariableSymbol" name="sort" originalSymbolName="__anonymous8">
+              <region startIndex="2568" endIndex="2571"/>
+            </value>
+          </symbols>
+          <symbols key="splice">
+            <value xsi:type="index:FunctionVariableSymbol" name="splice" originalSymbolName="__anonymous9">
+              <region startIndex="2955" endIndex="2960"/>
+            </value>
+          </symbols>
+          <symbols key="unshift">
+            <value xsi:type="index:FunctionVariableSymbol" name="unshift" originalSymbolName="__anonymous10">
+              <region startIndex="3264" endIndex="3270"/>
+            </value>
+          </symbols>
+          <symbols key="indexOf">
+            <value xsi:type="index:FunctionVariableSymbol" name="indexOf" originalSymbolName="__anonymous11">
+              <region startIndex="3324" endIndex="3330"/>
+            </value>
+          </symbols>
+          <symbols key="lastIndexOf">
+            <value xsi:type="index:FunctionVariableSymbol" name="lastIndexOf" originalSymbolName="__anonymous12">
+              <region startIndex="3582" endIndex="3592"/>
+            </value>
+          </symbols>
+          <symbols key="every">
+            <value xsi:type="index:FunctionVariableSymbol" name="every" originalSymbolName="__anonymous13">
+              <region startIndex="4002" endIndex="4006"/>
+            </value>
+          </symbols>
+          <symbols key="some">
+            <value xsi:type="index:FunctionVariableSymbol" name="some" originalSymbolName="__anonymous14">
+              <region startIndex="4394" endIndex="4397"/>
+            </value>
+          </symbols>
+          <symbols key="filter">
+            <value xsi:type="index:FunctionVariableSymbol" name="filter" originalSymbolName="__anonymous15">
+              <region startIndex="4681" endIndex="4686"/>
+            </value>
+          </symbols>
+          <symbols key="forEach">
+            <value xsi:type="index:FunctionVariableSymbol" name="forEach" originalSymbolName="__anonymous16">
+              <region startIndex="4916" endIndex="4922"/>
+            </value>
+          </symbols>
+          <symbols key="map">
+            <value xsi:type="index:FunctionVariableSymbol" name="map" originalSymbolName="__anonymous17">
+              <region startIndex="5307" endIndex="5309"/>
+            </value>
+          </symbols>
+          <symbols key="reduce">
+            <value xsi:type="index:FunctionVariableSymbol" name="reduce" originalSymbolName="__anonymous18">
+              <region startIndex="5678" endIndex="5683"/>
+            </value>
+          </symbols>
+          <symbols key="reduceRight">
+            <value xsi:type="index:FunctionVariableSymbol" name="reduceRight" originalSymbolName="__anonymous19">
+              <region startIndex="6054" endIndex="6064"/>
+            </value>
+          </symbols>
+          <symbols key="find">
+            <value xsi:type="index:FunctionVariableSymbol" name="find" originalSymbolName="__anonymous20">
+              <region startIndex="6720" endIndex="6723"/>
+            </value>
+          </symbols>
+          <symbols key="findIndex">
+            <value xsi:type="index:FunctionVariableSymbol" name="findIndex" originalSymbolName="__anonymous21">
+              <region startIndex="7386" endIndex="7394"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

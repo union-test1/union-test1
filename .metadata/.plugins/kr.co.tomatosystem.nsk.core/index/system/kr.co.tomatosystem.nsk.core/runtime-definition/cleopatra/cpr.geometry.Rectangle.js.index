@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.geometry.Rectangle.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="156" endIndex="11250" startLine="9" endLine="469"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="Rectangle" description="left,top,width,height로 구성된 위치와 크기의 객체." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="181" endIndex="216" startLine="9" endLine="9"/>
+          <params name="left" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="190" endIndex="193" startLine="9" endLine="9"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="top" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="196" endIndex="198" startLine="9" endLine="9"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="width" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="201" endIndex="205" startLine="9" endLine="9"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="height" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="208" endIndex="213" startLine="9" endLine="9"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="width">
+              <value xsi:type="index:VariableSymbol" name="width" description="너비 기본값 0">
+                <region startIndex="649" endIndex="653"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="height">
+              <value xsi:type="index:VariableSymbol" name="height" description="높이 기본값 0">
+                <region startIndex="743" endIndex="748"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="left">
+              <value xsi:type="index:VariableSymbol" name="left" description="왼쪽 기본값 0">
+                <region startIndex="838" endIndex="841"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="top">
+              <value xsi:type="index:VariableSymbol" name="top" description="위 기본값 0">
+                <region startIndex="930" endIndex="932"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="x">
+              <value xsi:type="index:VariableSymbol" name="x" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> X 좌표를 얻습니다. left와 동일한 값입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> X 좌표를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1180" endIndex="1180"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="y">
+              <value xsi:type="index:VariableSymbol" name="y" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> y 좌표를 얻습니다. top과 동일한 값입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> y 좌표를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1427" endIndex="1427"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="right">
+              <value xsi:type="index:VariableSymbol" name="right" description="&lt;b>Readonly&lt;/b> 박스 영역의 오른쪽 가장자리의 x 좌표를 얻습니다.">
+                <region startIndex="1556" endIndex="1560"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="bottom">
+              <value xsi:type="index:VariableSymbol" name="bottom" description="&lt;b>Readonly&lt;/b> 박스 영역 아래쪽 가장자리의 y좌표를 얻습니다.">
+                <region startIndex="1687" endIndex="1692"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="topLeft">
+              <value xsi:type="index:VariableSymbol" name="topLeft" description="&lt;b>Readonly&lt;/b> x왼쪽 y위쪽">
+                <region startIndex="1812" endIndex="1818"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="topCenter">
+              <value xsi:type="index:VariableSymbol" name="topCenter" description="&lt;b>Readonly&lt;/b> x가운데 y위쪽">
+                <region startIndex="1951" endIndex="1959"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="topRight">
+              <value xsi:type="index:VariableSymbol" name="topRight" description="&lt;b>Readonly&lt;/b> x오른쪽 y위쪽">
+                <region startIndex="2092" endIndex="2099"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="centerLeft">
+              <value xsi:type="index:VariableSymbol" name="centerLeft" description="&lt;b>Readonly&lt;/b> x왼쪽 y중앙">
+                <region startIndex="2231" endIndex="2240"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="center">
+              <value xsi:type="index:VariableSymbol" name="center" description="&lt;b>Readonly&lt;/b> x중앙 y중앙">
+                <region startIndex="2372" endIndex="2377"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="centerRight">
+              <value xsi:type="index:VariableSymbol" name="centerRight" description="&lt;b>Readonly&lt;/b> x오른쪽 y중앙">
+                <region startIndex="2510" endIndex="2520"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="bottonLeft">
+              <value xsi:type="index:VariableSymbol" name="bottonLeft" deprecated="true" deprecationDescription="오타로 인해 디프리케이트 되었습니다.">
+                <region startIndex="2662" endIndex="2671"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="bottomLeft">
+              <value xsi:type="index:VariableSymbol" name="bottomLeft" description="&lt;b>Readonly&lt;/b> x왼쪽 y아래쪽">
+                <region startIndex="2804" endIndex="2813"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="bottomCenter">
+              <value xsi:type="index:VariableSymbol" name="bottomCenter" description="&lt;b>Readonly&lt;/b> x중앙 y아래쪽">
+                <region startIndex="2946" endIndex="2957"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="bottomRight">
+              <value xsi:type="index:VariableSymbol" name="bottomRight" description="&lt;b>Readonly&lt;/b> x오른쪽 y아래쪽">
+                <region startIndex="3091" endIndex="3101"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="location">
+              <value xsi:type="index:VariableSymbol" name="location" description="&lt;b>Readonly&lt;/b> 위치를 반환합니다.">
+                <region startIndex="3236" endIndex="3243"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="size">
+              <value xsi:type="index:VariableSymbol" name="size" description="&lt;b>Readonly&lt;/b> 크기를 반환합니다.">
+                <region startIndex="3382" endIndex="3385"/>
+                <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="intersect">
+              <value xsi:type="index:FunctionVariableSymbol" name="intersect" originalSymbolName="__anonymous3">
+                <region startIndex="3617" endIndex="3625"/>
+              </value>
+            </symbols>
+            <symbols key="intersects">
+              <value xsi:type="index:FunctionVariableSymbol" name="intersects" originalSymbolName="__anonymous4">
+                <region startIndex="3798" endIndex="3807"/>
+              </value>
+            </symbols>
+            <symbols key="contains">
+              <value xsi:type="index:FunctionVariableSymbol" name="contains" originalSymbolName="__anonymous5">
+                <region startIndex="3971" endIndex="3978"/>
+              </value>
+            </symbols>
+            <symbols key="containsPoint">
+              <value xsi:type="index:FunctionVariableSymbol" name="containsPoint" originalSymbolName="__anonymous6">
+                <region startIndex="4144" endIndex="4156"/>
+              </value>
+            </symbols>
+            <symbols key="containsRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="containsRect" originalSymbolName="__anonymous7">
+                <region startIndex="4327" endIndex="4338"/>
+              </value>
+            </symbols>
+            <symbols key="getIntersection">
+              <value xsi:type="index:FunctionVariableSymbol" name="getIntersection" originalSymbolName="__anonymous8">
+                <region startIndex="4523" endIndex="4537"/>
+              </value>
+            </symbols>
+            <symbols key="setBounds">
+              <value xsi:type="index:FunctionVariableSymbol" name="setBounds" originalSymbolName="__anonymous9">
+                <region startIndex="4771" endIndex="4779"/>
+              </value>
+            </symbols>
+            <symbols key="expand">
+              <value xsi:type="index:FunctionVariableSymbol" name="expand" originalSymbolName="__anonymous10">
+                <region startIndex="4955" endIndex="4960"/>
+              </value>
+            </symbols>
+            <symbols key="expandByInsets">
+              <value xsi:type="index:FunctionVariableSymbol" name="expandByInsets" originalSymbolName="__anonymous11">
+                <region startIndex="5168" endIndex="5181"/>
+              </value>
+            </symbols>
+            <symbols key="getExpanded">
+              <value xsi:type="index:FunctionVariableSymbol" name="getExpanded" originalSymbolName="__anonymous12">
+                <region startIndex="5348" endIndex="5358"/>
+              </value>
+            </symbols>
+            <symbols key="getExpandedByInsets">
+              <value xsi:type="index:FunctionVariableSymbol" name="getExpandedByInsets" originalSymbolName="__anonymous13">
+                <region startIndex="5563" endIndex="5581"/>
+              </value>
+            </symbols>
+            <symbols key="shrink">
+              <value xsi:type="index:FunctionVariableSymbol" name="shrink" originalSymbolName="__anonymous14">
+                <region startIndex="5744" endIndex="5749"/>
+              </value>
+            </symbols>
+            <symbols key="shrinkByInsets">
+              <value xsi:type="index:FunctionVariableSymbol" name="shrinkByInsets" originalSymbolName="__anonymous15">
+                <region startIndex="5941" endIndex="5954"/>
+              </value>
+            </symbols>
+            <symbols key="getShrinked">
+              <value xsi:type="index:FunctionVariableSymbol" name="getShrinked" originalSymbolName="__anonymous16">
+                <region startIndex="6121" endIndex="6131"/>
+              </value>
+            </symbols>
+            <symbols key="getShrinkedByInsets">
+              <value xsi:type="index:FunctionVariableSymbol" name="getShrinkedByInsets" originalSymbolName="__anonymous17">
+                <region startIndex="6311" endIndex="6329"/>
+              </value>
+            </symbols>
+            <symbols key="translate">
+              <value xsi:type="index:FunctionVariableSymbol" name="translate" originalSymbolName="__anonymous18">
+                <region startIndex="6549" endIndex="6557"/>
+              </value>
+            </symbols>
+            <symbols key="translateByDimension">
+              <value xsi:type="index:FunctionVariableSymbol" name="translateByDimension" originalSymbolName="__anonymous19">
+                <region startIndex="6779" endIndex="6798"/>
+              </value>
+            </symbols>
+            <symbols key="translateByPoint">
+              <value xsi:type="index:FunctionVariableSymbol" name="translateByPoint" originalSymbolName="__anonymous20">
+                <region startIndex="6992" endIndex="7007"/>
+              </value>
+            </symbols>
+            <symbols key="getTranslated">
+              <value xsi:type="index:FunctionVariableSymbol" name="getTranslated" originalSymbolName="__anonymous21">
+                <region startIndex="7195" endIndex="7207"/>
+              </value>
+            </symbols>
+            <symbols key="getTranslatedByDimension">
+              <value xsi:type="index:FunctionVariableSymbol" name="getTranslatedByDimension" originalSymbolName="__anonymous22">
+                <region startIndex="7395" endIndex="7418"/>
+              </value>
+            </symbols>
+            <symbols key="getTranslatedByPoint">
+              <value xsi:type="index:FunctionVariableSymbol" name="getTranslatedByPoint" originalSymbolName="__anonymous23">
+                <region startIndex="7593" endIndex="7612"/>
+              </value>
+            </symbols>
+            <symbols key="scale">
+              <value xsi:type="index:FunctionVariableSymbol" name="scale" originalSymbolName="__anonymous24">
+                <region startIndex="7821" endIndex="7825"/>
+              </value>
+            </symbols>
+            <symbols key="getScaled">
+              <value xsi:type="index:FunctionVariableSymbol" name="getScaled" originalSymbolName="__anonymous25">
+                <region startIndex="8051" endIndex="8059"/>
+              </value>
+            </symbols>
+            <symbols key="transpose">
+              <value xsi:type="index:FunctionVariableSymbol" name="transpose" originalSymbolName="__anonymous26">
+                <region startIndex="8214" endIndex="8222"/>
+              </value>
+            </symbols>
+            <symbols key="getTransposed">
+              <value xsi:type="index:FunctionVariableSymbol" name="getTransposed" originalSymbolName="__anonymous27">
+                <region startIndex="8356" endIndex="8368"/>
+              </value>
+            </symbols>
+            <symbols key="unionWithRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="unionWithRect" originalSymbolName="__anonymous28">
+                <region startIndex="8577" endIndex="8589"/>
+              </value>
+            </symbols>
+            <symbols key="unionWithBounds">
+              <value xsi:type="index:FunctionVariableSymbol" name="unionWithBounds" originalSymbolName="__anonymous29">
+                <region startIndex="8861" endIndex="8875"/>
+              </value>
+            </symbols>
+            <symbols key="unionWithLocation">
+              <value xsi:type="index:FunctionVariableSymbol" name="unionWithLocation" originalSymbolName="__anonymous30">
+                <region startIndex="9105" endIndex="9121"/>
+              </value>
+            </symbols>
+            <symbols key="unionWithPoint">
+              <value xsi:type="index:FunctionVariableSymbol" name="unionWithPoint" originalSymbolName="__anonymous31">
+                <region startIndex="9326" endIndex="9339"/>
+              </value>
+            </symbols>
+            <symbols key="getUnionWithPoint">
+              <value xsi:type="index:FunctionVariableSymbol" name="getUnionWithPoint" originalSymbolName="__anonymous32">
+                <region startIndex="9560" endIndex="9576"/>
+              </value>
+            </symbols>
+            <symbols key="getUnionWithRect">
+              <value xsi:type="index:FunctionVariableSymbol" name="getUnionWithRect" originalSymbolName="__anonymous33">
+                <region startIndex="9801" endIndex="9816"/>
+              </value>
+            </symbols>
+            <symbols key="getUnionWithLocation">
+              <value xsi:type="index:FunctionVariableSymbol" name="getUnionWithLocation" originalSymbolName="__anonymous34">
+                <region startIndex="10047" endIndex="10066"/>
+              </value>
+            </symbols>
+            <symbols key="getUnionWithBounds">
+              <value xsi:type="index:FunctionVariableSymbol" name="getUnionWithBounds" originalSymbolName="__anonymous35">
+                <region startIndex="10353" endIndex="10370"/>
+              </value>
+            </symbols>
+            <symbols key="resize">
+              <value xsi:type="index:FunctionVariableSymbol" name="resize" originalSymbolName="__anonymous36">
+                <region startIndex="10585" endIndex="10590"/>
+              </value>
+            </symbols>
+            <symbols key="resizeByDimension">
+              <value xsi:type="index:FunctionVariableSymbol" name="resizeByDimension" originalSymbolName="__anonymous37">
+                <region startIndex="10784" endIndex="10800"/>
+              </value>
+            </symbols>
+            <symbols key="getCopy">
+              <value xsi:type="index:FunctionVariableSymbol" name="getCopy" originalSymbolName="__anonymous38">
+                <region startIndex="10924" endIndex="10930"/>
+              </value>
+            </symbols>
+            <symbols key="isEmpty">
+              <value xsi:type="index:FunctionVariableSymbol" name="isEmpty" originalSymbolName="__anonymous39">
+                <region startIndex="11053" endIndex="11059"/>
+              </value>
+            </symbols>
+            <symbols key="equals">
+              <value xsi:type="index:FunctionVariableSymbol" name="equals" originalSymbolName="__anonymous40">
+                <region startIndex="11222" endIndex="11227"/>
+              </value>
+            </symbols>
+          </prototype>
+          <symbols key="EMPTY">
+            <value xsi:type="index:VariableSymbol" name="EMPTY" description="&lt;b>Readonly&lt;/b> 비어있는 Rectangle를 반환합니다.">
+              <region startIndex="379" endIndex="383"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="fromDOMRect">
+            <value xsi:type="index:FunctionVariableSymbol" name="fromDOMRect" originalSymbolName="__anonymous2">
+              <region startIndex="545" endIndex="555"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.geometry.Rectangle">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.geometry.Rectangle" originalSymbolName="__anonymous1">
+          <region startIndex="169" endIndex="177"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="fromDOMRect" description="DOM으로부터 새 Rectangle를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="559" endIndex="574" startLine="24" endLine="24"/>
+          <params name="rect" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="568" endIndex="571" startLine="24" endLine="24"/>
+            <inferredType name="ClientRect" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="intersect" description="현재 Rectangle을 다른 Rectangle과 교차하는 영역의 Rectangle로 만듭니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3629" endIndex="3645" startLine="191" endLine="191"/>
+          <params name="other" description="교차시킬 다른 Rectangle 객체." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3638" endIndex="3642" startLine="191" endLine="191"/>
+            <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="intersects" description="다른 박스와 충돌하는지 여부를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3811" endIndex="3827" startLine="198" endLine="198"/>
+          <params name="other" description="충돌을 검사할 Rectangle." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3820" endIndex="3824" startLine="198" endLine="198"/>
+            <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="contains" description="다른 지오 메트리 요소를 포함하는지 여부를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3982" endIndex="3997" startLine="206" endLine="206"/>
+          <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3991" endIndex="3991" startLine="206" endLine="206"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3994" endIndex="3994" startLine="206" endLine="206"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="containsPoint" description="지정된 좌표가 Rectangle의 경계 내에 있는지 여부를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4160" endIndex="4176" startLine="213" endLine="213"/>
+          <params name="other" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4169" endIndex="4173" startLine="213" endLine="213"/>
+            <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="containsRect" description="지정된 좌표가 Rectangle의 경계 내에 있는지 여부를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4342" endIndex="4358" startLine="220" endLine="220"/>
+          <params name="other" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4351" endIndex="4355" startLine="220" endLine="220"/>
+            <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="getIntersection" description="다른 사각형과의 교집합 사각형을 얻습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4541" endIndex="4557" startLine="227" endLine="227"/>
+          <params name="other" description="충돌을 검사할 다른 사각형." symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4550" endIndex="4554" startLine="227" endLine="227"/>
+            <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="setBounds" description="사각형의 바운즈를 재 지정합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4783" endIndex="4813" startLine="237" endLine="237"/>
+          <params name="x" description="x좌표." symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4792" endIndex="4792" startLine="237" endLine="237"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="y" description="y좌표." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4795" endIndex="4795" startLine="237" endLine="237"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="width" description="너비." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4798" endIndex="4802" startLine="237" endLine="237"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="height" description="높이." parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4805" endIndex="4810" startLine="237" endLine="237"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="expand" description="사각형을 확장 시킵니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4964" endIndex="4979" startLine="245" endLine="245"/>
+          <params name="h" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4973" endIndex="4973" startLine="245" endLine="245"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="v" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4976" endIndex="4976" startLine="245" endLine="245"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous11">
+        <value xsi:type="index:FunctionSymbol" name="expandByInsets" description="Rectangle의 가로 및 세로 측면을 지정된 Inset의 너비와 높이만큼 확장하고 편의를 위해 이를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5185" endIndex="5202" startLine="252" endLine="252"/>
+          <params name="insets" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5194" endIndex="5199" startLine="252" endLine="252"/>
+            <inferredType name="cpr.geometry.Insets" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous12">
+        <value xsi:type="index:FunctionSymbol" name="getExpanded" description="확장된 사각형 사본을 얻습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5362" endIndex="5377" startLine="260" endLine="260"/>
+          <params name="h" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.11/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5371" endIndex="5371" startLine="260" endLine="260"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="v" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.11/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5374" endIndex="5374" startLine="260" endLine="260"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous13">
+        <value xsi:type="index:FunctionSymbol" name="getExpandedByInsets" description="지정된 Inset에 의해 확장 된이 Rectangle의 경계가 있는 새 Rectangle을 만들고 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5585" endIndex="5602" startLine="267" endLine="267"/>
+          <params name="insets" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.12/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5594" endIndex="5599" startLine="267" endLine="267"/>
+            <inferredType name="cpr.geometry.Insets" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous14">
+        <value xsi:type="index:FunctionSymbol" name="shrink" description="사각형을 축소 시킵니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5753" endIndex="5768" startLine="275" endLine="275"/>
+          <params name="h" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5762" endIndex="5762" startLine="275" endLine="275"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="v" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5765" endIndex="5765" startLine="275" endLine="275"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous15">
+        <value xsi:type="index:FunctionSymbol" name="shrinkByInsets" description="사각형을 Insets 을 통해 축소하고 편의를 위해 이 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5958" endIndex="5975" startLine="282" endLine="282"/>
+          <params name="insets" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.14/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5967" endIndex="5972" startLine="282" endLine="282"/>
+            <inferredType name="cpr.geometry.Insets" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous16">
+        <value xsi:type="index:FunctionSymbol" name="getShrinked" description="축소된 사각형 사본을 얻습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6135" endIndex="6150" startLine="290" endLine="290"/>
+          <params name="h" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.15/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6144" endIndex="6144" startLine="290" endLine="290"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="v" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.15/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6147" endIndex="6147" startLine="290" endLine="290"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous17">
+        <value xsi:type="index:FunctionSymbol" name="getShrinkedByInsets" description="지정된 Insets만큼 축소된 새 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6333" endIndex="6350" startLine="297" endLine="297"/>
+          <params name="insets" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.16/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6342" endIndex="6347" startLine="297" endLine="297"/>
+            <inferredType name="cpr.geometry.Insets" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous18">
+        <value xsi:type="index:FunctionSymbol" name="translate" description="이 Rectangle을 dx만큼 수평으로, dy만큼 수직으로 이동 한 다음 편의를 위해 이 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6561" endIndex="6578" startLine="305" endLine="305"/>
+          <params name="dx" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.17/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6570" endIndex="6571" startLine="305" endLine="305"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="dy" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.17/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6574" endIndex="6575" startLine="305" endLine="305"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous19">
+        <value xsi:type="index:FunctionSymbol" name="translateByDimension" description="이 Rectangle을 Dimension의 width,height를 x,y만큼 이동 한 다음 편의를 위해 이 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6802" endIndex="6814" startLine="312" endLine="312"/>
+          <params name="d" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.18/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6811" endIndex="6811" startLine="312" endLine="312"/>
+            <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous20">
+        <value xsi:type="index:FunctionSymbol" name="translateByPoint" description="이 Rectangle을 Point의 x,y만큼 이동한 다음 편의를 위해 이 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="7011" endIndex="7023" startLine="319" endLine="319"/>
+          <params name="d" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.19/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7020" endIndex="7020" startLine="319" endLine="319"/>
+            <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous21">
+        <value xsi:type="index:FunctionSymbol" name="getTranslated" description="전달 된 값만큼 각 축을 따라 이동되는 새 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="7211" endIndex="7228" startLine="327" endLine="327"/>
+          <params name="dx" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.20/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7220" endIndex="7221" startLine="327" endLine="327"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="dy" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.20/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7224" endIndex="7225" startLine="327" endLine="327"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous22">
+        <value xsi:type="index:FunctionSymbol" name="getTranslatedByDimension" description="지정된 Dimension의 위치만큼 이동 한 새 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="7422" endIndex="7434" startLine="334" endLine="334"/>
+          <params name="d" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.21/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7431" endIndex="7431" startLine="334" endLine="334"/>
+            <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous23">
+        <value xsi:type="index:FunctionSymbol" name="getTranslatedByPoint" description="지정된 Point의 위치만큼 이동 한 새 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="7616" endIndex="7628" startLine="341" endLine="341"/>
+          <params name="d" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.22/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7625" endIndex="7625" startLine="341" endLine="341"/>
+            <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous24">
+        <value xsi:type="index:FunctionSymbol" name="scale" description="주어진 스케일로이 Rectangle의 위치와 크기를 조정하고 편의를 위해 이것을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="7829" endIndex="7856" startLine="349" endLine="349"/>
+          <params name="xFactor" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.23/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7838" endIndex="7844" startLine="349" endLine="349"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="yFactor" optional="true" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.23/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="7847" endIndex="7853" startLine="349" endLine="349"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous25">
+        <value xsi:type="index:FunctionSymbol" name="getScaled" description="주어진 스케일로이 Rectangle의 위치와 크기를 조정하고 새 Rectangle을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="8063" endIndex="8090" startLine="357" endLine="357"/>
+          <params name="xFactor" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.24/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="8072" endIndex="8078" startLine="357" endLine="357"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="yFactor" optional="true" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.24/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="8081" endIndex="8087" startLine="357" endLine="357"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous26">
+        <value xsi:type="index:FunctionSymbol" name="transpose" description="이 Rectangle의 너비와 높이는 물론 x 및 y 값을 전환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="8226" endIndex="8237" startLine="363" endLine="363"/>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous27">
+        <value xsi:type="index:FunctionSymbol" name="getTransposed" description="너비와 높이가 변경된 새 사각형과 x 및 y 값을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="8372" endIndex="8383" startLine="369" endLine="369"/>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous28">
+        <value xsi:type="index:FunctionSymbol" name="unionWithRect" description="이 Rectangle의 크기를이 Rectangle과 지정된 Rectangle을 모두 포함 할 수있는 최소 크기로 업데이트합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="8593" endIndex="8605" startLine="376" endLine="376"/>
+          <params name="r" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.27/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="8602" endIndex="8602" startLine="376" endLine="376"/>
+            <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous29">
+        <value xsi:type="index:FunctionSymbol" name="unionWithBounds" description="이 Rectangle의 크기를이 Rectangle과 사각형 (x, y, w, h)을 모두 포함 할 수있는 최소 크기로 업데이트합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="8879" endIndex="8909" startLine="386" endLine="386"/>
+          <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.28/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="8888" endIndex="8888" startLine="386" endLine="386"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.28/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="8891" endIndex="8891" startLine="386" endLine="386"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="width" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.28/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="8894" endIndex="8898" startLine="386" endLine="386"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="height" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.28/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="8901" endIndex="8906" startLine="386" endLine="386"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous30">
+        <value xsi:type="index:FunctionSymbol" name="unionWithLocation" description="이 Rectangle의 경계를이 Rectangle과 좌표 (x, y)를 모두 포함 할 수있는 최소 크기로 업데이트합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="9125" endIndex="9140" startLine="394" endLine="394"/>
+          <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.29/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="9134" endIndex="9134" startLine="394" endLine="394"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.29/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="9137" endIndex="9137" startLine="394" endLine="394"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous31">
+        <value xsi:type="index:FunctionSymbol" name="unionWithPoint" description="이 Rectangle의 경계를이 Rectangle과 지정된 Point를 모두 보유 할 수있는 최소 크기로 업데이트합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="9343" endIndex="9355" startLine="401" endLine="401"/>
+          <params name="p" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.30/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="9352" endIndex="9352" startLine="401" endLine="401"/>
+            <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous32">
+        <value xsi:type="index:FunctionSymbol" name="getUnionWithPoint" description="이 Rectangle의 경계를이 Rectangle과 지정된 Point를 모두 보유 할 수있는 최소 크기로 업데이트하고 새 Reactangle를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="9580" endIndex="9592" startLine="408" endLine="408"/>
+          <params name="p" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.31/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="9589" endIndex="9589" startLine="408" endLine="408"/>
+            <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous33">
+        <value xsi:type="index:FunctionSymbol" name="getUnionWithRect" description="이 Rectangle의 경계를이 Rectangle과 지정된 Point를 모두 보유 할 수있는 최소 크기로 업데이트하고 새 Reactangle를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="9820" endIndex="9832" startLine="415" endLine="415"/>
+          <params name="r" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.32/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="9829" endIndex="9829" startLine="415" endLine="415"/>
+            <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous34">
+        <value xsi:type="index:FunctionSymbol" name="getUnionWithLocation" description="이 Rectangle의 경계를이 Rectangle과 지정된 Point를 모두 보유 할 수있는 최소 크기로 업데이트하고 새 Reactangle를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10070" endIndex="10085" startLine="423" endLine="423"/>
+          <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.33/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10079" endIndex="10079" startLine="423" endLine="423"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.33/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10082" endIndex="10082" startLine="423" endLine="423"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous35">
+        <value xsi:type="index:FunctionSymbol" name="getUnionWithBounds" description="이 Rectangle의 경계를이 Rectangle과 지정된 Point를 모두 보유 할 수있는 최소 크기로 업데이트하고 새 Reactangle를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10374" endIndex="10404" startLine="433" endLine="433"/>
+          <params name="x" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.34/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10383" endIndex="10383" startLine="433" endLine="433"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="y" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.34/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10386" endIndex="10386" startLine="433" endLine="433"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="width" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.34/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10389" endIndex="10393" startLine="433" endLine="433"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="height" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.34/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10396" endIndex="10401" startLine="433" endLine="433"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous36">
+        <value xsi:type="index:FunctionSymbol" name="resize" description="입력으로 제공된 값으로이 Rectangle의 크기를 조정하고 편의를 위해 이를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10594" endIndex="10611" startLine="441" endLine="441"/>
+          <params name="dx" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.35/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10603" endIndex="10604" startLine="441" endLine="441"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="dy" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.35/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10607" endIndex="10608" startLine="441" endLine="441"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous37">
+        <value xsi:type="index:FunctionSymbol" name="resizeByDimension" description="입력으로 제공된 값으로이 Rectangle의 크기를 조정하고 편의를 위해 이를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10804" endIndex="10816" startLine="448" endLine="448"/>
+          <params name="d" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.36/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10813" endIndex="10813" startLine="448" endLine="448"/>
+            <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous38">
+        <value xsi:type="index:FunctionSymbol" name="getCopy" description="Rectangle 객체의 사본을 얻습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10934" endIndex="10945" startLine="454" endLine="454"/>
+          <inferredReturnType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous39">
+        <value xsi:type="index:FunctionSymbol" name="isEmpty" description="Rectangle 객체의 너비가 음수이거나 0인지 여부를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="11063" endIndex="11074" startLine="460" endLine="460"/>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous40">
+        <value xsi:type="index:FunctionSymbol" name="equals" description="다른 Rectangle하고 비교를 하여 같은지 여부를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="11231" endIndex="11247" startLine="467" endLine="467"/>
+          <params name="other" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.39/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="11240" endIndex="11244" startLine="467" endLine="467"/>
+            <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="181" endIndex="216" startLine="9" endLine="9"/>
+        <childScopes>
+          <region startIndex="216" endIndex="216"/>
+          <symbolMap key="left">
+            <value xsi:type="index:ParameterSymbol" name="left" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="190" endIndex="193" startLine="9" endLine="9"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="top">
+            <value xsi:type="index:ParameterSymbol" name="top" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="196" endIndex="198" startLine="9" endLine="9"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="width">
+            <value xsi:type="index:ParameterSymbol" name="width" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="201" endIndex="205" startLine="9" endLine="9"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="height">
+            <value xsi:type="index:ParameterSymbol" name="height" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="208" endIndex="213" startLine="9" endLine="9"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="559" endIndex="574" startLine="24" endLine="24"/>
+        <childScopes>
+          <region startIndex="574" endIndex="574"/>
+          <symbolMap key="rect">
+            <value xsi:type="index:ParameterSymbol" name="rect" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="568" endIndex="571" startLine="24" endLine="24"/>
+              <inferredType name="ClientRect" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3629" endIndex="3645" startLine="191" endLine="191"/>
+        <childScopes>
+          <region startIndex="3645" endIndex="3645"/>
+          <symbolMap key="other">
+            <value xsi:type="index:ParameterSymbol" name="other" description="교차시킬 다른 Rectangle 객체." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3638" endIndex="3642" startLine="191" endLine="191"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3811" endIndex="3827" startLine="198" endLine="198"/>
+        <childScopes>
+          <region startIndex="3827" endIndex="3827"/>
+          <symbolMap key="other">
+            <value xsi:type="index:ParameterSymbol" name="other" description="충돌을 검사할 Rectangle." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3820" endIndex="3824" startLine="198" endLine="198"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3982" endIndex="3997" startLine="206" endLine="206"/>
+        <childScopes>
+          <region startIndex="3997" endIndex="3997"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3991" endIndex="3991" startLine="206" endLine="206"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="y">
+            <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="3994" endIndex="3994" startLine="206" endLine="206"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4160" endIndex="4176" startLine="213" endLine="213"/>
+        <childScopes>
+          <region startIndex="4176" endIndex="4176"/>
+          <symbolMap key="other">
+            <value xsi:type="index:ParameterSymbol" name="other" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4169" endIndex="4173" startLine="213" endLine="213"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4342" endIndex="4358" startLine="220" endLine="220"/>
+        <childScopes>
+          <region startIndex="4358" endIndex="4358"/>
+          <symbolMap key="other">
+            <value xsi:type="index:ParameterSymbol" name="other" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4351" endIndex="4355" startLine="220" endLine="220"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4541" endIndex="4557" startLine="227" endLine="227"/>
+        <childScopes>
+          <region startIndex="4557" endIndex="4557"/>
+          <symbolMap key="other">
+            <value xsi:type="index:ParameterSymbol" name="other" description="충돌을 검사할 다른 사각형." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4550" endIndex="4554" startLine="227" endLine="227"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4783" endIndex="4813" startLine="237" endLine="237"/>
+        <childScopes>
+          <region startIndex="4813" endIndex="4813"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="x좌표." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4792" endIndex="4792" startLine="237" endLine="237"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="y">
+            <value xsi:type="index:ParameterSymbol" name="y" description="y좌표." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="4795" endIndex="4795" startLine="237" endLine="237"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="width">
+            <value xsi:type="index:ParameterSymbol" name="width" description="너비." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="4798" endIndex="4802" startLine="237" endLine="237"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="height">
+            <value xsi:type="index:ParameterSymbol" name="height" description="높이." parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="4805" endIndex="4810" startLine="237" endLine="237"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4964" endIndex="4979" startLine="245" endLine="245"/>
+        <childScopes>
+          <region startIndex="4979" endIndex="4979"/>
+          <symbolMap key="h">
+            <value xsi:type="index:ParameterSymbol" name="h" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.10/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4973" endIndex="4973" startLine="245" endLine="245"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="v">
+            <value xsi:type="index:ParameterSymbol" name="v" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.10/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="4976" endIndex="4976" startLine="245" endLine="245"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5185" endIndex="5202" startLine="252" endLine="252"/>
+        <childScopes>
+          <region startIndex="5202" endIndex="5202"/>
+          <symbolMap key="insets">
+            <value xsi:type="index:ParameterSymbol" name="insets" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5194" endIndex="5199" startLine="252" endLine="252"/>
+              <inferredType name="cpr.geometry.Insets" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.12/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5362" endIndex="5377" startLine="260" endLine="260"/>
+        <childScopes>
+          <region startIndex="5377" endIndex="5377"/>
+          <symbolMap key="h">
+            <value xsi:type="index:ParameterSymbol" name="h" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.12/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5371" endIndex="5371" startLine="260" endLine="260"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="v">
+            <value xsi:type="index:ParameterSymbol" name="v" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.12/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="5374" endIndex="5374" startLine="260" endLine="260"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.13/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5585" endIndex="5602" startLine="267" endLine="267"/>
+        <childScopes>
+          <region startIndex="5602" endIndex="5602"/>
+          <symbolMap key="insets">
+            <value xsi:type="index:ParameterSymbol" name="insets" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.13/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5594" endIndex="5599" startLine="267" endLine="267"/>
+              <inferredType name="cpr.geometry.Insets" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.14/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5753" endIndex="5768" startLine="275" endLine="275"/>
+        <childScopes>
+          <region startIndex="5768" endIndex="5768"/>
+          <symbolMap key="h">
+            <value xsi:type="index:ParameterSymbol" name="h" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5762" endIndex="5762" startLine="275" endLine="275"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="v">
+            <value xsi:type="index:ParameterSymbol" name="v" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="5765" endIndex="5765" startLine="275" endLine="275"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.15/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5958" endIndex="5975" startLine="282" endLine="282"/>
+        <childScopes>
+          <region startIndex="5975" endIndex="5975"/>
+          <symbolMap key="insets">
+            <value xsi:type="index:ParameterSymbol" name="insets" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.15/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5967" endIndex="5972" startLine="282" endLine="282"/>
+              <inferredType name="cpr.geometry.Insets" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.16/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6135" endIndex="6150" startLine="290" endLine="290"/>
+        <childScopes>
+          <region startIndex="6150" endIndex="6150"/>
+          <symbolMap key="h">
+            <value xsi:type="index:ParameterSymbol" name="h" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.16/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="6144" endIndex="6144" startLine="290" endLine="290"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="v">
+            <value xsi:type="index:ParameterSymbol" name="v" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.16/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="6147" endIndex="6147" startLine="290" endLine="290"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.17/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6333" endIndex="6350" startLine="297" endLine="297"/>
+        <childScopes>
+          <region startIndex="6350" endIndex="6350"/>
+          <symbolMap key="insets">
+            <value xsi:type="index:ParameterSymbol" name="insets" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.17/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="6342" endIndex="6347" startLine="297" endLine="297"/>
+              <inferredType name="cpr.geometry.Insets" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.18/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6561" endIndex="6578" startLine="305" endLine="305"/>
+        <childScopes>
+          <region startIndex="6578" endIndex="6578"/>
+          <symbolMap key="dx">
+            <value xsi:type="index:ParameterSymbol" name="dx" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.18/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="6570" endIndex="6571" startLine="305" endLine="305"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="dy">
+            <value xsi:type="index:ParameterSymbol" name="dy" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.18/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="6574" endIndex="6575" startLine="305" endLine="305"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.19/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6802" endIndex="6814" startLine="312" endLine="312"/>
+        <childScopes>
+          <region startIndex="6814" endIndex="6814"/>
+          <symbolMap key="d">
+            <value xsi:type="index:ParameterSymbol" name="d" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.19/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="6811" endIndex="6811" startLine="312" endLine="312"/>
+              <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.20/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="7011" endIndex="7023" startLine="319" endLine="319"/>
+        <childScopes>
+          <region startIndex="7023" endIndex="7023"/>
+          <symbolMap key="d">
+            <value xsi:type="index:ParameterSymbol" name="d" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.20/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="7020" endIndex="7020" startLine="319" endLine="319"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.21/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="7211" endIndex="7228" startLine="327" endLine="327"/>
+        <childScopes>
+          <region startIndex="7228" endIndex="7228"/>
+          <symbolMap key="dx">
+            <value xsi:type="index:ParameterSymbol" name="dx" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.21/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="7220" endIndex="7221" startLine="327" endLine="327"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="dy">
+            <value xsi:type="index:ParameterSymbol" name="dy" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.21/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="7224" endIndex="7225" startLine="327" endLine="327"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.22/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="7422" endIndex="7434" startLine="334" endLine="334"/>
+        <childScopes>
+          <region startIndex="7434" endIndex="7434"/>
+          <symbolMap key="d">
+            <value xsi:type="index:ParameterSymbol" name="d" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.22/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="7431" endIndex="7431" startLine="334" endLine="334"/>
+              <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.23/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="7616" endIndex="7628" startLine="341" endLine="341"/>
+        <childScopes>
+          <region startIndex="7628" endIndex="7628"/>
+          <symbolMap key="d">
+            <value xsi:type="index:ParameterSymbol" name="d" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.23/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="7625" endIndex="7625" startLine="341" endLine="341"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.24/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="7829" endIndex="7856" startLine="349" endLine="349"/>
+        <childScopes>
+          <region startIndex="7856" endIndex="7856"/>
+          <symbolMap key="xFactor">
+            <value xsi:type="index:ParameterSymbol" name="xFactor" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.24/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="7838" endIndex="7844" startLine="349" endLine="349"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="yFactor">
+            <value xsi:type="index:ParameterSymbol" name="yFactor" optional="true" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.24/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="7847" endIndex="7853" startLine="349" endLine="349"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.25/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="8063" endIndex="8090" startLine="357" endLine="357"/>
+        <childScopes>
+          <region startIndex="8090" endIndex="8090"/>
+          <symbolMap key="xFactor">
+            <value xsi:type="index:ParameterSymbol" name="xFactor" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.25/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="8072" endIndex="8078" startLine="357" endLine="357"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="yFactor">
+            <value xsi:type="index:ParameterSymbol" name="yFactor" optional="true" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.25/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="8081" endIndex="8087" startLine="357" endLine="357"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.26/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="8226" endIndex="8237" startLine="363" endLine="363"/>
+        <childScopes>
+          <region startIndex="8237" endIndex="8237"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.27/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="8372" endIndex="8383" startLine="369" endLine="369"/>
+        <childScopes>
+          <region startIndex="8383" endIndex="8383"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.28/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="8593" endIndex="8605" startLine="376" endLine="376"/>
+        <childScopes>
+          <region startIndex="8605" endIndex="8605"/>
+          <symbolMap key="r">
+            <value xsi:type="index:ParameterSymbol" name="r" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.28/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="8602" endIndex="8602" startLine="376" endLine="376"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.29/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="8879" endIndex="8909" startLine="386" endLine="386"/>
+        <childScopes>
+          <region startIndex="8909" endIndex="8909"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.29/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="8888" endIndex="8888" startLine="386" endLine="386"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="y">
+            <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.29/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="8891" endIndex="8891" startLine="386" endLine="386"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="width">
+            <value xsi:type="index:ParameterSymbol" name="width" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.29/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="8894" endIndex="8898" startLine="386" endLine="386"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="height">
+            <value xsi:type="index:ParameterSymbol" name="height" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.29/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="8901" endIndex="8906" startLine="386" endLine="386"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.30/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="9125" endIndex="9140" startLine="394" endLine="394"/>
+        <childScopes>
+          <region startIndex="9140" endIndex="9140"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.30/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="9134" endIndex="9134" startLine="394" endLine="394"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="y">
+            <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.30/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="9137" endIndex="9137" startLine="394" endLine="394"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.31/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="9343" endIndex="9355" startLine="401" endLine="401"/>
+        <childScopes>
+          <region startIndex="9355" endIndex="9355"/>
+          <symbolMap key="p">
+            <value xsi:type="index:ParameterSymbol" name="p" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.31/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="9352" endIndex="9352" startLine="401" endLine="401"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.32/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="9580" endIndex="9592" startLine="408" endLine="408"/>
+        <childScopes>
+          <region startIndex="9592" endIndex="9592"/>
+          <symbolMap key="p">
+            <value xsi:type="index:ParameterSymbol" name="p" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.32/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="9589" endIndex="9589" startLine="408" endLine="408"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.33/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="9820" endIndex="9832" startLine="415" endLine="415"/>
+        <childScopes>
+          <region startIndex="9832" endIndex="9832"/>
+          <symbolMap key="r">
+            <value xsi:type="index:ParameterSymbol" name="r" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.33/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="9829" endIndex="9829" startLine="415" endLine="415"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.34/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10070" endIndex="10085" startLine="423" endLine="423"/>
+        <childScopes>
+          <region startIndex="10085" endIndex="10085"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.34/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="10079" endIndex="10079" startLine="423" endLine="423"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="y">
+            <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.34/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="10082" endIndex="10082" startLine="423" endLine="423"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.35/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10374" endIndex="10404" startLine="433" endLine="433"/>
+        <childScopes>
+          <region startIndex="10404" endIndex="10404"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.35/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="10383" endIndex="10383" startLine="433" endLine="433"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="y">
+            <value xsi:type="index:ParameterSymbol" name="y" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.35/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="10386" endIndex="10386" startLine="433" endLine="433"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="width">
+            <value xsi:type="index:ParameterSymbol" name="width" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.35/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="10389" endIndex="10393" startLine="433" endLine="433"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="height">
+            <value xsi:type="index:ParameterSymbol" name="height" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.35/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="10396" endIndex="10401" startLine="433" endLine="433"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.36/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10594" endIndex="10611" startLine="441" endLine="441"/>
+        <childScopes>
+          <region startIndex="10611" endIndex="10611"/>
+          <symbolMap key="dx">
+            <value xsi:type="index:ParameterSymbol" name="dx" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.36/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="10603" endIndex="10604" startLine="441" endLine="441"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="dy">
+            <value xsi:type="index:ParameterSymbol" name="dy" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.36/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="10607" endIndex="10608" startLine="441" endLine="441"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.37/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10804" endIndex="10816" startLine="448" endLine="448"/>
+        <childScopes>
+          <region startIndex="10816" endIndex="10816"/>
+          <symbolMap key="d">
+            <value xsi:type="index:ParameterSymbol" name="d" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.37/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="10813" endIndex="10813" startLine="448" endLine="448"/>
+              <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.38/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10934" endIndex="10945" startLine="454" endLine="454"/>
+        <childScopes>
+          <region startIndex="10945" endIndex="10945"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.39/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="11063" endIndex="11074" startLine="460" endLine="460"/>
+        <childScopes>
+          <region startIndex="11074" endIndex="11074"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.40/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="11231" endIndex="11247" startLine="467" endLine="467"/>
+        <childScopes>
+          <region startIndex="11247" endIndex="11247"/>
+          <symbolMap key="other">
+            <value xsi:type="index:ParameterSymbol" name="other" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.40/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="11240" endIndex="11244" startLine="467" endLine="467"/>
+              <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.geometry.Rectangle">
+      <value xsi:type="index:FunctionSymbol" name="cpr.geometry.Rectangle" description="left,top,width,height로 구성된 위치와 크기의 객체." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="169" endIndex="177"/>
+        <params name="left" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="190" endIndex="193" startLine="9" endLine="9"/>
+          <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="top" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="196" endIndex="198" startLine="9" endLine="9"/>
+          <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="width" description="" parameterIndex="2">
+          <region xsi:type="index:RegionWithLine" startIndex="201" endIndex="205" startLine="9" endLine="9"/>
+          <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="height" description="" parameterIndex="3">
+          <region xsi:type="index:RegionWithLine" startIndex="208" endIndex="213" startLine="9" endLine="9"/>
+          <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="width">
+            <value xsi:type="index:VariableSymbol" name="width" description="너비 기본값 0">
+              <region startIndex="649" endIndex="653"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="height">
+            <value xsi:type="index:VariableSymbol" name="height" description="높이 기본값 0">
+              <region startIndex="743" endIndex="748"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="left">
+            <value xsi:type="index:VariableSymbol" name="left" description="왼쪽 기본값 0">
+              <region startIndex="838" endIndex="841"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="top">
+            <value xsi:type="index:VariableSymbol" name="top" description="위 기본값 0">
+              <region startIndex="930" endIndex="932"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="x">
+            <value xsi:type="index:VariableSymbol" name="x" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> X 좌표를 얻습니다. left와 동일한 값입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> X 좌표를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1180" endIndex="1180"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="y">
+            <value xsi:type="index:VariableSymbol" name="y" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> y 좌표를 얻습니다. top과 동일한 값입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> y 좌표를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1427" endIndex="1427"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="right">
+            <value xsi:type="index:VariableSymbol" name="right" description="&lt;b>Readonly&lt;/b> 박스 영역의 오른쪽 가장자리의 x 좌표를 얻습니다.">
+              <region startIndex="1556" endIndex="1560"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="bottom">
+            <value xsi:type="index:VariableSymbol" name="bottom" description="&lt;b>Readonly&lt;/b> 박스 영역 아래쪽 가장자리의 y좌표를 얻습니다.">
+              <region startIndex="1687" endIndex="1692"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="topLeft">
+            <value xsi:type="index:VariableSymbol" name="topLeft" description="&lt;b>Readonly&lt;/b> x왼쪽 y위쪽">
+              <region startIndex="1812" endIndex="1818"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="topCenter">
+            <value xsi:type="index:VariableSymbol" name="topCenter" description="&lt;b>Readonly&lt;/b> x가운데 y위쪽">
+              <region startIndex="1951" endIndex="1959"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="topRight">
+            <value xsi:type="index:VariableSymbol" name="topRight" description="&lt;b>Readonly&lt;/b> x오른쪽 y위쪽">
+              <region startIndex="2092" endIndex="2099"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="centerLeft">
+            <value xsi:type="index:VariableSymbol" name="centerLeft" description="&lt;b>Readonly&lt;/b> x왼쪽 y중앙">
+              <region startIndex="2231" endIndex="2240"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="center">
+            <value xsi:type="index:VariableSymbol" name="center" description="&lt;b>Readonly&lt;/b> x중앙 y중앙">
+              <region startIndex="2372" endIndex="2377"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="centerRight">
+            <value xsi:type="index:VariableSymbol" name="centerRight" description="&lt;b>Readonly&lt;/b> x오른쪽 y중앙">
+              <region startIndex="2510" endIndex="2520"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="bottonLeft">
+            <value xsi:type="index:VariableSymbol" name="bottonLeft" deprecated="true" deprecationDescription="오타로 인해 디프리케이트 되었습니다.">
+              <region startIndex="2662" endIndex="2671"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="bottomLeft">
+            <value xsi:type="index:VariableSymbol" name="bottomLeft" description="&lt;b>Readonly&lt;/b> x왼쪽 y아래쪽">
+              <region startIndex="2804" endIndex="2813"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="bottomCenter">
+            <value xsi:type="index:VariableSymbol" name="bottomCenter" description="&lt;b>Readonly&lt;/b> x중앙 y아래쪽">
+              <region startIndex="2946" endIndex="2957"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="bottomRight">
+            <value xsi:type="index:VariableSymbol" name="bottomRight" description="&lt;b>Readonly&lt;/b> x오른쪽 y아래쪽">
+              <region startIndex="3091" endIndex="3101"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="location">
+            <value xsi:type="index:VariableSymbol" name="location" description="&lt;b>Readonly&lt;/b> 위치를 반환합니다.">
+              <region startIndex="3236" endIndex="3243"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="size">
+            <value xsi:type="index:VariableSymbol" name="size" description="&lt;b>Readonly&lt;/b> 크기를 반환합니다.">
+              <region startIndex="3382" endIndex="3385"/>
+              <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="intersect">
+            <value xsi:type="index:FunctionVariableSymbol" name="intersect" originalSymbolName="__anonymous3">
+              <region startIndex="3617" endIndex="3625"/>
+            </value>
+          </symbols>
+          <symbols key="intersects">
+            <value xsi:type="index:FunctionVariableSymbol" name="intersects" originalSymbolName="__anonymous4">
+              <region startIndex="3798" endIndex="3807"/>
+            </value>
+          </symbols>
+          <symbols key="contains">
+            <value xsi:type="index:FunctionVariableSymbol" name="contains" originalSymbolName="__anonymous5">
+              <region startIndex="3971" endIndex="3978"/>
+            </value>
+          </symbols>
+          <symbols key="containsPoint">
+            <value xsi:type="index:FunctionVariableSymbol" name="containsPoint" originalSymbolName="__anonymous6">
+              <region startIndex="4144" endIndex="4156"/>
+            </value>
+          </symbols>
+          <symbols key="containsRect">
+            <value xsi:type="index:FunctionVariableSymbol" name="containsRect" originalSymbolName="__anonymous7">
+              <region startIndex="4327" endIndex="4338"/>
+            </value>
+          </symbols>
+          <symbols key="getIntersection">
+            <value xsi:type="index:FunctionVariableSymbol" name="getIntersection" originalSymbolName="__anonymous8">
+              <region startIndex="4523" endIndex="4537"/>
+            </value>
+          </symbols>
+          <symbols key="setBounds">
+            <value xsi:type="index:FunctionVariableSymbol" name="setBounds" originalSymbolName="__anonymous9">
+              <region startIndex="4771" endIndex="4779"/>
+            </value>
+          </symbols>
+          <symbols key="expand">
+            <value xsi:type="index:FunctionVariableSymbol" name="expand" originalSymbolName="__anonymous10">
+              <region startIndex="4955" endIndex="4960"/>
+            </value>
+          </symbols>
+          <symbols key="expandByInsets">
+            <value xsi:type="index:FunctionVariableSymbol" name="expandByInsets" originalSymbolName="__anonymous11">
+              <region startIndex="5168" endIndex="5181"/>
+            </value>
+          </symbols>
+          <symbols key="getExpanded">
+            <value xsi:type="index:FunctionVariableSymbol" name="getExpanded" originalSymbolName="__anonymous12">
+              <region startIndex="5348" endIndex="5358"/>
+            </value>
+          </symbols>
+          <symbols key="getExpandedByInsets">
+            <value xsi:type="index:FunctionVariableSymbol" name="getExpandedByInsets" originalSymbolName="__anonymous13">
+              <region startIndex="5563" endIndex="5581"/>
+            </value>
+          </symbols>
+          <symbols key="shrink">
+            <value xsi:type="index:FunctionVariableSymbol" name="shrink" originalSymbolName="__anonymous14">
+              <region startIndex="5744" endIndex="5749"/>
+            </value>
+          </symbols>
+          <symbols key="shrinkByInsets">
+            <value xsi:type="index:FunctionVariableSymbol" name="shrinkByInsets" originalSymbolName="__anonymous15">
+              <region startIndex="5941" endIndex="5954"/>
+            </value>
+          </symbols>
+          <symbols key="getShrinked">
+            <value xsi:type="index:FunctionVariableSymbol" name="getShrinked" originalSymbolName="__anonymous16">
+              <region startIndex="6121" endIndex="6131"/>
+            </value>
+          </symbols>
+          <symbols key="getShrinkedByInsets">
+            <value xsi:type="index:FunctionVariableSymbol" name="getShrinkedByInsets" originalSymbolName="__anonymous17">
+              <region startIndex="6311" endIndex="6329"/>
+            </value>
+          </symbols>
+          <symbols key="translate">
+            <value xsi:type="index:FunctionVariableSymbol" name="translate" originalSymbolName="__anonymous18">
+              <region startIndex="6549" endIndex="6557"/>
+            </value>
+          </symbols>
+          <symbols key="translateByDimension">
+            <value xsi:type="index:FunctionVariableSymbol" name="translateByDimension" originalSymbolName="__anonymous19">
+              <region startIndex="6779" endIndex="6798"/>
+            </value>
+          </symbols>
+          <symbols key="translateByPoint">
+            <value xsi:type="index:FunctionVariableSymbol" name="translateByPoint" originalSymbolName="__anonymous20">
+              <region startIndex="6992" endIndex="7007"/>
+            </value>
+          </symbols>
+          <symbols key="getTranslated">
+            <value xsi:type="index:FunctionVariableSymbol" name="getTranslated" originalSymbolName="__anonymous21">
+              <region startIndex="7195" endIndex="7207"/>
+            </value>
+          </symbols>
+          <symbols key="getTranslatedByDimension">
+            <value xsi:type="index:FunctionVariableSymbol" name="getTranslatedByDimension" originalSymbolName="__anonymous22">
+              <region startIndex="7395" endIndex="7418"/>
+            </value>
+          </symbols>
+          <symbols key="getTranslatedByPoint">
+            <value xsi:type="index:FunctionVariableSymbol" name="getTranslatedByPoint" originalSymbolName="__anonymous23">
+              <region startIndex="7593" endIndex="7612"/>
+            </value>
+          </symbols>
+          <symbols key="scale">
+            <value xsi:type="index:FunctionVariableSymbol" name="scale" originalSymbolName="__anonymous24">
+              <region startIndex="7821" endIndex="7825"/>
+            </value>
+          </symbols>
+          <symbols key="getScaled">
+            <value xsi:type="index:FunctionVariableSymbol" name="getScaled" originalSymbolName="__anonymous25">
+              <region startIndex="8051" endIndex="8059"/>
+            </value>
+          </symbols>
+          <symbols key="transpose">
+            <value xsi:type="index:FunctionVariableSymbol" name="transpose" originalSymbolName="__anonymous26">
+              <region startIndex="8214" endIndex="8222"/>
+            </value>
+          </symbols>
+          <symbols key="getTransposed">
+            <value xsi:type="index:FunctionVariableSymbol" name="getTransposed" originalSymbolName="__anonymous27">
+              <region startIndex="8356" endIndex="8368"/>
+            </value>
+          </symbols>
+          <symbols key="unionWithRect">
+            <value xsi:type="index:FunctionVariableSymbol" name="unionWithRect" originalSymbolName="__anonymous28">
+              <region startIndex="8577" endIndex="8589"/>
+            </value>
+          </symbols>
+          <symbols key="unionWithBounds">
+            <value xsi:type="index:FunctionVariableSymbol" name="unionWithBounds" originalSymbolName="__anonymous29">
+              <region startIndex="8861" endIndex="8875"/>
+            </value>
+          </symbols>
+          <symbols key="unionWithLocation">
+            <value xsi:type="index:FunctionVariableSymbol" name="unionWithLocation" originalSymbolName="__anonymous30">
+              <region startIndex="9105" endIndex="9121"/>
+            </value>
+          </symbols>
+          <symbols key="unionWithPoint">
+            <value xsi:type="index:FunctionVariableSymbol" name="unionWithPoint" originalSymbolName="__anonymous31">
+              <region startIndex="9326" endIndex="9339"/>
+            </value>
+          </symbols>
+          <symbols key="getUnionWithPoint">
+            <value xsi:type="index:FunctionVariableSymbol" name="getUnionWithPoint" originalSymbolName="__anonymous32">
+              <region startIndex="9560" endIndex="9576"/>
+            </value>
+          </symbols>
+          <symbols key="getUnionWithRect">
+            <value xsi:type="index:FunctionVariableSymbol" name="getUnionWithRect" originalSymbolName="__anonymous33">
+              <region startIndex="9801" endIndex="9816"/>
+            </value>
+          </symbols>
+          <symbols key="getUnionWithLocation">
+            <value xsi:type="index:FunctionVariableSymbol" name="getUnionWithLocation" originalSymbolName="__anonymous34">
+              <region startIndex="10047" endIndex="10066"/>
+            </value>
+          </symbols>
+          <symbols key="getUnionWithBounds">
+            <value xsi:type="index:FunctionVariableSymbol" name="getUnionWithBounds" originalSymbolName="__anonymous35">
+              <region startIndex="10353" endIndex="10370"/>
+            </value>
+          </symbols>
+          <symbols key="resize">
+            <value xsi:type="index:FunctionVariableSymbol" name="resize" originalSymbolName="__anonymous36">
+              <region startIndex="10585" endIndex="10590"/>
+            </value>
+          </symbols>
+          <symbols key="resizeByDimension">
+            <value xsi:type="index:FunctionVariableSymbol" name="resizeByDimension" originalSymbolName="__anonymous37">
+              <region startIndex="10784" endIndex="10800"/>
+            </value>
+          </symbols>
+          <symbols key="getCopy">
+            <value xsi:type="index:FunctionVariableSymbol" name="getCopy" originalSymbolName="__anonymous38">
+              <region startIndex="10924" endIndex="10930"/>
+            </value>
+          </symbols>
+          <symbols key="isEmpty">
+            <value xsi:type="index:FunctionVariableSymbol" name="isEmpty" originalSymbolName="__anonymous39">
+              <region startIndex="11053" endIndex="11059"/>
+            </value>
+          </symbols>
+          <symbols key="equals">
+            <value xsi:type="index:FunctionVariableSymbol" name="equals" originalSymbolName="__anonymous40">
+              <region startIndex="11222" endIndex="11227"/>
+            </value>
+          </symbols>
+        </prototype>
+        <symbols key="EMPTY">
+          <value xsi:type="index:VariableSymbol" name="EMPTY" description="&lt;b>Readonly&lt;/b> 비어있는 Rectangle를 반환합니다.">
+            <region startIndex="379" endIndex="383"/>
+            <inferredType name="cpr.geometry.Rectangle" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+        <symbols key="fromDOMRect">
+          <value xsi:type="index:FunctionVariableSymbol" name="fromDOMRect" originalSymbolName="__anonymous2">
+            <region startIndex="545" endIndex="555"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

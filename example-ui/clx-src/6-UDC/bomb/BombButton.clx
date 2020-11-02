@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-92c83aa9" version="1.0.0.0">
+  <head std:sid="head-cb5d0c54">
+    <title>BombButton</title>
+    <screen std:sid="screen-358730d1" id="default" customHeight="300" height="768px" minwidth="1024px" name="default" useCustomHeight="true" width="1024px"/>
+    <screen std:sid="screen-b819e7ca" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-44c61057" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <link std:sid="link-65eb4213" href="bomb.less" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-36ddbc9c"/>
+    <cl:appspec dev-description="버튼을 클릭할 때마다 시간이 줄어들며 폭발하는 컨트롤" dev-icon="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABKklEQVR4nN3V0WqDMBQG4D6A4FXdjeuozq7rqK6jDkEqXtSB0CFlCnojgk/gaxR85n9LKIXR2ZiorDSQi4ST8yU5QUejK2pg9O7JLctiIcIYXRhFEeI4huu6vUKnBVmWoa5rlGWJIAigqmpbiInRoDAMafI0TelYkiQe4CJCA8iOkyShV8WZmAn9CnAcpyvwJ0QnDcPoK/kZQids26a18H1/EIgOqqpCURTI85z3JbVDSA1IsUkf6spOr6rn5OfIgP3GkN4gZTxuBDojD5MJtOkUL4sFdE1rRIShp9kMH9stPnc7+J4Hc7lsBLggWZZxf3zyBPja71EfDniez5lAK4QAj7qOt9UK9nqN95/PkbfZXKyFEGaZJl6Pv+U7ReFOznUqkd2LYv/fvgFE6di2Hui/SAAAAABJRU5ErkJggg==">
+      <cl:property bindable="true" default="tick" std:desc="The text displayed in button" name="buttonTitle" type="string"/>
+      <cl:event name="bomb" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-3bfb6eaf" style="top:0px; left:0px; width:300px; height:40px;">
+    <cl:listener std:sid="listener-30818c36" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:progress std:sid="progress-fc303bfb" id="progress" class="bomb" max="10" value="10">
+      <cl:xylayoutdata std:sid="xyl-data-f333af50" height="30px" horizontalAnchor="BOTH" left="0px" right="110px" verticalAnchor="CENTER"/>
+    </cl:progress>
+    <cl:button std:sid="button-c4b1177d" value="째깍째깍">
+      <cl:listener std:sid="listener-906bef06" handler="onButtonCick" name="click"/>
+      <cl:apppropbind category="PROPERTY" property="value" app-property="buttonTitle"/>
+      <cl:xylayoutdata std:sid="xyl-data-03f80784" bottom="0px" horizontalAnchor="RIGHT" right="0px" top="0px" verticalAnchor="BOTH" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-5055eeab"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

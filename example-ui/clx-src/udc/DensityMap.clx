@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-7a5c9ced" version="1.0.0.0">
+  <head std:sid="head-df044739">
+    <title>DensityMap</title>
+    <screen std:sid="screen-c7a723ad" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-01098f29" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-6c2ad1ea" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-cbcc33d8">
+      <cl:dataset std:sid="d-set-056bf6f7" id="density">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="y"/>
+          <cl:datacolumn name="x"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="y"><![CDATA[3.600]]></cl:datavalue>
+            <cl:datavalue columnname="x"><![CDATA[70]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="y"><![CDATA[3.4]]></cl:datavalue>
+            <cl:datavalue columnname="x"><![CDATA[50]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="y"><![CDATA[1.1]]></cl:datavalue>
+            <cl:datavalue columnname="x"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec dev-description="주어진 데이터셋과 x, y축을 바탕으로 밀도 맵을 구성합니다.">
+      <cl:property name="dataSet" type="control"/>
+      <cl:property bindable="true" default="Y" name="yTitle" type="string"/>
+      <cl:property bindable="true" default="X" name="xTitle" type="string"/>
+      <cl:property default="x" name="xColumn" type="string"/>
+      <cl:property default="y" name="yColumn" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-8ebbcdc2" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-7bbb83e1" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:uicontrolshell std:sid="uic-shell-b9481b10">
+      <cl:listener std:sid="listener-463e8c82" handler="onUIControlShellLoad" name="load"/>
+      <cl:xylayoutdata std:sid="xyl-data-93793b70" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:uicontrolshell>
+    <cl:output std:sid="output-37750315" style="border-right-style:solid; color:red; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-color:gray; border-right-color:gray; border-left-width:1px; border-top-style:solid; background-color:white; border-left-style:solid; border-bottom-width:1px; border-top-color:gray; border-bottom-style:solid; background-image:none; text-align:center;" removeOnBuild="true" value="밀도 맵">
+      <cl:xylayoutdata std:sid="xyl-data-029a7290" height="20px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="100px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-aae4b4e7"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

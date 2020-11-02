@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.DropTarget.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="1325" startLine="7" endLine="69"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DropTarget" description="컨트롤 위로 드랍을 가능하게 하고, 드랍 동작을 기술할 수 있게 해 주는 객체입니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="187" endIndex="215" startLine="7" endLine="7"/>
+          <params name="control" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="196" endIndex="202" startLine="7" endLine="7"/>
+            <inferredType name="cpr.controls.UIControl" instance="true" documentedType="true"/>
+          </params>
+          <params name="delegate" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="205" endIndex="212" startLine="7" endLine="7"/>
+            <inferredType name="cpr.controls.DropTargetDelegate" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="control">
+              <value xsi:type="index:VariableSymbol" name="control" description="&lt;b>Readonly&lt;/b> 드랍 타겟 컨트롤을 얻습니다.">
+                <region startIndex="384" endIndex="390"/>
+                <inferredType name="cpr.controls.UIControl" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="detail">
+              <value xsi:type="index:VariableSymbol" name="detail" description="&lt;b>Readonly&lt;/b> 드롭될 위치의 상세정보를 얻습니다. 현재는 항상 null을 리턴합니다." experimental="true" experimentalDescription="">
+                <region startIndex="568" endIndex="573"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="idleTime">
+              <value xsi:type="index:VariableSymbol" name="idleTime" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> onDragIdle()을 호출하기 까지의 마우스 포인터 대기시간을 얻습니다. (단위: 초) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> onDragIdle()을 호출하기 까지의 마우스 포인터 대기시간을 지정합니다. (단위: 초) &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="884" endIndex="891"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="idleRepeatTime">
+              <value xsi:type="index:VariableSymbol" name="idleRepeatTime" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> onDragIdle()이 반복 호출되기 까지의 마우스 포인터 대기시간을 얻습니다. (단위: 초) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> onDragIdle()이 반복 호출되기 까지의 마우스 포인터 대기시간을 지정합니다. (단위: 초) &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1208" endIndex="1221"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dispose">
+              <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous2">
+                <region startIndex="1301" endIndex="1307"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.DropTarget">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.DropTarget" originalSymbolName="__anonymous1">
+          <region startIndex="174" endIndex="183"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="dispose" description="드롭 타겟을 파기 시킵니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1311" endIndex="1322" startLine="67" endLine="67"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="187" endIndex="215" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="215" endIndex="215"/>
+          <symbolMap key="control">
+            <value xsi:type="index:ParameterSymbol" name="control" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="196" endIndex="202" startLine="7" endLine="7"/>
+              <inferredType name="cpr.controls.UIControl" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="delegate">
+            <value xsi:type="index:ParameterSymbol" name="delegate" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="205" endIndex="212" startLine="7" endLine="7"/>
+              <inferredType name="cpr.controls.DropTargetDelegate" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1311" endIndex="1322" startLine="67" endLine="67"/>
+        <childScopes>
+          <region startIndex="1322" endIndex="1322"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.DropTarget">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.DropTarget" description="컨트롤 위로 드랍을 가능하게 하고, 드랍 동작을 기술할 수 있게 해 주는 객체입니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="174" endIndex="183"/>
+        <params name="control" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="196" endIndex="202" startLine="7" endLine="7"/>
+          <inferredType name="cpr.controls.UIControl" instance="true" documentedType="true"/>
+        </params>
+        <params name="delegate" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="205" endIndex="212" startLine="7" endLine="7"/>
+          <inferredType name="cpr.controls.DropTargetDelegate" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="control">
+            <value xsi:type="index:VariableSymbol" name="control" description="&lt;b>Readonly&lt;/b> 드랍 타겟 컨트롤을 얻습니다.">
+              <region startIndex="384" endIndex="390"/>
+              <inferredType name="cpr.controls.UIControl" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="detail">
+            <value xsi:type="index:VariableSymbol" name="detail" description="&lt;b>Readonly&lt;/b> 드롭될 위치의 상세정보를 얻습니다. 현재는 항상 null을 리턴합니다." experimental="true" experimentalDescription="">
+              <region startIndex="568" endIndex="573"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="idleTime">
+            <value xsi:type="index:VariableSymbol" name="idleTime" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> onDragIdle()을 호출하기 까지의 마우스 포인터 대기시간을 얻습니다. (단위: 초) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> onDragIdle()을 호출하기 까지의 마우스 포인터 대기시간을 지정합니다. (단위: 초) &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="884" endIndex="891"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="idleRepeatTime">
+            <value xsi:type="index:VariableSymbol" name="idleRepeatTime" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> onDragIdle()이 반복 호출되기 까지의 마우스 포인터 대기시간을 얻습니다. (단위: 초) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> onDragIdle()이 반복 호출되기 까지의 마우스 포인터 대기시간을 지정합니다. (단위: 초) &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1208" endIndex="1221"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dispose">
+            <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous2">
+              <region startIndex="1301" endIndex="1307"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

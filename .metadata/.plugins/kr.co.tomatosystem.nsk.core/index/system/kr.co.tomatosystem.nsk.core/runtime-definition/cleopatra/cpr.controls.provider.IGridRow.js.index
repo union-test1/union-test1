@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.provider.IGridRow.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="311" startLine="5" endLine="15"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="IGridRow" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="81" endIndex="96" startLine="5" endLine="5"/>
+          <params name="grid" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="90" endIndex="93" startLine="5" endLine="5"/>
+            <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="getLocalIndex">
+              <value xsi:type="index:FunctionVariableSymbol" name="getLocalIndex" originalSymbolName="__anonymous2">
+                <region startIndex="281" endIndex="293"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.provider.IGridRow">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.provider.IGridRow" originalSymbolName="__anonymous1">
+          <region startIndex="70" endIndex="77"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getLocalIndex" description="현재 그룹행의 인덱스를 반환합니다.  상위 그룹내에서의 인덱스." returnDescription="현재 그룹행의 인덱스." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="297" endIndex="308" startLine="13" endLine="13"/>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="81" endIndex="96" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="96" endIndex="96"/>
+          <symbolMap key="grid">
+            <value xsi:type="index:ParameterSymbol" name="grid" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="90" endIndex="93" startLine="5" endLine="5"/>
+              <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="297" endIndex="308" startLine="13" endLine="13"/>
+        <childScopes>
+          <region startIndex="308" endIndex="308"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.provider.IGridRow">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.provider.IGridRow" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="70" endIndex="77"/>
+        <params name="grid" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="90" endIndex="93" startLine="5" endLine="5"/>
+          <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="getLocalIndex">
+            <value xsi:type="index:FunctionVariableSymbol" name="getLocalIndex" originalSymbolName="__anonymous2">
+              <region startIndex="281" endIndex="293"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

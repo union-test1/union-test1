@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.foundation.DecimalType.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="60" endIndex="1875" startLine="6" endLine="70"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DecimalType" description="소수 데이터 타입." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="89" endIndex="104" startLine="6" endLine="6"/>
+          <params name="data" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="98" endIndex="101" startLine="6" endLine="6"/>
+            <inferredType name="decimal.Decimal" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="plus">
+              <value xsi:type="index:FunctionVariableSymbol" name="plus" originalSymbolName="__anonymous3">
+                <region startIndex="547" endIndex="550"/>
+              </value>
+            </symbols>
+            <symbols key="minus">
+              <value xsi:type="index:FunctionVariableSymbol" name="minus" originalSymbolName="__anonymous4">
+                <region startIndex="737" endIndex="741"/>
+              </value>
+            </symbols>
+            <symbols key="times">
+              <value xsi:type="index:FunctionVariableSymbol" name="times" originalSymbolName="__anonymous5">
+                <region startIndex="930" endIndex="934"/>
+              </value>
+            </symbols>
+            <symbols key="dividedBy">
+              <value xsi:type="index:FunctionVariableSymbol" name="dividedBy" originalSymbolName="__anonymous6">
+                <region startIndex="1123" endIndex="1131"/>
+              </value>
+            </symbols>
+            <symbols key="remainder">
+              <value xsi:type="index:FunctionVariableSymbol" name="remainder" originalSymbolName="__anonymous7">
+                <region startIndex="1320" endIndex="1328"/>
+              </value>
+            </symbols>
+            <symbols key="compareTo">
+              <value xsi:type="index:FunctionVariableSymbol" name="compareTo" originalSymbolName="__anonymous8">
+                <region startIndex="1544" endIndex="1552"/>
+              </value>
+            </symbols>
+            <symbols key="toNumber">
+              <value xsi:type="index:FunctionVariableSymbol" name="toNumber" originalSymbolName="__anonymous9">
+                <region startIndex="1698" endIndex="1705"/>
+              </value>
+            </symbols>
+            <symbols key="toString">
+              <value xsi:type="index:FunctionVariableSymbol" name="toString" originalSymbolName="__anonymous10">
+                <region startIndex="1850" endIndex="1857"/>
+              </value>
+            </symbols>
+          </prototype>
+          <symbols key="getDecimalType">
+            <value xsi:type="index:FunctionVariableSymbol" name="getDecimalType" originalSymbolName="__anonymous2">
+              <region startIndex="343" endIndex="356"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.foundation.DecimalType">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.foundation.DecimalType" originalSymbolName="__anonymous1">
+          <region startIndex="75" endIndex="85"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getDecimalType" description="number형 데이터를 DecimalType으로 반환합니다." returnDescription="number형 데이터의 DecimalType." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="360" endIndex="374" startLine="14" endLine="14"/>
+          <params name="obj" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="369" endIndex="371" startLine="14" endLine="14"/>
+            <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="plus" description="더하기(+) 연산을 실행합니다." returnDescription="연산 결과." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="554" endIndex="566" startLine="21" endLine="21"/>
+          <params name="x" description="더하기 연산을 할 데이터." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="563" endIndex="563" startLine="21" endLine="21"/>
+            <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="minus" description="빼기(-) 연산을 실행합니다." returnDescription="연산 결과." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="745" endIndex="757" startLine="28" endLine="28"/>
+          <params name="x" description="빼기 연산을 할 데이터." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="754" endIndex="754" startLine="28" endLine="28"/>
+            <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="times" description="곱하기(x) 연산을 실행합니다." returnDescription="연산 결과." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="938" endIndex="950" startLine="35" endLine="35"/>
+          <params name="x" description="곱하기 연산을 할 데이터." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="947" endIndex="947" startLine="35" endLine="35"/>
+            <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="dividedBy" description="나누기(÷) 연산을 실행합니다." returnDescription="연산 결과." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1135" endIndex="1147" startLine="42" endLine="42"/>
+          <params name="x" description="나누기 연산을 할 데이터." symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1144" endIndex="1144" startLine="42" endLine="42"/>
+            <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="remainder" description="나머지(%) 연산을 실행합니다." returnDescription="연산 결과." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1332" endIndex="1344" startLine="49" endLine="49"/>
+          <params name="x" description="나머지 연산을 할 데이터." symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1341" endIndex="1341" startLine="49" endLine="49"/>
+            <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="compareTo" description="값을 비교합니다." returnDescription="비교 결과. (1: 현재 값이 더 큽니다. / 0: 현재 값과 param 값이 같습니다 / -1: 현재 값이 더 작습니다.)" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1556" endIndex="1568" startLine="56" endLine="56"/>
+          <params name="x" description="비교할 값." symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1565" endIndex="1565" startLine="56" endLine="56"/>
+            <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="toNumber" description="현재 decimal 값을 number형으로 반환합니다." returnDescription="현재 decimal 값의 number형 데이터." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1709" endIndex="1720" startLine="62" endLine="62"/>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="toString" description="현재 decimal 값을 string형으로 반환합니다." returnDescription="현재 decimal 값의 string형 데이터." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1861" endIndex="1872" startLine="68" endLine="68"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="89" endIndex="104" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="104" endIndex="104"/>
+          <symbolMap key="data">
+            <value xsi:type="index:ParameterSymbol" name="data" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="98" endIndex="101" startLine="6" endLine="6"/>
+              <inferredType name="decimal.Decimal" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="360" endIndex="374" startLine="14" endLine="14"/>
+        <childScopes>
+          <region startIndex="374" endIndex="374"/>
+          <symbolMap key="obj">
+            <value xsi:type="index:ParameterSymbol" name="obj" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="369" endIndex="371" startLine="14" endLine="14"/>
+              <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="554" endIndex="566" startLine="21" endLine="21"/>
+        <childScopes>
+          <region startIndex="566" endIndex="566"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="더하기 연산을 할 데이터." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="563" endIndex="563" startLine="21" endLine="21"/>
+              <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="745" endIndex="757" startLine="28" endLine="28"/>
+        <childScopes>
+          <region startIndex="757" endIndex="757"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="빼기 연산을 할 데이터." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="754" endIndex="754" startLine="28" endLine="28"/>
+              <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="938" endIndex="950" startLine="35" endLine="35"/>
+        <childScopes>
+          <region startIndex="950" endIndex="950"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="곱하기 연산을 할 데이터." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="947" endIndex="947" startLine="35" endLine="35"/>
+              <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1135" endIndex="1147" startLine="42" endLine="42"/>
+        <childScopes>
+          <region startIndex="1147" endIndex="1147"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="나누기 연산을 할 데이터." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1144" endIndex="1144" startLine="42" endLine="42"/>
+              <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1332" endIndex="1344" startLine="49" endLine="49"/>
+        <childScopes>
+          <region startIndex="1344" endIndex="1344"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="나머지 연산을 할 데이터." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1341" endIndex="1341" startLine="49" endLine="49"/>
+              <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1556" endIndex="1568" startLine="56" endLine="56"/>
+        <childScopes>
+          <region startIndex="1568" endIndex="1568"/>
+          <symbolMap key="x">
+            <value xsi:type="index:ParameterSymbol" name="x" description="비교할 값." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1565" endIndex="1565" startLine="56" endLine="56"/>
+              <inferredType name="cpr.foundation.DecimalType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1709" endIndex="1720" startLine="62" endLine="62"/>
+        <childScopes>
+          <region startIndex="1720" endIndex="1720"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1861" endIndex="1872" startLine="68" endLine="68"/>
+        <childScopes>
+          <region startIndex="1872" endIndex="1872"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.foundation.DecimalType">
+      <value xsi:type="index:FunctionSymbol" name="cpr.foundation.DecimalType" description="소수 데이터 타입." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="75" endIndex="85"/>
+        <params name="data" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="98" endIndex="101" startLine="6" endLine="6"/>
+          <inferredType name="decimal.Decimal" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="plus">
+            <value xsi:type="index:FunctionVariableSymbol" name="plus" originalSymbolName="__anonymous3">
+              <region startIndex="547" endIndex="550"/>
+            </value>
+          </symbols>
+          <symbols key="minus">
+            <value xsi:type="index:FunctionVariableSymbol" name="minus" originalSymbolName="__anonymous4">
+              <region startIndex="737" endIndex="741"/>
+            </value>
+          </symbols>
+          <symbols key="times">
+            <value xsi:type="index:FunctionVariableSymbol" name="times" originalSymbolName="__anonymous5">
+              <region startIndex="930" endIndex="934"/>
+            </value>
+          </symbols>
+          <symbols key="dividedBy">
+            <value xsi:type="index:FunctionVariableSymbol" name="dividedBy" originalSymbolName="__anonymous6">
+              <region startIndex="1123" endIndex="1131"/>
+            </value>
+          </symbols>
+          <symbols key="remainder">
+            <value xsi:type="index:FunctionVariableSymbol" name="remainder" originalSymbolName="__anonymous7">
+              <region startIndex="1320" endIndex="1328"/>
+            </value>
+          </symbols>
+          <symbols key="compareTo">
+            <value xsi:type="index:FunctionVariableSymbol" name="compareTo" originalSymbolName="__anonymous8">
+              <region startIndex="1544" endIndex="1552"/>
+            </value>
+          </symbols>
+          <symbols key="toNumber">
+            <value xsi:type="index:FunctionVariableSymbol" name="toNumber" originalSymbolName="__anonymous9">
+              <region startIndex="1698" endIndex="1705"/>
+            </value>
+          </symbols>
+          <symbols key="toString">
+            <value xsi:type="index:FunctionVariableSymbol" name="toString" originalSymbolName="__anonymous10">
+              <region startIndex="1850" endIndex="1857"/>
+            </value>
+          </symbols>
+        </prototype>
+        <symbols key="getDecimalType">
+          <value xsi:type="index:FunctionVariableSymbol" name="getDecimalType" originalSymbolName="__anonymous2">
+            <region startIndex="343" endIndex="356"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

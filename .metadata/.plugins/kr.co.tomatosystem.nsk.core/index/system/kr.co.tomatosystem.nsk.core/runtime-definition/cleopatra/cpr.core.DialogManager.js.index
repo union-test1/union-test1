@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.DialogManager.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="78" endIndex="3397" startLine="6" endLine="110"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DialogManager" description="다이얼로그를 관리하는 클래스." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="103" endIndex="125" startLine="6" endLine="6"/>
+          <params name="appInstance" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="122" startLine="6" endLine="6"/>
+            <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="getDialogByName">
+              <value xsi:type="index:FunctionVariableSymbol" name="getDialogByName" originalSymbolName="__anonymous2">
+                <region startIndex="306" endIndex="320"/>
+              </value>
+            </symbols>
+            <symbols key="getDialogNames">
+              <value xsi:type="index:FunctionVariableSymbol" name="getDialogNames" originalSymbolName="__anonymous3">
+                <region startIndex="427" endIndex="440"/>
+              </value>
+            </symbols>
+            <symbols key="openDialog">
+              <value xsi:type="index:FunctionVariableSymbol" name="openDialog" originalSymbolName="__anonymous4">
+                <region startIndex="1478" endIndex="1487"/>
+              </value>
+            </symbols>
+            <symbols key="sort">
+              <value xsi:type="index:FunctionVariableSymbol" name="sort" originalSymbolName="__anonymous5">
+                <region startIndex="1925" endIndex="1928"/>
+              </value>
+            </symbols>
+            <symbols key="getDialogName">
+              <value xsi:type="index:FunctionVariableSymbol" name="getDialogName" originalSymbolName="__anonymous6">
+                <region startIndex="2090" endIndex="2102"/>
+              </value>
+            </symbols>
+            <symbols key="getActiveDialogName">
+              <value xsi:type="index:FunctionVariableSymbol" name="getActiveDialogName" originalSymbolName="__anonymous7">
+                <region startIndex="2217" endIndex="2235"/>
+              </value>
+            </symbols>
+            <symbols key="activateDialogByName">
+              <value xsi:type="index:FunctionVariableSymbol" name="activateDialogByName" originalSymbolName="__anonymous8">
+                <region startIndex="2357" endIndex="2376"/>
+              </value>
+            </symbols>
+            <symbols key="closeAll">
+              <value xsi:type="index:FunctionVariableSymbol" name="closeAll" originalSymbolName="__anonymous9">
+                <region startIndex="2465" endIndex="2472"/>
+              </value>
+            </symbols>
+            <symbols key="minimizeAll">
+              <value xsi:type="index:FunctionVariableSymbol" name="minimizeAll" originalSymbolName="__anonymous10">
+                <region startIndex="2552" endIndex="2562"/>
+              </value>
+            </symbols>
+            <symbols key="restoreAll">
+              <value xsi:type="index:FunctionVariableSymbol" name="restoreAll" originalSymbolName="__anonymous11">
+                <region startIndex="2643" endIndex="2652"/>
+              </value>
+            </symbols>
+            <symbols key="getConstraintByName">
+              <value xsi:type="index:FunctionVariableSymbol" name="getConstraintByName" originalSymbolName="__anonymous12">
+                <region startIndex="2811" endIndex="2829"/>
+              </value>
+            </symbols>
+            <symbols key="updateConstraintByName">
+              <value xsi:type="index:FunctionVariableSymbol" name="updateConstraintByName" originalSymbolName="__anonymous13">
+                <region startIndex="3039" endIndex="3060"/>
+              </value>
+            </symbols>
+            <symbols key="replaceConstraintByName">
+              <value xsi:type="index:FunctionVariableSymbol" name="replaceConstraintByName" originalSymbolName="__anonymous14">
+                <region startIndex="3332" endIndex="3354"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.DialogManager">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.DialogManager" originalSymbolName="__anonymous1">
+          <region startIndex="87" endIndex="99"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getDialogByName" description="다이얼로그의 이름으로 다이얼로그로 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="324" endIndex="339" startLine="14" endLine="14"/>
+          <params name="name" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="333" endIndex="336" startLine="14" endLine="14"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.controls.Dialog" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getDialogNames" description="다이얼로그 이름들을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="444" endIndex="455" startLine="20" endLine="20"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="openDialog" description="App에 Dialog를 Open 합니다. constraint의 값이 없으면 기본 값으로 설정됩니다. 이름 속성이 기존 다이얼로그와 이름이 같으면 기존 다이얼로그의 페이지가 변경됩니다. 다르면 새 다이얼로그가 열립니다. &lt;pre>&lt;code>dialogManager.openDialog(&quot;dlgs/people&quot;,&quot;dialogName1&quot;); dialogManager.openDialog(&quot;dlgs/people&quot;,&quot;dialogName2&quot;, {width:400,height:300} ); dialogManager.openDialog(&quot;dlgs/people&quot;,&quot;dialogName3&quot;, {top:30,right:20,width:400,height:600} ); dialogManager.openDialog(&quot;dlgs/people&quot;,&quot;dialogName4&quot;  {width:400, height:300} ,function(dialog) {&#xA;   //다이얼로그가 로드 되었을때 처리&#xA;   dialog.modal = false;&#xA;   dialog.headerMin = true;&#xA;   } ).then(function(returnValue) {&#xA;   //닫기 했을때 반환되는 값에 대한 처리&#xA;   } );&lt;/code>&lt;/pre>" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1491" endIndex="1546" startLine="41" endLine="41"/>
+          <params name="appId" description="오픈할 App의 ID" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1500" endIndex="1504" startLine="41" endLine="41"/>
+            <inferredType name="String" sematicsQualifier="app" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="dialogName" description="Dialog의 이름. 값이 null인경우 자동으로 값이 생성됩니다." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1507" endIndex="1516" startLine="41" endLine="41"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="dialogConstraint" optional="true" description="Dialog의 위치와 크기." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1519" endIndex="1534" startLine="41" endLine="41"/>
+            <inferredType name="cpr.core.DialogConstraint" instance="true" documentedType="true"/>
+          </params>
+          <params name="handler" optional="true" description="Dialog객체를 보다 구체적으로 처리해야 할 경우 Dialog를 처리할 Handler(이벤트 핸들러를 추가하거나 스타일을 변경하는 등의 작업을 할 수 있습니다)" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1537" endIndex="1543" startLine="41" endLine="41"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.controls.Dialog" variableName="dlg" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="sort" description="다이얼로그를 정렬합니다.  &lt;pre>&lt;code>dialogManager.sort(cpr.core.DialogSortType.cascade); dialogManager.sort(&quot;tile&quot;, {horizontalMargin:10,verticalMargin:10,horizontalSpacing:10,verticalSpacing:10} );&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1932" endIndex="1953" startLine="50" endLine="50"/>
+          <params name="type" description="다이얼로그의 정렬타입 [&quot;cascade&quot;,&quot;tile&quot;]" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1941" endIndex="1944" startLine="50" endLine="50"/>
+            <inferredType name="cpr.core.DialogSortType" instance="true" documentedType="true"/>
+          </params>
+          <params name="prop" optional="true" description="정렬 속성" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1947" endIndex="1950" startLine="50" endLine="50"/>
+            <inferredType name="cpr.core.DialogSortProperty" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="getDialogName" description="다이얼로그를 통해 이름을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2106" endIndex="2123" startLine="57" endLine="57"/>
+          <params name="dialog" description="다이얼로그 객체" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2115" endIndex="2120" startLine="57" endLine="57"/>
+            <inferredType name="cpr.controls.Dialog" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="getActiveDialogName" description="활성화되어있는 다이얼로그의 이름을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2239" endIndex="2250" startLine="63" endLine="63"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="activateDialogByName" description="다이얼로그의 이름으로 활성화합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2380" endIndex="2401" startLine="69" endLine="69"/>
+          <params name="dialogName" description="다이얼로그 이름" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2389" endIndex="2398" startLine="69" endLine="69"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="closeAll" description="다이얼로그를 모두 닫습니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2476" endIndex="2487" startLine="74" endLine="74"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="minimizeAll" description="다이얼로그를 모두 축소합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2566" endIndex="2577" startLine="79" endLine="79"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous11">
+        <value xsi:type="index:FunctionSymbol" name="restoreAll" description="다이얼로그를 모두 복구 합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2656" endIndex="2667" startLine="84" endLine="84"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous12">
+        <value xsi:type="index:FunctionSymbol" name="getConstraintByName" description="다이얼로그의 Constraint를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2833" endIndex="2854" startLine="91" endLine="91"/>
+          <params name="dialogName" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.11/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2842" endIndex="2851" startLine="91" endLine="91"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.DialogConstraint" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous13">
+        <value xsi:type="index:FunctionSymbol" name="updateConstraintByName" description="다이얼로그의 Constraint를 변경한다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3064" endIndex="3107" startLine="99" endLine="99"/>
+          <params name="dialogName" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.12/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3073" endIndex="3082" startLine="99" endLine="99"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="overridingConstraint" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.12/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3085" endIndex="3104" startLine="99" endLine="99"/>
+            <inferredType name="cpr.core.DialogConstraint" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous14">
+        <value xsi:type="index:FunctionSymbol" name="replaceConstraintByName" description="다이얼로그의 Constraint를 교체합니다. 파라미터의 Constraint로 변경됩니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3358" endIndex="3394" startLine="108" endLine="108"/>
+          <params name="dialogName" description="다이얼로그 이름" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3367" endIndex="3376" startLine="108" endLine="108"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="newConstraint" description="교체할 컨스트레인트" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3379" endIndex="3391" startLine="108" endLine="108"/>
+            <inferredType name="cpr.core.DialogConstraint" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="103" endIndex="125" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="125" endIndex="125"/>
+          <symbolMap key="appInstance">
+            <value xsi:type="index:ParameterSymbol" name="appInstance" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="122" startLine="6" endLine="6"/>
+              <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="324" endIndex="339" startLine="14" endLine="14"/>
+        <childScopes>
+          <region startIndex="339" endIndex="339"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="333" endIndex="336" startLine="14" endLine="14"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="444" endIndex="455" startLine="20" endLine="20"/>
+        <childScopes>
+          <region startIndex="455" endIndex="455"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1491" endIndex="1546" startLine="41" endLine="41"/>
+        <childScopes>
+          <region startIndex="1546" endIndex="1546"/>
+          <symbolMap key="appId">
+            <value xsi:type="index:ParameterSymbol" name="appId" description="오픈할 App의 ID" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1500" endIndex="1504" startLine="41" endLine="41"/>
+              <inferredType name="String" sematicsQualifier="app" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="dialogName">
+            <value xsi:type="index:ParameterSymbol" name="dialogName" description="Dialog의 이름. 값이 null인경우 자동으로 값이 생성됩니다." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1507" endIndex="1516" startLine="41" endLine="41"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="dialogConstraint">
+            <value xsi:type="index:ParameterSymbol" name="dialogConstraint" optional="true" description="Dialog의 위치와 크기." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="1519" endIndex="1534" startLine="41" endLine="41"/>
+              <inferredType name="cpr.core.DialogConstraint" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="handler">
+            <value xsi:type="index:ParameterSymbol" name="handler" optional="true" description="Dialog객체를 보다 구체적으로 처리해야 할 경우 Dialog를 처리할 Handler(이벤트 핸들러를 추가하거나 스타일을 변경하는 등의 작업을 할 수 있습니다)" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="1537" endIndex="1543" startLine="41" endLine="41"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.Dialog" variableName="dlg" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1932" endIndex="1953" startLine="50" endLine="50"/>
+        <childScopes>
+          <region startIndex="1953" endIndex="1953"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="다이얼로그의 정렬타입 [&quot;cascade&quot;,&quot;tile&quot;]" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1941" endIndex="1944" startLine="50" endLine="50"/>
+              <inferredType name="cpr.core.DialogSortType" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="prop">
+            <value xsi:type="index:ParameterSymbol" name="prop" optional="true" description="정렬 속성" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1947" endIndex="1950" startLine="50" endLine="50"/>
+              <inferredType name="cpr.core.DialogSortProperty" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2106" endIndex="2123" startLine="57" endLine="57"/>
+        <childScopes>
+          <region startIndex="2123" endIndex="2123"/>
+          <symbolMap key="dialog">
+            <value xsi:type="index:ParameterSymbol" name="dialog" description="다이얼로그 객체" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2115" endIndex="2120" startLine="57" endLine="57"/>
+              <inferredType name="cpr.controls.Dialog" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2239" endIndex="2250" startLine="63" endLine="63"/>
+        <childScopes>
+          <region startIndex="2250" endIndex="2250"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2380" endIndex="2401" startLine="69" endLine="69"/>
+        <childScopes>
+          <region startIndex="2401" endIndex="2401"/>
+          <symbolMap key="dialogName">
+            <value xsi:type="index:ParameterSymbol" name="dialogName" description="다이얼로그 이름" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2389" endIndex="2398" startLine="69" endLine="69"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2476" endIndex="2487" startLine="74" endLine="74"/>
+        <childScopes>
+          <region startIndex="2487" endIndex="2487"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2566" endIndex="2577" startLine="79" endLine="79"/>
+        <childScopes>
+          <region startIndex="2577" endIndex="2577"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2656" endIndex="2667" startLine="84" endLine="84"/>
+        <childScopes>
+          <region startIndex="2667" endIndex="2667"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.12/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2833" endIndex="2854" startLine="91" endLine="91"/>
+        <childScopes>
+          <region startIndex="2854" endIndex="2854"/>
+          <symbolMap key="dialogName">
+            <value xsi:type="index:ParameterSymbol" name="dialogName" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.12/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2842" endIndex="2851" startLine="91" endLine="91"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.13/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3064" endIndex="3107" startLine="99" endLine="99"/>
+        <childScopes>
+          <region startIndex="3107" endIndex="3107"/>
+          <symbolMap key="dialogName">
+            <value xsi:type="index:ParameterSymbol" name="dialogName" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.13/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3073" endIndex="3082" startLine="99" endLine="99"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="overridingConstraint">
+            <value xsi:type="index:ParameterSymbol" name="overridingConstraint" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.13/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="3085" endIndex="3104" startLine="99" endLine="99"/>
+              <inferredType name="cpr.core.DialogConstraint" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.14/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3358" endIndex="3394" startLine="108" endLine="108"/>
+        <childScopes>
+          <region startIndex="3394" endIndex="3394"/>
+          <symbolMap key="dialogName">
+            <value xsi:type="index:ParameterSymbol" name="dialogName" description="다이얼로그 이름" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3367" endIndex="3376" startLine="108" endLine="108"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="newConstraint">
+            <value xsi:type="index:ParameterSymbol" name="newConstraint" description="교체할 컨스트레인트" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="3379" endIndex="3391" startLine="108" endLine="108"/>
+              <inferredType name="cpr.core.DialogConstraint" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.DialogManager">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.DialogManager" description="다이얼로그를 관리하는 클래스." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="87" endIndex="99"/>
+        <params name="appInstance" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="112" endIndex="122" startLine="6" endLine="6"/>
+          <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="getDialogByName">
+            <value xsi:type="index:FunctionVariableSymbol" name="getDialogByName" originalSymbolName="__anonymous2">
+              <region startIndex="306" endIndex="320"/>
+            </value>
+          </symbols>
+          <symbols key="getDialogNames">
+            <value xsi:type="index:FunctionVariableSymbol" name="getDialogNames" originalSymbolName="__anonymous3">
+              <region startIndex="427" endIndex="440"/>
+            </value>
+          </symbols>
+          <symbols key="openDialog">
+            <value xsi:type="index:FunctionVariableSymbol" name="openDialog" originalSymbolName="__anonymous4">
+              <region startIndex="1478" endIndex="1487"/>
+            </value>
+          </symbols>
+          <symbols key="sort">
+            <value xsi:type="index:FunctionVariableSymbol" name="sort" originalSymbolName="__anonymous5">
+              <region startIndex="1925" endIndex="1928"/>
+            </value>
+          </symbols>
+          <symbols key="getDialogName">
+            <value xsi:type="index:FunctionVariableSymbol" name="getDialogName" originalSymbolName="__anonymous6">
+              <region startIndex="2090" endIndex="2102"/>
+            </value>
+          </symbols>
+          <symbols key="getActiveDialogName">
+            <value xsi:type="index:FunctionVariableSymbol" name="getActiveDialogName" originalSymbolName="__anonymous7">
+              <region startIndex="2217" endIndex="2235"/>
+            </value>
+          </symbols>
+          <symbols key="activateDialogByName">
+            <value xsi:type="index:FunctionVariableSymbol" name="activateDialogByName" originalSymbolName="__anonymous8">
+              <region startIndex="2357" endIndex="2376"/>
+            </value>
+          </symbols>
+          <symbols key="closeAll">
+            <value xsi:type="index:FunctionVariableSymbol" name="closeAll" originalSymbolName="__anonymous9">
+              <region startIndex="2465" endIndex="2472"/>
+            </value>
+          </symbols>
+          <symbols key="minimizeAll">
+            <value xsi:type="index:FunctionVariableSymbol" name="minimizeAll" originalSymbolName="__anonymous10">
+              <region startIndex="2552" endIndex="2562"/>
+            </value>
+          </symbols>
+          <symbols key="restoreAll">
+            <value xsi:type="index:FunctionVariableSymbol" name="restoreAll" originalSymbolName="__anonymous11">
+              <region startIndex="2643" endIndex="2652"/>
+            </value>
+          </symbols>
+          <symbols key="getConstraintByName">
+            <value xsi:type="index:FunctionVariableSymbol" name="getConstraintByName" originalSymbolName="__anonymous12">
+              <region startIndex="2811" endIndex="2829"/>
+            </value>
+          </symbols>
+          <symbols key="updateConstraintByName">
+            <value xsi:type="index:FunctionVariableSymbol" name="updateConstraintByName" originalSymbolName="__anonymous13">
+              <region startIndex="3039" endIndex="3060"/>
+            </value>
+          </symbols>
+          <symbols key="replaceConstraintByName">
+            <value xsi:type="index:FunctionVariableSymbol" name="replaceConstraintByName" originalSymbolName="__anonymous14">
+              <region startIndex="3332" endIndex="3354"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

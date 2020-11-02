@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-39f99c34" version="1.0.0.0">
+  <head std:sid="head-6589504d">
+    <title>Row2</title>
+    <screen std:sid="screen-24938ee5" id="default" customHeight="40" height="768px" minwidth="1024px" name="default" useCustomHeight="true" width="1024px"/>
+    <screen std:sid="screen-f9d0c3b2" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-bcc34144" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-5a4cc3ac">
+      <cl:dataset std:sid="d-set-3cfad38c" id="test">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="reuseId"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn datatype="number" name="height"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Section</cl:datavalue>
+            <cl:datavalue columnname="value">Group1</cl:datavalue>
+            <cl:datavalue columnname="height">30</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data1</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data2</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data3</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data4</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Section</cl:datavalue>
+            <cl:datavalue columnname="value">Group2</cl:datavalue>
+            <cl:datavalue columnname="height">30</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data1</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data2</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Section</cl:datavalue>
+            <cl:datavalue columnname="value">Group3</cl:datavalue>
+            <cl:datavalue columnname="height">30</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data1</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Section</cl:datavalue>
+            <cl:datavalue columnname="value">Group4</cl:datavalue>
+            <cl:datavalue columnname="height">30</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-98ab1575" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:datarowcontext datacontrolid="test" rowindex="0"/>
+    <cl:group std:sid="group-5b6fef69" style="background-color:cornFlowerBlue; color:white;">
+      <cl:xylayoutdata std:sid="xyl-data-e57737d3" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-31ec2ced" style="color:white;">
+        <cl:relativebind category="PROPERTY" property="value" columnname="value"/>
+        <cl:xylayoutdata std:sid="xyl-data-264bfbe1" height="20px" horizontalAnchor="BOTH" left="20px" right="0px" verticalAnchor="CENTER"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-128aa145"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-faca2e13"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

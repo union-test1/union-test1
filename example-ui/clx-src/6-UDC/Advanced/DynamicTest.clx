@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9232a0ce" version="1.0.0.0">
+  <head std:sid="head-be4a4fff">
+    <title>DynamicTest</title>
+    <screen std:sid="screen-a834219d" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-d064c28c" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-3fd1dc58" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-c02e3258">
+      <cl:dataset std:sid="d-set-3cfad38c" id="test">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="reuseId"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn datatype="number" name="height"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Section</cl:datavalue>
+            <cl:datavalue columnname="value">Group1</cl:datavalue>
+            <cl:datavalue columnname="height">30</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data1</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data2</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data3</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data4</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Section</cl:datavalue>
+            <cl:datavalue columnname="value">Group2</cl:datavalue>
+            <cl:datavalue columnname="height">30</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data1</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data2</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Section</cl:datavalue>
+            <cl:datavalue columnname="value">Group3</cl:datavalue>
+            <cl:datavalue columnname="height">30</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Message</cl:datavalue>
+            <cl:datavalue columnname="value">data1</cl:datavalue>
+            <cl:datavalue columnname="height">50</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="reuseId">6-UDC/Advanced/Section</cl:datavalue>
+            <cl:datavalue columnname="value">Group4</cl:datavalue>
+            <cl:datavalue columnname="height">30</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-1dd959fd" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:udc std:sid="ud-control-e2bfa935" id="table" type="udc.DynamicTable">
+      <cl:xylayoutdata std:sid="xyl-data-e45c6acd" height="300px" horizontalAnchor="LEFT" left="54px" top="31px" verticalAnchor="TOP" width="300px"/>
+      <cl:property name="dataSet" type="control" value="test"/>
+    </cl:udc>
+    <cl:grid std:sid="grid-390e7bd8" id="grd1" datasetid="test">
+      <cl:xylayoutdata std:sid="xyl-data-466cd800" height="300px" horizontalAnchor="LEFT" left="369px" top="31px" verticalAnchor="TOP" width="472px"/>
+      <cl:gridcolumn std:sid="g-column-d0edd20e" width="238px"/>
+      <cl:gridcolumn std:sid="g-column-f19c2225"/>
+      <cl:gridcolumn std:sid="g-column-cf9d938c"/>
+      <cl:gridheader std:sid="gh-band-bfb5a4b2">
+        <cl:gridrow std:sid="g-row-e1c3b9a8"/>
+        <cl:gridcell std:sid="gh-cell-d2024e3b" colindex="0" rowindex="0" text="reuseId"/>
+        <cl:gridcell std:sid="gh-cell-75d7c2e3" colindex="1" rowindex="0" text="value"/>
+        <cl:gridcell std:sid="gh-cell-07463cb0" colindex="2" rowindex="0" text="height"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-a2879a78">
+        <cl:gridrow std:sid="g-row-7dfecef6"/>
+        <cl:gridcell std:sid="gd-cell-f110cf72" colindex="0" rowindex="0" columnname="reuseId">
+          <cl:inputbox std:sid="i-box-09f3866f" id="ipb1"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-e70a3520" colindex="1" rowindex="0" columnname="value">
+          <cl:inputbox std:sid="i-box-1252d750" id="ipb2"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-b6a81f16" colindex="2" rowindex="0" columnname="height">
+          <cl:numbereditor std:sid="n-editor-725d1898" id="nbe1"/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-236e029d" value="Save">
+      <cl:listener std:sid="listener-09f04784" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-480284c2" height="20px" horizontalAnchor="LEFT" left="741px" top="341px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-c050d521"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

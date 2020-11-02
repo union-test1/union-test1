@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.I18N.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="60" endIndex="1550" startLine="7" endLine="77"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="I18N" description="i18n 다국어 지원." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="71" endIndex="88" startLine="7" endLine="7"/>
+          <params name="parent" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="80" endIndex="85" startLine="7" endLine="7"/>
+            <inferredType name="cpr.I18N" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="currentLanguage">
+              <value xsi:type="index:VariableSymbol" name="currentLanguage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 현재 locale를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 현재 locale를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="406" endIndex="420"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="getBrowserLanguage">
+              <value xsi:type="index:FunctionVariableSymbol" name="getBrowserLanguage" originalSymbolName="__anonymous2">
+                <region startIndex="526" endIndex="543"/>
+              </value>
+            </symbols>
+            <symbols key="isSupportedLanguage">
+              <value xsi:type="index:FunctionVariableSymbol" name="isSupportedLanguage" originalSymbolName="__anonymous3">
+                <region startIndex="680" endIndex="698"/>
+              </value>
+            </symbols>
+            <symbols key="setLocaleData">
+              <value xsi:type="index:FunctionVariableSymbol" name="setLocaleData" originalSymbolName="__anonymous4">
+                <region startIndex="869" endIndex="881"/>
+              </value>
+            </symbols>
+            <symbols key="mergeLocaleData">
+              <value xsi:type="index:FunctionVariableSymbol" name="mergeLocaleData" originalSymbolName="__anonymous5">
+                <region startIndex="1044" endIndex="1058"/>
+              </value>
+            </symbols>
+            <symbols key="getLocaleData">
+              <value xsi:type="index:FunctionVariableSymbol" name="getLocaleData" originalSymbolName="__anonymous6">
+                <region startIndex="1211" endIndex="1223"/>
+              </value>
+            </symbols>
+            <symbols key="message">
+              <value xsi:type="index:FunctionVariableSymbol" name="message" originalSymbolName="__anonymous7">
+                <region startIndex="1515" endIndex="1521"/>
+              </value>
+            </symbols>
+          </prototype>
+          <symbols key="INSTANCE">
+            <value xsi:type="index:VariableSymbol" name="INSTANCE">
+              <region startIndex="168" endIndex="175"/>
+              <inferredType name="cpr.I18N" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.I18N">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.I18N" originalSymbolName="__anonymous1">
+          <region startIndex="64" endIndex="67"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getBrowserLanguage" description="브라우저가 지원하는 언어를 반환합니다." returnDescription="브라우저가 지원하는 언어." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="547" endIndex="558" startLine="39" endLine="39"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="isSupportedLanguage" description="해당 locale의 지원 여부를 반환합니다." returnDescription="지원 여부." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="702" endIndex="721" startLine="46" endLine="46"/>
+          <params name="langCode" description="locale" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="711" endIndex="718" startLine="46" endLine="46"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="setLocaleData" description="해당 locale의 data를 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="885" endIndex="910" startLine="53" endLine="53"/>
+          <params name="langCode" description="locale" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="894" endIndex="901" startLine="53" endLine="53"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="data" description="locale의 data. { key: message }" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="904" endIndex="907" startLine="53" endLine="53"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="mergeLocaleData" description="특정 언어의 데이터를 머징 합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1062" endIndex="1087" startLine="60" endLine="60"/>
+          <params name="langCode" description="추가할 데이터의 언어 코드." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1071" endIndex="1078" startLine="60" endLine="60"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="data" description="추가할 언어 데이터." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1081" endIndex="1084" startLine="60" endLine="60"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="getLocaleData" description="언어 데이터 노드를 얻습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1227" endIndex="1246" startLine="67" endLine="67"/>
+          <params name="langCode" optional="true" description="데이터를 얻을 언어 코드." symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1236" endIndex="1243" startLine="67" endLine="67"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="MessageDataNode" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="message" description="locale에 맞는 key에 대한 message를 반환합니다. 다국어에서 $ {name} 으로 지정된 문자열을 치환하여 출력합니다." returnDescription="key에 대한 message." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1525" endIndex="1547" startLine="75" endLine="75"/>
+          <params name="key" description="key" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1534" endIndex="1536" startLine="75" endLine="75"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="locals" optional="true" description="string | { [key: string]: string } locale 언어 코드 ko,en,.. 또는 {name:&quot;이름&quot;}" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1539" endIndex="1544" startLine="75" endLine="75"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="71" endIndex="88" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="88" endIndex="88"/>
+          <symbolMap key="parent">
+            <value xsi:type="index:ParameterSymbol" name="parent" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="80" endIndex="85" startLine="7" endLine="7"/>
+              <inferredType name="cpr.I18N" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="547" endIndex="558" startLine="39" endLine="39"/>
+        <childScopes>
+          <region startIndex="558" endIndex="558"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="702" endIndex="721" startLine="46" endLine="46"/>
+        <childScopes>
+          <region startIndex="721" endIndex="721"/>
+          <symbolMap key="langCode">
+            <value xsi:type="index:ParameterSymbol" name="langCode" description="locale" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="711" endIndex="718" startLine="46" endLine="46"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="885" endIndex="910" startLine="53" endLine="53"/>
+        <childScopes>
+          <region startIndex="910" endIndex="910"/>
+          <symbolMap key="langCode">
+            <value xsi:type="index:ParameterSymbol" name="langCode" description="locale" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="894" endIndex="901" startLine="53" endLine="53"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="data">
+            <value xsi:type="index:ParameterSymbol" name="data" description="locale의 data. { key: message }" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="904" endIndex="907" startLine="53" endLine="53"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1062" endIndex="1087" startLine="60" endLine="60"/>
+        <childScopes>
+          <region startIndex="1087" endIndex="1087"/>
+          <symbolMap key="langCode">
+            <value xsi:type="index:ParameterSymbol" name="langCode" description="추가할 데이터의 언어 코드." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1071" endIndex="1078" startLine="60" endLine="60"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="data">
+            <value xsi:type="index:ParameterSymbol" name="data" description="추가할 언어 데이터." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1081" endIndex="1084" startLine="60" endLine="60"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1227" endIndex="1246" startLine="67" endLine="67"/>
+        <childScopes>
+          <region startIndex="1246" endIndex="1246"/>
+          <symbolMap key="langCode">
+            <value xsi:type="index:ParameterSymbol" name="langCode" optional="true" description="데이터를 얻을 언어 코드." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1236" endIndex="1243" startLine="67" endLine="67"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1525" endIndex="1547" startLine="75" endLine="75"/>
+        <childScopes>
+          <region startIndex="1547" endIndex="1547"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="key" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1534" endIndex="1536" startLine="75" endLine="75"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="locals">
+            <value xsi:type="index:ParameterSymbol" name="locals" optional="true" description="string | { [key: string]: string } locale 언어 코드 ko,en,.. 또는 {name:&quot;이름&quot;}" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1539" endIndex="1544" startLine="75" endLine="75"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.I18N">
+      <value xsi:type="index:FunctionSymbol" name="cpr.I18N" description="i18n 다국어 지원." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="64" endIndex="67"/>
+        <params name="parent" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="80" endIndex="85" startLine="7" endLine="7"/>
+          <inferredType name="cpr.I18N" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="currentLanguage">
+            <value xsi:type="index:VariableSymbol" name="currentLanguage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 현재 locale를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 현재 locale를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="406" endIndex="420"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="getBrowserLanguage">
+            <value xsi:type="index:FunctionVariableSymbol" name="getBrowserLanguage" originalSymbolName="__anonymous2">
+              <region startIndex="526" endIndex="543"/>
+            </value>
+          </symbols>
+          <symbols key="isSupportedLanguage">
+            <value xsi:type="index:FunctionVariableSymbol" name="isSupportedLanguage" originalSymbolName="__anonymous3">
+              <region startIndex="680" endIndex="698"/>
+            </value>
+          </symbols>
+          <symbols key="setLocaleData">
+            <value xsi:type="index:FunctionVariableSymbol" name="setLocaleData" originalSymbolName="__anonymous4">
+              <region startIndex="869" endIndex="881"/>
+            </value>
+          </symbols>
+          <symbols key="mergeLocaleData">
+            <value xsi:type="index:FunctionVariableSymbol" name="mergeLocaleData" originalSymbolName="__anonymous5">
+              <region startIndex="1044" endIndex="1058"/>
+            </value>
+          </symbols>
+          <symbols key="getLocaleData">
+            <value xsi:type="index:FunctionVariableSymbol" name="getLocaleData" originalSymbolName="__anonymous6">
+              <region startIndex="1211" endIndex="1223"/>
+            </value>
+          </symbols>
+          <symbols key="message">
+            <value xsi:type="index:FunctionVariableSymbol" name="message" originalSymbolName="__anonymous7">
+              <region startIndex="1515" endIndex="1521"/>
+            </value>
+          </symbols>
+        </prototype>
+        <symbols key="INSTANCE">
+          <value xsi:type="index:VariableSymbol" name="INSTANCE">
+            <region startIndex="168" endIndex="175"/>
+            <inferredType name="cpr.I18N" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

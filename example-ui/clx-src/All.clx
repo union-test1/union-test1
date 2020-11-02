@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5df692fc" version="1.0.0.0">
+  <head std:sid="head-5afdb41a">
+    <title>All</title>
+    <screen std:sid="screen-e3ba8b65" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-3540ebbc" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-12020143" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-4292b62e">
+      <cl:dataset std:sid="d-set-e5a9cab0" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="column1"/>
+          <cl:datacolumn name="column2"/>
+          <cl:datacolumn name="column3"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-fe80b003" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-cdc11b52" handler="onBodyInit" name="init"/>
+    <cl:listener std:sid="listener-f18d12bb" handler="onBodyScreenChange" name="screen-change"/>
+    <cl:listbox std:sid="l-box-9aef69dd" id="lbx1">
+      <cl:listener std:sid="listener-ab9a2f3b" handler="onLbx1Dblclick" name="dblclick"/>
+      <cl:xylayoutdata std:sid="xyl-data-19cde824" bottom="10px" horizontalAnchor="LEFT" left="10px" top="10px" verticalAnchor="BOTH" width="200px"/>
+      <cl:item label="Anchor" value="1-Layout/1-XYLayout"/>
+      <cl:item label="Menu" value="1-Layout/2-Menu"/>
+      <cl:item label="Form Layout" value="1-Layout/3-FormLayout"/>
+      <cl:item label="Responsive Layout" value="1-Layout/4-Responsive"/>
+      <cl:item label="Advanced Layout" value="1-Layout/5-Advanced-example"/>
+      <cl:item label="Publishing" value="2-Publish/1-PublishExample"/>
+      <cl:item label="Live Rendering" value="2-Publish/2-LiveRendering"/>
+      <cl:item label="Mario" value="2-Publish/3-Mario"/>
+      <cl:item label="Basic Animations" value="8-Animations/Basics"/>
+      <cl:item label="Layout Animations" value="8-Animations/Layout"/>
+      <cl:item label="Timing Functions" value="8-Animations/TimingFunctions"/>
+      <cl:item label="Multi Layer Background" value="2-Publish/4-MultiLayerCSS"/>
+      <cl:item label="Bind" value="3-Binds/Binds"/>
+      <cl:item label="Modules" value="4-Modules/Modules"/>
+      <cl:item label="Grid" value="5-Grid/Massive-Grid"/>
+      <cl:item label="UDC" value="6-UDC/UDC"/>
+      <cl:item label="UDC-Others" value="6-UDC/UDC-Others"/>
+      <cl:item label="UDC-Advanced" value="6-UDC/Advanced/DynamicTest"/>
+    </cl:listbox>
+    <cl:mdifolder std:sid="mdifolder-98466f41" id="mdi">
+      <cl:xylayoutdata std:sid="xyl-data-9d4dedc9" bottom="10px" horizontalAnchor="BOTH" left="220px" right="10px" top="10px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-a6d8bfbf">
+        <cl:horizontalData std:sid="h-data-61cad3f0" width="167"/>
+        <cl:button std:sid="button-a8cb4cba" value="모두 닫기">
+          <cl:listener std:sid="listener-0500938e" handler="onButtonClick2" name="click"/>
+          <cl:formdata std:sid="f-data-33284567" col="1" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-3e19e3d8" id="mnuBtn" value="메뉴 닫기">
+          <cl:listener std:sid="listener-378f7630" handler="onButtonClick4" name="click"/>
+          <cl:formdata std:sid="f-data-3552bd5f" col="0" row="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-e6ce69eb" vmargin="3">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+    </cl:mdifolder>
+    <cl:xylayout std:sid="xylayout-d2bc6017" animationduration="0.4" animationtimingfunction="ease-in-out-back"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

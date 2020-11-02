@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.resize.ResizeObserverEntry.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="117" endIndex="641" startLine="6" endLine="23"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ResizeObserverEntry" description="ResizeObserverEntry The Element whose size has changed." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="157" endIndex="174" startLine="6" endLine="6"/>
+          <params name="target" description="of type Element" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="171" startLine="6" endLine="6"/>
+            <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="target">
+              <value xsi:type="index:VariableSymbol" name="target" description="&lt;b>Readonly&lt;/b> The Element whose size has changed.">
+                <region startIndex="379" endIndex="384"/>
+                <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="contentRect">
+              <value xsi:type="index:VariableSymbol" name="contentRect" description="&lt;b>Readonly&lt;/b> Element's content rect when ResizeObserverCallback is invoked.">
+                <region startIndex="590" endIndex="600"/>
+                <inferredType name="cpr.events.resize.ContentRect" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.resize.ResizeObserverEntry">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.resize.ResizeObserverEntry" originalSymbolName="__anonymous1">
+          <region startIndex="135" endIndex="153"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="157" endIndex="174" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="174" endIndex="174"/>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" description="of type Element" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="171" startLine="6" endLine="6"/>
+              <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.resize.ResizeObserverEntry">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.resize.ResizeObserverEntry" description="ResizeObserverEntry The Element whose size has changed." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="135" endIndex="153"/>
+        <params name="target" description="of type Element">
+          <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="171" startLine="6" endLine="6"/>
+          <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="target">
+            <value xsi:type="index:VariableSymbol" name="target" description="&lt;b>Readonly&lt;/b> The Element whose size has changed.">
+              <region startIndex="379" endIndex="384"/>
+              <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="contentRect">
+            <value xsi:type="index:VariableSymbol" name="contentRect" description="&lt;b>Readonly&lt;/b> Element's content rect when ResizeObserverCallback is invoked.">
+              <region startIndex="590" endIndex="600"/>
+              <inferredType name="cpr.events.resize.ContentRect" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

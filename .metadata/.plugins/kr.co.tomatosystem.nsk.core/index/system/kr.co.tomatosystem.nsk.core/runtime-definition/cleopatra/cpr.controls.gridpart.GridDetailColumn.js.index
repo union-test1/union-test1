@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridDetailColumn.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="195" endIndex="3541" startLine="8" endLine="139"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridDetailColumn" description="그리드 셀 프로퍼티 및 스타일들을 편집할 수 있는 래퍼 객체입니다." baseSymbolName="cpr.controls.gridpart.GridColumn" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="236" endIndex="275" startLine="8" endLine="8"/>
+          <params name="context" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="245" endIndex="251" startLine="8" endLine="8"/>
+            <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+          </params>
+          <params name="cellProp" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="254" endIndex="261" startLine="8" endLine="8"/>
+            <inferredType name="cpr.controls.gridpart.GridCellProp" instance="true" documentedType="true"/>
+          </params>
+          <params name="cellIndex" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="264" endIndex="272" startLine="8" endLine="8"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="columnType">
+              <value xsi:type="index:VariableSymbol" name="columnType" description="&lt;b>Readonly&lt;/b> 해당 cell에 설정된 columnType을 반환합니다. (Header, Detail영역의 셀에만 columnType이 존재할 수 있습니다.)">
+                <region startIndex="550" endIndex="559"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnName">
+              <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 cell에 매핑된 DataSet의 컬럼명을 반환합니다. (Detail영역의 셀에만 컬럼명이 존재할 수 있습니다.) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 cell에 매핑된 DataSet의 컬럼명을 설정합니다. (Detail영역의 셀에만 컬럼명이 존재할 수 있습니다.) &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="922" endIndex="931"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="sortColumnName">
+              <value xsi:type="index:VariableSymbol" name="sortColumnName" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 영역의 셀인 경우, 해당 셀 클릭시 정렬할 컬럼명을 설정합니다.">
+                <region startIndex="1116" endIndex="1129"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="filterable">
+              <value xsi:type="index:VariableSymbol" name="filterable" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 영역의 셀인 경우, 해당 셀에서 다중 필터 기능 사용 여부를 설정합니다.">
+                <region startIndex="1320" endIndex="1329"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="sortable">
+              <value xsi:type="index:VariableSymbol" name="sortable" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 영역의 셀인 경우, 해당 셀에서 다중 정렬 기능 사용 여부를 설정합니다.">
+                <region startIndex="1521" endIndex="1528"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="targetColumnName">
+              <value xsi:type="index:VariableSymbol" name="targetColumnName" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 영역의 셀인 경우, 해당 셀의 filterable, sortable 사용시 해당 기능의 타겟 데이터셋 컬럼명을 설정합니다.">
+                <region startIndex="1747" endIndex="1762"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="visible">
+              <value xsi:type="index:VariableSymbol" name="visible" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 셀의 visible을 설정합니다. &lt;br> 설정 정보는 해당 헤더 셀이 위치하는 컬럼 전체에 visible로 처리됩니다.">
+                <region startIndex="1980" endIndex="1986"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="text">
+              <value xsi:type="index:VariableSymbol" name="text" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 해당 Cell에 text를 설정합니다.&lt;br> (header only)">
+                <region startIndex="2173" endIndex="2176"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="expr">
+              <value xsi:type="index:VariableSymbol" name="expr" deprecated="true" deprecationDescription="19.01.21 footer영역에서만 제공되는 기능입니다. 해당 Cell에 expression식을 설정합니다.&lt;br> (footer only)">
+                <region startIndex="2369" endIndex="2372"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="getControlAttr">
+              <value xsi:type="index:FunctionVariableSymbol" name="getControlAttr" originalSymbolName="__anonymous2">
+                <region startIndex="2606" endIndex="2619"/>
+              </value>
+            </symbols>
+            <symbols key="getText">
+              <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous3">
+                <region startIndex="2852" endIndex="2858"/>
+              </value>
+            </symbols>
+            <symbols key="setText">
+              <value xsi:type="index:FunctionVariableSymbol" name="setText" originalSymbolName="__anonymous4">
+                <region startIndex="3056" endIndex="3062"/>
+              </value>
+            </symbols>
+            <symbols key="setExpr">
+              <value xsi:type="index:FunctionVariableSymbol" name="setExpr" originalSymbolName="__anonymous5">
+                <region startIndex="3278" endIndex="3284"/>
+              </value>
+            </symbols>
+            <symbols key="getExpr">
+              <value xsi:type="index:FunctionVariableSymbol" name="getExpr" originalSymbolName="__anonymous6">
+                <region startIndex="3517" endIndex="3523"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.GridDetailColumn">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.GridDetailColumn" originalSymbolName="__anonymous1">
+          <region startIndex="217" endIndex="232"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getControlAttr" description="해당 셀에 컨트롤이 존재하는 경우 특정 행에 있는 컨트롤의 특정 속성 값을 반환합니다." returnDescription="속성값." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2623" endIndex="2652" startLine="105" endLine="105"/>
+          <params name="rowIndex" description="속성 값을 알고자 하는 행 인덱스." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2632" endIndex="2639" startLine="105" endLine="105"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="attrName" description="속성명." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2642" endIndex="2649" startLine="105" endLine="105"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getText" hideFromProposal="true" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 해당 Cell에 설정되어 있는 text를 반환합니다.&lt;br> (header only)" returnDescription="해당 Cell에 설정되어 있는 text." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2862" endIndex="2873" startLine="113" endLine="113"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="setText" hideFromProposal="true" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 해당 Cell에 text를 설정합니다.&lt;br> (header only)" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3066" endIndex="3081" startLine="121" endLine="121"/>
+          <params name="text" description="설정할 text." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3075" endIndex="3078" startLine="121" endLine="121"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="setExpr" hideFromProposal="true" deprecated="true" deprecationDescription="19.01.21 footer영역에서만 제공되는 기능입니다. 해당 Cell에 expression식을 설정합니다.&lt;br> (footer only)" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3288" endIndex="3303" startLine="129" endLine="129"/>
+          <params name="expr" description="설정할 expression식." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3297" endIndex="3300" startLine="129" endLine="129"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="getExpr" hideFromProposal="true" deprecated="true" deprecationDescription="19.01.21 footer영역에서만 제공되는 기능입니다. 해당 Cell에 설정되어 있는 expression식을 반환합니다.&lt;br> (footer only)" returnDescription="해당 Cell에 설정되어 있는 expression식." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3527" endIndex="3538" startLine="137" endLine="137"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="236" endIndex="275" startLine="8" endLine="8"/>
+        <childScopes>
+          <region startIndex="275" endIndex="275"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="245" endIndex="251" startLine="8" endLine="8"/>
+              <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="cellProp">
+            <value xsi:type="index:ParameterSymbol" name="cellProp" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="254" endIndex="261" startLine="8" endLine="8"/>
+              <inferredType name="cpr.controls.gridpart.GridCellProp" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="cellIndex">
+            <value xsi:type="index:ParameterSymbol" name="cellIndex" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="264" endIndex="272" startLine="8" endLine="8"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2623" endIndex="2652" startLine="105" endLine="105"/>
+        <childScopes>
+          <region startIndex="2652" endIndex="2652"/>
+          <symbolMap key="rowIndex">
+            <value xsi:type="index:ParameterSymbol" name="rowIndex" description="속성 값을 알고자 하는 행 인덱스." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2632" endIndex="2639" startLine="105" endLine="105"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="attrName">
+            <value xsi:type="index:ParameterSymbol" name="attrName" description="속성명." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2642" endIndex="2649" startLine="105" endLine="105"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2862" endIndex="2873" startLine="113" endLine="113"/>
+        <childScopes>
+          <region startIndex="2873" endIndex="2873"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3066" endIndex="3081" startLine="121" endLine="121"/>
+        <childScopes>
+          <region startIndex="3081" endIndex="3081"/>
+          <symbolMap key="text">
+            <value xsi:type="index:ParameterSymbol" name="text" description="설정할 text." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3075" endIndex="3078" startLine="121" endLine="121"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3288" endIndex="3303" startLine="129" endLine="129"/>
+        <childScopes>
+          <region startIndex="3303" endIndex="3303"/>
+          <symbolMap key="expr">
+            <value xsi:type="index:ParameterSymbol" name="expr" description="설정할 expression식." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3297" endIndex="3300" startLine="129" endLine="129"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3527" endIndex="3538" startLine="137" endLine="137"/>
+        <childScopes>
+          <region startIndex="3538" endIndex="3538"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.GridDetailColumn">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.GridDetailColumn" description="그리드 셀 프로퍼티 및 스타일들을 편집할 수 있는 래퍼 객체입니다." baseSymbolName="cpr.controls.gridpart.GridColumn" anonymousFunction="true">
+        <region startIndex="217" endIndex="232"/>
+        <params name="context" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="245" endIndex="251" startLine="8" endLine="8"/>
+          <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+        </params>
+        <params name="cellProp" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="254" endIndex="261" startLine="8" endLine="8"/>
+          <inferredType name="cpr.controls.gridpart.GridCellProp" instance="true" documentedType="true"/>
+        </params>
+        <params name="cellIndex" description="" parameterIndex="2">
+          <region xsi:type="index:RegionWithLine" startIndex="264" endIndex="272" startLine="8" endLine="8"/>
+          <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="columnType">
+            <value xsi:type="index:VariableSymbol" name="columnType" description="&lt;b>Readonly&lt;/b> 해당 cell에 설정된 columnType을 반환합니다. (Header, Detail영역의 셀에만 columnType이 존재할 수 있습니다.)">
+              <region startIndex="550" endIndex="559"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnName">
+            <value xsi:type="index:VariableSymbol" name="columnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 cell에 매핑된 DataSet의 컬럼명을 반환합니다. (Detail영역의 셀에만 컬럼명이 존재할 수 있습니다.) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 cell에 매핑된 DataSet의 컬럼명을 설정합니다. (Detail영역의 셀에만 컬럼명이 존재할 수 있습니다.) &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="922" endIndex="931"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="sortColumnName">
+            <value xsi:type="index:VariableSymbol" name="sortColumnName" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 영역의 셀인 경우, 해당 셀 클릭시 정렬할 컬럼명을 설정합니다.">
+              <region startIndex="1116" endIndex="1129"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="filterable">
+            <value xsi:type="index:VariableSymbol" name="filterable" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 영역의 셀인 경우, 해당 셀에서 다중 필터 기능 사용 여부를 설정합니다.">
+              <region startIndex="1320" endIndex="1329"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="sortable">
+            <value xsi:type="index:VariableSymbol" name="sortable" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 영역의 셀인 경우, 해당 셀에서 다중 정렬 기능 사용 여부를 설정합니다.">
+              <region startIndex="1521" endIndex="1528"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="targetColumnName">
+            <value xsi:type="index:VariableSymbol" name="targetColumnName" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 영역의 셀인 경우, 해당 셀의 filterable, sortable 사용시 해당 기능의 타겟 데이터셋 컬럼명을 설정합니다.">
+              <region startIndex="1747" endIndex="1762"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="visible">
+            <value xsi:type="index:VariableSymbol" name="visible" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 헤더 셀의 visible을 설정합니다. &lt;br> 설정 정보는 해당 헤더 셀이 위치하는 컬럼 전체에 visible로 처리됩니다.">
+              <region startIndex="1980" endIndex="1986"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="text">
+            <value xsi:type="index:VariableSymbol" name="text" deprecated="true" deprecationDescription="19.01.21 header영역에서만 제공되는 기능입니다. 해당 Cell에 text를 설정합니다.&lt;br> (header only)">
+              <region startIndex="2173" endIndex="2176"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="expr">
+            <value xsi:type="index:VariableSymbol" name="expr" deprecated="true" deprecationDescription="19.01.21 footer영역에서만 제공되는 기능입니다. 해당 Cell에 expression식을 설정합니다.&lt;br> (footer only)">
+              <region startIndex="2369" endIndex="2372"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="getControlAttr">
+            <value xsi:type="index:FunctionVariableSymbol" name="getControlAttr" originalSymbolName="__anonymous2">
+              <region startIndex="2606" endIndex="2619"/>
+            </value>
+          </symbols>
+          <symbols key="getText">
+            <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous3">
+              <region startIndex="2852" endIndex="2858"/>
+            </value>
+          </symbols>
+          <symbols key="setText">
+            <value xsi:type="index:FunctionVariableSymbol" name="setText" originalSymbolName="__anonymous4">
+              <region startIndex="3056" endIndex="3062"/>
+            </value>
+          </symbols>
+          <symbols key="setExpr">
+            <value xsi:type="index:FunctionVariableSymbol" name="setExpr" originalSymbolName="__anonymous5">
+              <region startIndex="3278" endIndex="3284"/>
+            </value>
+          </symbols>
+          <symbols key="getExpr">
+            <value xsi:type="index:FunctionVariableSymbol" name="getExpr" originalSymbolName="__anonymous6">
+              <region startIndex="3517" endIndex="3523"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

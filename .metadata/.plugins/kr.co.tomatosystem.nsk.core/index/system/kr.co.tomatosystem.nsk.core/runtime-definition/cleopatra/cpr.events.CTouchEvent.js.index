@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CTouchEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="126" endIndex="1447" startLine="7" endLine="59"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CTouchEvent" description="Touch 이벤트 터치 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="151" endIndex="175" startLine="7" endLine="7"/>
+          <params name="type" description="이벤트 유형." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="163" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트 옵션." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="172" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="altKey">
+              <value xsi:type="index:VariableSymbol" name="altKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 왼쪽 또는 오른쪽 Alt 키가 눌려 졌는지 여부를 나타내는 부울 값을 검색합니다.">
+                <region startIndex="381" endIndex="386"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="changedTouches">
+              <value xsi:type="index:VariableSymbol" name="changedTouches" description="&lt;b>Readonly&lt;/b> 터치 포인트가 터치 이벤트 유형에 따라 touchstart, touchmove, touchend의 목록으로 반환합니다.">
+                <region startIndex="557" endIndex="570"/>
+                <inferredType name="TouchList" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/touch.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="ctrlKey">
+              <value xsi:type="index:VariableSymbol" name="ctrlKey" description="&lt;b>Readonly&lt;/b> 컨트롤 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false) 나타내는 부울을 반환합니다.">
+                <region startIndex="734" endIndex="740"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="metaKey">
+              <value xsi:type="index:VariableSymbol" name="metaKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 메타 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false)를 나타내는 Boolean을 반환">
+                <region startIndex="915" endIndex="921"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shiftKey">
+              <value xsi:type="index:VariableSymbol" name="shiftKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생할 때 shift 키가 눌 렸는지 (true) 또는 (false)를 나타냅니다.">
+                <region startIndex="1075" endIndex="1082"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="targetTouches">
+              <value xsi:type="index:VariableSymbol" name="targetTouches" description="&lt;b>Readonly&lt;/b> 터치 상태를 유지하고 터치 대상 이벤트가 현재 대상 요소와 동일한 요소 내에서 발생한 터치 포인트에 대한 리스트를 반환합니다.">
+                <region startIndex="1257" endIndex="1269"/>
+                <inferredType name="TouchList" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/touch.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="touches">
+              <value xsi:type="index:VariableSymbol" name="touches" description="&lt;b>Readonly&lt;/b> 터치 상태를 유지하는 터치 포인트에 대한 모든 터치 포인트 리스트를 반환합니다.">
+                <region startIndex="1420" endIndex="1426"/>
+                <inferredType name="TouchList" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/touch.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CTouchEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CTouchEvent" originalSymbolName="__anonymous1">
+          <region startIndex="137" endIndex="147"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="151" endIndex="175" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="175" endIndex="175"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="163" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트 옵션." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="172" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CTouchEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CTouchEvent" description="Touch 이벤트 터치 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+        <region startIndex="137" endIndex="147"/>
+        <params name="type" description="이벤트 유형.">
+          <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="163" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트 옵션." parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="172" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="altKey">
+            <value xsi:type="index:VariableSymbol" name="altKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 왼쪽 또는 오른쪽 Alt 키가 눌려 졌는지 여부를 나타내는 부울 값을 검색합니다.">
+              <region startIndex="381" endIndex="386"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="changedTouches">
+            <value xsi:type="index:VariableSymbol" name="changedTouches" description="&lt;b>Readonly&lt;/b> 터치 포인트가 터치 이벤트 유형에 따라 touchstart, touchmove, touchend의 목록으로 반환합니다.">
+              <region startIndex="557" endIndex="570"/>
+              <inferredType name="TouchList" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/touch.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ctrlKey">
+            <value xsi:type="index:VariableSymbol" name="ctrlKey" description="&lt;b>Readonly&lt;/b> 컨트롤 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false) 나타내는 부울을 반환합니다.">
+              <region startIndex="734" endIndex="740"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="metaKey">
+            <value xsi:type="index:VariableSymbol" name="metaKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 메타 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false)를 나타내는 Boolean을 반환">
+              <region startIndex="915" endIndex="921"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="shiftKey">
+            <value xsi:type="index:VariableSymbol" name="shiftKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생할 때 shift 키가 눌 렸는지 (true) 또는 (false)를 나타냅니다.">
+              <region startIndex="1075" endIndex="1082"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="targetTouches">
+            <value xsi:type="index:VariableSymbol" name="targetTouches" description="&lt;b>Readonly&lt;/b> 터치 상태를 유지하고 터치 대상 이벤트가 현재 대상 요소와 동일한 요소 내에서 발생한 터치 포인트에 대한 리스트를 반환합니다.">
+              <region startIndex="1257" endIndex="1269"/>
+              <inferredType name="TouchList" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/touch.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="touches">
+            <value xsi:type="index:VariableSymbol" name="touches" description="&lt;b>Readonly&lt;/b> 터치 상태를 유지하는 터치 포인트에 대한 모든 터치 포인트 리스트를 반환합니다.">
+              <region startIndex="1420" endIndex="1426"/>
+              <inferredType name="TouchList" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/touch.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

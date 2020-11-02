@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.GridTargetObject.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="62" endIndex="879" startLine="5" endLine="39"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridTargetObject" description="그리드와 연관된 이벤트가 발생 했을 때, 추가 정보를 제공합니다." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="92" endIndex="103" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="row">
+              <value xsi:type="index:VariableSymbol" name="row" description="이벤트와 연관된 그리드 로우">
+                <region startIndex="267" endIndex="269"/>
+                <inferredType name="cpr.controls.provider.GridRow" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rowIndex">
+              <value xsi:type="index:VariableSymbol" name="rowIndex" description="이벤트와 연관된 그리드 행 인덱스">
+                <region startIndex="397" endIndex="404"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="cellIndex">
+              <value xsi:type="index:VariableSymbol" name="cellIndex" description="이벤트와 연관된 그리드 셀 인덱스">
+                <region startIndex="509" endIndex="517"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnName">
+              <value xsi:type="index:VariableSymbol" name="columnName" description="이벤트와 연관된 그리드 셀에 연결된 데이터셋 컬럼명 (디테일에서만 사용가능)">
+                <region startIndex="646" endIndex="655"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="relativeTargetName">
+              <value xsi:type="index:VariableSymbol" name="relativeTargetName" description="이벤트가 발생한 그리드 내의 타켓명 header, detail, footer, rowgroup 중 하나 입니다.">
+                <region startIndex="844" endIndex="861"/>
+                <inferredType name="AnonymousEnum" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.GridTargetObject.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol description="&quot;detail&quot; | &quot;footer&quot; | &quot;header&quot; | &quot;rowgroup&quot;" baseSymbolName="String" classType="enum">
+                    <region startIndex="757" endIndex="799"/>
+                    <symbols key="detail">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="detail" literal="detail">
+                        <region startIndex="757" endIndex="764"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="footer">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="footer" literal="footer">
+                        <region startIndex="768" endIndex="775"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="header">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="header" literal="header">
+                        <region startIndex="779" endIndex="786"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="rowgroup">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="rowgroup" literal="rowgroup">
+                        <region startIndex="790" endIndex="799"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                  </selfDeclaringTypeSymbol>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.GridTargetObject">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.GridTargetObject" originalSymbolName="__anonymous1">
+          <region startIndex="73" endIndex="88"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="92" endIndex="103" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="103" endIndex="103"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.GridTargetObject">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.GridTargetObject" description="그리드와 연관된 이벤트가 발생 했을 때, 추가 정보를 제공합니다." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="73" endIndex="88"/>
+        <prototype>
+          <symbols key="row">
+            <value xsi:type="index:VariableSymbol" name="row" description="이벤트와 연관된 그리드 로우">
+              <region startIndex="267" endIndex="269"/>
+              <inferredType name="cpr.controls.provider.GridRow" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rowIndex">
+            <value xsi:type="index:VariableSymbol" name="rowIndex" description="이벤트와 연관된 그리드 행 인덱스">
+              <region startIndex="397" endIndex="404"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="cellIndex">
+            <value xsi:type="index:VariableSymbol" name="cellIndex" description="이벤트와 연관된 그리드 셀 인덱스">
+              <region startIndex="509" endIndex="517"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnName">
+            <value xsi:type="index:VariableSymbol" name="columnName" description="이벤트와 연관된 그리드 셀에 연결된 데이터셋 컬럼명 (디테일에서만 사용가능)">
+              <region startIndex="646" endIndex="655"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="relativeTargetName">
+            <value xsi:type="index:VariableSymbol" name="relativeTargetName" description="이벤트가 발생한 그리드 내의 타켓명 header, detail, footer, rowgroup 중 하나 입니다.">
+              <region startIndex="844" endIndex="861"/>
+              <inferredType name="AnonymousEnum" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.GridTargetObject.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol description="&quot;detail&quot; | &quot;footer&quot; | &quot;header&quot; | &quot;rowgroup&quot;" baseSymbolName="String" classType="enum">
+                  <region startIndex="757" endIndex="799"/>
+                  <symbols key="detail">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="detail" literal="detail">
+                      <region startIndex="757" endIndex="764"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="footer">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="footer" literal="footer">
+                      <region startIndex="768" endIndex="775"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="header">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="header" literal="header">
+                      <region startIndex="779" endIndex="786"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="rowgroup">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="rowgroup" literal="rowgroup">
+                      <region startIndex="790" endIndex="799"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                </selfDeclaringTypeSymbol>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

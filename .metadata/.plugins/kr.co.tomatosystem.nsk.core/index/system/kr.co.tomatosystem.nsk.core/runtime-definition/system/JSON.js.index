@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/JSON.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="24" endIndex="222" startLine="4" endLine="24"/>
+      <symbolMap key="JSON">
+        <value xsi:type="index:FunctionSymbol" name="JSON">
+          <region xsi:type="index:RegionWithLine" startIndex="33" endIndex="36" startLine="4" endLine="4"/>
+          <prototype/>
+          <symbols key="stringify">
+            <value xsi:type="index:FunctionVariableSymbol" name="stringify" originalSymbolName="__anonymous1">
+              <region startIndex="103" endIndex="111"/>
+            </value>
+          </symbols>
+          <symbols key="parse">
+            <value xsi:type="index:FunctionVariableSymbol" name="parse" originalSymbolName="__anonymous2">
+              <region startIndex="193" endIndex="197"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="stringify" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="132" startLine="12" endLine="14"/>
+          <params name="obj" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="126" startLine="12" endLine="12"/>
+            <inferredType name="Object" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="parse" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="201" endIndex="219" startLine="20" endLine="22"/>
+          <params name="text" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="210" endIndex="213" startLine="20" endLine="20"/>
+            <inferredType name="String" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes name="JSON" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="40" endIndex="43"/>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="43" startLine="4" endLine="6"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="132" startLine="12" endLine="14"/>
+        <childScopes>
+          <region startIndex="129" endIndex="132"/>
+          <symbolMap key="obj">
+            <value xsi:type="index:ParameterSymbol" name="obj" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="126" startLine="12" endLine="12"/>
+              <inferredType name="Object" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="201" endIndex="219" startLine="20" endLine="22"/>
+        <childScopes>
+          <region startIndex="216" endIndex="219"/>
+          <symbolMap key="text">
+            <value xsi:type="index:ParameterSymbol" name="text" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="210" endIndex="213" startLine="20" endLine="20"/>
+              <inferredType name="String" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="JSON">
+      <value xsi:type="index:FunctionSymbol" name="JSON">
+        <region xsi:type="index:RegionWithLine" startIndex="33" endIndex="36" startLine="4" endLine="4"/>
+        <prototype/>
+        <symbols key="stringify">
+          <value xsi:type="index:FunctionVariableSymbol" name="stringify" originalSymbolName="__anonymous1">
+            <region startIndex="103" endIndex="111"/>
+          </value>
+        </symbols>
+        <symbols key="parse">
+          <value xsi:type="index:FunctionVariableSymbol" name="parse" originalSymbolName="__anonymous2">
+            <region startIndex="193" endIndex="197"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

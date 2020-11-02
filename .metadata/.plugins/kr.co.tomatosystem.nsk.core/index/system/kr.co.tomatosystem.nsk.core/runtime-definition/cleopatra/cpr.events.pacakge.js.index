@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.pacakge.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="195" endIndex="228" startLine="7" endLine="9"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="wrap" description="DOM Event를 Wrapper로 치환한다.&lt;br> TODO 브라우저에 따라 지원하지 않는 Event Object가 있기 때문에 Event.type을 기준으로 저수준 Event Object만 사용하는 방식으로 수정 필요." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="213" endIndex="225" startLine="7" endLine="7"/>
+          <params name="e" description="이벤트." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="222" endIndex="222" startLine="7" endLine="7"/>
+            <inferredType name="Event" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.wrap">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.wrap" originalSymbolName="__anonymous1">
+          <region startIndex="206" endIndex="209"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="213" endIndex="225" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="225" endIndex="225"/>
+          <symbolMap key="e">
+            <value xsi:type="index:ParameterSymbol" name="e" description="이벤트." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="222" endIndex="222" startLine="7" endLine="7"/>
+              <inferredType name="Event" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.wrap">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.wrap" description="DOM Event를 Wrapper로 치환한다.&lt;br> TODO 브라우저에 따라 지원하지 않는 Event Object가 있기 때문에 Event.type을 기준으로 저수준 Event Object만 사용하는 방식으로 수정 필요." returnDescription="" anonymousFunction="true">
+        <region startIndex="206" endIndex="209"/>
+        <params name="e" description="이벤트.">
+          <region xsi:type="index:RegionWithLine" startIndex="222" endIndex="222" startLine="7" endLine="7"/>
+          <inferredType name="Event" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <inferredReturnType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

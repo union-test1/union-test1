@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.protocols.MatrixSubmission.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="35" endIndex="1523" startLine="5" endLine="49"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="MatrixSubmission" baseSymbolName="cpr.protocols.AbstractSubmission" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="68" endIndex="81" startLine="5" endLine="5"/>
+          <params name="id" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="77" endIndex="78" startLine="5" endLine="5"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="setProtocolDataModel">
+              <value xsi:type="index:FunctionVariableSymbol" name="setProtocolDataModel" originalSymbolName="__anonymous2">
+                <region startIndex="272" endIndex="291"/>
+              </value>
+            </symbols>
+            <symbols key="getProtocolDataModel">
+              <value xsi:type="index:FunctionVariableSymbol" name="getProtocolDataModel" originalSymbolName="__anonymous3">
+                <region startIndex="413" endIndex="432"/>
+              </value>
+            </symbols>
+            <symbols key="addRequestData">
+              <value xsi:type="index:FunctionVariableSymbol" name="addRequestData" originalSymbolName="__anonymous4">
+                <region startIndex="629" endIndex="642"/>
+              </value>
+            </symbols>
+            <symbols key="getAllRequestDatas">
+              <value xsi:type="index:FunctionVariableSymbol" name="getAllRequestDatas" originalSymbolName="__anonymous5">
+                <region startIndex="821" endIndex="838"/>
+              </value>
+            </symbols>
+            <symbols key="removeAllRequestDatas">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeAllRequestDatas" originalSymbolName="__anonymous6">
+                <region startIndex="953" endIndex="973"/>
+              </value>
+            </symbols>
+            <symbols key="clearAllInstantParameters">
+              <value xsi:type="index:FunctionVariableSymbol" name="clearAllInstantParameters" originalSymbolName="__anonymous7">
+                <region startIndex="1088" endIndex="1112"/>
+              </value>
+            </symbols>
+            <symbols key="getResponseLinkedHierarchy">
+              <value xsi:type="index:FunctionVariableSymbol" name="getResponseLinkedHierarchy" originalSymbolName="__anonymous8">
+                <region startIndex="1476" endIndex="1501"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.protocols.MatrixSubmission">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.protocols.MatrixSubmission" originalSymbolName="__anonymous1">
+          <region startIndex="49" endIndex="64"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="setProtocolDataModel" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="295" endIndex="315" startLine="11" endLine="11"/>
+          <params name="dataModel" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="304" endIndex="312" startLine="11" endLine="11"/>
+            <inferredType name="cpr.protocols.ProtocolDataModel" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getProtocolDataModel" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="436" endIndex="447" startLine="16" endLine="16"/>
+          <inferredReturnType name="cpr.protocols.ProtocolDataModel" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="addRequestData" description="MatrixSubmission에 사용자 요청 데이터를 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="646" endIndex="667" startLine="23" endLine="23"/>
+          <params name="path" description="설정할 요청 매트릭스 경로" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="655" endIndex="658" startLine="23" endLine="23"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="data" description="설정할 데이터" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="661" endIndex="664" startLine="23" endLine="23"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="getAllRequestDatas" description="MatrixSubmission에 추가된 모든 사용자 요청 데이터를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="842" endIndex="853" startLine="29" endLine="29"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="cpr.protocols.matrix.CustomRequestData" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="removeAllRequestDatas" description="MatrixSubmission에 추가된 사용자 요청 데이터를 모두 삭제합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="977" endIndex="988" startLine="34" endLine="34"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="clearAllInstantParameters" description="MatrixSubmission에 추가된 사용자 요청 데이터를 모두 삭제합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1116" endIndex="1127" startLine="39" endLine="39"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="getResponseLinkedHierarchy" description="MatrixSubmission의 응답모델을 기준으로 넘겨받은 DataCollection이 참조(linked) 관계에 있는 상위 DataCollection 목록을 반환합니다. 넘겨받은 DataCollection이 응답모델에 여러 곳에 존재할 때 처음 만나는 객체를 기준으로 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1505" endIndex="1520" startLine="47" endLine="47"/>
+          <params name="leaf" description="참조관계의 상위 DataCollection 목록을 조회할 DataCollection 객체." symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1514" endIndex="1517" startLine="47" endLine="47"/>
+            <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="68" endIndex="81" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="81" endIndex="81"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="77" endIndex="78" startLine="5" endLine="5"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="295" endIndex="315" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="315" endIndex="315"/>
+          <symbolMap key="dataModel">
+            <value xsi:type="index:ParameterSymbol" name="dataModel" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="304" endIndex="312" startLine="11" endLine="11"/>
+              <inferredType name="cpr.protocols.ProtocolDataModel" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="436" endIndex="447" startLine="16" endLine="16"/>
+        <childScopes>
+          <region startIndex="447" endIndex="447"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="646" endIndex="667" startLine="23" endLine="23"/>
+        <childScopes>
+          <region startIndex="667" endIndex="667"/>
+          <symbolMap key="path">
+            <value xsi:type="index:ParameterSymbol" name="path" description="설정할 요청 매트릭스 경로" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="655" endIndex="658" startLine="23" endLine="23"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="data">
+            <value xsi:type="index:ParameterSymbol" name="data" description="설정할 데이터" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="661" endIndex="664" startLine="23" endLine="23"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="842" endIndex="853" startLine="29" endLine="29"/>
+        <childScopes>
+          <region startIndex="853" endIndex="853"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="977" endIndex="988" startLine="34" endLine="34"/>
+        <childScopes>
+          <region startIndex="988" endIndex="988"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1116" endIndex="1127" startLine="39" endLine="39"/>
+        <childScopes>
+          <region startIndex="1127" endIndex="1127"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1505" endIndex="1520" startLine="47" endLine="47"/>
+        <childScopes>
+          <region startIndex="1520" endIndex="1520"/>
+          <symbolMap key="leaf">
+            <value xsi:type="index:ParameterSymbol" name="leaf" description="참조관계의 상위 DataCollection 목록을 조회할 DataCollection 객체." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1514" endIndex="1517" startLine="47" endLine="47"/>
+              <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.protocols.MatrixSubmission">
+      <value xsi:type="index:FunctionSymbol" name="cpr.protocols.MatrixSubmission" baseSymbolName="cpr.protocols.AbstractSubmission" anonymousFunction="true">
+        <region startIndex="49" endIndex="64"/>
+        <params name="id" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="77" endIndex="78" startLine="5" endLine="5"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="setProtocolDataModel">
+            <value xsi:type="index:FunctionVariableSymbol" name="setProtocolDataModel" originalSymbolName="__anonymous2">
+              <region startIndex="272" endIndex="291"/>
+            </value>
+          </symbols>
+          <symbols key="getProtocolDataModel">
+            <value xsi:type="index:FunctionVariableSymbol" name="getProtocolDataModel" originalSymbolName="__anonymous3">
+              <region startIndex="413" endIndex="432"/>
+            </value>
+          </symbols>
+          <symbols key="addRequestData">
+            <value xsi:type="index:FunctionVariableSymbol" name="addRequestData" originalSymbolName="__anonymous4">
+              <region startIndex="629" endIndex="642"/>
+            </value>
+          </symbols>
+          <symbols key="getAllRequestDatas">
+            <value xsi:type="index:FunctionVariableSymbol" name="getAllRequestDatas" originalSymbolName="__anonymous5">
+              <region startIndex="821" endIndex="838"/>
+            </value>
+          </symbols>
+          <symbols key="removeAllRequestDatas">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeAllRequestDatas" originalSymbolName="__anonymous6">
+              <region startIndex="953" endIndex="973"/>
+            </value>
+          </symbols>
+          <symbols key="clearAllInstantParameters">
+            <value xsi:type="index:FunctionVariableSymbol" name="clearAllInstantParameters" originalSymbolName="__anonymous7">
+              <region startIndex="1088" endIndex="1112"/>
+            </value>
+          </symbols>
+          <symbols key="getResponseLinkedHierarchy">
+            <value xsi:type="index:FunctionVariableSymbol" name="getResponseLinkedHierarchy" originalSymbolName="__anonymous8">
+              <region startIndex="1476" endIndex="1501"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

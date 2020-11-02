@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>edu-web</display-name>
+	
+<!-- eXbuilder6 서버 플러그인의 초기 설정을 처리하는 Listener -->
+<listener>
+	<listener-class>com.cleopatra.XBInitializer</listener-class>
+</listener>
+
+<!-- 스프링프레임워크 설정-->
+<servlet>
+	<servlet-name>dispatcher</servlet-name>
+	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	<init-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:/config/context.xml</param-value>
+	</init-param>
+	<load-on-startup>1</load-on-startup>
+</servlet>
+
+<!-- *.clx 패턴을 처리할 수 있도록 url-pattern을 추가 -->
+<servlet-mapping>
+	<servlet-name>dispatcher</servlet-name>
+	<url-pattern>*.clx</url-pattern>
+	<url-pattern>*.do</url-pattern>
+	<url-pattern>*.csv</url-pattern>
+	<url-pattern>*.xls</url-pattern>
+	<url-pattern>*.xlsx</url-pattern>
+</servlet-mapping>
+
+<welcome-file-list>
+	<welcome-file>index.do</welcome-file>
+</welcome-file-list>
+
+</web-app>

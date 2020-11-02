@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.ExportOption.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="40" endIndex="1299" startLine="5" endLine="61"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ExportOption" description="그리드 엑셀 익스포트 옵션" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="65" endIndex="76" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="exceptStyle">
+              <value xsi:type="index:VariableSymbol" name="exceptStyle" optional="true" description="셀 스타일을 Export시 제외할 지 여부. default true.">
+                <region startIndex="244" endIndex="254"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="applyFormat">
+              <value xsi:type="index:VariableSymbol" name="applyFormat" optional="true" description="Export시 포맷을 적용시킬 지 여부. default true. &lt;br> number 데이터 타입을 익스포트하기 위해서는 해당 옵션을 false로 주어야 합니다.">
+                <region startIndex="445" endIndex="455"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="useFormat">
+              <value xsi:type="index:VariableSymbol" name="useFormat" optional="true" description="엑셀로 익스포트시 엑셀의 format 기능을 사용할지 여부. default true.">
+                <region startIndex="599" endIndex="607"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="excludeCols">
+              <value xsi:type="index:VariableSymbol" name="excludeCols" optional="true" description="Export시 제외시킬 header cellIndex 배열.">
+                <region startIndex="738" endIndex="748"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="rows">
+              <value xsi:type="index:VariableSymbol" name="rows" optional="true" description="Export시킬 특정 row index 배열.">
+                <region startIndex="869" endIndex="872"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="freezeHeader">
+              <value xsi:type="index:VariableSymbol" name="freezeHeader" optional="true" description="엑셀 Export 시 헤더 부분을 틀고정할지 여부를 설정. default false.">
+                <region startIndex="1014" endIndex="1025"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rowDataHandler">
+              <value xsi:type="index:VariableSymbol" name="rowDataHandler" optional="true" description="엑셀 Export 시 행별 스타일 또는 데이터를 변경할 수 있는 핸들러.">
+                <region startIndex="1266" endIndex="1279"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="Number" variableName="datas" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="Number" variableName="rowIndex" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="Void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.ExportOption">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.ExportOption" originalSymbolName="__anonymous1">
+          <region startIndex="50" endIndex="61"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="65" endIndex="76" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="76" endIndex="76"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.utils.ExportOption">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.ExportOption" description="그리드 엑셀 익스포트 옵션" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="50" endIndex="61"/>
+        <prototype>
+          <symbols key="exceptStyle">
+            <value xsi:type="index:VariableSymbol" name="exceptStyle" optional="true" description="셀 스타일을 Export시 제외할 지 여부. default true.">
+              <region startIndex="244" endIndex="254"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="applyFormat">
+            <value xsi:type="index:VariableSymbol" name="applyFormat" optional="true" description="Export시 포맷을 적용시킬 지 여부. default true. &lt;br> number 데이터 타입을 익스포트하기 위해서는 해당 옵션을 false로 주어야 합니다.">
+              <region startIndex="445" endIndex="455"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="useFormat">
+            <value xsi:type="index:VariableSymbol" name="useFormat" optional="true" description="엑셀로 익스포트시 엑셀의 format 기능을 사용할지 여부. default true.">
+              <region startIndex="599" endIndex="607"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="excludeCols">
+            <value xsi:type="index:VariableSymbol" name="excludeCols" optional="true" description="Export시 제외시킬 header cellIndex 배열.">
+              <region startIndex="738" endIndex="748"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="rows">
+            <value xsi:type="index:VariableSymbol" name="rows" optional="true" description="Export시킬 특정 row index 배열.">
+              <region startIndex="869" endIndex="872"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="freezeHeader">
+            <value xsi:type="index:VariableSymbol" name="freezeHeader" optional="true" description="엑셀 Export 시 헤더 부분을 틀고정할지 여부를 설정. default false.">
+              <region startIndex="1014" endIndex="1025"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rowDataHandler">
+            <value xsi:type="index:VariableSymbol" name="rowDataHandler" optional="true" description="엑셀 Export 시 행별 스타일 또는 데이터를 변경할 수 있는 핸들러.">
+              <region startIndex="1266" endIndex="1279"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Number" variableName="datas" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Number" variableName="rowIndex" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

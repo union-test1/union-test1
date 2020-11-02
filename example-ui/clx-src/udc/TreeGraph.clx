@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d304c414" version="1.0.0.0">
+  <head std:sid="head-8af94311">
+    <title>TreeGraph</title>
+    <screen std:sid="screen-71e261ec" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-9171a2ca" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-131fa3f8" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <link std:sid="link-3af71c6c" href="TreeGraph.less" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-3ecb0383">
+      <cl:dataset std:sid="d-set-e2f7b3e0" id="dataSet">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[토마토 시스템]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[tomato_system]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="dataSet" type="control"/>
+      <cl:property default="label" name="labelColumn" type="string"/>
+      <cl:property default="value" name="valueColumn" type="string"/>
+      <cl:property default="parent" name="parentColumn" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-c75fb06c" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-a09a7519" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:uicontrolshell std:sid="uic-shell-9f0d5333" id="shell">
+      <cl:listener std:sid="listener-a6b3220b" handler="onShellLoad" name="load"/>
+      <cl:xylayoutdata std:sid="xyl-data-150629e9" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:uicontrolshell>
+    <cl:output std:sid="output-e3a73126" style="border-right-style:solid; color:red; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-color:gray; border-right-color:gray; border-left-width:1px; border-top-style:solid; background-color:white; border-left-style:solid; border-bottom-width:1px; border-top-color:gray; border-bottom-style:solid; background-image:none; text-align:center;" removeOnBuild="true" value="트리 그래프">
+      <cl:xylayoutdata std:sid="xyl-data-361d1db8" height="20px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="100px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-5a19d15d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

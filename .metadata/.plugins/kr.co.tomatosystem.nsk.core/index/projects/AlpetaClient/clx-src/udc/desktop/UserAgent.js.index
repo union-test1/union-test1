@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/desktop/UserAgent.js" fileModificationTimestamp="6409851" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.desktop.UserAgent" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="183" endIndex="5886" startLine="7" endLine="211"/>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/desktop/UserAgent 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="dataManager">
+        <value xsi:type="index:VariableSymbol" name="dataManager">
+          <region startIndex="187" endIndex="197"/>
+          <inferredType name="DataManager" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/DataManager.module.js?type=HOT_INDEX" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onUserAgent_imgDashboardClick">
+        <value xsi:type="index:FunctionSymbol" name="onUserAgent_imgDashboardClick">
+          <region xsi:type="index:RegionWithLine" startIndex="2385" endIndex="2413" startLine="86" endLine="86"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@symbolMap.4/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2444" endIndex="2444" startLine="86" endLine="86"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </params>
+          <inferredReturnType kind="UNKNOWN"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getText" description="UDC 컨트롤이 그리드의 뷰 모드에서 표시할 텍스트를 반환합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="317" endIndex="398" startLine="12" endLine="15"/>
+          <inferredReturnType name="String" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="__anonymous2" hideFromProposal="true" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4970" endIndex="5742" startLine="177" endLine="199"/>
+          <prototype>
+            <symbols key="start">
+              <value xsi:type="index:FunctionVariableSymbol" name="start" originalSymbolName="__anonymous2">
+                <region startIndex="5052" endIndex="5056"/>
+              </value>
+            </symbols>
+            <symbols key="getObj">
+              <value xsi:type="index:FunctionVariableSymbol" name="getObj" originalSymbolName="__anonymous1">
+                <region startIndex="4974" endIndex="4979"/>
+              </value>
+            </symbols>
+            <symbols key="end">
+              <value xsi:type="index:FunctionVariableSymbol" name="end" originalSymbolName="__anonymous3">
+                <region startIndex="5397" endIndex="5399"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="animateStart" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5772" endIndex="5814" startLine="202" endLine="204"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onBodyLoad">
+        <value xsi:type="index:FunctionSymbol" name="onBodyLoad">
+          <region xsi:type="index:RegionWithLine" startIndex="413" endIndex="422" startLine="17" endLine="17"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="448" endIndex="448" startLine="17" endLine="17"/>
+            <inferredType name="cpr.events.CEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="animateTrigger">
+        <value xsi:type="index:VariableSymbol" name="animateTrigger">
+          <region startIndex="4953" endIndex="4966"/>
+          <inferredType name="__anonymous2" decalringInputURI="platform:/resource/AlpetaClient/clx-src/udc/desktop/UserAgent.js" declaringSymbolReference="//@hotIndex/@rootScope/@symbolMap.4/@value" instance="true">
+            <selfDeclaringTypeSymbol name="__anonymous2" hideFromProposal="true" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="4970" endIndex="5742" startLine="177" endLine="199"/>
+              <prototype>
+                <symbols key="getObj">
+                  <value xsi:type="index:FunctionVariableSymbol" name="getObj" originalSymbolName="__anonymous1">
+                    <region startIndex="4974" endIndex="4979"/>
+                  </value>
+                </symbols>
+                <symbols key="start">
+                  <value xsi:type="index:FunctionVariableSymbol" name="start" originalSymbolName="__anonymous2">
+                    <region startIndex="5052" endIndex="5056"/>
+                  </value>
+                </symbols>
+                <symbols key="end">
+                  <value xsi:type="index:FunctionVariableSymbol" name="end" originalSymbolName="__anonymous3">
+                    <region startIndex="5397" endIndex="5399"/>
+                  </value>
+                </symbols>
+              </prototype>
+            </selfDeclaringTypeSymbol>
+          </inferredType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="animateEnd" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5842" endIndex="5882" startLine="207" endLine="209"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onSms_logoutSubmitDone">
+        <value xsi:type="index:FunctionSymbol" name="onSms_logoutSubmitDone">
+          <region xsi:type="index:RegionWithLine" startIndex="4025" endIndex="4046" startLine="141" endLine="141"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4082" endIndex="4082" startLine="141" endLine="141"/>
+            <inferredType name="cpr.events.CSubmissionEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onUserAgent_imgAccountClick">
+        <value xsi:type="index:FunctionSymbol" name="onUserAgent_imgAccountClick">
+          <region xsi:type="index:RegionWithLine" startIndex="1044" endIndex="1070" startLine="39" endLine="39"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1102" endIndex="1102" startLine="39" endLine="39"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="logout">
+        <value xsi:type="index:FunctionSymbol" name="logout">
+          <region xsi:type="index:RegionWithLine" startIndex="2036" endIndex="2041" startLine="70" endLine="70"/>
+          <params name="callback" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2043" endIndex="2050" startLine="70" endLine="70"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="account_embDashboard">
+        <value xsi:type="index:VariableSymbol" name="account_embDashboard">
+          <region startIndex="1012" endIndex="1031"/>
+          <inferredType name="cpr.controls.EmbeddedApp" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.EmbeddedApp.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.desktop.UserAgent">
+        <value xsi:type="index:FunctionSymbol" name="udc.desktop.UserAgent" labelForOutline="UserAgent" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="getText">
+              <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+                <region startIndex="307" endIndex="313"/>
+              </value>
+            </symbols>
+            <symbols key="animateStart">
+              <value xsi:type="index:FunctionVariableSymbol" name="animateStart" originalSymbolName="__anonymous3">
+                <region startIndex="5757" endIndex="5768"/>
+              </value>
+            </symbols>
+            <symbols key="animateEnd">
+              <value xsi:type="index:FunctionVariableSymbol" name="animateEnd" originalSymbolName="__anonymous4">
+                <region startIndex="5829" endIndex="5838"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.desktop.UserAgent" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onUserAgent_optTaskManagerClick">
+        <value xsi:type="index:FunctionSymbol" name="onUserAgent_optTaskManagerClick">
+          <region xsi:type="index:RegionWithLine" startIndex="4605" endIndex="4635" startLine="162" endLine="162"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4666" endIndex="4666" startLine="162" endLine="162"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="317" endIndex="398" startLine="12" endLine="15"/>
+        <childScopes>
+          <region startIndex="329" endIndex="398"/>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onBodyLoad" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region startIndex="451" endIndex="993"/>
+        <symbolMap key="LicenseLevel">
+          <value xsi:type="index:VariableSymbol" name="LicenseLevel">
+            <region startIndex="492" endIndex="503"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="448" endIndex="448" startLine="17" endLine="17"/>
+            <inferredType name="cpr.events.CEvent" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="404" endIndex="993" startLine="17" endLine="35"/>
+      </childScopes>
+      <childScopes name="onUserAgent_imgAccountClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region startIndex="1106" endIndex="2022"/>
+        <symbolMap key="root">
+          <value xsi:type="index:VariableSymbol" name="root">
+            <region startIndex="1145" endIndex="1148"/>
+            <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1472" endIndex="1547" startLine="48" endLine="52"/>
+            <params name="app" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="1481" endIndex="1483" startLine="48" endLine="48"/>
+              <inferredType name="cpr.core.App" variableName="loadedApp" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.10/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="1102" endIndex="1102" startLine="39" endLine="39"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous2">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous2" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="1647" endIndex="1876" startLine="55" endLine="62"/>
+            <prototype>
+              <symbols key="height">
+                <value xsi:type="index:VariableSymbol" name="height">
+                  <region startIndex="1725" endIndex="1730"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+              <symbols key="right">
+                <value xsi:type="index:VariableSymbol" name="right">
+                  <region startIndex="1834" endIndex="1838"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+              <symbols key="top">
+                <value xsi:type="index:VariableSymbol" name="top">
+                  <region startIndex="1673" endIndex="1675"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+              <symbols key="position">
+                <value xsi:type="index:VariableSymbol" name="position">
+                  <region startIndex="1852" endIndex="1859"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+              <symbols key="width">
+                <value xsi:type="index:VariableSymbol" name="width">
+                  <region startIndex="1814" endIndex="1818"/>
+                  <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+                </value>
+              </symbols>
+            </prototype>
+          </value>
+        </symbolMap>
+        <symbolMap key="rootRect">
+          <value xsi:type="index:VariableSymbol" name="rootRect">
+            <region startIndex="1184" endIndex="1191"/>
+            <inferredType name="cpr.geometry.Rectangle" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.geometry.Rectangle.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="buttonRect">
+          <value xsi:type="index:VariableSymbol" name="buttonRect">
+            <region startIndex="1558" endIndex="1567"/>
+            <inferredType kind="UNKNOWN"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="Left">
+          <value xsi:type="index:VariableSymbol" name="Left">
+            <region startIndex="1223" endIndex="1226"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=HOT_INDEX" instance="true"/>
+          </value>
+        </symbolMap>
+        <childScopes name="onUserAgent_imgAccountClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.2/@symbolMap.1/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="1472" endIndex="1547" startLine="48" endLine="52"/>
+          <childScopes name="onUserAgent_imgAccountClick">
+            <region startIndex="1487" endIndex="1547"/>
+            <symbolMap key="app">
+              <value xsi:type="index:ParameterSymbol" name="app" symbolInFunction="//@hotIndex/@rootScope/@childScopes.2/@symbolMap.1/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="1481" endIndex="1483" startLine="48" endLine="48"/>
+                <inferredType name="cpr.core.App" variableName="loadedApp" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <fullRegion xsi:type="index:RegionWithLine" startIndex="1035" endIndex="2022" startLine="39" endLine="68"/>
+          </childScopes>
+        </childScopes>
+        <childScopes name="onUserAgent_imgAccountClick">
+          <region xsi:type="index:RegionWithLine" startIndex="1647" endIndex="1876" startLine="55" endLine="62"/>
+          <symbolMap key="__anonymous2"/>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1035" endIndex="2022" startLine="39" endLine="68"/>
+      </childScopes>
+      <childScopes name="logout" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region startIndex="2054" endIndex="2337"/>
+        <symbolMap key="callback">
+          <value xsi:type="index:ParameterSymbol" name="callback" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="2043" endIndex="2050" startLine="70" endLine="70"/>
+            <inferredType kind="UNKNOWN"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="2120" endIndex="2332" startLine="71" endLine="81"/>
+            <params name="dialog" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2152" endIndex="2157" startLine="71" endLine="71"/>
+              <inferredType name="cpr.controls.Dialog" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <childScopes name="logout" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.3/@symbolMap.1/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="2120" endIndex="2332" startLine="71" endLine="81"/>
+          <childScopes name="logout">
+            <region startIndex="2161" endIndex="2332"/>
+            <symbolMap key="__anonymous1">
+              <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+                <region xsi:type="index:RegionWithLine" startIndex="2202" endIndex="2326" startLine="72" endLine="80"/>
+                <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+                  <region xsi:type="index:RegionWithLine" startIndex="2211" endIndex="2211" startLine="72" endLine="72"/>
+                  <inferredType name="cpr.events.CUIEvent" instance="true"/>
+                </params>
+              </value>
+            </symbolMap>
+            <symbolMap key="dialog">
+              <value xsi:type="index:ParameterSymbol" name="dialog" symbolInFunction="//@hotIndex/@rootScope/@childScopes.3/@symbolMap.1/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="2152" endIndex="2157" startLine="71" endLine="71"/>
+                <inferredType name="cpr.controls.Dialog" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Dialog.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <childScopes name="logout" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="2202" endIndex="2326" startLine="72" endLine="80"/>
+              <childScopes name="logout">
+                <region startIndex="2215" endIndex="2326"/>
+                <symbolMap key="__anonymous1">
+                  <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+                    <region xsi:type="index:RegionWithLine" startIndex="2262" endIndex="2298" startLine="74" endLine="76"/>
+                  </value>
+                </symbolMap>
+                <symbolMap key="e">
+                  <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@childScopes.0/@symbolMap.0/@value/@params.0">
+                    <region xsi:type="index:RegionWithLine" startIndex="2211" endIndex="2211" startLine="72" endLine="72"/>
+                    <inferredType name="cpr.events.CUIEvent" instance="true"/>
+                  </value>
+                </symbolMap>
+                <childScopes name="logout" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@childScopes.0/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+                  <region xsi:type="index:RegionWithLine" startIndex="2262" endIndex="2298" startLine="74" endLine="76"/>
+                  <childScopes name="logout">
+                    <region startIndex="2274" endIndex="2298"/>
+                    <fullRegion xsi:type="index:RegionWithLine" startIndex="2027" endIndex="2337" startLine="70" endLine="82"/>
+                  </childScopes>
+                </childScopes>
+                <fullRegion xsi:type="index:RegionWithLine" startIndex="2027" endIndex="2337" startLine="70" endLine="82"/>
+              </childScopes>
+            </childScopes>
+            <fullRegion xsi:type="index:RegionWithLine" startIndex="2027" endIndex="2337" startLine="70" endLine="82"/>
+          </childScopes>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="2027" endIndex="2337" startLine="70" endLine="82"/>
+      </childScopes>
+      <childScopes name="onUserAgent_imgDashboardClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region startIndex="2447" endIndex="3941"/>
+        <symbolMap key="embDashboard">
+          <value xsi:type="index:VariableSymbol" name="embDashboard">
+            <region startIndex="2915" endIndex="2926"/>
+            <inferredType name="cpr.controls.EmbeddedApp" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.EmbeddedApp.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="LicenseLevel">
+          <value xsi:type="index:VariableSymbol" name="LicenseLevel">
+            <region startIndex="2521" endIndex="2532"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="root">
+          <value xsi:type="index:VariableSymbol" name="root">
+            <region startIndex="2761" endIndex="2764"/>
+            <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="userAgent_imgDashboard">
+          <value xsi:type="index:VariableSymbol" name="userAgent_imgDashboard">
+            <region startIndex="2685" endIndex="2706"/>
+            <inferredType name="cpr.controls.Image" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Image.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="2444" endIndex="2444" startLine="86" endLine="86"/>
+            <inferredType name="cpr.events.CMouseEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CMouseEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="programManager">
+          <value xsi:type="index:VariableSymbol" name="programManager">
+            <region startIndex="2845" endIndex="2858"/>
+            <inferredType name="lib.ProgramManager" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/ProgramManager.module.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="2376" endIndex="3941" startLine="86" endLine="135"/>
+      </childScopes>
+      <childScopes name="onSms_logoutSubmitDone" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region startIndex="4085" endIndex="4523"/>
+        <symbolMap key="sms_logout">
+          <value xsi:type="index:VariableSymbol" name="sms_logout">
+            <region startIndex="4140" endIndex="4149"/>
+            <inferredType name="cpr.protocols.Submission" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="4195" endIndex="4518" startLine="146" endLine="155"/>
+            <params name="newapp" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+              <region xsi:type="index:RegionWithLine" startIndex="4204" endIndex="4209" startLine="146" endLine="146"/>
+              <inferredType name="cpr.core.App" variableName="loadedApp" instance="true" documentedType="true"/>
+            </params>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="4082" endIndex="4082" startLine="141" endLine="141"/>
+            <inferredType name="cpr.events.CSubmissionEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSubmissionEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <childScopes name="onSms_logoutSubmitDone" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.5/@symbolMap.1/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="4195" endIndex="4518" startLine="146" endLine="155"/>
+          <childScopes name="onSms_logoutSubmitDone">
+            <region startIndex="4213" endIndex="4518"/>
+            <symbolMap key="newapp">
+              <value xsi:type="index:ParameterSymbol" name="newapp" symbolInFunction="//@hotIndex/@rootScope/@childScopes.5/@symbolMap.1/@value/@params.0">
+                <region xsi:type="index:RegionWithLine" startIndex="4204" endIndex="4209" startLine="146" endLine="146"/>
+                <inferredType name="cpr.core.App" variableName="loadedApp" instance="true" documentedType="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="dataManager">
+              <value xsi:type="index:VariableSymbol" name="dataManager">
+                <region startIndex="4321" endIndex="4331"/>
+                <inferredType name="DataManager" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/DataManager.module.js?type=HOT_INDEX" instance="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="programManager">
+              <value xsi:type="index:VariableSymbol" name="programManager">
+                <region startIndex="4221" endIndex="4234"/>
+                <inferredType name="lib.ProgramManager" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/ProgramManager.module.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbolMap>
+            <fullRegion xsi:type="index:RegionWithLine" startIndex="3946" endIndex="4523" startLine="141" endLine="156"/>
+          </childScopes>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="3946" endIndex="4523" startLine="141" endLine="156"/>
+      </childScopes>
+      <childScopes name="onUserAgent_optTaskManagerClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.15/@value">
+        <region startIndex="4669" endIndex="4942"/>
+        <symbolMap key="userAgent_optTaskManager">
+          <value xsi:type="index:VariableSymbol" name="userAgent_optTaskManager">
+            <region startIndex="4718" endIndex="4741"/>
+            <inferredType name="cpr.controls.Image" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="4819" endIndex="4877" startLine="167" endLine="171"/>
+            <prototype>
+              <symbols key="content">
+                <value xsi:type="index:VariableSymbol" name="content">
+                  <region startIndex="4824" endIndex="4830"/>
+                  <inferredType name="__anonymous1" decalringInputURI="platform:/resource/AlpetaClient/clx-src/udc/desktop/UserAgent.js" declaringSymbolReference="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value" instance="true">
+                    <selfDeclaringTypeSymbol name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+                      <region xsi:type="index:RegionWithLine" startIndex="4833" endIndex="4873" startLine="168" endLine="170"/>
+                      <prototype>
+                        <symbols key="Target">
+                          <value xsi:type="index:VariableSymbol" name="Target">
+                            <region startIndex="4839" endIndex="4846"/>
+                            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </inferredType>
+                </value>
+              </symbols>
+            </prototype>
+          </value>
+        </symbolMap>
+        <symbolMap key="selectionEvent">
+          <value xsi:type="index:VariableSymbol" name="selectionEvent">
+            <region startIndex="4762" endIndex="4775"/>
+            <inferredType name="cpr.events.CUIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CUIEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.15/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="4666" endIndex="4666" startLine="162" endLine="162"/>
+            <inferredType name="cpr.events.CMouseEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CMouseEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <childScopes name="selectionEvent">
+          <region xsi:type="index:RegionWithLine" startIndex="4819" endIndex="4877" startLine="167" endLine="171"/>
+          <symbolMap key="__anonymous1">
+            <value xsi:type="index:FunctionSymbol" name="__anonymous1" hideFromProposal="true" anonymousFunction="true">
+              <region xsi:type="index:RegionWithLine" startIndex="4833" endIndex="4873" startLine="168" endLine="170"/>
+              <prototype>
+                <symbols key="Target">
+                  <value xsi:type="index:VariableSymbol" name="Target">
+                    <region startIndex="4839" endIndex="4846"/>
+                    <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+                  </value>
+                </symbols>
+              </prototype>
+            </value>
+          </symbolMap>
+          <childScopes name="selectionEvent">
+            <region xsi:type="index:RegionWithLine" startIndex="4833" endIndex="4873" startLine="168" endLine="170"/>
+            <symbolMap key="__anonymous1"/>
+          </childScopes>
+        </childScopes>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="4528" endIndex="4942" startLine="162" endLine="174"/>
+      </childScopes>
+      <childScopes name="animateTrigger">
+        <region xsi:type="index:RegionWithLine" startIndex="4970" endIndex="5742" startLine="177" endLine="199"/>
+        <symbolMap key="__anonymous1">
+          <value xsi:type="index:FunctionSymbol" name="getObj" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="4983" endIndex="5047" startLine="178" endLine="180"/>
+            <inferredReturnType name="cpr.controls.Output" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Output.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous2">
+          <value xsi:type="index:FunctionSymbol" name="start" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="5060" endIndex="5392" startLine="181" endLine="189"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="__anonymous3">
+          <value xsi:type="index:FunctionSymbol" name="end" anonymousFunction="true">
+            <region xsi:type="index:RegionWithLine" startIndex="5403" endIndex="5739" startLine="190" endLine="198"/>
+          </value>
+        </symbolMap>
+        <childScopes name="animateTrigger" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.7/@symbolMap.0/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="4983" endIndex="5047" startLine="178" endLine="180"/>
+          <childScopes name="animateTrigger">
+            <region startIndex="4994" endIndex="5047"/>
+          </childScopes>
+        </childScopes>
+        <childScopes name="animateTrigger" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.7/@symbolMap.1/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="5060" endIndex="5392" startLine="181" endLine="189"/>
+          <childScopes name="animateTrigger">
+            <region startIndex="5071" endIndex="5392"/>
+            <symbolMap key="optTaskManager">
+              <value xsi:type="index:VariableSymbol" name="optTaskManager">
+                <region startIndex="5079" endIndex="5092"/>
+                <inferredType name="cpr.controls.Output" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Output.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="classArr">
+              <value xsi:type="index:VariableSymbol" name="classArr">
+                <region startIndex="5118" endIndex="5125"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="String" sematicsQualifier="css-class" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+        <childScopes name="animateTrigger" relatedFunctionSymbol="//@hotIndex/@rootScope/@childScopes.7/@symbolMap.2/@value">
+          <region xsi:type="index:RegionWithLine" startIndex="5403" endIndex="5739" startLine="190" endLine="198"/>
+          <childScopes name="animateTrigger">
+            <region startIndex="5414" endIndex="5739"/>
+            <symbolMap key="optTaskManager">
+              <value xsi:type="index:VariableSymbol" name="optTaskManager">
+                <region startIndex="5422" endIndex="5435"/>
+                <inferredType name="cpr.controls.Output" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.Output.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbolMap>
+            <symbolMap key="classArr">
+              <value xsi:type="index:VariableSymbol" name="classArr">
+                <region startIndex="5461" endIndex="5468"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="String" sematicsQualifier="css-class" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbolMap>
+          </childScopes>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5772" endIndex="5814" startLine="202" endLine="204"/>
+        <childScopes>
+          <region startIndex="5783" endIndex="5814"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5842" endIndex="5882" startLine="207" endLine="209"/>
+        <childScopes>
+          <region startIndex="5853" endIndex="5882"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.desktop.UserAgent">
+      <value xsi:type="index:FunctionSymbol" name="udc.desktop.UserAgent" labelForOutline="UserAgent" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="animateEnd">
+            <value xsi:type="index:FunctionVariableSymbol" name="animateEnd" originalSymbolName="__anonymous4">
+              <region startIndex="5829" endIndex="5838"/>
+            </value>
+          </symbols>
+          <symbols key="getText">
+            <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+              <region startIndex="307" endIndex="313"/>
+            </value>
+          </symbols>
+          <symbols key="animateStart">
+            <value xsi:type="index:FunctionVariableSymbol" name="animateStart" originalSymbolName="__anonymous3">
+              <region startIndex="5757" endIndex="5768"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

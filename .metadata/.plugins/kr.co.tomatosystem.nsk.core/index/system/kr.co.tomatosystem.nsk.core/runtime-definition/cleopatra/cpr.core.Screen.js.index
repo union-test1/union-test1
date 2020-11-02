@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.Screen.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="47" endIndex="307" startLine="5" endLine="20"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="Screen" description="브라우저의 화면을 추상화 하는 클래스." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="65" endIndex="76" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="media">
+              <value xsi:type="index:VariableSymbol" name="media" description="스크린 정책이 적용될 CSS 미디어 쿼리">
+                <region startIndex="200" endIndex="204"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="name">
+              <value xsi:type="index:VariableSymbol" name="name" description="스크린의 이름">
+                <region startIndex="286" endIndex="289"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.Screen">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.Screen" originalSymbolName="__anonymous1">
+          <region startIndex="56" endIndex="61"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="65" endIndex="76" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="76" endIndex="76"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.Screen">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.Screen" description="브라우저의 화면을 추상화 하는 클래스." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="56" endIndex="61"/>
+        <prototype>
+          <symbols key="media">
+            <value xsi:type="index:VariableSymbol" name="media" description="스크린 정책이 적용될 CSS 미디어 쿼리">
+              <region startIndex="200" endIndex="204"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="name">
+            <value xsi:type="index:VariableSymbol" name="name" description="스크린의 이름">
+              <region startIndex="286" endIndex="289"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

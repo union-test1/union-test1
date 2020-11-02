@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.DeferredUpdateManager.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="67" endIndex="999" startLine="5" endLine="41"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DeferredUpdateManager" description="그리기 요청을 취합하여 통합 렌더링을 수행하며 렌더링 문맥과 관련한 서비스를 제공하는 객체." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="100" endIndex="111" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="isScheduled">
+              <value xsi:type="index:FunctionVariableSymbol" name="isScheduled" originalSymbolName="__anonymous2">
+                <region startIndex="428" endIndex="438"/>
+              </value>
+            </symbols>
+            <symbols key="update">
+              <value xsi:type="index:FunctionVariableSymbol" name="update" originalSymbolName="__anonymous3">
+                <region startIndex="562" endIndex="567"/>
+              </value>
+            </symbols>
+            <symbols key="asyncExec">
+              <value xsi:type="index:FunctionVariableSymbol" name="asyncExec" originalSymbolName="__anonymous4">
+                <region startIndex="712" endIndex="720"/>
+              </value>
+            </symbols>
+            <symbols key="getCurrentFrameID">
+              <value xsi:type="index:FunctionVariableSymbol" name="getCurrentFrameID" originalSymbolName="__anonymous5">
+                <region startIndex="965" endIndex="981"/>
+              </value>
+            </symbols>
+          </prototype>
+          <symbols key="INSTANCE">
+            <value xsi:type="index:VariableSymbol" name="INSTANCE">
+              <region startIndex="257" endIndex="264"/>
+              <inferredType name="cpr.core.DeferredUpdateManager" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.DeferredUpdateManager">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.DeferredUpdateManager" originalSymbolName="__anonymous1">
+          <region startIndex="76" endIndex="96"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="isScheduled" description="다음장면 그리기가 예약된 상태인지 여부를 반환합니다." experimental="true" experimentalDescription="" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="442" endIndex="453" startLine="19" endLine="19"/>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="update" description="다음 장면 그리기가 예약되어 있는 경우, 즉시 그립니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="571" endIndex="582" startLine="25" endLine="25"/>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="asyncExec" description="다음 장면이 렌더링 된 이후에 주어진 함수를 실행합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="724" endIndex="739" startLine="31" endLine="31"/>
+          <params name="task" description="렌더링 이후에 실행될 함수." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="733" endIndex="736" startLine="31" endLine="31"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="getCurrentFrameID" description="현재 렌더링 중이거나 마지막으로 렌더링한 프레임의 번호를 얻습니다. 이 값은 자바스크립트가 다룰 수 있는 안전한 integer 값(Number.MAX_SAFE_INTEGER)을 초과하지 않으며, 그 경우 1 부터 다시 시작합니다." experimental="true" experimentalDescription="" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="985" endIndex="996" startLine="39" endLine="39"/>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="100" endIndex="111" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="111" endIndex="111"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="442" endIndex="453" startLine="19" endLine="19"/>
+        <childScopes>
+          <region startIndex="453" endIndex="453"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="571" endIndex="582" startLine="25" endLine="25"/>
+        <childScopes>
+          <region startIndex="582" endIndex="582"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="724" endIndex="739" startLine="31" endLine="31"/>
+        <childScopes>
+          <region startIndex="739" endIndex="739"/>
+          <symbolMap key="task">
+            <value xsi:type="index:ParameterSymbol" name="task" description="렌더링 이후에 실행될 함수." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="733" endIndex="736" startLine="31" endLine="31"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="985" endIndex="996" startLine="39" endLine="39"/>
+        <childScopes>
+          <region startIndex="996" endIndex="996"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.DeferredUpdateManager">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.DeferredUpdateManager" description="그리기 요청을 취합하여 통합 렌더링을 수행하며 렌더링 문맥과 관련한 서비스를 제공하는 객체." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="76" endIndex="96"/>
+        <prototype>
+          <symbols key="isScheduled">
+            <value xsi:type="index:FunctionVariableSymbol" name="isScheduled" originalSymbolName="__anonymous2">
+              <region startIndex="428" endIndex="438"/>
+            </value>
+          </symbols>
+          <symbols key="update">
+            <value xsi:type="index:FunctionVariableSymbol" name="update" originalSymbolName="__anonymous3">
+              <region startIndex="562" endIndex="567"/>
+            </value>
+          </symbols>
+          <symbols key="asyncExec">
+            <value xsi:type="index:FunctionVariableSymbol" name="asyncExec" originalSymbolName="__anonymous4">
+              <region startIndex="712" endIndex="720"/>
+            </value>
+          </symbols>
+          <symbols key="getCurrentFrameID">
+            <value xsi:type="index:FunctionVariableSymbol" name="getCurrentFrameID" originalSymbolName="__anonymous5">
+              <region startIndex="965" endIndex="981"/>
+            </value>
+          </symbols>
+        </prototype>
+        <symbols key="INSTANCE">
+          <value xsi:type="index:VariableSymbol" name="INSTANCE">
+            <region startIndex="257" endIndex="264"/>
+            <inferredType name="cpr.core.DeferredUpdateManager" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

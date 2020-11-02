@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/sign/signedSet.js" fileModificationTimestamp="6409943" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.sign.signedSet" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="6" endIndex="291" startLine="4" endLine="13"/>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.sign.signedSet" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="setSignSetting" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="31" endIndex="197" startLine="4" endLine="8"/>
+          <params name="signSetting" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="41" endIndex="51" startLine="4" endLine="4"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/sign/signedSet 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="setVisible" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="223" endIndex="289" startLine="10" endLine="12"/>
+          <params name="flag" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="233" endIndex="236" startLine="10" endLine="10"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.sign.signedSet">
+        <value xsi:type="index:FunctionSymbol" name="udc.sign.signedSet" labelForOutline="signedSet" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="setVisible">
+              <value xsi:type="index:FunctionVariableSymbol" name="setVisible" originalSymbolName="__anonymous2">
+                <region startIndex="210" endIndex="219"/>
+              </value>
+            </symbols>
+            <symbols key="setSignSetting">
+              <value xsi:type="index:FunctionVariableSymbol" name="setSignSetting" originalSymbolName="__anonymous1">
+                <region startIndex="14" endIndex="27"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="31" endIndex="197" startLine="4" endLine="8"/>
+        <childScopes>
+          <region startIndex="55" endIndex="197"/>
+          <symbolMap key="signSetting">
+            <value xsi:type="index:ParameterSymbol" name="signSetting" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="41" endIndex="51" startLine="4" endLine="4"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="223" endIndex="289" startLine="10" endLine="12"/>
+        <childScopes>
+          <region startIndex="240" endIndex="289"/>
+          <symbolMap key="flag">
+            <value xsi:type="index:ParameterSymbol" name="flag" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="233" endIndex="236" startLine="10" endLine="10"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.sign.signedSet">
+      <value xsi:type="index:FunctionSymbol" name="udc.sign.signedSet" labelForOutline="signedSet" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="setSignSetting">
+            <value xsi:type="index:FunctionVariableSymbol" name="setSignSetting" originalSymbolName="__anonymous1">
+              <region startIndex="14" endIndex="27"/>
+            </value>
+          </symbols>
+          <symbols key="setVisible">
+            <value xsi:type="index:FunctionVariableSymbol" name="setVisible" originalSymbolName="__anonymous2">
+              <region startIndex="210" endIndex="219"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

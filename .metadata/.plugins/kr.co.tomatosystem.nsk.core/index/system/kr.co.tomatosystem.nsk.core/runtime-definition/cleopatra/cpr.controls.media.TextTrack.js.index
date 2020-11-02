@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.media.TextTrack.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="149" endIndex="1954" startLine="7" endLine="98"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="TextTrack" description="오디오 / 비디오와 컴포넌트에 자막 출력시 사용되는 아이템. 트랙을 생성합니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="180" endIndex="201" startLine="7" endLine="7"/>
+          <params name="src" description="트랙의 source. 웹 서버를 통한 소스만 가능합니다." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="191" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="label" description="자막의 label" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="194" endIndex="198" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="kind">
+              <value xsi:type="index:VariableSymbol" name="kind" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 텍스트 자막이 사용되는 방법에 대해 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 텍스트 자막의 사용되는 방법에 대해 설정합니다.&lt;br> 기본 값은 'subtitles'입니다.  [captions] : 오디오의 번역 및 번역을 제공합니다. [chapters] : 챕터 제목은 사용자가 미디어 리소스를 탐색 할 때 사용하기위한 것입니다. [descriptions] : 비디오 컨텐츠의 텍스트 설명 [metadata] : 자막이 스크립트에 의해 사용됩니다. 사용자에게 보여지지 않습니다. [subtitles] : 비디오의 언어 영상에 다른 언어 표시 &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="759" endIndex="762"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="src">
+              <value xsi:type="index:VariableSymbol" name="src" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 자막의 주소를 반환합니다. 웹 서버를 통한 소스만 가능합니다.  IE는 서버에서 전송 받을때 content-type이 text/vtt로 표시되어야 정상 동작합니다. 서버의 MIME type을 확인해주시기 바랍니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 자막의 주소를 설정합니다. (Ex .vtt 파일).&lt;br> 이 속성은 반드시 정의되어야만 하고 유효한 URL이어야만 합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1171" endIndex="1173"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="srcLang">
+              <value xsi:type="index:VariableSymbol" name="srcLang" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 자막 텍스트 데이터의 언어를 반환합니다. (Ex. en, ja, ja-JP) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 자막 텍스트 데이터의 언어를 설정합니다.&lt;br> 이 속성의 값은 유효한 BCP 47 언어 태그여야 합니다.&lt;br> 관련 속성: [kind] 속성 값이 subtitles로 설정되었을 경우, srcLang 속성은 반드시 정의되어야 합니다. (Ex. en, ja, ja-JP) &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1593" endIndex="1599"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="label">
+              <value xsi:type="index:VariableSymbol" name="label" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 브라우저가 사용가능한 자막 텍스트를 나열할 때 사용자가 읽을 수 있는 자막 텍스트의 제목을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 브라우저가 사용 가능한 자막 텍스트를 나열할떄 사용되는 사용자가 읽을수 있는 자막 텍스트의 제목을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1932" endIndex="1936"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.media.TextTrack">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.media.TextTrack" originalSymbolName="__anonymous1">
+          <region startIndex="168" endIndex="176"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="180" endIndex="201" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="201" endIndex="201"/>
+          <symbolMap key="src">
+            <value xsi:type="index:ParameterSymbol" name="src" description="트랙의 source. 웹 서버를 통한 소스만 가능합니다." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="191" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="label">
+            <value xsi:type="index:ParameterSymbol" name="label" description="자막의 label" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="194" endIndex="198" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.media.TextTrack">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.media.TextTrack" description="오디오 / 비디오와 컴포넌트에 자막 출력시 사용되는 아이템. 트랙을 생성합니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="168" endIndex="176"/>
+        <params name="src" description="트랙의 source. 웹 서버를 통한 소스만 가능합니다.">
+          <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="191" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="label" description="자막의 label" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="194" endIndex="198" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="kind">
+            <value xsi:type="index:VariableSymbol" name="kind" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 텍스트 자막이 사용되는 방법에 대해 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 텍스트 자막의 사용되는 방법에 대해 설정합니다.&lt;br> 기본 값은 'subtitles'입니다.  [captions] : 오디오의 번역 및 번역을 제공합니다. [chapters] : 챕터 제목은 사용자가 미디어 리소스를 탐색 할 때 사용하기위한 것입니다. [descriptions] : 비디오 컨텐츠의 텍스트 설명 [metadata] : 자막이 스크립트에 의해 사용됩니다. 사용자에게 보여지지 않습니다. [subtitles] : 비디오의 언어 영상에 다른 언어 표시 &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="759" endIndex="762"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="src">
+            <value xsi:type="index:VariableSymbol" name="src" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 자막의 주소를 반환합니다. 웹 서버를 통한 소스만 가능합니다.  IE는 서버에서 전송 받을때 content-type이 text/vtt로 표시되어야 정상 동작합니다. 서버의 MIME type을 확인해주시기 바랍니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 자막의 주소를 설정합니다. (Ex .vtt 파일).&lt;br> 이 속성은 반드시 정의되어야만 하고 유효한 URL이어야만 합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1171" endIndex="1173"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="srcLang">
+            <value xsi:type="index:VariableSymbol" name="srcLang" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 자막 텍스트 데이터의 언어를 반환합니다. (Ex. en, ja, ja-JP) &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 자막 텍스트 데이터의 언어를 설정합니다.&lt;br> 이 속성의 값은 유효한 BCP 47 언어 태그여야 합니다.&lt;br> 관련 속성: [kind] 속성 값이 subtitles로 설정되었을 경우, srcLang 속성은 반드시 정의되어야 합니다. (Ex. en, ja, ja-JP) &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1593" endIndex="1599"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="label">
+            <value xsi:type="index:VariableSymbol" name="label" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 브라우저가 사용가능한 자막 텍스트를 나열할 때 사용자가 읽을 수 있는 자막 텍스트의 제목을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 브라우저가 사용 가능한 자막 텍스트를 나열할떄 사용되는 사용자가 읽을수 있는 자막 텍스트의 제목을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1932" endIndex="1936"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

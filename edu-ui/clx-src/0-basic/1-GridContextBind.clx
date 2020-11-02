@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-24d23f4a" version="1.0.0.0">
+  <head std:sid="head-190780bd">
+    <title>GridContextBind</title>
+    <screen std:sid="screen-5b597532" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-8e2146a5" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-627811e3" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-8b61053a">
+      <cl:dataset std:sid="d-set-81b499ed" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="id"/>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn datatype="number" name="age"/>
+          <cl:datacolumn name="phone"/>
+          <cl:datacolumn name="email"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[123]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Ann]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-0000-0000]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[ann@abc.com]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[456]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Jack]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[17]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-1111-1111]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[jack@abc.net]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[789]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Smith]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[18]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-2222-2222]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[smith12@abc.com]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[012]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Jin]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-3333-3333]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[jiny@abc.net]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[345]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Mike]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[15]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-4444-4444]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[mike@abc.com]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[678]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Zach]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[28]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-5555-5555]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[zach@abc.net]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[901]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Brock]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[30]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-6666-6666]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[brock@abc.com]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[234]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Dean]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[41]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-7777-7777]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[dean@def.com]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[567]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Sam]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[32]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-8888-8888]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[sam@def.com]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[890]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[Alex]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[25]]></cl:datavalue>
+            <cl:datavalue columnname="phone"><![CDATA[010-9999-9999]]></cl:datavalue>
+            <cl:datavalue columnname="email"><![CDATA[alex@def.net]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-5bf903b1" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-b29af63a" id="grd1" columnMovable="false" columnResizable="false" datasetid="ds1" readonly="true">
+      <cl:xylayoutdata bottom="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="BOTH" width="600px"/>
+      <cl:gridcolumn std:sid="g-column-53d660fb" width="25px"/>
+      <cl:gridcolumn std:sid="g-column-897931b9" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-e9561eca"/>
+      <cl:gridcolumn std:sid="g-column-e7c7a7da"/>
+      <cl:gridcolumn std:sid="g-column-b63b6a29"/>
+      <cl:gridcolumn std:sid="g-column-0eed8a96"/>
+      <cl:gridcolumn std:sid="g-column-f438a90a"/>
+      <cl:gridheader>
+        <cl:gridrow std:sid="g-row-727cfbc2"/>
+        <cl:gridcell std:sid="gh-cell-004ef9fd" colindex="0" rowindex="0" columntype="checkbox" filterable="false" sortable="false"/>
+        <cl:gridcell std:sid="gh-cell-cb236688" colindex="1" rowindex="0" filterable="false" sortable="false"/>
+        <cl:gridcell std:sid="gh-cell-31e8f7f4" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="column1" text="id"/>
+        <cl:gridcell std:sid="gh-cell-f6081b74" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="column2" text="name"/>
+        <cl:gridcell std:sid="gh-cell-1656a9c6" colindex="4" rowindex="0" filterable="false" sortable="false" targetcolumnname="column3" text="age"/>
+        <cl:gridcell std:sid="gh-cell-9b5ec041" colindex="5" rowindex="0" filterable="false" sortable="false" targetcolumnname="column4" text="phone"/>
+        <cl:gridcell std:sid="gh-cell-1d399a85" colindex="6" rowindex="0" filterable="false" sortable="false" targetcolumnname="column5" text="email"/>
+      </cl:gridheader>
+      <cl:griddetail>
+        <cl:gridrow std:sid="g-row-7d614d77"/>
+        <cl:gridcell std:sid="gd-cell-816a8028" colindex="0" rowindex="0" columntype="checkbox"/>
+        <cl:gridcell std:sid="gd-cell-362d371e" colindex="1" rowindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-6ea91823" colindex="2" rowindex="0" columnname="id">
+          <cl:inputbox std:sid="i-box-3c5c130d" id="ipb1"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-aab78dd7" colindex="3" rowindex="0" columnname="name">
+          <cl:inputbox std:sid="i-box-bc4ae69c" id="ipb2"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-9e53e503" colindex="4" rowindex="0" columnname="age">
+          <cl:inputbox std:sid="i-box-496e0ec8" id="ipb3"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-90c912a1" colindex="5" rowindex="0" columnname="phone">
+          <cl:inputbox std:sid="i-box-37b8c109" id="ipb4"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-cbe6b8cf" colindex="6" rowindex="0" columnname="email">
+          <cl:inputbox std:sid="i-box-30e54063" id="ipb5"/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:group std:sid="group-0a72fdb5">
+      <cl:selectioncontext selectionProvider="#grid-b29af63a"/>
+      <cl:xylayoutdata std:sid="xyl-data-4ce38c7c" bottom="20px" horizontalAnchor="BOTH" left="630px" right="20px" top="20px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-2ed06eb2" value="id">
+        <cl:formdata std:sid="f-data-9ad1617e" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-340d2b82" value="name">
+        <cl:formdata std:sid="f-data-b025a9ce" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-1ea46413" value="age">
+        <cl:formdata std:sid="f-data-ec84890c" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-fc32bc96" value="phone">
+        <cl:formdata std:sid="f-data-b073b18a" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-b2b46c73" value="email">
+        <cl:formdata std:sid="f-data-fcb0bb34" col="0" row="4"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-522aa861" id="ipb6">
+        <cl:relativebind category="PROPERTY" property="value" columnname="id"/>
+        <cl:formdata std:sid="f-data-fb51d637" col="1" row="0"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-d5b5272a" id="ipb7">
+        <cl:relativebind category="PROPERTY" property="value" columnname="name"/>
+        <cl:formdata std:sid="f-data-6f15ad9c" col="1" row="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-f7b52fbc" id="ipb8">
+        <cl:relativebind category="PROPERTY" property="value" columnname="age"/>
+        <cl:formdata std:sid="f-data-a3cd876a" col="1" row="2"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-a697237a" id="ipb9">
+        <cl:relativebind category="PROPERTY" property="value" columnname="phone"/>
+        <cl:formdata std:sid="f-data-4bd17f00" col="1" row="3"/>
+      </cl:inputbox>
+      <cl:textarea std:sid="t-area-c8a98b17" id="txa1">
+        <cl:relativebind category="PROPERTY" property="value" columnname="email"/>
+        <cl:formdata std:sid="f-data-ed05e966" col="1" row="4"/>
+      </cl:textarea>
+      <cl:formlayout>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-1780b844"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-579da85e" version="1.0.0.0">
+  <head std:sid="head-815ab693">
+    <title>test</title>
+    <screen std:sid="screen-76da6772" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-7d186058" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-d93ed308" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-0f2d5627">
+      <cl:datamap std:sid="d-map-c6e0aef1" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="string" defaultvalue="test" name="test"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-157573e1" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-d4370c77" value="Button">
+      <cl:listener std:sid="listener-22f5eec0" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-088936fc" height="20px" horizontalAnchor="LEFT" left="350px" top="318px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:button std:sid="button-a41fbc1c" value="Button">
+      <cl:listener std:sid="listener-738b0683" handler="onButtonClick2" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-578c93df" height="20px" horizontalAnchor="LEFT" left="519px" top="318px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:grid std:sid="grid-a7858d81" id="grd1">
+      <cl:xylayoutdata std:sid="xyl-data-973a2f64" height="200px" horizontalAnchor="LEFT" left="342px" top="98px" verticalAnchor="TOP" width="400px"/>
+      <cl:gridcolumn std:sid="g-column-07e508c1"/>
+      <cl:gridcolumn std:sid="g-column-63965db6"/>
+      <cl:gridcolumn std:sid="g-column-5d12d4bb"/>
+      <cl:gridcolumn std:sid="g-column-ac6a2452"/>
+      <cl:gridcolumn std:sid="g-column-4494d2db"/>
+      <cl:gridheader std:sid="gh-band-4bb2f369">
+        <cl:gridrow std:sid="g-row-28ca5249"/>
+        <cl:gridcell std:sid="gh-cell-574bbe56" colindex="0" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-8089a428" colindex="1" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-fbd33760" colindex="2" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-b1580300" colindex="3" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-dc4c4a86" colindex="4" rowindex="0"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-c50e003c">
+        <cl:gridrow std:sid="g-row-a2fd06ac"/>
+        <cl:gridcell std:sid="gd-cell-a2c85920" colindex="0" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-cedc56c9" colindex="1" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-8a904301" colindex="2" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-040f7a84" colindex="3" rowindex="0"/>
+        <cl:gridcell std:sid="gd-cell-173d7452" colindex="4" rowindex="0"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-68f70a1c" value="Button">
+      <cl:listener std:sid="listener-9ca32132" handler="onButtonClick3" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f8e2d8db" height="20px" horizontalAnchor="LEFT" left="36px" top="26px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-96fb5810"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

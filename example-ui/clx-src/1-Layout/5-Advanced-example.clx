@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-54c72d4b" version="1.0.0.0">
+  <head std:sid="head-26f2fbca">
+    <title>xylayout-center-example</title>
+    <screen std:sid="screen-ea53e7a5" id="default" active="true" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-3fbc1433" id="tablet" active="false" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-50d32791" id="mobile" active="false" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-6b535c91">
+      <cl:dataset std:sid="d-set-efa238a7" id="people">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="company"/>
+          <cl:datacolumn name="firstName"/>
+          <cl:datacolumn name="lastName"/>
+          <cl:datacolumn datatype="number" name="age"/>
+          <cl:datacolumn name="color"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="company"><![CDATA[Tomato System]]></cl:datavalue>
+            <cl:datavalue columnname="firstName"><![CDATA[Lee]]></cl:datavalue>
+            <cl:datavalue columnname="lastName"><![CDATA[Jeeeyul]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[38]]></cl:datavalue>
+            <cl:datavalue columnname="color"><![CDATA[orange]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-58b996c2" style="background-color:#eeeeee; top:0px; left:0px; width:800px; background-image:none; height:600px;">
+    <cl:group std:sid="group-dd84726e" style="background-color:white; border-right-style:solid; border-left-style:solid; border-right-width:1px; border-left-color:#333333; border-right-color:#333333; background-image:none; border-left-width:1px;">
+      <cl:responsivexylayoutdata std:sid="rxyl-data-0778cc51">
+        <cl:xylayoutdata std:sid="sxyl-data-1362cee9" bottom="0px" horizontalAnchor="CENTER" top="0px" verticalAnchor="BOTH" width="700px" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-303b73e0" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH" screenid="tablet"/>
+        <cl:xylayoutdata std:sid="sxyl-data-303b73e0" bottom="0px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="BOTH" width="350px" screenid="mobile"/>
+      </cl:responsivexylayoutdata>
+      <cl:group std:sid="group-9a39d8b2" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#a0b8cb; border-right-width:1px; border-left-color:#a0b8cb; border-right-color:#a0b8cb; border-left-width:1px; border-top-style:solid; border-radius:5px; border-left-style:solid; border-bottom-width:1px; border-top-color:#a0b8cb; border-bottom-style:solid;">
+        <cl:datarowcontext datacontrolid="people" rowindex="0"/>
+        <cl:xylayoutdata std:sid="xyl-data-4a34d3cc" height="313px" horizontalAnchor="BOTH" left="20px" right="20px" top="50px" verticalAnchor="TOP"/>
+        <cl:output std:sid="output-bc845df6" style="text-align:right;" value="First Name">
+          <cl:formdata std:sid="f-data-2c5c79a6" col="0" row="1"/>
+        </cl:output>
+        <cl:output std:sid="output-8feaa9bb" style="text-align:right;" value="Last Name">
+          <cl:formdata std:sid="f-data-5bd3bda1" col="2" row="1"/>
+        </cl:output>
+        <cl:output std:sid="output-38b22cff" style="text-align:right;" value="Age">
+          <cl:formdata std:sid="f-data-317766f1" col="0" row="2"/>
+        </cl:output>
+        <cl:output std:sid="output-f3c4a168" style="text-align:right;" value="Color">
+          <cl:formdata std:sid="f-data-ac20f987" col="2" row="2"/>
+        </cl:output>
+        <cl:output std:sid="output-227199c7" style="text-align:right;" value="Company">
+          <cl:formdata std:sid="f-data-f9121967" col="0" row="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-b5f3e1ea" id="ipb1">
+          <cl:relativebind property="value" columnname="firstName"/>
+          <cl:formdata std:sid="f-data-0badf98b" col="1" row="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-3ac010aa" id="ipb2">
+          <cl:relativebind property="value" columnname="lastName"/>
+          <cl:formdata std:sid="f-data-bb8862fc" col="3" row="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-32aeed58" id="ipb3">
+          <cl:relativebind property="value" columnname="color"/>
+          <cl:formdata std:sid="f-data-f162e244" col="3" row="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-d5f351f3" id="ipb4">
+          <cl:relativebind property="value" columnname="age"/>
+          <cl:formdata std:sid="f-data-c236ac6f" col="1" row="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-0fc615d3" id="ipb5">
+          <cl:relativebind property="value" columnname="company"/>
+          <cl:formdata std:sid="f-data-4881a227" col="1" colspan="3" row="3" rowspan="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-b36fd8a3" style="text-align:right;" value="Note">
+          <cl:formdata std:sid="f-data-d527cebe" col="0" row="4" valign="TOP"/>
+        </cl:output>
+        <cl:textarea std:sid="t-area-2ff74bea" id="txa1">
+          <cl:formdata std:sid="f-data-52f2aa1a" col="1" colspan="3" row="4" rowspan="1"/>
+        </cl:textarea>
+        <cl:output std:sid="output-53428fdc" style="text-align:center;" value="Title">
+          <cl:formdata std:sid="f-data-d26c0c59" col="0" colspan="4" row="0" rowspan="1"/>
+        </cl:output>
+        <cl:formlayout std:sid="f-layout-c6986971" hmargin="5" hseparatorcolor="#a0b8cb" hseparatortype="CUSTOM" hseparatorwidth="1" hspace="10" vmargin="5" vseparatorcolor="#a0b8cb" vseparatortype="CUSTOM" vseparatorwidth="1" vspace="10">
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="100" shadecolor="#f6fbff" shadetype="CUSTOM" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" shadecolor="#f6fbff" shadetype="CUSTOM" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:button std:sid="button-ae4c1b46" value="Save">
+        <cl:xylayoutdata std:sid="xyl-data-e5790e12" height="20px" horizontalAnchor="RIGHT" right="20px" top="20px" verticalAnchor="TOP" width="100px"/>
+      </cl:button>
+      <cl:output std:sid="output-06b76526" style="text-align:center;" value="토마토 시스템">
+        <cl:xylayoutdata std:sid="xyl-data-b5e1248f" bottom="40px" height="20px" horizontalAnchor="CENTER" verticalAnchor="BOTTOM" width="100px"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-faf02c2a"/>
+    </cl:group>
+    <cl:responsivexylayout std:sid="r-xylayout-6af5887f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

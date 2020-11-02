@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8bf6e446" version="1.0.0.0">
+  <head std:sid="head-1d0cba92">
+    <title>Untitled</title>
+    <screen std:sid="screen-b496e2a6" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" useCustomHeight="true" useCustomWidth="true" width="1024px"/>
+    <screen std:sid="screen-1b883508" id="tablet" customHeight="600" customWidth="800" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" useCustomHeight="true" useCustomWidth="true" width="500px"/>
+    <screen std:sid="screen-92df41d4" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-0894a3d0">
+      <cl:datamap std:sid="d-map-fee840a0" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" defaultvalue="-1" name="column1"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-31fc2a78" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="column1"/>
+          <cl:datacolumn name="column2"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column11</cl:datavalue>
+            <cl:datavalue columnname="column2">column21</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column12</cl:datavalue>
+            <cl:datavalue columnname="column2">column22</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="column1">column13</cl:datavalue>
+            <cl:datavalue columnname="column2">column23</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-3dd9b873" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-adc1d36a" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-351ea54e">
+      <cl:xylayoutdata bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-7165c90a" value="근태현황 알람 옵션">
+        <cl:formdata std:sid="f-data-1d1cc34e" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-16e8c2c5" value="경고 알람 대상자 설정">
+        <cl:formdata std:sid="f-data-d89a56dc" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-98ff1894" value="알람 팝업">
+        <cl:formdata std:sid="f-data-c5af6564" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-c2bef1c1" value="알람 메일 전송">
+        <cl:formdata std:sid="f-data-20d361a3" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-c65f379d" value="전체 관리자 메일 주소 등록">
+        <cl:formdata std:sid="f-data-cbd0ec29" col="0" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-825e36fd" value="시간 이상 근무자">
+        <cl:formdata std:sid="f-data-c75cda6a" col="2" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-d5099aab" id="ipb1">
+        <cl:formdata std:sid="f-data-aea31952" col="1" row="1"/>
+      </cl:inputbox>
+      <cl:combobox std:sid="c-box-1d1fb4e7" id="cmb1" style="font-size:14px; text-align:center;" value="1">
+        <cl:formdata std:sid="f-data-21322b0d" col="1" row="3"/>
+        <cl:item label="OFF" value="0"/>
+        <cl:item label="ON" value="1"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-3d2a7229" id="cmb2" style="font-size:14px; text-align:center;" value="1">
+        <cl:formdata std:sid="f-data-c308f6fd" col="1" row="2"/>
+        <cl:item label="OFF" value="0"/>
+        <cl:item label="ON" value="1"/>
+      </cl:combobox>
+      <cl:button std:sid="button-b3dd16b6" value="상세설정">
+        <cl:formdata std:sid="f-data-2d61e9c2" col="2" row="2"/>
+      </cl:button>
+      <cl:button std:sid="button-640d77b2" value="상세설정">
+        <cl:formdata std:sid="f-data-ff28065f" col="2" row="3"/>
+      </cl:button>
+      <cl:grid std:sid="grid-4317570e" id="grd1">
+        <cl:formdata col="0" colspan="2" row="5" rowspan="1"/>
+        <cl:gridcolumn std:sid="g-column-d4f39055"/>
+        <cl:gridcolumn std:sid="g-column-7545c109"/>
+        <cl:gridcolumn std:sid="g-column-a39c0362"/>
+        <cl:gridheader std:sid="gh-band-fea33233">
+          <cl:gridrow std:sid="g-row-ce8fc48e"/>
+          <cl:gridcell std:sid="gh-cell-e4ce480d" colindex="0" rowindex="0" text="E-mail"/>
+          <cl:gridcell std:sid="gh-cell-72cc77fe" colindex="1" rowindex="0" text="Name"/>
+          <cl:gridcell std:sid="gh-cell-b127136f" colindex="2" rowindex="0" text="직급"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-bd659984">
+          <cl:gridrow std:sid="g-row-6b2a12d6"/>
+          <cl:gridcell std:sid="gd-cell-d0e2de43" colindex="0" rowindex="0"/>
+          <cl:gridcell std:sid="gd-cell-0c78d2e9" colindex="1" rowindex="0"/>
+          <cl:gridcell std:sid="gd-cell-648d7469" colindex="2" rowindex="0"/>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:group std:sid="group-6d73798d">
+        <cl:formdata std:sid="f-data-96085c31" col="2" row="5"/>
+        <cl:button std:sid="button-dc8ec256" value="추가">
+          <cl:formdata std:sid="f-data-34f9a186" col="0" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-9b6a8a1c" value="삭제">
+          <cl:formdata std:sid="f-data-4067b48f" col="0" row="1"/>
+        </cl:button>
+        <cl:formlayout>
+          <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="false" length="300" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-f7af22b3"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

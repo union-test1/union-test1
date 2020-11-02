@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a30ea238" version="1.0.0.0">
+  <head std:sid="head-5dfccf83">
+    <title>alarmPopup</title>
+    <screen std:sid="screen-176fd4c8" id="default" customHeight="300" customWidth="500" height="768px" minwidth="1024px" name="default" useCustomHeight="true" useCustomWidth="true" width="1024px"/>
+    <screen std:sid="screen-e724e022" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-caa2d44c" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-01a91c57"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-e32b2bf9" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-59681e10">
+      <cl:xylayoutdata bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-e77eb0cd" value="알림 팝업 상세 설정">
+        <cl:formdata col="0" row="0"/>
+      </cl:output>
+      <cl:button std:sid="button-57284139" value="적용">
+        <cl:formdata std:sid="f-data-0770313d" col="2" row="2"/>
+      </cl:button>
+      <cl:button std:sid="button-472dd6ed" value="취소">
+        <cl:formdata std:sid="f-data-b25a5529" col="3" row="2"/>
+      </cl:button>
+      <cl:group std:sid="group-ff0da373">
+        <cl:formdata col="0" colspan="4" row="1" rowspan="1"/>
+        <cl:radiobutton std:sid="r-button-30f1c1e1" id="rdb1" colcount="1">
+          <cl:formdata col="0" colspan="3" row="0" rowspan="1"/>
+          <cl:item label="프로그램 시작시" value="1"/>
+          <cl:item label="매일 지정 시간에 동작(0~23시)" value="2"/>
+          <cl:item label="지정 시간 간격으로 동작" value="3"/>
+          <cl:item label="매시 지정된 분에 동작 (0~59분)" value="4"/>
+        </cl:radiobutton>
+        <cl:output std:sid="output-3576de8b" value="지정 시간">
+          <cl:formdata std:sid="f-data-372a00fd" col="0" row="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-6b954095" id="ipb1">
+          <cl:formdata std:sid="f-data-7d963884" col="1" row="1"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-edbe92c7" value="시(분)">
+          <cl:formdata std:sid="f-data-635bc006" col="2" row="1"/>
+        </cl:output>
+        <cl:formlayout>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="false" length="150" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns autoSizing="false" length="80" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="false" length="80" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-3865dfb4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

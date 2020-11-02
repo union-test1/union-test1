@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.FileInput.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="150" endIndex="4812" startLine="8" endLine="299"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="FileInput" description="FileInput 사용자가 파일을 선택할 수있게 해주는 컨트롤. accept속성을 사용하여 컨트롤이 선택할 수 있는 파일 유형을 정의할 수 있습니다. 파일 인풋을 생성합니다." baseSymbolName="cpr.controls.AccessableUIControl" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="175" endIndex="188" startLine="8" endLine="8"/>
+          <params name="id" description="파일 인풋의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="184" endIndex="185" startLine="8" endLine="8"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="value">
+              <value xsi:type="index:VariableSymbol" name="value" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤의 값을 설정하고, value-change이벤트가 발생됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="508" endIndex="512"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="multiple">
+              <value xsi:type="index:VariableSymbol" name="multiple" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 아이템의 다중 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 아이템의 다중 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="764" endIndex="771"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="values">
+              <value xsi:type="index:VariableSymbol" name="values" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 다중 선택 시 컨트롤에 저장되는 값의 배열을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 다중 선택 시 컨트롤에 저장되는 값의 배열을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1045" endIndex="1050"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="delimiter">
+              <value xsi:type="index:VariableSymbol" name="delimiter" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 다중 선택된 값을 지정하거나 가져올 때의 구분자를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 다중선택된 값을 지정하거나 가져올 때의 구분자를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1325" endIndex="1333"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="placeholder">
+              <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 파일 선택 전에 보여지는 텍스트를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 파일 선택 전에 보여지는 텍스트를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1592" endIndex="1602"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="droppableFile">
+              <value xsi:type="index:VariableSymbol" name="droppableFile" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> drop 이벤트를 통해 파일을 선택할 수 있는지에 대한 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> drop 이벤트를 통해 파일을 선택할 수 있는지에 대한 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1894" endIndex="1906"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="file">
+              <value xsi:type="index:VariableSymbol" name="file" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택된 파일을 반환합니다. 다중 선택된 파일은 첫번째를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 파일을 선택합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2161" endIndex="2164"/>
+                <inferredType name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="files">
+              <value xsi:type="index:VariableSymbol" name="files" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택된 파일들을 배열로 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 다중 선택된 파일을 배열로 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2411" endIndex="2415"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="acceptFile">
+              <value xsi:type="index:VariableSymbol" name="acceptFile" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 파일 열기 창에서 보여줄 파일 확장자를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 파일 열기 창에서 보여줄 파일 확장자를 설정합니다. HTML5의 aceept 형식과 동일합니다. Edge브라우저 미지원.&lt;br> 확장자 .gif, .jpg, .png&lt;br> 형식 image  |video  |audio   &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2783" endIndex="2792"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="limitFileSize">
+              <value xsi:type="index:VariableSymbol" name="limitFileSize" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택할 수 있는 파일의 최대 데이터 크기를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 선택할 수 있는 파일의 최대 데이터 크기를 제한합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3061" endIndex="3073"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="limitFileSizeUnit">
+              <value xsi:type="index:VariableSymbol" name="limitFileSizeUnit" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택할 수 있는 파일의 최대 크기를 제한할 단위를 반환합니다. 기본 값은 kb 입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 선택할 수 있는 파일의 최대 크기를 제한할 단위를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3367" endIndex="3383"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clearButtonImage">
+              <value xsi:type="index:VariableSymbol" name="clearButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> clear버튼 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> clear버튼 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3630" endIndex="3645"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="showClearButton">
+              <value xsi:type="index:VariableSymbol" name="showClearButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> clear버튼의 표시여부를 반환합니다 &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> clear버튼의 표시여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3896" endIndex="3910"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="style">
+              <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+                <region startIndex="4103" endIndex="4107"/>
+                <inferredType name="cpr.controls.FileInput$Styler" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="putValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous2">
+                <region startIndex="4241" endIndex="4248"/>
+              </value>
+            </symbols>
+            <symbols key="putValues">
+              <value xsi:type="index:FunctionVariableSymbol" name="putValues" originalSymbolName="__anonymous3">
+                <region startIndex="4393" endIndex="4401"/>
+              </value>
+            </symbols>
+            <symbols key="openFileChooser">
+              <value xsi:type="index:FunctionVariableSymbol" name="openFileChooser" originalSymbolName="__anonymous4">
+                <region startIndex="4485" endIndex="4499"/>
+              </value>
+            </symbols>
+            <symbols key="send">
+              <value xsi:type="index:FunctionVariableSymbol" name="send" originalSymbolName="__anonymous5">
+                <region startIndex="4647" endIndex="4650"/>
+              </value>
+            </symbols>
+            <symbols key="clear">
+              <value xsi:type="index:FunctionVariableSymbol" name="clear" originalSymbolName="__anonymous6">
+                <region startIndex="4790" endIndex="4794"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.FileInput">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.FileInput" originalSymbolName="__anonymous1">
+          <region startIndex="163" endIndex="171"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="putValue" description="컨트롤의 값을 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4252" endIndex="4268" startLine="274" endLine="274"/>
+          <params name="value" description="컨트롤의 값." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4261" endIndex="4265" startLine="274" endLine="274"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="putValues" description="다중 선택 시 컨트롤에 저장되는 값의 배열을 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4405" endIndex="4422" startLine="280" endLine="280"/>
+          <params name="values" description="컨트롤에 저장되는 값의 배열." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4414" endIndex="4419" startLine="280" endLine="280"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="openFileChooser" description="파일 열기 상자를 엽니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4503" endIndex="4514" startLine="285" endLine="285"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="send" description="파일을 업로드 합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4654" endIndex="4675" startLine="291" endLine="291"/>
+          <params name="submission" description="파일 업로드에 필요한 submission." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4663" endIndex="4672" startLine="291" endLine="291"/>
+            <inferredType name="cpr.protocols.Submission" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="clear" description="Clear 이벤트를 발생합니다.&lt;br> clear 이벤트에 해당하는 eventlistener의 함수를 수행합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4798" endIndex="4809" startLine="297" endLine="297"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="175" endIndex="188" startLine="8" endLine="8"/>
+        <childScopes>
+          <region startIndex="188" endIndex="188"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="파일 인풋의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="184" endIndex="185" startLine="8" endLine="8"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4252" endIndex="4268" startLine="274" endLine="274"/>
+        <childScopes>
+          <region startIndex="4268" endIndex="4268"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="컨트롤의 값." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4261" endIndex="4265" startLine="274" endLine="274"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4405" endIndex="4422" startLine="280" endLine="280"/>
+        <childScopes>
+          <region startIndex="4422" endIndex="4422"/>
+          <symbolMap key="values">
+            <value xsi:type="index:ParameterSymbol" name="values" description="컨트롤에 저장되는 값의 배열." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4414" endIndex="4419" startLine="280" endLine="280"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4503" endIndex="4514" startLine="285" endLine="285"/>
+        <childScopes>
+          <region startIndex="4514" endIndex="4514"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4654" endIndex="4675" startLine="291" endLine="291"/>
+        <childScopes>
+          <region startIndex="4675" endIndex="4675"/>
+          <symbolMap key="submission">
+            <value xsi:type="index:ParameterSymbol" name="submission" description="파일 업로드에 필요한 submission." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4663" endIndex="4672" startLine="291" endLine="291"/>
+              <inferredType name="cpr.protocols.Submission" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4798" endIndex="4809" startLine="297" endLine="297"/>
+        <childScopes>
+          <region startIndex="4809" endIndex="4809"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.FileInput">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.FileInput" description="FileInput 사용자가 파일을 선택할 수있게 해주는 컨트롤. accept속성을 사용하여 컨트롤이 선택할 수 있는 파일 유형을 정의할 수 있습니다. 파일 인풋을 생성합니다." baseSymbolName="cpr.controls.AccessableUIControl" anonymousFunction="true">
+        <region startIndex="163" endIndex="171"/>
+        <params name="id" description="파일 인풋의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="184" endIndex="185" startLine="8" endLine="8"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="value">
+            <value xsi:type="index:VariableSymbol" name="value" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤의 값을 설정하고, value-change이벤트가 발생됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="508" endIndex="512"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="multiple">
+            <value xsi:type="index:VariableSymbol" name="multiple" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 아이템의 다중 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 아이템의 다중 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="764" endIndex="771"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="values">
+            <value xsi:type="index:VariableSymbol" name="values" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 다중 선택 시 컨트롤에 저장되는 값의 배열을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 다중 선택 시 컨트롤에 저장되는 값의 배열을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1045" endIndex="1050"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="delimiter">
+            <value xsi:type="index:VariableSymbol" name="delimiter" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 다중 선택된 값을 지정하거나 가져올 때의 구분자를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 다중선택된 값을 지정하거나 가져올 때의 구분자를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1325" endIndex="1333"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="placeholder">
+            <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 파일 선택 전에 보여지는 텍스트를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 파일 선택 전에 보여지는 텍스트를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1592" endIndex="1602"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="droppableFile">
+            <value xsi:type="index:VariableSymbol" name="droppableFile" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> drop 이벤트를 통해 파일을 선택할 수 있는지에 대한 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> drop 이벤트를 통해 파일을 선택할 수 있는지에 대한 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1894" endIndex="1906"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="file">
+            <value xsi:type="index:VariableSymbol" name="file" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택된 파일을 반환합니다. 다중 선택된 파일은 첫번째를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 파일을 선택합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2161" endIndex="2164"/>
+              <inferredType name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="files">
+            <value xsi:type="index:VariableSymbol" name="files" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택된 파일들을 배열로 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 다중 선택된 파일을 배열로 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2411" endIndex="2415"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="acceptFile">
+            <value xsi:type="index:VariableSymbol" name="acceptFile" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 파일 열기 창에서 보여줄 파일 확장자를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 파일 열기 창에서 보여줄 파일 확장자를 설정합니다. HTML5의 aceept 형식과 동일합니다. Edge브라우저 미지원.&lt;br> 확장자 .gif, .jpg, .png&lt;br> 형식 image  |video  |audio   &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2783" endIndex="2792"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="limitFileSize">
+            <value xsi:type="index:VariableSymbol" name="limitFileSize" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택할 수 있는 파일의 최대 데이터 크기를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 선택할 수 있는 파일의 최대 데이터 크기를 제한합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3061" endIndex="3073"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="limitFileSizeUnit">
+            <value xsi:type="index:VariableSymbol" name="limitFileSizeUnit" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택할 수 있는 파일의 최대 크기를 제한할 단위를 반환합니다. 기본 값은 kb 입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 선택할 수 있는 파일의 최대 크기를 제한할 단위를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3367" endIndex="3383"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="clearButtonImage">
+            <value xsi:type="index:VariableSymbol" name="clearButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> clear버튼 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> clear버튼 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3630" endIndex="3645"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="showClearButton">
+            <value xsi:type="index:VariableSymbol" name="showClearButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> clear버튼의 표시여부를 반환합니다 &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> clear버튼의 표시여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3896" endIndex="3910"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="style">
+            <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+              <region startIndex="4103" endIndex="4107"/>
+              <inferredType name="cpr.controls.FileInput$Styler" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="putValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous2">
+              <region startIndex="4241" endIndex="4248"/>
+            </value>
+          </symbols>
+          <symbols key="putValues">
+            <value xsi:type="index:FunctionVariableSymbol" name="putValues" originalSymbolName="__anonymous3">
+              <region startIndex="4393" endIndex="4401"/>
+            </value>
+          </symbols>
+          <symbols key="openFileChooser">
+            <value xsi:type="index:FunctionVariableSymbol" name="openFileChooser" originalSymbolName="__anonymous4">
+              <region startIndex="4485" endIndex="4499"/>
+            </value>
+          </symbols>
+          <symbols key="send">
+            <value xsi:type="index:FunctionVariableSymbol" name="send" originalSymbolName="__anonymous5">
+              <region startIndex="4647" endIndex="4650"/>
+            </value>
+          </symbols>
+          <symbols key="clear">
+            <value xsi:type="index:FunctionVariableSymbol" name="clear" originalSymbolName="__anonymous6">
+              <region startIndex="4790" endIndex="4794"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.config.GridFooterCellConfigurator.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="553" startLine="5" endLine="27"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridFooterCellConfigurator" baseSymbolName="cpr.controls.gridpart.config.GridCellConfigurator" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="106" endIndex="121" startLine="5" endLine="5"/>
+          <params name="grid" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+            <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="expr">
+              <value xsi:type="index:VariableSymbol" name="expr" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 셀에 나타낸 expression 식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 셀에 나타낼 expression 식을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="532" endIndex="535"/>
+                <inferredType name="String" sematicsQualifier="expression" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.config.GridFooterCellConfigurator">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.config.GridFooterCellConfigurator" originalSymbolName="__anonymous1">
+          <region startIndex="77" endIndex="102"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="106" endIndex="121" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="121" endIndex="121"/>
+          <symbolMap key="grid">
+            <value xsi:type="index:ParameterSymbol" name="grid" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+              <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.config.GridFooterCellConfigurator">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.config.GridFooterCellConfigurator" baseSymbolName="cpr.controls.gridpart.config.GridCellConfigurator" anonymousFunction="true">
+        <region startIndex="77" endIndex="102"/>
+        <params name="grid" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+          <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="expr">
+            <value xsi:type="index:VariableSymbol" name="expr" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 셀에 나타낸 expression 식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 셀에 나타낼 expression 식을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="532" endIndex="535"/>
+              <inferredType name="String" sematicsQualifier="expression" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

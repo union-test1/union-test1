@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/DateCombo.js" fileModificationTimestamp="6408269" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.DateCombo" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="263" endIndex="1072" startLine="11" endLine="47"/>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/DateCombo 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getComboDate" description="UDC 컨트롤이 그리드의 뷰 모드에서 표시할 텍스트를 반환합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="396" endIndex="567" startLine="19" endLine="24"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getComboObj" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="595" endIndex="723" startLine="26" endLine="30"/>
+          <inferredReturnType name="cpr.controls.DateInput" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.DateInput.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.DateCombo">
+        <value xsi:type="index:FunctionSymbol" name="udc.DateCombo" labelForOutline="DateCombo" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="date_value">
+              <value xsi:type="index:AppPropertySymbol" name="date_value">
+                <region/>
+                <inferredType name="String" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="getComboObj">
+              <value xsi:type="index:FunctionVariableSymbol" name="getComboObj" originalSymbolName="__anonymous2">
+                <region startIndex="581" endIndex="591"/>
+              </value>
+            </symbols>
+            <symbols key="getComboDate">
+              <value xsi:type="index:FunctionVariableSymbol" name="getComboDate" originalSymbolName="__anonymous1">
+                <region startIndex="381" endIndex="392"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="onCbx_dateComboValueChange">
+        <value xsi:type="index:FunctionSymbol" name="onCbx_dateComboValueChange">
+          <region xsi:type="index:RegionWithLine" startIndex="841" endIndex="866" startLine="38" endLine="38"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="903" endIndex="903" startLine="38" endLine="38"/>
+            <inferredType name="cpr.events.CValueChangeEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="onBodyLoad">
+        <value xsi:type="index:FunctionSymbol" name="onBodyLoad" description="DateCombo.js Created at 2018. 10. 30. 오전 9:14:05.">
+          <region xsi:type="index:RegionWithLine" startIndex="272" endIndex="281" startLine="11" endLine="11"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="307" endIndex="307" startLine="11" endLine="11"/>
+            <inferredType name="cpr.events.CEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.DateCombo" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes name="onBodyLoad" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region startIndex="310" endIndex="315"/>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="307" endIndex="307" startLine="11" endLine="11"/>
+            <inferredType name="cpr.events.CEvent" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="185" endIndex="315" startLine="11" endLine="13"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="396" endIndex="567" startLine="19" endLine="24"/>
+        <childScopes>
+          <region startIndex="407" endIndex="567"/>
+          <symbolMap key="oCombo">
+            <value xsi:type="index:VariableSymbol" name="oCombo">
+              <region startIndex="468" endIndex="473"/>
+              <inferredType name="cpr.controls.DateInput" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.DateInput.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="selectDateStr">
+            <value xsi:type="index:VariableSymbol" name="selectDateStr">
+              <region startIndex="512" endIndex="524"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="595" endIndex="723" startLine="26" endLine="30"/>
+        <childScopes>
+          <region startIndex="606" endIndex="723"/>
+          <symbolMap key="oCombo">
+            <value xsi:type="index:VariableSymbol" name="oCombo">
+              <region startIndex="667" endIndex="672"/>
+              <inferredType name="cpr.controls.DateInput" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.DateInput.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onCbx_dateComboValueChange" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region startIndex="906" endIndex="1070"/>
+        <symbolMap key="cbx_dateCombo">
+          <value xsi:type="index:VariableSymbol" name="cbx_dateCombo">
+            <region startIndex="960" endIndex="972"/>
+            <inferredType name="cpr.controls.DateInput" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="903" endIndex="903" startLine="38" endLine="38"/>
+            <inferredType name="cpr.events.CValueChangeEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CValueChangeEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="evt">
+          <value xsi:type="index:VariableSymbol" name="evt">
+            <region startIndex="996" endIndex="998"/>
+            <inferredType name="cpr.events.CUIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CUIEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="733" endIndex="1070" startLine="38" endLine="46"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.DateCombo">
+      <value xsi:type="index:FunctionSymbol" name="udc.DateCombo" labelForOutline="DateCombo" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="getComboObj">
+            <value xsi:type="index:FunctionVariableSymbol" name="getComboObj" originalSymbolName="__anonymous2">
+              <region startIndex="581" endIndex="591"/>
+            </value>
+          </symbols>
+          <symbols key="getComboDate">
+            <value xsi:type="index:FunctionVariableSymbol" name="getComboDate" originalSymbolName="__anonymous1">
+              <region startIndex="381" endIndex="392"/>
+            </value>
+          </symbols>
+          <symbols key="date_value">
+            <value xsi:type="index:AppPropertySymbol" name="date_value">
+              <region/>
+              <inferredType name="String" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

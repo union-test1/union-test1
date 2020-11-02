@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="110" endIndex="1519" startLine="7" endLine="77"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridColumnLayout" description="그리드 레이아웃. setColumnLayout, getColumnLayout 에서 사용 컬럼순서, visible, size, 위치정보 반환." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="151" endIndex="162" startLine="7" endLine="7"/>
+          <prototype>
+            <symbols key="columnLayout">
+              <value xsi:type="index:VariableSymbol" name="columnLayout" description="컬럼 레이아웃">
+                <region startIndex="349" endIndex="360"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="cpr.controls.gridpart.GridColumnProp" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="header">
+              <value xsi:type="index:VariableSymbol" name="header" description="헤더 정보">
+                <region startIndex="602" endIndex="607"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                    <selfDeclaringTypeSymbol classType="interface">
+                      <region startIndex="401" endIndex="544"/>
+                      <prototype>
+                        <symbols key="cellIndex">
+                          <value xsi:type="index:VariableSymbol" name="cellIndex">
+                            <region startIndex="408" endIndex="416"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="rowIndex">
+                          <value xsi:type="index:VariableSymbol" name="rowIndex">
+                            <region startIndex="432" endIndex="439"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="colIndex">
+                          <value xsi:type="index:VariableSymbol" name="colIndex">
+                            <region startIndex="455" endIndex="462"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="rowSpan">
+                          <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                            <region startIndex="478" endIndex="484"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="colSpan">
+                          <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                            <region startIndex="501" endIndex="507"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="visible">
+                          <value xsi:type="index:VariableSymbol" name="visible">
+                            <region startIndex="524" endIndex="530"/>
+                            <inferredType name="Boolean" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </typeParameters>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="detail">
+              <value xsi:type="index:VariableSymbol" name="detail" description="디테일 정보">
+                <region startIndex="827" endIndex="832"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                    <selfDeclaringTypeSymbol classType="interface">
+                      <region startIndex="649" endIndex="769"/>
+                      <prototype>
+                        <symbols key="cellIndex">
+                          <value xsi:type="index:VariableSymbol" name="cellIndex">
+                            <region startIndex="656" endIndex="664"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="rowIndex">
+                          <value xsi:type="index:VariableSymbol" name="rowIndex">
+                            <region startIndex="680" endIndex="687"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="colIndex">
+                          <value xsi:type="index:VariableSymbol" name="colIndex">
+                            <region startIndex="703" endIndex="710"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="rowSpan">
+                          <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                            <region startIndex="726" endIndex="732"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="colSpan">
+                          <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                            <region startIndex="749" endIndex="755"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </typeParameters>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="footer">
+              <value xsi:type="index:VariableSymbol" name="footer" optional="true" description="푸터 정보">
+                <region startIndex="1064" endIndex="1069"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                    <selfDeclaringTypeSymbol classType="interface">
+                      <region startIndex="873" endIndex="993"/>
+                      <prototype>
+                        <symbols key="cellIndex">
+                          <value xsi:type="index:VariableSymbol" name="cellIndex">
+                            <region startIndex="880" endIndex="888"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="rowIndex">
+                          <value xsi:type="index:VariableSymbol" name="rowIndex">
+                            <region startIndex="904" endIndex="911"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="colIndex">
+                          <value xsi:type="index:VariableSymbol" name="colIndex">
+                            <region startIndex="927" endIndex="934"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="rowSpan">
+                          <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                            <region startIndex="950" endIndex="956"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="colSpan">
+                          <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                            <region startIndex="973" endIndex="979"/>
+                            <inferredType name="Number" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </typeParameters>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="rowGroup">
+              <value xsi:type="index:VariableSymbol" name="rowGroup" optional="true" description="행그룹 정보">
+                <region startIndex="1495" endIndex="1502"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                    <selfDeclaringTypeSymbol classType="interface">
+                      <region startIndex="1111" endIndex="1424"/>
+                      <prototype>
+                        <symbols key="groupCondition">
+                          <value xsi:type="index:VariableSymbol" name="groupCondition">
+                            <region startIndex="1118" endIndex="1131"/>
+                            <inferredType name="String" instance="true" documentedType="true"/>
+                          </value>
+                        </symbols>
+                        <symbols key="gheader">
+                          <value xsi:type="index:VariableSymbol" name="gheader" optional="true">
+                            <region startIndex="1147" endIndex="1153"/>
+                            <inferredType name="Array" instance="true" documentedType="true">
+                              <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                                <selfDeclaringTypeSymbol classType="interface">
+                                  <region startIndex="1157" endIndex="1277"/>
+                                  <prototype>
+                                    <symbols key="cellIndex">
+                                      <value xsi:type="index:VariableSymbol" name="cellIndex">
+                                        <region startIndex="1164" endIndex="1172"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                    <symbols key="rowIndex">
+                                      <value xsi:type="index:VariableSymbol" name="rowIndex">
+                                        <region startIndex="1188" endIndex="1195"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                    <symbols key="colIndex">
+                                      <value xsi:type="index:VariableSymbol" name="colIndex">
+                                        <region startIndex="1211" endIndex="1218"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                    <symbols key="rowSpan">
+                                      <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                                        <region startIndex="1234" endIndex="1240"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                    <symbols key="colSpan">
+                                      <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                                        <region startIndex="1257" endIndex="1263"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                  </prototype>
+                                </selfDeclaringTypeSymbol>
+                              </typeParameters>
+                            </inferredType>
+                          </value>
+                        </symbols>
+                        <symbols key="gfooter">
+                          <value xsi:type="index:VariableSymbol" name="gfooter" optional="true">
+                            <region startIndex="1287" endIndex="1293"/>
+                            <inferredType name="Array" instance="true" documentedType="true">
+                              <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                                <selfDeclaringTypeSymbol classType="interface">
+                                  <region startIndex="1297" endIndex="1417"/>
+                                  <prototype>
+                                    <symbols key="cellIndex">
+                                      <value xsi:type="index:VariableSymbol" name="cellIndex">
+                                        <region startIndex="1304" endIndex="1312"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                    <symbols key="rowIndex">
+                                      <value xsi:type="index:VariableSymbol" name="rowIndex">
+                                        <region startIndex="1328" endIndex="1335"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                    <symbols key="colIndex">
+                                      <value xsi:type="index:VariableSymbol" name="colIndex">
+                                        <region startIndex="1351" endIndex="1358"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                    <symbols key="rowSpan">
+                                      <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                                        <region startIndex="1374" endIndex="1380"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                    <symbols key="colSpan">
+                                      <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                                        <region startIndex="1397" endIndex="1403"/>
+                                        <inferredType name="Number" instance="true" documentedType="true"/>
+                                      </value>
+                                    </symbols>
+                                  </prototype>
+                                </selfDeclaringTypeSymbol>
+                              </typeParameters>
+                            </inferredType>
+                          </value>
+                        </symbols>
+                      </prototype>
+                    </selfDeclaringTypeSymbol>
+                  </typeParameters>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.GridColumnLayout">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.GridColumnLayout" originalSymbolName="__anonymous1">
+          <region startIndex="132" endIndex="147"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="151" endIndex="162" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="162" endIndex="162"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.GridColumnLayout">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.GridColumnLayout" description="그리드 레이아웃. setColumnLayout, getColumnLayout 에서 사용 컬럼순서, visible, size, 위치정보 반환." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="132" endIndex="147"/>
+        <prototype>
+          <symbols key="columnLayout">
+            <value xsi:type="index:VariableSymbol" name="columnLayout" description="컬럼 레이아웃">
+              <region startIndex="349" endIndex="360"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.gridpart.GridColumnProp" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="header">
+            <value xsi:type="index:VariableSymbol" name="header" description="헤더 정보">
+              <region startIndex="602" endIndex="607"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="401" endIndex="544"/>
+                    <prototype>
+                      <symbols key="cellIndex">
+                        <value xsi:type="index:VariableSymbol" name="cellIndex">
+                          <region startIndex="408" endIndex="416"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="rowIndex">
+                        <value xsi:type="index:VariableSymbol" name="rowIndex">
+                          <region startIndex="432" endIndex="439"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="colIndex">
+                        <value xsi:type="index:VariableSymbol" name="colIndex">
+                          <region startIndex="455" endIndex="462"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="rowSpan">
+                        <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                          <region startIndex="478" endIndex="484"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="colSpan">
+                        <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                          <region startIndex="501" endIndex="507"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="visible">
+                        <value xsi:type="index:VariableSymbol" name="visible">
+                          <region startIndex="524" endIndex="530"/>
+                          <inferredType name="Boolean" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </typeParameters>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="detail">
+            <value xsi:type="index:VariableSymbol" name="detail" description="디테일 정보">
+              <region startIndex="827" endIndex="832"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="649" endIndex="769"/>
+                    <prototype>
+                      <symbols key="cellIndex">
+                        <value xsi:type="index:VariableSymbol" name="cellIndex">
+                          <region startIndex="656" endIndex="664"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="rowIndex">
+                        <value xsi:type="index:VariableSymbol" name="rowIndex">
+                          <region startIndex="680" endIndex="687"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="colIndex">
+                        <value xsi:type="index:VariableSymbol" name="colIndex">
+                          <region startIndex="703" endIndex="710"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="rowSpan">
+                        <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                          <region startIndex="726" endIndex="732"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="colSpan">
+                        <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                          <region startIndex="749" endIndex="755"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </typeParameters>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="footer">
+            <value xsi:type="index:VariableSymbol" name="footer" optional="true" description="푸터 정보">
+              <region startIndex="1064" endIndex="1069"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="873" endIndex="993"/>
+                    <prototype>
+                      <symbols key="cellIndex">
+                        <value xsi:type="index:VariableSymbol" name="cellIndex">
+                          <region startIndex="880" endIndex="888"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="rowIndex">
+                        <value xsi:type="index:VariableSymbol" name="rowIndex">
+                          <region startIndex="904" endIndex="911"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="colIndex">
+                        <value xsi:type="index:VariableSymbol" name="colIndex">
+                          <region startIndex="927" endIndex="934"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="rowSpan">
+                        <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                          <region startIndex="950" endIndex="956"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="colSpan">
+                        <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                          <region startIndex="973" endIndex="979"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </typeParameters>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="rowGroup">
+            <value xsi:type="index:VariableSymbol" name="rowGroup" optional="true" description="행그룹 정보">
+              <region startIndex="1495" endIndex="1502"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="1111" endIndex="1424"/>
+                    <prototype>
+                      <symbols key="groupCondition">
+                        <value xsi:type="index:VariableSymbol" name="groupCondition">
+                          <region startIndex="1118" endIndex="1131"/>
+                          <inferredType name="String" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="gheader">
+                        <value xsi:type="index:VariableSymbol" name="gheader" optional="true">
+                          <region startIndex="1147" endIndex="1153"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                              <selfDeclaringTypeSymbol classType="interface">
+                                <region startIndex="1157" endIndex="1277"/>
+                                <prototype>
+                                  <symbols key="cellIndex">
+                                    <value xsi:type="index:VariableSymbol" name="cellIndex">
+                                      <region startIndex="1164" endIndex="1172"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="rowIndex">
+                                    <value xsi:type="index:VariableSymbol" name="rowIndex">
+                                      <region startIndex="1188" endIndex="1195"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="colIndex">
+                                    <value xsi:type="index:VariableSymbol" name="colIndex">
+                                      <region startIndex="1211" endIndex="1218"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="rowSpan">
+                                    <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                                      <region startIndex="1234" endIndex="1240"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="colSpan">
+                                    <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                                      <region startIndex="1257" endIndex="1263"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                </prototype>
+                              </selfDeclaringTypeSymbol>
+                            </typeParameters>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                      <symbols key="gfooter">
+                        <value xsi:type="index:VariableSymbol" name="gfooter" optional="true">
+                          <region startIndex="1287" endIndex="1293"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridColumnLayout.js" instance="true" documentedType="true">
+                              <selfDeclaringTypeSymbol classType="interface">
+                                <region startIndex="1297" endIndex="1417"/>
+                                <prototype>
+                                  <symbols key="cellIndex">
+                                    <value xsi:type="index:VariableSymbol" name="cellIndex">
+                                      <region startIndex="1304" endIndex="1312"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="rowIndex">
+                                    <value xsi:type="index:VariableSymbol" name="rowIndex">
+                                      <region startIndex="1328" endIndex="1335"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="colIndex">
+                                    <value xsi:type="index:VariableSymbol" name="colIndex">
+                                      <region startIndex="1351" endIndex="1358"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="rowSpan">
+                                    <value xsi:type="index:VariableSymbol" name="rowSpan" optional="true">
+                                      <region startIndex="1374" endIndex="1380"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                  <symbols key="colSpan">
+                                    <value xsi:type="index:VariableSymbol" name="colSpan" optional="true">
+                                      <region startIndex="1397" endIndex="1403"/>
+                                      <inferredType name="Number" instance="true" documentedType="true"/>
+                                    </value>
+                                  </symbols>
+                                </prototype>
+                              </selfDeclaringTypeSymbol>
+                            </typeParameters>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </typeParameters>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

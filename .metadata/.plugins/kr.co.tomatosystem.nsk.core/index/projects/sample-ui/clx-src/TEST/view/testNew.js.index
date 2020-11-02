@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/sample-ui/clx-src/TEST/view/testNew.js" fileModificationTimestamp="6920127" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="TEST.view.testNew" indexingType="USER_WORKSPACE_CLX">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="254" endIndex="394" startLine="14" endLine="21"/>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="TEST.view.testNew" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="TEST.view.testNew">
+        <value xsi:type="index:FunctionSymbol" name="TEST.view.testNew" labelForOutline="testNew" hideFromProposal="true" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype/>
+        </value>
+      </symbolMap>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="TEST/view/testNew 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onButtonClick">
+        <value xsi:type="index:FunctionSymbol" name="onButtonClick" description="empNew.js Created at 2020. 10. 30. 오후 3:53:43.">
+          <region xsi:type="index:RegionWithLine" startIndex="263" endIndex="275" startLine="14" endLine="14"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="306" endIndex="306" startLine="14" endLine="14"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes name="onButtonClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region startIndex="309" endIndex="392"/>
+        <symbolMap key="button">
+          <value xsi:type="index:VariableSymbol" name="button">
+            <region startIndex="360" endIndex="365"/>
+            <inferredType name="cpr.controls.Button" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="306" endIndex="306" startLine="14" endLine="14"/>
+            <inferredType name="cpr.events.CMouseEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CMouseEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="182" endIndex="392" startLine="14" endLine="20"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="TEST.view.testNew">
+      <value xsi:type="index:FunctionSymbol" name="TEST.view.testNew" labelForOutline="testNew" hideFromProposal="true" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

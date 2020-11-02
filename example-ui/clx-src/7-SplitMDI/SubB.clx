@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-dd8f5716" version="1.0.0.0">
+  <head std:sid="head-e90a3399">
+    <title>SubB</title>
+    <screen std:sid="screen-5eb39735" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-1847ea53" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-824b527b" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-2e417fd7">
+      <cl:dataset std:sid="d-set-b676b0e3" id="people">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn name="favoriteColor"/>
+          <cl:datacolumn datatype="number" name="kor"/>
+          <cl:datacolumn datatype="number" name="eng"/>
+          <cl:datacolumn datatype="number" name="math"/>
+          <cl:datacolumn datatype="expression" expression="kor + eng + math" name="total"/>
+          <cl:datacolumn datatype="expression" expression="ceil((kor + eng + math) / 3)" name="avg"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Tomato]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[red]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[50]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Bulider Kim]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[blue]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[70]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[90]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[Nobody]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Nobody]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[orange]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[60]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[60]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Jeeeyul Lee]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[magenta]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[95]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[80]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="total">total4</cl:datavalue>
+            <cl:datavalue columnname="avg">avg4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[Tomato]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-43484417" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-b0bebe07" value="Program B">
+      <cl:xylayoutdata std:sid="xyl-data-1909d8d6" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:listbox std:sid="l-box-02b81c77" id="lbx2">
+      <cl:xylayoutdata std:sid="xyl-data-90edef95" height="180px" horizontalAnchor="LEFT" left="20px" top="54px" verticalAnchor="TOP" width="123px"/>
+      <cl:itemset datasetid="people" label="name" value="name"/>
+    </cl:listbox>
+    <cl:combobox std:sid="c-box-02927a9a" id="cmb3" value="Tomato">
+      <cl:xylayoutdata std:sid="xyl-data-bf72a237" height="20px" horizontalAnchor="LEFT" left="153px" top="54px" verticalAnchor="TOP" width="200px"/>
+      <cl:itemset datasetid="people" label="name" value="name"/>
+    </cl:combobox>
+    <cl:tree std:sid="tree-735f9c6f" id="tre2">
+      <cl:xylayoutdata std:sid="xyl-data-466acd89" height="150px" horizontalAnchor="LEFT" left="153px" top="84px" verticalAnchor="TOP" width="200px"/>
+      <cl:treeitemset datasetid="people" label="name" value="name" parent="parent"/>
+    </cl:tree>
+    <cl:xylayout std:sid="xylayout-bc3ce59d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

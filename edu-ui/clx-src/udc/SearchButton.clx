@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-972a31f7" version="1.0.0.0">
+  <head std:sid="head-f9768725">
+    <title>SearchButton</title>
+    <screen std:sid="screen-3abca76b" id="default" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-1f52b181" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-eb67c0ed" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-2ea5864f"/>
+    <cl:appspec>
+      <cl:property name="placeholder" type="string"/>
+      <cl:property bindable="true" name="value" type="string"/>
+      <cl:event name="search" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-c78444ff" style="top:0px; left:0px; width:100px; height:25px;">
+    <cl:listener std:sid="listener-7ce749b5" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:group std:sid="group-494680c6">
+      <cl:xylayoutdata std:sid="xyl-data-e4a8f5f2" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:button std:sid="button-7f9f69b0" id="btnSearch" value="">
+        <cl:listener std:sid="listener-1fd2c469" handler="onBtnSearchClick" name="click"/>
+        <cl:formdata std:sid="f-data-79a2f3c5" col="1" halign="CENTER" row="0" valign="CENTER" width="25"/>
+      </cl:button>
+      <cl:inputbox std:sid="i-box-08f6e509" id="ipbSearch">
+        <cl:apppropbind category="PROPERTY" property="placeholder" app-property="placeholder"/>
+        <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+        <cl:formdata std:sid="f-data-8c91f306" col="0" row="0"/>
+      </cl:inputbox>
+      <cl:formlayout>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="25" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-5f8ebe2a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

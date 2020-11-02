@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.NumberEditor.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="95" endIndex="4435" startLine="7" endLine="271"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="NumberEditor" description="NumberEditor 숫자를 입력하는 컨트롤입니다. 넘버 에디터를 생성합니다." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="123" endIndex="136" startLine="7" endLine="7"/>
+          <params name="id" description="넘버 에디터의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="132" endIndex="133" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="placeholder">
+              <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="462" endIndex="472"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="text">
+              <value xsi:type="index:VariableSymbol" name="text" description="&lt;b>Readonly&lt;/b> 컨트롤의 value가 변경된 내용을 기준으로 포맷이 된 text를 반환합니다.">
+                <region startIndex="619" endIndex="622"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="format">
+              <value xsi:type="index:VariableSymbol" name="format" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> numbereditor 내 데이터 유형 별 입력 받을 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> numbereditor 내 데이터 유형 별 입력 받을 형식을 설정합니다.&lt;br> [Format] : s 음수 / 양수문자, 0 숫자만(value가 없는 경우 0값이 표시), 9 숫자만(소수점에서 0으로 끝날 때 0이 생략) 옵션으로 가능합니다.&lt;br> #: 소수점 기준으로 정수부 또는 소수부의 마지막에 있으면 무한으로 입력가능하며, &quot;,&quot;가 있는 경우 소수점에서 처음 찾은 위치의 자리수 만큼 반복해서 &quot;,&quot;가 입력됩니다.&lt;br> &lt;br> &lt;pre>&lt;code>&lt;br> numbereditor.format = &quot;0.000&quot;; numbereditor.format = &quot;#,##0&quot;;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1229" endIndex="1234"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="spinButton">
+              <value xsi:type="index:VariableSymbol" name="spinButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 스핀 버튼의 유무를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 스핀 버튼의 유무를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1481" endIndex="1490"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoSelect">
+              <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1774" endIndex="1783"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="length">
+              <value xsi:type="index:VariableSymbol" name="length" description="&lt;b>Readonly&lt;/b> 입력된 문자열의 길이를 반환합니다.">
+                <region startIndex="1907" endIndex="1912"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="step">
+              <value xsi:type="index:VariableSymbol" name="step" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 증가 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 증가 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2148" endIndex="2151"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="max">
+              <value xsi:type="index:VariableSymbol" name="max" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 최대로 입력 가능한 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 최대로 입력 가능한 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2403" endIndex="2405"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="min">
+              <value xsi:type="index:VariableSymbol" name="min" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 최소로 입력 가능한 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 최소로 입력 가능한 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2657" endIndex="2659"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="upButtonImage">
+              <value xsi:type="index:VariableSymbol" name="upButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 증가를 나타내는 상향 button의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 증가를 나타내는 상향 button의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2933" endIndex="2945"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="downButtonImage">
+              <value xsi:type="index:VariableSymbol" name="downButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 감소를 나타내는 하향 button의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 감소를 나타내는 하향 button의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3219" endIndex="3233"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="preventInput">
+              <value xsi:type="index:VariableSymbol" name="preventInput" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> inputbox를 통한 입력 가능 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> inputbox를 통한 입력 가능 여부를 설정합니다.&lt;br> [true] : 키보드 입력을 방지하고, 스핀버튼으로만 입력이 가능합니다.&lt;br> [false] : 키보드 입력이 가능합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3585" endIndex="3596"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="displayExp">
+              <value xsi:type="index:VariableSymbol" name="displayExp" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 상태가 아닐때 보여지는 텍스트에 대한 Expression을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 상태가 아닐때 보여지는 텍스트에 대한 Expression을 설정합니다.&lt;br> &lt;pre>&lt;code>control.displayExp = &quot;'$' + text + '원'&quot;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3971" endIndex="3980"/>
+                <inferredType name="String" sematicsQualifier="expression" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="numberValue">
+              <value xsi:type="index:VariableSymbol" name="numberValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 넘버에디터의 값을 숫자 형식으로 얻습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 넘버에디터의 값을 숫자 형식으로 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="4239" endIndex="4249"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="stepUp">
+              <value xsi:type="index:FunctionVariableSymbol" name="stepUp" originalSymbolName="__anonymous2">
+                <region startIndex="4327" endIndex="4332"/>
+              </value>
+            </symbols>
+            <symbols key="stepDown">
+              <value xsi:type="index:FunctionVariableSymbol" name="stepDown" originalSymbolName="__anonymous3">
+                <region startIndex="4410" endIndex="4417"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.NumberEditor">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.NumberEditor" originalSymbolName="__anonymous1">
+          <region startIndex="108" endIndex="119"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="stepUp" description="숫자 값을 올립니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4336" endIndex="4347" startLine="264" endLine="264"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="stepDown" description="숫자 값을 내립니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4421" endIndex="4432" startLine="269" endLine="269"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="123" endIndex="136" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="136" endIndex="136"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="넘버 에디터의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="132" endIndex="133" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4336" endIndex="4347" startLine="264" endLine="264"/>
+        <childScopes>
+          <region startIndex="4347" endIndex="4347"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4421" endIndex="4432" startLine="269" endLine="269"/>
+        <childScopes>
+          <region startIndex="4432" endIndex="4432"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.NumberEditor">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.NumberEditor" description="NumberEditor 숫자를 입력하는 컨트롤입니다. 넘버 에디터를 생성합니다." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+        <region startIndex="108" endIndex="119"/>
+        <params name="id" description="넘버 에디터의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="132" endIndex="133" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="placeholder">
+            <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="462" endIndex="472"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="text">
+            <value xsi:type="index:VariableSymbol" name="text" description="&lt;b>Readonly&lt;/b> 컨트롤의 value가 변경된 내용을 기준으로 포맷이 된 text를 반환합니다.">
+              <region startIndex="619" endIndex="622"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="format">
+            <value xsi:type="index:VariableSymbol" name="format" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> numbereditor 내 데이터 유형 별 입력 받을 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> numbereditor 내 데이터 유형 별 입력 받을 형식을 설정합니다.&lt;br> [Format] : s 음수 / 양수문자, 0 숫자만(value가 없는 경우 0값이 표시), 9 숫자만(소수점에서 0으로 끝날 때 0이 생략) 옵션으로 가능합니다.&lt;br> #: 소수점 기준으로 정수부 또는 소수부의 마지막에 있으면 무한으로 입력가능하며, &quot;,&quot;가 있는 경우 소수점에서 처음 찾은 위치의 자리수 만큼 반복해서 &quot;,&quot;가 입력됩니다.&lt;br> &lt;br> &lt;pre>&lt;code>&lt;br> numbereditor.format = &quot;0.000&quot;; numbereditor.format = &quot;#,##0&quot;;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1229" endIndex="1234"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="spinButton">
+            <value xsi:type="index:VariableSymbol" name="spinButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 스핀 버튼의 유무를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 스핀 버튼의 유무를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1481" endIndex="1490"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoSelect">
+            <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1774" endIndex="1783"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="length">
+            <value xsi:type="index:VariableSymbol" name="length" description="&lt;b>Readonly&lt;/b> 입력된 문자열의 길이를 반환합니다.">
+              <region startIndex="1907" endIndex="1912"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="step">
+            <value xsi:type="index:VariableSymbol" name="step" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 증가 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 증가 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2148" endIndex="2151"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="max">
+            <value xsi:type="index:VariableSymbol" name="max" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 최대로 입력 가능한 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 최대로 입력 가능한 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2403" endIndex="2405"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="min">
+            <value xsi:type="index:VariableSymbol" name="min" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 최소로 입력 가능한 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 최소로 입력 가능한 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2657" endIndex="2659"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="upButtonImage">
+            <value xsi:type="index:VariableSymbol" name="upButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 증가를 나타내는 상향 button의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 증가를 나타내는 상향 button의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2933" endIndex="2945"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="downButtonImage">
+            <value xsi:type="index:VariableSymbol" name="downButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 감소를 나타내는 하향 button의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 감소를 나타내는 하향 button의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3219" endIndex="3233"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="preventInput">
+            <value xsi:type="index:VariableSymbol" name="preventInput" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> inputbox를 통한 입력 가능 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> inputbox를 통한 입력 가능 여부를 설정합니다.&lt;br> [true] : 키보드 입력을 방지하고, 스핀버튼으로만 입력이 가능합니다.&lt;br> [false] : 키보드 입력이 가능합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3585" endIndex="3596"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="displayExp">
+            <value xsi:type="index:VariableSymbol" name="displayExp" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 상태가 아닐때 보여지는 텍스트에 대한 Expression을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 상태가 아닐때 보여지는 텍스트에 대한 Expression을 설정합니다.&lt;br> &lt;pre>&lt;code>control.displayExp = &quot;'$' + text + '원'&quot;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3971" endIndex="3980"/>
+              <inferredType name="String" sematicsQualifier="expression" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="numberValue">
+            <value xsi:type="index:VariableSymbol" name="numberValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 넘버에디터의 값을 숫자 형식으로 얻습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 넘버에디터의 값을 숫자 형식으로 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="4239" endIndex="4249"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="stepUp">
+            <value xsi:type="index:FunctionVariableSymbol" name="stepUp" originalSymbolName="__anonymous2">
+              <region startIndex="4327" endIndex="4332"/>
+            </value>
+          </symbols>
+          <symbols key="stepDown">
+            <value xsi:type="index:FunctionVariableSymbol" name="stepDown" originalSymbolName="__anonymous3">
+              <region startIndex="4410" endIndex="4417"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.header.HeaderType.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="17" endIndex="470" startLine="4" endLine="23"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="HeaderType" baseSymbolName="Object" anonymousFunction="true" classType="enum">
+          <region xsi:type="index:RegionWithLine" startIndex="46" endIndex="57" startLine="4" endLine="4"/>
+          <prototype/>
+          <symbols key="ORIGINAL_COLUMN">
+            <value xsi:type="index:VariableSymbol" name="ORIGINAL_COLUMN" description="원본 값과 현재 값을 따로 관리하고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼칩니다.">
+              <region startIndex="202" endIndex="216"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="DISPLAY_COLUMN">
+            <value xsi:type="index:VariableSymbol" name="DISPLAY_COLUMN" description="현재 값만 가지고 있고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼치지 않습니다.&lt;br> (현재 값만 가지고 있기 때문에 commit, revert 등의 작업이 수행되지 않습니다.)">
+              <region startIndex="379" endIndex="392"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="ALL">
+            <value xsi:type="index:VariableSymbol" name="ALL">
+              <region startIndex="450" endIndex="452"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.data.header.HeaderType">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.data.header.HeaderType" originalSymbolName="__anonymous1">
+          <region startIndex="33" endIndex="42"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="46" endIndex="57" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="57" endIndex="57"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.data.header.HeaderType">
+      <value xsi:type="index:FunctionSymbol" name="cpr.data.header.HeaderType" baseSymbolName="Object" anonymousFunction="true" classType="enum">
+        <region startIndex="33" endIndex="42"/>
+        <prototype/>
+        <symbols key="ORIGINAL_COLUMN">
+          <value xsi:type="index:VariableSymbol" name="ORIGINAL_COLUMN" description="원본 값과 현재 값을 따로 관리하고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼칩니다.">
+            <region startIndex="202" endIndex="216"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="DISPLAY_COLUMN">
+          <value xsi:type="index:VariableSymbol" name="DISPLAY_COLUMN" description="현재 값만 가지고 있고, 해당 컬럼의 값 변경시 행 상태에 영향을 끼치지 않습니다.&lt;br> (현재 값만 가지고 있기 때문에 commit, revert 등의 작업이 수행되지 않습니다.)">
+            <region startIndex="379" endIndex="392"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="ALL">
+          <value xsi:type="index:VariableSymbol" name="ALL">
+            <region startIndex="450" endIndex="452"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

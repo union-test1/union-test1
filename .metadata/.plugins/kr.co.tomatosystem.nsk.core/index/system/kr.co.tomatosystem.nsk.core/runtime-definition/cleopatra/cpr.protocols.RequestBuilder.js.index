@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.protocols.RequestBuilder.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="378" startLine="4" endLine="18"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="RequestBuilder" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="53" endIndex="64" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="build">
+              <value xsi:type="index:FunctionVariableSymbol" name="build" originalSymbolName="__anonymous2">
+                <region startIndex="247" endIndex="251"/>
+              </value>
+            </symbols>
+            <symbols key="getContentType">
+              <value xsi:type="index:FunctionVariableSymbol" name="getContentType" originalSymbolName="__anonymous3">
+                <region startIndex="347" endIndex="360"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.protocols.RequestBuilder">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.protocols.RequestBuilder" originalSymbolName="__anonymous1">
+          <region startIndex="36" endIndex="49"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="build" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="255" endIndex="276" startLine="11" endLine="11"/>
+          <params name="submission" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="264" endIndex="273" startLine="11" endLine="11"/>
+            <inferredType name="cpr.protocols.AbstractSubmission" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getContentType" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="364" endIndex="375" startLine="16" endLine="16"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="53" endIndex="64" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="64" endIndex="64"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="255" endIndex="276" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="276" endIndex="276"/>
+          <symbolMap key="submission">
+            <value xsi:type="index:ParameterSymbol" name="submission" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="264" endIndex="273" startLine="11" endLine="11"/>
+              <inferredType name="cpr.protocols.AbstractSubmission" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="364" endIndex="375" startLine="16" endLine="16"/>
+        <childScopes>
+          <region startIndex="375" endIndex="375"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.protocols.RequestBuilder">
+      <value xsi:type="index:FunctionSymbol" name="cpr.protocols.RequestBuilder" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="36" endIndex="49"/>
+        <prototype>
+          <symbols key="build">
+            <value xsi:type="index:FunctionVariableSymbol" name="build" originalSymbolName="__anonymous2">
+              <region startIndex="247" endIndex="251"/>
+            </value>
+          </symbols>
+          <symbols key="getContentType">
+            <value xsi:type="index:FunctionVariableSymbol" name="getContentType" originalSymbolName="__anonymous3">
+              <region startIndex="347" endIndex="360"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

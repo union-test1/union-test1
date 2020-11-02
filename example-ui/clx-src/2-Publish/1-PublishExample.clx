@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5c7608b3" version="1.0.0.0">
+  <head std:sid="head-d80d75b2">
+    <title>Design</title>
+    <screen std:sid="screen-43f6d3b8" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-cd226622" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-f0f20f4b" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-282df059"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-8ed1ab61" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:img std:sid="image-d69818aa" src="images/design-guide.png">
+      <cl:xylayoutdata std:sid="xyl-data-5b8ba593" height="65px" horizontalAnchor="LEFT" left="20px" top="50px" verticalAnchor="TOP" width="847px"/>
+    </cl:img>
+    <cl:output std:sid="output-f16f45aa" class="title-group" value="Design Gude Line">
+      <cl:xylayoutdata std:sid="xyl-data-b40df0b4" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="847px"/>
+    </cl:output>
+    <cl:group std:sid="group-8dd9bf01" class="box-header">
+      <cl:xylayoutdata std:sid="xyl-data-141b7d44" height="119px" horizontalAnchor="LEFT" left="20px" top="196px" verticalAnchor="TOP" width="858px"/>
+      <cl:xylayout std:sid="xylayout-56619647"/>
+    </cl:group>
+    <cl:radiobutton std:sid="r-button-c8a62dd5" id="rdb2" value="value2">
+      <cl:xylayoutdata std:sid="xyl-data-7a4357a9" height="30px" horizontalAnchor="LEFT" left="20px" top="375px" verticalAnchor="TOP" width="257px"/>
+      <cl:item label="Monthly" value="value2"/>
+      <cl:item label="Weekly" value="value3"/>
+      <cl:item label="Daily" value="value4"/>
+    </cl:radiobutton>
+    <cl:combobox std:sid="c-box-4be21f93" id="cmb2">
+      <cl:xylayoutdata std:sid="xyl-data-b09fa856" height="24px" horizontalAnchor="LEFT" left="20px" top="449px" verticalAnchor="TOP" width="164px"/>
+    </cl:combobox>
+    <cl:output std:sid="output-0899991c" class="title-group" value="Parts">
+      <cl:xylayoutdata std:sid="xyl-data-4e32d7bb" height="20px" horizontalAnchor="LEFT" left="20px" top="345px" verticalAnchor="TOP" width="847px"/>
+    </cl:output>
+    <cl:output std:sid="output-f5df1c55" class="title-group" value="Playground">
+      <cl:xylayoutdata std:sid="xyl-data-36c2c863" height="20px" horizontalAnchor="LEFT" left="20px" top="166px" verticalAnchor="TOP" width="847px"/>
+    </cl:output>
+    <cl:group std:sid="group-768cadcf" class="button-group">
+      <cl:xylayoutdata std:sid="xyl-data-fc87db73" height="25px" horizontalAnchor="LEFT" left="20px" top="414px" verticalAnchor="TOP" width="161px"/>
+      <cl:button std:sid="button-f4791985" class="type-b prev" value="前月">
+        <std:metadata>
+          <std:property key="locked" value="true"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-78468b5e" col="0" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-09c150a5" class="type-b highlighted no-icon" value="今月">
+        <std:metadata>
+          <std:property key="locked" value="true"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-57725057" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-2ed198bc" class="type-b next right-icon" value="来月">
+        <std:metadata>
+          <std:property key="locked" value="true"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-072558e2" col="2" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-8ceb5e10" hspace="0">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-96a24d0a" class="button-group">
+      <cl:xylayoutdata std:sid="xyl-data-86aac03d" height="25px" horizontalAnchor="LEFT" left="194px" top="414px" verticalAnchor="TOP" width="83px"/>
+      <cl:button std:sid="button-ab5ef732" class="type-b list1 icon-only" value="">
+        <std:metadata>
+          <std:property key="locked" value="true"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-2ec9c7e3" col="0" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-35ccc454" class="type-b highlighted chart1 icon-only" value="">
+        <std:metadata>
+          <std:property key="locked" value="true"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-a8494810" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-5da0da7e" class="type-b chart2 icon-only" value="">
+        <std:metadata>
+          <std:property key="locked" value="true"/>
+        </std:metadata>
+        <cl:formdata std:sid="f-data-9e51e482" col="2" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-3ceb5b1d" hspace="0">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-0b990250"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

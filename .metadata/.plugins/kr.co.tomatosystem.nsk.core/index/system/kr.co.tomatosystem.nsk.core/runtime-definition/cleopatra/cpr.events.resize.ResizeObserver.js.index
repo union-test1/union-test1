@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.resize.ResizeObserver.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="103" endIndex="1237" startLine="5" endLine="39"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ResizeObserver" description="new ResizeObserver(callback)" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="138" endIndex="157" startLine="5" endLine="5"/>
+          <params name="callback" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="147" endIndex="154" startLine="5" endLine="5"/>
+            <inferredType name="cpr.events.resize.ResizeObserverCallback" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="callback">
+              <value xsi:type="index:VariableSymbol" name="callback">
+                <region startIndex="327" endIndex="334"/>
+                <inferredType name="cpr.events.resize.ResizeObserverCallback" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="observe">
+              <value xsi:type="index:FunctionVariableSymbol" name="observe" originalSymbolName="__anonymous2">
+                <region startIndex="734" endIndex="740"/>
+              </value>
+            </symbols>
+            <symbols key="unobserve">
+              <value xsi:type="index:FunctionVariableSymbol" name="unobserve" originalSymbolName="__anonymous3">
+                <region startIndex="1110" endIndex="1118"/>
+              </value>
+            </symbols>
+            <symbols key="disconnect">
+              <value xsi:type="index:FunctionVariableSymbol" name="disconnect" originalSymbolName="__anonymous4">
+                <region startIndex="1210" endIndex="1219"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.resize.ResizeObserver">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.resize.ResizeObserver" originalSymbolName="__anonymous1">
+          <region startIndex="121" endIndex="134"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="observe" description="observe(target) Adds target to the list of observed elements. 1. If target is in observationTargets slot, return. 2. Let resizeObservation be new ResizeObservation(target). 3. Add the resizeObservation to the observationTargets slot." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="744" endIndex="761" startLine="22" endLine="22"/>
+          <params name="target" description="observe(target)" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="753" endIndex="758" startLine="22" endLine="22"/>
+            <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="unobserve" description="unobserve(target) Removes target from the list of observed elements. 1. Let observation be ResizeObservation in observationTargets whose target slot is target. 2. If observation is not found, return. 3. Remove observation from observationTargets." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1122" endIndex="1139" startLine="32" endLine="32"/>
+          <params name="target" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1131" endIndex="1136" startLine="32" endLine="32"/>
+            <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="disconnect" description="disconnect()" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1223" endIndex="1234" startLine="37" endLine="37"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="138" endIndex="157" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="157" endIndex="157"/>
+          <symbolMap key="callback">
+            <value xsi:type="index:ParameterSymbol" name="callback" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="147" endIndex="154" startLine="5" endLine="5"/>
+              <inferredType name="cpr.events.resize.ResizeObserverCallback" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="744" endIndex="761" startLine="22" endLine="22"/>
+        <childScopes>
+          <region startIndex="761" endIndex="761"/>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" description="observe(target)" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="753" endIndex="758" startLine="22" endLine="22"/>
+              <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1122" endIndex="1139" startLine="32" endLine="32"/>
+        <childScopes>
+          <region startIndex="1139" endIndex="1139"/>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1131" endIndex="1136" startLine="32" endLine="32"/>
+              <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1223" endIndex="1234" startLine="37" endLine="37"/>
+        <childScopes>
+          <region startIndex="1234" endIndex="1234"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.resize.ResizeObserver">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.resize.ResizeObserver" description="new ResizeObserver(callback)" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="121" endIndex="134"/>
+        <params name="callback" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="147" endIndex="154" startLine="5" endLine="5"/>
+          <inferredType name="cpr.events.resize.ResizeObserverCallback" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="callback">
+            <value xsi:type="index:VariableSymbol" name="callback">
+              <region startIndex="327" endIndex="334"/>
+              <inferredType name="cpr.events.resize.ResizeObserverCallback" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="observe">
+            <value xsi:type="index:FunctionVariableSymbol" name="observe" originalSymbolName="__anonymous2">
+              <region startIndex="734" endIndex="740"/>
+            </value>
+          </symbols>
+          <symbols key="unobserve">
+            <value xsi:type="index:FunctionVariableSymbol" name="unobserve" originalSymbolName="__anonymous3">
+              <region startIndex="1110" endIndex="1118"/>
+            </value>
+          </symbols>
+          <symbols key="disconnect">
+            <value xsi:type="index:FunctionVariableSymbol" name="disconnect" originalSymbolName="__anonymous4">
+              <region startIndex="1210" endIndex="1219"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

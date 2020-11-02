@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/url.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="39" endIndex="186" startLine="5" endLine="16"/>
+      <symbolMap key="URL">
+        <value xsi:type="index:FunctionSymbol" name="URL" canBeUsedAsConstructor="false">
+          <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="50" startLine="5" endLine="5"/>
+          <prototype/>
+          <symbols key="createObjectURL">
+            <value xsi:type="index:FunctionVariableSymbol" name="createObjectURL" originalSymbolName="__anonymous1">
+              <region startIndex="87" endIndex="101"/>
+            </value>
+          </symbols>
+          <symbols key="revokeObjectURL">
+            <value xsi:type="index:FunctionVariableSymbol" name="revokeObjectURL" originalSymbolName="__anonymous2">
+              <region startIndex="153" endIndex="167"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="createObjectURL" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="105" endIndex="116" startLine="11" endLine="11"/>
+          <inferredReturnType name="URL" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/url.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="revokeObjectURL" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="171" endIndex="185" startLine="16" endLine="16"/>
+          <params name="url" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="180" endIndex="182" startLine="16" endLine="16"/>
+            <inferredType name="URL" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/url.js" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes name="URL" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="54" endIndex="55"/>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="55" startLine="5" endLine="6"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="105" endIndex="116" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="116" endIndex="116"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="171" endIndex="185" startLine="16" endLine="16"/>
+        <childScopes>
+          <region startIndex="185" endIndex="185"/>
+          <symbolMap key="url">
+            <value xsi:type="index:ParameterSymbol" name="url" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="180" endIndex="182" startLine="16" endLine="16"/>
+              <inferredType name="URL" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/url.js" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="URL">
+      <value xsi:type="index:FunctionSymbol" name="URL" canBeUsedAsConstructor="false">
+        <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="50" startLine="5" endLine="5"/>
+        <prototype/>
+        <symbols key="createObjectURL">
+          <value xsi:type="index:FunctionVariableSymbol" name="createObjectURL" originalSymbolName="__anonymous1">
+            <region startIndex="87" endIndex="101"/>
+          </value>
+        </symbols>
+        <symbols key="revokeObjectURL">
+          <value xsi:type="index:FunctionVariableSymbol" name="revokeObjectURL" originalSymbolName="__anonymous2">
+            <region startIndex="153" endIndex="167"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.foundation.Workflow.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="125" endIndex="1856" startLine="7" endLine="62"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="Workflow" description="비동기적으로 처리되는 작업들을 순서대로 처리하는 방법을 제공하는 컴포넌트입니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="151" endIndex="172" startLine="7" endLine="7"/>
+          <params name="app" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="162" startLine="7" endLine="7"/>
+            <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+          </params>
+          <params name="debug" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="169" startLine="7" endLine="7"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="exec">
+              <value xsi:type="index:FunctionVariableSymbol" name="exec" originalSymbolName="__anonymous2">
+                <region startIndex="555" endIndex="558"/>
+              </value>
+            </symbols>
+            <symbols key="send">
+              <value xsi:type="index:FunctionVariableSymbol" name="send" originalSymbolName="__anonymous3">
+                <region startIndex="938" endIndex="941"/>
+              </value>
+            </symbols>
+            <symbols key="err">
+              <value xsi:type="index:FunctionVariableSymbol" name="err" originalSymbolName="__anonymous4">
+                <region startIndex="1291" endIndex="1293"/>
+              </value>
+            </symbols>
+            <symbols key="getReport">
+              <value xsi:type="index:FunctionVariableSymbol" name="getReport" originalSymbolName="__anonymous5">
+                <region startIndex="1830" endIndex="1838"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.foundation.Workflow">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.foundation.Workflow" originalSymbolName="__anonymous1">
+          <region startIndex="140" endIndex="147"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="exec" description="다음으로 함수를 실행합니다. &lt;pre>&lt;code>var workflow = new cpr.foundation.Workflow(app); workflow.exec(function()  {&#xA;      ... CODE ...&#xA;   } );&lt;/code>&lt;/pre>" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="562" endIndex="581" startLine="20" endLine="20"/>
+          <params name="func" description="다음 실행할 함수" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="571" endIndex="574" startLine="20" endLine="20"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" variableName="value" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <params name="id" optional="true" description="실행할 작업의 명칭(로그 기록을 위해 사용)" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="577" endIndex="578" startLine="20" endLine="20"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.foundation.Workflow" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="send" description="다음으로 Submission을 실행합니다. Submission의 ID가 여러 개 전달되면 병렬로 수행됩니다. &lt;pre>&lt;code>var workflow = new cpr.foundation.Workflow(app); workflow.send(&quot;submain&quot;, &quot;subsub&quot;, ...);&lt;/code>&lt;/pre>" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="945" endIndex="969" startLine="30" endLine="30"/>
+          <params name="submissionIds" description="다음으로 실행할 Submission의 ID들" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="954" endIndex="966" startLine="30" endLine="30"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.foundation.Workflow" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="err" description="에러를 처리할 함수를 지정합니다. &lt;pre>&lt;code>var workflow = new cpr.foundation.Workflow(app); workflow.exec(...).send(...).error(function(error)  {&#xA;      console.err(error);&#xA;   } );&lt;/code>&lt;/pre>" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1297" endIndex="1312" startLine="41" endLine="41"/>
+          <params name="func" description="에러를 처리할 함수" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1306" endIndex="1309" startLine="41" endLine="41"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" variableName="error" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="cpr.foundation.Workflow" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="getReport" description="Workflow 실행결과 레포트를 반환합니다. workflow 호출이 완료되는 시점에는 workflow의 실행이 끝나지 않을 수 있기 때문에 getReport 호출은 workflow의 exec 함수를 통해 호출하는 것이 안전합니다. &lt;pre>&lt;code>var workflow = new cpr.foundation.Workflow(app); workflow.exec(...).send(...).exec(...).error(...) .exec(function()  {&#xA;      console.log(JSON.stringify(workflow.getReport()));&#xA;   } );&lt;/code>&lt;/pre>" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1842" endIndex="1853" startLine="60" endLine="60"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.foundation.Workflow.js" instance="true" documentedType="true">
+              <selfDeclaringTypeSymbol classType="interface">
+                <region startIndex="1686" endIndex="1787"/>
+                <prototype>
+                  <symbols key="id">
+                    <value xsi:type="index:VariableSymbol" name="id">
+                      <region startIndex="1693" endIndex="1694"/>
+                      <inferredType name="String" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="start">
+                    <value xsi:type="index:VariableSymbol" name="start">
+                      <region startIndex="1710" endIndex="1714"/>
+                      <inferredType name="Number" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="end">
+                    <value xsi:type="index:VariableSymbol" name="end">
+                      <region startIndex="1730" endIndex="1732"/>
+                      <inferredType name="Number" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="time">
+                    <value xsi:type="index:VariableSymbol" name="time">
+                      <region startIndex="1748" endIndex="1751"/>
+                      <inferredType name="Number" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="success">
+                    <value xsi:type="index:VariableSymbol" name="success">
+                      <region startIndex="1767" endIndex="1773"/>
+                      <inferredType name="Boolean" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                </prototype>
+              </selfDeclaringTypeSymbol>
+            </typeParameters>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="151" endIndex="172" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="172" endIndex="172"/>
+          <symbolMap key="app">
+            <value xsi:type="index:ParameterSymbol" name="app" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="162" startLine="7" endLine="7"/>
+              <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="debug">
+            <value xsi:type="index:ParameterSymbol" name="debug" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="169" startLine="7" endLine="7"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="562" endIndex="581" startLine="20" endLine="20"/>
+        <childScopes>
+          <region startIndex="581" endIndex="581"/>
+          <symbolMap key="func">
+            <value xsi:type="index:ParameterSymbol" name="func" description="다음 실행할 함수" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="571" endIndex="574" startLine="20" endLine="20"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" variableName="value" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" optional="true" description="실행할 작업의 명칭(로그 기록을 위해 사용)" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="577" endIndex="578" startLine="20" endLine="20"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="945" endIndex="969" startLine="30" endLine="30"/>
+        <childScopes>
+          <region startIndex="969" endIndex="969"/>
+          <symbolMap key="submissionIds">
+            <value xsi:type="index:ParameterSymbol" name="submissionIds" description="다음으로 실행할 Submission의 ID들" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="954" endIndex="966" startLine="30" endLine="30"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1297" endIndex="1312" startLine="41" endLine="41"/>
+        <childScopes>
+          <region startIndex="1312" endIndex="1312"/>
+          <symbolMap key="func">
+            <value xsi:type="index:ParameterSymbol" name="func" description="에러를 처리할 함수" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1306" endIndex="1309" startLine="41" endLine="41"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" variableName="error" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1842" endIndex="1853" startLine="60" endLine="60"/>
+        <childScopes>
+          <region startIndex="1853" endIndex="1853"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.foundation.Workflow">
+      <value xsi:type="index:FunctionSymbol" name="cpr.foundation.Workflow" description="비동기적으로 처리되는 작업들을 순서대로 처리하는 방법을 제공하는 컴포넌트입니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="140" endIndex="147"/>
+        <params name="app" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="162" startLine="7" endLine="7"/>
+          <inferredType name="cpr.core.AppInstance" instance="true" documentedType="true"/>
+        </params>
+        <params name="debug" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="169" startLine="7" endLine="7"/>
+          <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="exec">
+            <value xsi:type="index:FunctionVariableSymbol" name="exec" originalSymbolName="__anonymous2">
+              <region startIndex="555" endIndex="558"/>
+            </value>
+          </symbols>
+          <symbols key="send">
+            <value xsi:type="index:FunctionVariableSymbol" name="send" originalSymbolName="__anonymous3">
+              <region startIndex="938" endIndex="941"/>
+            </value>
+          </symbols>
+          <symbols key="err">
+            <value xsi:type="index:FunctionVariableSymbol" name="err" originalSymbolName="__anonymous4">
+              <region startIndex="1291" endIndex="1293"/>
+            </value>
+          </symbols>
+          <symbols key="getReport">
+            <value xsi:type="index:FunctionVariableSymbol" name="getReport" originalSymbolName="__anonymous5">
+              <region startIndex="1830" endIndex="1838"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

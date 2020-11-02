@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.SearchInput.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="117" endIndex="3771" startLine="8" endLine="220"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="SearchInput" description="SearchInput 인풋박스와 검색버튼이 결합된 컨트롤 검색데이터를 입력할 수 있습니다. 서치 인풋을 생성합니다." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="144" endIndex="157" startLine="8" endLine="8"/>
+          <params name="id" description="서치 인풋의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="153" endIndex="154" startLine="8" endLine="8"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="placeholder">
+              <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="481" endIndex="491"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="length">
+              <value xsi:type="index:VariableSymbol" name="length" description="&lt;b>Readonly&lt;/b> inputbox의 입력된 값(문자열)의 길이를 반환합니다.">
+                <region startIndex="626" endIndex="631"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="imeMode">
+              <value xsi:type="index:VariableSymbol" name="imeMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> IE, FireFox 브라우저에서 한영 변환 설정을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> IE, FireFox 브라우저 상에서 한영 변환을 설정합니다. &lt;br> [auto] : 현재 inputbox의 ime 설정에 대해 아무것도 하지않습니다.&lt;br> [active] : 기본 값으로 한글을 입력받습니다. &lt;br> [inactive] : 기본 값으로 영문을 입력받습니다.&lt;br> [disabled] : 영문만을 입력받습니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1075" endIndex="1081"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoSelect">
+              <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1363" endIndex="1372"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autocomplete">
+              <value xsi:type="index:VariableSymbol" name="autocomplete" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 브라우저의 자동완성 기능 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 브라우저의 자동완성 기능 설정 값을 설정합니다. 기본값은 빈 값입니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1648" endIndex="1659"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="searchButtonImage">
+              <value xsi:type="index:VariableSymbol" name="searchButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> search버튼의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> search버튼의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1912" endIndex="1928"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clearButtonImage">
+              <value xsi:type="index:VariableSymbol" name="clearButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> clear버튼 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> clear버튼 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2177" endIndex="2192"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="hideSearchButton">
+              <value xsi:type="index:VariableSymbol" name="hideSearchButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> search버튼의 숨김여부를 반환합니다 &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> search버튼의 숨김여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2447" endIndex="2462"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="hideClearButton">
+              <value xsi:type="index:VariableSymbol" name="hideClearButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> clear버튼의 숨김여부를 반환합니다 &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> clear버튼의 숨김여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2716" endIndex="2730"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="searchPosition">
+              <value xsi:type="index:VariableSymbol" name="searchPosition" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> search버튼의 위치(인풋박스의 왼쪽 또는 오른쪽)를 반환합니다 &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> search버튼의 위치(인풋박스의 왼쪽 또는 오른쪽)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3015" endIndex="3028"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="style">
+              <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+                <region startIndex="3224" endIndex="3228"/>
+                <inferredType name="cpr.controls.SearchInput$Styler" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="confirmEvent">
+              <value xsi:type="index:FunctionVariableSymbol" name="confirmEvent" originalSymbolName="__anonymous2">
+                <region startIndex="3466" endIndex="3477"/>
+              </value>
+            </symbols>
+            <symbols key="search">
+              <value xsi:type="index:FunctionVariableSymbol" name="search" originalSymbolName="__anonymous3">
+                <region startIndex="3612" endIndex="3617"/>
+              </value>
+            </symbols>
+            <symbols key="clear">
+              <value xsi:type="index:FunctionVariableSymbol" name="clear" originalSymbolName="__anonymous4">
+                <region startIndex="3749" endIndex="3753"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.SearchInput">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.SearchInput" originalSymbolName="__anonymous1">
+          <region startIndex="130" endIndex="140"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="confirmEvent" description="Control의 상태에 따라 Control의 Default Event Handler를 실행할 지 여부를 결정합니다." returnDescription="컨트롤의 Event Handler 실행 여부." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3481" endIndex="3493" startLine="206" endLine="206"/>
+          <params name="e" description="이벤트" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3490" endIndex="3490" startLine="206" endLine="206"/>
+            <inferredType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="search" description="Search 이벤트를 발생합니다.&lt;br> search 이벤트에 해당하는 eventlistener의 함수를 수행합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3621" endIndex="3632" startLine="212" endLine="212"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="clear" description="Clear 이벤트를 발생합니다.&lt;br> clear 이벤트에 해당하는 eventlistener의 함수를 수행합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3757" endIndex="3768" startLine="218" endLine="218"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="144" endIndex="157" startLine="8" endLine="8"/>
+        <childScopes>
+          <region startIndex="157" endIndex="157"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="서치 인풋의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="153" endIndex="154" startLine="8" endLine="8"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3481" endIndex="3493" startLine="206" endLine="206"/>
+        <childScopes>
+          <region startIndex="3493" endIndex="3493"/>
+          <symbolMap key="e">
+            <value xsi:type="index:ParameterSymbol" name="e" description="이벤트" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3490" endIndex="3490" startLine="206" endLine="206"/>
+              <inferredType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3621" endIndex="3632" startLine="212" endLine="212"/>
+        <childScopes>
+          <region startIndex="3632" endIndex="3632"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3757" endIndex="3768" startLine="218" endLine="218"/>
+        <childScopes>
+          <region startIndex="3768" endIndex="3768"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.SearchInput">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.SearchInput" description="SearchInput 인풋박스와 검색버튼이 결합된 컨트롤 검색데이터를 입력할 수 있습니다. 서치 인풋을 생성합니다." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+        <region startIndex="130" endIndex="140"/>
+        <params name="id" description="서치 인풋의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="153" endIndex="154" startLine="8" endLine="8"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="placeholder">
+            <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="481" endIndex="491"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="length">
+            <value xsi:type="index:VariableSymbol" name="length" description="&lt;b>Readonly&lt;/b> inputbox의 입력된 값(문자열)의 길이를 반환합니다.">
+              <region startIndex="626" endIndex="631"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="imeMode">
+            <value xsi:type="index:VariableSymbol" name="imeMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> IE, FireFox 브라우저에서 한영 변환 설정을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> IE, FireFox 브라우저 상에서 한영 변환을 설정합니다. &lt;br> [auto] : 현재 inputbox의 ime 설정에 대해 아무것도 하지않습니다.&lt;br> [active] : 기본 값으로 한글을 입력받습니다. &lt;br> [inactive] : 기본 값으로 영문을 입력받습니다.&lt;br> [disabled] : 영문만을 입력받습니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1075" endIndex="1081"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoSelect">
+            <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1363" endIndex="1372"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autocomplete">
+            <value xsi:type="index:VariableSymbol" name="autocomplete" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 브라우저의 자동완성 기능 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 브라우저의 자동완성 기능 설정 값을 설정합니다. 기본값은 빈 값입니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1648" endIndex="1659"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="searchButtonImage">
+            <value xsi:type="index:VariableSymbol" name="searchButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> search버튼의 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> search버튼의 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1912" endIndex="1928"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="clearButtonImage">
+            <value xsi:type="index:VariableSymbol" name="clearButtonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> clear버튼 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> clear버튼 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2177" endIndex="2192"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="hideSearchButton">
+            <value xsi:type="index:VariableSymbol" name="hideSearchButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> search버튼의 숨김여부를 반환합니다 &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> search버튼의 숨김여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2447" endIndex="2462"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="hideClearButton">
+            <value xsi:type="index:VariableSymbol" name="hideClearButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> clear버튼의 숨김여부를 반환합니다 &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> clear버튼의 숨김여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2716" endIndex="2730"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="searchPosition">
+            <value xsi:type="index:VariableSymbol" name="searchPosition" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> search버튼의 위치(인풋박스의 왼쪽 또는 오른쪽)를 반환합니다 &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> search버튼의 위치(인풋박스의 왼쪽 또는 오른쪽)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3015" endIndex="3028"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="style">
+            <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+              <region startIndex="3224" endIndex="3228"/>
+              <inferredType name="cpr.controls.SearchInput$Styler" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="confirmEvent">
+            <value xsi:type="index:FunctionVariableSymbol" name="confirmEvent" originalSymbolName="__anonymous2">
+              <region startIndex="3466" endIndex="3477"/>
+            </value>
+          </symbols>
+          <symbols key="search">
+            <value xsi:type="index:FunctionVariableSymbol" name="search" originalSymbolName="__anonymous3">
+              <region startIndex="3612" endIndex="3617"/>
+            </value>
+          </symbols>
+          <symbols key="clear">
+            <value xsi:type="index:FunctionVariableSymbol" name="clear" originalSymbolName="__anonymous4">
+              <region startIndex="3749" endIndex="3753"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

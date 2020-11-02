@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.protocols.PayloadType.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="83" endIndex="304" startLine="6" endLine="19"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="PayloadType" description="DataSet 요청 데이터 필터 조건 설정값. 변경된 데이터만 전송할지 전체 데이터를 전송할지를 결정한다." baseSymbolName="Number" anonymousFunction="true" classType="enum">
+          <region xsi:type="index:RegionWithLine" startIndex="111" endIndex="122" startLine="6" endLine="6"/>
+          <prototype/>
+          <symbols key="modified">
+            <value xsi:type="index:VariableSymbol" name="modified" description="변경된 데이터만 전송(기본값)">
+              <region startIndex="232" endIndex="239"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="all">
+            <value xsi:type="index:VariableSymbol" name="all" description="전체 데이터를 전송">
+              <region startIndex="295" endIndex="297"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.protocols.PayloadType">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.protocols.PayloadType" originalSymbolName="__anonymous1">
+          <region startIndex="97" endIndex="107"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="111" endIndex="122" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="122" endIndex="122"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.protocols.PayloadType">
+      <value xsi:type="index:FunctionSymbol" name="cpr.protocols.PayloadType" description="DataSet 요청 데이터 필터 조건 설정값. 변경된 데이터만 전송할지 전체 데이터를 전송할지를 결정한다." baseSymbolName="Number" anonymousFunction="true" classType="enum">
+        <region startIndex="97" endIndex="107"/>
+        <prototype/>
+        <symbols key="modified">
+          <value xsi:type="index:VariableSymbol" name="modified" description="변경된 데이터만 전송(기본값)">
+            <region startIndex="232" endIndex="239"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="all">
+          <value xsi:type="index:VariableSymbol" name="all" description="전체 데이터를 전송">
+            <region startIndex="295" endIndex="297"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

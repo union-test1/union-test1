@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.protocols.SubmissionProcess.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="33" endIndex="352" startLine="5" endLine="23"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="SubmissionProcess" description="서브미션의 통신 상태." baseSymbolName="Number" anonymousFunction="true" classType="enum">
+          <region xsi:type="index:RegionWithLine" startIndex="67" endIndex="78" startLine="5" endLine="5"/>
+          <prototype/>
+          <symbols key="IDLE">
+            <value xsi:type="index:VariableSymbol" name="IDLE" description="서브미션이 대기 중인 상태.">
+              <region startIndex="199" endIndex="202"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="SENDING">
+            <value xsi:type="index:VariableSymbol" name="SENDING" description="서브미션을 전송하는 상태.">
+              <region startIndex="268" endIndex="274"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="DONE">
+            <value xsi:type="index:VariableSymbol" name="DONE" description="서브미션 전송이 완료된 상태.">
+              <region startIndex="342" endIndex="345"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.protocols.SubmissionProcess">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.protocols.SubmissionProcess" originalSymbolName="__anonymous1">
+          <region startIndex="47" endIndex="63"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="67" endIndex="78" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="78" endIndex="78"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.protocols.SubmissionProcess">
+      <value xsi:type="index:FunctionSymbol" name="cpr.protocols.SubmissionProcess" description="서브미션의 통신 상태." baseSymbolName="Number" anonymousFunction="true" classType="enum">
+        <region startIndex="47" endIndex="63"/>
+        <prototype/>
+        <symbols key="IDLE">
+          <value xsi:type="index:VariableSymbol" name="IDLE" description="서브미션이 대기 중인 상태.">
+            <region startIndex="199" endIndex="202"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="SENDING">
+          <value xsi:type="index:VariableSymbol" name="SENDING" description="서브미션을 전송하는 상태.">
+            <region startIndex="268" endIndex="274"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="DONE">
+          <value xsi:type="index:VariableSymbol" name="DONE" description="서브미션 전송이 완료된 상태.">
+            <region startIndex="342" endIndex="345"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

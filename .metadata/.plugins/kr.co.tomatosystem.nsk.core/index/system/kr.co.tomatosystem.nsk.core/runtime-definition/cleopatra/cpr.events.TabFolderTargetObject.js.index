@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.TabFolderTargetObject.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="62" endIndex="464" startLine="5" endLine="22"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="TabFolderTargetObject" description="탭폴더와 연관된 이벤트가 발생 했을 때, 추가 정보를 제공합니다." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="97" endIndex="108" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="item">
+              <value xsi:type="index:VariableSymbol" name="item" optional="true" description="이벤트와 연관된 탭 아이템">
+                <region startIndex="285" endIndex="288"/>
+                <inferredType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="relativeTargetName">
+              <value xsi:type="index:VariableSymbol" name="relativeTargetName" optional="true" description="이벤트가 발생한 영역">
+                <region startIndex="429" endIndex="446"/>
+                <inferredType name="AnonymousEnum" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.TabFolderTargetObject.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol description="&quot;body&quot; | &quot;header&quot;" baseSymbolName="String" classType="enum">
+                    <region startIndex="350" endIndex="366"/>
+                    <symbols key="body">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="body" literal="body">
+                        <region startIndex="350" endIndex="355"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="header">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="header" literal="header">
+                        <region startIndex="359" endIndex="366"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                  </selfDeclaringTypeSymbol>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.TabFolderTargetObject">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.TabFolderTargetObject" originalSymbolName="__anonymous1">
+          <region startIndex="73" endIndex="93"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="97" endIndex="108" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="108" endIndex="108"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.TabFolderTargetObject">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.TabFolderTargetObject" description="탭폴더와 연관된 이벤트가 발생 했을 때, 추가 정보를 제공합니다." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="73" endIndex="93"/>
+        <prototype>
+          <symbols key="item">
+            <value xsi:type="index:VariableSymbol" name="item" optional="true" description="이벤트와 연관된 탭 아이템">
+              <region startIndex="285" endIndex="288"/>
+              <inferredType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="relativeTargetName">
+            <value xsi:type="index:VariableSymbol" name="relativeTargetName" optional="true" description="이벤트가 발생한 영역">
+              <region startIndex="429" endIndex="446"/>
+              <inferredType name="AnonymousEnum" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.TabFolderTargetObject.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol description="&quot;body&quot; | &quot;header&quot;" baseSymbolName="String" classType="enum">
+                  <region startIndex="350" endIndex="366"/>
+                  <symbols key="body">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="body" literal="body">
+                      <region startIndex="350" endIndex="355"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="header">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="header" literal="header">
+                      <region startIndex="359" endIndex="366"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                </selfDeclaringTypeSymbol>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

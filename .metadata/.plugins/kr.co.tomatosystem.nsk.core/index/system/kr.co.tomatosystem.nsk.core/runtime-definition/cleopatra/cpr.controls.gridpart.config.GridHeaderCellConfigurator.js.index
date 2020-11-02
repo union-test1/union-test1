@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.config.GridHeaderCellConfigurator.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="3807" startLine="5" endLine="187"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridHeaderCellConfigurator" baseSymbolName="cpr.controls.gridpart.config.GridCellConfigurator" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="106" endIndex="121" startLine="5" endLine="5"/>
+          <params name="grid" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+            <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="columnType">
+              <value xsi:type="index:VariableSymbol" name="columnType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 기본 컬럼일 경우 column의 종류를 반환합니다.&lt;br> header : &quot;rowindex&quot;, &quot;checkbox&quot;, &quot;normal&quot; &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 기본 컬럼일 경우 column의 종류를 설정합니다.&lt;br> header : &quot;rowindex&quot;, &quot;checkbox&quot;, &quot;normal&quot; &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="627" endIndex="636"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="text">
+              <value xsi:type="index:VariableSymbol" name="text" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 헤더에 보여질 문자열을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 헤더에 보여질 문자열을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="916" endIndex="919"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="sortColumnName">
+              <value xsi:type="index:VariableSymbol" name="sortColumnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 셀 클릭시 정렬 설정한 데이터셋 컬럼명을 반환합니다. 헤더셀의 소트관련 다른 설정인 targetColumnName과 sortable 속성과 양립할 수 없습니다. 둘다 설정된 경우 targetColumnName과 sortable 속성이 적용됩니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 셀 클릭시 정렬할 데이터셋 컬럼명을 설정합니다. 헤더셀의 소트관련 다른 설정인 targetColumnName과 sortable 속성과 양립할 수 없습니다. 둘다 설정된 경우 targetColumnName과 sortable 속성이 적용됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1450" endIndex="1463"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="visible">
+              <value xsi:type="index:VariableSymbol" name="visible" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 헤더 셀이 위치한 컬럼 전체의 visible 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 헤더 셀이 위치한 컬럼 전체의 visible을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1780" endIndex="1786"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="targetColumnName">
+              <value xsi:type="index:VariableSymbol" name="targetColumnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 셀의 filterable, sortable 사용시 해당 기능의 타겟 데이터셋 컬럼명 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 셀의 filterable, sortable 사용시 해당 기능의 타겟 데이터셋 컬럼명을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2147" endIndex="2162"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="sortable">
+              <value xsi:type="index:VariableSymbol" name="sortable" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 셀에서 다중 정렬 기능 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 셀에 targetColumnName으로 지정된 컬럼 값을 통한 다중 정렬 기능을 사용할지 여부를 설정합니다. 헤더셀의 소트관련 다른 설정인 sortColumnName 속성과 양립할 수 없습니다. targetColumnName이 지정되고 sortable이 true로 설정된 헤더셀에 sortColumnName이 지정된 경우 targetColumnName과 sortable 속성이 적용됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2658" endIndex="2665"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="filterable">
+              <value xsi:type="index:VariableSymbol" name="filterable" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 셀에 targetColumnName으로 지정된 컬럼 값을 통한 다중 필터 기능 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 셀에 targetColumnName으로 지정된 컬럼 값을 통한 다중 필터 기능을 사용할지 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3030" endIndex="3039"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="filterDialogTitle">
+              <value xsi:type="index:VariableSymbol" name="filterDialogTitle" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> filterable 속성 사용시 filter dialog의 title 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> filterable 속성 사용시 filter dialog의 title을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3376" endIndex="3392"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="emptyValueSort">
+              <value xsi:type="index:VariableSymbol" name="emptyValueSort" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> sortable=true에서 header sort 사용시 빈 값에 대한 처리를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> sortable=true에서 header sort 사용시 빈 값에 대한 처리를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3755" endIndex="3768"/>
+                <inferredType name="cpr.controls.EMPTYVALUESORT" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.config.GridHeaderCellConfigurator">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.config.GridHeaderCellConfigurator" originalSymbolName="__anonymous1">
+          <region startIndex="77" endIndex="102"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="106" endIndex="121" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="121" endIndex="121"/>
+          <symbolMap key="grid">
+            <value xsi:type="index:ParameterSymbol" name="grid" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+              <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.config.GridHeaderCellConfigurator">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.config.GridHeaderCellConfigurator" baseSymbolName="cpr.controls.gridpart.config.GridCellConfigurator" anonymousFunction="true">
+        <region startIndex="77" endIndex="102"/>
+        <params name="grid" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="118" startLine="5" endLine="5"/>
+          <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="columnType">
+            <value xsi:type="index:VariableSymbol" name="columnType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 기본 컬럼일 경우 column의 종류를 반환합니다.&lt;br> header : &quot;rowindex&quot;, &quot;checkbox&quot;, &quot;normal&quot; &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 기본 컬럼일 경우 column의 종류를 설정합니다.&lt;br> header : &quot;rowindex&quot;, &quot;checkbox&quot;, &quot;normal&quot; &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="627" endIndex="636"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="text">
+            <value xsi:type="index:VariableSymbol" name="text" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 헤더에 보여질 문자열을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 헤더에 보여질 문자열을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="916" endIndex="919"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="sortColumnName">
+            <value xsi:type="index:VariableSymbol" name="sortColumnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 셀 클릭시 정렬 설정한 데이터셋 컬럼명을 반환합니다. 헤더셀의 소트관련 다른 설정인 targetColumnName과 sortable 속성과 양립할 수 없습니다. 둘다 설정된 경우 targetColumnName과 sortable 속성이 적용됩니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 셀 클릭시 정렬할 데이터셋 컬럼명을 설정합니다. 헤더셀의 소트관련 다른 설정인 targetColumnName과 sortable 속성과 양립할 수 없습니다. 둘다 설정된 경우 targetColumnName과 sortable 속성이 적용됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1450" endIndex="1463"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="visible">
+            <value xsi:type="index:VariableSymbol" name="visible" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 헤더 셀이 위치한 컬럼 전체의 visible 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 헤더 셀이 위치한 컬럼 전체의 visible을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1780" endIndex="1786"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="targetColumnName">
+            <value xsi:type="index:VariableSymbol" name="targetColumnName" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 셀의 filterable, sortable 사용시 해당 기능의 타겟 데이터셋 컬럼명 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 셀의 filterable, sortable 사용시 해당 기능의 타겟 데이터셋 컬럼명을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2147" endIndex="2162"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="sortable">
+            <value xsi:type="index:VariableSymbol" name="sortable" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 셀에서 다중 정렬 기능 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 셀에 targetColumnName으로 지정된 컬럼 값을 통한 다중 정렬 기능을 사용할지 여부를 설정합니다. 헤더셀의 소트관련 다른 설정인 sortColumnName 속성과 양립할 수 없습니다. targetColumnName이 지정되고 sortable이 true로 설정된 헤더셀에 sortColumnName이 지정된 경우 targetColumnName과 sortable 속성이 적용됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2658" endIndex="2665"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="filterable">
+            <value xsi:type="index:VariableSymbol" name="filterable" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 해당 셀에 targetColumnName으로 지정된 컬럼 값을 통한 다중 필터 기능 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 해당 셀에 targetColumnName으로 지정된 컬럼 값을 통한 다중 필터 기능을 사용할지 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3030" endIndex="3039"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="filterDialogTitle">
+            <value xsi:type="index:VariableSymbol" name="filterDialogTitle" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> filterable 속성 사용시 filter dialog의 title 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> filterable 속성 사용시 filter dialog의 title을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3376" endIndex="3392"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="emptyValueSort">
+            <value xsi:type="index:VariableSymbol" name="emptyValueSort" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> sortable=true에서 header sort 사용시 빈 값에 대한 처리를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> sortable=true에서 header sort 사용시 빈 값에 대한 처리를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3755" endIndex="3768"/>
+              <inferredType name="cpr.controls.EMPTYVALUESORT" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

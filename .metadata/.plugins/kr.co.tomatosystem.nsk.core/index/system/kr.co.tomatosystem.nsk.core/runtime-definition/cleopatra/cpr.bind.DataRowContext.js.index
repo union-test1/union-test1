@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.bind.DataRowContext.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="298" endIndex="721" startLine="9" endLine="26"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DataRowContext" description="데이터 로우 컨텍스트는 데이터 셋이나 데이터 뷰가 가지는 행에 대한 컨텍스트입니다.  그룹의 자식 컨트롤들 중 상대 컬럼이 바인딩되어 있는 컨트롤은 그룹에 지정된 데이터 셋이나 데이터 뷰의 행으로부터 지정된 컬럼의 값을 제공 받습니다.  데이터 로우 컨텍스트는 문맥 유형을 데이터 로우 컨텍스트로 지정하고 데이터 셋과 행을 지정하여 컨텍스트를 제공합니다." baseSymbolName="cpr.bind.DataBindContext" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="324" endIndex="356" startLine="9" endLine="9"/>
+          <params name="dataControl" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="333" endIndex="343" startLine="9" endLine="9"/>
+            <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+          </params>
+          <params name="rowIndex" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="346" endIndex="353" startLine="9" endLine="9"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="dataSet">
+              <value xsi:type="index:VariableSymbol" name="dataSet" description="&lt;b>Readonly&lt;/b> 바인딩 데이터셋을 반환합니다.">
+                <region startIndex="544" endIndex="550"/>
+                <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rowIndex">
+              <value xsi:type="index:VariableSymbol" name="rowIndex" description="&lt;b>Readonly&lt;/b> 바인딩 데이터셋인 경우 로우 인덱스를 반환합니다.">
+                <region startIndex="696" endIndex="703"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.bind.DataRowContext">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.bind.DataRowContext" originalSymbolName="__anonymous1">
+          <region startIndex="307" endIndex="320"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="324" endIndex="356" startLine="9" endLine="9"/>
+        <childScopes>
+          <region startIndex="356" endIndex="356"/>
+          <symbolMap key="dataControl">
+            <value xsi:type="index:ParameterSymbol" name="dataControl" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="333" endIndex="343" startLine="9" endLine="9"/>
+              <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="rowIndex">
+            <value xsi:type="index:ParameterSymbol" name="rowIndex" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="346" endIndex="353" startLine="9" endLine="9"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.bind.DataRowContext">
+      <value xsi:type="index:FunctionSymbol" name="cpr.bind.DataRowContext" description="데이터 로우 컨텍스트는 데이터 셋이나 데이터 뷰가 가지는 행에 대한 컨텍스트입니다.  그룹의 자식 컨트롤들 중 상대 컬럼이 바인딩되어 있는 컨트롤은 그룹에 지정된 데이터 셋이나 데이터 뷰의 행으로부터 지정된 컬럼의 값을 제공 받습니다.  데이터 로우 컨텍스트는 문맥 유형을 데이터 로우 컨텍스트로 지정하고 데이터 셋과 행을 지정하여 컨텍스트를 제공합니다." baseSymbolName="cpr.bind.DataBindContext" anonymousFunction="true">
+        <region startIndex="307" endIndex="320"/>
+        <params name="dataControl" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="333" endIndex="343" startLine="9" endLine="9"/>
+          <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+        </params>
+        <params name="rowIndex" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="346" endIndex="353" startLine="9" endLine="9"/>
+          <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="dataSet">
+            <value xsi:type="index:VariableSymbol" name="dataSet" description="&lt;b>Readonly&lt;/b> 바인딩 데이터셋을 반환합니다.">
+              <region startIndex="544" endIndex="550"/>
+              <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rowIndex">
+            <value xsi:type="index:VariableSymbol" name="rowIndex" description="&lt;b>Readonly&lt;/b> 바인딩 데이터셋인 경우 로우 인덱스를 반환합니다.">
+              <region startIndex="696" endIndex="703"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

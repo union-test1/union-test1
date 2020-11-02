@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-06ec9647" version="1.0.0.0">
+  <head std:sid="head-bcdf1e55">
+    <title>DynamicTable</title>
+    <screen std:sid="screen-9e4f5f4a" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-98f20027" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-55b645ae" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-b3e66f63"/>
+    <cl:appspec dev-description="임베디드 앱을 테이블 형태로 표시하는 컨트롤" dev-icon="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADU0lEQVR4nO2X309SYRjH8RwObQql/JCfAoJ4AOGUSOpQyhlCQ+OXoPhjU/HOzem8caOhoswFF441y6abN96lq4tcuWlNunA1c2td9Bek+Wf0vKVtOay9gFz1bJ+dsR3e53ue9/s+5zks1v+4EKWlpXKCIBJskr0JbBWQTVg3BetrLk1uMBg4SqVyz2gwfvV6vDs+r+91oYD13jAM80VcKf6o1+uvZxXgdDo15TfKT6PRaGR8fFw9PDysLBRjY2Pq2dnZIL+Cf+JyuZovE0BXlFec+nw+a0H280J4PJ4aEPDN2eG881cBbre74SoEtLe3a0HAMeT5twCJRMJSyBVJDodzhBCLxUsymax4AiDYpjrTrpAvPEboaf3+0NCQliTJDVy4XG7SaDSWYAmwWq0cxszsiQSiYwScjEwikTD7/f6XgUDgFQ79/f0rbW1t17AE1NfXswcGBtL2VvsHRF9f33IsFisDR0uhEnIcRkdHK81mM14F0H5DQnk6nbYgZmZmqlQqVW6bfxbYAoAEh+IcIKRS6aOim7DOWPeHCSORSDWYahUXHo8Xp2ka34Rmk/miCRnPA882NJQdHHp7etcgOZ4JLRYLFe4NLzc3NR8iekI9z6CVlo2MjFQBKhygchJ4D+BVQK1Ws8B4qng83jQ3N9cEV7VCocht888CuxPK5fIYRVHvENAJ40U1IeoDyIQCvuAEgUwIPUBFEuRjXMCED3U6HZ6AbCZcWFhgOt2dO12dXbs4BIPB9ZxMGAqGVhpvNx4hugPda+AJLnQ1FVCNiQzWwzMhTEYseOJqwIaYn5/XIGPmE1gChEIhSyQSTVNsahshEAii8Lt4As474bkJ6Vp6f3BwUAmD5RIuYMJprVabvwlhG252ODrewki1jwMMpBvYJoRjSAX8gVXLLctnhNfrXV9cXORBN6wBM9biAP9RwnoEdieE3l8D3EXA0+s0Gk1Jbrv/K7AE5JMoHwG1IOA73Gi/CgF2u93087vA6WrNegPMe0JrgzUDHyeH8B5/Cm10uWCQ5BM4ygcw6H6CMS37aNXS0kKkUqn74XD4Obg947jneF8wHI5MKBR6kUwmA1Bh9qVlstlsxMTEhGRqaoqenJzUFwpYD11lMB1DMcjf+X4AFNClneEcgZgAAAAASUVORK5CYII=">
+      <cl:property name="dataSet" type="control"/>
+      <cl:property default="50" name="rowHeight" type="number"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-765c069d" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-7500de53" handler="onBodyInit" name="init"/>
+    <cl:listener std:sid="listener-df1e57b4" handler="onBodyBeforeDraw" name="before-draw"/>
+    <cl:group std:sid="group-0a48f037" id="viewport" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:gray; border-top-color:gray; border-bottom-style:solid; border-right-color:gray; border-left-width:1px; border-top-style:solid;">
+      <cl:xylayoutdata std:sid="xyl-data-521f498d" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:xylayout std:sid="xylayout-7a209dfc"/>
+    </cl:group>
+    <cl:output std:sid="output-c0dcc27b" style="text-align:center;" removeOnBuild="true" value="Dynamic Table">
+      <cl:xylayoutdata std:sid="xyl-data-b07cdd53" height="20px" horizontalAnchor="CENTER" top="9px" verticalAnchor="TOP" width="216px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-0d665b41"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

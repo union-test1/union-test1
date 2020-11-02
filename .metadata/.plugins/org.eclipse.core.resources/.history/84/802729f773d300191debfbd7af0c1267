@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c364a417" version="1.0.0.0">
+  <head std:sid="head-29f24f25">
+    <title>OptionPageDDNS</title>
+    <screen std:sid="screen-726fa88b" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" useCustomHeight="true" useCustomWidth="true" width="1024px"/>
+    <screen std:sid="screen-68fccf2f" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-d14a6ede" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-756a3fb2">
+      <cl:datamap std:sid="d-map-115bff3f" id="OptionDDNS">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" name="Used"/>
+          <cl:datacolumn name="HostName"/>
+          <cl:datacolumn name="ContractNo"/>
+          <cl:datacolumn datatype="number" name="UpdateTerm"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-9de4808a" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-9e839051" handler="onBodyLoad" name="load"/>
+    <cl:listener std:sid="listener-87688691" handler="onBodyUnload" name="unload"/>
+    <cl:group std:sid="group-4c50b1cf" id="SEDDNS_grpMain">
+      <cl:xylayoutdata std:sid="xyl-data-cf83205e" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-0a9719d5" style="font-weight:700; font-size:16px;" value="DDNS">
+        <cl:formdata std:sid="f-data-0aa46835" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-6d0e4973" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_HostName"/>
+        <cl:formdata std:sid="f-data-b2905673" col="0" row="2"/>
+      </cl:output>
+      <cl:checkbox std:sid="c-box-df4060e0" id="cbx1" style="font-size:14px;" falsevalue="0" text="DDNS 사용" truevalue="1">
+        <cl:datamapbind property="value" columnname="Used" datacontrolid="OptionDDNS"/>
+        <cl:formdata std:sid="f-data-11f28d9a" col="0" colspan="2" row="1" rowspan="1"/>
+      </cl:checkbox>
+      <cl:output std:sid="output-af2f0401" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_ContractNo"/>
+        <cl:formdata std:sid="f-data-fb70dcc6" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-ffb1d73c" class="common-controllabel">
+        <cl:langbind category="PROPERTY" property="value" keypath="Str_UpdateTerm"/>
+        <cl:formdata std:sid="f-data-3c0975e3" col="0" row="4"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-7c022247" id="ipb1" style="font-size:14px; text-align:center;">
+        <cl:datamapbind property="value" columnname="HostName" datacontrolid="OptionDDNS"/>
+        <cl:formdata std:sid="f-data-ad727f3e" col="1" row="2"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-6217f279" id="ipb2" style="font-size:14px; text-align:center;">
+        <cl:datamapbind property="value" columnname="ContractNo" datacontrolid="OptionDDNS"/>
+        <cl:formdata std:sid="f-data-ef54051c" col="1" row="3"/>
+      </cl:inputbox>
+      <cl:combobox std:sid="c-box-06500b38" id="cmb1" style="font-size:14px; text-align:center;">
+        <cl:datamapbind property="value" columnname="UpdateTerm" datacontrolid="OptionDDNS"/>
+        <cl:formdata std:sid="f-data-ebc0e5c6" col="1" row="4"/>
+        <cl:item label="10분" value="0"/>
+        <cl:item label="20분" value="1"/>
+        <cl:item label="1시" value="2"/>
+        <cl:item label="2시" value="3"/>
+        <cl:item label="5시" value="4"/>
+        <cl:item label="12시" value="5"/>
+      </cl:combobox>
+      <cl:formlayout std:sid="f-layout-cf98b57a" hspace="0px" vspace="0px">
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns autoSizing="false" length="300" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-b1cbf549"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

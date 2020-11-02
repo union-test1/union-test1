@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.protocols.ResponseParser.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="610" startLine="4" endLine="22"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ResponseParser" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="53" endIndex="64" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="load">
+              <value xsi:type="index:FunctionVariableSymbol" name="load" originalSymbolName="__anonymous2">
+                <region startIndex="308" endIndex="311"/>
+              </value>
+            </symbols>
+            <symbols key="parse">
+              <value xsi:type="index:FunctionVariableSymbol" name="parse" originalSymbolName="__anonymous3">
+                <region startIndex="560" endIndex="564"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.protocols.ResponseParser">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.protocols.ResponseParser" originalSymbolName="__anonymous1">
+          <region startIndex="36" endIndex="49"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="load" description="XMLHttpRequest의 응답데이터의 부분을 추가 수신하였을 때 호출되는 함수" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="315" endIndex="341" startLine="12" endLine="12"/>
+          <params name="submission" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="324" endIndex="333" startLine="12" endLine="12"/>
+            <inferredType name="cpr.protocols.AbstractSubmission" instance="true" documentedType="true"/>
+          </params>
+          <params name="xhr" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="336" endIndex="338" startLine="12" endLine="12"/>
+            <inferredType name="XMLHttpRequest" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/ajax.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="parse" description="XMLHttpRequest의 모든 응답데이터가 수신하였을 때 호출되는 함수" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="568" endIndex="607" startLine="20" endLine="20"/>
+          <params name="submission" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="577" endIndex="586" startLine="20" endLine="20"/>
+            <inferredType name="cpr.protocols.AbstractSubmission" instance="true" documentedType="true"/>
+          </params>
+          <params name="xhr" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="589" endIndex="591" startLine="20" endLine="20"/>
+            <inferredType name="XMLHttpRequest" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/ajax.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="doneHandler" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="594" endIndex="604" startLine="20" endLine="20"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="53" endIndex="64" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="64" endIndex="64"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="315" endIndex="341" startLine="12" endLine="12"/>
+        <childScopes>
+          <region startIndex="341" endIndex="341"/>
+          <symbolMap key="submission">
+            <value xsi:type="index:ParameterSymbol" name="submission" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="324" endIndex="333" startLine="12" endLine="12"/>
+              <inferredType name="cpr.protocols.AbstractSubmission" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="xhr">
+            <value xsi:type="index:ParameterSymbol" name="xhr" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="336" endIndex="338" startLine="12" endLine="12"/>
+              <inferredType name="XMLHttpRequest" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/ajax.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="568" endIndex="607" startLine="20" endLine="20"/>
+        <childScopes>
+          <region startIndex="607" endIndex="607"/>
+          <symbolMap key="submission">
+            <value xsi:type="index:ParameterSymbol" name="submission" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="577" endIndex="586" startLine="20" endLine="20"/>
+              <inferredType name="cpr.protocols.AbstractSubmission" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="xhr">
+            <value xsi:type="index:ParameterSymbol" name="xhr" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="589" endIndex="591" startLine="20" endLine="20"/>
+              <inferredType name="XMLHttpRequest" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/ajax.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="doneHandler">
+            <value xsi:type="index:ParameterSymbol" name="doneHandler" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="594" endIndex="604" startLine="20" endLine="20"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.protocols.ResponseParser">
+      <value xsi:type="index:FunctionSymbol" name="cpr.protocols.ResponseParser" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="36" endIndex="49"/>
+        <prototype>
+          <symbols key="load">
+            <value xsi:type="index:FunctionVariableSymbol" name="load" originalSymbolName="__anonymous2">
+              <region startIndex="308" endIndex="311"/>
+            </value>
+          </symbols>
+          <symbols key="parse">
+            <value xsi:type="index:FunctionVariableSymbol" name="parse" originalSymbolName="__anonymous3">
+              <region startIndex="560" endIndex="564"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

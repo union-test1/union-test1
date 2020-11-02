@@ -1,0 +1,112 @@
+@import "../settings.part.less";
+
+/* 캘린더 */
+.cl-calendar {
+	font: @default-font;
+	color: @default-text-color;
+	border: 1px solid @default-border-color;
+	border-radius: 5px;
+	background-color: #fff;
+
+	/* 캘린더 헤더 */
+	.cl-calendar-header {
+
+		/* 캘린더 이전 년도 버튼 */
+		.cl-calendar-header-before {
+			// background-image: url(icons/fast-rewind.png);
+
+			/* 캘린더 이전 년도 버튼 호버 상태 */
+			&:hover{
+				// background-image: url(icons/fast-rewind-hover.png);
+			}
+		}
+
+		/* 캘린더 이후 년도 버튼 */
+		.cl-calendar-header-after {
+			// background-image: url(icons/fast-foward.png);
+
+			/* 캘린더 이후 년도 버튼 호버 상태 */
+			&:hover{
+				// background-image: url(icons/fast-foward-hover.png);
+			}
+		}
+
+		/* 캘린더 이전 달 버튼 */
+		.cl-calendar-header-prev {
+			// background-image: url(icons/rewind.png);
+
+			/* 캘린더 이전 달 버튼 호버 상태 */
+			&:hover{
+				// background-image: url(icons/rewind-hover.png);
+			}
+		}
+
+		/* 캘린더 다음 달 버튼 */
+		.cl-calendar-header-next {
+			// background-image: url(icons/foward.png);
+
+			/* 캘린더 다음 달 버튼 호버 상태 */
+			&:hover{
+				// background-image: url(icons/foward-hover.png);
+			}
+		}
+	}
+
+
+	.cl-calendar-content {
+		/* 날짜 선택 모드시 날짜 스타일 */
+		td.cl-calendar-content-day {
+
+			/* 일요일 셀 */
+			&.cl-calendar-content-sun {
+				color: #a7a6a6;
+			}
+
+			/* 토요일 셀 */
+			&.cl-calendar-content-sat {
+				color: #a7a6a6;
+			}
+		}
+	
+		td.cl-calendar-content-day, 
+		td.cl-calendar-content-month,
+		td.cl-calendar-content-year{
+			/* 기본 날짜 - 오늘 날짜 셀*/	
+			&.cl-calendar-defaultdate {
+				background-color: #8A8A8B;
+				color: white;
+			}
+
+			/* 선택된 날짜 셀 */	
+			&.cl-selected{
+				background-color: @selection-background;
+				color: @selection-foreground;
+			}
+
+			/* 셀 호버 스타일 */
+			&:hover{
+				background-color:#656565;
+				color: white;
+			}
+		}
+	}
+
+	/* 캘린더 푸터 */
+	.cl-calendar-footer {
+
+		/* 캘린더 푸터 날짜 호버 스타일 */
+		.cl-calendar-footer-today:hover {
+		}
+	}
+
+
+	/* 캘린더 포커스 상태 */
+	&.cl-focus {
+		border-color: @focus-border-color;
+	}
+}
+
+/* 캘린더 disabled 상태 */
+.cl-calendar.cl-disabled {
+}
+

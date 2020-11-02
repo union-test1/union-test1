@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.DropContext.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="217" endIndex="2606" startLine="9" endLine="122"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DropContext" description="드래그 앤드 드랍의 상황을 설명하는 객체입니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="244" endIndex="301" startLine="9" endLine="9"/>
+          <params name="source" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="253" endIndex="258" startLine="9" endLine="9"/>
+            <inferredType name="cpr.controls.DragSource" instance="true" documentedType="true"/>
+          </params>
+          <params name="target" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="261" endIndex="266" startLine="9" endLine="9"/>
+            <inferredType name="cpr.controls.DropTarget" instance="true" documentedType="true"/>
+          </params>
+          <params name="pointerLocation" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="269" endIndex="283" startLine="9" endLine="9"/>
+            <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+          </params>
+          <params name="targetElement" description="" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="286" endIndex="298" startLine="9" endLine="9"/>
+            <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="targetItem">
+              <value xsi:type="index:VariableSymbol" name="targetItem" description="마우스 아래에 있는 아이템을 얻습니다." experimental="true" experimentalDescription="">
+                <region startIndex="460" endIndex="469"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="targetItemConstraint">
+              <value xsi:type="index:VariableSymbol" name="targetItemConstraint" description="마우스 아래에 있는 아이템과 드롭 문맥 사이의 관계를 얻습니다." experimental="true" experimentalDescription="">
+                <region startIndex="631" endIndex="650"/>
+                <inferredType name="cpr.controls.ItemDropConstraint" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="source">
+              <value xsi:type="index:VariableSymbol" name="source" description="&lt;b>Readonly&lt;/b> 드래그 소스 객체를 얻습니다.">
+                <region startIndex="811" endIndex="816"/>
+                <inferredType name="cpr.controls.DragSource" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="target">
+              <value xsi:type="index:VariableSymbol" name="target" description="&lt;b>Readonly&lt;/b> 드롭 타겟 객체를 얻습니다.">
+                <region startIndex="968" endIndex="973"/>
+                <inferredType name="cpr.controls.DropTarget" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="data">
+              <value xsi:type="index:VariableSymbol" name="data" description="&lt;b>Readonly&lt;/b> 드래그 소스가 제공하는 데이터를 얻습니다.">
+                <region startIndex="1116" endIndex="1119"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dataType">
+              <value xsi:type="index:VariableSymbol" name="dataType" description="&lt;b>Readonly&lt;/b> 드래그 소스의 데이터 타입을 얻습니다.">
+                <region startIndex="1243" endIndex="1250"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dragStartLocation">
+              <value xsi:type="index:VariableSymbol" name="dragStartLocation" description="&lt;b>Readonly&lt;/b> 드래그가 시작된 시점의 포인터 위치를 얻습니다. 페이지 좌표계 기준입니다.">
+                <region startIndex="1406" endIndex="1422"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="pointerLocation">
+              <value xsi:type="index:VariableSymbol" name="pointerLocation" description="&lt;b>Readonly&lt;/b> 현재 마우스 포인터의 좌표를 얻습니다.">
+                <region startIndex="1570" endIndex="1584"/>
+                <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dragDelta">
+              <value xsi:type="index:VariableSymbol" name="dragDelta" description="&lt;b>Readonly&lt;/b> 총 드래그의 이동량을 얻습니다. 마우스 버튼이 눌려진 시점을 기준으로 합니다.">
+                <region startIndex="1758" endIndex="1766"/>
+                <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="cursor">
+              <value xsi:type="index:VariableSymbol" name="cursor" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 표시중인 커서를 얻습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 현재 드랍 타겟으로 드래그 오버 될 때 사용할 커서를 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2043" endIndex="2048"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shiftKey">
+              <value xsi:type="index:VariableSymbol" name="shiftKey" description="&lt;b>Readonly&lt;/b> Shift 키가 눌려있는지 여부를 얻습니다.">
+                <region startIndex="2176" endIndex="2183"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="altKey">
+              <value xsi:type="index:VariableSymbol" name="altKey" description="&lt;b>Readonly&lt;/b> Alt 키가 눌려 있는지 여부를 얻습니다.">
+                <region startIndex="2311" endIndex="2316"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="ctrlKey">
+              <value xsi:type="index:VariableSymbol" name="ctrlKey" description="&lt;b>Readonly&lt;/b> Control 키가 눌려 있는지 여부를 얻습니다.">
+                <region startIndex="2448" endIndex="2454"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="metaKey">
+              <value xsi:type="index:VariableSymbol" name="metaKey" description="&lt;b>Readonly&lt;/b> 메타 키가 눌려 있는지 여부를 얻습니다.">
+                <region startIndex="2581" endIndex="2587"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.DropContext">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.DropContext" originalSymbolName="__anonymous1">
+          <region startIndex="230" endIndex="240"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="244" endIndex="301" startLine="9" endLine="9"/>
+        <childScopes>
+          <region startIndex="301" endIndex="301"/>
+          <symbolMap key="source">
+            <value xsi:type="index:ParameterSymbol" name="source" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="253" endIndex="258" startLine="9" endLine="9"/>
+              <inferredType name="cpr.controls.DragSource" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="261" endIndex="266" startLine="9" endLine="9"/>
+              <inferredType name="cpr.controls.DropTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pointerLocation">
+            <value xsi:type="index:ParameterSymbol" name="pointerLocation" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="269" endIndex="283" startLine="9" endLine="9"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="targetElement">
+            <value xsi:type="index:ParameterSymbol" name="targetElement" description="" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="286" endIndex="298" startLine="9" endLine="9"/>
+              <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.DropContext">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.DropContext" description="드래그 앤드 드랍의 상황을 설명하는 객체입니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="230" endIndex="240"/>
+        <params name="source" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="253" endIndex="258" startLine="9" endLine="9"/>
+          <inferredType name="cpr.controls.DragSource" instance="true" documentedType="true"/>
+        </params>
+        <params name="target" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="261" endIndex="266" startLine="9" endLine="9"/>
+          <inferredType name="cpr.controls.DropTarget" instance="true" documentedType="true"/>
+        </params>
+        <params name="pointerLocation" description="" parameterIndex="2">
+          <region xsi:type="index:RegionWithLine" startIndex="269" endIndex="283" startLine="9" endLine="9"/>
+          <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+        </params>
+        <params name="targetElement" description="" parameterIndex="3">
+          <region xsi:type="index:RegionWithLine" startIndex="286" endIndex="298" startLine="9" endLine="9"/>
+          <inferredType name="HTMLElement" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/base-browser.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="targetItem">
+            <value xsi:type="index:VariableSymbol" name="targetItem" description="마우스 아래에 있는 아이템을 얻습니다." experimental="true" experimentalDescription="">
+              <region startIndex="460" endIndex="469"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="targetItemConstraint">
+            <value xsi:type="index:VariableSymbol" name="targetItemConstraint" description="마우스 아래에 있는 아이템과 드롭 문맥 사이의 관계를 얻습니다." experimental="true" experimentalDescription="">
+              <region startIndex="631" endIndex="650"/>
+              <inferredType name="cpr.controls.ItemDropConstraint" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="source">
+            <value xsi:type="index:VariableSymbol" name="source" description="&lt;b>Readonly&lt;/b> 드래그 소스 객체를 얻습니다.">
+              <region startIndex="811" endIndex="816"/>
+              <inferredType name="cpr.controls.DragSource" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="target">
+            <value xsi:type="index:VariableSymbol" name="target" description="&lt;b>Readonly&lt;/b> 드롭 타겟 객체를 얻습니다.">
+              <region startIndex="968" endIndex="973"/>
+              <inferredType name="cpr.controls.DropTarget" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="data">
+            <value xsi:type="index:VariableSymbol" name="data" description="&lt;b>Readonly&lt;/b> 드래그 소스가 제공하는 데이터를 얻습니다.">
+              <region startIndex="1116" endIndex="1119"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dataType">
+            <value xsi:type="index:VariableSymbol" name="dataType" description="&lt;b>Readonly&lt;/b> 드래그 소스의 데이터 타입을 얻습니다.">
+              <region startIndex="1243" endIndex="1250"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dragStartLocation">
+            <value xsi:type="index:VariableSymbol" name="dragStartLocation" description="&lt;b>Readonly&lt;/b> 드래그가 시작된 시점의 포인터 위치를 얻습니다. 페이지 좌표계 기준입니다.">
+              <region startIndex="1406" endIndex="1422"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="pointerLocation">
+            <value xsi:type="index:VariableSymbol" name="pointerLocation" description="&lt;b>Readonly&lt;/b> 현재 마우스 포인터의 좌표를 얻습니다.">
+              <region startIndex="1570" endIndex="1584"/>
+              <inferredType name="cpr.geometry.Point" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dragDelta">
+            <value xsi:type="index:VariableSymbol" name="dragDelta" description="&lt;b>Readonly&lt;/b> 총 드래그의 이동량을 얻습니다. 마우스 버튼이 눌려진 시점을 기준으로 합니다.">
+              <region startIndex="1758" endIndex="1766"/>
+              <inferredType name="cpr.geometry.Dimension" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="cursor">
+            <value xsi:type="index:VariableSymbol" name="cursor" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 표시중인 커서를 얻습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 현재 드랍 타겟으로 드래그 오버 될 때 사용할 커서를 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2043" endIndex="2048"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="shiftKey">
+            <value xsi:type="index:VariableSymbol" name="shiftKey" description="&lt;b>Readonly&lt;/b> Shift 키가 눌려있는지 여부를 얻습니다.">
+              <region startIndex="2176" endIndex="2183"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="altKey">
+            <value xsi:type="index:VariableSymbol" name="altKey" description="&lt;b>Readonly&lt;/b> Alt 키가 눌려 있는지 여부를 얻습니다.">
+              <region startIndex="2311" endIndex="2316"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ctrlKey">
+            <value xsi:type="index:VariableSymbol" name="ctrlKey" description="&lt;b>Readonly&lt;/b> Control 키가 눌려 있는지 여부를 얻습니다.">
+              <region startIndex="2448" endIndex="2454"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="metaKey">
+            <value xsi:type="index:VariableSymbol" name="metaKey" description="&lt;b>Readonly&lt;/b> 메타 키가 눌려 있는지 여부를 얻습니다.">
+              <region startIndex="2581" endIndex="2587"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

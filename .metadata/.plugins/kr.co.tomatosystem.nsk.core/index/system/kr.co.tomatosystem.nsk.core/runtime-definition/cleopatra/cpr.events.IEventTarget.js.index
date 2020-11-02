@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.IEventTarget.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="1087" startLine="4" endLine="42"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="IEventTarget" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="59" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="addEventListener">
+              <value xsi:type="index:FunctionVariableSymbol" name="addEventListener" originalSymbolName="__anonymous2">
+                <region startIndex="408" endIndex="423"/>
+              </value>
+            </symbols>
+            <symbols key="removeEventListener">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeEventListener" originalSymbolName="__anonymous3">
+                <region startIndex="658" endIndex="676"/>
+              </value>
+            </symbols>
+            <symbols key="dispatchEvent">
+              <value xsi:type="index:FunctionVariableSymbol" name="dispatchEvent" originalSymbolName="__anonymous4">
+                <region startIndex="951" endIndex="963"/>
+              </value>
+            </symbols>
+            <symbols key="removeAllEventListeners">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeAllEventListeners" originalSymbolName="__anonymous5">
+                <region startIndex="1047" endIndex="1069"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.IEventTarget">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.IEventTarget" originalSymbolName="__anonymous1">
+          <region startIndex="33" endIndex="44"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="addEventListener" description="이벤트 리스너를 추가합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="427" endIndex="452" startLine="20" endLine="20"/>
+          <params name="type" description="추가할 이벤트 유형. e.g. &quot;click&quot;" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="436" endIndex="439" startLine="20" endLine="20"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="listener" description="추가할 이벤트 리스너. ~~~js var btn = getButton(); btn.addEventListener(&quot;click&quot;, function() { alert(&quot;Hello World&quot;); } ); ~~~" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="442" endIndex="449" startLine="20" endLine="20"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.events.CEvent" variableName="e" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="removeEventListener" description="이벤트 리스너를 제거합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="680" endIndex="705" startLine="28" endLine="28"/>
+          <params name="type" description="제거할 이벤트 리스너의 이벤트 유형. e.g. &quot;click&quot;" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="689" endIndex="692" startLine="28" endLine="28"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="listener" description="제거할 이벤트 리스너." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="695" endIndex="702" startLine="28" endLine="28"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.events.CEvent" variableName="e" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="dispatchEvent" description="이벤트를 디스패치 합니다." returnDescription="이벤트의 기본동작 수행 여부, 리스너 중 하나가 &lt;code>e.preventDefault()&lt;/code>를 호출 한 경우 &lt;code>false&lt;/code> 그 외의 경우 &lt;code>true&lt;/code>가 됩니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="967" endIndex="979" startLine="35" endLine="35"/>
+          <params name="e" description="디스패치할 이벤트" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="976" endIndex="976" startLine="35" endLine="35"/>
+            <inferredType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="removeAllEventListeners" description="모든 이벤트 리스너를 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1073" endIndex="1084" startLine="40" endLine="40"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="59" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="59" endIndex="59"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="427" endIndex="452" startLine="20" endLine="20"/>
+        <childScopes>
+          <region startIndex="452" endIndex="452"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="추가할 이벤트 유형. e.g. &quot;click&quot;" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="436" endIndex="439" startLine="20" endLine="20"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="listener">
+            <value xsi:type="index:ParameterSymbol" name="listener" description="추가할 이벤트 리스너. ~~~js var btn = getButton(); btn.addEventListener(&quot;click&quot;, function() { alert(&quot;Hello World&quot;); } ); ~~~" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="442" endIndex="449" startLine="20" endLine="20"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.events.CEvent" variableName="e" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="680" endIndex="705" startLine="28" endLine="28"/>
+        <childScopes>
+          <region startIndex="705" endIndex="705"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="제거할 이벤트 리스너의 이벤트 유형. e.g. &quot;click&quot;" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="689" endIndex="692" startLine="28" endLine="28"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="listener">
+            <value xsi:type="index:ParameterSymbol" name="listener" description="제거할 이벤트 리스너." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="695" endIndex="702" startLine="28" endLine="28"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.events.CEvent" variableName="e" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="967" endIndex="979" startLine="35" endLine="35"/>
+        <childScopes>
+          <region startIndex="979" endIndex="979"/>
+          <symbolMap key="e">
+            <value xsi:type="index:ParameterSymbol" name="e" description="디스패치할 이벤트" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="976" endIndex="976" startLine="35" endLine="35"/>
+              <inferredType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1073" endIndex="1084" startLine="40" endLine="40"/>
+        <childScopes>
+          <region startIndex="1084" endIndex="1084"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.IEventTarget">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.IEventTarget" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="33" endIndex="44"/>
+        <prototype>
+          <symbols key="addEventListener">
+            <value xsi:type="index:FunctionVariableSymbol" name="addEventListener" originalSymbolName="__anonymous2">
+              <region startIndex="408" endIndex="423"/>
+            </value>
+          </symbols>
+          <symbols key="removeEventListener">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeEventListener" originalSymbolName="__anonymous3">
+              <region startIndex="658" endIndex="676"/>
+            </value>
+          </symbols>
+          <symbols key="dispatchEvent">
+            <value xsi:type="index:FunctionVariableSymbol" name="dispatchEvent" originalSymbolName="__anonymous4">
+              <region startIndex="951" endIndex="963"/>
+            </value>
+          </symbols>
+          <symbols key="removeAllEventListeners">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeAllEventListeners" originalSymbolName="__anonymous5">
+              <region startIndex="1047" endIndex="1069"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/geolocation.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="3061" startLine="4" endLine="78"/>
+      <symbolMap key="GeolocationPosition">
+        <value xsi:type="index:FunctionSymbol" name="GeolocationPosition" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="31" endIndex="49" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="coords">
+              <value xsi:type="index:VariableSymbol" name="coords">
+                <region startIndex="130" endIndex="135"/>
+                <inferredType name="GeolocationCoordinates" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="GeolocationCoordinates">
+        <value xsi:type="index:FunctionSymbol" name="GeolocationCoordinates" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="185" endIndex="206" startLine="15" endLine="15"/>
+          <prototype>
+            <symbols key="latitute">
+              <value xsi:type="index:VariableSymbol" name="latitute" description="Returns a double representing the position's latitude in decimal degrees.   ">
+                <region startIndex="329" endIndex="336"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="longitude">
+              <value xsi:type="index:VariableSymbol" name="longitude" description="Returns a double representing the position's longitude in decimal degrees.   ">
+                <region startIndex="459" endIndex="467"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="altitude">
+              <value xsi:type="index:VariableSymbol" name="altitude" description="Returns a double representing the position's altitude in meters, relative to sea level. This value can be null if the implementation cannot provide the data.   ">
+                <region startIndex="673" endIndex="680"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="accuracy">
+              <value xsi:type="index:VariableSymbol" name="accuracy" description="Returns a double representing the accuracy of the latitude and longitude properties, expressed in meters.   ">
+                <region startIndex="835" endIndex="842"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="altitudeAccuracy">
+              <value xsi:type="index:VariableSymbol" name="altitudeAccuracy" description="Returns a double representing the accuracy of the altitude expressed in meters. This value can be null.   ">
+                <region startIndex="995" endIndex="1010"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="heading">
+              <value xsi:type="index:VariableSymbol" name="heading" description="Returns a double representing the direction in which the device is traveling. This value, specified in degrees, indicates how far off from heading true north the device is. 0 degrees represents true north, and the direction is determined clockwise (which means that east is 90 degrees and west is 270 degrees). If speed is 0, heading is NaN. If the device is unable to provide heading information, this value is null.   ">
+                <region startIndex="1476" endIndex="1482"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="speed">
+              <value xsi:type="index:VariableSymbol" name="speed" description="Returns a double representing the velocity of the device in meters per second. This value can be null.   ">
+                <region startIndex="1633" endIndex="1637"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="GeolocationPositionError">
+        <value xsi:type="index:FunctionSymbol" name="GeolocationPositionError" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="1676" endIndex="1699" startLine="42" endLine="42"/>
+          <prototype>
+            <symbols key="code">
+              <value xsi:type="index:VariableSymbol" name="code" description="Returns an unsigned short representing the error code. The following values are possible: &lt;ul> &lt;li>1: The acquisition of the geolocation information failed because the page didn't have the permission to do it.&lt;/li> &lt;li>2: The acquisition of the geolocation failed because at least one internal source of position returned an internal error.&lt;/li> &lt;li>3: The time allowed to acquire the geolocation, defined by PositionOptions.timeout information was reached before the information was obtained.&lt;/li> &lt;/ul>">
+                <region startIndex="2275" endIndex="2278"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="message">
+              <value xsi:type="index:VariableSymbol" name="message" description="Returns a human-readable DOMString describing the details of the error. Specifications note that this is primarily intended for debugging use and not to be shown directly in a user interface.">
+                <region startIndex="2524" endIndex="2530"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="Geolocation">
+        <value xsi:type="index:FunctionSymbol" name="Geolocation" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="2570" endIndex="2580" startLine="64" endLine="64"/>
+          <prototype>
+            <symbols key="getCurrentPosition">
+              <value xsi:type="index:FunctionVariableSymbol" name="getCurrentPosition" originalSymbolName="__anonymous1">
+                <region startIndex="3009" endIndex="3026"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getCurrentPosition" description="The Geolocation.getCurrentPosition() method is used to get the current position of the device." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3030" endIndex="3058" startLine="74" endLine="76"/>
+          <params name="success" description="A callback function that takes a Position object as its sole input parameter." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3039" endIndex="3045" startLine="74" endLine="74"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="GeolocationPosition" variableName="position" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/geolocation.js" instance="true" documentedType="true"/>
+              <typeParameters name="void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <params name="error" description="An optional callback function that takes a PositionError object as its sole input parameter." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3048" endIndex="3052" startLine="74" endLine="74"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="GeolocationPositionError" variableName="error" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/geolocation.js" instance="true" documentedType="true"/>
+              <typeParameters name="void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes name="GeolocationPosition" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="54" endIndex="55"/>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="55" startLine="4" endLine="5"/>
+      </childScopes>
+      <childScopes name="GeolocationCoordinates" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region startIndex="211" endIndex="212"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="154" endIndex="212" startLine="15" endLine="16"/>
+      </childScopes>
+      <childScopes name="GeolocationPositionError" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region startIndex="1703" endIndex="1706"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1645" endIndex="1706" startLine="42" endLine="44"/>
+      </childScopes>
+      <childScopes name="Geolocation" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region startIndex="2584" endIndex="2587"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="2539" endIndex="2587" startLine="64" endLine="66"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3030" endIndex="3058" startLine="74" endLine="76"/>
+        <childScopes>
+          <region startIndex="3055" endIndex="3058"/>
+          <symbolMap key="success">
+            <value xsi:type="index:ParameterSymbol" name="success" description="A callback function that takes a Position object as its sole input parameter." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3039" endIndex="3045" startLine="74" endLine="74"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="GeolocationPosition" variableName="position" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/geolocation.js" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="error">
+            <value xsi:type="index:ParameterSymbol" name="error" description="An optional callback function that takes a PositionError object as its sole input parameter." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="3048" endIndex="3052" startLine="74" endLine="74"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="GeolocationPositionError" variableName="error" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/geolocation.js" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="GeolocationPosition">
+      <value xsi:type="index:FunctionSymbol" name="GeolocationPosition" classType="interface">
+        <region xsi:type="index:RegionWithLine" startIndex="31" endIndex="49" startLine="4" endLine="4"/>
+        <prototype>
+          <symbols key="coords">
+            <value xsi:type="index:VariableSymbol" name="coords">
+              <region startIndex="130" endIndex="135"/>
+              <inferredType name="GeolocationCoordinates" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="GeolocationCoordinates">
+      <value xsi:type="index:FunctionSymbol" name="GeolocationCoordinates" classType="interface">
+        <region xsi:type="index:RegionWithLine" startIndex="185" endIndex="206" startLine="15" endLine="15"/>
+        <prototype>
+          <symbols key="latitute">
+            <value xsi:type="index:VariableSymbol" name="latitute" description="Returns a double representing the position's latitude in decimal degrees.   ">
+              <region startIndex="329" endIndex="336"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="longitude">
+            <value xsi:type="index:VariableSymbol" name="longitude" description="Returns a double representing the position's longitude in decimal degrees.   ">
+              <region startIndex="459" endIndex="467"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="altitude">
+            <value xsi:type="index:VariableSymbol" name="altitude" description="Returns a double representing the position's altitude in meters, relative to sea level. This value can be null if the implementation cannot provide the data.   ">
+              <region startIndex="673" endIndex="680"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="accuracy">
+            <value xsi:type="index:VariableSymbol" name="accuracy" description="Returns a double representing the accuracy of the latitude and longitude properties, expressed in meters.   ">
+              <region startIndex="835" endIndex="842"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="altitudeAccuracy">
+            <value xsi:type="index:VariableSymbol" name="altitudeAccuracy" description="Returns a double representing the accuracy of the altitude expressed in meters. This value can be null.   ">
+              <region startIndex="995" endIndex="1010"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="heading">
+            <value xsi:type="index:VariableSymbol" name="heading" description="Returns a double representing the direction in which the device is traveling. This value, specified in degrees, indicates how far off from heading true north the device is. 0 degrees represents true north, and the direction is determined clockwise (which means that east is 90 degrees and west is 270 degrees). If speed is 0, heading is NaN. If the device is unable to provide heading information, this value is null.   ">
+              <region startIndex="1476" endIndex="1482"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="speed">
+            <value xsi:type="index:VariableSymbol" name="speed" description="Returns a double representing the velocity of the device in meters per second. This value can be null.   ">
+              <region startIndex="1633" endIndex="1637"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="GeolocationPositionError">
+      <value xsi:type="index:FunctionSymbol" name="GeolocationPositionError" classType="interface">
+        <region xsi:type="index:RegionWithLine" startIndex="1676" endIndex="1699" startLine="42" endLine="42"/>
+        <prototype>
+          <symbols key="code">
+            <value xsi:type="index:VariableSymbol" name="code" description="Returns an unsigned short representing the error code. The following values are possible: &lt;ul> &lt;li>1: The acquisition of the geolocation information failed because the page didn't have the permission to do it.&lt;/li> &lt;li>2: The acquisition of the geolocation failed because at least one internal source of position returned an internal error.&lt;/li> &lt;li>3: The time allowed to acquire the geolocation, defined by PositionOptions.timeout information was reached before the information was obtained.&lt;/li> &lt;/ul>">
+              <region startIndex="2275" endIndex="2278"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="message">
+            <value xsi:type="index:VariableSymbol" name="message" description="Returns a human-readable DOMString describing the details of the error. Specifications note that this is primarily intended for debugging use and not to be shown directly in a user interface.">
+              <region startIndex="2524" endIndex="2530"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="Geolocation">
+      <value xsi:type="index:FunctionSymbol" name="Geolocation" classType="interface">
+        <region xsi:type="index:RegionWithLine" startIndex="2570" endIndex="2580" startLine="64" endLine="64"/>
+        <prototype>
+          <symbols key="getCurrentPosition">
+            <value xsi:type="index:FunctionVariableSymbol" name="getCurrentPosition" originalSymbolName="__anonymous1">
+              <region startIndex="3009" endIndex="3026"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

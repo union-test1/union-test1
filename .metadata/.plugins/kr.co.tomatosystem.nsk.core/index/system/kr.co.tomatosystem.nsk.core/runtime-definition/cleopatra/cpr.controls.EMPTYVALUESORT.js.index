@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.EMPTYVALUESORT.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="47" endIndex="376" startLine="5" endLine="18"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="EMPTYVALUESORT" description="헤더 셀을 통한 sort시 빈 값에 대한 처리." baseSymbolName="String" anonymousFunction="true" classType="enum">
+          <region xsi:type="index:RegionWithLine" startIndex="77" endIndex="88" startLine="5" endLine="5"/>
+          <prototype/>
+          <symbols key="EMPTY_STRING">
+            <value xsi:type="index:StringEnumFieldSymbol" name="EMPTY_STRING" description="빈 값이 공백 스트링(&quot;&quot;) 값으로 오름차순, 내림차순에 의해 같이 정렬됩니다." literal="emptyString">
+              <region startIndex="230" endIndex="241"/>
+              <inferredType name="cpr.controls.EMPTYVALUESORT" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="NULL_LAST">
+            <value xsi:type="index:StringEnumFieldSymbol" name="NULL_LAST" description="빈 값이 null로 인식되어 정렬됩니다. 오름차순, 내림차순에 상관없이 최하단에 위치됩니다." literal="nullLast">
+              <region startIndex="352" endIndex="360"/>
+              <inferredType name="cpr.controls.EMPTYVALUESORT" instance="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.EMPTYVALUESORT">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.EMPTYVALUESORT" originalSymbolName="__anonymous1">
+          <region startIndex="60" endIndex="73"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="77" endIndex="88" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="88" endIndex="88"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.EMPTYVALUESORT">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.EMPTYVALUESORT" description="헤더 셀을 통한 sort시 빈 값에 대한 처리." baseSymbolName="String" anonymousFunction="true" classType="enum">
+        <region startIndex="60" endIndex="73"/>
+        <prototype/>
+        <symbols key="EMPTY_STRING">
+          <value xsi:type="index:StringEnumFieldSymbol" name="EMPTY_STRING" description="빈 값이 공백 스트링(&quot;&quot;) 값으로 오름차순, 내림차순에 의해 같이 정렬됩니다." literal="emptyString">
+            <region startIndex="230" endIndex="241"/>
+            <inferredType name="cpr.controls.EMPTYVALUESORT" instance="true"/>
+          </value>
+        </symbols>
+        <symbols key="NULL_LAST">
+          <value xsi:type="index:StringEnumFieldSymbol" name="NULL_LAST" description="빈 값이 null로 인식되어 정렬됩니다. 오름차순, 내림차순에 상관없이 최하단에 위치됩니다." literal="nullLast">
+            <region startIndex="352" endIndex="360"/>
+            <inferredType name="cpr.controls.EMPTYVALUESORT" instance="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

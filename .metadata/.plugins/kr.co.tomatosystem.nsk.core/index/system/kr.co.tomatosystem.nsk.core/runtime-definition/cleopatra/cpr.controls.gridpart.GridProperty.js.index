@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridProperty.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="6535" startLine="4" endLine="237"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridProperty" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="59" endIndex="70" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="dataSet">
+              <value xsi:type="index:VariableSymbol" name="dataSet" description="그리드에 연결될 데이터셋 또는 데이터뷰 아이디.">
+                <region startIndex="253" endIndex="259"/>
+                <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="hScroll">
+              <value xsi:type="index:VariableSymbol" name="hScroll" optional="true" description="가로 스크롤 스타일. [auto] : 내부 영역 사이즈에 따라 스크롤이 자동으로 설정됩니다. [scroll] : 내부 영역 사이즈에 상관없이 스크롤이 보이도록 설정됩니다. [hidden] : 내부 영역 사이즈에 상관없이 스크롤이 보이지 않도록 설정됩니다.">
+                <region startIndex="534" endIndex="540"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="vScroll">
+              <value xsi:type="index:VariableSymbol" name="vScroll" optional="true" description="세로 스크롤 스타일. [auto] : 디테일 영역의 데이터 양에 따라 스크롤이 자동으로 설정됩다. [scroll] : 디테일 영역의 데이터 양에 상관없이 스크롤이 보이도록 설정됩니다. [hidden] : 디테일 영역의 데이터 양에 상관없이 스크롤이 보이지 않도록 설정됩니다.">
+                <region startIndex="809" endIndex="815"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="wheelRowCount">
+              <value xsi:type="index:VariableSymbol" name="wheelRowCount" optional="true" description="wheel로 한 번에 스크롤할 로우의 수">
+                <region startIndex="944" endIndex="956"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="selectionUnit">
+              <value xsi:type="index:VariableSymbol" name="selectionUnit" optional="true" description="그리드를 선택할 수 있는 단위. ([cell] or [row] or [column])">
+                <region startIndex="1110" endIndex="1122"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="selectionMulti">
+              <value xsi:type="index:VariableSymbol" name="selectionMulti" optional="true" description="다중 선택 여부. ([none] or [single] or [multi])">
+                <region startIndex="1270" endIndex="1283"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoFit">
+              <value xsi:type="index:VariableSymbol" name="autoFit" optional="true" description="지정된 영역의 너비에 맞게 셀의 크기를 자동조절. [none] : 해당 기능을 사용하지 않고, 지정된 넓이로 설정됩니다. [all] : 모든 컬럼이 균등 계산되어 셀의 크기가 자동 조절됩니다. [columnindex] : 특정 컬럼 인덱스를 지정시, 해당 컬럼 크기만 조절하여 지정된 영역의 너비에 맞도록 합니다. 콤마(,) 구분자를 통해 여러 컬럼을 설정할 수 있습니다.">
+                <region startIndex="1607" endIndex="1613"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoRowHeight">
+              <value xsi:type="index:VariableSymbol" name="autoRowHeight" optional="true" description="셀 데이터 길이에 맞게 행 높이를 자동조절. 최솟값은 설정한 행 높이가 됩니다. [none] :  해당 기능을 사용하지 않고, 고정 높이로 설정됩니다. [all] : 모든 컬럼의 데이터 길이에 맞게 행 높이를 자동조절 합니다. [cellindex] : 특정 셀 인덱스를 지정시, 해당 셀의 데이터 길이에 맞게 행 높이를 자동조절합니다. 콤마(,) 구분자를 통해 여러 컬럼을 설정할 수 있습니다.">
+                <region startIndex="1949" endIndex="1961"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="showDeletedRow">
+              <value xsi:type="index:VariableSymbol" name="showDeletedRow" optional="true" description="삭제한 로우를 보여지게 할지 여부.">
+                <region startIndex="2088" endIndex="2101"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="noDataMessage">
+              <value xsi:type="index:VariableSymbol" name="noDataMessage" optional="true" description="디테일 영역에 데이터가 없을 때 보여지게 할 메시지. (상/하/좌/우 고정영역이 있을 경우, 디테일영역의 가운데 영역에 해당 텍스트가 배치됩니다.)">
+                <region startIndex="2294" endIndex="2306"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="collapsible">
+              <value xsi:type="index:VariableSymbol" name="collapsible" optional="true" description="rowgroup 사용시 해당 그룹을 접을 수 있도록 설정.">
+                <region startIndex="2446" endIndex="2456"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnResizable">
+              <value xsi:type="index:VariableSymbol" name="columnResizable" optional="true" description="그리드 컬럼 넓이 조정 가능 여부.">
+                <region startIndex="2584" endIndex="2598"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="columnMovable">
+              <value xsi:type="index:VariableSymbol" name="columnMovable" optional="true" description="그리드 컬럼 이동 가능 여부.">
+                <region startIndex="2723" endIndex="2735"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rowIndexerStartNum">
+              <value xsi:type="index:VariableSymbol" name="rowIndexerStartNum" optional="true" description="그리드에 보여지는 row index의 시작 index. (columnType이 rowIndex인 컬럼에 보여집니다.)">
+                <region startIndex="2911" endIndex="2928"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="leftSplit">
+              <value xsi:type="index:VariableSymbol" name="leftSplit" optional="true" description="그리드 왼쪽으로 고정(화면분할)될 셀의 수. (관련 속성 : [leftSplitWidth] leftSplitWidth가 0이면 leftSplit을 설정하여도 왼쪽 분할영역이 보여지지 않습니다.)">
+                <region startIndex="3146" endIndex="3154"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rightSplit">
+              <value xsi:type="index:VariableSymbol" name="rightSplit" optional="true" description="그리드 오른쪽으로 고정(화면분할)될 셀의 수. (관련 속성 : [rightSplitWidth] rightSplitWidth 0이면 rightSplit을 설정하여도 오른쪽 분할영역이 보여지지 않습니다.)">
+                <region startIndex="3376" endIndex="3385"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="leftSplitWidth">
+              <value xsi:type="index:VariableSymbol" name="leftSplitWidth" optional="true" description="그리드 왼쪽으로 고정(화면분할)될 영역의 넓이(px). (관련 속성 : [leftSplit] leftSplit을 지정하지 않으면 왼쪽 분할 영역이 분할되지 않습니다.)">
+                <region startIndex="3588" endIndex="3601"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rightSplitWidth">
+              <value xsi:type="index:VariableSymbol" name="rightSplitWidth" optional="true" description="그리드 오른쪽으로 고정(화면분할)될 영역의 넓이(px). (관련 속성 : [rightSplit] rightSplit을 지정하지 않으면 오른쪽 분할 영역이 분할되지 않습니다.)">
+                <region startIndex="3808" endIndex="3822"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="topSplit">
+              <value xsi:type="index:VariableSymbol" name="topSplit" optional="true" description="Detail영역 상단에 고정된 Row수를 설정합니다.&lt;br> grouping 사용시에는 topSplit, bottomSplit 관련 설정을 지원하지 않습니다.(topSplit, bottomSplit, topSplitHeight, bottomSplitHeight)">
+                <region startIndex="4078" endIndex="4085"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="bottomSplit">
+              <value xsi:type="index:VariableSymbol" name="bottomSplit" optional="true" description="Detail영역 하단에 고정된 Row수를 설정합니다.&lt;br> grouping 사용시에는 topSplit, bottomSplit 관련 설정을 지원하지 않습니다.(topSplit, bottomSplit, topSplitHeight, bottomSplitHeight)">
+                <region startIndex="4341" endIndex="4351"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="topSplitHeight">
+              <value xsi:type="index:VariableSymbol" name="topSplitHeight" optional="true" description="디테일영역 상단에 고정할 영역의 기본 높이(px). (관련 메소드 : [topSplit] 런타임시 동적으로 topSplit을 설정하지 않으면 상단 고정영역이 분할되지 않습니다. grouping기능 사용시에는 topSplit을 지원하지 않습니다.)">
+                <region startIndex="4598" endIndex="4611"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="bottomSplitHeight">
+              <value xsi:type="index:VariableSymbol" name="bottomSplitHeight" optional="true" description="디테일영역 하단에 고정할 영역의 기본 높이(px). (관련 메소드 : [bottomSplit] 런타임시 동적으로 bottomSplit을 설정하지 않으면 하단 고정영역이 분할되지 않습니다.  grouping기능 사용시에는 bottomSplit을 지원하지 않습니다.)">
+                <region startIndex="4868" endIndex="4884"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="caption">
+              <value xsi:type="index:VariableSymbol" name="caption" optional="true" description="그리드 설명.">
+                <region startIndex="4998" endIndex="5004"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clickMode">
+              <value xsi:type="index:VariableSymbol" name="clickMode" optional="true" description="클릭을 통한 동작을 설정합니다. [select] : 클릭시 선택모드로 동작합니다. [edit] : 클릭시 편집모드로 동작합니다.">
+                <region startIndex="5188" endIndex="5196"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="suppressedCellType">
+              <value xsi:type="index:VariableSymbol" name="suppressedCellType" optional="true" description="Suppress 된 디테일 셀을 분리형(split)으로  표현할지 병합형(merged)로 표현할지를 결정합니다. [split] : 같은 값이 반복될 때 처음 한번만 값을 출력하고 나머지 값은 생략합니다.(default) [merged] : 같은 값이 반복될 때 반복되는 값의 셀들을 병합하는 효과를 제공합니다.">
+                <region startIndex="5482" endIndex="5499"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="pasteMode">
+              <value xsi:type="index:VariableSymbol" name="pasteMode" optional="true" description="붙여넣기(ctrl + v) 방식을 설정합니다. [all] : enabled=false, readOnly=true 상태인 컨트롤을 제외한 모든 컨트롤에 붙여넣기가 됩니다. (default) [editable] : 편집가능한 컨트롤에만 붙여넣기가 됩니다. (제외 컨트롤 예시 : Output, Input(disabled)) [none] : 붙여넣기를 지원하지 않습니다.">
+                <region startIndex="5819" endIndex="5827"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="tabMode">
+              <value xsi:type="index:VariableSymbol" name="tabMode" optional="true" description="tab 이동 방식을 설정합니다.&lt;br> [all] : 전체 셀을 tab으로 이동할 수 있습니다. (기본셀, Output 모두 포함) (default) &lt;br> [editable] : 편집가능한 컨트롤로만 tab 이동이 됩니다. (tab 이동 불가 컨트롤 예시 : Output, Input(disabled)) &lt;br> [none] : tab이동을 지원하지 않습니다.">
+                <region startIndex="6146" endIndex="6152"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="defaultSortMode">
+              <value xsi:type="index:VariableSymbol" name="defaultSortMode" optional="true" description="다중 정렬을 지원하는 헤더를 클릭했을 때 기본 동작을 설정합니다.&lt;br/> 헤더 컬럼의 속성 [sortable] 의 값이 true일 때 적용됩니다.&lt;/br> [multi] : 다중 정렬을 기본 동작으로 설정합니다. (alt+헤더 클릭) 시 단일 정렬.&lt;/br> [single] : 단일 정렬을 기본 동작으로 설정합니다. (ctrl+헤더 클릭) 시 다중 정렬.&lt;/br>">
+                <region startIndex="6488" endIndex="6502"/>
+                <inferredType name="cpr.controls.SORTMODE" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.GridProperty">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.GridProperty" originalSymbolName="__anonymous1">
+          <region startIndex="44" endIndex="55"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="59" endIndex="70" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="70" endIndex="70"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.GridProperty">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.GridProperty" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="44" endIndex="55"/>
+        <prototype>
+          <symbols key="dataSet">
+            <value xsi:type="index:VariableSymbol" name="dataSet" description="그리드에 연결될 데이터셋 또는 데이터뷰 아이디.">
+              <region startIndex="253" endIndex="259"/>
+              <inferredType name="cpr.data.DataCollection" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="hScroll">
+            <value xsi:type="index:VariableSymbol" name="hScroll" optional="true" description="가로 스크롤 스타일. [auto] : 내부 영역 사이즈에 따라 스크롤이 자동으로 설정됩니다. [scroll] : 내부 영역 사이즈에 상관없이 스크롤이 보이도록 설정됩니다. [hidden] : 내부 영역 사이즈에 상관없이 스크롤이 보이지 않도록 설정됩니다.">
+              <region startIndex="534" endIndex="540"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="vScroll">
+            <value xsi:type="index:VariableSymbol" name="vScroll" optional="true" description="세로 스크롤 스타일. [auto] : 디테일 영역의 데이터 양에 따라 스크롤이 자동으로 설정됩다. [scroll] : 디테일 영역의 데이터 양에 상관없이 스크롤이 보이도록 설정됩니다. [hidden] : 디테일 영역의 데이터 양에 상관없이 스크롤이 보이지 않도록 설정됩니다.">
+              <region startIndex="809" endIndex="815"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="wheelRowCount">
+            <value xsi:type="index:VariableSymbol" name="wheelRowCount" optional="true" description="wheel로 한 번에 스크롤할 로우의 수">
+              <region startIndex="944" endIndex="956"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="selectionUnit">
+            <value xsi:type="index:VariableSymbol" name="selectionUnit" optional="true" description="그리드를 선택할 수 있는 단위. ([cell] or [row] or [column])">
+              <region startIndex="1110" endIndex="1122"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="selectionMulti">
+            <value xsi:type="index:VariableSymbol" name="selectionMulti" optional="true" description="다중 선택 여부. ([none] or [single] or [multi])">
+              <region startIndex="1270" endIndex="1283"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoFit">
+            <value xsi:type="index:VariableSymbol" name="autoFit" optional="true" description="지정된 영역의 너비에 맞게 셀의 크기를 자동조절. [none] : 해당 기능을 사용하지 않고, 지정된 넓이로 설정됩니다. [all] : 모든 컬럼이 균등 계산되어 셀의 크기가 자동 조절됩니다. [columnindex] : 특정 컬럼 인덱스를 지정시, 해당 컬럼 크기만 조절하여 지정된 영역의 너비에 맞도록 합니다. 콤마(,) 구분자를 통해 여러 컬럼을 설정할 수 있습니다.">
+              <region startIndex="1607" endIndex="1613"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoRowHeight">
+            <value xsi:type="index:VariableSymbol" name="autoRowHeight" optional="true" description="셀 데이터 길이에 맞게 행 높이를 자동조절. 최솟값은 설정한 행 높이가 됩니다. [none] :  해당 기능을 사용하지 않고, 고정 높이로 설정됩니다. [all] : 모든 컬럼의 데이터 길이에 맞게 행 높이를 자동조절 합니다. [cellindex] : 특정 셀 인덱스를 지정시, 해당 셀의 데이터 길이에 맞게 행 높이를 자동조절합니다. 콤마(,) 구분자를 통해 여러 컬럼을 설정할 수 있습니다.">
+              <region startIndex="1949" endIndex="1961"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="showDeletedRow">
+            <value xsi:type="index:VariableSymbol" name="showDeletedRow" optional="true" description="삭제한 로우를 보여지게 할지 여부.">
+              <region startIndex="2088" endIndex="2101"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="noDataMessage">
+            <value xsi:type="index:VariableSymbol" name="noDataMessage" optional="true" description="디테일 영역에 데이터가 없을 때 보여지게 할 메시지. (상/하/좌/우 고정영역이 있을 경우, 디테일영역의 가운데 영역에 해당 텍스트가 배치됩니다.)">
+              <region startIndex="2294" endIndex="2306"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="collapsible">
+            <value xsi:type="index:VariableSymbol" name="collapsible" optional="true" description="rowgroup 사용시 해당 그룹을 접을 수 있도록 설정.">
+              <region startIndex="2446" endIndex="2456"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnResizable">
+            <value xsi:type="index:VariableSymbol" name="columnResizable" optional="true" description="그리드 컬럼 넓이 조정 가능 여부.">
+              <region startIndex="2584" endIndex="2598"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="columnMovable">
+            <value xsi:type="index:VariableSymbol" name="columnMovable" optional="true" description="그리드 컬럼 이동 가능 여부.">
+              <region startIndex="2723" endIndex="2735"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rowIndexerStartNum">
+            <value xsi:type="index:VariableSymbol" name="rowIndexerStartNum" optional="true" description="그리드에 보여지는 row index의 시작 index. (columnType이 rowIndex인 컬럼에 보여집니다.)">
+              <region startIndex="2911" endIndex="2928"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="leftSplit">
+            <value xsi:type="index:VariableSymbol" name="leftSplit" optional="true" description="그리드 왼쪽으로 고정(화면분할)될 셀의 수. (관련 속성 : [leftSplitWidth] leftSplitWidth가 0이면 leftSplit을 설정하여도 왼쪽 분할영역이 보여지지 않습니다.)">
+              <region startIndex="3146" endIndex="3154"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rightSplit">
+            <value xsi:type="index:VariableSymbol" name="rightSplit" optional="true" description="그리드 오른쪽으로 고정(화면분할)될 셀의 수. (관련 속성 : [rightSplitWidth] rightSplitWidth 0이면 rightSplit을 설정하여도 오른쪽 분할영역이 보여지지 않습니다.)">
+              <region startIndex="3376" endIndex="3385"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="leftSplitWidth">
+            <value xsi:type="index:VariableSymbol" name="leftSplitWidth" optional="true" description="그리드 왼쪽으로 고정(화면분할)될 영역의 넓이(px). (관련 속성 : [leftSplit] leftSplit을 지정하지 않으면 왼쪽 분할 영역이 분할되지 않습니다.)">
+              <region startIndex="3588" endIndex="3601"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rightSplitWidth">
+            <value xsi:type="index:VariableSymbol" name="rightSplitWidth" optional="true" description="그리드 오른쪽으로 고정(화면분할)될 영역의 넓이(px). (관련 속성 : [rightSplit] rightSplit을 지정하지 않으면 오른쪽 분할 영역이 분할되지 않습니다.)">
+              <region startIndex="3808" endIndex="3822"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="topSplit">
+            <value xsi:type="index:VariableSymbol" name="topSplit" optional="true" description="Detail영역 상단에 고정된 Row수를 설정합니다.&lt;br> grouping 사용시에는 topSplit, bottomSplit 관련 설정을 지원하지 않습니다.(topSplit, bottomSplit, topSplitHeight, bottomSplitHeight)">
+              <region startIndex="4078" endIndex="4085"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="bottomSplit">
+            <value xsi:type="index:VariableSymbol" name="bottomSplit" optional="true" description="Detail영역 하단에 고정된 Row수를 설정합니다.&lt;br> grouping 사용시에는 topSplit, bottomSplit 관련 설정을 지원하지 않습니다.(topSplit, bottomSplit, topSplitHeight, bottomSplitHeight)">
+              <region startIndex="4341" endIndex="4351"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="topSplitHeight">
+            <value xsi:type="index:VariableSymbol" name="topSplitHeight" optional="true" description="디테일영역 상단에 고정할 영역의 기본 높이(px). (관련 메소드 : [topSplit] 런타임시 동적으로 topSplit을 설정하지 않으면 상단 고정영역이 분할되지 않습니다. grouping기능 사용시에는 topSplit을 지원하지 않습니다.)">
+              <region startIndex="4598" endIndex="4611"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="bottomSplitHeight">
+            <value xsi:type="index:VariableSymbol" name="bottomSplitHeight" optional="true" description="디테일영역 하단에 고정할 영역의 기본 높이(px). (관련 메소드 : [bottomSplit] 런타임시 동적으로 bottomSplit을 설정하지 않으면 하단 고정영역이 분할되지 않습니다.  grouping기능 사용시에는 bottomSplit을 지원하지 않습니다.)">
+              <region startIndex="4868" endIndex="4884"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="caption">
+            <value xsi:type="index:VariableSymbol" name="caption" optional="true" description="그리드 설명.">
+              <region startIndex="4998" endIndex="5004"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="clickMode">
+            <value xsi:type="index:VariableSymbol" name="clickMode" optional="true" description="클릭을 통한 동작을 설정합니다. [select] : 클릭시 선택모드로 동작합니다. [edit] : 클릭시 편집모드로 동작합니다.">
+              <region startIndex="5188" endIndex="5196"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="suppressedCellType">
+            <value xsi:type="index:VariableSymbol" name="suppressedCellType" optional="true" description="Suppress 된 디테일 셀을 분리형(split)으로  표현할지 병합형(merged)로 표현할지를 결정합니다. [split] : 같은 값이 반복될 때 처음 한번만 값을 출력하고 나머지 값은 생략합니다.(default) [merged] : 같은 값이 반복될 때 반복되는 값의 셀들을 병합하는 효과를 제공합니다.">
+              <region startIndex="5482" endIndex="5499"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="pasteMode">
+            <value xsi:type="index:VariableSymbol" name="pasteMode" optional="true" description="붙여넣기(ctrl + v) 방식을 설정합니다. [all] : enabled=false, readOnly=true 상태인 컨트롤을 제외한 모든 컨트롤에 붙여넣기가 됩니다. (default) [editable] : 편집가능한 컨트롤에만 붙여넣기가 됩니다. (제외 컨트롤 예시 : Output, Input(disabled)) [none] : 붙여넣기를 지원하지 않습니다.">
+              <region startIndex="5819" endIndex="5827"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="tabMode">
+            <value xsi:type="index:VariableSymbol" name="tabMode" optional="true" description="tab 이동 방식을 설정합니다.&lt;br> [all] : 전체 셀을 tab으로 이동할 수 있습니다. (기본셀, Output 모두 포함) (default) &lt;br> [editable] : 편집가능한 컨트롤로만 tab 이동이 됩니다. (tab 이동 불가 컨트롤 예시 : Output, Input(disabled)) &lt;br> [none] : tab이동을 지원하지 않습니다.">
+              <region startIndex="6146" endIndex="6152"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="defaultSortMode">
+            <value xsi:type="index:VariableSymbol" name="defaultSortMode" optional="true" description="다중 정렬을 지원하는 헤더를 클릭했을 때 기본 동작을 설정합니다.&lt;br/> 헤더 컬럼의 속성 [sortable] 의 값이 true일 때 적용됩니다.&lt;/br> [multi] : 다중 정렬을 기본 동작으로 설정합니다. (alt+헤더 클릭) 시 단일 정렬.&lt;/br> [single] : 단일 정렬을 기본 동작으로 설정합니다. (ctrl+헤더 클릭) 시 다중 정렬.&lt;/br>">
+              <region startIndex="6488" endIndex="6502"/>
+              <inferredType name="cpr.controls.SORTMODE" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

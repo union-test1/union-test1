@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-46e1af57" version="1.0.0.0">
+  <head std:sid="head-20340403">
+    <title>ComboOrRadio</title>
+    <screen std:sid="screen-fc3c8131" id="default" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-9f507164" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-7460714f" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-04864878">
+      <cl:dataset std:sid="d-set-651d7c61" id="ds1"/>
+    </cl:model>
+    <cl:appspec dev-description="공간 크기에 따라 콤보와 라디오로 변하는 컨트롤" dev-icon="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABLUlEQVR4nK2TwWrCQBCGcxJ8Fc27CT34GOqhQk8+gbXYggolKdRXEHdJbnppezWC0d1s599uwibrglAHvpDMzP9ndzYJgn4cNOgQA4IRJ8PW5DpOv/XQIh4JOfjcKfZzVKeL1Gy/jwo51Ignot00gPi995ooWRTKF6g9vKUwioymMhhDfGug16xWG3QJIWT9zWmaqtky0uDeDvRCo7V0GQ7Xu1rDfBWryfyjBnJ2QAMtDBgGVkaSJI64BLUyoNEnRZc8F7IqYMk+g+kiqvqggdYxeL7R4JALGBycLXDOvQaolbH5ymCwuTrEl5W7CuTsGK33MBjBILx2jIwxvWSAe88xhv/5kMZ3/ZRrPxP2x2mwZ1GojKaNgZk9e38mm64eTj/mxJnI9LT/cmGz/xeajeNbE9fBuAAAAABJRU5ErkJggg==">
+      <cl:property bindable="false" name="dataSet" type="control"/>
+      <cl:property bindable="true" name="value" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-d2ec027e" style="top:0px; left:0px; width:300px; height:25px;">
+    <cl:listener std:sid="listener-fd3d682e" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:listener std:sid="listener-db01cc0a" handler="onBodyScreenChange" name="screen-change"/>
+    <cl:radiobutton std:sid="r-button-9840180d" id="rdb1">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-6dfea632" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:radiobutton>
+    <cl:combobox std:sid="c-box-db1595f3" id="cmb1">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-6bc4f375" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:combobox>
+    <cl:xylayout std:sid="xylayout-655f189f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

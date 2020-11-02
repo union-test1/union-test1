@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.MDIFolder.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="100" endIndex="1756" startLine="7" endLine="49"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="MDIFolder" description="MDIFolder app을 추가 할 수 있는 탭폴더 컴포넌트. MDI 폴더를 생성합니다." baseSymbolName="cpr.controls.TabFolder" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="125" endIndex="138" startLine="7" endLine="7"/>
+          <params name="id" description="MDI 폴더의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="134" endIndex="135" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="insertItemWithApp">
+              <value xsi:type="index:FunctionVariableSymbol" name="insertItemWithApp" originalSymbolName="__anonymous2">
+                <region startIndex="579" endIndex="595"/>
+              </value>
+            </symbols>
+            <symbols key="addItemWithApp">
+              <value xsi:type="index:FunctionVariableSymbol" name="addItemWithApp" originalSymbolName="__anonymous3">
+                <region startIndex="1046" endIndex="1059"/>
+              </value>
+            </symbols>
+            <symbols key="findItemWithAppID">
+              <value xsi:type="index:FunctionVariableSymbol" name="findItemWithAppID" originalSymbolName="__anonymous4">
+                <region startIndex="1289" endIndex="1305"/>
+              </value>
+            </symbols>
+            <symbols key="addItemWithPage">
+              <value xsi:type="index:FunctionVariableSymbol" name="addItemWithPage" originalSymbolName="__anonymous5">
+                <region startIndex="1687" endIndex="1701"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.MDIFolder">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.MDIFolder" originalSymbolName="__anonymous1">
+          <region startIndex="113" endIndex="121"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="insertItemWithApp" description="MDI 폴더에 특정 앱을 로드하고 추가 합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="599" endIndex="655" startLine="18" endLine="18"/>
+          <params name="index" description="삽입할 탭 인덱스. 0 기준." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="608" endIndex="612" startLine="18" endLine="18"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="appId" description="추가할 app." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="615" endIndex="619" startLine="18" endLine="18"/>
+            <inferredType name="String" sematicsQualifier="app" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="select" optional="true" description="추가할 app의 선택 여부. 기본 값은 true." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="622" endIndex="627" startLine="18" endLine="18"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="appLoadCompleteCallback" optional="true" description="App이 로드된 후 호출되는 TabItem을 인자로 받는 callback 메소드." parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="630" endIndex="652" startLine="18" endLine="18"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.controls.TabItem" variableName="item" instance="true" documentedType="true"/>
+              <typeParameters name="cpr.core.App" variableName="app" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="addItemWithApp" description="App으로 된 Item을 추가합니다.&lt;br> App을 추가 후 select 여부를 설정합니다. 기본 값은 true 입니다." returnDescription="추가한 Item" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1063" endIndex="1112" startLine="29" endLine="29"/>
+          <params name="appId" description="추가할 app." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1072" endIndex="1076" startLine="29" endLine="29"/>
+            <inferredType name="String" sematicsQualifier="app" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="select" optional="true" description="추가할 app의 선택 여부. 기본 값은 true." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1079" endIndex="1084" startLine="29" endLine="29"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="appLoadCompleteCallback" optional="true" description="App이 준비된 후 호출되는 TabItem을 인자로 받는 callback 메소드." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1087" endIndex="1109" startLine="29" endLine="29"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.controls.TabItem" variableName="item" instance="true" documentedType="true"/>
+              <typeParameters name="cpr.core.App" variableName="app" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="findItemWithAppID" description="App ID로 해당 앱을 포함하는 TabItem을 찾습니다. 존재하지 않는 경우, null이 반환됩니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1309" endIndex="1325" startLine="37" endLine="37"/>
+          <params name="appId" description="검색할 appId" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1318" endIndex="1322" startLine="37" endLine="37"/>
+            <inferredType name="String" sematicsQualifier="app" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="addItemWithPage" description="Page로 된 Item을 추가합니다.&lt;br/> Page를 추가 후 select 여부를 설정합니다." returnDescription="추가된 Item" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1705" endIndex="1753" startLine="47" endLine="47"/>
+          <params name="src" description="추가할 Page의 경로." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1714" endIndex="1716" startLine="47" endLine="47"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="select" optional="true" description="추가할 Page의 선택여부. 기본 값은 true." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1719" endIndex="1724" startLine="47" endLine="47"/>
+            <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="pageLoadCompleteCallback" optional="true" description="Page가 준비된 후 호출되는 TabItem을 인자로 받는 callback 메소드." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1727" endIndex="1750" startLine="47" endLine="47"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.controls.TabItem" variableName="item" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="125" endIndex="138" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="138" endIndex="138"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="MDI 폴더의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="134" endIndex="135" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="599" endIndex="655" startLine="18" endLine="18"/>
+        <childScopes>
+          <region startIndex="655" endIndex="655"/>
+          <symbolMap key="index">
+            <value xsi:type="index:ParameterSymbol" name="index" description="삽입할 탭 인덱스. 0 기준." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="608" endIndex="612" startLine="18" endLine="18"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="appId">
+            <value xsi:type="index:ParameterSymbol" name="appId" description="추가할 app." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="615" endIndex="619" startLine="18" endLine="18"/>
+              <inferredType name="String" sematicsQualifier="app" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="select">
+            <value xsi:type="index:ParameterSymbol" name="select" optional="true" description="추가할 app의 선택 여부. 기본 값은 true." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="622" endIndex="627" startLine="18" endLine="18"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="appLoadCompleteCallback">
+            <value xsi:type="index:ParameterSymbol" name="appLoadCompleteCallback" optional="true" description="App이 로드된 후 호출되는 TabItem을 인자로 받는 callback 메소드." parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="630" endIndex="652" startLine="18" endLine="18"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.TabItem" variableName="item" instance="true" documentedType="true"/>
+                <typeParameters name="cpr.core.App" variableName="app" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1063" endIndex="1112" startLine="29" endLine="29"/>
+        <childScopes>
+          <region startIndex="1112" endIndex="1112"/>
+          <symbolMap key="appId">
+            <value xsi:type="index:ParameterSymbol" name="appId" description="추가할 app." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1072" endIndex="1076" startLine="29" endLine="29"/>
+              <inferredType name="String" sematicsQualifier="app" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="select">
+            <value xsi:type="index:ParameterSymbol" name="select" optional="true" description="추가할 app의 선택 여부. 기본 값은 true." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1079" endIndex="1084" startLine="29" endLine="29"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="appLoadCompleteCallback">
+            <value xsi:type="index:ParameterSymbol" name="appLoadCompleteCallback" optional="true" description="App이 준비된 후 호출되는 TabItem을 인자로 받는 callback 메소드." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="1087" endIndex="1109" startLine="29" endLine="29"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.TabItem" variableName="item" instance="true" documentedType="true"/>
+                <typeParameters name="cpr.core.App" variableName="app" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1309" endIndex="1325" startLine="37" endLine="37"/>
+        <childScopes>
+          <region startIndex="1325" endIndex="1325"/>
+          <symbolMap key="appId">
+            <value xsi:type="index:ParameterSymbol" name="appId" description="검색할 appId" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1318" endIndex="1322" startLine="37" endLine="37"/>
+              <inferredType name="String" sematicsQualifier="app" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1705" endIndex="1753" startLine="47" endLine="47"/>
+        <childScopes>
+          <region startIndex="1753" endIndex="1753"/>
+          <symbolMap key="src">
+            <value xsi:type="index:ParameterSymbol" name="src" description="추가할 Page의 경로." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1714" endIndex="1716" startLine="47" endLine="47"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="select">
+            <value xsi:type="index:ParameterSymbol" name="select" optional="true" description="추가할 Page의 선택여부. 기본 값은 true." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1719" endIndex="1724" startLine="47" endLine="47"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="pageLoadCompleteCallback">
+            <value xsi:type="index:ParameterSymbol" name="pageLoadCompleteCallback" optional="true" description="Page가 준비된 후 호출되는 TabItem을 인자로 받는 callback 메소드." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="1727" endIndex="1750" startLine="47" endLine="47"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.TabItem" variableName="item" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.MDIFolder">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.MDIFolder" description="MDIFolder app을 추가 할 수 있는 탭폴더 컴포넌트. MDI 폴더를 생성합니다." baseSymbolName="cpr.controls.TabFolder" anonymousFunction="true">
+        <region startIndex="113" endIndex="121"/>
+        <params name="id" description="MDI 폴더의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="134" endIndex="135" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="insertItemWithApp">
+            <value xsi:type="index:FunctionVariableSymbol" name="insertItemWithApp" originalSymbolName="__anonymous2">
+              <region startIndex="579" endIndex="595"/>
+            </value>
+          </symbols>
+          <symbols key="addItemWithApp">
+            <value xsi:type="index:FunctionVariableSymbol" name="addItemWithApp" originalSymbolName="__anonymous3">
+              <region startIndex="1046" endIndex="1059"/>
+            </value>
+          </symbols>
+          <symbols key="findItemWithAppID">
+            <value xsi:type="index:FunctionVariableSymbol" name="findItemWithAppID" originalSymbolName="__anonymous4">
+              <region startIndex="1289" endIndex="1305"/>
+            </value>
+          </symbols>
+          <symbols key="addItemWithPage">
+            <value xsi:type="index:FunctionVariableSymbol" name="addItemWithPage" originalSymbolName="__anonymous5">
+              <region startIndex="1687" endIndex="1701"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

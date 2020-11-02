@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridHeaderBand.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="67" endIndex="3268" startLine="5" endLine="107"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridHeaderBand" baseSymbolName="cpr.controls.gridpart.GridBand" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="106" endIndex="124" startLine="5" endLine="5"/>
+          <params name="context" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="121" startLine="5" endLine="5"/>
+            <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="getColumn">
+              <value xsi:type="index:FunctionVariableSymbol" name="getColumn" originalSymbolName="__anonymous2">
+                <region startIndex="389" endIndex="397"/>
+              </value>
+            </symbols>
+            <symbols key="getColumnByColIndex">
+              <value xsi:type="index:FunctionVariableSymbol" name="getColumnByColIndex" originalSymbolName="__anonymous3">
+                <region startIndex="690" endIndex="708"/>
+              </value>
+            </symbols>
+            <symbols key="getColumnByName">
+              <value xsi:type="index:FunctionVariableSymbol" name="getColumnByName" originalSymbolName="__anonymous4">
+                <region startIndex="1053" endIndex="1067"/>
+              </value>
+            </symbols>
+            <symbols key="getControlAttr">
+              <value xsi:type="index:FunctionVariableSymbol" name="getControlAttr" originalSymbolName="__anonymous5">
+                <region startIndex="1285" endIndex="1298"/>
+              </value>
+            </symbols>
+            <symbols key="getSort">
+              <value xsi:type="index:FunctionVariableSymbol" name="getSort" originalSymbolName="__anonymous6">
+                <region startIndex="1493" endIndex="1499"/>
+              </value>
+            </symbols>
+            <symbols key="getSortCondition">
+              <value xsi:type="index:FunctionVariableSymbol" name="getSortCondition" originalSymbolName="__anonymous7">
+                <region startIndex="1645" endIndex="1660"/>
+              </value>
+            </symbols>
+            <symbols key="sort">
+              <value xsi:type="index:FunctionVariableSymbol" name="sort" originalSymbolName="__anonymous8">
+                <region startIndex="2191" endIndex="2194"/>
+              </value>
+            </symbols>
+            <symbols key="clearSort">
+              <value xsi:type="index:FunctionVariableSymbol" name="clearSort" originalSymbolName="__anonymous9">
+                <region startIndex="2304" endIndex="2312"/>
+              </value>
+            </symbols>
+            <symbols key="getFilter">
+              <value xsi:type="index:FunctionVariableSymbol" name="getFilter" originalSymbolName="__anonymous10">
+                <region startIndex="2500" endIndex="2508"/>
+              </value>
+            </symbols>
+            <symbols key="filter">
+              <value xsi:type="index:FunctionVariableSymbol" name="filter" originalSymbolName="__anonymous11">
+                <region startIndex="3123" endIndex="3128"/>
+              </value>
+            </symbols>
+            <symbols key="clearFilter">
+              <value xsi:type="index:FunctionVariableSymbol" name="clearFilter" originalSymbolName="__anonymous12">
+                <region startIndex="3240" endIndex="3250"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.GridHeaderBand">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.GridHeaderBand" originalSymbolName="__anonymous1">
+          <region startIndex="89" endIndex="102"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getColumn" description="특정 셀을 반환합니다." returnDescription="입력받은 셀 인덱스의 셀." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="401" endIndex="421" startLine="13" endLine="13"/>
+          <params name="cellIndex" description="셀 인덱스." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="410" endIndex="418" startLine="13" endLine="13"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.controls.gridpart.GridHeaderColumn" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getColumnByColIndex" description="해당 정보에 맞는 GridColumn 배열을 반환합니다." returnDescription="해당 정보에 맞는 GridColumn 배열." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="712" endIndex="740" startLine="21" endLine="21"/>
+          <params name="colIndex" description="찾고자 하는 컬럼의 colIndex." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="721" endIndex="728" startLine="21" endLine="21"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="colSpan" description="찾고자 하는 컬럼의 colSpan." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="731" endIndex="737" startLine="21" endLine="21"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="cpr.controls.gridpart.GridHeaderColumn" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="getColumnByName" hideFromProposal="true" deprecated="true" deprecationDescription="19.01.21 detail에서만 제공되는 기능입니다. 특정 columnName과 바인딩 되어있는 GridDetailColumn 배열을 반환합니다.&lt;br>" returnDescription="입력받은 columnName의 GridDetailColumn 배열." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1071" endIndex="1092" startLine="29" endLine="29"/>
+          <params name="columnName" description="detail에 바인딩 되어 있는 columnName." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1080" endIndex="1089" startLine="29" endLine="29"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="cpr.controls.gridpart.GridDetailColumn" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="getControlAttr" description="특정 셀에 컨트롤이 존재하는 경우 해당 컨트롤의 특정 속성 값을 반환합니다." returnDescription="속성값." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1302" endIndex="1332" startLine="37" endLine="37"/>
+          <params name="cellIndex" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1311" endIndex="1319" startLine="37" endLine="37"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="attrName" description="속성명." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1322" endIndex="1329" startLine="37" endLine="37"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="getSort" description="헤더영역에 적용된 sort 정보를 반환합니다." returnDescription="sort 정보." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1503" endIndex="1514" startLine="46" endLine="46"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridHeaderBand.js" instance="true" documentedType="true">
+              <selfDeclaringTypeSymbol classType="interface">
+                <region startIndex="1381" endIndex="1428"/>
+                <prototype>
+                  <symbols key="cellIndex">
+                    <value xsi:type="index:VariableSymbol" name="cellIndex">
+                      <region startIndex="1388" endIndex="1396"/>
+                      <inferredType name="Number" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="asc">
+                    <value xsi:type="index:VariableSymbol" name="asc">
+                      <region startIndex="1412" endIndex="1414"/>
+                      <inferredType name="Boolean" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                </prototype>
+              </selfDeclaringTypeSymbol>
+            </typeParameters>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="getSortCondition" description="헤더영역에 적용된 sort condition을 반환합니다." returnDescription="sort condition." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1664" endIndex="1675" startLine="52" endLine="52"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="sort" description="그리드 헤더의 sort를 사용하는 것과 동일하게 그리드가 정렬되도록 합니다.&lt;br> 그리드 헤더의 정렬 스타일이 적용됩니다.&lt;br> 데이터셋의 sort와는 별개로 관리됩니다. &lt;pre>&lt;code>&lt;code>grid.header.sort([ {cellIndex: 1, asc: true} ,  {cellIndex: 2, asc: false} ])&lt;/code>&lt;br>&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2198" endIndex="2218" startLine="68" endLine="68"/>
+          <params name="sortInfos" description="sort 조건. &lt;br> cellIndex : 헤더 셀 인덱스.&lt;br> asc : 정렬 오름차순/내림차순. (true/false) emptyValueSort : 정렬시 빈 값이 대한 처리 (emptyString, nullLast)" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2207" endIndex="2215" startLine="68" endLine="68"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridHeaderBand.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol classType="interface">
+                  <region startIndex="1919" endIndex="1996"/>
+                  <prototype>
+                    <symbols key="cellIndex">
+                      <value xsi:type="index:VariableSymbol" name="cellIndex">
+                        <region startIndex="1926" endIndex="1934"/>
+                        <inferredType name="Number" instance="true" documentedType="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="asc">
+                      <value xsi:type="index:VariableSymbol" name="asc">
+                        <region startIndex="1950" endIndex="1952"/>
+                        <inferredType name="Boolean" instance="true" documentedType="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="emptyValueSort">
+                      <value xsi:type="index:VariableSymbol" name="emptyValueSort" optional="true">
+                        <region startIndex="1969" endIndex="1982"/>
+                        <inferredType name="String" instance="true" documentedType="true"/>
+                      </value>
+                    </symbols>
+                  </prototype>
+                </selfDeclaringTypeSymbol>
+              </typeParameters>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="clearSort" description="그리드 헤더영역의 정렬을 모두 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2316" endIndex="2327" startLine="73" endLine="73"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="getFilter" description="그리드 헤더영역에 적용된 filter 정보를 반환합니다." returnDescription="filter 정보." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2512" endIndex="2523" startLine="82" endLine="82"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridHeaderBand.js" instance="true" documentedType="true">
+              <selfDeclaringTypeSymbol classType="interface">
+                <region startIndex="2382" endIndex="2433"/>
+                <prototype>
+                  <symbols key="cellIndex">
+                    <value xsi:type="index:VariableSymbol" name="cellIndex">
+                      <region startIndex="2389" endIndex="2397"/>
+                      <inferredType name="Number" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="values">
+                    <value xsi:type="index:VariableSymbol" name="values">
+                      <region startIndex="2413" endIndex="2418"/>
+                      <inferredType name="Array" instance="true" documentedType="true">
+                        <typeParameters name="String" instance="true" documentedType="true"/>
+                      </inferredType>
+                    </value>
+                  </symbols>
+                </prototype>
+              </selfDeclaringTypeSymbol>
+            </typeParameters>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous11">
+        <value xsi:type="index:FunctionSymbol" name="filter" description="그리드 헤더의 filter를 사용하는 것과 동일하게 그리드가 필터링되도록 합니다.&lt;br> 그리드 헤더의 필터 스타일이 적용됩니다.&lt;br> 데이터셋의 filter와는 별개로 관리됩니다.&lt;br> 그리드 필터에 의해 보이지 않는 value에 대해서는 &lt;br> header filter를 통해 filter 체크 변경을 할 수 없습니다. &lt;pre>&lt;code>&lt;code>grid.header.filter([ {cellIndex: 1, values: [&quot;A, B&quot;]} ])&lt;/code>&lt;br> => cellIndex가 1인 헤더 셀의 값이 &quot;A&quot;와 &quot;B&quot;인 행만 필터링 합니다.&lt;br> (값을 비교하는 데이터셋 컬럼은 헤더 셀의 targetColumnName 입니다.)&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3132" endIndex="3154" startLine="100" endLine="100"/>
+          <params name="filterInfos" description="filter 조건. &lt;br> cellIndex : 헤더 셀 인덱스.&lt;br> values : 필터링할 값." symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3141" endIndex="3151" startLine="100" endLine="100"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridHeaderBand.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol classType="interface">
+                  <region startIndex="2945" endIndex="2996"/>
+                  <prototype>
+                    <symbols key="cellIndex">
+                      <value xsi:type="index:VariableSymbol" name="cellIndex">
+                        <region startIndex="2952" endIndex="2960"/>
+                        <inferredType name="Number" instance="true" documentedType="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="values">
+                      <value xsi:type="index:VariableSymbol" name="values">
+                        <region startIndex="2976" endIndex="2981"/>
+                        <inferredType name="Array" instance="true" documentedType="true">
+                          <typeParameters name="String" instance="true" documentedType="true"/>
+                        </inferredType>
+                      </value>
+                    </symbols>
+                  </prototype>
+                </selfDeclaringTypeSymbol>
+              </typeParameters>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous12">
+        <value xsi:type="index:FunctionSymbol" name="clearFilter" description="그리드 헤더영역의 필터를 모두 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3254" endIndex="3265" startLine="105" endLine="105"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="106" endIndex="124" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="124" endIndex="124"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="121" startLine="5" endLine="5"/>
+              <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="401" endIndex="421" startLine="13" endLine="13"/>
+        <childScopes>
+          <region startIndex="421" endIndex="421"/>
+          <symbolMap key="cellIndex">
+            <value xsi:type="index:ParameterSymbol" name="cellIndex" description="셀 인덱스." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="410" endIndex="418" startLine="13" endLine="13"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="712" endIndex="740" startLine="21" endLine="21"/>
+        <childScopes>
+          <region startIndex="740" endIndex="740"/>
+          <symbolMap key="colIndex">
+            <value xsi:type="index:ParameterSymbol" name="colIndex" description="찾고자 하는 컬럼의 colIndex." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="721" endIndex="728" startLine="21" endLine="21"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="colSpan">
+            <value xsi:type="index:ParameterSymbol" name="colSpan" description="찾고자 하는 컬럼의 colSpan." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="731" endIndex="737" startLine="21" endLine="21"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1071" endIndex="1092" startLine="29" endLine="29"/>
+        <childScopes>
+          <region startIndex="1092" endIndex="1092"/>
+          <symbolMap key="columnName">
+            <value xsi:type="index:ParameterSymbol" name="columnName" description="detail에 바인딩 되어 있는 columnName." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1080" endIndex="1089" startLine="29" endLine="29"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1302" endIndex="1332" startLine="37" endLine="37"/>
+        <childScopes>
+          <region startIndex="1332" endIndex="1332"/>
+          <symbolMap key="cellIndex">
+            <value xsi:type="index:ParameterSymbol" name="cellIndex" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1311" endIndex="1319" startLine="37" endLine="37"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="attrName">
+            <value xsi:type="index:ParameterSymbol" name="attrName" description="속성명." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1322" endIndex="1329" startLine="37" endLine="37"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1503" endIndex="1514" startLine="46" endLine="46"/>
+        <childScopes>
+          <region startIndex="1514" endIndex="1514"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1664" endIndex="1675" startLine="52" endLine="52"/>
+        <childScopes>
+          <region startIndex="1675" endIndex="1675"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2198" endIndex="2218" startLine="68" endLine="68"/>
+        <childScopes>
+          <region startIndex="2218" endIndex="2218"/>
+          <symbolMap key="sortInfos">
+            <value xsi:type="index:ParameterSymbol" name="sortInfos" description="sort 조건. &lt;br> cellIndex : 헤더 셀 인덱스.&lt;br> asc : 정렬 오름차순/내림차순. (true/false) emptyValueSort : 정렬시 빈 값이 대한 처리 (emptyString, nullLast)" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2207" endIndex="2215" startLine="68" endLine="68"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridHeaderBand.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="1919" endIndex="1996"/>
+                    <prototype>
+                      <symbols key="cellIndex">
+                        <value xsi:type="index:VariableSymbol" name="cellIndex">
+                          <region startIndex="1926" endIndex="1934"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="asc">
+                        <value xsi:type="index:VariableSymbol" name="asc">
+                          <region startIndex="1950" endIndex="1952"/>
+                          <inferredType name="Boolean" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="emptyValueSort">
+                        <value xsi:type="index:VariableSymbol" name="emptyValueSort" optional="true">
+                          <region startIndex="1969" endIndex="1982"/>
+                          <inferredType name="String" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </typeParameters>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2316" endIndex="2327" startLine="73" endLine="73"/>
+        <childScopes>
+          <region startIndex="2327" endIndex="2327"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2512" endIndex="2523" startLine="82" endLine="82"/>
+        <childScopes>
+          <region startIndex="2523" endIndex="2523"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3132" endIndex="3154" startLine="100" endLine="100"/>
+        <childScopes>
+          <region startIndex="3154" endIndex="3154"/>
+          <symbolMap key="filterInfos">
+            <value xsi:type="index:ParameterSymbol" name="filterInfos" description="filter 조건. &lt;br> cellIndex : 헤더 셀 인덱스.&lt;br> values : 필터링할 값." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3141" endIndex="3151" startLine="100" endLine="100"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridHeaderBand.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="2945" endIndex="2996"/>
+                    <prototype>
+                      <symbols key="cellIndex">
+                        <value xsi:type="index:VariableSymbol" name="cellIndex">
+                          <region startIndex="2952" endIndex="2960"/>
+                          <inferredType name="Number" instance="true" documentedType="true"/>
+                        </value>
+                      </symbols>
+                      <symbols key="values">
+                        <value xsi:type="index:VariableSymbol" name="values">
+                          <region startIndex="2976" endIndex="2981"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="String" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </typeParameters>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.12/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3254" endIndex="3265" startLine="105" endLine="105"/>
+        <childScopes>
+          <region startIndex="3265" endIndex="3265"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.GridHeaderBand">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.GridHeaderBand" baseSymbolName="cpr.controls.gridpart.GridBand" anonymousFunction="true">
+        <region startIndex="89" endIndex="102"/>
+        <params name="context" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="115" endIndex="121" startLine="5" endLine="5"/>
+          <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="getColumn">
+            <value xsi:type="index:FunctionVariableSymbol" name="getColumn" originalSymbolName="__anonymous2">
+              <region startIndex="389" endIndex="397"/>
+            </value>
+          </symbols>
+          <symbols key="getColumnByColIndex">
+            <value xsi:type="index:FunctionVariableSymbol" name="getColumnByColIndex" originalSymbolName="__anonymous3">
+              <region startIndex="690" endIndex="708"/>
+            </value>
+          </symbols>
+          <symbols key="getColumnByName">
+            <value xsi:type="index:FunctionVariableSymbol" name="getColumnByName" originalSymbolName="__anonymous4">
+              <region startIndex="1053" endIndex="1067"/>
+            </value>
+          </symbols>
+          <symbols key="getControlAttr">
+            <value xsi:type="index:FunctionVariableSymbol" name="getControlAttr" originalSymbolName="__anonymous5">
+              <region startIndex="1285" endIndex="1298"/>
+            </value>
+          </symbols>
+          <symbols key="getSort">
+            <value xsi:type="index:FunctionVariableSymbol" name="getSort" originalSymbolName="__anonymous6">
+              <region startIndex="1493" endIndex="1499"/>
+            </value>
+          </symbols>
+          <symbols key="getSortCondition">
+            <value xsi:type="index:FunctionVariableSymbol" name="getSortCondition" originalSymbolName="__anonymous7">
+              <region startIndex="1645" endIndex="1660"/>
+            </value>
+          </symbols>
+          <symbols key="sort">
+            <value xsi:type="index:FunctionVariableSymbol" name="sort" originalSymbolName="__anonymous8">
+              <region startIndex="2191" endIndex="2194"/>
+            </value>
+          </symbols>
+          <symbols key="clearSort">
+            <value xsi:type="index:FunctionVariableSymbol" name="clearSort" originalSymbolName="__anonymous9">
+              <region startIndex="2304" endIndex="2312"/>
+            </value>
+          </symbols>
+          <symbols key="getFilter">
+            <value xsi:type="index:FunctionVariableSymbol" name="getFilter" originalSymbolName="__anonymous10">
+              <region startIndex="2500" endIndex="2508"/>
+            </value>
+          </symbols>
+          <symbols key="filter">
+            <value xsi:type="index:FunctionVariableSymbol" name="filter" originalSymbolName="__anonymous11">
+              <region startIndex="3123" endIndex="3128"/>
+            </value>
+          </symbols>
+          <symbols key="clearFilter">
+            <value xsi:type="index:FunctionVariableSymbol" name="clearFilter" originalSymbolName="__anonymous12">
+              <region startIndex="3240" endIndex="3250"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,131 @@
+/************************************************
+ * setCardLayOut.js
+ * Created at 2019. 7. 30. 오전 8:58:37.
+ *
+ * @author joymrk
+ ************************************************/
+// iCardInfo <-  일반카드와 지문카드에 따라 사용하는 데이터가 틀림
+// 시리얼번호 사용시 L_TemplateSize = 표시형식임
+// 표시형식은 0:Default, 1:Hex String, 2:Decimal String, 3:3,5 Decimal 임
+// 카드 정보가 없는 경우 Default로 처리됨(SC카드:HEX String, RF카드:3,5 Decimal)
+
+// dsCardLayoutData <- 섹터 정보 가져오기 , 저장 하기만 사용
+var dataManager = cpr.core.Module.require("lib/DataManager");
+var comLib;
+var StrLib = cpr.core.Module.require("lib/StrLib");
+
+function Initialize() {
+	// 콤보박스 언어 적용 등에 사용 
+	app.lookup("BCALO_cmbCardCapacity").addItem(new cpr.controls.Item("1 k", 1));
+	app.lookup("BCALO_cmbCardCapacity").addItem(new cpr.controls.Item("4 k", 4));
+	app.lookup("BCALO_cmbCardCapacity").addItem(new cpr.controls.Item("8 k", 8));
+	
+	// 16,  4*16 8*16
+	app.lookup("BCALO_rdbCardAuthType").addItem(new cpr.controls.Item("카드 시리얼 인식", 0));
+	app.lookup("BCALO_rdbCardAuthType").addItem(new cpr.controls.Item("카드 데이터 인식", 1));
+	app.lookup("BCALO_rdbCardAuthType").addItem(new cpr.controls.Item("MAS", 2));
+	
+	app.lookup("BCALO_rdbCardSirialNumType").addItem(new cpr.controls.Item("Default", 0));
+	app.lookup("BCALO_rdbCardSirialNumType").addItem(new cpr.controls.Item("Hexa String", 1));
+	app.lookup("BCALO_rdbCardSirialNumType").addItem(new cpr.controls.Item("Decimal String", 2));
+	app.lookup("BCALO_rdbCardSirialNumType").addItem(new cpr.controls.Item("3.5 Decimal", 3));
+	
+}
+
+function RefreshData(nCardType) {
+	// 공통
+	var dmcardlayoutinfo = app.lookup("dmCardLayoutInfo");
+	var nCardsize = dmcardlayoutinfo.getValue("CardSize");
+	var nCardSector = nCardsize * 16;
+	app.lookup("BCALO_ipbSectorStart").text = 10;
+	if (nCardType == 0 ) { // 일반 카드
+		app.lookup("BCALO_ipbCardSector").text = nCardSector; // 카드 섹터 수
+		app.lookup("BCALO_rdbCardAuthType").value = dmcardlayoutinfo.getValue("ReadType"); // 0, 1, 2
+		app.lookup("BCALO_rdbCardSirialNumType").value = dmcardlayoutinfo.getValue("TemplateSize"); // 0,1,2,3
+		app.lookup("BCALO_rdbKeyType").value = 96;
+		LoadBasicCardLayoutData();
+	} else { // 지문 카드
+		
+	}
+}
+
+function LoadBasicCardLayoutData() {
+	var dsCardlayoutdata = app.lookup("dsCardLayoutData");
+	var grdCardLayoutDataList = app.lookup("grdCardLayoutDataList");
+	grdCardLayoutDataList.addRowData({"label":dataManager.getString("Str_GroupAdd"),"value":1,"parent":"0"});
+	
+	var index = dsCardlayoutdata.getRowCount();
+	for (var i = 0 ; i < index; i++) {
+		var rowData = dsCardlayoutdata.getRow(i);
+		var sector = ""+rowData.getValue("Sector");
+		var strSector = StrLib.formattedString("000",String(sector), "left");
+		console.log(strSector);
+		var nKeyType = rowData.getValue("KeyType");
+		var strKeyType = "";
+		if (nKeyType == 96) { //0x60
+			strKeyType = "A";
+		} else {
+			strKeyType = "B";
+		}
+		var tmpKeyValue = rowData.getValue("KeyValue");
+		tmpKeyValue.toString().substring(0, 2);
+		tmpKeyValue.toString().substring(2, 2);
+		tmpKeyValue.toString().substring(2, 2);
+		
+		grdCardLayoutDataList.addRowData({"strSector": strSector, "nBlock": rowData.getValue("Block"), 
+			"nStart": rowData.getValue("Start"), "nLength": rowData.getValue("Length"), "nKeyType":strKeyType,
+			"SiteKey":, "AIDCode":rowData.getValue("AIDCode")});
+	}
+	grdCardLayoutDataList.setRowStateAll(cpr.data.tabledata.RowState.UNCHANGED);
+}
+function onBodyLoad(/* cpr.events.CEvent */ e){
+	dataManager = getDataManager();	
+	comLib = createComUtil(app);
+	Initialize();
+	comLib.showLoadMask( "", "카드 레이아웃 정보", "",0);
+	var requestData = app.lookup("sms_getCardInfo");
+	requestData.send(); // 초기 값 얻어 오기	
+}
+
+function onSms_getCardInfoSubmitDone(/* cpr.events.CSubmissionEvent */ e){
+	comLib.hideLoadMask();
+	var resultCode = app.lookup("Result").getValue("ResultCode");
+	if (resultCode == COMERROR_NONE) {
+		// 0. 일반 카드 // 1. 지문 카드 분기   <- 둘다 쓸수는 없다.
+		var nCardType = app.lookup("dmCardLayoutInfo").getValue("CardType");// 일반카드 / 지문카드 구분자 
+		
+		var tabitems = app.lookup("SCALA_tfdMain").getTabItems();	
+		app.lookup("SCALA_tfdMain").setSelectedTabItem(tabitems[nCardType]);	
+		app.lookup("SCALA_tfdMain").redraw();
+		RefreshData(nCardType);
+		
+	} else {
+		// 가져오기 실패 
+	}
+	
+}
+
+function onSms_getCardInfoSubmitError(/* cpr.events.CSubmissionEvent */ e){
+	app.lookup("Result").setValue("ResultCode", COMERROR_NET_ERROR);
+}
+
+function onSms_getCardInfoSubmitTimeout(/* cpr.events.CSubmissionEvent */ e){
+	app.lookup("Result").setValue("ResultCode", COMERROR_NET_TIMEOUT);
+}
+
+
+
+/*
+ * 라디오 버튼에서 selection-change 이벤트 발생 시 호출.
+ * 라디오버튼 아이템을 선택하여 선택된 값이 저장된 후에 발생하는 이벤트.
+ */
+function onBCALO_rdbCardAuthTypeSelectionChange(/* cpr.events.CSelectionEvent */ e){
+	var bCALO_rdbCardAuthType = e.control;
+	if ( bCALO_rdbCardAuthType.id == 0) { // 카드 시리얼 인식
+		
+	} else if (bCALO_rdbCardAuthType.id == 1) { //카드 데이터 인식
+		
+	} else if (bCALO_rdbCardAuthType.id == 2) { // MAD
+		
+	}
+}

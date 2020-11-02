@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridConfig.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="1447" startLine="4" endLine="48"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridConfig" baseSymbolName="cpr.controls.gridpart.GridProperty" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="57" endIndex="68" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="columns">
+              <value xsi:type="index:VariableSymbol" name="columns" description="column별 width값.">
+                <region startIndex="281" endIndex="287"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="cpr.controls.gridpart.GridColumnConfig" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="header">
+              <value xsi:type="index:VariableSymbol" name="header" description="header 영역 구성 정보.">
+                <region startIndex="596" endIndex="601"/>
+                <inferredType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridConfig.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="338" endIndex="547"/>
+                    <prototype>
+                      <symbols key="rows">
+                        <value xsi:type="index:VariableSymbol" name="rows" description="header row별 높이. 여러 줄일 경우 콤마(,)를 사용하여 나타냅니다.[단위 : px]">
+                          <region startIndex="345" endIndex="348"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="cpr.controls.gridpart.GridRowConfig" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                      <symbols key="cells">
+                        <value xsi:type="index:VariableSymbol" name="cells" description="header 영역 내부의 cell 구성 정보.">
+                          <region startIndex="457" endIndex="461"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="cpr.controls.gridpart.GridHeaderCellConfig" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="detail">
+              <value xsi:type="index:VariableSymbol" name="detail" description="detail 영역 구성 정보.">
+                <region startIndex="911" endIndex="916"/>
+                <inferredType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridConfig.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="653" endIndex="862"/>
+                    <prototype>
+                      <symbols key="rows">
+                        <value xsi:type="index:VariableSymbol" name="rows" description="detail row별 높이. 여러 줄일 경우 콤마(,)를 사용하여 나타냅니다.[단위 : px]">
+                          <region startIndex="660" endIndex="663"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="cpr.controls.gridpart.GridRowConfig" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                      <symbols key="cells">
+                        <value xsi:type="index:VariableSymbol" name="cells" description="detail 영역 내부의 cell 구성 정보.">
+                          <region startIndex="772" endIndex="776"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="cpr.controls.gridpart.GridDetailCellConfig" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="footer">
+              <value xsi:type="index:VariableSymbol" name="footer" optional="true" description="(Optional) footer 영역 구성 정보.">
+                <region startIndex="1250" endIndex="1255"/>
+                <inferredType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridConfig.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol classType="interface">
+                    <region startIndex="979" endIndex="1188"/>
+                    <prototype>
+                      <symbols key="rows">
+                        <value xsi:type="index:VariableSymbol" name="rows" description="footer row별 높이. 여러 줄일 경우 콤마(,)를 사용하여 나타냅니다.[단위 : px]">
+                          <region startIndex="986" endIndex="989"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="cpr.controls.gridpart.GridRowConfig" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                      <symbols key="cells">
+                        <value xsi:type="index:VariableSymbol" name="cells" description="footer 영역 내부의 cell 구성 정보.">
+                          <region startIndex="1098" endIndex="1102"/>
+                          <inferredType name="Array" instance="true" documentedType="true">
+                            <typeParameters name="cpr.controls.gridpart.GridFooterCellConfig" instance="true" documentedType="true"/>
+                          </inferredType>
+                        </value>
+                      </symbols>
+                    </prototype>
+                  </selfDeclaringTypeSymbol>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="rowGroup">
+              <value xsi:type="index:VariableSymbol" name="rowGroup" optional="true" description="(Optional) 행 그룹핑 영역 구성 정보.">
+                <region startIndex="1423" endIndex="1430"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="cpr.controls.gridpart.IGridRowGroupConfig" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.GridConfig">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.GridConfig" originalSymbolName="__anonymous1">
+          <region startIndex="44" endIndex="53"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="57" endIndex="68" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="68" endIndex="68"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.GridConfig">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.GridConfig" baseSymbolName="cpr.controls.gridpart.GridProperty" anonymousFunction="true" classType="interface">
+        <region startIndex="44" endIndex="53"/>
+        <prototype>
+          <symbols key="columns">
+            <value xsi:type="index:VariableSymbol" name="columns" description="column별 width값.">
+              <region startIndex="281" endIndex="287"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.gridpart.GridColumnConfig" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="header">
+            <value xsi:type="index:VariableSymbol" name="header" description="header 영역 구성 정보.">
+              <region startIndex="596" endIndex="601"/>
+              <inferredType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridConfig.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol classType="interface">
+                  <region startIndex="338" endIndex="547"/>
+                  <prototype>
+                    <symbols key="rows">
+                      <value xsi:type="index:VariableSymbol" name="rows" description="header row별 높이. 여러 줄일 경우 콤마(,)를 사용하여 나타냅니다.[단위 : px]">
+                        <region startIndex="345" endIndex="348"/>
+                        <inferredType name="Array" instance="true" documentedType="true">
+                          <typeParameters name="cpr.controls.gridpart.GridRowConfig" instance="true" documentedType="true"/>
+                        </inferredType>
+                      </value>
+                    </symbols>
+                    <symbols key="cells">
+                      <value xsi:type="index:VariableSymbol" name="cells" description="header 영역 내부의 cell 구성 정보.">
+                        <region startIndex="457" endIndex="461"/>
+                        <inferredType name="Array" instance="true" documentedType="true">
+                          <typeParameters name="cpr.controls.gridpart.GridHeaderCellConfig" instance="true" documentedType="true"/>
+                        </inferredType>
+                      </value>
+                    </symbols>
+                  </prototype>
+                </selfDeclaringTypeSymbol>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="detail">
+            <value xsi:type="index:VariableSymbol" name="detail" description="detail 영역 구성 정보.">
+              <region startIndex="911" endIndex="916"/>
+              <inferredType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridConfig.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol classType="interface">
+                  <region startIndex="653" endIndex="862"/>
+                  <prototype>
+                    <symbols key="rows">
+                      <value xsi:type="index:VariableSymbol" name="rows" description="detail row별 높이. 여러 줄일 경우 콤마(,)를 사용하여 나타냅니다.[단위 : px]">
+                        <region startIndex="660" endIndex="663"/>
+                        <inferredType name="Array" instance="true" documentedType="true">
+                          <typeParameters name="cpr.controls.gridpart.GridRowConfig" instance="true" documentedType="true"/>
+                        </inferredType>
+                      </value>
+                    </symbols>
+                    <symbols key="cells">
+                      <value xsi:type="index:VariableSymbol" name="cells" description="detail 영역 내부의 cell 구성 정보.">
+                        <region startIndex="772" endIndex="776"/>
+                        <inferredType name="Array" instance="true" documentedType="true">
+                          <typeParameters name="cpr.controls.gridpart.GridDetailCellConfig" instance="true" documentedType="true"/>
+                        </inferredType>
+                      </value>
+                    </symbols>
+                  </prototype>
+                </selfDeclaringTypeSymbol>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="footer">
+            <value xsi:type="index:VariableSymbol" name="footer" optional="true" description="(Optional) footer 영역 구성 정보.">
+              <region startIndex="1250" endIndex="1255"/>
+              <inferredType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridConfig.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol classType="interface">
+                  <region startIndex="979" endIndex="1188"/>
+                  <prototype>
+                    <symbols key="rows">
+                      <value xsi:type="index:VariableSymbol" name="rows" description="footer row별 높이. 여러 줄일 경우 콤마(,)를 사용하여 나타냅니다.[단위 : px]">
+                        <region startIndex="986" endIndex="989"/>
+                        <inferredType name="Array" instance="true" documentedType="true">
+                          <typeParameters name="cpr.controls.gridpart.GridRowConfig" instance="true" documentedType="true"/>
+                        </inferredType>
+                      </value>
+                    </symbols>
+                    <symbols key="cells">
+                      <value xsi:type="index:VariableSymbol" name="cells" description="footer 영역 내부의 cell 구성 정보.">
+                        <region startIndex="1098" endIndex="1102"/>
+                        <inferredType name="Array" instance="true" documentedType="true">
+                          <typeParameters name="cpr.controls.gridpart.GridFooterCellConfig" instance="true" documentedType="true"/>
+                        </inferredType>
+                      </value>
+                    </symbols>
+                  </prototype>
+                </selfDeclaringTypeSymbol>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="rowGroup">
+            <value xsi:type="index:VariableSymbol" name="rowGroup" optional="true" description="(Optional) 행 그룹핑 영역 구성 정보.">
+              <region startIndex="1423" endIndex="1430"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.controls.gridpart.IGridRowGroupConfig" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3eebb905" version="1.0.0.0">
+  <head std:sid="head-4ab6fc0f">
+    <title>Layout</title>
+    <screen std:sid="screen-35942c46" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-77f37b61" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-ade806f0" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-dfc2f3e0"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-14ac221d" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-2b65173f" handler="onBodyInit" name="init"/>
+    <cl:button std:sid="button-403e7de6" value="Click Me">
+      <cl:listener std:sid="listener-851d7cea" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-36b4b36d" height="33px" horizontalAnchor="LEFT" left="20px" top="50px" verticalAnchor="TOP" width="150px"/>
+    </cl:button>
+    <cl:button std:sid="button-af4764a2" value="Click Me">
+      <cl:listener std:sid="listener-57a7f4e5" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-9b5d387a" height="33px" horizontalAnchor="LEFT" left="20px" top="93px" verticalAnchor="TOP" width="150px"/>
+    </cl:button>
+    <cl:button std:sid="button-895faac4" value="Click Me">
+      <cl:listener std:sid="listener-0acb4b0b" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-46b76c81" height="33px" horizontalAnchor="LEFT" left="20px" top="136px" verticalAnchor="TOP" width="150px"/>
+    </cl:button>
+    <cl:group std:sid="group-29c688f2" class="cl-form-group" style="border-radius:10px;">
+      <cl:xylayoutdata std:sid="xyl-data-f20570c9" height="84px" horizontalAnchor="RIGHT" right="5px" top="5px" verticalAnchor="TOP" width="400px"/>
+      <cl:output std:sid="output-d17a4033" value="애니메이션 길이">
+        <cl:formdata std:sid="f-data-8c8ad638" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-be1f0f40" id="durationLabel" value="0.3s">
+        <cl:formdata std:sid="f-data-eef5b4a2" col="1" row="0"/>
+      </cl:output>
+      <cl:slider std:sid="slider-0e66cc82" id="sld1" max="2.0" min="0.3" step="0.1" value="0.3">
+        <cl:listener std:sid="listener-65efa520" handler="onSld1ValueChange" name="value-change"/>
+        <cl:formdata std:sid="f-data-ab15e1bf" col="2" row="0"/>
+      </cl:slider>
+      <cl:combobox std:sid="c-box-7e938351" id="cmb1" delimiter="|" preventinput="true">
+        <cl:listener std:sid="listener-434e11ab" handler="onCmb1SelectionChange" name="selection-change"/>
+        <cl:formdata std:sid="f-data-2a854f49" col="1" colspan="2" row="1" rowspan="1"/>
+      </cl:combobox>
+      <cl:output std:sid="output-8328c421" value="타이밍 함수">
+        <cl:formdata std:sid="f-data-333b2a2f" col="0" row="1"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-4c5382e0" hmargin="5" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10" vmargin="5" vseparatortype="BY_CLASS" vseparatorwidth="1" vspace="10">
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="50" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-9a9fe913" animationduration="0.3" animationtimingfunction="ease-in-out-back"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

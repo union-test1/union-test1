@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-fa1cbdaf" version="1.0.0.0">
+  <head std:sid="head-146b86a8">
+    <title>tree</title>
+    <screen std:sid="screen-5c918693" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-f74027ad" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-5e0fbef8" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-ed3fd81e">
+      <cl:dataset std:sid="d-set-c481a3f4" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="id"/>
+          <cl:datacolumn name="parentId"/>
+          <cl:datacolumn datatype="expression" expression="computeLevel(id)" name="level"/>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn datatype="number" name="score"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="level"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[맥스웰]]></cl:datavalue>
+            <cl:datavalue columnname="id"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[90]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="level"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[뉴턴]]></cl:datavalue>
+            <cl:datavalue columnname="id"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[100]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="level"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[허블]]></cl:datavalue>
+            <cl:datavalue columnname="id"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[80]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="level"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[에릭 감마]]></cl:datavalue>
+            <cl:datavalue columnname="id"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[40]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[]]></cl:datavalue>
+            <cl:datavalue columnname="level">level5</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[스티브 잡스]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[30]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="level">level6</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[폰 노이만]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[40]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="level">level7</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[라이너스 폴링]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[70]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="level">level8</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[아인슈타인]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[55]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[9]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="level">level9</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[베그너]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[65]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="id"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="parentId"><![CDATA[9]]></cl:datavalue>
+            <cl:datavalue columnname="level">level10</cl:datavalue>
+            <cl:datavalue columnname="name"><![CDATA[퀴리]]></cl:datavalue>
+            <cl:datavalue columnname="score"><![CDATA[22]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7bcb81dc" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-b7cfa138" id="grd1" collapsible="true" datasetid="ds1">
+      <cl:xylayoutdata std:sid="xyl-data-67a418bf" bottom="40px" horizontalAnchor="BOTH" left="40px" right="40px" top="50px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-ab6dd1df" width="132px"/>
+      <cl:gridcolumn std:sid="g-column-14e046fb" width="132px"/>
+      <cl:gridcolumn std:sid="g-column-42edd2c3" width="132px"/>
+      <cl:gridheader std:sid="gh-band-78a3a319">
+        <cl:gridrow std:sid="g-row-290af699"/>
+        <cl:gridcell std:sid="gh-cell-ddabbb8e" colindex="0" rowindex="0" text="이름"/>
+        <cl:gridcell std:sid="gh-cell-4b930b3b" colindex="1" rowindex="0" text="점수"/>
+        <cl:gridcell std:sid="gh-cell-8bf9920d" colindex="2" rowindex="0" text="합계(자신 및 모든 자식)"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-54e9f406">
+        <cl:gridrow std:sid="g-row-f68fc695"/>
+        <cl:gridcell std:sid="gd-cell-cec38ee1" colindex="0" rowindex="0" columnname="name">
+          <cl:treecell std:sid="t-cell-7af3cbc8">
+            <cl:relativebind category="PROPERTY" property="level" columnname="level"/>
+          </cl:treecell>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-1f3e63c7" colindex="1" colspan="1" rowindex="0" rowspan="1" columnname="score">
+          <cl:numbereditor style="text-align:right;" format="000,000,000">
+            <cl:expbind category="STYLER" property="color" expression="switch(score){&#xA;&#x9;when it >= 90 : &quot;green&quot;&#xA;&#x9;when it >= 70 : &quot;orange&quot;&#xA;&#x9;default : &quot;red&quot;&#xA;}"/>
+          </cl:numbereditor>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-3fe3846c" colindex="2" rowindex="0">
+          <cl:numbereditor style="text-align:right;" format="000,000,000" readonly="true">
+            <cl:expbind category="PROPERTY" property="value" expression="computeChildSum(id, &quot;score&quot;)&#xA;"/>
+          </cl:numbereditor>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:button std:sid="button-d10b278f" value="트리 그리드 예시">
+      <cl:xylayoutdata std:sid="xyl-data-15ac3544" height="20px" horizontalAnchor="LEFT" left="40px" top="20px" verticalAnchor="TOP" width="313px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-549b87e7"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

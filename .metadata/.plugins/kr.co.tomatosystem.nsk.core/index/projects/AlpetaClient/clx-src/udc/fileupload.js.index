@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/fileupload.js" fileModificationTimestamp="6408297" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.fileupload" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="2" endIndex="421" startLine="2" endLine="19"/>
+      <symbolMap key="udc.fileupload">
+        <value xsi:type="index:FunctionSymbol" name="udc.fileupload" labelForOutline="fileupload" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="getFiles">
+              <value xsi:type="index:FunctionVariableSymbol" name="getFiles" originalSymbolName="__anonymous1">
+                <region startIndex="10" endIndex="17"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.fileupload" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getFiles" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="21" endIndex="110" startLine="2" endLine="5"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/fileupload 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onFud1SendbuttonClick">
+        <value xsi:type="index:FunctionSymbol" name="onFud1SendbuttonClick">
+          <region xsi:type="index:RegionWithLine" startIndex="213" endIndex="233" startLine="11" endLine="11"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="259" endIndex="259" startLine="11" endLine="11"/>
+            <inferredType name="cpr.events.CEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="21" endIndex="110" startLine="2" endLine="5"/>
+        <childScopes>
+          <region startIndex="33" endIndex="110"/>
+          <symbolMap key="fileuploader">
+            <value xsi:type="index:VariableSymbol" name="fileuploader">
+              <region startIndex="40" endIndex="51"/>
+              <inferredType name="cpr.controls.FileUpload" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.FileUpload.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onFud1SendbuttonClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region startIndex="262" endIndex="419"/>
+        <symbolMap key="eventObj">
+          <value xsi:type="index:VariableSymbol" name="eventObj">
+            <region startIndex="341" endIndex="348"/>
+            <inferredType name="cpr.events.CEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="fud1">
+          <value xsi:type="index:VariableSymbol" name="fud1">
+            <region startIndex="317" endIndex="320"/>
+            <inferredType name="cpr.controls.FileUpload" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="259" endIndex="259" startLine="11" endLine="11"/>
+            <inferredType name="cpr.events.CEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="116" endIndex="419" startLine="11" endLine="18"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.fileupload">
+      <value xsi:type="index:FunctionSymbol" name="udc.fileupload" labelForOutline="fileupload" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="getFiles">
+            <value xsi:type="index:FunctionVariableSymbol" name="getFiles" originalSymbolName="__anonymous1">
+              <region startIndex="10" endIndex="17"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.bind.TabItemContext.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="243" startLine="7" endLine="10"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="TabItemContext" description="탭 아이템의 바인딩 문맥 컨텍스트 입니다." baseSymbolName="cpr.bind.BindContext" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="150" endIndex="176" startLine="7" endLine="7"/>
+          <params name="item" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="159" endIndex="162" startLine="7" endLine="7"/>
+            <inferredType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+          </params>
+          <params name="tabFolder" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="173" startLine="7" endLine="7"/>
+            <inferredType name="cpr.controls.TabFolder" instance="true" documentedType="true"/>
+          </params>
+          <prototype/>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.bind.TabItemContext">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.bind.TabItemContext" originalSymbolName="__anonymous1">
+          <region startIndex="133" endIndex="146"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="150" endIndex="176" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="176" endIndex="176"/>
+          <symbolMap key="item">
+            <value xsi:type="index:ParameterSymbol" name="item" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="159" endIndex="162" startLine="7" endLine="7"/>
+              <inferredType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="tabFolder">
+            <value xsi:type="index:ParameterSymbol" name="tabFolder" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="173" startLine="7" endLine="7"/>
+              <inferredType name="cpr.controls.TabFolder" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.bind.TabItemContext">
+      <value xsi:type="index:FunctionSymbol" name="cpr.bind.TabItemContext" description="탭 아이템의 바인딩 문맥 컨텍스트 입니다." baseSymbolName="cpr.bind.BindContext" anonymousFunction="true">
+        <region startIndex="133" endIndex="146"/>
+        <params name="item" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="159" endIndex="162" startLine="7" endLine="7"/>
+          <inferredType name="cpr.controls.TabItem" instance="true" documentedType="true"/>
+        </params>
+        <params name="tabFolder" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="173" startLine="7" endLine="7"/>
+          <inferredType name="cpr.controls.TabFolder" instance="true" documentedType="true"/>
+        </params>
+        <prototype/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

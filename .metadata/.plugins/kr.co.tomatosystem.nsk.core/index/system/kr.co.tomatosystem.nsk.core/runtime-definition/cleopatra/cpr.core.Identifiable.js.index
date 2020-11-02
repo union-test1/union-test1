@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.Identifiable.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="63" endIndex="315" startLine="5" endLine="20"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="Identifiable" description="ID및 UUID를 통해 식별이 가능한 객체를 추상화하는 인터페이스." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="87" endIndex="98" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="id">
+              <value xsi:type="index:VariableSymbol" name="id">
+                <region startIndex="212" endIndex="213"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="uuid">
+              <value xsi:type="index:VariableSymbol" name="uuid">
+                <region startIndex="294" endIndex="297"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.Identifiable">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.Identifiable" originalSymbolName="__anonymous1">
+          <region startIndex="72" endIndex="83"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="87" endIndex="98" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="98" endIndex="98"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.Identifiable">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.Identifiable" description="ID및 UUID를 통해 식별이 가능한 객체를 추상화하는 인터페이스." baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="72" endIndex="83"/>
+        <prototype>
+          <symbols key="id">
+            <value xsi:type="index:VariableSymbol" name="id">
+              <region startIndex="212" endIndex="213"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="uuid">
+            <value xsi:type="index:VariableSymbol" name="uuid">
+              <region startIndex="294" endIndex="297"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

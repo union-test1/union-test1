@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-da586cdc" version="1.0.0.0">
+  <head std:sid="head-f828f656">
+    <title>PopUpTextArea</title>
+    <screen std:sid="screen-b0d7a306" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-f7707591" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-38d2a40b" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-c1a685c7"/>
+    <cl:appspec>
+      <cl:property bindable="true" default="value" name="value" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-3b893429" style="top:0px; left:0px; width:300px; height:300px;">
+    <cl:listener std:sid="listener-203f925e" handler="onBodyBeforeDraw" name="before-draw"/>
+    <cl:output std:sid="output-85c046f1" id="output" ellipsis="true">
+      <cl:listener std:sid="listener-a1c7c319" handler="onOutputClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-6b1dc883" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:output>
+    <cl:output std:sid="output-4f6b31ee" id="placeHolderOutput" removeOnBuild="true">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+      <cl:apppropbind category="PROPERTY" property="readOnly" app-property="readOnly"/>
+      <cl:xylayoutdata std:sid="xyl-data-dde85c1a" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-ba66f9ae"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

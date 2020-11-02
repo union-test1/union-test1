@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.NotificationCenter.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="49" endIndex="1703" startLine="5" endLine="51"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="NotificationCenter" description="글로벌 메시지 큐. Observer를 사용 할 수 있습니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="79" endIndex="90" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="post">
+              <value xsi:type="index:FunctionVariableSymbol" name="post" originalSymbolName="__anonymous2">
+                <region startIndex="635" endIndex="638"/>
+              </value>
+            </symbols>
+            <symbols key="subscribe">
+              <value xsi:type="index:FunctionVariableSymbol" name="subscribe" originalSymbolName="__anonymous3">
+                <region startIndex="1208" endIndex="1216"/>
+              </value>
+            </symbols>
+            <symbols key="unsubcribeAllTopic">
+              <value xsi:type="index:FunctionVariableSymbol" name="unsubcribeAllTopic" originalSymbolName="__anonymous4">
+                <region startIndex="1377" endIndex="1394"/>
+              </value>
+            </symbols>
+            <symbols key="unsubscribe">
+              <value xsi:type="index:FunctionVariableSymbol" name="unsubscribe" originalSymbolName="__anonymous5">
+                <region startIndex="1662" endIndex="1672"/>
+              </value>
+            </symbols>
+          </prototype>
+          <symbols key="INSTANCE">
+            <value xsi:type="index:VariableSymbol" name="INSTANCE">
+              <region startIndex="227" endIndex="234"/>
+              <inferredType name="cpr.core.NotificationCenter" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.NotificationCenter">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.NotificationCenter" originalSymbolName="__anonymous1">
+          <region startIndex="58" endIndex="75"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="post" description="메시지를 발송합니다. &lt;pre>&lt;code>cpr.core.NotificationCenter.INSTANCE.post(&quot;button-click&quot;,  {text:&quot;test1&quot;} );&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="642" endIndex="675" startLine="21" endLine="21"/>
+          <params name="topic" description="주제. subscribe된 topic를 설정해야합니다." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="651" endIndex="655" startLine="21" endLine="21"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="payload" description="메시지 내용. scbscribe의 콜백 함수에서 파라미터로 전달됩니다." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="658" endIndex="664" startLine="21" endLine="21"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="sender" optional="true" description="메시지 발송자. subscribe에서 expectedSender를 구분하기 위한 값." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="667" endIndex="672" startLine="21" endLine="21"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="subscribe" description="메시지를 구독합니다. 구독이 중복되지 않게 유의하시기 바랍니다. &lt;pre>&lt;code>cpr.core.NotificationCenter.INSTANCE.subscribe(&quot;button-click&quot;, app, function(data) {&#xA;   console.log(this);&#xA;   console.log(msg);&#xA;   console.log(&quot;click button&quot;,data); &#xA;   } );&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1220" endIndex="1264" startLine="35" endLine="35"/>
+          <params name="topic" description="구독 주제." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1229" endIndex="1233" startLine="35" endLine="35"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="target" description="구독할 객체." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1236" endIndex="1241" startLine="35" endLine="35"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="fn" description="메시지를 수신할 함수. 콜백함수에서 파라미터로 payload되는 값을 전달 받습니다." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1244" endIndex="1245" startLine="35" endLine="35"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="expectedSender" optional="true" description="특정 발송자의 메시지만 수신하기 위한 객체의 레퍼런스. &lt;code>null&lt;/code>인 경우, 모든 발송자에 대해 수신합니다." parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1248" endIndex="1261" startLine="35" endLine="35"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="unsubcribeAllTopic" description="모든 주제에 대해 구독을 중단합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1398" endIndex="1415" startLine="41" endLine="41"/>
+          <params name="target" description="구독을 중단할 구독자." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1407" endIndex="1412" startLine="41" endLine="41"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="unsubscribe" description="특정 주제에 대해 구독을 중단합니다. &lt;pre>&lt;code>cpr.core.NotificationCenter.INSTANCE.unsubscribe(app, &quot;button-click&quot;);&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1676" endIndex="1700" startLine="49" endLine="49"/>
+          <params name="target" description="구독을 중지할 객체." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1685" endIndex="1690" startLine="49" endLine="49"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="topic" description="구독을 중단할 주제." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1693" endIndex="1697" startLine="49" endLine="49"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="79" endIndex="90" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="90" endIndex="90"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="642" endIndex="675" startLine="21" endLine="21"/>
+        <childScopes>
+          <region startIndex="675" endIndex="675"/>
+          <symbolMap key="topic">
+            <value xsi:type="index:ParameterSymbol" name="topic" description="주제. subscribe된 topic를 설정해야합니다." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="651" endIndex="655" startLine="21" endLine="21"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="payload">
+            <value xsi:type="index:ParameterSymbol" name="payload" description="메시지 내용. scbscribe의 콜백 함수에서 파라미터로 전달됩니다." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="658" endIndex="664" startLine="21" endLine="21"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="sender">
+            <value xsi:type="index:ParameterSymbol" name="sender" optional="true" description="메시지 발송자. subscribe에서 expectedSender를 구분하기 위한 값." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="667" endIndex="672" startLine="21" endLine="21"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1220" endIndex="1264" startLine="35" endLine="35"/>
+        <childScopes>
+          <region startIndex="1264" endIndex="1264"/>
+          <symbolMap key="topic">
+            <value xsi:type="index:ParameterSymbol" name="topic" description="구독 주제." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1229" endIndex="1233" startLine="35" endLine="35"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" description="구독할 객체." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1236" endIndex="1241" startLine="35" endLine="35"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="fn">
+            <value xsi:type="index:ParameterSymbol" name="fn" description="메시지를 수신할 함수. 콜백함수에서 파라미터로 payload되는 값을 전달 받습니다." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="1244" endIndex="1245" startLine="35" endLine="35"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="expectedSender">
+            <value xsi:type="index:ParameterSymbol" name="expectedSender" optional="true" description="특정 발송자의 메시지만 수신하기 위한 객체의 레퍼런스. &lt;code>null&lt;/code>인 경우, 모든 발송자에 대해 수신합니다." parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="1248" endIndex="1261" startLine="35" endLine="35"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1398" endIndex="1415" startLine="41" endLine="41"/>
+        <childScopes>
+          <region startIndex="1415" endIndex="1415"/>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" description="구독을 중단할 구독자." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1407" endIndex="1412" startLine="41" endLine="41"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1676" endIndex="1700" startLine="49" endLine="49"/>
+        <childScopes>
+          <region startIndex="1700" endIndex="1700"/>
+          <symbolMap key="target">
+            <value xsi:type="index:ParameterSymbol" name="target" description="구독을 중지할 객체." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1685" endIndex="1690" startLine="49" endLine="49"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="topic">
+            <value xsi:type="index:ParameterSymbol" name="topic" description="구독을 중단할 주제." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1693" endIndex="1697" startLine="49" endLine="49"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.NotificationCenter">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.NotificationCenter" description="글로벌 메시지 큐. Observer를 사용 할 수 있습니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="58" endIndex="75"/>
+        <prototype>
+          <symbols key="post">
+            <value xsi:type="index:FunctionVariableSymbol" name="post" originalSymbolName="__anonymous2">
+              <region startIndex="635" endIndex="638"/>
+            </value>
+          </symbols>
+          <symbols key="subscribe">
+            <value xsi:type="index:FunctionVariableSymbol" name="subscribe" originalSymbolName="__anonymous3">
+              <region startIndex="1208" endIndex="1216"/>
+            </value>
+          </symbols>
+          <symbols key="unsubcribeAllTopic">
+            <value xsi:type="index:FunctionVariableSymbol" name="unsubcribeAllTopic" originalSymbolName="__anonymous4">
+              <region startIndex="1377" endIndex="1394"/>
+            </value>
+          </symbols>
+          <symbols key="unsubscribe">
+            <value xsi:type="index:FunctionVariableSymbol" name="unsubscribe" originalSymbolName="__anonymous5">
+              <region startIndex="1662" endIndex="1672"/>
+            </value>
+          </symbols>
+        </prototype>
+        <symbols key="INSTANCE">
+          <value xsi:type="index:VariableSymbol" name="INSTANCE">
+            <region startIndex="227" endIndex="234"/>
+            <inferredType name="cpr.core.NotificationCenter" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

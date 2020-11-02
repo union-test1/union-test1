@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-cbdff2f6" version="1.0.0.0">
+  <head std:sid="head-725f1af2">
+    <title>Dialog</title>
+    <screen std:sid="screen-bdcdbf04" id="new-screen" height="300px" name="new-screen" width="400px"/>
+    <cl:model std:sid="model-2c0358bb"/>
+    <cl:appspec title="편집">
+      <cl:property name="initData" type="object"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-f5b21f90" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-84276227" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:group std:sid="group-140d3f62">
+      <cl:xylayoutdata std:sid="xyl-data-c4e341fc" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-9ff09969" style="text-align:right;" value="이름">
+        <cl:formdata std:sid="f-data-3fe3190b" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-55010182" style="text-align:right;" value="성별">
+        <cl:formdata std:sid="f-data-ef07dd78" col="0" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-2b02f61b" id="nameField">
+        <cl:formdata std:sid="f-data-e528980a" col="1" row="0"/>
+      </cl:inputbox>
+      <cl:radiobutton std:sid="r-button-8083fb5e" id="genderField">
+        <cl:formdata std:sid="f-data-be37f084" col="1" row="1"/>
+        <cl:item label="남" value="male"/>
+        <cl:item label="여" value="female"/>
+      </cl:radiobutton>
+      <cl:group std:sid="group-90761f2b">
+        <cl:formdata std:sid="f-data-49cb1747" col="1" halign="RIGHT" row="4" width="204"/>
+        <cl:button std:sid="button-94f793d8" value="저장">
+          <cl:listener std:sid="listener-4f818aba" handler="onButtonClick" name="click"/>
+          <cl:formdata std:sid="f-data-70b04ed6" col="1" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-59378f4a" value="취소">
+          <cl:listener std:sid="listener-0ecf7f32" handler="onButtonClick2" name="click"/>
+          <cl:formdata std:sid="f-data-f14a57a8" col="0" row="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-e1cce1b7">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-2afd3b56" style="text-align:right;" value="나이">
+        <cl:formdata std:sid="f-data-12896f6a" col="0" row="2"/>
+      </cl:output>
+      <cl:numbereditor std:sid="n-editor-2a4b2d46" id="ageField">
+        <cl:formdata std:sid="f-data-bf4ad4f2" col="1" row="2"/>
+      </cl:numbereditor>
+      <cl:formlayout std:sid="f-layout-07893c52" hmargin="20" vmargin="20">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-28297010"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

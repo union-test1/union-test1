@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d982d8fd" version="1.0.0.0">
+  <head std:sid="head-7b1c4b69">
+    <title>test</title>
+    <screen std:sid="screen-0d6795c6" id="default" name="default" minwidth="1024px" width="1024px" height="768px"/>
+    <screen std:sid="screen-02b68001" id="tablet" name="tablet" minwidth="500px" maxwidth="1023px" width="500px" height="667px"/>
+    <screen std:sid="screen-2842c101" id="mobile" name="mobile" maxwidth="499px" width="350px" height="525px"/>
+    <cl:model std:sid="model-672ba3ce">
+      <cl:dataset std:sid="d-set-c0415e30" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn std:sid="d-column-824c0350" name="사원번호"/>
+          <cl:datacolumn std:sid="d-column-6b6ece04" name="이름"/>
+          <cl:datacolumn std:sid="d-column-49ccbc15" name="직급"/>
+          <cl:datacolumn std:sid="d-column-bfedf8ca" name="전화번호"/>
+          <cl:datacolumn std:sid="d-column-f59a7ec9" name="나이"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-73b0a1de" id="sms1" action="testShow.do">
+        <cl:listener std:sid="listener-fa617a11" name="submit-success" handler="onSms1SubmitSuccess"/>
+        <cl:responsedata dataid="ds1"/>
+      </cl:submission>
+      <cl:datamap std:sid="d-map-5f7f561b" id="dm1"/>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-fe56e754" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-bb28198c">
+      <cl:xylayoutdata std:sid="xyl-data-88b3c6de" top="30px" left="30px" width="707px" height="496px" horizontalAnchor="LEFT" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-be361d32" style="text-align:right;" value="이름">
+        <cl:formdata std:sid="f-data-4530015e" row="0" col="5"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-10dee988" id="ipb2">
+        <cl:formdata std:sid="f-data-fdb2238b" row="0" col="6" rowspan="1" colspan="2"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-90642807" value="조회">
+        <cl:listener std:sid="listener-fac02ab0" name="click" handler="onButtonClick"/>
+        <cl:formdata std:sid="f-data-c8cd0afe" row="0" col="8"/>
+      </cl:button>
+      <cl:button std:sid="button-cffe0f8d" value="삭제">
+        <cl:listener std:sid="listener-b6dfb2f2" name="click" handler="onButtonClick4"/>
+        <cl:formdata std:sid="f-data-1aa1a66a" row="5" col="8"/>
+      </cl:button>
+      <cl:button std:sid="button-364fb1ad" value="생성">
+        <cl:listener std:sid="listener-4ffd1ad4" name="click" handler="onButtonClick3"/>
+        <cl:formdata std:sid="f-data-5d3a6fef" row="5" col="6"/>
+      </cl:button>
+      <cl:button std:sid="button-37b9c916" value="수정">
+        <cl:formdata std:sid="f-data-f726deeb" row="5" col="7"/>
+      </cl:button>
+      <cl:grid std:sid="grid-4089492e" id="grd1" datasetid="ds1">
+        <cl:formdata std:sid="f-data-0524ea67" row="4" col="0" rowspan="1" colspan="9"/>
+        <cl:gridcolumn std:sid="g-column-089f4625" width="25px"/>
+        <cl:gridcolumn std:sid="g-column-29aadc4a"/>
+        <cl:gridcolumn std:sid="g-column-44fdd33e"/>
+        <cl:gridcolumn std:sid="g-column-12b7c705"/>
+        <cl:gridcolumn std:sid="g-column-5215ad2a"/>
+        <cl:gridcolumn std:sid="g-column-339ab16a"/>
+        <cl:gridheader std:sid="gh-band-d76c0580">
+          <cl:gridrow std:sid="g-row-a4153954"/>
+          <cl:gridcell std:sid="gh-cell-b7061957" rowindex="0" colindex="0" sortable="false" filterable="false" columntype="checkbox"/>
+          <cl:gridcell std:sid="gh-cell-ab616236" rowindex="0" colindex="1" targetcolumnname="사원번호" sortable="false" filterable="false" text="사원번호"/>
+          <cl:gridcell std:sid="gh-cell-4610b6df" rowindex="0" colindex="2" targetcolumnname="이름" sortable="false" filterable="false" text="이름"/>
+          <cl:gridcell std:sid="gh-cell-c255d62f" rowindex="0" colindex="3" targetcolumnname="직급" sortable="false" filterable="false" text="직급"/>
+          <cl:gridcell std:sid="gh-cell-d9a36f82" rowindex="0" colindex="4" targetcolumnname="전화번호" sortable="false" filterable="false" text="전화번호"/>
+          <cl:gridcell std:sid="gh-cell-ffdf9056" rowindex="0" colindex="5" targetcolumnname="나이" sortable="false" filterable="false" text="나이"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-8c1d5128">
+          <cl:gridrow std:sid="g-row-7b456c6f"/>
+          <cl:gridcell std:sid="gd-cell-9db22bb2" rowindex="0" colindex="0" columntype="checkbox"/>
+          <cl:gridcell std:sid="gd-cell-ec3acf79" rowindex="0" colindex="1" columnname="사원번호"/>
+          <cl:gridcell std:sid="gd-cell-25589b08" rowindex="0" colindex="2" columnname="이름"/>
+          <cl:gridcell std:sid="gd-cell-32913d66" rowindex="0" colindex="3" columnname="직급"/>
+          <cl:gridcell std:sid="gd-cell-caa1b987" rowindex="0" colindex="4" columnname="전화번호"/>
+          <cl:gridcell std:sid="gd-cell-aa8dba3b" rowindex="0" colindex="5" columnname="나이"/>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:button std:sid="button-97539aeb" value="초기화">
+        <cl:listener std:sid="listener-1c9f20e8" name="click" handler="onButtonClick2"/>
+        <cl:formdata std:sid="f-data-6b6c2b42" row="5" col="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-5531c70e" hspace="5px" vspace="5px" top-margin="0px" right-margin="0px" bottom-margin="0px" left-margin="0px">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:rows length="25" unit="PIXEL" autoSizing="false" shadetype="NONE" shadecolor="#000000" minlength="0"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION" shadetype="NONE" shadecolor="transparent"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-1310f1b6"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

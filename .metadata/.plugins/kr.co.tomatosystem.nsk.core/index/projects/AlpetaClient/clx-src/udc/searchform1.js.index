@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/searchform1.js" fileModificationTimestamp="6408333" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.searchform1" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="239" endIndex="701" startLine="11" endLine="30"/>
+      <symbolMap key="udc.searchform1">
+        <value xsi:type="index:FunctionSymbol" name="udc.searchform1" labelForOutline="searchform1" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="getText">
+              <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+                <region startIndex="247" endIndex="253"/>
+              </value>
+            </symbols>
+            <symbols key="val">
+              <value xsi:type="index:AppPropertySymbol" name="val">
+                <region/>
+                <inferredType name="String" instance="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.searchform1" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="getText" description="UDC 컨트롤이 그리드의 뷰 모드에서 표시할 텍스트를 반환합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="257" endIndex="365" startLine="11" endLine="14"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/searchform1 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppInstance.js?type=EXPORTED" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onButtonClick">
+        <value xsi:type="index:FunctionSymbol" name="onButtonClick">
+          <region xsi:type="index:RegionWithLine" startIndex="454" endIndex="466" startLine="22" endLine="22"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="497" endIndex="497" startLine="22" endLine="22"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="257" endIndex="365" startLine="11" endLine="14"/>
+        <childScopes>
+          <region startIndex="268" endIndex="365"/>
+        </childScopes>
+      </childScopes>
+      <childScopes name="onButtonClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region startIndex="500" endIndex="699"/>
+        <symbolMap key="button">
+          <value xsi:type="index:VariableSymbol" name="button">
+            <region startIndex="551" endIndex="556"/>
+            <inferredType name="cpr.controls.Button" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="search">
+          <value xsi:type="index:VariableSymbol" name="search">
+            <region startIndex="577" endIndex="582"/>
+            <inferredType name="cpr.events.CUIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CUIEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="497" endIndex="497" startLine="22" endLine="22"/>
+            <inferredType name="cpr.events.CMouseEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CMouseEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="375" endIndex="699" startLine="22" endLine="29"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.searchform1">
+      <value xsi:type="index:FunctionSymbol" name="udc.searchform1" labelForOutline="searchform1" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="getText">
+            <value xsi:type="index:FunctionVariableSymbol" name="getText" originalSymbolName="__anonymous1">
+              <region startIndex="247" endIndex="253"/>
+            </value>
+          </symbols>
+          <symbols key="val">
+            <value xsi:type="index:AppPropertySymbol" name="val">
+              <region/>
+              <inferredType name="String" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

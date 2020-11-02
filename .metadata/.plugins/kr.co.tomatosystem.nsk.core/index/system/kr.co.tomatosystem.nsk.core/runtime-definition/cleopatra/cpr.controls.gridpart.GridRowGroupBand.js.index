@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.GridRowGroupBand.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="1249" startLine="7" endLine="39"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridRowGroupBand" baseSymbolName="cpr.controls.gridpart.GridBand" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="202" startLine="7" endLine="7"/>
+          <params name="context" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="174" endIndex="180" startLine="7" endLine="7"/>
+            <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+          </params>
+          <params name="bandType" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="183" endIndex="190" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="groupBy" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="193" endIndex="199" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="style">
+              <value xsi:type="index:VariableSymbol" name="style" description="&lt;b>Readonly&lt;/b> 컨트롤의 스타일 설정을 반환합니다. &lt;a href=&quot;cpr.controls.UIControl.html#style&quot;>cpr.data.UIControl.style&lt;/a>참고">
+                <region startIndex="516" endIndex="520"/>
+                <inferredType name="cpr.controls.gridpart.GridStyler" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="getColumn">
+              <value xsi:type="index:FunctionVariableSymbol" name="getColumn" originalSymbolName="__anonymous2">
+                <region startIndex="743" endIndex="751"/>
+              </value>
+            </symbols>
+            <symbols key="getColumnByColIndex">
+              <value xsi:type="index:FunctionVariableSymbol" name="getColumnByColIndex" originalSymbolName="__anonymous3">
+                <region startIndex="1048" endIndex="1066"/>
+              </value>
+            </symbols>
+            <symbols key="setRowHeights">
+              <value xsi:type="index:FunctionVariableSymbol" name="setRowHeights" originalSymbolName="__anonymous4">
+                <region startIndex="1212" endIndex="1224"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.GridRowGroupBand">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.GridRowGroupBand" originalSymbolName="__anonymous1">
+          <region startIndex="146" endIndex="161"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getColumn" description="특정 셀을 반환합니다." returnDescription="입력받은 셀 인덱스의 셀." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="755" endIndex="775" startLine="23" endLine="23"/>
+          <params name="cellIndex" description="셀 인덱스." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="764" endIndex="772" startLine="23" endLine="23"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.controls.gridpart.GridRowGroupColumn" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="getColumnByColIndex" description="해당 정보에 맞는 GridColumn 배열을 반환합니다." returnDescription="해당 정보에 맞는 GridColumn 배열." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1070" endIndex="1098" startLine="31" endLine="31"/>
+          <params name="colIndex" description="찾고자 하는 컬럼의 colIndex." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1079" endIndex="1086" startLine="31" endLine="31"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="colSpan" description="찾고자 하는 컬럼의 colSpan." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1089" endIndex="1095" startLine="31" endLine="31"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="cpr.controls.gridpart.GridRowGroupColumn" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="setRowHeights" description="해당 영역의 행 높이를 변경합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1228" endIndex="1246" startLine="37" endLine="37"/>
+          <params name="heights" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1237" endIndex="1243" startLine="37" endLine="37"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="165" endIndex="202" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="202" endIndex="202"/>
+          <symbolMap key="context">
+            <value xsi:type="index:ParameterSymbol" name="context" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="174" endIndex="180" startLine="7" endLine="7"/>
+              <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="bandType">
+            <value xsi:type="index:ParameterSymbol" name="bandType" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="183" endIndex="190" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="groupBy">
+            <value xsi:type="index:ParameterSymbol" name="groupBy" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="193" endIndex="199" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="755" endIndex="775" startLine="23" endLine="23"/>
+        <childScopes>
+          <region startIndex="775" endIndex="775"/>
+          <symbolMap key="cellIndex">
+            <value xsi:type="index:ParameterSymbol" name="cellIndex" description="셀 인덱스." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="764" endIndex="772" startLine="23" endLine="23"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1070" endIndex="1098" startLine="31" endLine="31"/>
+        <childScopes>
+          <region startIndex="1098" endIndex="1098"/>
+          <symbolMap key="colIndex">
+            <value xsi:type="index:ParameterSymbol" name="colIndex" description="찾고자 하는 컬럼의 colIndex." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1079" endIndex="1086" startLine="31" endLine="31"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="colSpan">
+            <value xsi:type="index:ParameterSymbol" name="colSpan" description="찾고자 하는 컬럼의 colSpan." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1089" endIndex="1095" startLine="31" endLine="31"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1228" endIndex="1246" startLine="37" endLine="37"/>
+        <childScopes>
+          <region startIndex="1246" endIndex="1246"/>
+          <symbolMap key="heights">
+            <value xsi:type="index:ParameterSymbol" name="heights" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1237" endIndex="1243" startLine="37" endLine="37"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.GridRowGroupBand">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.GridRowGroupBand" baseSymbolName="cpr.controls.gridpart.GridBand" anonymousFunction="true">
+        <region startIndex="146" endIndex="161"/>
+        <params name="context" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="174" endIndex="180" startLine="7" endLine="7"/>
+          <inferredType name="cpr.controls.gridpart.GridContext" instance="true" documentedType="true"/>
+        </params>
+        <params name="bandType" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="183" endIndex="190" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="groupBy" description="" parameterIndex="2">
+          <region xsi:type="index:RegionWithLine" startIndex="193" endIndex="199" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="style">
+            <value xsi:type="index:VariableSymbol" name="style" description="&lt;b>Readonly&lt;/b> 컨트롤의 스타일 설정을 반환합니다. &lt;a href=&quot;cpr.controls.UIControl.html#style&quot;>cpr.data.UIControl.style&lt;/a>참고">
+              <region startIndex="516" endIndex="520"/>
+              <inferredType name="cpr.controls.gridpart.GridStyler" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="getColumn">
+            <value xsi:type="index:FunctionVariableSymbol" name="getColumn" originalSymbolName="__anonymous2">
+              <region startIndex="743" endIndex="751"/>
+            </value>
+          </symbols>
+          <symbols key="getColumnByColIndex">
+            <value xsi:type="index:FunctionVariableSymbol" name="getColumnByColIndex" originalSymbolName="__anonymous3">
+              <region startIndex="1048" endIndex="1066"/>
+            </value>
+          </symbols>
+          <symbols key="setRowHeights">
+            <value xsi:type="index:FunctionVariableSymbol" name="setRowHeights" originalSymbolName="__anonymous4">
+              <region startIndex="1212" endIndex="1224"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

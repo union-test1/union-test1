@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.DateInput.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="11384" startLine="8" endLine="623"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="DateInput" description="DateInput 날짜를 입력하는 컨트롤. 직접 또는 달력으로 날짜 데이터를 입력 할 수 있습니다. 데이트 인풋을 생성합니다." baseSymbolName="cpr.controls.TextInput" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="149" endIndex="162" startLine="8" endLine="8"/>
+          <params name="id" description="데이트 인풋의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="158" endIndex="159" startLine="8" endLine="8"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="value">
+              <value xsi:type="index:VariableSymbol" name="value" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤의 값을 설정하고, value-change이벤트가 발생됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="472" endIndex="476"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="text">
+              <value xsi:type="index:VariableSymbol" name="text" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 value가 변경된 내용을 기준으로 포맷이 된 text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤에 보이는 텍스트를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="748" endIndex="751"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="placeholder">
+              <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1020" endIndex="1030"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="displayText">
+              <value xsi:type="index:VariableSymbol" name="displayText" description="&lt;b>Readonly&lt;/b> 인풋에서 보여지는 HTML Element의 value를 가져옵니다.">
+                <region startIndex="1168" endIndex="1178"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="locale">
+              <value xsi:type="index:VariableSymbol" name="locale" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 언어 값을 가져옵니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 언어 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1411" endIndex="1416"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoSkip">
+              <value xsi:type="index:VariableSymbol" name="autoSkip" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 다음 컨트롤로 포커스 이동 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 다음 컨트롤로 포커스 이동 여부를 설정합니다.&lt;br> Dateinput의 calendar 날짜 선택 시 다음 컨트롤로 포커스가 자동으로 이동합니다.&lt;br> 관련 속성 : [nextControl] nextControl이 정해져 있지 않다면 tabindex 순서로 이동합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1809" endIndex="1816"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoSelect">
+              <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2097" endIndex="2106"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="calendar">
+              <value xsi:type="index:VariableSymbol" name="calendar" description="&lt;b>Readonly&lt;/b> 달력을 반환합니다.">
+                <region startIndex="2250" endIndex="2257"/>
+                <inferredType name="cpr.controls.calendar.AbstractCalendar" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="calendarType">
+              <value xsi:type="index:VariableSymbol" name="calendarType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> calendar의 날짜 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> calendar의 날짜 형식을 설정합니다.&lt;br> [year] : 년도만을 설정합니다.&lt;br> [yearmonth] : 년도와 월을 설정합니다.&lt;br> [yearmonthdate] : 년도, 월, 일을 설정합니다.&lt;br> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2653" endIndex="2664"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="defaultDate">
+              <value xsi:type="index:VariableSymbol" name="defaultDate" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> calendar의 기본 날짜를 반환 합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> calendar의 기본 날짜를 설정합니다.&lt;br> 따로 지정하지 않거나 잘못된 날짜를 입력할 경우 로딩한 날짜와 시간이 들어갑니다.&lt;br> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2975" endIndex="2985"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="day">
+              <value xsi:type="index:VariableSymbol" name="day" description="&lt;b>Readonly&lt;/b> 입력 값의 일을 반환합니다.">
+                <region startIndex="3099" endIndex="3101"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dayOfWeek">
+              <value xsi:type="index:VariableSymbol" name="dayOfWeek" description="&lt;b>Readonly&lt;/b> 입력값의 요일을 반환 합니다. 0:SUN, 1:MON, 2:TUE, 3:WED, 4:THU, 5:FRI, 6:SAT">
+                <region startIndex="3266" endIndex="3274"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="month">
+              <value xsi:type="index:VariableSymbol" name="month" description="&lt;b>Readonly&lt;/b> 입력 값의 월을 반환합니다. 0~11">
+                <region startIndex="3395" endIndex="3399"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="format">
+              <value xsi:type="index:VariableSymbol" name="format" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 날짜를 표기 하는 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 날짜를 표기 하는 형식을 설정합니다.&lt;br> value가 저장되는 format을 설정합니다.&lt;br> 한 글자 또는 두개의 글자로 이루어진 축약형 format을 사용시 구분자를 반드시 포함하여야 합니다. -> YYYY-M-D, M-D-YYYY&lt;br> format 종류&lt;br> * `YYYY`: 4자리 연도 -> 0001...9999&lt;br> * `YY`: 2자리 연도 -> 00...99&lt;br> * `MM`: 두자리 월 -> 01...12&lt;br> * `M`: 월 -> 1...12&lt;br> * `DD`: 두자리 날짜. 01...31&lt;br> * `D`: 날짜 1...31&lt;br> * `MMM`: 짧은 월 명 ->  Jan&lt;br> * `MMMM`: 월 명 -> January&lt;br>&lt;br> 주 및 요일&lt;br> * `ddd`: 짧은 요일명 -> 월&lt;br> * `dddd`: 긴 요일 명 -> 월요일&lt;br> * `h` : 시간 -> 1...12&lt;br> * `hh` : 시간 -> 01...12&lt;br> * `H` : 시간 -> 0...23&lt;br> * `HH` : 시간 -> 00...23&lt;br> * `m` : 분 -> 0...59&lt;br> * `mm` : 분 -> 00... 59&lt;br> * `s` : 초 -> 0...59&lt;br> * `ss` : 초 -> 00...59&lt;br> * `w` : 해당 년의 주차-> 1 12&lt;br> * `ww` : 해당 년의 주차-> 01 05 12&lt;br> * `A` : am pm * `a` : AM PM &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="4452" endIndex="4457"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="mask">
+              <value xsi:type="index:VariableSymbol" name="mask" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> inputbox 내 입력 받을 날짜의 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> inputbox 내 입력 받을 날짜의 형식을 설정합니다.&lt;br> DateInput은 format을 기준으로 value가 설정됩니다. 날짜의 표현식은 다음과 같습니다.&lt;br> 날짜를 포멧할 표현식&lt;br> 년도, 달, 날짜:&lt;br> * `YYYY`: 4자리 연도 -> 2017&lt;br> * `YY`: 2자리 연도 -> 17&lt;br> * `MM`: 두자리 월, 한 자리수 인 경우 0으로 채워짐. -> 09&lt;br> * `M`: 월 -> 9&lt;br> * `DD`: 두자리 날짜. 한 자리수 인 경우, 0으로 채워짐. 예: 1일 -> 01&lt;br> * `D`: 날짜&lt;br> * `h` : 시간 -> 1 5 12&lt;br> * `hh` : 시간 -> 01 05 12&lt;br> * `H` : 시간 -> 1 5 12 23&lt;br> * `HH` : 시간 -> 01 05 12 23&lt;br> * `m` : 분 -> 1 21 54&lt;br> * `mm` : 분 -> 01 21 54&lt;br> * `s` : 초 -> 1 21 54&lt;br> * `ss` : 초 -> 01 21 54&lt;br> * `A` : AM PM * `a` : am pm mask는 format의 '주 및 요일'을 적용할 수 없습니다.&lt;br> mask 설정 시 년도, 달, 날짜를 구분 할 수 있는 구분자를 반드시 포함하여야 합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="5417" endIndex="5420"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="maxDate">
+              <value xsi:type="index:VariableSymbol" name="maxDate" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택 가능한 최대 날짜를 반환합니다.&lt;br> 기본 날짜는 2099.12.31 입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 선택 가능한 최대 날짜를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="5697" endIndex="5703"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="minDate">
+              <value xsi:type="index:VariableSymbol" name="minDate" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택 가능한 최소 날짜를 반환합니다.&lt;br> 기본 날짜는 1900.01.01 입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 선택 가능한 최소 날짜를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="5978" endIndex="5984"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="preventInput">
+              <value xsi:type="index:VariableSymbol" name="preventInput" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> inputbox를 통한 입력 가능 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> inputbox를 통한 입력 가능 여부를 설정합니다.&lt;br> [true] : 키보드 입력을 방지하고, 버튼만 동작 가능합니다.&lt;br> [false] : 키보드 입력이 가능합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="6326" endIndex="6337"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="year">
+              <value xsi:type="index:VariableSymbol" name="year" description="&lt;b>Readonly&lt;/b> 입력 값의 연도를 반환합니다.">
+                <region startIndex="6455" endIndex="6458"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="buttonImage">
+              <value xsi:type="index:VariableSymbol" name="buttonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> button의 calendar 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> button의 calendar 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="6723" endIndex="6733"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="hideButton">
+              <value xsi:type="index:VariableSymbol" name="hideButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> Calendar 버튼을 보여줄지 숨길지 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> Calendar 버튼을 보여줄지 숨길지 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="7007" endIndex="7016"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="spinButton">
+              <value xsi:type="index:VariableSymbol" name="spinButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 스핀 버튼의 유무를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 스핀 버튼의 유무를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="7261" endIndex="7270"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="footerVisible">
+              <value xsi:type="index:VariableSymbol" name="footerVisible" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 캘린더의 푸터를 숨기는 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 캘린더의 푸터를 숨깁니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="7519" endIndex="7531"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="monthNames">
+              <value xsi:type="index:VariableSymbol" name="monthNames" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 달에 표시되는 타입을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> calendarType=&quot;yearmonth&quot;에서 표시할 요일의 타입을 설정합니다. default: &quot;min&quot; 지원 타입: [&quot;normal&quot;,&quot;short&quot;,&quot;min&quot;] &quot;normal&quot;:January,February.. &quot;short&quot;:Jan,Feb.. &quot;min&quot;:1,2.. &lt;pre>&lt;code>calendar.monthNames= &quot;min&quot;;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="7976" endIndex="7985"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="weekdays">
+              <value xsi:type="index:VariableSymbol" name="weekdays" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 요일 타입을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> calendarType=&quot;yearmonthdate&quot;에서 표시할 요일의 타입을 설정합니다. default: &quot;min&quot; 지원 타입: [&quot;normal&quot;,&quot;short&quot;,&quot;min&quot;] &quot;normal&quot;:Monday,Tuesday.. &quot;short&quot;:Mon,Tue.. &quot;min&quot;:Mo,Tu.. &lt;pre>&lt;code>calendar.weekdays= &quot;min&quot;;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="8426" endIndex="8433"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="headerFormat">
+              <value xsi:type="index:VariableSymbol" name="headerFormat" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 헤더에 표시하는 텍스트의 포맷 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 헤더에 표시하는 텍스트의 포맷을 설정합니다. 포맷에서 &quot;[]&quot;안에 텍스트는 고정으로 표시됩니다.  &quot;YYYY-[W]WW&quot; => 2017-W50 &lt;pre>&lt;code>calendar.headerFormat= &quot;MMM YYYY&quot;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="8814" endIndex="8825"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="spinLoop">
+              <value xsi:type="index:VariableSymbol" name="spinLoop" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 값이 모두 채워 있고 스핀 했을때 순환하여 값을 변경할지 여부. false이면 날짜가 변경됩니다. false인 경우 예) 2019-12-21에서 월을 12에서 증가 시키는 경우 2020-01-21로 갱신됨. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 값이 모두 채워 있고 스핀 했을때 순환하여 값을 변경할지 여부. false이면 날짜가 변경됩니다. false인 경우 예) 2019-12-21에서 월을 12에서 증가 시키는 경우 2020-01-21로 갱신됨. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="9271" endIndex="9278"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="defaultSelection">
+              <value xsi:type="index:VariableSymbol" name="defaultSelection" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스에서 셀렉션이 표시되는 위치의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스에서 셀렉션이 표시되는 위치를 설정합니다. none인 경우 맨 앞의 마스크값에 표시됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="9570" endIndex="9585"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dateValue">
+              <value xsi:type="index:VariableSymbol" name="dateValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 날짜 객체 형식으로 값을 얻습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 날짜 객체 형식으로 값을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="9831" endIndex="9839"/>
+                <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="style">
+              <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+                <region startIndex="10029" endIndex="10033"/>
+                <inferredType name="cpr.controls.DateInput$Styler" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="confirmEvent">
+              <value xsi:type="index:FunctionVariableSymbol" name="confirmEvent" originalSymbolName="__anonymous2">
+                <region startIndex="10267" endIndex="10278"/>
+              </value>
+            </symbols>
+            <symbols key="putValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous3">
+                <region startIndex="10390" endIndex="10397"/>
+              </value>
+            </symbols>
+            <symbols key="blur">
+              <value xsi:type="index:FunctionVariableSymbol" name="blur" originalSymbolName="__anonymous4">
+                <region startIndex="10482" endIndex="10485"/>
+              </value>
+            </symbols>
+            <symbols key="dispose">
+              <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous5">
+                <region startIndex="10570" endIndex="10576"/>
+              </value>
+            </symbols>
+            <symbols key="updateLocale">
+              <value xsi:type="index:FunctionVariableSymbol" name="updateLocale" originalSymbolName="__anonymous6">
+                <region startIndex="11120" endIndex="11131"/>
+              </value>
+            </symbols>
+            <symbols key="localeData">
+              <value xsi:type="index:FunctionVariableSymbol" name="localeData" originalSymbolName="__anonymous7">
+                <region startIndex="11351" endIndex="11360"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.DateInput">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.DateInput" originalSymbolName="__anonymous1">
+          <region startIndex="137" endIndex="145"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="confirmEvent" description="Control의 상태에 따라 Control의 Default Event Handler를 실행할 지 여부를 결정합니다." returnDescription="컨트롤의 Event Handler 실행 여부." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10282" endIndex="10294" startLine="580" endLine="580"/>
+          <params name="e" description="이벤트" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10291" endIndex="10291" startLine="580" endLine="580"/>
+            <inferredType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="putValue" description="컨트롤의 값을 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10401" endIndex="10417" startLine="586" endLine="586"/>
+          <params name="value" description="컨트롤의 값." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="10410" endIndex="10414" startLine="586" endLine="586"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="blur" description="컨트롤에 포커스를 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10489" endIndex="10500" startLine="591" endLine="591"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="dispose" description="컨트롤의 포함하는 객체들을 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="10580" endIndex="10591" startLine="596" endLine="596"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="updateLocale" description="locale의 data를 추가 또는 수정합니다.&lt;br/> data는 locale에 따른 년, 월, 일 등의 날짜를 표현하는 json data입니다.&lt;br/> &lt;pre>&lt;code>dateinput.updateLocale(&quot;en&quot;,  {display:{ Y: &quot;year&quot;, M: &quot;month&quot;, D: &quot;day&quot;, H: &quot;hours&quot;, h: &quot;hours&quot;, m: &quot;minitues&quot;, s: &quot;seconds&quot;, a: &quot;am/pm&quot; },meridiem:[&quot;am&quot;, &quot;pm&quot;]} )&lt;/code>&lt;/pre>&lt;br/> data&lt;br/> * Y: 연&lt;br/> * M: 월&lt;br/> * D: 일&lt;br/> * H,h: 시&lt;br/> * m: 분&lt;br/> * s: 초&lt;br/> * a: 오전 / 오후&lt;br/>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="11135" endIndex="11158" startLine="613" endLine="613"/>
+          <params name="locale" description="locale" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="11144" endIndex="11149" startLine="613" endLine="613"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="data" description="날짜 표현 data." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="11152" endIndex="11155" startLine="613" endLine="613"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="localeData" description="locale의 data 가져옵니다.&lt;br/> &lt;pre>&lt;code>dateinput.localeData(&quot;en&quot;);&lt;/code>&lt;/pre>" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="11364" endIndex="11381" startLine="621" endLine="621"/>
+          <params name="locale" description="i18n" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="11373" endIndex="11378" startLine="621" endLine="621"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="149" endIndex="162" startLine="8" endLine="8"/>
+        <childScopes>
+          <region startIndex="162" endIndex="162"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="데이트 인풋의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="158" endIndex="159" startLine="8" endLine="8"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10282" endIndex="10294" startLine="580" endLine="580"/>
+        <childScopes>
+          <region startIndex="10294" endIndex="10294"/>
+          <symbolMap key="e">
+            <value xsi:type="index:ParameterSymbol" name="e" description="이벤트" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="10291" endIndex="10291" startLine="580" endLine="580"/>
+              <inferredType name="cpr.events.CEvent" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10401" endIndex="10417" startLine="586" endLine="586"/>
+        <childScopes>
+          <region startIndex="10417" endIndex="10417"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="컨트롤의 값." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="10410" endIndex="10414" startLine="586" endLine="586"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10489" endIndex="10500" startLine="591" endLine="591"/>
+        <childScopes>
+          <region startIndex="10500" endIndex="10500"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="10580" endIndex="10591" startLine="596" endLine="596"/>
+        <childScopes>
+          <region startIndex="10591" endIndex="10591"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="11135" endIndex="11158" startLine="613" endLine="613"/>
+        <childScopes>
+          <region startIndex="11158" endIndex="11158"/>
+          <symbolMap key="locale">
+            <value xsi:type="index:ParameterSymbol" name="locale" description="locale" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="11144" endIndex="11149" startLine="613" endLine="613"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="data">
+            <value xsi:type="index:ParameterSymbol" name="data" description="날짜 표현 data." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="11152" endIndex="11155" startLine="613" endLine="613"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="11364" endIndex="11381" startLine="621" endLine="621"/>
+        <childScopes>
+          <region startIndex="11381" endIndex="11381"/>
+          <symbolMap key="locale">
+            <value xsi:type="index:ParameterSymbol" name="locale" description="i18n" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="11373" endIndex="11378" startLine="621" endLine="621"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.DateInput">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.DateInput" description="DateInput 날짜를 입력하는 컨트롤. 직접 또는 달력으로 날짜 데이터를 입력 할 수 있습니다. 데이트 인풋을 생성합니다." baseSymbolName="cpr.controls.TextInput" anonymousFunction="true">
+        <region startIndex="137" endIndex="145"/>
+        <params name="id" description="데이트 인풋의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="158" endIndex="159" startLine="8" endLine="8"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="value">
+            <value xsi:type="index:VariableSymbol" name="value" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤의 값을 설정하고, value-change이벤트가 발생됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="472" endIndex="476"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="text">
+            <value xsi:type="index:VariableSymbol" name="text" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 컨트롤의 value가 변경된 내용을 기준으로 포맷이 된 text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 컨트롤에 보이는 텍스트를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="748" endIndex="751"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="placeholder">
+            <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1020" endIndex="1030"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="displayText">
+            <value xsi:type="index:VariableSymbol" name="displayText" description="&lt;b>Readonly&lt;/b> 인풋에서 보여지는 HTML Element의 value를 가져옵니다.">
+              <region startIndex="1168" endIndex="1178"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="locale">
+            <value xsi:type="index:VariableSymbol" name="locale" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 언어 값을 가져옵니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 언어 값을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1411" endIndex="1416"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoSkip">
+            <value xsi:type="index:VariableSymbol" name="autoSkip" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 다음 컨트롤로 포커스 이동 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 다음 컨트롤로 포커스 이동 여부를 설정합니다.&lt;br> Dateinput의 calendar 날짜 선택 시 다음 컨트롤로 포커스가 자동으로 이동합니다.&lt;br> 관련 속성 : [nextControl] nextControl이 정해져 있지 않다면 tabindex 순서로 이동합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1809" endIndex="1816"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoSelect">
+            <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2097" endIndex="2106"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="calendar">
+            <value xsi:type="index:VariableSymbol" name="calendar" description="&lt;b>Readonly&lt;/b> 달력을 반환합니다.">
+              <region startIndex="2250" endIndex="2257"/>
+              <inferredType name="cpr.controls.calendar.AbstractCalendar" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="calendarType">
+            <value xsi:type="index:VariableSymbol" name="calendarType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> calendar의 날짜 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> calendar의 날짜 형식을 설정합니다.&lt;br> [year] : 년도만을 설정합니다.&lt;br> [yearmonth] : 년도와 월을 설정합니다.&lt;br> [yearmonthdate] : 년도, 월, 일을 설정합니다.&lt;br> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2653" endIndex="2664"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="defaultDate">
+            <value xsi:type="index:VariableSymbol" name="defaultDate" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> calendar의 기본 날짜를 반환 합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> calendar의 기본 날짜를 설정합니다.&lt;br> 따로 지정하지 않거나 잘못된 날짜를 입력할 경우 로딩한 날짜와 시간이 들어갑니다.&lt;br> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2975" endIndex="2985"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="day">
+            <value xsi:type="index:VariableSymbol" name="day" description="&lt;b>Readonly&lt;/b> 입력 값의 일을 반환합니다.">
+              <region startIndex="3099" endIndex="3101"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dayOfWeek">
+            <value xsi:type="index:VariableSymbol" name="dayOfWeek" description="&lt;b>Readonly&lt;/b> 입력값의 요일을 반환 합니다. 0:SUN, 1:MON, 2:TUE, 3:WED, 4:THU, 5:FRI, 6:SAT">
+              <region startIndex="3266" endIndex="3274"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="month">
+            <value xsi:type="index:VariableSymbol" name="month" description="&lt;b>Readonly&lt;/b> 입력 값의 월을 반환합니다. 0~11">
+              <region startIndex="3395" endIndex="3399"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="format">
+            <value xsi:type="index:VariableSymbol" name="format" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 날짜를 표기 하는 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 날짜를 표기 하는 형식을 설정합니다.&lt;br> value가 저장되는 format을 설정합니다.&lt;br> 한 글자 또는 두개의 글자로 이루어진 축약형 format을 사용시 구분자를 반드시 포함하여야 합니다. -> YYYY-M-D, M-D-YYYY&lt;br> format 종류&lt;br> * `YYYY`: 4자리 연도 -> 0001...9999&lt;br> * `YY`: 2자리 연도 -> 00...99&lt;br> * `MM`: 두자리 월 -> 01...12&lt;br> * `M`: 월 -> 1...12&lt;br> * `DD`: 두자리 날짜. 01...31&lt;br> * `D`: 날짜 1...31&lt;br> * `MMM`: 짧은 월 명 ->  Jan&lt;br> * `MMMM`: 월 명 -> January&lt;br>&lt;br> 주 및 요일&lt;br> * `ddd`: 짧은 요일명 -> 월&lt;br> * `dddd`: 긴 요일 명 -> 월요일&lt;br> * `h` : 시간 -> 1...12&lt;br> * `hh` : 시간 -> 01...12&lt;br> * `H` : 시간 -> 0...23&lt;br> * `HH` : 시간 -> 00...23&lt;br> * `m` : 분 -> 0...59&lt;br> * `mm` : 분 -> 00... 59&lt;br> * `s` : 초 -> 0...59&lt;br> * `ss` : 초 -> 00...59&lt;br> * `w` : 해당 년의 주차-> 1 12&lt;br> * `ww` : 해당 년의 주차-> 01 05 12&lt;br> * `A` : am pm * `a` : AM PM &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="4452" endIndex="4457"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="mask">
+            <value xsi:type="index:VariableSymbol" name="mask" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> inputbox 내 입력 받을 날짜의 형식을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> inputbox 내 입력 받을 날짜의 형식을 설정합니다.&lt;br> DateInput은 format을 기준으로 value가 설정됩니다. 날짜의 표현식은 다음과 같습니다.&lt;br> 날짜를 포멧할 표현식&lt;br> 년도, 달, 날짜:&lt;br> * `YYYY`: 4자리 연도 -> 2017&lt;br> * `YY`: 2자리 연도 -> 17&lt;br> * `MM`: 두자리 월, 한 자리수 인 경우 0으로 채워짐. -> 09&lt;br> * `M`: 월 -> 9&lt;br> * `DD`: 두자리 날짜. 한 자리수 인 경우, 0으로 채워짐. 예: 1일 -> 01&lt;br> * `D`: 날짜&lt;br> * `h` : 시간 -> 1 5 12&lt;br> * `hh` : 시간 -> 01 05 12&lt;br> * `H` : 시간 -> 1 5 12 23&lt;br> * `HH` : 시간 -> 01 05 12 23&lt;br> * `m` : 분 -> 1 21 54&lt;br> * `mm` : 분 -> 01 21 54&lt;br> * `s` : 초 -> 1 21 54&lt;br> * `ss` : 초 -> 01 21 54&lt;br> * `A` : AM PM * `a` : am pm mask는 format의 '주 및 요일'을 적용할 수 없습니다.&lt;br> mask 설정 시 년도, 달, 날짜를 구분 할 수 있는 구분자를 반드시 포함하여야 합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="5417" endIndex="5420"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="maxDate">
+            <value xsi:type="index:VariableSymbol" name="maxDate" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택 가능한 최대 날짜를 반환합니다.&lt;br> 기본 날짜는 2099.12.31 입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 선택 가능한 최대 날짜를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="5697" endIndex="5703"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="minDate">
+            <value xsi:type="index:VariableSymbol" name="minDate" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 선택 가능한 최소 날짜를 반환합니다.&lt;br> 기본 날짜는 1900.01.01 입니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 선택 가능한 최소 날짜를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="5978" endIndex="5984"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="preventInput">
+            <value xsi:type="index:VariableSymbol" name="preventInput" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> inputbox를 통한 입력 가능 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> inputbox를 통한 입력 가능 여부를 설정합니다.&lt;br> [true] : 키보드 입력을 방지하고, 버튼만 동작 가능합니다.&lt;br> [false] : 키보드 입력이 가능합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="6326" endIndex="6337"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="year">
+            <value xsi:type="index:VariableSymbol" name="year" description="&lt;b>Readonly&lt;/b> 입력 값의 연도를 반환합니다.">
+              <region startIndex="6455" endIndex="6458"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="buttonImage">
+            <value xsi:type="index:VariableSymbol" name="buttonImage" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> button의 calendar 이미지를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> button의 calendar 이미지를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="6723" endIndex="6733"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="hideButton">
+            <value xsi:type="index:VariableSymbol" name="hideButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> Calendar 버튼을 보여줄지 숨길지 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> Calendar 버튼을 보여줄지 숨길지 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="7007" endIndex="7016"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="spinButton">
+            <value xsi:type="index:VariableSymbol" name="spinButton" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 스핀 버튼의 유무를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 스핀 버튼의 유무를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="7261" endIndex="7270"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="footerVisible">
+            <value xsi:type="index:VariableSymbol" name="footerVisible" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 캘린더의 푸터를 숨기는 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 캘린더의 푸터를 숨깁니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="7519" endIndex="7531"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="monthNames">
+            <value xsi:type="index:VariableSymbol" name="monthNames" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 달에 표시되는 타입을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> calendarType=&quot;yearmonth&quot;에서 표시할 요일의 타입을 설정합니다. default: &quot;min&quot; 지원 타입: [&quot;normal&quot;,&quot;short&quot;,&quot;min&quot;] &quot;normal&quot;:January,February.. &quot;short&quot;:Jan,Feb.. &quot;min&quot;:1,2.. &lt;pre>&lt;code>calendar.monthNames= &quot;min&quot;;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="7976" endIndex="7985"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="weekdays">
+            <value xsi:type="index:VariableSymbol" name="weekdays" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 요일 타입을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> calendarType=&quot;yearmonthdate&quot;에서 표시할 요일의 타입을 설정합니다. default: &quot;min&quot; 지원 타입: [&quot;normal&quot;,&quot;short&quot;,&quot;min&quot;] &quot;normal&quot;:Monday,Tuesday.. &quot;short&quot;:Mon,Tue.. &quot;min&quot;:Mo,Tu.. &lt;pre>&lt;code>calendar.weekdays= &quot;min&quot;;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="8426" endIndex="8433"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="headerFormat">
+            <value xsi:type="index:VariableSymbol" name="headerFormat" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 헤더에 표시하는 텍스트의 포맷 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 헤더에 표시하는 텍스트의 포맷을 설정합니다. 포맷에서 &quot;[]&quot;안에 텍스트는 고정으로 표시됩니다.  &quot;YYYY-[W]WW&quot; => 2017-W50 &lt;pre>&lt;code>calendar.headerFormat= &quot;MMM YYYY&quot;&lt;/code>&lt;/pre> &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="8814" endIndex="8825"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="spinLoop">
+            <value xsi:type="index:VariableSymbol" name="spinLoop" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 값이 모두 채워 있고 스핀 했을때 순환하여 값을 변경할지 여부. false이면 날짜가 변경됩니다. false인 경우 예) 2019-12-21에서 월을 12에서 증가 시키는 경우 2020-01-21로 갱신됨. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 값이 모두 채워 있고 스핀 했을때 순환하여 값을 변경할지 여부. false이면 날짜가 변경됩니다. false인 경우 예) 2019-12-21에서 월을 12에서 증가 시키는 경우 2020-01-21로 갱신됨. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="9271" endIndex="9278"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="defaultSelection">
+            <value xsi:type="index:VariableSymbol" name="defaultSelection" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스에서 셀렉션이 표시되는 위치의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스에서 셀렉션이 표시되는 위치를 설정합니다. none인 경우 맨 앞의 마스크값에 표시됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="9570" endIndex="9585"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dateValue">
+            <value xsi:type="index:VariableSymbol" name="dateValue" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 날짜 객체 형식으로 값을 얻습니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 날짜 객체 형식으로 값을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="9831" endIndex="9839"/>
+              <inferredType name="Date" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="style">
+            <value xsi:type="index:VariableSymbol" name="style" description="컨트롤의 스타일 설정을 반환합니다.&lt;br> 스타일 변경의 경우 해당 컨트롤만 갱신됩니다. &lt;br> 스타일 변경으로 인한 전파는 일어나지 않습니다.">
+              <region startIndex="10029" endIndex="10033"/>
+              <inferredType name="cpr.controls.DateInput$Styler" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="confirmEvent">
+            <value xsi:type="index:FunctionVariableSymbol" name="confirmEvent" originalSymbolName="__anonymous2">
+              <region startIndex="10267" endIndex="10278"/>
+            </value>
+          </symbols>
+          <symbols key="putValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous3">
+              <region startIndex="10390" endIndex="10397"/>
+            </value>
+          </symbols>
+          <symbols key="blur">
+            <value xsi:type="index:FunctionVariableSymbol" name="blur" originalSymbolName="__anonymous4">
+              <region startIndex="10482" endIndex="10485"/>
+            </value>
+          </symbols>
+          <symbols key="dispose">
+            <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous5">
+              <region startIndex="10570" endIndex="10576"/>
+            </value>
+          </symbols>
+          <symbols key="updateLocale">
+            <value xsi:type="index:FunctionVariableSymbol" name="updateLocale" originalSymbolName="__anonymous6">
+              <region startIndex="11120" endIndex="11131"/>
+            </value>
+          </symbols>
+          <symbols key="localeData">
+            <value xsi:type="index:FunctionVariableSymbol" name="localeData" originalSymbolName="__anonymous7">
+              <region startIndex="11351" endIndex="11360"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

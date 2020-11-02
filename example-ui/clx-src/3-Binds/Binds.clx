@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-844b3435" version="1.0.0.0">
+  <head std:sid="head-d81e586c">
+    <title>04-Binds</title>
+    <screen std:sid="screen-25f37bef" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-387e24bb" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-77ef5ac4" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-ac80d94d">
+      <cl:dataset std:sid="d-set-b676b0e3" id="people">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn name="favoriteColor"/>
+          <cl:datacolumn datatype="number" name="kor"/>
+          <cl:datacolumn datatype="number" name="eng"/>
+          <cl:datacolumn datatype="number" name="math"/>
+          <cl:datacolumn datatype="expression" expression="kor + eng + math" name="total"/>
+          <cl:datacolumn datatype="expression" expression="ceil((kor + eng + math) / 3)" name="avg"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Tomato]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[red]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[50]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[20]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Bulider Kim]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[blue]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[70]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[90]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[Nobody]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Nobody]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[orange]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[60]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[60]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[40]]></cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[Jeeeyul Lee]]></cl:datavalue>
+            <cl:datavalue columnname="favoriteColor"><![CDATA[magenta]]></cl:datavalue>
+            <cl:datavalue columnname="kor"><![CDATA[95]]></cl:datavalue>
+            <cl:datavalue columnname="eng"><![CDATA[80]]></cl:datavalue>
+            <cl:datavalue columnname="math"><![CDATA[100]]></cl:datavalue>
+            <cl:datavalue columnname="total">total4</cl:datavalue>
+            <cl:datavalue columnname="avg">avg4</cl:datavalue>
+            <cl:datavalue columnname="parent"><![CDATA[Tomato]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-7cfd0c6b" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:tabfolder std:sid="t-folder-b9927264">
+      <cl:xylayoutdata std:sid="xyl-data-185cf87d" height="566px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+      <cl:tabitem std:sid="t-item-4cbcd8d2" selected="true" text="Language">
+        <cl:group std:sid="group-f0d00ed9">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:radiobutton std:sid="r-button-c1ce38a4" id="rdb1" value="ko">
+            <cl:listener std:sid="listener-257e91a8" handler="onRdb1SelectionChange" name="selection-change"/>
+            <cl:xylayoutdata std:sid="xyl-data-fb4a0df1" height="28px" horizontalAnchor="LEFT" left="324px" top="20px" verticalAnchor="TOP" width="200px"/>
+            <cl:item label="한글" value="ko"/>
+            <cl:item label="English" value="en"/>
+          </cl:radiobutton>
+          <cl:button std:sid="button-754d202f" value="Button">
+            <cl:langbind property="value" keypath="bye"/>
+            <cl:xylayoutdata std:sid="xyl-data-63a0b7d9" height="20px" horizontalAnchor="LEFT" left="130px" top="24px" verticalAnchor="TOP" width="184px"/>
+          </cl:button>
+          <cl:button std:sid="button-eafddff1" value="Button">
+            <cl:langbind property="value" keypath="hello"/>
+            <cl:xylayoutdata std:sid="xyl-data-29785da6" height="20px" horizontalAnchor="LEFT" left="20px" top="24px" verticalAnchor="TOP" width="100px"/>
+          </cl:button>
+          <cl:button std:sid="button-20c0f035" value="Show a message">
+            <cl:listener std:sid="listener-c83b5cf9" handler="onButtonClick7" name="click"/>
+            <cl:xylayoutdata std:sid="xyl-data-33f2e817" height="20px" horizontalAnchor="LEFT" left="534px" top="24px" verticalAnchor="TOP" width="185px"/>
+          </cl:button>
+          <cl:xylayout std:sid="xylayout-c4499de8"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-8b186c2a" text="Set">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-e4200e2d">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:combobox std:sid="c-box-aeba9c65" id="cmb1" value="Tomato">
+            <cl:xylayoutdata std:sid="xyl-data-e32aed6a" height="20px" horizontalAnchor="LEFT" left="165px" top="20px" verticalAnchor="TOP" width="200px"/>
+            <cl:itemset datasetid="people" label="name" value="name"/>
+          </cl:combobox>
+          <cl:listbox std:sid="l-box-f0c54766" id="lbx1">
+            <cl:xylayoutdata std:sid="xyl-data-1c7d6706" height="180px" horizontalAnchor="LEFT" left="32px" top="20px" verticalAnchor="TOP" width="123px"/>
+            <cl:itemset datasetid="people" label="name" value="name"/>
+          </cl:listbox>
+          <cl:tree std:sid="tree-8ee3d4e5" id="tre1">
+            <cl:xylayoutdata std:sid="xyl-data-1290817e" height="150px" horizontalAnchor="LEFT" left="165px" top="50px" verticalAnchor="TOP" width="200px"/>
+            <cl:treeitemset datasetid="people" label="name" value="name" parent="parent"/>
+          </cl:tree>
+          <cl:linkedlistbox std:sid="ll-box-32338a46" id="llb1">
+            <cl:xylayoutdata std:sid="xyl-data-1cfa36e2" height="179px" horizontalAnchor="LEFT" left="376px" top="21px" verticalAnchor="TOP" width="300px"/>
+            <cl:treeitemset datasetid="people" label="name" value="name" parent="parent"/>
+          </cl:linkedlistbox>
+          <cl:xylayout std:sid="xylayout-ac78acd3"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-d4958e04" text="Data Set Bind and Expression Bind">
+        <cl:group std:sid="group-7baba062">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:grid std:sid="grid-28f3da70" id="grd1" datasetid="people">
+            <cl:xylayoutdata std:sid="xyl-data-b203124d" height="175px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="TOP"/>
+            <cl:gridcolumn std:sid="g-column-d1dc0faf"/>
+            <cl:gridcolumn std:sid="g-column-ca22027e"/>
+            <cl:gridcolumn std:sid="g-column-06f5a583"/>
+            <cl:gridcolumn std:sid="g-column-b4cb7416"/>
+            <cl:gridcolumn std:sid="g-column-767d75a2"/>
+            <cl:gridcolumn std:sid="g-column-9396d031"/>
+            <cl:gridcolumn std:sid="g-column-bf2653cc"/>
+            <cl:gridheader std:sid="gh-band-0f508519">
+              <cl:gridrow std:sid="g-row-c6392e2b"/>
+              <cl:gridcell std:sid="gh-cell-d84ba371" colindex="0" rowindex="0" text="name"/>
+              <cl:gridcell std:sid="gh-cell-566f2a16" colindex="1" rowindex="0" text="favoriteColor"/>
+              <cl:gridcell std:sid="gh-cell-b64701f4" colindex="2" rowindex="0" text="kor"/>
+              <cl:gridcell std:sid="gh-cell-e9ca8fd3" colindex="3" rowindex="0" text="eng"/>
+              <cl:gridcell std:sid="gh-cell-344eb8e2" colindex="4" rowindex="0" text="math"/>
+              <cl:gridcell std:sid="gh-cell-51ed6c73" colindex="5" rowindex="0" text="total"/>
+              <cl:gridcell std:sid="gh-cell-b66ac050" colindex="6" rowindex="0" text="avg"/>
+            </cl:gridheader>
+            <cl:griddetail std:sid="gd-band-9002cf59">
+              <cl:gridrow std:sid="g-row-6a92255a"/>
+              <cl:gridcell std:sid="gd-cell-31ed9b94" colindex="0" rowindex="0" columnname="name"/>
+              <cl:gridcell std:sid="gd-cell-7a0548e7" colindex="1" rowindex="0" columnname="favoriteColor"/>
+              <cl:gridcell std:sid="gd-cell-7f9d6818" colindex="2" rowindex="0" columnname="kor">
+                <cl:numbereditor std:sid="n-editor-f2475dc6" id="nbe1"/>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-c8eae6dc" colindex="3" rowindex="0" columnname="eng">
+                <cl:numbereditor std:sid="n-editor-6279dac5" id="nbe2"/>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-d1ab9b09" colindex="4" rowindex="0" columnname="math">
+                <cl:numbereditor std:sid="n-editor-e166270e" id="nbe3"/>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gd-cell-bf1439a4" colindex="5" rowindex="0" columnname="total"/>
+              <cl:gridcell std:sid="gd-cell-c7da1612" colindex="6" rowindex="0" columnname="avg">
+                <cl:output std:sid="output-1bfdf40a" style="background-repeat:no-repeat; background-image:linear-gradient(red, orange);" value="Output">
+                  <cl:expbind category="STYLER" property="background-size" expression="avg + &quot;% 100%&quot;"/>
+                </cl:output>
+              </cl:gridcell>
+            </cl:griddetail>
+          </cl:grid>
+          <cl:output std:sid="output-f413b912" id="expOutput" value="Output">
+            <cl:expbind category="PROPERTY" property="value" expression="&quot;My name is &quot; + name + &quot;, and my max score is &quot; +  max(kor, eng, math) + &quot;.&quot;"/>
+            <cl:selectioncontext selectionProvider="#grid-28f3da70"/>
+            <cl:xylayoutdata std:sid="xyl-data-f5c6ec77" height="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="205px" verticalAnchor="TOP"/>
+          </cl:output>
+          <cl:xylayout std:sid="xylayout-c545e59f"/>
+        </cl:group>
+      </cl:tabitem>
+      <cl:tabitem std:sid="t-item-b5c5727f" text="Style Binding for Elements">
+        <cl:group std:sid="group-1f174450">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:combobox std:sid="c-box-211a062e" id="cmb2" displayexp="name + &quot; (&quot; + avg + &quot;)&quot;" value="Tomato">
+            <cl:xylayoutdata std:sid="xyl-data-19f714d7" height="27px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="402px"/>
+            <cl:itemset datasetid="people" label="name" value="name"/>
+            <cl:itemstyle>
+              <cl:expbind category="STYLER" property="color" expression="switch(avg){&#xA;&#x9;when avg >= 90 : &quot;green&quot;&#xA;&#x9;when avg >= 60 : &quot;orange&quot;&#xA;&#x9;default : &quot;red&quot;&#xA;}"/>
+            </cl:itemstyle>
+          </cl:combobox>
+          <cl:group std:sid="group-59d670dc">
+            <cl:xylayoutdata std:sid="xyl-data-98358732" height="25px" horizontalAnchor="LEFT" left="20px" top="78px" verticalAnchor="TOP" width="400px"/>
+            <cl:inputbox std:sid="i-box-7e2e203b" id="operandA" style="text-align:right;" value="9">
+              <cl:listener std:sid="listener-28a074fa" handler="updateResult" name="value-change"/>
+              <cl:formdata std:sid="f-data-167f67f2" col="0" row="0"/>
+            </cl:inputbox>
+            <cl:inputbox std:sid="i-box-a8e27e81" id="operandB" style="text-align:right;" value="9">
+              <cl:listener std:sid="listener-e7ff7aa6" handler="updateResult" name="value-change"/>
+              <cl:formdata std:sid="f-data-07398642" col="2" row="0"/>
+            </cl:inputbox>
+            <cl:inputbox std:sid="i-box-4049655d" id="resultField" style="text-align:right;">
+              <cl:expbind category="PROPERTY" property="value" expression="parseInt(#operandA.value) * parseInt(#operandB.value)"/>
+              <cl:formdata std:sid="f-data-b401cf7e" col="4" row="0"/>
+            </cl:inputbox>
+            <cl:output std:sid="output-9a4e63d9" style="text-align:center;" value="x">
+              <cl:formdata std:sid="f-data-c6d7ee60" col="1" row="0"/>
+            </cl:output>
+            <cl:output std:sid="output-1c077fff" style="text-align:center;" value="=">
+              <cl:formdata std:sid="f-data-0b1758fc" col="3" row="0"/>
+            </cl:output>
+            <cl:formlayout std:sid="f-layout-f2c4fcca">
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="30" shadecolor="transparent" shadetype="NONE"/>
+              <cl:columns length="1" unit="FRACTION"/>
+              <cl:columns length="30"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+          <cl:xylayout std:sid="xylayout-57e984c3"/>
+        </cl:group>
+      </cl:tabitem>
+    </cl:tabfolder>
+    <cl:xylayout std:sid="xylayout-0ab66aa4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

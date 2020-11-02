@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.bind.BindContext.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="451" startLine="5" endLine="22"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="BindContext" description="바인드 문맥" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="45" endIndex="56" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="evaluate">
+              <value xsi:type="index:FunctionVariableSymbol" name="evaluate" originalSymbolName="__anonymous2">
+                <region startIndex="232" endIndex="239"/>
+              </value>
+            </symbols>
+            <symbols key="evaluateExpr">
+              <value xsi:type="index:FunctionVariableSymbol" name="evaluateExpr" originalSymbolName="__anonymous3">
+                <region startIndex="412" endIndex="423"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.bind.BindContext">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.bind.BindContext" originalSymbolName="__anonymous1">
+          <region startIndex="31" endIndex="41"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="evaluate" description="이 바인딩 문맥에서 표현식을 실행합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="243" endIndex="264" startLine="13" endLine="13"/>
+          <params name="expression" description="실행할 표현 식." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="252" endIndex="261" startLine="13" endLine="13"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="evaluateExpr" description="이 바인딩 문맥에서 표현식을 실행합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="427" endIndex="448" startLine="20" endLine="20"/>
+          <params name="expression" description="실행할 표현 식." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="436" endIndex="445" startLine="20" endLine="20"/>
+            <inferredType name="cpr.expression.Expression" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="45" endIndex="56" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="56" endIndex="56"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="243" endIndex="264" startLine="13" endLine="13"/>
+        <childScopes>
+          <region startIndex="264" endIndex="264"/>
+          <symbolMap key="expression">
+            <value xsi:type="index:ParameterSymbol" name="expression" description="실행할 표현 식." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="252" endIndex="261" startLine="13" endLine="13"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="427" endIndex="448" startLine="20" endLine="20"/>
+        <childScopes>
+          <region startIndex="448" endIndex="448"/>
+          <symbolMap key="expression">
+            <value xsi:type="index:ParameterSymbol" name="expression" description="실행할 표현 식." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="436" endIndex="445" startLine="20" endLine="20"/>
+              <inferredType name="cpr.expression.Expression" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.bind.BindContext">
+      <value xsi:type="index:FunctionSymbol" name="cpr.bind.BindContext" description="바인드 문맥" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="31" endIndex="41"/>
+        <prototype>
+          <symbols key="evaluate">
+            <value xsi:type="index:FunctionVariableSymbol" name="evaluate" originalSymbolName="__anonymous2">
+              <region startIndex="232" endIndex="239"/>
+            </value>
+          </symbols>
+          <symbols key="evaluateExpr">
+            <value xsi:type="index:FunctionVariableSymbol" name="evaluateExpr" originalSymbolName="__anonymous3">
+              <region startIndex="412" endIndex="423"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

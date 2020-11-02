@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/eb6-preview.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="39" endIndex="533" startLine="5" endLine="25"/>
+      <symbolMap key="EB6PreviewContext">
+        <value xsi:type="index:FunctionSymbol" name="EB6PreviewContext" canBeUsedAsConstructor="false">
+          <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="64" startLine="5" endLine="5"/>
+          <prototype>
+            <symbols key="openAppEditor">
+              <value xsi:type="index:FunctionVariableSymbol" name="openAppEditor" originalSymbolName="__anonymous1">
+                <region startIndex="175" endIndex="187"/>
+              </value>
+            </symbols>
+            <symbols key="launch">
+              <value xsi:type="index:FunctionVariableSymbol" name="launch" originalSymbolName="__anonymous2">
+                <region startIndex="319" endIndex="324"/>
+              </value>
+            </symbols>
+            <symbols key="isEmbeddedPreviewEditor">
+              <value xsi:type="index:VariableSymbol" name="isEmbeddedPreviewEditor" description="Indicates whether the app is running under the embedded preview browser.">
+                <region startIndex="459" endIndex="481"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="openAppEditor" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="191" endIndex="207" startLine="12" endLine="12"/>
+          <params name="appId" description="App's ID the App id to open in IDE." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="200" endIndex="204" startLine="12" endLine="12"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="launch" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="328" endIndex="343" startLine="18" endLine="18"/>
+          <params name="path" description="Program or file path or an url to launch." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="337" endIndex="340" startLine="18" endLine="18"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="eb6Preview">
+        <value xsi:type="index:VariableSymbol" name="eb6Preview">
+          <region startIndex="497" endIndex="506"/>
+          <inferredType name="EB6PreviewContext" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/eb6-preview.js" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes name="EB6PreviewContext" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="68" endIndex="69"/>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="69" startLine="5" endLine="6"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="191" endIndex="207" startLine="12" endLine="12"/>
+        <childScopes>
+          <region startIndex="207" endIndex="207"/>
+          <symbolMap key="appId">
+            <value xsi:type="index:ParameterSymbol" name="appId" description="App's ID the App id to open in IDE." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="200" endIndex="204" startLine="12" endLine="12"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="328" endIndex="343" startLine="18" endLine="18"/>
+        <childScopes>
+          <region startIndex="343" endIndex="343"/>
+          <symbolMap key="path">
+            <value xsi:type="index:ParameterSymbol" name="path" description="Program or file path or an url to launch." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="337" endIndex="340" startLine="18" endLine="18"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="EB6PreviewContext">
+      <value xsi:type="index:FunctionSymbol" name="EB6PreviewContext" canBeUsedAsConstructor="false">
+        <region xsi:type="index:RegionWithLine" startIndex="48" endIndex="64" startLine="5" endLine="5"/>
+        <prototype>
+          <symbols key="openAppEditor">
+            <value xsi:type="index:FunctionVariableSymbol" name="openAppEditor" originalSymbolName="__anonymous1">
+              <region startIndex="175" endIndex="187"/>
+            </value>
+          </symbols>
+          <symbols key="launch">
+            <value xsi:type="index:FunctionVariableSymbol" name="launch" originalSymbolName="__anonymous2">
+              <region startIndex="319" endIndex="324"/>
+            </value>
+          </symbols>
+          <symbols key="isEmbeddedPreviewEditor">
+            <value xsi:type="index:VariableSymbol" name="isEmbeddedPreviewEditor" description="Indicates whether the app is running under the embedded preview browser.">
+              <region startIndex="459" endIndex="481"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="eb6Preview">
+      <value xsi:type="index:VariableSymbol" name="eb6Preview">
+        <region startIndex="497" endIndex="506"/>
+        <inferredType name="EB6PreviewContext" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/eb6-preview.js" instance="true"/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

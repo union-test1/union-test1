@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.TextArea.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="100" endIndex="2925" startLine="7" endLine="170"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="TextArea" description="textarea 여러 줄의 텍스트를 입력 할 수 있는 컨트롤. 텍스트에리어를 생성합니다." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="137" startLine="7" endLine="7"/>
+          <params name="id" description="텍스트에리어의 id" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="133" endIndex="134" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="placeholder">
+              <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="455" endIndex="465"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="maxLength">
+              <value xsi:type="index:VariableSymbol" name="maxLength" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력이 가능한 최대 문자 수를 반환합니다.. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력이 가능한 최대 문자 수를 설정합니다. 관련 속성 : [lengthUnit] lengthUnit 속성 기준으로 설정됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="770" endIndex="778"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoSelect">
+              <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1057" endIndex="1066"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="lengthUnit">
+              <value xsi:type="index:VariableSymbol" name="lengthUnit" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 편집 영역의 전체 문자열 길이의 단위를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 편집 영역의 전체 문자열 길이의 단위를 설정합니다. [char] : 문자의 길이. [utf8] : utf8 기준의 문자 byte size. [ascii] : ascii 기준의 문자 byte size. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1423" endIndex="1432"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="length">
+              <value xsi:type="index:VariableSymbol" name="length" description="&lt;b>Readonly&lt;/b> Textarea의 입력된 값(문자열)의 길이를 반환합니다.">
+                <region startIndex="1564" endIndex="1569"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="imeMode">
+              <value xsi:type="index:VariableSymbol" name="imeMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> IE, FireFox 브라우저에서 한영 변환 설정을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> IE, FireFox 브라우저 상에서 한영 변환을 설정합니다. &lt;br> [auto] : 현재 inputbox의 ime 설정에 대해 아무것도 하지않음. [active] : 기본 값으로 한글을 입력받습니다. &lt;br> [inactive] : 기본 값으로 영문을 입력받습니다.&lt;br> [disabled] : 영문만을 입력받습니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2004" endIndex="2010"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="autoSkip">
+              <value xsi:type="index:VariableSymbol" name="autoSkip" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력된 문자열의 길이가 maxLength 도달했을 경우 다음 컨트롤로 포커스 이동 여부를 반환 합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력된 문자열의 길이가 maxLength 도달했을 경우 다음 컨트롤로 포커스 이동 여부를 설정합니다. 이 기능은 키보드의 영문,숫자,기호에 한하여 정상 동작합니다. 관련 속성 : [maxLength] maxLength 속성이 존재 할 시 해당 속성이 동작합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2428" endIndex="2435"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="spellCheck">
+              <value xsi:type="index:VariableSymbol" name="spellCheck" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 영문 철자법과 문법 검사하는 기능에 대한 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 브라우저에서 영문 철자법과 문법을 검사하는 기능을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2713" endIndex="2722"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="scrollToBottom">
+              <value xsi:type="index:FunctionVariableSymbol" name="scrollToBottom" originalSymbolName="__anonymous2">
+                <region startIndex="2805" endIndex="2818"/>
+              </value>
+            </symbols>
+            <symbols key="scrollToTop">
+              <value xsi:type="index:FunctionVariableSymbol" name="scrollToTop" originalSymbolName="__anonymous3">
+                <region startIndex="2897" endIndex="2907"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.TextArea">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.TextArea" originalSymbolName="__anonymous1">
+          <region startIndex="113" endIndex="120"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="scrollToBottom" description="스크롤을 마지막 아래로 이동합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2822" endIndex="2833" startLine="163" endLine="163"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="scrollToTop" description="스크롤을 처음으로 이동합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2911" endIndex="2922" startLine="168" endLine="168"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="124" endIndex="137" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="137" endIndex="137"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="텍스트에리어의 id" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="133" endIndex="134" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2822" endIndex="2833" startLine="163" endLine="163"/>
+        <childScopes>
+          <region startIndex="2833" endIndex="2833"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2911" endIndex="2922" startLine="168" endLine="168"/>
+        <childScopes>
+          <region startIndex="2922" endIndex="2922"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.TextArea">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.TextArea" description="textarea 여러 줄의 텍스트를 입력 할 수 있는 컨트롤. 텍스트에리어를 생성합니다." baseSymbolName="cpr.controls.TextEditor" anonymousFunction="true">
+        <region startIndex="113" endIndex="120"/>
+        <params name="id" description="텍스트에리어의 id">
+          <region xsi:type="index:RegionWithLine" startIndex="133" endIndex="134" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="placeholder">
+            <value xsi:type="index:VariableSymbol" name="placeholder" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설명 또는 예상된 값에 대한 문구(힌트)를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="455" endIndex="465"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="maxLength">
+            <value xsi:type="index:VariableSymbol" name="maxLength" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력이 가능한 최대 문자 수를 반환합니다.. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력이 가능한 최대 문자 수를 설정합니다. 관련 속성 : [lengthUnit] lengthUnit 속성 기준으로 설정됩니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="770" endIndex="778"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoSelect">
+            <value xsi:type="index:VariableSymbol" name="autoSelect" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 포커스 될 시 편집 영역의 데이터 전체 선택 여부를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1057" endIndex="1066"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="lengthUnit">
+            <value xsi:type="index:VariableSymbol" name="lengthUnit" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 편집 영역의 전체 문자열 길이의 단위를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 편집 영역의 전체 문자열 길이의 단위를 설정합니다. [char] : 문자의 길이. [utf8] : utf8 기준의 문자 byte size. [ascii] : ascii 기준의 문자 byte size. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1423" endIndex="1432"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="length">
+            <value xsi:type="index:VariableSymbol" name="length" description="&lt;b>Readonly&lt;/b> Textarea의 입력된 값(문자열)의 길이를 반환합니다.">
+              <region startIndex="1564" endIndex="1569"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="imeMode">
+            <value xsi:type="index:VariableSymbol" name="imeMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> IE, FireFox 브라우저에서 한영 변환 설정을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> IE, FireFox 브라우저 상에서 한영 변환을 설정합니다. &lt;br> [auto] : 현재 inputbox의 ime 설정에 대해 아무것도 하지않음. [active] : 기본 값으로 한글을 입력받습니다. &lt;br> [inactive] : 기본 값으로 영문을 입력받습니다.&lt;br> [disabled] : 영문만을 입력받습니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2004" endIndex="2010"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="autoSkip">
+            <value xsi:type="index:VariableSymbol" name="autoSkip" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 입력된 문자열의 길이가 maxLength 도달했을 경우 다음 컨트롤로 포커스 이동 여부를 반환 합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 입력된 문자열의 길이가 maxLength 도달했을 경우 다음 컨트롤로 포커스 이동 여부를 설정합니다. 이 기능은 키보드의 영문,숫자,기호에 한하여 정상 동작합니다. 관련 속성 : [maxLength] maxLength 속성이 존재 할 시 해당 속성이 동작합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2428" endIndex="2435"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="spellCheck">
+            <value xsi:type="index:VariableSymbol" name="spellCheck" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 영문 철자법과 문법 검사하는 기능에 대한 설정값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 브라우저에서 영문 철자법과 문법을 검사하는 기능을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2713" endIndex="2722"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="scrollToBottom">
+            <value xsi:type="index:FunctionVariableSymbol" name="scrollToBottom" originalSymbolName="__anonymous2">
+              <region startIndex="2805" endIndex="2818"/>
+            </value>
+          </symbols>
+          <symbols key="scrollToTop">
+            <value xsi:type="index:FunctionVariableSymbol" name="scrollToTop" originalSymbolName="__anonymous3">
+              <region startIndex="2897" endIndex="2907"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

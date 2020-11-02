@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.protocols.AbstractSubmission.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="35" endIndex="6658" startLine="5" endLine="282"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="AbstractSubmission" baseSymbolName="cpr.controls.Control" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="70" endIndex="83" startLine="5" endLine="5"/>
+          <params name="id" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="79" endIndex="80" startLine="5" endLine="5"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="contextPath">
+              <value xsi:type="index:VariableSymbol" name="contextPath" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 별도로 설정된 서버 URL 중 ContextPath를 리턴합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설정된 서버 URL 중 ContextPath를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="428" endIndex="438"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="action">
+              <value xsi:type="index:VariableSymbol" name="action" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> Data를 전송할 url을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> Data를 전송할 url을 지정합니다. ex) &quot;/action_data.do&quot; &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="721" endIndex="726"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="async">
+              <value xsi:type="index:VariableSymbol" name="async" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 비동기 여부의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 비동기 여부의 값을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="980" endIndex="984"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="withCredentials">
+              <value xsi:type="index:VariableSymbol" name="withCredentials" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> Cross Domain 요청시 자격증명 정보의 전송 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> Cross Domain 요청시 자격증명 정보의 전송 여부를 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1283" endIndex="1297"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="method">
+              <value xsi:type="index:VariableSymbol" name="method" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 지정된 http request method의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> http request method의 값을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1581" endIndex="1586"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="mediaType">
+              <value xsi:type="index:VariableSymbol" name="mediaType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> http에 content-type의 media-type의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> http에 content-type의 media-type의 값을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1887" endIndex="1895"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="encoding">
+              <value xsi:type="index:VariableSymbol" name="encoding" description="&lt;b>Readonly&lt;/b> http에 content-type의 문자 인코딩 값을 반환합니다.">
+                <region startIndex="2042" endIndex="2049"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="status">
+              <value xsi:type="index:VariableSymbol" name="status" description="&lt;b>Readonly&lt;/b> 서브미션의 통신 상태 값을 반환합니다. 서브미션은 세 가지의 상태(IDLE, SENDING, DONE)를 가질 수 있습니다.">
+                <region startIndex="2232" endIndex="2237"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="responseType">
+              <value xsi:type="index:VariableSymbol" name="responseType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 서브미션에 지정된 response data type을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 서브미션에 지정된 response data type을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2528" endIndex="2539"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="xhr">
+              <value xsi:type="index:VariableSymbol" name="xhr" description="&lt;b>Readonly&lt;/b> 통신에 사용되는 XMLHttpRequest 객체를 반환합니다.">
+                <region startIndex="2692" endIndex="2694"/>
+                <inferredType name="XMLHttpRequest" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/ajax.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="timeout">
+              <value xsi:type="index:VariableSymbol" name="timeout" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 서브미션의 timeout 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 지정된 시간을 초과하면 중단되며 timeout이벤트가 발생합니다. 입력되는 값은 ms(Millisecond)로 받습니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="3011" endIndex="3017"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="getRequestActionUrl">
+              <value xsi:type="index:FunctionVariableSymbol" name="getRequestActionUrl" originalSymbolName="__anonymous2">
+                <region startIndex="3319" endIndex="3337"/>
+              </value>
+            </symbols>
+            <symbols key="setRequestActionUrl">
+              <value xsi:type="index:FunctionVariableSymbol" name="setRequestActionUrl" originalSymbolName="__anonymous3">
+                <region startIndex="3932" endIndex="3950"/>
+              </value>
+            </symbols>
+            <symbols key="setDataRowHandler">
+              <value xsi:type="index:FunctionVariableSymbol" name="setDataRowHandler" originalSymbolName="__anonymous4">
+                <region startIndex="4445" endIndex="4461"/>
+              </value>
+            </symbols>
+            <symbols key="abort">
+              <value xsi:type="index:FunctionVariableSymbol" name="abort" originalSymbolName="__anonymous5">
+                <region startIndex="4559" endIndex="4563"/>
+              </value>
+            </symbols>
+            <symbols key="setHeader">
+              <value xsi:type="index:FunctionVariableSymbol" name="setHeader" originalSymbolName="__anonymous6">
+                <region startIndex="4724" endIndex="4732"/>
+              </value>
+            </symbols>
+            <symbols key="getHeader">
+              <value xsi:type="index:FunctionVariableSymbol" name="getHeader" originalSymbolName="__anonymous7">
+                <region startIndex="4905" endIndex="4913"/>
+              </value>
+            </symbols>
+            <symbols key="getHeaderNames">
+              <value xsi:type="index:FunctionVariableSymbol" name="getHeaderNames" originalSymbolName="__anonymous8">
+                <region startIndex="5059" endIndex="5072"/>
+              </value>
+            </symbols>
+            <symbols key="removeHeader">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeHeader" originalSymbolName="__anonymous9">
+                <region startIndex="5226" endIndex="5237"/>
+              </value>
+            </symbols>
+            <symbols key="removeAllHeader">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeAllHeader" originalSymbolName="__anonymous10">
+                <region startIndex="5332" endIndex="5346"/>
+              </value>
+            </symbols>
+            <symbols key="isSuccess">
+              <value xsi:type="index:FunctionVariableSymbol" name="isSuccess" originalSymbolName="__anonymous11">
+                <region startIndex="5481" endIndex="5489"/>
+              </value>
+            </symbols>
+            <symbols key="setRequestEncoder">
+              <value xsi:type="index:FunctionVariableSymbol" name="setRequestEncoder" originalSymbolName="__anonymous12">
+                <region startIndex="5820" endIndex="5836"/>
+              </value>
+            </symbols>
+            <symbols key="setResponseDecoder">
+              <value xsi:type="index:FunctionVariableSymbol" name="setResponseDecoder" originalSymbolName="__anonymous13">
+                <region startIndex="6329" endIndex="6346"/>
+              </value>
+            </symbols>
+            <symbols key="send">
+              <value xsi:type="index:FunctionVariableSymbol" name="send" originalSymbolName="__anonymous14">
+                <region startIndex="6530" endIndex="6533"/>
+              </value>
+            </symbols>
+            <symbols key="dispose">
+              <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous15">
+                <region startIndex="6634" endIndex="6640"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.protocols.AbstractSubmission">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.protocols.AbstractSubmission" originalSymbolName="__anonymous1">
+          <region startIndex="49" endIndex="66"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getRequestActionUrl" description="서브미션 요청이 완료될 때 마다 초기화되는 서버로 요청할 전체 URL 정보를 반환합니다. 결과 값이 null인 경우 Submission이 send될 때 환경변수(default.js의 protocol.submission)에 설정된 contextPath 값과 Submission에 설정된 action 값이 합쳐진 URL로 자동설정됩니다." returnDescription="서버로 전송할 전체 URL." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3341" endIndex="3352" startLine="188" endLine="188"/>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="setRequestActionUrl" description="서브미션 요청이 완료될 때 마다 초기화되는 서버로 요청할 전체 URL 정보를 설정합니다. 설정 값이 null인 경우 Submission이 send될 때 환경변수(default.js의 protocol.submission)에 설정된 contextPath 값과 Submission에 설정된 action 값이 합쳐진 URL로 자동설정됩니다. 설정 값이 null이 아닌 경우 Submission이 send될 때 설정된 URL을 이용하여 서버와 통신합니다. 설정된 URL은 서브미션 요청이 완료될 때 마다 null로 초기화됩니다. &lt;pre>&lt;code>var submission = app.lookup(&quot;sub_main&quot;); submission.setRequestActionUrl(&quot;http://test.exbuilder.co.kr/&quot; + submission.action); submission.send();&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3954" endIndex="3971" startLine="201" endLine="201"/>
+          <params name="action" description="서버로 요청할 전체 URL." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3963" endIndex="3968" startLine="201" endLine="201"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="setDataRowHandler" description="HTTPRequest로 전송할 데이터를 DataSet의 Row별로 가공할 수 있는 Handler를 등록합니다. &lt;pre>&lt;code>submission.setDataRowHandler(function(rowdata)  {&#xA;      var additionalData = {};&#xA;      var columnValue = rowdata.getValue(&quot;columnName&quot;);&#xA;      additionalData['param'] = columnValue;&#xA;   return additionalData;&#xA;   } );&lt;/code>&lt;/pre>" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4465" endIndex="4490" startLine="213" endLine="213"/>
+          <params name="dataRowHandler" description="DataSet의 개별 Row의 Handler." symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4474" endIndex="4487" startLine="213" endLine="213"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="cpr.protocols.DataSetRow" variableName="rowdata" instance="true" documentedType="true"/>
+              <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </typeParameters>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="abort" description="통신을 중단합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4567" endIndex="4578" startLine="218" endLine="218"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="setHeader" description="request header의 값을 지정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4736" endIndex="4758" startLine="225" endLine="225"/>
+          <params name="name" description="헤더의 이름" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4745" endIndex="4748" startLine="225" endLine="225"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="헤더의 값" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4751" endIndex="4755" startLine="225" endLine="225"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="getHeader" description="request header의 값을 반환합니다." returnDescription="header의 값." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4917" endIndex="4932" startLine="232" endLine="232"/>
+          <params name="name" description="헤더의 이름." symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4926" endIndex="4929" startLine="232" endLine="232"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="getHeaderNames" description="지정된 request header들의 이름들을 반환합니다." returnDescription="header 명의 배열." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5076" endIndex="5087" startLine="238" endLine="238"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="removeHeader" description="지정한 이름의 헤더를 제거합니다." returnDescription="제거한 헤더의 값." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5241" endIndex="5256" startLine="245" endLine="245"/>
+          <params name="name" description="헤더의 이름" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5250" endIndex="5253" startLine="245" endLine="245"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="removeAllHeader" description="지정된 헤더를 전부 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5350" endIndex="5361" startLine="250" endLine="250"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous11">
+        <value xsi:type="index:FunctionSymbol" name="isSuccess" description="서브미션의 성공여부를 반환합니다." returnDescription="성공 : true, 실패 : false" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5493" endIndex="5504" startLine="256" endLine="256"/>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous12">
+        <value xsi:type="index:FunctionSymbol" name="setRequestEncoder" description="서버로 전송하는 데이터를 별도의 형식으로 Encoding할 수 있는 함수를 등록합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="5840" endIndex="5865" startLine="262" endLine="262"/>
+          <params name="requestEncoder" description="(submission:cpr.protocols.Submission, data: {} |string) => Promise&lt; {key:string, content:{}|string} > | {key:string, content:{}|string} 형식의 callback handler" symbolInScope="//@hotIndex/@rootScope/@childScopes.11/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="5849" endIndex="5862" startLine="262" endLine="262"/>
+            <inferredType name="cpr.protocols.RequestEncoder" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous13">
+        <value xsi:type="index:FunctionSymbol" name="setResponseDecoder" description="서버로 부터 전송받은 eXbuilder6에서 지원하지 않는 형식의 데이터를 eXbuilder6에서 지원하는 형식으로 변환하거나 자체적으로 처리할 수 있는 Decoding 함수를 등록합니다. ResponseDecoder가 등록된 Submission은 &quot;submit-load-progress&quot; 이벤트를 발생시키지 않습니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6350" endIndex="6376" startLine="269" endLine="269"/>
+          <params name="responseDecoder" description="(submission:cpr.protocols.Submission, data:string) => Promise&lt; {contentType:string, content:{}|string} > | {contentType:string, content:{}|string} 형식의 callback handler" symbolInScope="//@hotIndex/@rootScope/@childScopes.12/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="6359" endIndex="6373" startLine="269" endLine="269"/>
+            <inferredType name="cpr.protocols.ResponseDecoder" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous14">
+        <value xsi:type="index:FunctionSymbol" name="send" description="데이터를 전송합니다. 이미 동일한 서브미션으로 전송 중인 경우 실행되지 않습니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6537" endIndex="6548" startLine="275" endLine="275"/>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="cpr.events.CSubmissionEvent" instance="true" documentedType="true"/>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous15">
+        <value xsi:type="index:FunctionSymbol" name="dispose" description="객체에 담긴 정보를 파기하고, 객체도 삭제합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="6644" endIndex="6655" startLine="280" endLine="280"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="70" endIndex="83" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="83" endIndex="83"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="79" endIndex="80" startLine="5" endLine="5"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3341" endIndex="3352" startLine="188" endLine="188"/>
+        <childScopes>
+          <region startIndex="3352" endIndex="3352"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3954" endIndex="3971" startLine="201" endLine="201"/>
+        <childScopes>
+          <region startIndex="3971" endIndex="3971"/>
+          <symbolMap key="action">
+            <value xsi:type="index:ParameterSymbol" name="action" description="서버로 요청할 전체 URL." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3963" endIndex="3968" startLine="201" endLine="201"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4465" endIndex="4490" startLine="213" endLine="213"/>
+        <childScopes>
+          <region startIndex="4490" endIndex="4490"/>
+          <symbolMap key="dataRowHandler">
+            <value xsi:type="index:ParameterSymbol" name="dataRowHandler" description="DataSet의 개별 Row의 Handler." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4474" endIndex="4487" startLine="213" endLine="213"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="cpr.protocols.DataSetRow" variableName="rowdata" instance="true" documentedType="true"/>
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </typeParameters>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4567" endIndex="4578" startLine="218" endLine="218"/>
+        <childScopes>
+          <region startIndex="4578" endIndex="4578"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4736" endIndex="4758" startLine="225" endLine="225"/>
+        <childScopes>
+          <region startIndex="4758" endIndex="4758"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="헤더의 이름" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4745" endIndex="4748" startLine="225" endLine="225"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="헤더의 값" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="4751" endIndex="4755" startLine="225" endLine="225"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4917" endIndex="4932" startLine="232" endLine="232"/>
+        <childScopes>
+          <region startIndex="4932" endIndex="4932"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="헤더의 이름." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4926" endIndex="4929" startLine="232" endLine="232"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5076" endIndex="5087" startLine="238" endLine="238"/>
+        <childScopes>
+          <region startIndex="5087" endIndex="5087"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5241" endIndex="5256" startLine="245" endLine="245"/>
+        <childScopes>
+          <region startIndex="5256" endIndex="5256"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="헤더의 이름" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5250" endIndex="5253" startLine="245" endLine="245"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5350" endIndex="5361" startLine="250" endLine="250"/>
+        <childScopes>
+          <region startIndex="5361" endIndex="5361"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5493" endIndex="5504" startLine="256" endLine="256"/>
+        <childScopes>
+          <region startIndex="5504" endIndex="5504"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.12/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="5840" endIndex="5865" startLine="262" endLine="262"/>
+        <childScopes>
+          <region startIndex="5865" endIndex="5865"/>
+          <symbolMap key="requestEncoder">
+            <value xsi:type="index:ParameterSymbol" name="requestEncoder" description="(submission:cpr.protocols.Submission, data: {} |string) => Promise&lt; {key:string, content:{}|string} > | {key:string, content:{}|string} 형식의 callback handler" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.12/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="5849" endIndex="5862" startLine="262" endLine="262"/>
+              <inferredType name="cpr.protocols.RequestEncoder" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.13/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6350" endIndex="6376" startLine="269" endLine="269"/>
+        <childScopes>
+          <region startIndex="6376" endIndex="6376"/>
+          <symbolMap key="responseDecoder">
+            <value xsi:type="index:ParameterSymbol" name="responseDecoder" description="(submission:cpr.protocols.Submission, data:string) => Promise&lt; {contentType:string, content:{}|string} > | {contentType:string, content:{}|string} 형식의 callback handler" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.13/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="6359" endIndex="6373" startLine="269" endLine="269"/>
+              <inferredType name="cpr.protocols.ResponseDecoder" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.14/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6537" endIndex="6548" startLine="275" endLine="275"/>
+        <childScopes>
+          <region startIndex="6548" endIndex="6548"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.15/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="6644" endIndex="6655" startLine="280" endLine="280"/>
+        <childScopes>
+          <region startIndex="6655" endIndex="6655"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.protocols.AbstractSubmission">
+      <value xsi:type="index:FunctionSymbol" name="cpr.protocols.AbstractSubmission" baseSymbolName="cpr.controls.Control" anonymousFunction="true">
+        <region startIndex="49" endIndex="66"/>
+        <params name="id" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="79" endIndex="80" startLine="5" endLine="5"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="contextPath">
+            <value xsi:type="index:VariableSymbol" name="contextPath" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 별도로 설정된 서버 URL 중 ContextPath를 리턴합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 설정된 서버 URL 중 ContextPath를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="428" endIndex="438"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="action">
+            <value xsi:type="index:VariableSymbol" name="action" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> Data를 전송할 url을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> Data를 전송할 url을 지정합니다. ex) &quot;/action_data.do&quot; &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="721" endIndex="726"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="async">
+            <value xsi:type="index:VariableSymbol" name="async" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 비동기 여부의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 비동기 여부의 값을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="980" endIndex="984"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="withCredentials">
+            <value xsi:type="index:VariableSymbol" name="withCredentials" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> Cross Domain 요청시 자격증명 정보의 전송 여부를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> Cross Domain 요청시 자격증명 정보의 전송 여부를 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1283" endIndex="1297"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="method">
+            <value xsi:type="index:VariableSymbol" name="method" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 지정된 http request method의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> http request method의 값을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1581" endIndex="1586"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="mediaType">
+            <value xsi:type="index:VariableSymbol" name="mediaType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> http에 content-type의 media-type의 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> http에 content-type의 media-type의 값을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1887" endIndex="1895"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="encoding">
+            <value xsi:type="index:VariableSymbol" name="encoding" description="&lt;b>Readonly&lt;/b> http에 content-type의 문자 인코딩 값을 반환합니다.">
+              <region startIndex="2042" endIndex="2049"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="status">
+            <value xsi:type="index:VariableSymbol" name="status" description="&lt;b>Readonly&lt;/b> 서브미션의 통신 상태 값을 반환합니다. 서브미션은 세 가지의 상태(IDLE, SENDING, DONE)를 가질 수 있습니다.">
+              <region startIndex="2232" endIndex="2237"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="responseType">
+            <value xsi:type="index:VariableSymbol" name="responseType" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 서브미션에 지정된 response data type을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 서브미션에 지정된 response data type을 지정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2528" endIndex="2539"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="xhr">
+            <value xsi:type="index:VariableSymbol" name="xhr" description="&lt;b>Readonly&lt;/b> 통신에 사용되는 XMLHttpRequest 객체를 반환합니다.">
+              <region startIndex="2692" endIndex="2694"/>
+              <inferredType name="XMLHttpRequest" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/ajax.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="timeout">
+            <value xsi:type="index:VariableSymbol" name="timeout" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 서브미션의 timeout 값을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 지정된 시간을 초과하면 중단되며 timeout이벤트가 발생합니다. 입력되는 값은 ms(Millisecond)로 받습니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="3011" endIndex="3017"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="getRequestActionUrl">
+            <value xsi:type="index:FunctionVariableSymbol" name="getRequestActionUrl" originalSymbolName="__anonymous2">
+              <region startIndex="3319" endIndex="3337"/>
+            </value>
+          </symbols>
+          <symbols key="setRequestActionUrl">
+            <value xsi:type="index:FunctionVariableSymbol" name="setRequestActionUrl" originalSymbolName="__anonymous3">
+              <region startIndex="3932" endIndex="3950"/>
+            </value>
+          </symbols>
+          <symbols key="setDataRowHandler">
+            <value xsi:type="index:FunctionVariableSymbol" name="setDataRowHandler" originalSymbolName="__anonymous4">
+              <region startIndex="4445" endIndex="4461"/>
+            </value>
+          </symbols>
+          <symbols key="abort">
+            <value xsi:type="index:FunctionVariableSymbol" name="abort" originalSymbolName="__anonymous5">
+              <region startIndex="4559" endIndex="4563"/>
+            </value>
+          </symbols>
+          <symbols key="setHeader">
+            <value xsi:type="index:FunctionVariableSymbol" name="setHeader" originalSymbolName="__anonymous6">
+              <region startIndex="4724" endIndex="4732"/>
+            </value>
+          </symbols>
+          <symbols key="getHeader">
+            <value xsi:type="index:FunctionVariableSymbol" name="getHeader" originalSymbolName="__anonymous7">
+              <region startIndex="4905" endIndex="4913"/>
+            </value>
+          </symbols>
+          <symbols key="getHeaderNames">
+            <value xsi:type="index:FunctionVariableSymbol" name="getHeaderNames" originalSymbolName="__anonymous8">
+              <region startIndex="5059" endIndex="5072"/>
+            </value>
+          </symbols>
+          <symbols key="removeHeader">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeHeader" originalSymbolName="__anonymous9">
+              <region startIndex="5226" endIndex="5237"/>
+            </value>
+          </symbols>
+          <symbols key="removeAllHeader">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeAllHeader" originalSymbolName="__anonymous10">
+              <region startIndex="5332" endIndex="5346"/>
+            </value>
+          </symbols>
+          <symbols key="isSuccess">
+            <value xsi:type="index:FunctionVariableSymbol" name="isSuccess" originalSymbolName="__anonymous11">
+              <region startIndex="5481" endIndex="5489"/>
+            </value>
+          </symbols>
+          <symbols key="setRequestEncoder">
+            <value xsi:type="index:FunctionVariableSymbol" name="setRequestEncoder" originalSymbolName="__anonymous12">
+              <region startIndex="5820" endIndex="5836"/>
+            </value>
+          </symbols>
+          <symbols key="setResponseDecoder">
+            <value xsi:type="index:FunctionVariableSymbol" name="setResponseDecoder" originalSymbolName="__anonymous13">
+              <region startIndex="6329" endIndex="6346"/>
+            </value>
+          </symbols>
+          <symbols key="send">
+            <value xsi:type="index:FunctionVariableSymbol" name="send" originalSymbolName="__anonymous14">
+              <region startIndex="6530" endIndex="6533"/>
+            </value>
+          </symbols>
+          <symbols key="dispose">
+            <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous15">
+              <region startIndex="6634" endIndex="6640"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

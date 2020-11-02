@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CSubmissionEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="193" endIndex="1004" startLine="11" endLine="40"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CSubmissionEvent" description="서브미션에서 발생하는 이벤트. 이벤트 객체를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="223" endIndex="247" startLine="11" endLine="11"/>
+          <params name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="232" endIndex="235" startLine="11" endLine="11"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="238" endIndex="244" startLine="11" endLine="11"/>
+            <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="cause">
+              <value xsi:type="index:VariableSymbol" name="cause" description="&lt;b>Readonly&lt;/b> &quot;submit-error&quot; 이벤트의 원인 error 객체. &quot;submit-error&quot; 이벤트의 발생 원인이 Error에 의한 경우 발생한 Error 객체를 리턴합니다.">
+                <region startIndex="498" endIndex="502"/>
+                <inferredType name="Error" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="loaded">
+              <value xsi:type="index:VariableSymbol" name="loaded" description="&lt;b>Readonly&lt;/b> 업로드 또는 다운로드 된 콘텐츠의 크기. submit-progress 또는 submit-upload-progress 유형의 서브미션 이벤트 인 경우에만 제공됩니다. 서버가 크기 정보를 제공하지 않는 경우 -1이 리턴됩니다.">
+                <region startIndex="737" endIndex="742"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="total">
+              <value xsi:type="index:VariableSymbol" name="total" description="&lt;b>Readonly&lt;/b> 업로드 또는 다운로드해야 할 총 콘텐츠의 크기. submit-progress 또는 submit-upload-progress 유형의 서브미션 이벤트 인 경우에만 제공됩니다. 서버가 크기 정보를 제공하지 않는 경우 -1이 리턴됩니다.">
+                <region startIndex="982" endIndex="986"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CSubmissionEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CSubmissionEvent" originalSymbolName="__anonymous1">
+          <region startIndex="204" endIndex="219"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="223" endIndex="247" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="247" endIndex="247"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="232" endIndex="235" startLine="11" endLine="11"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="238" endIndex="244" startLine="11" endLine="11"/>
+              <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CSubmissionEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CSubmissionEvent" description="서브미션에서 발생하는 이벤트. 이벤트 객체를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="204" endIndex="219"/>
+        <params name="type" description="이벤트의 유형, e.g. &quot;click&quot;. ~~~js var e = new cpr.events.MouseEvent(&quot;click&quot;); ~~~">
+          <region xsi:type="index:RegionWithLine" startIndex="232" endIndex="235" startLine="11" endLine="11"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="238" endIndex="244" startLine="11" endLine="11"/>
+          <inferredType name="cpr.events.CEventOption" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="cause">
+            <value xsi:type="index:VariableSymbol" name="cause" description="&lt;b>Readonly&lt;/b> &quot;submit-error&quot; 이벤트의 원인 error 객체. &quot;submit-error&quot; 이벤트의 발생 원인이 Error에 의한 경우 발생한 Error 객체를 리턴합니다.">
+              <region startIndex="498" endIndex="502"/>
+              <inferredType name="Error" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="loaded">
+            <value xsi:type="index:VariableSymbol" name="loaded" description="&lt;b>Readonly&lt;/b> 업로드 또는 다운로드 된 콘텐츠의 크기. submit-progress 또는 submit-upload-progress 유형의 서브미션 이벤트 인 경우에만 제공됩니다. 서버가 크기 정보를 제공하지 않는 경우 -1이 리턴됩니다.">
+              <region startIndex="737" endIndex="742"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="total">
+            <value xsi:type="index:VariableSymbol" name="total" description="&lt;b>Readonly&lt;/b> 업로드 또는 다운로드해야 할 총 콘텐츠의 크기. submit-progress 또는 submit-upload-progress 유형의 서브미션 이벤트 인 경우에만 제공됩니다. 서버가 크기 정보를 제공하지 않는 경우 -1이 리턴됩니다.">
+              <region startIndex="982" endIndex="986"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

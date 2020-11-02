@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-134f9b43" version="1.0.0.0">
+  <head std:sid="head-825fa27d">
+    <title>Host</title>
+    <screen std:sid="screen-1b0a7d00" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-74ac0919" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-b5c26d9b" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-d7f0c326">
+      <cl:dataset std:sid="d-set-f86cae3d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn name="gender"/>
+          <cl:datacolumn datatype="number" name="age"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[스티브 잡스]]></cl:datavalue>
+            <cl:datavalue columnname="gender"><![CDATA[male]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[42]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[에이미 파울러]]></cl:datavalue>
+            <cl:datavalue columnname="gender"><![CDATA[female]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[32]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[홍길동]]></cl:datavalue>
+            <cl:datavalue columnname="gender"><![CDATA[male]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[41]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name"><![CDATA[마리아 스크워도프스카 퀴리]]></cl:datavalue>
+            <cl:datavalue columnname="gender"><![CDATA[female]]></cl:datavalue>
+            <cl:datavalue columnname="age"><![CDATA[32]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-6e79dc70" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-20102306" id="grd1" autofit="0" columnMovable="false" columnResizable="false" datasetid="ds1" readonly="true">
+      <cl:listener std:sid="listener-918c6e04" handler="onGrd1CellClick" name="cell-click"/>
+      <cl:xylayoutdata std:sid="xyl-data-da66d646" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-8f0b105b" width="258px"/>
+      <cl:gridcolumn std:sid="g-column-0c56aa93"/>
+      <cl:gridheader std:sid="gh-band-06f7ccaa">
+        <cl:gridrow std:sid="g-row-0df2f0a9"/>
+        <cl:gridcell std:sid="gh-cell-ab3f46e2" colindex="0" colspan="2" rowindex="0" rowspan="1" filterable="false" sortable="false" targetcolumnname="name" text="명단"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-7a433d32">
+        <cl:gridrow std:sid="g-row-f920ff82"/>
+        <cl:gridcell std:sid="gd-cell-b149580a" colindex="0" rowindex="0" columnname="name">
+          <cl:output std:sid="output-66c41874">
+            <cl:expbind category="PROPERTY" property="value" expression="name&#xA;+ &quot; (&quot; &#xA;+ switch(gender){&#xA;&#x9;case &quot;female&quot; : &quot;여&quot;&#xA;&#x9;case &quot;male&quot; : &quot;남&quot;&#xA;}&#xA;+ &quot;, &quot;&#xA;+ age&#xA;+ &quot;세)&quot;"/>
+          </cl:output>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-670adb6c" colindex="1" rowindex="0" style="color:#333333;">
+          <cl:button std:sid="button-4f71cb8a" style="color:#333333;" value="편집">
+            <cl:listener std:sid="listener-b6b980a7" handler="onButtonClick2" name="click"/>
+          </cl:button>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-d20a0a16"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

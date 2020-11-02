@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.JSONBlob.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="12" endIndex="311" startLine="4" endLine="15"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="JSONBlob" baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="33" endIndex="44" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="toBlob">
+              <value xsi:type="index:FunctionVariableSymbol" name="toBlob" originalSymbolName="__anonymous2">
+                <region startIndex="267" endIndex="272"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.JSONBlob">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.JSONBlob" originalSymbolName="__anonymous1">
+          <region startIndex="22" endIndex="29"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="toBlob" returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="276" endIndex="308" startLine="13" endLine="13"/>
+          <params name="value" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="285" endIndex="289" startLine="13" endLine="13"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="strEncoder" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="292" endIndex="301" startLine="13" endLine="13"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="String" variableName="strData" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <params name="op" optional="true" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="304" endIndex="305" startLine="13" endLine="13"/>
+            <inferredType name="cpr.utils.StringifyOption" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Blob" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="33" endIndex="44" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="44" endIndex="44"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="276" endIndex="308" startLine="13" endLine="13"/>
+        <childScopes>
+          <region startIndex="308" endIndex="308"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="285" endIndex="289" startLine="13" endLine="13"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="strEncoder">
+            <value xsi:type="index:ParameterSymbol" name="strEncoder" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="292" endIndex="301" startLine="13" endLine="13"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" variableName="strData" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+          <symbolMap key="op">
+            <value xsi:type="index:ParameterSymbol" name="op" optional="true" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="304" endIndex="305" startLine="13" endLine="13"/>
+              <inferredType name="cpr.utils.StringifyOption" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.utils.JSONBlob">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.JSONBlob" baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="22" endIndex="29"/>
+        <prototype>
+          <symbols key="toBlob">
+            <value xsi:type="index:FunctionVariableSymbol" name="toBlob" originalSymbolName="__anonymous2">
+              <region startIndex="267" endIndex="272"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

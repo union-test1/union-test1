@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.ObjectMap.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="82" endIndex="2727" startLine="6" endLine="135"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ObjectMap" description="Java의 HashMap과 유사한 맵 객체. 일반 JSON 객체와 달리, 키로 임의의 객체를 이용할 수 있습니다." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="104" endIndex="115" startLine="6" endLine="6"/>
+          <prototype>
+            <symbols key="indexOfKey">
+              <value xsi:type="index:FunctionVariableSymbol" name="indexOfKey" originalSymbolName="__anonymous2">
+                <region startIndex="271" endIndex="280"/>
+              </value>
+            </symbols>
+            <symbols key="constainsKey">
+              <value xsi:type="index:FunctionVariableSymbol" name="constainsKey" originalSymbolName="__anonymous3">
+                <region startIndex="417" endIndex="428"/>
+              </value>
+            </symbols>
+            <symbols key="get">
+              <value xsi:type="index:FunctionVariableSymbol" name="get" originalSymbolName="__anonymous4">
+                <region startIndex="558" endIndex="560"/>
+              </value>
+            </symbols>
+            <symbols key="getEntry">
+              <value xsi:type="index:FunctionVariableSymbol" name="getEntry" originalSymbolName="__anonymous5">
+                <region startIndex="735" endIndex="742"/>
+              </value>
+            </symbols>
+            <symbols key="keys">
+              <value xsi:type="index:FunctionVariableSymbol" name="keys" originalSymbolName="__anonymous6">
+                <region startIndex="843" endIndex="846"/>
+              </value>
+            </symbols>
+            <symbols key="findKey">
+              <value xsi:type="index:FunctionVariableSymbol" name="findKey" originalSymbolName="__anonymous7">
+                <region startIndex="997" endIndex="1003"/>
+              </value>
+            </symbols>
+            <symbols key="values">
+              <value xsi:type="index:FunctionVariableSymbol" name="values" originalSymbolName="__anonymous8">
+                <region startIndex="1107" endIndex="1112"/>
+              </value>
+            </symbols>
+            <symbols key="findValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="findValue" originalSymbolName="__anonymous9">
+                <region startIndex="1265" endIndex="1273"/>
+              </value>
+            </symbols>
+            <symbols key="put">
+              <value xsi:type="index:FunctionVariableSymbol" name="put" originalSymbolName="__anonymous10">
+                <region startIndex="1423" endIndex="1425"/>
+              </value>
+            </symbols>
+            <symbols key="insert">
+              <value xsi:type="index:FunctionVariableSymbol" name="insert" originalSymbolName="__anonymous11">
+                <region startIndex="1609" endIndex="1614"/>
+              </value>
+            </symbols>
+            <symbols key="size">
+              <value xsi:type="index:FunctionVariableSymbol" name="size" originalSymbolName="__anonymous12">
+                <region startIndex="1737" endIndex="1740"/>
+              </value>
+            </symbols>
+            <symbols key="remove">
+              <value xsi:type="index:FunctionVariableSymbol" name="remove" originalSymbolName="__anonymous13">
+                <region startIndex="1904" endIndex="1909"/>
+              </value>
+            </symbols>
+            <symbols key="replace">
+              <value xsi:type="index:FunctionVariableSymbol" name="replace" originalSymbolName="__anonymous14">
+                <region startIndex="2167" endIndex="2173"/>
+              </value>
+            </symbols>
+            <symbols key="removeAll">
+              <value xsi:type="index:FunctionVariableSymbol" name="removeAll" originalSymbolName="__anonymous15">
+                <region startIndex="2278" endIndex="2286"/>
+              </value>
+            </symbols>
+            <symbols key="toArray">
+              <value xsi:type="index:FunctionVariableSymbol" name="toArray" originalSymbolName="__anonymous16">
+                <region startIndex="2431" endIndex="2437"/>
+              </value>
+            </symbols>
+            <symbols key="forEach">
+              <value xsi:type="index:FunctionVariableSymbol" name="forEach" originalSymbolName="__anonymous17">
+                <region startIndex="2595" endIndex="2601"/>
+              </value>
+            </symbols>
+            <symbols key="isEmpty">
+              <value xsi:type="index:FunctionVariableSymbol" name="isEmpty" originalSymbolName="__anonymous18">
+                <region startIndex="2703" endIndex="2709"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.ObjectMap">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.ObjectMap" originalSymbolName="__anonymous1">
+          <region startIndex="92" endIndex="100"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="indexOfKey" description="입력된 key의 인덱스를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="284" endIndex="298" startLine="14" endLine="14"/>
+          <params name="key" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="293" endIndex="295" startLine="14" endLine="14"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="constainsKey" description="입력된 key를 포함하고 있는지 여부를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="432" endIndex="446" startLine="21" endLine="21"/>
+          <params name="key" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="441" endIndex="443" startLine="21" endLine="21"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="get" description="입력된 key의 value를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="564" endIndex="578" startLine="28" endLine="28"/>
+          <params name="key" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="573" endIndex="575" startLine="28" endLine="28"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="getEntry" description="입력된 index의 key,value객체를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="746" endIndex="762" startLine="38" endLine="38"/>
+          <params name="index" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="755" endIndex="759" startLine="38" endLine="38"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.ObjectMap.js" instance="true" documentedType="true">
+            <selfDeclaringTypeSymbol classType="interface">
+              <region startIndex="657" endIndex="699"/>
+              <prototype>
+                <symbols key="key">
+                  <value xsi:type="index:VariableSymbol" name="key">
+                    <region startIndex="664" endIndex="666"/>
+                    <inferredType name="Object" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+                <symbols key="value">
+                  <value xsi:type="index:VariableSymbol" name="value">
+                    <region startIndex="682" endIndex="686"/>
+                    <inferredType name="Object" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+              </prototype>
+            </selfDeclaringTypeSymbol>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="keys" description="key들의 배열을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="850" endIndex="861" startLine="44" endLine="44"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="findKey" description="입력된 조건을 통해 key를 찾아 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1007" endIndex="1024" startLine="51" endLine="51"/>
+          <params name="finder" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1016" endIndex="1021" startLine="51" endLine="51"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" variableName="child" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="values" description="value들의 배열을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1116" endIndex="1127" startLine="57" endLine="57"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="findValue" description="입력된 조건을 통해 value를 찾아 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1277" endIndex="1294" startLine="64" endLine="64"/>
+          <params name="finder" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1286" endIndex="1291" startLine="64" endLine="64"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" variableName="child" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="put" description="key,value를 입력하여 ObjectMap에 추가합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1429" endIndex="1450" startLine="71" endLine="71"/>
+          <params name="key" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1438" endIndex="1440" startLine="71" endLine="71"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1443" endIndex="1447" startLine="71" endLine="71"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous11">
+        <value xsi:type="index:FunctionSymbol" name="insert" description="입력된 인덱스에 key,value를 ObjectMap에 삽입합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1618" endIndex="1646" startLine="79" endLine="79"/>
+          <params name="index" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1627" endIndex="1631" startLine="79" endLine="79"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="key" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1634" endIndex="1636" startLine="79" endLine="79"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1639" endIndex="1643" startLine="79" endLine="79"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous12">
+        <value xsi:type="index:FunctionSymbol" name="size" description="ObjectMap에 저장된 크기를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1744" endIndex="1755" startLine="85" endLine="85"/>
+          <inferredReturnType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous13">
+        <value xsi:type="index:FunctionSymbol" name="remove" description="입력된 key에 해당되는 정보를 삭제합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1913" endIndex="1927" startLine="95" endLine="95"/>
+          <params name="key" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.12/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1922" endIndex="1924" startLine="95" endLine="95"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.ObjectMap.js" instance="true" documentedType="true">
+            <selfDeclaringTypeSymbol classType="interface">
+              <region startIndex="1826" endIndex="1868"/>
+              <prototype>
+                <symbols key="key">
+                  <value xsi:type="index:VariableSymbol" name="key">
+                    <region startIndex="1833" endIndex="1835"/>
+                    <inferredType name="Object" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+                <symbols key="value">
+                  <value xsi:type="index:VariableSymbol" name="value">
+                    <region startIndex="1851" endIndex="1855"/>
+                    <inferredType name="Object" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+              </prototype>
+            </selfDeclaringTypeSymbol>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous14">
+        <value xsi:type="index:FunctionSymbol" name="replace" description="이전 key를 통해 새 key,value를 교체합니다. 편의로 교체된 key,value를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2177" endIndex="2212" startLine="107" endLine="107"/>
+          <params name="oldKey" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2186" endIndex="2191" startLine="107" endLine="107"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="newKey" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2194" endIndex="2199" startLine="107" endLine="107"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="newValue" description="" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.13/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2202" endIndex="2209" startLine="107" endLine="107"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.ObjectMap.js" instance="true" documentedType="true">
+            <selfDeclaringTypeSymbol classType="interface">
+              <region startIndex="2089" endIndex="2131"/>
+              <prototype>
+                <symbols key="key">
+                  <value xsi:type="index:VariableSymbol" name="key">
+                    <region startIndex="2096" endIndex="2098"/>
+                    <inferredType name="Object" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+                <symbols key="value">
+                  <value xsi:type="index:VariableSymbol" name="value">
+                    <region startIndex="2114" endIndex="2118"/>
+                    <inferredType name="Object" instance="true" documentedType="true"/>
+                  </value>
+                </symbols>
+              </prototype>
+            </selfDeclaringTypeSymbol>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous15">
+        <value xsi:type="index:FunctionSymbol" name="removeAll" description="모든 key,value를 삭제합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2290" endIndex="2301" startLine="112" endLine="112"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous16">
+        <value xsi:type="index:FunctionSymbol" name="toArray" description="{key,value} 로 된 배열을 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2441" endIndex="2452" startLine="121" endLine="121"/>
+          <inferredReturnType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="Anonymous" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.ObjectMap.js" instance="true" documentedType="true">
+              <selfDeclaringTypeSymbol classType="interface">
+                <region startIndex="2350" endIndex="2392"/>
+                <prototype>
+                  <symbols key="key">
+                    <value xsi:type="index:VariableSymbol" name="key">
+                      <region startIndex="2357" endIndex="2359"/>
+                      <inferredType name="Object" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="value">
+                    <value xsi:type="index:VariableSymbol" name="value">
+                      <region startIndex="2375" endIndex="2379"/>
+                      <inferredType name="Object" instance="true" documentedType="true"/>
+                    </value>
+                  </symbols>
+                </prototype>
+              </selfDeclaringTypeSymbol>
+            </typeParameters>
+          </inferredReturnType>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous17">
+        <value xsi:type="index:FunctionSymbol" name="forEach" description="ObjectMap에 대한 forEach를 실행합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2605" endIndex="2620" startLine="127" endLine="127"/>
+          <params name="func" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.16/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2614" endIndex="2617" startLine="127" endLine="127"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" variableName="key" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Object" variableName="value" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Number" variableName="index" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous18">
+        <value xsi:type="index:FunctionSymbol" name="isEmpty" description="비어있는지 여부를 반환합니다." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2713" endIndex="2724" startLine="133" endLine="133"/>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="104" endIndex="115" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="115" endIndex="115"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="284" endIndex="298" startLine="14" endLine="14"/>
+        <childScopes>
+          <region startIndex="298" endIndex="298"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="293" endIndex="295" startLine="14" endLine="14"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="432" endIndex="446" startLine="21" endLine="21"/>
+        <childScopes>
+          <region startIndex="446" endIndex="446"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="441" endIndex="443" startLine="21" endLine="21"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="564" endIndex="578" startLine="28" endLine="28"/>
+        <childScopes>
+          <region startIndex="578" endIndex="578"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="573" endIndex="575" startLine="28" endLine="28"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="746" endIndex="762" startLine="38" endLine="38"/>
+        <childScopes>
+          <region startIndex="762" endIndex="762"/>
+          <symbolMap key="index">
+            <value xsi:type="index:ParameterSymbol" name="index" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="755" endIndex="759" startLine="38" endLine="38"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="850" endIndex="861" startLine="44" endLine="44"/>
+        <childScopes>
+          <region startIndex="861" endIndex="861"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1007" endIndex="1024" startLine="51" endLine="51"/>
+        <childScopes>
+          <region startIndex="1024" endIndex="1024"/>
+          <symbolMap key="finder">
+            <value xsi:type="index:ParameterSymbol" name="finder" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1016" endIndex="1021" startLine="51" endLine="51"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" variableName="child" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1116" endIndex="1127" startLine="57" endLine="57"/>
+        <childScopes>
+          <region startIndex="1127" endIndex="1127"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1277" endIndex="1294" startLine="64" endLine="64"/>
+        <childScopes>
+          <region startIndex="1294" endIndex="1294"/>
+          <symbolMap key="finder">
+            <value xsi:type="index:ParameterSymbol" name="finder" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1286" endIndex="1291" startLine="64" endLine="64"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" variableName="child" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1429" endIndex="1450" startLine="71" endLine="71"/>
+        <childScopes>
+          <region startIndex="1450" endIndex="1450"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.10/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1438" endIndex="1440" startLine="71" endLine="71"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.10/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1443" endIndex="1447" startLine="71" endLine="71"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1618" endIndex="1646" startLine="79" endLine="79"/>
+        <childScopes>
+          <region startIndex="1646" endIndex="1646"/>
+          <symbolMap key="index">
+            <value xsi:type="index:ParameterSymbol" name="index" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1627" endIndex="1631" startLine="79" endLine="79"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1634" endIndex="1636" startLine="79" endLine="79"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="1639" endIndex="1643" startLine="79" endLine="79"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.12/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1744" endIndex="1755" startLine="85" endLine="85"/>
+        <childScopes>
+          <region startIndex="1755" endIndex="1755"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.13/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1913" endIndex="1927" startLine="95" endLine="95"/>
+        <childScopes>
+          <region startIndex="1927" endIndex="1927"/>
+          <symbolMap key="key">
+            <value xsi:type="index:ParameterSymbol" name="key" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.13/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1922" endIndex="1924" startLine="95" endLine="95"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.14/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2177" endIndex="2212" startLine="107" endLine="107"/>
+        <childScopes>
+          <region startIndex="2212" endIndex="2212"/>
+          <symbolMap key="oldKey">
+            <value xsi:type="index:ParameterSymbol" name="oldKey" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2186" endIndex="2191" startLine="107" endLine="107"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="newKey">
+            <value xsi:type="index:ParameterSymbol" name="newKey" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2194" endIndex="2199" startLine="107" endLine="107"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="newValue">
+            <value xsi:type="index:ParameterSymbol" name="newValue" description="" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.14/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="2202" endIndex="2209" startLine="107" endLine="107"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.15/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2290" endIndex="2301" startLine="112" endLine="112"/>
+        <childScopes>
+          <region startIndex="2301" endIndex="2301"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.16/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2441" endIndex="2452" startLine="121" endLine="121"/>
+        <childScopes>
+          <region startIndex="2452" endIndex="2452"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.17/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2605" endIndex="2620" startLine="127" endLine="127"/>
+        <childScopes>
+          <region startIndex="2620" endIndex="2620"/>
+          <symbolMap key="func">
+            <value xsi:type="index:ParameterSymbol" name="func" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.17/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2614" endIndex="2617" startLine="127" endLine="127"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" variableName="key" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Object" variableName="value" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Number" variableName="index" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.18/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2713" endIndex="2724" startLine="133" endLine="133"/>
+        <childScopes>
+          <region startIndex="2724" endIndex="2724"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.utils.ObjectMap">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.ObjectMap" description="Java의 HashMap과 유사한 맵 객체. 일반 JSON 객체와 달리, 키로 임의의 객체를 이용할 수 있습니다." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="92" endIndex="100"/>
+        <prototype>
+          <symbols key="indexOfKey">
+            <value xsi:type="index:FunctionVariableSymbol" name="indexOfKey" originalSymbolName="__anonymous2">
+              <region startIndex="271" endIndex="280"/>
+            </value>
+          </symbols>
+          <symbols key="constainsKey">
+            <value xsi:type="index:FunctionVariableSymbol" name="constainsKey" originalSymbolName="__anonymous3">
+              <region startIndex="417" endIndex="428"/>
+            </value>
+          </symbols>
+          <symbols key="get">
+            <value xsi:type="index:FunctionVariableSymbol" name="get" originalSymbolName="__anonymous4">
+              <region startIndex="558" endIndex="560"/>
+            </value>
+          </symbols>
+          <symbols key="getEntry">
+            <value xsi:type="index:FunctionVariableSymbol" name="getEntry" originalSymbolName="__anonymous5">
+              <region startIndex="735" endIndex="742"/>
+            </value>
+          </symbols>
+          <symbols key="keys">
+            <value xsi:type="index:FunctionVariableSymbol" name="keys" originalSymbolName="__anonymous6">
+              <region startIndex="843" endIndex="846"/>
+            </value>
+          </symbols>
+          <symbols key="findKey">
+            <value xsi:type="index:FunctionVariableSymbol" name="findKey" originalSymbolName="__anonymous7">
+              <region startIndex="997" endIndex="1003"/>
+            </value>
+          </symbols>
+          <symbols key="values">
+            <value xsi:type="index:FunctionVariableSymbol" name="values" originalSymbolName="__anonymous8">
+              <region startIndex="1107" endIndex="1112"/>
+            </value>
+          </symbols>
+          <symbols key="findValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="findValue" originalSymbolName="__anonymous9">
+              <region startIndex="1265" endIndex="1273"/>
+            </value>
+          </symbols>
+          <symbols key="put">
+            <value xsi:type="index:FunctionVariableSymbol" name="put" originalSymbolName="__anonymous10">
+              <region startIndex="1423" endIndex="1425"/>
+            </value>
+          </symbols>
+          <symbols key="insert">
+            <value xsi:type="index:FunctionVariableSymbol" name="insert" originalSymbolName="__anonymous11">
+              <region startIndex="1609" endIndex="1614"/>
+            </value>
+          </symbols>
+          <symbols key="size">
+            <value xsi:type="index:FunctionVariableSymbol" name="size" originalSymbolName="__anonymous12">
+              <region startIndex="1737" endIndex="1740"/>
+            </value>
+          </symbols>
+          <symbols key="remove">
+            <value xsi:type="index:FunctionVariableSymbol" name="remove" originalSymbolName="__anonymous13">
+              <region startIndex="1904" endIndex="1909"/>
+            </value>
+          </symbols>
+          <symbols key="replace">
+            <value xsi:type="index:FunctionVariableSymbol" name="replace" originalSymbolName="__anonymous14">
+              <region startIndex="2167" endIndex="2173"/>
+            </value>
+          </symbols>
+          <symbols key="removeAll">
+            <value xsi:type="index:FunctionVariableSymbol" name="removeAll" originalSymbolName="__anonymous15">
+              <region startIndex="2278" endIndex="2286"/>
+            </value>
+          </symbols>
+          <symbols key="toArray">
+            <value xsi:type="index:FunctionVariableSymbol" name="toArray" originalSymbolName="__anonymous16">
+              <region startIndex="2431" endIndex="2437"/>
+            </value>
+          </symbols>
+          <symbols key="forEach">
+            <value xsi:type="index:FunctionVariableSymbol" name="forEach" originalSymbolName="__anonymous17">
+              <region startIndex="2595" endIndex="2601"/>
+            </value>
+          </symbols>
+          <symbols key="isEmpty">
+            <value xsi:type="index:FunctionVariableSymbol" name="isEmpty" originalSymbolName="__anonymous18">
+              <region startIndex="2703" endIndex="2709"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

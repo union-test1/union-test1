@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CMouseEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="126" endIndex="3921" startLine="7" endLine="167"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CMouseEvent" description="Mouse 이벤트 마우스 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="151" endIndex="175" startLine="7" endLine="7"/>
+          <params name="type" description="이벤트 유형" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="163" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트 옵션." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="172" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="altKey">
+              <value xsi:type="index:VariableSymbol" name="altKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 왼쪽 또는 오른쪽 Alt 키가 눌려 졌는지 여부를 나타내는 부울 값을 검색합니다.">
+                <region startIndex="381" endIndex="386"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="button">
+              <value xsi:type="index:VariableSymbol" name="button" description="&lt;b>Readonly&lt;/b> 마우스를 눌렀을 때 이벤트를 트리거 한 버튼 값을 반환합니다.&lt;br> left=0, wheel or middle=1, right=2, browserback button=3, browserforward button=4">
+                <region startIndex="611" endIndex="616"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="buttons">
+              <value xsi:type="index:VariableSymbol" name="buttons" description="&lt;b>Readonly&lt;/b> 이벤트가 트리거 될 때 마우스 또는 다른 입력 장치에서 어떤 버튼이 눌러 졌는지 여부를 반환합니다. no button=0, left=1, right=2, middel or wheel=4, browser back button=8, browser forward button=16">
+                <region startIndex="873" endIndex="879"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clientX">
+              <value xsi:type="index:VariableSymbol" name="clientX" description="&lt;b>Readonly&lt;/b> 응용 프로그램 클라이언트 영역 내에서 이벤트가 발생한 지점의 수평 좌표를 반환합니다 (페이지 내의 좌표와 반대).">
+                <region startIndex="1043" endIndex="1049"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="clientY">
+              <value xsi:type="index:VariableSymbol" name="clientY" description="&lt;b>Readonly&lt;/b> 응용 프로그램의 클라이언트 영역에서 이벤트가 발생한 지점의 수직 좌표를 반환합니다 (페이지 내의 좌표와 반대).">
+                <region startIndex="1212" endIndex="1218"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="ctrlKey">
+              <value xsi:type="index:VariableSymbol" name="ctrlKey" description="&lt;b>Readonly&lt;/b> 컨트롤 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false) 나타내는 부울을 반환합니다.">
+                <region startIndex="1379" endIndex="1385"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="metaKey">
+              <value xsi:type="index:VariableSymbol" name="metaKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 메타 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false)를 나타내는 Boolean을 반환">
+                <region startIndex="1560" endIndex="1566"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="movementX">
+              <value xsi:type="index:VariableSymbol" name="movementX" description="&lt;b>Readonly&lt;/b> 해당 이벤트와 이전 mousemove 이벤트 사이의 마우스 포인터의 X 좌표를 제공합니다.">
+                <region startIndex="1718" endIndex="1726"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="movementY">
+              <value xsi:type="index:VariableSymbol" name="movementY" description="&lt;b>Readonly&lt;/b> 해당 이벤트와 이전 mousemove 이벤트 사이의 마우스 포인터의 Y 좌표를 제공합니다.">
+                <region startIndex="1877" endIndex="1885"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="offsetX">
+              <value xsi:type="index:VariableSymbol" name="offsetX" description="&lt;b>Readonly&lt;/b> 해당 이벤트와 대상 노드의 패딩 가장자리 사이의 마우스 포인터의 X 좌표에 오프셋을 제공합니다.">
+                <region startIndex="2039" endIndex="2045"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="offsetY">
+              <value xsi:type="index:VariableSymbol" name="offsetY" description="&lt;b>Readonly&lt;/b> 해당 이벤트와 대상 노드의 패딩 가장자리 사이의 마우스 포인터의 Y 좌표에 오프셋을 제공합니다.">
+                <region startIndex="2199" endIndex="2205"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="pageX">
+              <value xsi:type="index:VariableSymbol" name="pageX" description="&lt;b>Readonly&lt;/b> 전체 문서를 기준으로 이벤트 픽셀의 X (가로) 좌표를 반환합니다.">
+                <region startIndex="2343" endIndex="2347"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="pageY">
+              <value xsi:type="index:VariableSymbol" name="pageY" description="&lt;b>Readonly&lt;/b> 전체 문서를 기준으로 이벤트의 픽셀 단위로 Y (수직) 좌표를 반환합니다.">
+                <region startIndex="2489" endIndex="2493"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="relatedTarget">
+              <value xsi:type="index:VariableSymbol" name="relatedTarget" description="&lt;b>Readonly&lt;/b> 이벤트에 대한 보조 타겟입니다 (있는 경우).">
+                <region startIndex="2624" endIndex="2636"/>
+                <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="screenX">
+              <value xsi:type="index:VariableSymbol" name="screenX" description="&lt;b>Readonly&lt;/b> 마우스 포인터의 가로 좌표 (오프셋)를 전역 (화면) 좌표로 제공합니다.">
+                <region startIndex="2782" endIndex="2788"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="screenY">
+              <value xsi:type="index:VariableSymbol" name="screenY" description="&lt;b>Readonly&lt;/b> 마우스 포인터의 전체 좌표 (화면) 좌표의 세로 좌표 (오프셋)를 제공합니다.">
+                <region startIndex="2932" endIndex="2938"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shiftKey">
+              <value xsi:type="index:VariableSymbol" name="shiftKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생할 때 shift 키가 눌 렸는지 (true) 또는 (false)를 나타냅니다.">
+                <region startIndex="3091" endIndex="3098"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="which">
+              <value xsi:type="index:VariableSymbol" name="which" description="&lt;b>Readonly&lt;/b> 마우스를 눌렀을 때 이벤트를 트리거 한 버튼을 나타냅니다.&lt;br> no button=0, left button=1, middle button=2, right button=3">
+                <region startIndex="3299" endIndex="3303"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="x">
+              <value xsi:type="index:VariableSymbol" name="x" description="&lt;b>Readonly&lt;/b> MouseEvent의 clientX 속성의 별칭입니다.">
+                <region startIndex="3434" endIndex="3434"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="y">
+              <value xsi:type="index:VariableSymbol" name="y" description="&lt;b>Readonly&lt;/b> MouseEvent의 clientY 속성의 별칭입니다.">
+                <region startIndex="3565" endIndex="3565"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dataTransfer">
+              <value xsi:type="index:VariableSymbol" name="dataTransfer" description="&lt;b>Readonly&lt;/b> 드래그 작업의 데이터를 DataTransfer 개체로 유지합니다.">
+                <region startIndex="3708" endIndex="3719"/>
+                <inferredType name="DataTransfer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="getModifierState">
+              <value xsi:type="index:FunctionVariableSymbol" name="getModifierState" originalSymbolName="__anonymous2">
+                <region startIndex="3882" endIndex="3897"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CMouseEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CMouseEvent" originalSymbolName="__anonymous1">
+          <region startIndex="137" endIndex="147"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getModifierState" description="지정된 객체의 현재 상태를 반환합니다." returnDescription="지정된 객체의 현재 상태." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3901" endIndex="3918" startLine="165" endLine="165"/>
+          <params name="keyArg" description="지정된 객체 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3910" endIndex="3915" startLine="165" endLine="165"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="151" endIndex="175" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="175" endIndex="175"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="163" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트 옵션." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="172" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3901" endIndex="3918" startLine="165" endLine="165"/>
+        <childScopes>
+          <region startIndex="3918" endIndex="3918"/>
+          <symbolMap key="keyArg">
+            <value xsi:type="index:ParameterSymbol" name="keyArg" description="지정된 객체 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3910" endIndex="3915" startLine="165" endLine="165"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CMouseEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CMouseEvent" description="Mouse 이벤트 마우스 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+        <region startIndex="137" endIndex="147"/>
+        <params name="type" description="이벤트 유형">
+          <region xsi:type="index:RegionWithLine" startIndex="160" endIndex="163" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트 옵션." parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="166" endIndex="172" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="altKey">
+            <value xsi:type="index:VariableSymbol" name="altKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 왼쪽 또는 오른쪽 Alt 키가 눌려 졌는지 여부를 나타내는 부울 값을 검색합니다.">
+              <region startIndex="381" endIndex="386"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="button">
+            <value xsi:type="index:VariableSymbol" name="button" description="&lt;b>Readonly&lt;/b> 마우스를 눌렀을 때 이벤트를 트리거 한 버튼 값을 반환합니다.&lt;br> left=0, wheel or middle=1, right=2, browserback button=3, browserforward button=4">
+              <region startIndex="611" endIndex="616"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="buttons">
+            <value xsi:type="index:VariableSymbol" name="buttons" description="&lt;b>Readonly&lt;/b> 이벤트가 트리거 될 때 마우스 또는 다른 입력 장치에서 어떤 버튼이 눌러 졌는지 여부를 반환합니다. no button=0, left=1, right=2, middel or wheel=4, browser back button=8, browser forward button=16">
+              <region startIndex="873" endIndex="879"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="clientX">
+            <value xsi:type="index:VariableSymbol" name="clientX" description="&lt;b>Readonly&lt;/b> 응용 프로그램 클라이언트 영역 내에서 이벤트가 발생한 지점의 수평 좌표를 반환합니다 (페이지 내의 좌표와 반대).">
+              <region startIndex="1043" endIndex="1049"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="clientY">
+            <value xsi:type="index:VariableSymbol" name="clientY" description="&lt;b>Readonly&lt;/b> 응용 프로그램의 클라이언트 영역에서 이벤트가 발생한 지점의 수직 좌표를 반환합니다 (페이지 내의 좌표와 반대).">
+              <region startIndex="1212" endIndex="1218"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ctrlKey">
+            <value xsi:type="index:VariableSymbol" name="ctrlKey" description="&lt;b>Readonly&lt;/b> 컨트롤 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false) 나타내는 부울을 반환합니다.">
+              <region startIndex="1379" endIndex="1385"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="metaKey">
+            <value xsi:type="index:VariableSymbol" name="metaKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 메타 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false)를 나타내는 Boolean을 반환">
+              <region startIndex="1560" endIndex="1566"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="movementX">
+            <value xsi:type="index:VariableSymbol" name="movementX" description="&lt;b>Readonly&lt;/b> 해당 이벤트와 이전 mousemove 이벤트 사이의 마우스 포인터의 X 좌표를 제공합니다.">
+              <region startIndex="1718" endIndex="1726"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="movementY">
+            <value xsi:type="index:VariableSymbol" name="movementY" description="&lt;b>Readonly&lt;/b> 해당 이벤트와 이전 mousemove 이벤트 사이의 마우스 포인터의 Y 좌표를 제공합니다.">
+              <region startIndex="1877" endIndex="1885"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="offsetX">
+            <value xsi:type="index:VariableSymbol" name="offsetX" description="&lt;b>Readonly&lt;/b> 해당 이벤트와 대상 노드의 패딩 가장자리 사이의 마우스 포인터의 X 좌표에 오프셋을 제공합니다.">
+              <region startIndex="2039" endIndex="2045"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="offsetY">
+            <value xsi:type="index:VariableSymbol" name="offsetY" description="&lt;b>Readonly&lt;/b> 해당 이벤트와 대상 노드의 패딩 가장자리 사이의 마우스 포인터의 Y 좌표에 오프셋을 제공합니다.">
+              <region startIndex="2199" endIndex="2205"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="pageX">
+            <value xsi:type="index:VariableSymbol" name="pageX" description="&lt;b>Readonly&lt;/b> 전체 문서를 기준으로 이벤트 픽셀의 X (가로) 좌표를 반환합니다.">
+              <region startIndex="2343" endIndex="2347"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="pageY">
+            <value xsi:type="index:VariableSymbol" name="pageY" description="&lt;b>Readonly&lt;/b> 전체 문서를 기준으로 이벤트의 픽셀 단위로 Y (수직) 좌표를 반환합니다.">
+              <region startIndex="2489" endIndex="2493"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="relatedTarget">
+            <value xsi:type="index:VariableSymbol" name="relatedTarget" description="&lt;b>Readonly&lt;/b> 이벤트에 대한 보조 타겟입니다 (있는 경우).">
+              <region startIndex="2624" endIndex="2636"/>
+              <inferredType name="EventTarget" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/window.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="screenX">
+            <value xsi:type="index:VariableSymbol" name="screenX" description="&lt;b>Readonly&lt;/b> 마우스 포인터의 가로 좌표 (오프셋)를 전역 (화면) 좌표로 제공합니다.">
+              <region startIndex="2782" endIndex="2788"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="screenY">
+            <value xsi:type="index:VariableSymbol" name="screenY" description="&lt;b>Readonly&lt;/b> 마우스 포인터의 전체 좌표 (화면) 좌표의 세로 좌표 (오프셋)를 제공합니다.">
+              <region startIndex="2932" endIndex="2938"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="shiftKey">
+            <value xsi:type="index:VariableSymbol" name="shiftKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생할 때 shift 키가 눌 렸는지 (true) 또는 (false)를 나타냅니다.">
+              <region startIndex="3091" endIndex="3098"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="which">
+            <value xsi:type="index:VariableSymbol" name="which" description="&lt;b>Readonly&lt;/b> 마우스를 눌렀을 때 이벤트를 트리거 한 버튼을 나타냅니다.&lt;br> no button=0, left button=1, middle button=2, right button=3">
+              <region startIndex="3299" endIndex="3303"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="x">
+            <value xsi:type="index:VariableSymbol" name="x" description="&lt;b>Readonly&lt;/b> MouseEvent의 clientX 속성의 별칭입니다.">
+              <region startIndex="3434" endIndex="3434"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="y">
+            <value xsi:type="index:VariableSymbol" name="y" description="&lt;b>Readonly&lt;/b> MouseEvent의 clientY 속성의 별칭입니다.">
+              <region startIndex="3565" endIndex="3565"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dataTransfer">
+            <value xsi:type="index:VariableSymbol" name="dataTransfer" description="&lt;b>Readonly&lt;/b> 드래그 작업의 데이터를 DataTransfer 개체로 유지합니다.">
+              <region startIndex="3708" endIndex="3719"/>
+              <inferredType name="DataTransfer" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="getModifierState">
+            <value xsi:type="index:FunctionVariableSymbol" name="getModifierState" originalSymbolName="__anonymous2">
+              <region startIndex="3882" endIndex="3897"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

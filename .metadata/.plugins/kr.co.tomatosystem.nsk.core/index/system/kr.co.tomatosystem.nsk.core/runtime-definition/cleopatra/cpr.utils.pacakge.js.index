@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.utils.pacakge.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="60" endIndex="214" startLine="4" endLine="12"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="tryCatch" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="81" endIndex="99" startLine="4" endLine="4"/>
+          <params name="options" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="90" endIndex="96" startLine="4" endLine="4"/>
+            <inferredType name="cpr.exceptions.TryCatchOptions" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.tryCatch">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.tryCatch" originalSymbolName="__anonymous1">
+          <region startIndex="70" endIndex="77"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="logError" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="211" startLine="10" endLine="10"/>
+          <params name="e" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="198" endIndex="198" startLine="10" endLine="10"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="severity" optional="true" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="201" endIndex="208" startLine="10" endLine="10"/>
+            <inferredType name="LogSeverity" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.utils.logError">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.utils.logError" originalSymbolName="__anonymous2">
+          <region startIndex="178" endIndex="185"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="81" endIndex="99" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="99" endIndex="99"/>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="90" endIndex="96" startLine="4" endLine="4"/>
+              <inferredType name="cpr.exceptions.TryCatchOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="211" startLine="10" endLine="10"/>
+        <childScopes>
+          <region startIndex="211" endIndex="211"/>
+          <symbolMap key="e">
+            <value xsi:type="index:ParameterSymbol" name="e" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="198" endIndex="198" startLine="10" endLine="10"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="severity">
+            <value xsi:type="index:ParameterSymbol" name="severity" optional="true" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="201" endIndex="208" startLine="10" endLine="10"/>
+              <inferredType name="LogSeverity" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.utils.tryCatch">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.tryCatch" anonymousFunction="true">
+        <region startIndex="70" endIndex="77"/>
+        <params name="options" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="90" endIndex="96" startLine="4" endLine="4"/>
+          <inferredType name="cpr.exceptions.TryCatchOptions" instance="true" documentedType="true"/>
+        </params>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="cpr.utils.logError">
+      <value xsi:type="index:FunctionSymbol" name="cpr.utils.logError" anonymousFunction="true">
+        <region startIndex="178" endIndex="185"/>
+        <params name="e" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="198" endIndex="198" startLine="10" endLine="10"/>
+          <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="severity" optional="true" description="" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="201" endIndex="208" startLine="10" endLine="10"/>
+          <inferredType name="LogSeverity" instance="true" documentedType="true"/>
+        </params>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CKeyboardEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="131" endIndex="3021" startLine="7" endLine="137"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CKeyboardEvent" description="Keyboard 이벤트. 키보드 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="159" endIndex="183" startLine="7" endLine="7"/>
+          <params name="type" description="이벤트 유형." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="168" endIndex="171" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="이벤트 옵션." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="174" endIndex="180" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="altKey">
+              <value xsi:type="index:VariableSymbol" name="altKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 왼쪽 또는 오른쪽 Alt 키가 눌려 졌는지 여부를 나타내는 부울 값을 검색합니다.">
+                <region startIndex="395" endIndex="400"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="char">
+              <value xsi:type="index:VariableSymbol" name="char" description="&lt;b>Readonly&lt;/b> 사용자가 누른 키의 문자를 반환합니다.">
+                <region startIndex="526" endIndex="529"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="charCode">
+              <value xsi:type="index:VariableSymbol" name="charCode" description="&lt;b>Readonly&lt;/b> keypress 이벤트 발생 시 눌려진 문자 키의 유니코드 값을 반환합니다.">
+                <region startIndex="675" endIndex="682"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="ctrlKey">
+              <value xsi:type="index:VariableSymbol" name="ctrlKey" description="&lt;b>Readonly&lt;/b> 컨트롤 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false) 나타내는 부울을 반환합니다.">
+                <region startIndex="846" endIndex="852"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="key">
+              <value xsi:type="index:VariableSymbol" name="key" description="&lt;b>Readonly&lt;/b> 사용자가 누른 키 또는 키의 값을 반환합니다.">
+                <region startIndex="982" endIndex="984"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="keyCode">
+              <value xsi:type="index:VariableSymbol" name="keyCode" description="&lt;b>Readonly&lt;/b> 사용자가 누른 키의 유니코드 문자 값을 반환합니다.">
+                <region startIndex="1116" endIndex="1122"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="locale">
+              <value xsi:type="index:VariableSymbol" name="locale" description="&lt;b>Readonly&lt;/b> 이벤트의 언어코드 값을 반환합니다.">
+                <region startIndex="1245" endIndex="1250"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="location">
+              <value xsi:type="index:VariableSymbol" name="location" description="&lt;b>Readonly&lt;/b> 키의 위치 값을 반환합니다.&lt;br> standard=0, left=1, right=2, numpad=3, mobile=4, joystick=5">
+                <region startIndex="1436" endIndex="1443"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="metaKey">
+              <value xsi:type="index:VariableSymbol" name="metaKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 메타 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false)를 나타내는 Boolean을 반환">
+                <region startIndex="1620" endIndex="1626"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="repeat">
+              <value xsi:type="index:VariableSymbol" name="repeat" description="&lt;b>Readonly&lt;/b> 키가 자동으로 반복되도록 길게 눌러져 있으면 true 아니면 false를 반환합니다.">
+                <region startIndex="1779" endIndex="1784"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="shiftKey">
+              <value xsi:type="index:VariableSymbol" name="shiftKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생할 때 shift 키가 눌 렸는지 (true) 또는 (false)를 나타냅니다.">
+                <region startIndex="1941" endIndex="1948"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="which">
+              <value xsi:type="index:VariableSymbol" name="which" description="&lt;b>Readonly&lt;/b> 누른 키의 숫자 키 코드 또는 영숫자 키의 문자 코드를 반환합니다.">
+                <region startIndex="2090" endIndex="2094"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="code">
+              <value xsi:type="index:VariableSymbol" name="code" description="&lt;b>Readonly&lt;/b> 키보드의 실제 키 코드를 반환합니다.">
+                <region startIndex="2218" endIndex="2221"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="DOM_KEY_LOCATION_LEFT">
+              <value xsi:type="index:VariableSymbol" name="DOM_KEY_LOCATION_LEFT" description="&lt;b>Readonly&lt;/b> 키보드의 왼쪽에 있는 키의 값을 반환합니다.">
+                <region startIndex="2349" endIndex="2369"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="DOM_KEY_LOCATION_NUMPAD">
+              <value xsi:type="index:VariableSymbol" name="DOM_KEY_LOCATION_NUMPAD" description="&lt;b>Readonly&lt;/b> 숫자 키패드 키의 값을 반환합니다.">
+                <region startIndex="2492" endIndex="2514"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="DOM_KEY_LOCATION_RIGHT">
+              <value xsi:type="index:VariableSymbol" name="DOM_KEY_LOCATION_RIGHT" description="&lt;b>Readonly&lt;/b> 키보드의 오른쪽에 있는 키의 값을 반환합니다.">
+                <region startIndex="2643" endIndex="2664"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="DOM_KEY_LOCATION_STANDARD">
+              <value xsi:type="index:VariableSymbol" name="DOM_KEY_LOCATION_STANDARD" description="&lt;b>Readonly&lt;/b> 키보드에서 방향을 구별하지 않는 키의 값을 반환합니다.">
+                <region startIndex="2798" endIndex="2822"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="getModifierState">
+              <value xsi:type="index:FunctionVariableSymbol" name="getModifierState" originalSymbolName="__anonymous2">
+                <region startIndex="2982" endIndex="2997"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CKeyboardEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CKeyboardEvent" originalSymbolName="__anonymous1">
+          <region startIndex="142" endIndex="155"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getModifierState" description="지정된 객체의 현재 상태를 반환합니다." returnDescription="지정된 객체의 현재 상태." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3001" endIndex="3018" startLine="135" endLine="135"/>
+          <params name="keyArg" description="지정된 객체 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3010" endIndex="3015" startLine="135" endLine="135"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="159" endIndex="183" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="183" endIndex="183"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="이벤트 유형." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="168" endIndex="171" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="이벤트 옵션." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="174" endIndex="180" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3001" endIndex="3018" startLine="135" endLine="135"/>
+        <childScopes>
+          <region startIndex="3018" endIndex="3018"/>
+          <symbolMap key="keyArg">
+            <value xsi:type="index:ParameterSymbol" name="keyArg" description="지정된 객체 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3010" endIndex="3015" startLine="135" endLine="135"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CKeyboardEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CKeyboardEvent" description="Keyboard 이벤트. 키보드 이벤트를 생성합니다." baseSymbolName="cpr.events.CUIEvent" anonymousFunction="true">
+        <region startIndex="142" endIndex="155"/>
+        <params name="type" description="이벤트 유형.">
+          <region xsi:type="index:RegionWithLine" startIndex="168" endIndex="171" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="이벤트 옵션." parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="174" endIndex="180" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CUIEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="altKey">
+            <value xsi:type="index:VariableSymbol" name="altKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 왼쪽 또는 오른쪽 Alt 키가 눌려 졌는지 여부를 나타내는 부울 값을 검색합니다.">
+              <region startIndex="395" endIndex="400"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="char">
+            <value xsi:type="index:VariableSymbol" name="char" description="&lt;b>Readonly&lt;/b> 사용자가 누른 키의 문자를 반환합니다.">
+              <region startIndex="526" endIndex="529"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="charCode">
+            <value xsi:type="index:VariableSymbol" name="charCode" description="&lt;b>Readonly&lt;/b> keypress 이벤트 발생 시 눌려진 문자 키의 유니코드 값을 반환합니다.">
+              <region startIndex="675" endIndex="682"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="ctrlKey">
+            <value xsi:type="index:VariableSymbol" name="ctrlKey" description="&lt;b>Readonly&lt;/b> 컨트롤 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false) 나타내는 부울을 반환합니다.">
+              <region startIndex="846" endIndex="852"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="key">
+            <value xsi:type="index:VariableSymbol" name="key" description="&lt;b>Readonly&lt;/b> 사용자가 누른 키 또는 키의 값을 반환합니다.">
+              <region startIndex="982" endIndex="984"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="keyCode">
+            <value xsi:type="index:VariableSymbol" name="keyCode" description="&lt;b>Readonly&lt;/b> 사용자가 누른 키의 유니코드 문자 값을 반환합니다.">
+              <region startIndex="1116" endIndex="1122"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="locale">
+            <value xsi:type="index:VariableSymbol" name="locale" description="&lt;b>Readonly&lt;/b> 이벤트의 언어코드 값을 반환합니다.">
+              <region startIndex="1245" endIndex="1250"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="location">
+            <value xsi:type="index:VariableSymbol" name="location" description="&lt;b>Readonly&lt;/b> 키의 위치 값을 반환합니다.&lt;br> standard=0, left=1, right=2, numpad=3, mobile=4, joystick=5">
+              <region startIndex="1436" endIndex="1443"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="metaKey">
+            <value xsi:type="index:VariableSymbol" name="metaKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생했을 때 메타 키가 눌려 졌는지 (true) 또는 표시되어 있지 않은지 (false)를 나타내는 Boolean을 반환">
+              <region startIndex="1620" endIndex="1626"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="repeat">
+            <value xsi:type="index:VariableSymbol" name="repeat" description="&lt;b>Readonly&lt;/b> 키가 자동으로 반복되도록 길게 눌러져 있으면 true 아니면 false를 반환합니다.">
+              <region startIndex="1779" endIndex="1784"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="shiftKey">
+            <value xsi:type="index:VariableSymbol" name="shiftKey" description="&lt;b>Readonly&lt;/b> 이벤트가 발생할 때 shift 키가 눌 렸는지 (true) 또는 (false)를 나타냅니다.">
+              <region startIndex="1941" endIndex="1948"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="which">
+            <value xsi:type="index:VariableSymbol" name="which" description="&lt;b>Readonly&lt;/b> 누른 키의 숫자 키 코드 또는 영숫자 키의 문자 코드를 반환합니다.">
+              <region startIndex="2090" endIndex="2094"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="code">
+            <value xsi:type="index:VariableSymbol" name="code" description="&lt;b>Readonly&lt;/b> 키보드의 실제 키 코드를 반환합니다.">
+              <region startIndex="2218" endIndex="2221"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="DOM_KEY_LOCATION_LEFT">
+            <value xsi:type="index:VariableSymbol" name="DOM_KEY_LOCATION_LEFT" description="&lt;b>Readonly&lt;/b> 키보드의 왼쪽에 있는 키의 값을 반환합니다.">
+              <region startIndex="2349" endIndex="2369"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="DOM_KEY_LOCATION_NUMPAD">
+            <value xsi:type="index:VariableSymbol" name="DOM_KEY_LOCATION_NUMPAD" description="&lt;b>Readonly&lt;/b> 숫자 키패드 키의 값을 반환합니다.">
+              <region startIndex="2492" endIndex="2514"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="DOM_KEY_LOCATION_RIGHT">
+            <value xsi:type="index:VariableSymbol" name="DOM_KEY_LOCATION_RIGHT" description="&lt;b>Readonly&lt;/b> 키보드의 오른쪽에 있는 키의 값을 반환합니다.">
+              <region startIndex="2643" endIndex="2664"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="DOM_KEY_LOCATION_STANDARD">
+            <value xsi:type="index:VariableSymbol" name="DOM_KEY_LOCATION_STANDARD" description="&lt;b>Readonly&lt;/b> 키보드에서 방향을 구별하지 않는 키의 값을 반환합니다.">
+              <region startIndex="2798" endIndex="2822"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="getModifierState">
+            <value xsi:type="index:FunctionVariableSymbol" name="getModifierState" originalSymbolName="__anonymous2">
+              <region startIndex="2982" endIndex="2997"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

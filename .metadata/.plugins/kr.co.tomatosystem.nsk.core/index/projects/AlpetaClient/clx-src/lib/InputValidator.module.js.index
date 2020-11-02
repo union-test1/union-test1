@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/lib/InputValidator.module.js" fileModificationTimestamp="3204085" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="lib.InputValidator" indexingType="USER_WORKSPACE_MODULE">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="197" endIndex="2867" startLine="7" endLine="102"/>
+      <symbolMap key="globals">
+        <value xsi:type="index:VariableSymbol" name="globals" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="GlobalContribution" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="lib.InputValidator">
+        <value xsi:type="index:FunctionSymbol" name="lib.InputValidator" labelForOutline="InputValidator" hideFromProposal="true" baseSymbolName="cpr.core.Module">
+          <region/>
+          <prototype/>
+        </value>
+      </symbolMap>
+      <symbolMap key="GlobalContribution">
+        <value xsi:type="index:FunctionSymbol" name="GlobalContribution" hideFromProposal="true">
+          <region/>
+          <prototype>
+            <symbols key="createInputValidator">
+              <value xsi:type="index:FunctionVariableSymbol" name="createInputValidator" originalSymbolName="__anonymous5">
+                <region startIndex="2793" endIndex="2812"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="InputValidator" description="InputValidator.module.js Created at 2019. 5. 16. 오전 10:09:14." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="218" endIndex="255" startLine="7" endLine="9"/>
+          <params name="app" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="227" endIndex="229" startLine="7" endLine="7"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <prototype>
+            <symbols key="dynamicValidate">
+              <value xsi:type="index:FunctionVariableSymbol" name="dynamicValidate" originalSymbolName="__anonymous3">
+                <region startIndex="1809" endIndex="1823"/>
+              </value>
+            </symbols>
+            <symbols key="_app">
+              <value xsi:type="index:VariableSymbol" name="_app">
+                <region startIndex="242" endIndex="245"/>
+                <inferredType kind="UNKNOWN"/>
+              </value>
+            </symbols>
+            <symbols key="validate">
+              <value xsi:type="index:FunctionVariableSymbol" name="validate" originalSymbolName="__anonymous2">
+                <region startIndex="431" endIndex="438"/>
+              </value>
+            </symbols>
+            <symbols key="clearInput">
+              <value xsi:type="index:FunctionVariableSymbol" name="clearInput" originalSymbolName="__anonymous4">
+                <region startIndex="2496" endIndex="2505"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="validate" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="442" endIndex="1509" startLine="18" endLine="58"/>
+          <params name="ctrl" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.4/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="478" endIndex="481" startLine="18" endLine="18"/>
+            <inferredType name="cpr.controls.InputBox" instance="true" documentedType="true"/>
+          </params>
+          <params name="type" description="isNull: 널체크, isDuplicate: 중복체크" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="484" endIndex="487" startLine="18" endLine="18"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="validStr" description="메세지" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="490" endIndex="497" startLine="18" endLine="18"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="ctrlType" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="500" endIndex="507" startLine="18" endLine="18"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="dynamicValidate" description="인풋박스에 입력된 값에 대해 유효성검사를 한다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1827" endIndex="2391" startLine="68" endLine="84"/>
+          <params name="ctrl" description="validation 처리 할 인풋박스" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.5/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1862" endIndex="1865" startLine="68" endLine="68"/>
+            <inferredType name="cpr.controls.InputBox" instance="true" documentedType="true"/>
+          </params>
+          <params name="ctrlValue" description="인풋 박스의 값" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1868" endIndex="1876" startLine="68" endLine="68"/>
+            <inferredType name="any" instance="true" documentedType="true"/>
+          </params>
+          <params name="list" description="처리 할 데이터" parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1898" endIndex="1901" startLine="68" endLine="68"/>
+            <inferredType name="cpr.data.DataSet" instance="true" documentedType="true"/>
+          </params>
+          <params name="colName" description="validation 처리 할 데이터의 컬럼명" parameterIndex="3" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1904" endIndex="1910" startLine="68" endLine="68"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="validStr" description="툴팁 내용" parameterIndex="4" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.3/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1913" endIndex="1920" startLine="68" endLine="68"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType kind="UNKNOWN"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="clearInput" description="인풋박스의 스타일을 초기화 한다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2509" endIndex="2778" startLine="91" endLine="97"/>
+          <params name="ctrl" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2545" endIndex="2548" startLine="91" endLine="91"/>
+            <inferredType name="cpr.controls.InputBox" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="InputValidator">
+        <value xsi:type="index:FunctionVariableSymbol" name="InputValidator" originalSymbolName="__anonymous1">
+          <region startIndex="201" endIndex="214"/>
+          <inferredType name="__anonymous1" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/InputValidator.module.js"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="createInputValidator" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2816" endIndex="2867" startLine="100" endLine="102"/>
+          <params name="app" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2825" endIndex="2827" startLine="100" endLine="100"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <inferredReturnType name="InputValidator" decalringInputURI="platform:/resource/AlpetaClient/clx-src/lib/InputValidator.module.js" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="module">
+        <value xsi:type="index:VariableSymbol" name="module">
+          <region/>
+          <inferredType name="cpr.core.ModuleDescriber" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="lib.InputValidator" instance="true"/>
+        </value>
+      </symbolMap>
+      <childScopes name="InputValidator" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="218" endIndex="255" startLine="7" endLine="9"/>
+        <childScopes name="InputValidator">
+          <region startIndex="233" endIndex="255"/>
+          <symbolMap key="app">
+            <value xsi:type="index:ParameterSymbol" name="app" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="227" endIndex="229" startLine="7" endLine="7"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="442" endIndex="1509" startLine="18" endLine="58"/>
+        <childScopes>
+          <region startIndex="511" endIndex="1509"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="isNull: 널체크, isDuplicate: 중복체크" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="484" endIndex="487" startLine="18" endLine="18"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="targetValue">
+            <value xsi:type="index:VariableSymbol" name="targetValue">
+              <region startIndex="576" endIndex="586"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="validStr">
+            <value xsi:type="index:ParameterSymbol" name="validStr" description="메세지" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="490" endIndex="497" startLine="18" endLine="18"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="ctrlType">
+            <value xsi:type="index:ParameterSymbol" name="ctrlType" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="500" endIndex="507" startLine="18" endLine="18"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="ctrl">
+            <value xsi:type="index:ParameterSymbol" name="ctrl" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="478" endIndex="481" startLine="18" endLine="18"/>
+              <inferredType name="cpr.controls.InputBox" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.InputBox.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1827" endIndex="2391" startLine="68" endLine="84"/>
+        <childScopes>
+          <region startIndex="1924" endIndex="2391"/>
+          <symbolMap key="ctrlValue">
+            <value xsi:type="index:ParameterSymbol" name="ctrlValue" description="인풋 박스의 값" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1868" endIndex="1876" startLine="68" endLine="68"/>
+              <inferredType name="any" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="list">
+            <value xsi:type="index:ParameterSymbol" name="list" description="처리 할 데이터" parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="1898" endIndex="1901" startLine="68" endLine="68"/>
+              <inferredType name="cpr.data.DataSet" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.DataSet.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="colName">
+            <value xsi:type="index:ParameterSymbol" name="colName" description="validation 처리 할 데이터의 컬럼명" parameterIndex="3" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.3">
+              <region xsi:type="index:RegionWithLine" startIndex="1904" endIndex="1910" startLine="68" endLine="68"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="validStr">
+            <value xsi:type="index:ParameterSymbol" name="validStr" description="툴팁 내용" parameterIndex="4" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.4">
+              <region xsi:type="index:RegionWithLine" startIndex="1913" endIndex="1920" startLine="68" endLine="68"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="isExist">
+            <value xsi:type="index:VariableSymbol" name="isExist">
+              <region startIndex="2124" endIndex="2130"/>
+              <inferredType name="cpr.data.Row" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.Row.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="ctrl">
+            <value xsi:type="index:ParameterSymbol" name="ctrl" description="validation 처리 할 인풋박스" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1862" endIndex="1865" startLine="68" endLine="68"/>
+              <inferredType name="cpr.controls.InputBox" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2509" endIndex="2778" startLine="91" endLine="97"/>
+        <childScopes>
+          <region startIndex="2552" endIndex="2778"/>
+          <symbolMap key="ctrl">
+            <value xsi:type="index:ParameterSymbol" name="ctrl" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2545" endIndex="2548" startLine="91" endLine="91"/>
+              <inferredType name="cpr.controls.InputBox" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2816" endIndex="2867" startLine="100" endLine="102"/>
+        <childScopes>
+          <region startIndex="2831" endIndex="2867"/>
+          <symbolMap key="app">
+            <value xsi:type="index:ParameterSymbol" name="app" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2825" endIndex="2827" startLine="100" endLine="100"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="createInputValidator">
+      <value xsi:type="index:FunctionVariableSymbol" name="createInputValidator" originalSymbolName="__anonymous5" persistOriginalSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region startIndex="2793" endIndex="2812"/>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="lib.InputValidator">
+      <value xsi:type="index:FunctionSymbol" name="lib.InputValidator" labelForOutline="InputValidator" hideFromProposal="true" baseSymbolName="cpr.core.Module">
+        <region/>
+        <prototype/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

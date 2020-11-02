@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/resource/AlpetaClient/clx-src/udc/searchBox.js" fileModificationTimestamp="6408325" inferenceVersion="1.0.2437.release-20200911-1753" primaryTypeName="udc.searchBox" indexingType="USER_WORKSPACE_UDC">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="78" endIndex="543" startLine="6" endLine="27"/>
+      <symbolMap key="onBodyPropertyChange">
+        <value xsi:type="index:FunctionSymbol" name="onBodyPropertyChange">
+          <region xsi:type="index:RegionWithLine" startIndex="405" endIndex="424" startLine="21" endLine="21"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="464" endIndex="464" startLine="21" endLine="21"/>
+            <inferredType name="cpr.events.CPropertyChangeEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="udc.searchBox">
+        <value xsi:type="index:FunctionSymbol" name="udc.searchBox" labelForOutline="searchBox" baseSymbolName="cpr.controls.EmbeddedApp">
+          <region/>
+          <prototype>
+            <symbols key="combo">
+              <value xsi:type="index:AppPropertySymbol" name="combo">
+                <region/>
+                <inferredType name="String" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="value">
+              <value xsi:type="index:AppPropertySymbol" name="value" bindable="true">
+                <region/>
+                <inferredType name="String" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="placeholder">
+              <value xsi:type="index:AppPropertySymbol" name="placeholder">
+                <region/>
+                <inferredType name="String" instance="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="exports">
+        <value xsi:type="index:VariableSymbol" name="exports" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="udc.searchBox" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="app">
+        <value xsi:type="index:VariableSymbol" name="app" description="udc/searchBox 앱의 인스턴스" hideFromOutline="true" implictImport="true">
+          <region/>
+          <inferredType name="cpr.core.AppInstance" instance="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="onButtonClick">
+        <value xsi:type="index:FunctionSymbol" name="onButtonClick">
+          <region xsi:type="index:RegionWithLine" startIndex="87" endIndex="99" startLine="6" endLine="6"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="130" endIndex="130" startLine="6" endLine="6"/>
+            <inferredType name="cpr.events.CMouseEvent" instance="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes name="onButtonClick" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region startIndex="133" endIndex="309"/>
+        <symbolMap key="button">
+          <value xsi:type="index:VariableSymbol" name="button">
+            <region startIndex="184" endIndex="189"/>
+            <inferredType name="cpr.controls.Button" instance="true" documentedType="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="event">
+          <value xsi:type="index:VariableSymbol" name="event">
+            <region startIndex="237" endIndex="241"/>
+            <inferredType name="cpr.events.CUIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CUIEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="130" endIndex="130" startLine="6" endLine="6"/>
+            <inferredType name="cpr.events.CMouseEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CMouseEvent.js?type=EXPORTED" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="2" endIndex="309" startLine="6" endLine="14"/>
+      </childScopes>
+      <childScopes name="onBodyPropertyChange" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="467" endIndex="541"/>
+        <symbolMap key="e">
+          <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="464" endIndex="464" startLine="21" endLine="21"/>
+            <inferredType name="cpr.events.CPropertyChangeEvent" instance="true"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="316" endIndex="541" startLine="21" endLine="26"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="udc.searchBox">
+      <value xsi:type="index:FunctionSymbol" name="udc.searchBox" labelForOutline="searchBox" baseSymbolName="cpr.controls.EmbeddedApp">
+        <region/>
+        <prototype>
+          <symbols key="value">
+            <value xsi:type="index:AppPropertySymbol" name="value" bindable="true">
+              <region/>
+              <inferredType name="String" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="placeholder">
+            <value xsi:type="index:AppPropertySymbol" name="placeholder">
+              <region/>
+              <inferredType name="String" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="combo">
+            <value xsi:type="index:AppPropertySymbol" name="combo">
+              <region/>
+              <inferredType name="String" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

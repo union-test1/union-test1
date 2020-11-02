@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.exceptions.IllegalArgumentException.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="40" endIndex="184" startLine="5" endLine="8"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="IllegalArgumentException" baseSymbolName="cpr.exceptions.CError" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="82" endIndex="100" startLine="5" endLine="5"/>
+          <params name="message" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="91" endIndex="97" startLine="5" endLine="5"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype/>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.exceptions.IllegalArgumentException">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.exceptions.IllegalArgumentException" originalSymbolName="__anonymous1">
+          <region startIndex="55" endIndex="78"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="82" endIndex="100" startLine="5" endLine="5"/>
+        <childScopes>
+          <region startIndex="100" endIndex="100"/>
+          <symbolMap key="message">
+            <value xsi:type="index:ParameterSymbol" name="message" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="91" endIndex="97" startLine="5" endLine="5"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.exceptions.IllegalArgumentException">
+      <value xsi:type="index:FunctionSymbol" name="cpr.exceptions.IllegalArgumentException" baseSymbolName="cpr.exceptions.CError" anonymousFunction="true">
+        <region startIndex="55" endIndex="78"/>
+        <params name="message" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="91" endIndex="97" startLine="5" endLine="5"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype/>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

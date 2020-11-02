@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="766" endIndex="3975" startLine="8" endLine="78"/>
+      <symbolMap key="Promise">
+        <value xsi:type="index:FunctionSymbol" name="Promise">
+          <region xsi:type="index:RegionWithLine" startIndex="775" endIndex="781" startLine="8" endLine="8"/>
+          <params name="executor" description="A function that is passed with the arguments resolve and reject. The executor function is executed immediately by the Promise implementation, passing resolve and reject functions (the executor is called before the Promise constructor even returns the created object). The resolve and reject functions, when called, resolve or reject the promise, respectively. The executor normally initiates some asynchronous work, and then, once that completes, either calls the resolve function to resolve the promise or else rejects it if an error occurred. If an error is thrown in the executor function, the promise is rejected. The return value of the executor is ignored." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="783" endIndex="790" startLine="8" endLine="8"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </typeParameters>
+              <typeParameters name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </typeParameters>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <prototype>
+            <symbols key="then">
+              <value xsi:type="index:FunctionVariableSymbol" name="then" originalSymbolName="__anonymous1">
+                <region startIndex="1248" endIndex="1251"/>
+              </value>
+            </symbols>
+            <symbols key="catch">
+              <value xsi:type="index:FunctionVariableSymbol" name="catch" originalSymbolName="__anonymous2">
+                <region startIndex="2124" endIndex="2128"/>
+              </value>
+            </symbols>
+            <symbols key="finally">
+              <value xsi:type="index:FunctionVariableSymbol" name="finally" originalSymbolName="__anonymous3">
+                <region startIndex="2556" endIndex="2562"/>
+              </value>
+            </symbols>
+          </prototype>
+          <symbols key="all">
+            <value xsi:type="index:FunctionVariableSymbol" name="all" originalSymbolName="__anonymous4">
+              <region startIndex="2932" endIndex="2934"/>
+            </value>
+          </symbols>
+          <symbols key="race">
+            <value xsi:type="index:FunctionVariableSymbol" name="race" originalSymbolName="__anonymous5">
+              <region startIndex="3214" endIndex="3217"/>
+            </value>
+          </symbols>
+          <symbols key="resolve">
+            <value xsi:type="index:FunctionVariableSymbol" name="resolve" originalSymbolName="__anonymous6">
+              <region startIndex="3658" endIndex="3664"/>
+            </value>
+          </symbols>
+          <symbols key="reject">
+            <value xsi:type="index:FunctionVariableSymbol" name="reject" originalSymbolName="__anonymous7">
+              <region startIndex="3925" endIndex="3930"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="then" description="The then() method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1255" endIndex="1293" startLine="18" endLine="20"/>
+          <params name="onFullfilled" description="A Function called if the Promise is fulfilled. This function has one argument, the fulfillment value. If it is not a function it is internally replaced with an &quot;Identity&quot; function(it returns received argument)." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1264" endIndex="1275" startLine="18" endLine="18"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="catch" description="The catch() method returns a Promise and deals with rejected cases only. It behaves the same as calling Promise.prototype.then(undefined, onRejected) (in fact, calling obj.catch(onRejected) internally calls obj.then(undefined, onRejected))." returnDescription="Internally calls Promise.prototype.then on the object upon which is called, passing the parameters undefined and the onRejected handler received; then returns the value of that call (which is a Promise)." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2132" endIndex="2168" startLine="30" endLine="32"/>
+          <params name="onRejected" description="A Function called when the Promise is rejected. This function has one argument: &lt;ul>&lt;li>reason: The rejection reason.&lt;/li>&lt;/ul> The Promise returned by catch() is rejected if onRejected throws an error or returns a Promise which is itself rejected; otherwise, it is resolved." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2141" endIndex="2150" startLine="30" endLine="30"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="finally" description="The finally() method returns a Promise. When the promise is settled, whether fulfilled or rejected, the specified callback function is executed. This provides a way for code that must be executed once the Promise has been dealt with to be run whether the promise was fulfilled successfully or rejected." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2566" endIndex="2601" startLine="39" endLine="41"/>
+          <params name="onFinally" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2575" endIndex="2583" startLine="39" endLine="39"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="all" description="The Promise.all(iterable) method returns a single Promise that resolves when all of the promises in the iterable argument have resolved or when the iterable argument contains no promises. It rejects with the reason of the first promise that rejects." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2938" endIndex="2981" startLine="51" endLine="53"/>
+          <params name="promises" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2947" endIndex="2954" startLine="51" endLine="51"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="race" description="The Promise.race(iterable) method returns a promise that resolves or rejects as soon as one of the promises in the iterable resolves or rejects, with the value or reason from that promise." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3221" endIndex="3264" startLine="59" endLine="61"/>
+          <params name="promises" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3230" endIndex="3237" startLine="59" endLine="59"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="resolve" description="The Promise.resolve(value) method returns a Promise object that is resolved with the given value. If the value is a promise, that promise is returned; if the value is a thenable (i.e. has a &quot;then&quot; method), the returned promise will &quot;follow&quot; that thenable, adopting its eventual state; otherwise the returned promise will be fulfilled with the value." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3668" endIndex="3708" startLine="67" endLine="69"/>
+          <params name="value" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3677" endIndex="3681" startLine="67" endLine="67"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="reject" description="he static Promise.reject function returns a Promise that is rejected. For debugging purposes and selective error catching, it is useful to make reason an instanceof Error." returnDescription="" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="3934" endIndex="3974" startLine="76" endLine="78"/>
+          <params name="value" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="3943" endIndex="3947" startLine="76" endLine="76"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <inferredReturnType name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <childScopes name="Promise" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="793" endIndex="796"/>
+        <symbolMap key="executor">
+          <value xsi:type="index:ParameterSymbol" name="executor" description="A function that is passed with the arguments resolve and reject. The executor function is executed immediately by the Promise implementation, passing resolve and reject functions (the executor is called before the Promise constructor even returns the created object). The resolve and reject functions, when called, resolve or reject the promise, respectively. The executor normally initiates some asynchronous work, and then, once that completes, either calls the resolve function to resolve the promise or else rejects it if an error occurred. If an error is thrown in the executor function, the promise is rejected. The return value of the executor is ignored." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="783" endIndex="790" startLine="8" endLine="8"/>
+            <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </typeParameters>
+              <typeParameters name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </typeParameters>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </inferredType>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1" endIndex="796" startLine="8" endLine="10"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1255" endIndex="1293" startLine="18" endLine="20"/>
+        <childScopes>
+          <region startIndex="1278" endIndex="1293"/>
+          <symbolMap key="onFullfilled">
+            <value xsi:type="index:ParameterSymbol" name="onFullfilled" description="A Function called if the Promise is fulfilled. This function has one argument, the fulfillment value. If it is not a function it is internally replaced with an &quot;Identity&quot; function(it returns received argument)." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1264" endIndex="1275" startLine="18" endLine="18"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2132" endIndex="2168" startLine="30" endLine="32"/>
+        <childScopes>
+          <region startIndex="2153" endIndex="2168"/>
+          <symbolMap key="onRejected">
+            <value xsi:type="index:ParameterSymbol" name="onRejected" description="A Function called when the Promise is rejected. This function has one argument: &lt;ul>&lt;li>reason: The rejection reason.&lt;/li>&lt;/ul> The Promise returned by catch() is rejected if onRejected throws an error or returns a Promise which is itself rejected; otherwise, it is resolved." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2141" endIndex="2150" startLine="30" endLine="30"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="Void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2566" endIndex="2601" startLine="39" endLine="41"/>
+        <childScopes>
+          <region startIndex="2586" endIndex="2601"/>
+          <symbolMap key="onFinally">
+            <value xsi:type="index:ParameterSymbol" name="onFinally" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2575" endIndex="2583" startLine="39" endLine="39"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2938" endIndex="2981" startLine="51" endLine="53"/>
+        <childScopes>
+          <region startIndex="2957" endIndex="2981"/>
+          <symbolMap key="promises">
+            <value xsi:type="index:ParameterSymbol" name="promises" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2947" endIndex="2954" startLine="51" endLine="51"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Promise" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/promise.js" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3221" endIndex="3264" startLine="59" endLine="61"/>
+        <childScopes>
+          <region startIndex="3240" endIndex="3264"/>
+          <symbolMap key="promises">
+            <value xsi:type="index:ParameterSymbol" name="promises" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3230" endIndex="3237" startLine="59" endLine="59"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3668" endIndex="3708" startLine="67" endLine="69"/>
+        <childScopes>
+          <region startIndex="3684" endIndex="3708"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3677" endIndex="3681" startLine="67" endLine="67"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="3934" endIndex="3974" startLine="76" endLine="78"/>
+        <childScopes>
+          <region startIndex="3950" endIndex="3974"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="3943" endIndex="3947" startLine="76" endLine="76"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="Promise">
+      <value xsi:type="index:FunctionSymbol" name="Promise">
+        <region xsi:type="index:RegionWithLine" startIndex="775" endIndex="781" startLine="8" endLine="8"/>
+        <params name="executor" description="A function that is passed with the arguments resolve and reject. The executor function is executed immediately by the Promise implementation, passing resolve and reject functions (the executor is called before the Promise constructor even returns the created object). The resolve and reject functions, when called, resolve or reject the promise, respectively. The executor normally initiates some asynchronous work, and then, once that completes, either calls the resolve function to resolve the promise or else rejects it if an error occurred. If an error is thrown in the executor function, the promise is rejected. The return value of the executor is ignored.">
+          <region xsi:type="index:RegionWithLine" startIndex="783" endIndex="790" startLine="8" endLine="8"/>
+          <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+            <typeParameters name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </typeParameters>
+            <typeParameters name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              <typeParameters name="Void" instance="true" documentedType="true"/>
+            </typeParameters>
+            <typeParameters name="Void" instance="true" documentedType="true"/>
+          </inferredType>
+        </params>
+        <prototype>
+          <symbols key="then">
+            <value xsi:type="index:FunctionVariableSymbol" name="then" originalSymbolName="__anonymous1">
+              <region startIndex="1248" endIndex="1251"/>
+            </value>
+          </symbols>
+          <symbols key="catch">
+            <value xsi:type="index:FunctionVariableSymbol" name="catch" originalSymbolName="__anonymous2">
+              <region startIndex="2124" endIndex="2128"/>
+            </value>
+          </symbols>
+          <symbols key="finally">
+            <value xsi:type="index:FunctionVariableSymbol" name="finally" originalSymbolName="__anonymous3">
+              <region startIndex="2556" endIndex="2562"/>
+            </value>
+          </symbols>
+        </prototype>
+        <symbols key="all">
+          <value xsi:type="index:FunctionVariableSymbol" name="all" originalSymbolName="__anonymous4">
+            <region startIndex="2932" endIndex="2934"/>
+          </value>
+        </symbols>
+        <symbols key="race">
+          <value xsi:type="index:FunctionVariableSymbol" name="race" originalSymbolName="__anonymous5">
+            <region startIndex="3214" endIndex="3217"/>
+          </value>
+        </symbols>
+        <symbols key="resolve">
+          <value xsi:type="index:FunctionVariableSymbol" name="resolve" originalSymbolName="__anonymous6">
+            <region startIndex="3658" endIndex="3664"/>
+          </value>
+        </symbols>
+        <symbols key="reject">
+          <value xsi:type="index:FunctionVariableSymbol" name="reject" originalSymbolName="__anonymous7">
+            <region startIndex="3925" endIndex="3930"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

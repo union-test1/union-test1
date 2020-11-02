@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.AppConfig.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="437" endIndex="2877" startLine="11" endLine="91"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="AppConfig" description="Control별 기본 값 및 공통 정의된 상수 값을 조회할 수 있는 클래스.&lt;br/> Usage:&lt;br/> &lt;pre>&lt;code>let config: cpr.core.Config = cpr.core.AppConfig.INSTANCE.getControlConfig(&quot;linkedlistbox&quot;); let headerHeight: string = config.getValue(&quot;headerHeight&quot;, &quot;20px&quot;); let space: string = config.getValue(&quot;space&quot;, &quot;20px&quot;); let direction: string = config.getValue(&quot;direction&quot;, &quot;right&quot;); ...&lt;/code>&lt;/pre> 별도의 객체생성은 할 수 없고 Singleton 으로 만 접근 가능." baseSymbolName="cpr.core.Config" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="458" endIndex="469" startLine="11" endLine="11"/>
+          <prototype>
+            <symbols key="getControlConfig">
+              <value xsi:type="index:FunctionVariableSymbol" name="getControlConfig" originalSymbolName="__anonymous2">
+                <region startIndex="897" endIndex="912"/>
+              </value>
+            </symbols>
+            <symbols key="setControlValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="setControlValue" originalSymbolName="__anonymous3">
+                <region startIndex="1065" endIndex="1079"/>
+              </value>
+            </symbols>
+            <symbols key="getProtocolConfig">
+              <value xsi:type="index:FunctionVariableSymbol" name="getProtocolConfig" originalSymbolName="__anonymous4">
+                <region startIndex="1348" endIndex="1364"/>
+              </value>
+            </symbols>
+            <symbols key="setProtocolValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="setProtocolValue" originalSymbolName="__anonymous5">
+                <region startIndex="1514" endIndex="1529"/>
+              </value>
+            </symbols>
+            <symbols key="getDataConfig">
+              <value xsi:type="index:FunctionVariableSymbol" name="getDataConfig" originalSymbolName="__anonymous6">
+                <region startIndex="1794" endIndex="1806"/>
+              </value>
+            </symbols>
+            <symbols key="setDataValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="setDataValue" originalSymbolName="__anonymous7">
+                <region startIndex="1950" endIndex="1961"/>
+              </value>
+            </symbols>
+            <symbols key="getEnvConfig">
+              <value xsi:type="index:FunctionVariableSymbol" name="getEnvConfig" originalSymbolName="__anonymous8">
+                <region startIndex="2233" endIndex="2244"/>
+              </value>
+            </symbols>
+            <symbols key="setEnvValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="setEnvValue" originalSymbolName="__anonymous9">
+                <region startIndex="2396" endIndex="2406"/>
+              </value>
+            </symbols>
+            <symbols key="getVarConfig">
+              <value xsi:type="index:FunctionVariableSymbol" name="getVarConfig" originalSymbolName="__anonymous10">
+                <region startIndex="2676" endIndex="2687"/>
+              </value>
+            </symbols>
+            <symbols key="setVarValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="setVarValue" originalSymbolName="__anonymous11">
+                <region startIndex="2838" endIndex="2848"/>
+              </value>
+            </symbols>
+          </prototype>
+          <symbols key="INSTANCE">
+            <value xsi:type="index:VariableSymbol" name="INSTANCE" description="&lt;b>Readonly&lt;/b> Singletone 객체">
+              <region startIndex="620" endIndex="627"/>
+              <inferredType name="cpr.core.AppConfig" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.AppConfig">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.AppConfig" originalSymbolName="__anonymous1">
+          <region startIndex="446" endIndex="454"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="getControlConfig" description="설정 중 controls 하위에 설정된 값을 조회한다." returnDescription="path로 넘겨 받은 경로 하위의 설정에 접근할 수 있는 새로운 Config 객체 리턴" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="916" endIndex="931" startLine="26" endLine="26"/>
+          <params name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="925" endIndex="928" startLine="26" endLine="26"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.Config" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="setControlValue" description="control의 속성,스타일 등 값을 지정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1083" endIndex="1105" startLine="33" endLine="33"/>
+          <params name="name" description="속성의 이름" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1092" endIndex="1095" startLine="33" endLine="33"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="속성의 값" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1098" endIndex="1102" startLine="33" endLine="33"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="getProtocolConfig" description="설정 중 protocol 하위에 설정된 값을 조회한다." returnDescription="path로 넘겨 받은 경로 하위의 설정에 접근할 수 있는 새로운 Config 객체 리턴" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1368" endIndex="1383" startLine="40" endLine="40"/>
+          <params name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInScope="//@hotIndex/@rootScope/@childScopes.3/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1377" endIndex="1380" startLine="40" endLine="40"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.Config" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="setProtocolValue" description="protocol 하위에 값을 지정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1533" endIndex="1555" startLine="47" endLine="47"/>
+          <params name="name" description="속성의 이름." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1542" endIndex="1545" startLine="47" endLine="47"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="속성의 값." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1548" endIndex="1552" startLine="47" endLine="47"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="getDataConfig" description="설정 중 data 하위에 설정된 값을 조회한다." returnDescription="path로 넘겨 받은 경로 하위의 설정에 접근할 수 있는 새로운 Config 객체 리턴" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1810" endIndex="1825" startLine="54" endLine="54"/>
+          <params name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1819" endIndex="1822" startLine="54" endLine="54"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.Config" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous7">
+        <value xsi:type="index:FunctionSymbol" name="setDataValue" description="data 하위에 값을 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1965" endIndex="1987" startLine="61" endLine="61"/>
+          <params name="name" description="속성의 이름" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1974" endIndex="1977" startLine="61" endLine="61"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="속성의 값" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1980" endIndex="1984" startLine="61" endLine="61"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous8">
+        <value xsi:type="index:FunctionSymbol" name="getEnvConfig" description="설정 중 environment 하위에 설정된 값을 조회한다." returnDescription="path로 넘겨 받은 경로 하위의 설정에 접근할 수 있는 새로운 Config 객체 리턴" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2248" endIndex="2263" startLine="68" endLine="68"/>
+          <params name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2257" endIndex="2260" startLine="68" endLine="68"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.Config" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous9">
+        <value xsi:type="index:FunctionSymbol" name="setEnvValue" description="enviroment 하위에 값을 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2410" endIndex="2432" startLine="75" endLine="75"/>
+          <params name="name" description="속성의 이름." symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2419" endIndex="2422" startLine="75" endLine="75"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="속성의 값." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2425" endIndex="2429" startLine="75" endLine="75"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous10">
+        <value xsi:type="index:FunctionSymbol" name="getVarConfig" description="설정 중 variables 하위에 설정된 값을 조회한다." returnDescription="path로 넘겨 받은 경로 하위의 설정에 접근할 수 있는 새로운 Config 객체 리턴" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2691" endIndex="2706" startLine="82" endLine="82"/>
+          <params name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2700" endIndex="2703" startLine="82" endLine="82"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="cpr.core.Config" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous11">
+        <value xsi:type="index:FunctionSymbol" name="setVarValue" description="variables 하위에 값을 설정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2852" endIndex="2874" startLine="89" endLine="89"/>
+          <params name="name" description="속성의 이름." symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2861" endIndex="2864" startLine="89" endLine="89"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="value" description="속성의 값." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.10/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2867" endIndex="2871" startLine="89" endLine="89"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="458" endIndex="469" startLine="11" endLine="11"/>
+        <childScopes>
+          <region startIndex="469" endIndex="469"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="916" endIndex="931" startLine="26" endLine="26"/>
+        <childScopes>
+          <region startIndex="931" endIndex="931"/>
+          <symbolMap key="path">
+            <value xsi:type="index:ParameterSymbol" name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="925" endIndex="928" startLine="26" endLine="26"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1083" endIndex="1105" startLine="33" endLine="33"/>
+        <childScopes>
+          <region startIndex="1105" endIndex="1105"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="속성의 이름" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1092" endIndex="1095" startLine="33" endLine="33"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="속성의 값" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1098" endIndex="1102" startLine="33" endLine="33"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1368" endIndex="1383" startLine="40" endLine="40"/>
+        <childScopes>
+          <region startIndex="1383" endIndex="1383"/>
+          <symbolMap key="path">
+            <value xsi:type="index:ParameterSymbol" name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1377" endIndex="1380" startLine="40" endLine="40"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1533" endIndex="1555" startLine="47" endLine="47"/>
+        <childScopes>
+          <region startIndex="1555" endIndex="1555"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="속성의 이름." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1542" endIndex="1545" startLine="47" endLine="47"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="속성의 값." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1548" endIndex="1552" startLine="47" endLine="47"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1810" endIndex="1825" startLine="54" endLine="54"/>
+        <childScopes>
+          <region startIndex="1825" endIndex="1825"/>
+          <symbolMap key="path">
+            <value xsi:type="index:ParameterSymbol" name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1819" endIndex="1822" startLine="54" endLine="54"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1965" endIndex="1987" startLine="61" endLine="61"/>
+        <childScopes>
+          <region startIndex="1987" endIndex="1987"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="속성의 이름" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1974" endIndex="1977" startLine="61" endLine="61"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="속성의 값" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1980" endIndex="1984" startLine="61" endLine="61"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2248" endIndex="2263" startLine="68" endLine="68"/>
+        <childScopes>
+          <region startIndex="2263" endIndex="2263"/>
+          <symbolMap key="path">
+            <value xsi:type="index:ParameterSymbol" name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2257" endIndex="2260" startLine="68" endLine="68"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2410" endIndex="2432" startLine="75" endLine="75"/>
+        <childScopes>
+          <region startIndex="2432" endIndex="2432"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="속성의 이름." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2419" endIndex="2422" startLine="75" endLine="75"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="속성의 값." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2425" endIndex="2429" startLine="75" endLine="75"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.10/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2691" endIndex="2706" startLine="82" endLine="82"/>
+        <childScopes>
+          <region startIndex="2706" endIndex="2706"/>
+          <symbolMap key="path">
+            <value xsi:type="index:ParameterSymbol" name="path" optional="true" description="조회할 값의 경로, &quot;.&quot;으로 구분하여 계층적으로 경로를 기술한다. 예) linkedlistbox.className" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.10/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2700" endIndex="2703" startLine="82" endLine="82"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.11/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2852" endIndex="2874" startLine="89" endLine="89"/>
+        <childScopes>
+          <region startIndex="2874" endIndex="2874"/>
+          <symbolMap key="name">
+            <value xsi:type="index:ParameterSymbol" name="name" description="속성의 이름." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2861" endIndex="2864" startLine="89" endLine="89"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="속성의 값." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.11/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="2867" endIndex="2871" startLine="89" endLine="89"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.AppConfig">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.AppConfig" description="Control별 기본 값 및 공통 정의된 상수 값을 조회할 수 있는 클래스.&lt;br/> Usage:&lt;br/> &lt;pre>&lt;code>let config: cpr.core.Config = cpr.core.AppConfig.INSTANCE.getControlConfig(&quot;linkedlistbox&quot;); let headerHeight: string = config.getValue(&quot;headerHeight&quot;, &quot;20px&quot;); let space: string = config.getValue(&quot;space&quot;, &quot;20px&quot;); let direction: string = config.getValue(&quot;direction&quot;, &quot;right&quot;); ...&lt;/code>&lt;/pre> 별도의 객체생성은 할 수 없고 Singleton 으로 만 접근 가능." baseSymbolName="cpr.core.Config" anonymousFunction="true">
+        <region startIndex="446" endIndex="454"/>
+        <prototype>
+          <symbols key="getControlConfig">
+            <value xsi:type="index:FunctionVariableSymbol" name="getControlConfig" originalSymbolName="__anonymous2">
+              <region startIndex="897" endIndex="912"/>
+            </value>
+          </symbols>
+          <symbols key="setControlValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="setControlValue" originalSymbolName="__anonymous3">
+              <region startIndex="1065" endIndex="1079"/>
+            </value>
+          </symbols>
+          <symbols key="getProtocolConfig">
+            <value xsi:type="index:FunctionVariableSymbol" name="getProtocolConfig" originalSymbolName="__anonymous4">
+              <region startIndex="1348" endIndex="1364"/>
+            </value>
+          </symbols>
+          <symbols key="setProtocolValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="setProtocolValue" originalSymbolName="__anonymous5">
+              <region startIndex="1514" endIndex="1529"/>
+            </value>
+          </symbols>
+          <symbols key="getDataConfig">
+            <value xsi:type="index:FunctionVariableSymbol" name="getDataConfig" originalSymbolName="__anonymous6">
+              <region startIndex="1794" endIndex="1806"/>
+            </value>
+          </symbols>
+          <symbols key="setDataValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="setDataValue" originalSymbolName="__anonymous7">
+              <region startIndex="1950" endIndex="1961"/>
+            </value>
+          </symbols>
+          <symbols key="getEnvConfig">
+            <value xsi:type="index:FunctionVariableSymbol" name="getEnvConfig" originalSymbolName="__anonymous8">
+              <region startIndex="2233" endIndex="2244"/>
+            </value>
+          </symbols>
+          <symbols key="setEnvValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="setEnvValue" originalSymbolName="__anonymous9">
+              <region startIndex="2396" endIndex="2406"/>
+            </value>
+          </symbols>
+          <symbols key="getVarConfig">
+            <value xsi:type="index:FunctionVariableSymbol" name="getVarConfig" originalSymbolName="__anonymous10">
+              <region startIndex="2676" endIndex="2687"/>
+            </value>
+          </symbols>
+          <symbols key="setVarValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="setVarValue" originalSymbolName="__anonymous11">
+              <region startIndex="2838" endIndex="2848"/>
+            </value>
+          </symbols>
+        </prototype>
+        <symbols key="INSTANCE">
+          <value xsi:type="index:VariableSymbol" name="INSTANCE" description="&lt;b>Readonly&lt;/b> Singletone 객체">
+            <region startIndex="620" endIndex="627"/>
+            <inferredType name="cpr.core.AppConfig" instance="true" documentedType="true"/>
+          </value>
+        </symbols>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

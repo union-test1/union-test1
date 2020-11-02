@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CPropertyChangeEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="161" endIndex="695" startLine="8" endLine="32"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CPropertyChangeEvent" description="속성이 바뀔 시 발생하는 이벤트. 속성 변경 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="195" endIndex="234" startLine="8" endLine="8"/>
+          <params name="property" description="속성 명." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="204" endIndex="211" startLine="8" endLine="8"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="oldValue" description="이전 속성의 값" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="214" endIndex="221" startLine="8" endLine="8"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="newValue" description="변경된 속성의 값." parameterIndex="2" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.2/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="224" endIndex="231" startLine="8" endLine="8"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="property">
+              <value xsi:type="index:VariableSymbol" name="property" description="&lt;b>Readonly&lt;/b> 속성 이름을 반환합니다.">
+                <region startIndex="411" endIndex="418"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="oldValue">
+              <value xsi:type="index:VariableSymbol" name="oldValue" description="&lt;b>Readonly&lt;/b> 이전 값을 반환합니다.">
+                <region startIndex="540" endIndex="547"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="newValue">
+              <value xsi:type="index:VariableSymbol" name="newValue" description="&lt;b>Readonly&lt;/b> 새로운 값을 반환합니다.">
+                <region startIndex="670" endIndex="677"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CPropertyChangeEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CPropertyChangeEvent" originalSymbolName="__anonymous1">
+          <region startIndex="172" endIndex="191"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="195" endIndex="234" startLine="8" endLine="8"/>
+        <childScopes>
+          <region startIndex="234" endIndex="234"/>
+          <symbolMap key="property">
+            <value xsi:type="index:ParameterSymbol" name="property" description="속성 명." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="204" endIndex="211" startLine="8" endLine="8"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="oldValue">
+            <value xsi:type="index:ParameterSymbol" name="oldValue" description="이전 속성의 값" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="214" endIndex="221" startLine="8" endLine="8"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="newValue">
+            <value xsi:type="index:ParameterSymbol" name="newValue" description="변경된 속성의 값." parameterIndex="2" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.2">
+              <region xsi:type="index:RegionWithLine" startIndex="224" endIndex="231" startLine="8" endLine="8"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CPropertyChangeEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CPropertyChangeEvent" description="속성이 바뀔 시 발생하는 이벤트. 속성 변경 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="172" endIndex="191"/>
+        <params name="property" description="속성 명.">
+          <region xsi:type="index:RegionWithLine" startIndex="204" endIndex="211" startLine="8" endLine="8"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="oldValue" description="이전 속성의 값" parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="214" endIndex="221" startLine="8" endLine="8"/>
+          <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="newValue" description="변경된 속성의 값." parameterIndex="2">
+          <region xsi:type="index:RegionWithLine" startIndex="224" endIndex="231" startLine="8" endLine="8"/>
+          <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="property">
+            <value xsi:type="index:VariableSymbol" name="property" description="&lt;b>Readonly&lt;/b> 속성 이름을 반환합니다.">
+              <region startIndex="411" endIndex="418"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="oldValue">
+            <value xsi:type="index:VariableSymbol" name="oldValue" description="&lt;b>Readonly&lt;/b> 이전 값을 반환합니다.">
+              <region startIndex="540" endIndex="547"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="newValue">
+            <value xsi:type="index:VariableSymbol" name="newValue" description="&lt;b>Readonly&lt;/b> 새로운 값을 반환합니다.">
+              <region startIndex="670" endIndex="677"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

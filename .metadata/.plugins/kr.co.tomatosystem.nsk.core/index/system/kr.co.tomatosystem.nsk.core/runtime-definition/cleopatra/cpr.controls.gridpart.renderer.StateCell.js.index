@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.gridpart.renderer.StateCell.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="74" endIndex="2370" startLine="7" endLine="140"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="StateCell" description="StateCell 그리드 로우 별 상태를 나타내는 컨트롤." baseSymbolName="cpr.controls.EnableUIControl" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="117" endIndex="130" startLine="7" endLine="7"/>
+          <params name="id" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="126" endIndex="127" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="value">
+              <value xsi:type="index:VariableSymbol" name="value">
+                <region startIndex="304" endIndex="308"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="stateMode">
+              <value xsi:type="index:VariableSymbol" name="stateMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 상태를 나타내기 위한 값(text 문자 또는 image 이미지)을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 상태를 나타내기 위한 값(text 문자 또는 image 이미지)을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="621" endIndex="629"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="deletedText">
+              <value xsi:type="index:VariableSymbol" name="deletedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 삭제된 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 삭제된 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="912" endIndex="922"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="insertedText">
+              <value xsi:type="index:VariableSymbol" name="insertedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 추가된 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 추가된 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1205" endIndex="1216"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="updatedText">
+              <value xsi:type="index:VariableSymbol" name="updatedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 수정된 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 수정된 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1499" endIndex="1509"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="unchangedText">
+              <value xsi:type="index:VariableSymbol" name="unchangedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 변경되지 않은 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 변경되지 않은 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="1800" endIndex="1812"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="insertdeletedText">
+              <value xsi:type="index:VariableSymbol" name="insertdeletedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 추가되었다가 삭제된 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 추가되었다가 삭제된 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+                <region startIndex="2109" endIndex="2125"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="dispose">
+              <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous2">
+                <region startIndex="2230" endIndex="2236"/>
+              </value>
+            </symbols>
+            <symbols key="putValue">
+              <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous3">
+                <region startIndex="2340" endIndex="2347"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.gridpart.renderer.StateCell">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.gridpart.renderer.StateCell" originalSymbolName="__anonymous1">
+          <region startIndex="105" endIndex="113"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="dispose" description="컨트롤에 포함되어있는 객체들을 제거합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2240" endIndex="2251" startLine="133" endLine="133"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="putValue" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2351" endIndex="2367" startLine="138" endLine="138"/>
+          <params name="value" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2360" endIndex="2364" startLine="138" endLine="138"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="117" endIndex="130" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="130" endIndex="130"/>
+          <symbolMap key="id">
+            <value xsi:type="index:ParameterSymbol" name="id" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="126" endIndex="127" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2240" endIndex="2251" startLine="133" endLine="133"/>
+        <childScopes>
+          <region startIndex="2251" endIndex="2251"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2351" endIndex="2367" startLine="138" endLine="138"/>
+        <childScopes>
+          <region startIndex="2367" endIndex="2367"/>
+          <symbolMap key="value">
+            <value xsi:type="index:ParameterSymbol" name="value" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2360" endIndex="2364" startLine="138" endLine="138"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.gridpart.renderer.StateCell">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.gridpart.renderer.StateCell" description="StateCell 그리드 로우 별 상태를 나타내는 컨트롤." baseSymbolName="cpr.controls.EnableUIControl" anonymousFunction="true">
+        <region startIndex="105" endIndex="113"/>
+        <params name="id" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="126" endIndex="127" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="value">
+            <value xsi:type="index:VariableSymbol" name="value">
+              <region startIndex="304" endIndex="308"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="stateMode">
+            <value xsi:type="index:VariableSymbol" name="stateMode" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 상태를 나타내기 위한 값(text 문자 또는 image 이미지)을 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 상태를 나타내기 위한 값(text 문자 또는 image 이미지)을 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="621" endIndex="629"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="deletedText">
+            <value xsi:type="index:VariableSymbol" name="deletedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 삭제된 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 삭제된 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="912" endIndex="922"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="insertedText">
+            <value xsi:type="index:VariableSymbol" name="insertedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 추가된 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 추가된 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1205" endIndex="1216"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="updatedText">
+            <value xsi:type="index:VariableSymbol" name="updatedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 수정된 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 수정된 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1499" endIndex="1509"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="unchangedText">
+            <value xsi:type="index:VariableSymbol" name="unchangedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 변경되지 않은 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 변경되지 않은 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="1800" endIndex="1812"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="insertdeletedText">
+            <value xsi:type="index:VariableSymbol" name="insertdeletedText" description="&lt;table> &lt;tr> &lt;th>get&lt;/th> &lt;td> 추가되었다가 삭제된 로우 상태를 나타내는 Text를 반환합니다. &lt;/td> &lt;/tr> &lt;tr> &lt;th>set&lt;/th> &lt;td> 추가되었다가 삭제된 로우 상태를 나타내는 Text를 설정합니다. &lt;/td> &lt;/tr> &lt;/table>">
+              <region startIndex="2109" endIndex="2125"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="dispose">
+            <value xsi:type="index:FunctionVariableSymbol" name="dispose" originalSymbolName="__anonymous2">
+              <region startIndex="2230" endIndex="2236"/>
+            </value>
+          </symbols>
+          <symbols key="putValue">
+            <value xsi:type="index:FunctionVariableSymbol" name="putValue" originalSymbolName="__anonymous3">
+              <region startIndex="2340" endIndex="2347"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

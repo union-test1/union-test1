@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.events.CScrollEvent.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="148" endIndex="976" startLine="7" endLine="45"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="CScrollEvent" description="스크롤 변화 시 발생하는 이벤트 스크롤 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="174" endIndex="198" startLine="7" endLine="7"/>
+          <params name="type" description="스크롤 이벤트의 유형." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="183" endIndex="186" startLine="7" endLine="7"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="options" description="스크롤 이벤트 옵션." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="195" startLine="7" endLine="7"/>
+            <inferredType name="cpr.events.CScrollEventOptions" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="axis">
+              <value xsi:type="index:VariableSymbol" name="axis" description="&lt;b>Readonly&lt;/b> 스크롤이 발생한 방향이 세로 방향인지 가로 방향인지 또는 대각선 방향인지 여부를 반환합니다.">
+                <region startIndex="412" endIndex="415"/>
+                <inferredType name="cpr.events.ScrollAxis" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="scrollTop">
+              <value xsi:type="index:VariableSymbol" name="scrollTop" description="&lt;b>Readonly&lt;/b> 세로 스크롤의 위치 값을 반환합니다.">
+                <region startIndex="552" endIndex="560"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="maxScrollTop">
+              <value xsi:type="index:VariableSymbol" name="maxScrollTop" description="&lt;b>Readonly&lt;/b> 최대 세로 스크롤의 값을 반환합니다.">
+                <region startIndex="682" endIndex="693"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="scrollLeft">
+              <value xsi:type="index:VariableSymbol" name="scrollLeft" description="&lt;b>Readonly&lt;/b> 가로 스크롤의 위치 값을 반환합니다.">
+                <region startIndex="815" endIndex="824"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="maxScrollLeft">
+              <value xsi:type="index:VariableSymbol" name="maxScrollLeft" description="&lt;b>Readonly&lt;/b> 최대 가로 스크롤의 값을 반환합니다.">
+                <region startIndex="946" endIndex="958"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.events.CScrollEvent">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.events.CScrollEvent" originalSymbolName="__anonymous1">
+          <region startIndex="159" endIndex="170"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="174" endIndex="198" startLine="7" endLine="7"/>
+        <childScopes>
+          <region startIndex="198" endIndex="198"/>
+          <symbolMap key="type">
+            <value xsi:type="index:ParameterSymbol" name="type" description="스크롤 이벤트의 유형." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="183" endIndex="186" startLine="7" endLine="7"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="options">
+            <value xsi:type="index:ParameterSymbol" name="options" description="스크롤 이벤트 옵션." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="195" startLine="7" endLine="7"/>
+              <inferredType name="cpr.events.CScrollEventOptions" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.events.CScrollEvent">
+      <value xsi:type="index:FunctionSymbol" name="cpr.events.CScrollEvent" description="스크롤 변화 시 발생하는 이벤트 스크롤 이벤트를 생성합니다." baseSymbolName="cpr.events.CEvent" anonymousFunction="true">
+        <region startIndex="159" endIndex="170"/>
+        <params name="type" description="스크롤 이벤트의 유형.">
+          <region xsi:type="index:RegionWithLine" startIndex="183" endIndex="186" startLine="7" endLine="7"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+        <params name="options" description="스크롤 이벤트 옵션." parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="189" endIndex="195" startLine="7" endLine="7"/>
+          <inferredType name="cpr.events.CScrollEventOptions" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="axis">
+            <value xsi:type="index:VariableSymbol" name="axis" description="&lt;b>Readonly&lt;/b> 스크롤이 발생한 방향이 세로 방향인지 가로 방향인지 또는 대각선 방향인지 여부를 반환합니다.">
+              <region startIndex="412" endIndex="415"/>
+              <inferredType name="cpr.events.ScrollAxis" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="scrollTop">
+            <value xsi:type="index:VariableSymbol" name="scrollTop" description="&lt;b>Readonly&lt;/b> 세로 스크롤의 위치 값을 반환합니다.">
+              <region startIndex="552" endIndex="560"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="maxScrollTop">
+            <value xsi:type="index:VariableSymbol" name="maxScrollTop" description="&lt;b>Readonly&lt;/b> 최대 세로 스크롤의 값을 반환합니다.">
+              <region startIndex="682" endIndex="693"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="scrollLeft">
+            <value xsi:type="index:VariableSymbol" name="scrollLeft" description="&lt;b>Readonly&lt;/b> 가로 스크롤의 위치 값을 반환합니다.">
+              <region startIndex="815" endIndex="824"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="maxScrollLeft">
+            <value xsi:type="index:VariableSymbol" name="maxScrollLeft" description="&lt;b>Readonly&lt;/b> 최대 가로 스크롤의 값을 반환합니다.">
+              <region startIndex="946" endIndex="958"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-05e85d38" version="1.0.0.0">
+  <head std:sid="head-dd64e26a">
+    <title>setCardLayOut</title>
+    <screen std:sid="screen-22858d1e" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-f6c20a16" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-8a608be6" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-f413c407">
+      <cl:datamap std:sid="d-map-120171ae" id="dmCardLayoutInfo">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" defaultvalue="1" info="지문 카드용량" name="CardSize"/>
+          <cl:datacolumn datatype="number" defaultvalue="0" info="카드종류" name="CardType"/>
+          <cl:datacolumn datatype="number" defaultvalue="0" info="카드 읽기 구분" name="ReadType"/>
+          <cl:datacolumn datatype="number" defaultvalue="0" info="지문 템플릿" name="TemplateSize"/>
+          <cl:datacolumn datatype="number" defaultvalue="0" info="지문 Template 개수" name="TemplateCount"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-af21d5ae" id="sms_getCardInfo" action="/v1/cardLayout" method="get">
+        <cl:listener std:sid="listener-4810f935" handler="onSms_getCardInfoSubmitDone" name="submit-done"/>
+        <cl:listener std:sid="listener-12d501f9" handler="onSms_getCardInfoSubmitError" name="submit-error"/>
+        <cl:listener std:sid="listener-34e386aa" handler="onSms_getCardInfoSubmitTimeout" name="submit-timeout"/>
+        <cl:responsedata dataid="Result"/>
+        <cl:responsedata dataid="dmCardLayoutInfo"/>
+        <cl:responsedata dataid="dsCardLayoutData"/>
+      </cl:submission>
+      <cl:datamap std:sid="d-map-f76392b1" id="Result">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" name="ResultCode"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-bb655fa5" id="dsCardLayoutData">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" name="Index"/>
+          <cl:datacolumn datatype="number" name="Sector"/>
+          <cl:datacolumn datatype="number" name="Block"/>
+          <cl:datacolumn datatype="number" name="Start"/>
+          <cl:datacolumn datatype="number" name="Length"/>
+          <cl:datacolumn datatype="number" name="KeyType"/>
+          <cl:datacolumn name="KeyValue"/>
+          <cl:datacolumn name="AIDCode"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-60b9e3eb" id="grdCardLayoutDataList">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="strSector"/>
+          <cl:datacolumn datatype="number" name="nBlock"/>
+          <cl:datacolumn datatype="number" name="nStart"/>
+          <cl:datacolumn datatype="number" name="nLength"/>
+          <cl:datacolumn name="nKeyType"/>
+          <cl:datacolumn name="SiteKey"/>
+          <cl:datacolumn name="AIDCode"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-ac33f4d5" id="sms_postCardLayoutInfo" action="/v1/cardLayout">
+        <cl:listener std:sid="listener-f4d3a156" handler="onSms_postCardLayoutInfoSubmitDone" name="submit-done"/>
+        <cl:listener std:sid="listener-4eaafa84" handler="onSms_postCardLayoutInfoSubmitError" name="submit-error"/>
+        <cl:listener std:sid="listener-419b9a8c" handler="onSms_postCardLayoutInfoSubmitTimeout" name="submit-timeout"/>
+        <cl:requestdata dataid="dmCardLayoutInfo"/>
+        <cl:requestdata dataid="dsCardLayoutData"/>
+        <cl:responsedata dataid="Result"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-a2691d55" id="terminals">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="number" name="TerminalID"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-bd441d24" id="sms_putCardLayoutInfoToTerminals" action="/v1/cardLayout" method="put">
+        <cl:listener std:sid="listener-f59fb379" handler="onSms_putCardLayoutInfoToTerminalsSubmitDone" name="submit-done"/>
+        <cl:listener std:sid="listener-8d77f39b" handler="onSms_putCardLayoutInfoToTerminalsSubmitError" name="submit-error"/>
+        <cl:listener std:sid="listener-6f6fb385" handler="onSms_putCardLayoutInfoToTerminalsSubmitTimeout" name="submit-timeout"/>
+        <cl:requestdata dataid="dmCardLayoutInfo"/>
+        <cl:requestdata dataid="dsCardLayoutData"/>
+        <cl:requestdata dataid="terminals"/>
+        <cl:responsedata dataid="Result"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec dev-comment=" BCALO : 일반 카드&#xD;&#xA; FCALO : 지문카드"/>
+  </head>
+  <body std:sid="body-0f882961" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-ad051598" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-a3f5c3de">
+      <cl:xylayoutdata std:sid="xyl-data-7ec6a32f" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:tabfolder std:sid="t-folder-bcb2872d" id="SCALA_tfdMain" class="un-form-user-normal">
+        <cl:formdata std:sid="f-data-e212f194" col="0" row="0"/>
+        <cl:tabitem std:sid="t-item-7f939b9e" selected="true" text="일반카드">
+          <cl:group std:sid="group-b0220405">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-e5da2e22" style="padding:5px;">
+              <cl:xylayoutdata std:sid="xyl-data-4991cb9c" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+              <cl:group std:sid="group-f10cd43e" id="BCALO_grpCardInfo">
+                <cl:formdata std:sid="f-data-536e1c60" col="0" row="0"/>
+                <cl:output std:sid="output-e08e5b2a" class="common-titlelabel" value="카드 정보">
+                  <cl:formdata std:sid="f-data-3eb652b2" col="0" colspan="6" row="0" rowspan="1"/>
+                </cl:output>
+                <cl:output std:sid="output-30e57426" class="common-controllabel" value="카드 용량 선택">
+                  <cl:formdata std:sid="f-data-8a541b27" col="0" row="1"/>
+                </cl:output>
+                <cl:output std:sid="output-badcf9ba" class="common-controllabel" value="카드 섹터 수">
+                  <cl:formdata std:sid="f-data-68106295" col="2" row="1"/>
+                </cl:output>
+                <cl:output std:sid="output-f409e8b9" class="common-titlelabel" value="ea">
+                  <cl:formdata std:sid="f-data-a3860382" col="4" row="1"/>
+                </cl:output>
+                <cl:combobox std:sid="c-box-26d18f66" id="BCALO_cmbCardCapacity">
+                  <cl:listener std:sid="listener-29d3c780" handler="onBCALO_cmbCardCapacitySelectionChange" name="selection-change"/>
+                  <cl:formdata std:sid="f-data-e7ece2b8" col="1" row="1"/>
+                </cl:combobox>
+                <cl:output std:sid="output-836e9bd7" id="BCALO_opbCardSector">
+                  <cl:formdata std:sid="f-data-d86df772" col="3" row="1"/>
+                </cl:output>
+                <cl:formlayout std:sid="f-layout-f17c4a96">
+                  <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                  <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                  <cl:columns autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:group std:sid="group-a24fc7d7">
+                <cl:formdata std:sid="f-data-dd9eb030" col="0" row="1"/>
+                <cl:output std:sid="output-7dc5db3c" class="common-titlelabel" value="인증방식">
+                  <cl:formdata std:sid="f-data-edfb66b1" col="0" row="0"/>
+                </cl:output>
+                <cl:output std:sid="output-420fbaba" id="BCALO_opbSerialTitle" class="common-titlelabel" value="시리얼 번호 형식">
+                  <cl:formdata std:sid="f-data-72b2a497" col="0" row="2"/>
+                </cl:output>
+                <cl:radiobutton std:sid="r-button-340797a5" id="BCALO_rdbCardReadType">
+                  <cl:listener std:sid="listener-b7b7a7bb" handler="onBCALO_rdbCardAuthTypeSelectionChange" name="selection-change"/>
+                  <cl:formdata std:sid="f-data-b83e33a5" col="0" row="1"/>
+                </cl:radiobutton>
+                <cl:radiobutton std:sid="r-button-7a987a6e" id="BCALO_rdbCardSerialNumType">
+                  <cl:formdata std:sid="f-data-c6dabbd3" col="0" row="3"/>
+                </cl:radiobutton>
+                <cl:formlayout std:sid="f-layout-377c7d35">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:group std:sid="group-d7b83621" id="BCALO_grpSectorInfo">
+                <cl:formdata std:sid="f-data-83b10520" col="0" row="2"/>
+                <cl:group std:sid="group-2eb6b2e8">
+                  <cl:formdata std:sid="f-data-f1b256ee" col="0" row="0"/>
+                  <cl:output std:sid="output-b5f5d67a" id="BCALO_opbSectorInfo" class="common-titlelabel" value="섹터 정보">
+                    <cl:formdata std:sid="f-data-7ddeb40a" col="0" row="0"/>
+                  </cl:output>
+                  <cl:group std:sid="group-29059a16">
+                    <cl:formdata std:sid="f-data-4f4e5dea" col="0" row="1"/>
+                    <cl:output std:sid="output-c7a9e978" id="BCALO_opbSector" class="common-controllabel" value="섹터">
+                      <cl:formdata std:sid="f-data-da10dcc5" col="0" row="0"/>
+                    </cl:output>
+                    <cl:output std:sid="output-e07d0172" id="BCALO_opbBlock" class="common-controllabel" value="블록">
+                      <cl:formdata std:sid="f-data-5cd80c39" col="2" row="0"/>
+                    </cl:output>
+                    <cl:combobox std:sid="c-box-6c6d1ce0" id="BCALO_cmbSector" preventinput="true">
+                      <cl:listener std:sid="listener-a08a2f45" handler="onBCALO_cmbSectorSelectionChange" name="selection-change"/>
+                      <cl:formdata std:sid="f-data-36710c3d" col="1" row="0"/>
+                      <cl:item label="000" value="0"/>
+                      <cl:item label="001" value="1"/>
+                      <cl:item label="002" value="2"/>
+                      <cl:item label="003" value="3"/>
+                      <cl:item label="004" value="4"/>
+                      <cl:item label="005" value="5"/>
+                      <cl:item label="006" value="6"/>
+                      <cl:item label="007" value="7"/>
+                      <cl:item label="008" value="8"/>
+                      <cl:item label="009" value="9"/>
+                      <cl:item label="010" value="10"/>
+                      <cl:item label="011" value="11"/>
+                      <cl:item label="012" value="12"/>
+                      <cl:item label="013" value="13"/>
+                      <cl:item label="014" value="14"/>
+                      <cl:item label="015" value="15"/>
+                    </cl:combobox>
+                    <cl:button std:sid="button-a8439630" id="BCALO_btnAddSectorDataList" class="userInfo_btn" value="추가">
+                      <cl:listener std:sid="listener-8712871a" handler="onBCALO_btnAddSectorDataListClick" name="click"/>
+                      <cl:formdata std:sid="f-data-335a148a" col="4" row="0"/>
+                    </cl:button>
+                    <cl:combobox std:sid="c-box-905f8d60" id="BCALO_cmbBlock" preventinput="true">
+                      <cl:formdata std:sid="f-data-0b301d17" col="3" row="0"/>
+                      <cl:item label="0" value="0"/>
+                      <cl:item label="1" value="1"/>
+                      <cl:item label="2" value="2"/>
+                    </cl:combobox>
+                    <cl:formlayout std:sid="f-layout-650a8608">
+                      <cl:rows length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-b06d3147">
+                    <cl:formdata std:sid="f-data-b380f845" col="0" row="2"/>
+                    <cl:button std:sid="button-1d677bc8" id="BCALO_btnDeleteSectorDataList" class="userInfo_btn" value="삭제">
+                      <cl:listener std:sid="listener-79974ac0" handler="onBCALO_btnDeleteSectorDataListClick" name="click"/>
+                      <cl:formdata std:sid="f-data-f6130c38" col="4" row="0"/>
+                    </cl:button>
+                    <cl:output std:sid="output-0256f293" id="BCALO_opbSectorStart" class="common-controllabel" value="시작">
+                      <cl:formdata std:sid="f-data-7deec61b" col="0" row="0"/>
+                    </cl:output>
+                    <cl:output std:sid="output-60975177" id="BCALO_opbSectorLen" class="common-controllabel" value="길이">
+                      <cl:formdata std:sid="f-data-f7b5614f" col="2" row="0"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-6955ac9c" id="BCALO_ipbSectorStart" value="10">
+                      <cl:formdata std:sid="f-data-bafecfa3" col="1" row="0"/>
+                    </cl:inputbox>
+                    <cl:inputbox std:sid="i-box-eeb13beb" id="BCALO_ipbSectorLen">
+                      <cl:formdata std:sid="f-data-ee291657" col="3" row="0"/>
+                    </cl:inputbox>
+                    <cl:formlayout std:sid="f-layout-f3666510">
+                      <cl:rows length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-a119ae33">
+                    <cl:formdata std:sid="f-data-9552521d" col="0" row="3"/>
+                    <cl:output std:sid="output-9fe16174" id="BCALO_opbKeyType" class="common-controllabel" value="키타입">
+                      <cl:formdata std:sid="f-data-b418c9d5" col="0" row="0"/>
+                    </cl:output>
+                    <cl:button std:sid="button-43097c97" id="BCALO_btnInitSectorDataList" class="userInfo_btn" value="초기화">
+                      <cl:listener std:sid="listener-ce95dfe9" handler="onBCALO_btnInitSectorDataListClick" name="click"/>
+                      <cl:formdata std:sid="f-data-0274da8a" col="2" row="0"/>
+                    </cl:button>
+                    <cl:radiobutton std:sid="r-button-b6c8f47a" id="BCALO_rdbKeyType">
+                      <cl:formdata std:sid="f-data-390c0876" col="1" row="0"/>
+                      <cl:item label="KEY A" value="96"/>
+                      <cl:item label="KEY B" value="97"/>
+                    </cl:radiobutton>
+                    <cl:formlayout std:sid="f-layout-c97edd03">
+                      <cl:rows length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-521b940e">
+                    <cl:formdata std:sid="f-data-f1317d00" col="0" row="4"/>
+                    <cl:output std:sid="output-bcefed69" id="BCALO_opbSiteKey" class="common-controllabel" value="사이트 키">
+                      <cl:formdata std:sid="f-data-94fdc8bb" col="0" row="0"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-922db203" id="BCALO_ipbKeyValue1" style="text-align:center;" maxlength="2">
+                      <cl:formdata std:sid="f-data-802a4ecf" col="1" row="0"/>
+                    </cl:inputbox>
+                    <cl:inputbox std:sid="i-box-de2fbb8b" id="BCALO_ipbKeyValue2" style="text-align:center;" maxlength="2">
+                      <cl:formdata std:sid="f-data-26c97d3a" col="2" row="0"/>
+                    </cl:inputbox>
+                    <cl:inputbox std:sid="i-box-1f14ec78" id="BCALO_ipbKeyValue3" style="text-align:center;" maxlength="2">
+                      <cl:formdata std:sid="f-data-2a334b21" col="3" row="0"/>
+                    </cl:inputbox>
+                    <cl:inputbox std:sid="i-box-5786135f" id="BCALO_ipbKeyValue4" style="text-align:center;" maxlength="2">
+                      <cl:formdata std:sid="f-data-4b1748a4" col="4" row="0"/>
+                    </cl:inputbox>
+                    <cl:inputbox std:sid="i-box-a31b3a51" id="BCALO_ipbKeyValue5" style="text-align:center;" maxlength="2">
+                      <cl:formdata std:sid="f-data-c2fd7ed6" col="5" row="0"/>
+                    </cl:inputbox>
+                    <cl:inputbox std:sid="i-box-8c14187a" id="BCALO_ipbKeyValue6" style="text-align:center;" maxlength="2">
+                      <cl:formdata std:sid="f-data-a4b8a0e5" col="6" row="0"/>
+                    </cl:inputbox>
+                    <cl:formlayout std:sid="f-layout-96373f6f">
+                      <cl:rows length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-a63525cd">
+                    <cl:formdata std:sid="f-data-60642cb3" col="0" row="5"/>
+                    <cl:output std:sid="output-2f4f6eaa" id="BCALO_opbCardDataSize" class="common-controllabel" value="조합한 카드 데이타 크기">
+                      <cl:formdata std:sid="f-data-9b330f0d" col="0" row="0"/>
+                    </cl:output>
+                    <cl:output std:sid="output-f52af341" id="BCALO_CardDataSize" value="0">
+                      <cl:formdata std:sid="f-data-b5339d28" col="1" row="0"/>
+                    </cl:output>
+                    <cl:formlayout std:sid="f-layout-26e79543">
+                      <cl:rows length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                      <cl:columns length="1" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:group std:sid="group-30ebe6ec">
+                    <cl:formdata std:sid="f-data-fc74d0b5" col="0" row="6"/>
+                    <cl:output std:sid="output-eb187c12" id="BCALO_opbAidCode" class="common-controllabel" value="AID Code" visible="false">
+                      <cl:formdata std:sid="f-data-5c18f715" col="0" row="0"/>
+                    </cl:output>
+                    <cl:inputbox std:sid="i-box-4efa4556" id="BCALO_ipbAidCode1" maxlength="2" visible="false">
+                      <cl:formdata std:sid="f-data-d058c864" col="1" row="0"/>
+                    </cl:inputbox>
+                    <cl:inputbox std:sid="i-box-93b0ac4d" id="BCALO_ipbAidCode2" maxlength="2" visible="false">
+                      <cl:formdata std:sid="f-data-dc5f5ad5" col="2" row="0"/>
+                    </cl:inputbox>
+                    <cl:formlayout std:sid="f-layout-a68602db">
+                      <cl:rows length="1" unit="FRACTION"/>
+                      <cl:columns autoSizing="false" length="1" minlength="100" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                      <cl:columns autoSizing="false" length="1" minlength="100" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                      <cl:columns autoSizing="false" length="1" minlength="100" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                      <cl:columns autoSizing="false" length="2" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                    </cl:formlayout>
+                  </cl:group>
+                  <cl:formlayout std:sid="f-layout-137d20c6">
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:rows length="1" unit="FRACTION"/>
+                    <cl:columns length="1" unit="FRACTION"/>
+                  </cl:formlayout>
+                </cl:group>
+                <cl:grid std:sid="grid-8a80c50d" id="BCALO_grdSertorInfoList" columnMovable="false" columnResizable="false" datasetid="grdCardLayoutDataList" readonly="true" showdeletedrow="false">
+                  <cl:formdata std:sid="f-data-50fc555b" col="0" row="1"/>
+                  <cl:gridcolumn std:sid="g-column-f7b7b82d" width="70px"/>
+                  <cl:gridcolumn std:sid="g-column-7ac7f422" width="50px"/>
+                  <cl:gridcolumn std:sid="g-column-b0d97a58" width="50px"/>
+                  <cl:gridcolumn std:sid="g-column-ec9162d6" width="70px"/>
+                  <cl:gridcolumn std:sid="g-column-0ccc49a3" width="80px"/>
+                  <cl:gridcolumn std:sid="g-column-1e33db96"/>
+                  <cl:gridcolumn std:sid="g-column-7e063896"/>
+                  <cl:gridheader std:sid="gh-band-9f50f4bc">
+                    <cl:gridrow std:sid="g-row-ac63bb77"/>
+                    <cl:gridcell std:sid="gh-cell-442ec432" colindex="0" rowindex="0" filterable="false" sortable="false" targetcolumnname="strSector" text="섹터"/>
+                    <cl:gridcell std:sid="gh-cell-eda8f9ff" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="nBlock" text="블록"/>
+                    <cl:gridcell std:sid="gh-cell-71827ec4" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="nStart" text="시작"/>
+                    <cl:gridcell std:sid="gh-cell-e12fc6cd" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="nLength" text="길이"/>
+                    <cl:gridcell std:sid="gh-cell-986c16dc" colindex="4" rowindex="0" filterable="false" sortable="false" targetcolumnname="nKeyType" text="키타입"/>
+                    <cl:gridcell std:sid="gh-cell-ac9dd46e" colindex="5" rowindex="0" filterable="false" sortable="false" targetcolumnname="SiteKey" text="사이트키"/>
+                    <cl:gridcell std:sid="gh-cell-c179eeb9" colindex="6" rowindex="0" filterable="false" sortable="false" targetcolumnname="AIDCode" text="AIDCode"/>
+                  </cl:gridheader>
+                  <cl:griddetail std:sid="gd-band-1b298cc8">
+                    <cl:gridrow std:sid="g-row-b4f642fc"/>
+                    <cl:gridcell std:sid="gd-cell-1ccf85b8" colindex="0" rowindex="0" columnname="strSector"/>
+                    <cl:gridcell std:sid="gd-cell-c51b4180" colindex="1" rowindex="0" columnname="nBlock"/>
+                    <cl:gridcell std:sid="gd-cell-1273e482" colindex="2" rowindex="0" columnname="nStart"/>
+                    <cl:gridcell std:sid="gd-cell-8c82db2b" colindex="3" rowindex="0" columnname="nLength"/>
+                    <cl:gridcell std:sid="gd-cell-6b41de09" colindex="4" rowindex="0" columnname="nKeyType"/>
+                    <cl:gridcell std:sid="gd-cell-f2ff8de2" colindex="5" rowindex="0" columnname="SiteKey"/>
+                    <cl:gridcell std:sid="gd-cell-d7689a99" colindex="6" rowindex="0" columnname="AIDCode"/>
+                  </cl:griddetail>
+                </cl:grid>
+                <cl:formlayout std:sid="f-layout-4582da4d">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:group std:sid="group-a09ce01b">
+                <cl:formdata std:sid="f-data-3c2c8024" col="0" row="3"/>
+                <cl:button std:sid="button-af034442" id="BCALO_btnCardLayoutDownloadToTerminal" class="userInfo_btn" value="단말로 전송">
+                  <cl:listener std:sid="listener-f3034e53" handler="onBCALO_btnCardLayoutDownloadToTerminalClick" name="click"/>
+                  <cl:formdata std:sid="f-data-f88a7243" col="0" row="0"/>
+                </cl:button>
+                <cl:button std:sid="button-34b84bb4" id="BCALO_btnCardLayoutSave" class="userInfo_btn" value="저장">
+                  <cl:listener std:sid="listener-8d9c8ea6" handler="onBCALO_btnCardLayoutSaveClick" name="click"/>
+                  <cl:formdata std:sid="f-data-c299d45e" col="5" row="0"/>
+                </cl:button>
+                <cl:button std:sid="button-602181dc" id="BCALO_btnCardLayoutClose" class="userInfo_btn" value="닫기">
+                  <cl:listener std:sid="listener-0e136f30" handler="onBCALO_btnCardLayoutCloseClick" name="click"/>
+                  <cl:formdata std:sid="f-data-b9424f02" col="6" row="0"/>
+                </cl:button>
+                <cl:formlayout std:sid="f-layout-f1ac140b">
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns autoSizing="false" length="1" minlength="120" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                  <cl:columns autoSizing="false" length="100" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout std:sid="f-layout-78a05b4f">
+                <cl:rows autoSizing="false" length="70" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                <cl:rows autoSizing="false" length="1" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                <cl:rows autoSizing="false" length="4" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:xylayout std:sid="xylayout-90b8b25f"/>
+          </cl:group>
+        </cl:tabitem>
+        <cl:tabitem std:sid="t-item-cdf9e978" text="지문카드" visible="false">
+          <std:metadata>
+            <std:property key="is-active-item" value="true"/>
+          </std:metadata>
+          <cl:group std:sid="group-37d08e52">
+            <std:metadata>
+              <std:property key="locked" value="true"/>
+            </std:metadata>
+            <cl:group std:sid="group-62328acd">
+              <cl:formdata std:sid="f-data-c4839f9b" col="0" row="0"/>
+              <cl:group std:sid="group-419dbf49">
+                <cl:formdata std:sid="f-data-c662c4fd" col="0" row="0"/>
+                <cl:output std:sid="output-60731dde" value="지문 정보">
+                  <cl:formdata std:sid="f-data-ca75ab23" col="0" row="0"/>
+                </cl:output>
+                <cl:output std:sid="output-fcae520b" value="지문 템플릿 크기">
+                  <cl:formdata std:sid="f-data-74c24762" col="0" row="1"/>
+                </cl:output>
+                <cl:output std:sid="output-48503315" value="지문 저장에 필요한 최소 섹터 수">
+                  <cl:formdata std:sid="f-data-8e50d606" col="0" row="2"/>
+                </cl:output>
+                <cl:output std:sid="output-45c7e1d6" value="설정된 갯수">
+                  <cl:formdata std:sid="f-data-8896b747" col="0" row="3"/>
+                </cl:output>
+                <cl:formlayout>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:group std:sid="group-0daf026f">
+                <cl:formdata std:sid="f-data-5cee7230" col="0" row="1"/>
+                <cl:formlayout>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:rows length="1" unit="FRACTION"/>
+                  <cl:columns length="1" unit="FRACTION"/>
+                </cl:formlayout>
+              </cl:group>
+              <cl:formlayout>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:rows length="1" unit="FRACTION"/>
+                <cl:rows autoSizing="false" length="2" minlength="0" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+                <cl:rows autoSizing="false" length="30" minlength="0" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+                <cl:columns length="1" unit="FRACTION"/>
+              </cl:formlayout>
+            </cl:group>
+            <cl:formlayout>
+              <cl:rows length="1" unit="FRACTION"/>
+              <cl:columns length="1" unit="FRACTION"/>
+            </cl:formlayout>
+          </cl:group>
+        </cl:tabitem>
+      </cl:tabfolder>
+      <cl:formlayout std:sid="f-layout-91446565">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-adf1e819"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

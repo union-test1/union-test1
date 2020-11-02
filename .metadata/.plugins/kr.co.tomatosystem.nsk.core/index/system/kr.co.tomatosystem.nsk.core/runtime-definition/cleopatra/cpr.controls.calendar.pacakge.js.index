@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.controls.calendar.pacakge.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="458" endIndex="523" startLine="10" endLine="12"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="addAnniversary" description="모든 데이트인풋의 캘린더에 기념일을 추가합니다. 정해진 format에 맞춘 기념일 날짜를 추가합니다.&lt;br/> 기념일 날짜는 string 또는  {date, label, className, unselectable} 로 구성된 객체로 추가할 수 있습니다.&lt;br/> 와일드 카드(&quot;*&quot;)를 적용하여 날짜를 작성 시 매년, 매월, 매일로 적용됩니다.&lt;br/>" hideFromProposal="true" deprecated="true" deprecationDescription="cpr.controls.Calendar.addAnniversary를 사용하시기 바랍니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="497" endIndex="520" startLine="10" endLine="10"/>
+          <params name="anny" description="기념일. {date, label, className, unselectable} 로 구성된 객체 또는 날짜 데이터의 배열." symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="506" endIndex="509" startLine="10" endLine="10"/>
+            <inferredType name="cpr.controls.calendar.Anniversary" instance="true" documentedType="true"/>
+          </params>
+          <params name="format" optional="true" description="기념일 날짜 형식. YYYY, MM, DD를 지원합니다." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="512" endIndex="517" startLine="10" endLine="10"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.controls.calendar.addAnniversary">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.controls.calendar.addAnniversary" originalSymbolName="__anonymous1">
+          <region startIndex="480" endIndex="493"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="497" endIndex="520" startLine="10" endLine="10"/>
+        <childScopes>
+          <region startIndex="520" endIndex="520"/>
+          <symbolMap key="anny">
+            <value xsi:type="index:ParameterSymbol" name="anny" description="기념일. {date, label, className, unselectable} 로 구성된 객체 또는 날짜 데이터의 배열." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="506" endIndex="509" startLine="10" endLine="10"/>
+              <inferredType name="cpr.controls.calendar.Anniversary" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="format">
+            <value xsi:type="index:ParameterSymbol" name="format" optional="true" description="기념일 날짜 형식. YYYY, MM, DD를 지원합니다." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="512" endIndex="517" startLine="10" endLine="10"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.controls.calendar.addAnniversary">
+      <value xsi:type="index:FunctionSymbol" name="cpr.controls.calendar.addAnniversary" description="모든 데이트인풋의 캘린더에 기념일을 추가합니다. 정해진 format에 맞춘 기념일 날짜를 추가합니다.&lt;br/> 기념일 날짜는 string 또는  {date, label, className, unselectable} 로 구성된 객체로 추가할 수 있습니다.&lt;br/> 와일드 카드(&quot;*&quot;)를 적용하여 날짜를 작성 시 매년, 매월, 매일로 적용됩니다.&lt;br/>" hideFromProposal="true" deprecated="true" deprecationDescription="cpr.controls.Calendar.addAnniversary를 사용하시기 바랍니다." anonymousFunction="true">
+        <region startIndex="480" endIndex="493"/>
+        <params name="anny" description="기념일. {date, label, className, unselectable} 로 구성된 객체 또는 날짜 데이터의 배열.">
+          <region xsi:type="index:RegionWithLine" startIndex="506" endIndex="509" startLine="10" endLine="10"/>
+          <inferredType name="cpr.controls.calendar.Anniversary" instance="true" documentedType="true"/>
+        </params>
+        <params name="format" optional="true" description="기념일 날짜 형식. YYYY, MM, DD를 지원합니다." parameterIndex="1">
+          <region xsi:type="index:RegionWithLine" startIndex="512" endIndex="517" startLine="10" endLine="10"/>
+          <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+        </params>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

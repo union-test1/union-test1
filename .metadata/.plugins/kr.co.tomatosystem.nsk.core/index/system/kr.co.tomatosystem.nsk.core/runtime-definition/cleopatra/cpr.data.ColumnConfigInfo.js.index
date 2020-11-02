@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.ColumnConfigInfo.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="22" endIndex="1103" startLine="4" endLine="57"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ColumnConfigInfo" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="50" endIndex="61" startLine="4" endLine="4"/>
+          <prototype>
+            <symbols key="dataType">
+              <value xsi:type="index:VariableSymbol" name="dataType" description="데이터 타입. (&quot;string&quot; or &quot;number&quot; or &quot;decimal&quot; or &quot;expression&quot;)">
+                <region startIndex="285" endIndex="292"/>
+                <inferredType name="AnonymousEnum" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.ColumnConfigInfo.js" instance="true" documentedType="true">
+                  <selfDeclaringTypeSymbol description="&quot;decimal&quot; | &quot;expression&quot; | &quot;number&quot; | &quot;string&quot;" baseSymbolName="String" classType="enum">
+                    <region startIndex="197" endIndex="242"/>
+                    <symbols key="decimal">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="decimal" literal="decimal">
+                        <region startIndex="197" endIndex="205"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="expression">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="expression" literal="expression">
+                        <region startIndex="209" endIndex="220"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="number">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="number" literal="number">
+                        <region startIndex="224" endIndex="231"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                    <symbols key="string">
+                      <value xsi:type="index:StringEnumFieldSymbol" name="string" literal="string">
+                        <region startIndex="235" endIndex="242"/>
+                        <inferredType name="String" instance="true"/>
+                      </value>
+                    </symbols>
+                  </selfDeclaringTypeSymbol>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="name">
+              <value xsi:type="index:VariableSymbol" name="name" description="컬럼명.">
+                <region startIndex="381" endIndex="384"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="displayOnly">
+              <value xsi:type="index:VariableSymbol" name="displayOnly" optional="true" description="display column인지 여부.  (true : display column,  false or 미기재 : data column)">
+                <region startIndex="560" endIndex="570"/>
+                <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="expression">
+              <value xsi:type="index:VariableSymbol" name="expression" optional="true" description="expression 식. (dataType=&quot;expression&quot;일 때, expression식 설정)">
+                <region startIndex="728" endIndex="737"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="defaultValue">
+              <value xsi:type="index:VariableSymbol" name="defaultValue" optional="true" description="기본 값.">
+                <region startIndex="840" endIndex="851"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="info">
+              <value xsi:type="index:VariableSymbol" name="info" optional="true" description="컬럼 정보.">
+                <region startIndex="955" endIndex="958"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="userAttr">
+              <value xsi:type="index:VariableSymbol" name="userAttr" optional="true" description="사용자정의 속성">
+                <region startIndex="1078" endIndex="1085"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.data.ColumnConfigInfo">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.data.ColumnConfigInfo" originalSymbolName="__anonymous1">
+          <region startIndex="31" endIndex="46"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="50" endIndex="61" startLine="4" endLine="4"/>
+        <childScopes>
+          <region startIndex="61" endIndex="61"/>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.data.ColumnConfigInfo">
+      <value xsi:type="index:FunctionSymbol" name="cpr.data.ColumnConfigInfo" baseSymbolName="Object" anonymousFunction="true" classType="interface">
+        <region startIndex="31" endIndex="46"/>
+        <prototype>
+          <symbols key="dataType">
+            <value xsi:type="index:VariableSymbol" name="dataType" description="데이터 타입. (&quot;string&quot; or &quot;number&quot; or &quot;decimal&quot; or &quot;expression&quot;)">
+              <region startIndex="285" endIndex="292"/>
+              <inferredType name="AnonymousEnum" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.data.ColumnConfigInfo.js" instance="true" documentedType="true">
+                <selfDeclaringTypeSymbol description="&quot;decimal&quot; | &quot;expression&quot; | &quot;number&quot; | &quot;string&quot;" baseSymbolName="String" classType="enum">
+                  <region startIndex="197" endIndex="242"/>
+                  <symbols key="decimal">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="decimal" literal="decimal">
+                      <region startIndex="197" endIndex="205"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="expression">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="expression" literal="expression">
+                      <region startIndex="209" endIndex="220"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="number">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="number" literal="number">
+                      <region startIndex="224" endIndex="231"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                  <symbols key="string">
+                    <value xsi:type="index:StringEnumFieldSymbol" name="string" literal="string">
+                      <region startIndex="235" endIndex="242"/>
+                      <inferredType name="String" instance="true"/>
+                    </value>
+                  </symbols>
+                </selfDeclaringTypeSymbol>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="name">
+            <value xsi:type="index:VariableSymbol" name="name" description="컬럼명.">
+              <region startIndex="381" endIndex="384"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="displayOnly">
+            <value xsi:type="index:VariableSymbol" name="displayOnly" optional="true" description="display column인지 여부.  (true : display column,  false or 미기재 : data column)">
+              <region startIndex="560" endIndex="570"/>
+              <inferredType name="Boolean" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="expression">
+            <value xsi:type="index:VariableSymbol" name="expression" optional="true" description="expression 식. (dataType=&quot;expression&quot;일 때, expression식 설정)">
+              <region startIndex="728" endIndex="737"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="defaultValue">
+            <value xsi:type="index:VariableSymbol" name="defaultValue" optional="true" description="기본 값.">
+              <region startIndex="840" endIndex="851"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="info">
+            <value xsi:type="index:VariableSymbol" name="info" optional="true" description="컬럼 정보.">
+              <region startIndex="955" endIndex="958"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="userAttr">
+            <value xsi:type="index:VariableSymbol" name="userAttr" optional="true" description="사용자정의 속성">
+              <region startIndex="1078" endIndex="1085"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

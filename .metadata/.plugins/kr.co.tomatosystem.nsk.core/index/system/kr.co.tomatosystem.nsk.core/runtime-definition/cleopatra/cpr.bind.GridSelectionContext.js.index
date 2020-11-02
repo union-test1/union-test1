@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.bind.GridSelectionContext.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="69" endIndex="614" startLine="6" endLine="30"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="GridSelectionContext" description="그리드 선택 행을 바인딩합니다." baseSymbolName="cpr.bind.DataBindContext" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="101" endIndex="116" startLine="6" endLine="6"/>
+          <params name="grid" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="110" endIndex="113" startLine="6" endLine="6"/>
+            <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="grid">
+              <value xsi:type="index:VariableSymbol" name="grid" description="&lt;b>Readonly&lt;/b> 그리드 컨트롤 객체를 반환합니다.">
+                <region startIndex="312" endIndex="315"/>
+                <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="rowIndex">
+              <value xsi:type="index:VariableSymbol" name="rowIndex" description="&lt;b>Readonly&lt;/b> 선택된 행의 인덱스를 반환합니다.">
+                <region startIndex="452" endIndex="459"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="localIndex">
+              <value xsi:type="index:VariableSymbol" name="localIndex" description="&lt;b>Readonly&lt;/b> 행 그롭 내에서의 인덱스를 얻습니다.">
+                <region startIndex="587" endIndex="596"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.bind.GridSelectionContext">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.bind.GridSelectionContext" originalSymbolName="__anonymous1">
+          <region startIndex="78" endIndex="97"/>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="101" endIndex="116" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="116" endIndex="116"/>
+          <symbolMap key="grid">
+            <value xsi:type="index:ParameterSymbol" name="grid" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="110" endIndex="113" startLine="6" endLine="6"/>
+              <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.bind.GridSelectionContext">
+      <value xsi:type="index:FunctionSymbol" name="cpr.bind.GridSelectionContext" description="그리드 선택 행을 바인딩합니다." baseSymbolName="cpr.bind.DataBindContext" anonymousFunction="true">
+        <region startIndex="78" endIndex="97"/>
+        <params name="grid" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="110" endIndex="113" startLine="6" endLine="6"/>
+          <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="grid">
+            <value xsi:type="index:VariableSymbol" name="grid" description="&lt;b>Readonly&lt;/b> 그리드 컨트롤 객체를 반환합니다.">
+              <region startIndex="312" endIndex="315"/>
+              <inferredType name="cpr.controls.Grid" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="rowIndex">
+            <value xsi:type="index:VariableSymbol" name="rowIndex" description="&lt;b>Readonly&lt;/b> 선택된 행의 인덱스를 반환합니다.">
+              <region startIndex="452" endIndex="459"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="localIndex">
+            <value xsi:type="index:VariableSymbol" name="localIndex" description="&lt;b>Readonly&lt;/b> 행 그롭 내에서의 인덱스를 얻습니다.">
+              <region startIndex="587" endIndex="596"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

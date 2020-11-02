@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="185" endIndex="4825" startLine="6" endLine="165"/>
+      <symbolMap key="Blob">
+        <value xsi:type="index:FunctionSymbol" name="Blob" description="The Blob() constructor returns a new Blob object. The content of the blob consists of the concatenation of the values given in the parameter array.">
+          <region xsi:type="index:RegionWithLine" startIndex="194" endIndex="197" startLine="6" endLine="6"/>
+          <params name="array" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="199" endIndex="203" startLine="6" endLine="6"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+          <prototype>
+            <symbols key="type">
+              <value xsi:type="index:VariableSymbol" name="type" description="Returns the MIME type of the file.">
+                <region startIndex="286" endIndex="289"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="size">
+              <value xsi:type="index:VariableSymbol" name="size" description="Returns the size of the file in bytes.">
+                <region startIndex="377" endIndex="380"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="slice">
+              <value xsi:type="index:FunctionVariableSymbol" name="slice" originalSymbolName="__anonymous1">
+                <region startIndex="1317" endIndex="1321"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="slice" returnDescription="A new Blob object containing the specified data from the source Blob." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1325" endIndex="1367" startLine="34" endLine="36"/>
+          <params name="start" description="An index into the Blob indicating the first byte to include in the new Blob. If you specify a negative value, it's treated as an offset from the end of the string toward the beginning. For example, -10 would be the 10th from last byte in the Blob. The default value is 0. If you specify a value for start that is larger than the size of the source Blob, the returned Blob has size 0 and contains no data." symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1334" endIndex="1338" startLine="34" endLine="34"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="end" description="An index into the Blob indicating the first byte that will *not* be included in the new Blob (i.e. the byte exactly at this index is not included). If you specify a negative value, it's treated as an offset from the end of the string toward the beginning. For example, -10 would be the 10th from last byte in the Blob. The default value is size." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1341" endIndex="1343" startLine="34" endLine="34"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="Blob" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="File">
+        <value xsi:type="index:FunctionSymbol" name="File" baseSymbolName="Blob">
+          <region xsi:type="index:RegionWithLine" startIndex="1380" endIndex="1383" startLine="38" endLine="38"/>
+          <prototype>
+            <symbols key="lastModified">
+              <value xsi:type="index:VariableSymbol" name="lastModified" description="Returns the last modified time of the file, in millisecond since the UNIX epoch (January 1st, 1970 at Midnight).">
+                <region startIndex="1641" endIndex="1652"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="name">
+              <value xsi:type="index:VariableSymbol" name="name" description="Returns the name of the file referenced by the File object.">
+                <region startIndex="1746" endIndex="1749"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="FileList">
+        <value xsi:type="index:FunctionSymbol" name="FileList" classType="interface">
+          <region xsi:type="index:RegionWithLine" startIndex="1789" endIndex="1796" startLine="62" endLine="62"/>
+          <prototype>
+            <symbols key="length">
+              <value xsi:type="index:VariableSymbol" name="length" description="A read-only value indicating the number of files in the list.">
+                <region startIndex="1898" endIndex="1903"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="item">
+              <value xsi:type="index:FunctionVariableSymbol" name="item" originalSymbolName="__anonymous2">
+                <region startIndex="2169" endIndex="2172"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="item" description="Returns a File object representing the file at the specified index in the file list." returnDescription="The File representing the requested file." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2176" endIndex="2191" startLine="76" endLine="77"/>
+          <params name="idx" description="The zero-based index of the file to retrieve from the list." symbolInScope="//@hotIndex/@rootScope/@childScopes.4/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2185" endIndex="2187" startLine="76" endLine="76"/>
+            <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <inferredReturnType name="File" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" instance="true" documentedType="true"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="FileReader">
+        <value xsi:type="index:FunctionSymbol" name="FileReader" baseSymbolName="EventTarget">
+          <region xsi:type="index:RegionWithLine" startIndex="2252" endIndex="2261" startLine="84" endLine="84"/>
+          <prototype>
+            <symbols key="error">
+              <value xsi:type="index:VariableSymbol" name="error" description="A DOMException representing the error that occurred while reading the file.">
+                <region startIndex="2414" endIndex="2418"/>
+                <inferredType name="DOMException" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="readyState">
+              <value xsi:type="index:VariableSymbol" name="readyState" description="A number indicating the state of the FileReader.">
+                <region startIndex="2537" endIndex="2546"/>
+                <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="result">
+              <value xsi:type="index:VariableSymbol" name="result" description="The file's contents. This property is only valid after the read operation is complete, and the format of the data depends on which of the methods was used to initiate the read operation.">
+                <region startIndex="2801" endIndex="2806"/>
+                <inferredType name="any" instance="true" documentedType="true"/>
+              </value>
+            </symbols>
+            <symbols key="onabort">
+              <value xsi:type="index:VariableSymbol" name="onabort" description="A handler for the abort event. This event is triggered each time the reading operation is aborted.">
+                <region startIndex="2983" endIndex="2989"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="onerror">
+              <value xsi:type="index:VariableSymbol" name="onerror" description="A handler for the error event. This event is triggered each time the reading operation encounter an error.">
+                <region startIndex="3166" endIndex="3172"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="onload">
+              <value xsi:type="index:VariableSymbol" name="onload" description="A handler for the load event. This event is triggered each time the reading operation is successfully completed.">
+                <region startIndex="3355" endIndex="3360"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="onloadstart">
+              <value xsi:type="index:VariableSymbol" name="onloadstart" description="A handler for the loadstart event. This event is triggered each time the reading is starting.">
+                <region startIndex="3524" endIndex="3534"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="onloadend">
+              <value xsi:type="index:VariableSymbol" name="onloadend" description="A handler for the loadend event. This event is triggered each time the reading operation is completed (either in success or failure).">
+                <region startIndex="3738" endIndex="3746"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="onprogress">
+              <value xsi:type="index:VariableSymbol" name="onprogress" description="A handler for the progress event. This event is triggered while reading a Blob content.">
+                <region startIndex="3910" endIndex="3919"/>
+                <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                  <typeParameters name="ProgressEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                  <typeParameters name="void" instance="true" documentedType="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+            <symbols key="abort">
+              <value xsi:type="index:FunctionVariableSymbol" name="abort" originalSymbolName="__anonymous3">
+                <region startIndex="4031" endIndex="4035"/>
+              </value>
+            </symbols>
+            <symbols key="readAsArrayBuffer">
+              <value xsi:type="index:FunctionVariableSymbol" name="readAsArrayBuffer" originalSymbolName="__anonymous4">
+                <region startIndex="4250" endIndex="4266"/>
+              </value>
+            </symbols>
+            <symbols key="readAsDataURL">
+              <value xsi:type="index:FunctionVariableSymbol" name="readAsDataURL" originalSymbolName="__anonymous5">
+                <region startIndex="4482" endIndex="4494"/>
+              </value>
+            </symbols>
+            <symbols key="readAsText">
+              <value xsi:type="index:FunctionVariableSymbol" name="readAsText" originalSymbolName="__anonymous6">
+                <region startIndex="4784" endIndex="4793"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="abort" description="Aborts the read operation. Upon return, the readyState will be DONE." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4039" endIndex="4051" startLine="145" endLine="145"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="readAsArrayBuffer" description="Starts reading the contents of the specified Blob, once finished, the result attribute contains an ArrayBuffer representing the file's data." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4270" endIndex="4286" startLine="151" endLine="151"/>
+          <params name="blob" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.7/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4279" endIndex="4282" startLine="151" endLine="151"/>
+            <inferredType name="Blob" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="readAsDataURL" description="Starts reading the contents of the specified Blob, once finished, the result attribute contains a data: URL representing the file's data." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4498" endIndex="4514" startLine="157" endLine="157"/>
+          <params name="blob" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.8/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4507" endIndex="4510" startLine="157" endLine="157"/>
+            <inferredType name="Blob" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous6">
+        <value xsi:type="index:FunctionSymbol" name="readAsText" description="Starts reading the contents of the specified Blob, once finished, the result attribute contains the contents of the file as a text string. An optional encoding name can be specified." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="4797" endIndex="4823" startLine="164" endLine="164"/>
+          <params name="blob" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4806" endIndex="4809" startLine="164" endLine="164"/>
+            <inferredType name="Blob" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" instance="true" documentedType="true"/>
+          </params>
+          <params name="encoding" optional="true" description="" parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.9/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="4812" endIndex="4819" startLine="164" endLine="164"/>
+            <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes name="Blob" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="206" endIndex="209"/>
+        <symbolMap key="array">
+          <value xsi:type="index:ParameterSymbol" name="array" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+            <region xsi:type="index:RegionWithLine" startIndex="199" endIndex="203" startLine="6" endLine="6"/>
+            <inferredType kind="UNKNOWN"/>
+          </value>
+        </symbolMap>
+        <fullRegion xsi:type="index:RegionWithLine" endIndex="209" startLine="6" endLine="8"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1325" endIndex="1367" startLine="34" endLine="36"/>
+        <childScopes>
+          <region startIndex="1346" endIndex="1367"/>
+          <symbolMap key="start">
+            <value xsi:type="index:ParameterSymbol" name="start" description="An index into the Blob indicating the first byte to include in the new Blob. If you specify a negative value, it's treated as an offset from the end of the string toward the beginning. For example, -10 would be the 10th from last byte in the Blob. The default value is 0. If you specify a value for start that is larger than the size of the source Blob, the returned Blob has size 0 and contains no data." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1334" endIndex="1338" startLine="34" endLine="34"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="end">
+            <value xsi:type="index:ParameterSymbol" name="end" description="An index into the Blob indicating the first byte that will *not* be included in the new Blob (i.e. the byte exactly at this index is not included). If you specify a negative value, it's treated as an offset from the end of the string toward the beginning. For example, -10 would be the 10th from last byte in the Blob. The default value is size." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.1/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1341" endIndex="1343" startLine="34" endLine="34"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes name="File" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region startIndex="1387" endIndex="1390"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1371" endIndex="1390" startLine="38" endLine="40"/>
+      </childScopes>
+      <childScopes name="FileList" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region startIndex="1800" endIndex="1803"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1758" endIndex="1803" startLine="62" endLine="64"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2176" endIndex="2191" startLine="76" endLine="77"/>
+        <childScopes>
+          <region startIndex="2190" endIndex="2191"/>
+          <symbolMap key="idx">
+            <value xsi:type="index:ParameterSymbol" name="idx" description="The zero-based index of the file to retrieve from the list." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.4/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2185" endIndex="2187" startLine="76" endLine="76"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes name="FileReader" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region startIndex="2266" endIndex="2266"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="2196" endIndex="2266" startLine="84" endLine="84"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4039" endIndex="4051" startLine="145" endLine="145"/>
+        <childScopes>
+          <region startIndex="4051" endIndex="4051"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4270" endIndex="4286" startLine="151" endLine="151"/>
+        <childScopes>
+          <region startIndex="4286" endIndex="4286"/>
+          <symbolMap key="blob">
+            <value xsi:type="index:ParameterSymbol" name="blob" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.7/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4279" endIndex="4282" startLine="151" endLine="151"/>
+              <inferredType name="Blob" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.8/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4498" endIndex="4514" startLine="157" endLine="157"/>
+        <childScopes>
+          <region startIndex="4514" endIndex="4514"/>
+          <symbolMap key="blob">
+            <value xsi:type="index:ParameterSymbol" name="blob" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.8/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4507" endIndex="4510" startLine="157" endLine="157"/>
+              <inferredType name="Blob" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.9/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="4797" endIndex="4823" startLine="164" endLine="164"/>
+        <childScopes>
+          <region startIndex="4823" endIndex="4823"/>
+          <symbolMap key="blob">
+            <value xsi:type="index:ParameterSymbol" name="blob" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="4806" endIndex="4809" startLine="164" endLine="164"/>
+              <inferredType name="Blob" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/file.js" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="encoding">
+            <value xsi:type="index:ParameterSymbol" name="encoding" optional="true" description="" parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.9/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="4812" endIndex="4819" startLine="164" endLine="164"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="Blob">
+      <value xsi:type="index:FunctionSymbol" name="Blob" description="The Blob() constructor returns a new Blob object. The content of the blob consists of the concatenation of the values given in the parameter array.">
+        <region xsi:type="index:RegionWithLine" startIndex="194" endIndex="197" startLine="6" endLine="6"/>
+        <params name="array">
+          <region xsi:type="index:RegionWithLine" startIndex="199" endIndex="203" startLine="6" endLine="6"/>
+          <inferredType kind="UNKNOWN"/>
+        </params>
+        <prototype>
+          <symbols key="type">
+            <value xsi:type="index:VariableSymbol" name="type" description="Returns the MIME type of the file.">
+              <region startIndex="286" endIndex="289"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="size">
+            <value xsi:type="index:VariableSymbol" name="size" description="Returns the size of the file in bytes.">
+              <region startIndex="377" endIndex="380"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="slice">
+            <value xsi:type="index:FunctionVariableSymbol" name="slice" originalSymbolName="__anonymous1">
+              <region startIndex="1317" endIndex="1321"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="File">
+      <value xsi:type="index:FunctionSymbol" name="File" baseSymbolName="Blob">
+        <region xsi:type="index:RegionWithLine" startIndex="1380" endIndex="1383" startLine="38" endLine="38"/>
+        <prototype>
+          <symbols key="lastModified">
+            <value xsi:type="index:VariableSymbol" name="lastModified" description="Returns the last modified time of the file, in millisecond since the UNIX epoch (January 1st, 1970 at Midnight).">
+              <region startIndex="1641" endIndex="1652"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="name">
+            <value xsi:type="index:VariableSymbol" name="name" description="Returns the name of the file referenced by the File object.">
+              <region startIndex="1746" endIndex="1749"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="FileList">
+      <value xsi:type="index:FunctionSymbol" name="FileList" classType="interface">
+        <region xsi:type="index:RegionWithLine" startIndex="1789" endIndex="1796" startLine="62" endLine="62"/>
+        <prototype>
+          <symbols key="length">
+            <value xsi:type="index:VariableSymbol" name="length" description="A read-only value indicating the number of files in the list.">
+              <region startIndex="1898" endIndex="1903"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="item">
+            <value xsi:type="index:FunctionVariableSymbol" name="item" originalSymbolName="__anonymous2">
+              <region startIndex="2169" endIndex="2172"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="FileReader">
+      <value xsi:type="index:FunctionSymbol" name="FileReader" baseSymbolName="EventTarget">
+        <region xsi:type="index:RegionWithLine" startIndex="2252" endIndex="2261" startLine="84" endLine="84"/>
+        <prototype>
+          <symbols key="error">
+            <value xsi:type="index:VariableSymbol" name="error" description="A DOMException representing the error that occurred while reading the file.">
+              <region startIndex="2414" endIndex="2418"/>
+              <inferredType name="DOMException" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="readyState">
+            <value xsi:type="index:VariableSymbol" name="readyState" description="A number indicating the state of the FileReader.">
+              <region startIndex="2537" endIndex="2546"/>
+              <inferredType name="Number" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="result">
+            <value xsi:type="index:VariableSymbol" name="result" description="The file's contents. This property is only valid after the read operation is complete, and the format of the data depends on which of the methods was used to initiate the read operation.">
+              <region startIndex="2801" endIndex="2806"/>
+              <inferredType name="any" instance="true" documentedType="true"/>
+            </value>
+          </symbols>
+          <symbols key="onabort">
+            <value xsi:type="index:VariableSymbol" name="onabort" description="A handler for the abort event. This event is triggered each time the reading operation is aborted.">
+              <region startIndex="2983" endIndex="2989"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="onerror">
+            <value xsi:type="index:VariableSymbol" name="onerror" description="A handler for the error event. This event is triggered each time the reading operation encounter an error.">
+              <region startIndex="3166" endIndex="3172"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="onload">
+            <value xsi:type="index:VariableSymbol" name="onload" description="A handler for the load event. This event is triggered each time the reading operation is successfully completed.">
+              <region startIndex="3355" endIndex="3360"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="onloadstart">
+            <value xsi:type="index:VariableSymbol" name="onloadstart" description="A handler for the loadstart event. This event is triggered each time the reading is starting.">
+              <region startIndex="3524" endIndex="3534"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="onloadend">
+            <value xsi:type="index:VariableSymbol" name="onloadend" description="A handler for the loadend event. This event is triggered each time the reading operation is completed (either in success or failure).">
+              <region startIndex="3738" endIndex="3746"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="UIEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="onprogress">
+            <value xsi:type="index:VariableSymbol" name="onprogress" description="A handler for the progress event. This event is triggered while reading a Blob content.">
+              <region startIndex="3910" endIndex="3919"/>
+              <inferredType name="Function" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="ProgressEvent" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/events.js?type=EXPORTED" instance="true" documentedType="true"/>
+                <typeParameters name="void" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+          <symbols key="abort">
+            <value xsi:type="index:FunctionVariableSymbol" name="abort" originalSymbolName="__anonymous3">
+              <region startIndex="4031" endIndex="4035"/>
+            </value>
+          </symbols>
+          <symbols key="readAsArrayBuffer">
+            <value xsi:type="index:FunctionVariableSymbol" name="readAsArrayBuffer" originalSymbolName="__anonymous4">
+              <region startIndex="4250" endIndex="4266"/>
+            </value>
+          </symbols>
+          <symbols key="readAsDataURL">
+            <value xsi:type="index:FunctionVariableSymbol" name="readAsDataURL" originalSymbolName="__anonymous5">
+              <region startIndex="4482" endIndex="4494"/>
+            </value>
+          </symbols>
+          <symbols key="readAsText">
+            <value xsi:type="index:FunctionVariableSymbol" name="readAsText" originalSymbolName="__anonymous6">
+              <region startIndex="4784" endIndex="4793"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

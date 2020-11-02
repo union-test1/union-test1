@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="126" endIndex="2820" startLine="8" endLine="95"/>
+      <symbolMap key="MessageEvent">
+        <value xsi:type="index:FunctionSymbol" name="MessageEvent" description="The MessageEvent interface represents a message received by a target object." baseSymbolName="Event">
+          <region xsi:type="index:RegionWithLine" startIndex="135" endIndex="146" startLine="8" endLine="8"/>
+          <prototype>
+            <symbols key="data">
+              <value xsi:type="index:VariableSymbol" name="data" description="The data sent by the message emitter.">
+                <region startIndex="228" endIndex="231"/>
+                <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="origin">
+              <value xsi:type="index:VariableSymbol" name="origin" description="A USVString representing the origin of the message emitter.">
+                <region startIndex="344" endIndex="349"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="lastEventId">
+              <value xsi:type="index:VariableSymbol" name="lastEventId" description="A DOMString representing a unique ID for the event.">
+                <region startIndex="444" endIndex="454"/>
+                <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="source">
+              <value xsi:type="index:VariableSymbol" name="source" description="A MessageEventSource (which can be a WindowProxy, MessagePort, or ServiceWorker object) representing the message emitter.">
+                <region startIndex="619" endIndex="624"/>
+                <inferredType name="MessagePort" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="ports">
+              <value xsi:type="index:VariableSymbol" name="ports" description="An array of MessagePort objects representing the ports associated with the channel the message is being sent through (where appropriate, e.g. in channel messaging or when sending a message to a shared worker).">
+                <region startIndex="893" endIndex="897"/>
+                <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                  <typeParameters name="Object" instance="true"/>
+                </inferredType>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="MessagePort">
+        <value xsi:type="index:FunctionSymbol" name="MessagePort" description="The MessagePort interface of the Channel Messaging API represents one of the two ports of a MessageChannel, allowing messages to be sent from one port and listening out for them arriving at the other." baseSymbolName="EventTarget">
+          <region xsi:type="index:RegionWithLine" startIndex="1170" endIndex="1180" startLine="44" endLine="44"/>
+          <prototype>
+            <symbols key="postMessage">
+              <value xsi:type="index:FunctionVariableSymbol" name="postMessage" originalSymbolName="__anonymous1">
+                <region startIndex="1599" endIndex="1609"/>
+              </value>
+            </symbols>
+            <symbols key="start">
+              <value xsi:type="index:FunctionVariableSymbol" name="start" originalSymbolName="__anonymous2">
+                <region startIndex="1833" endIndex="1837"/>
+              </value>
+            </symbols>
+            <symbols key="close">
+              <value xsi:type="index:FunctionVariableSymbol" name="close" originalSymbolName="__anonymous3">
+                <region startIndex="1938" endIndex="1942"/>
+              </value>
+            </symbols>
+            <symbols key="onmessage">
+              <value xsi:type="index:FunctionVariableSymbol" name="onmessage" originalSymbolName="__anonymous4">
+                <region startIndex="2150" endIndex="2158"/>
+              </value>
+            </symbols>
+            <symbols key="onmessageerror">
+              <value xsi:type="index:FunctionVariableSymbol" name="onmessageerror" originalSymbolName="__anonymous5">
+                <region startIndex="2382" endIndex="2395"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="postMessage" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1613" endIndex="1643" startLine="54" endLine="55"/>
+          <params name="message" description="The message you want to send through the channel. This can be of any basic data type. Multiple data items can be sent as an array." symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1622" endIndex="1628" startLine="54" endLine="54"/>
+            <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+          </params>
+          <params name="transfers" description="Transferable objects to be transferred — these objects have their ownership transferred to the receiving browsing context, so are no longer usable by the sending browsing context." parameterIndex="1" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.1/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="1631" endIndex="1639" startLine="54" endLine="54"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="start" description="Starts the sending of messages queued on the port (only needed when using EventTarget.addEventListener; it is implied when using MessagePort.onmessage.)" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1841" endIndex="1852" startLine="60" endLine="60"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="close" description="Disconnects the port, so it is no longer active." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="1946" endIndex="1957" startLine="65" endLine="65"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous4">
+        <value xsi:type="index:FunctionSymbol" name="onmessage" description="An EventListener called when a MessageEvent of type message is fired on the port—that is, when the port receives a message." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2162" endIndex="2174" startLine="71" endLine="71"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.5/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2171" endIndex="2171" startLine="71" endLine="71"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous5">
+        <value xsi:type="index:FunctionSymbol" name="onmessageerror" description="An EventListener called when a MessageEvent of type MessageError is fired—that is, when it receives a message that cannot be deserialized." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="2399" endIndex="2411" startLine="77" endLine="77"/>
+          <params name="e" symbolInScope="//@hotIndex/@rootScope/@childScopes.6/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="2408" endIndex="2408" startLine="77" endLine="77"/>
+            <inferredType kind="UNKNOWN"/>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="MessageChannel">
+        <value xsi:type="index:FunctionSymbol" name="MessageChannel" description="The MessageChannel interface of the Channel Messaging API allows us to create a new message channel and send data through it via its two MessagePort properties.">
+          <region xsi:type="index:RegionWithLine" startIndex="2612" endIndex="2625" startLine="83" endLine="83"/>
+          <prototype>
+            <symbols key="port1">
+              <value xsi:type="index:VariableSymbol" name="port1" description="Returns port1 of the channel.">
+                <region startIndex="2701" endIndex="2705"/>
+                <inferredType name="MessagePort" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js" instance="true"/>
+              </value>
+            </symbols>
+            <symbols key="port2">
+              <value xsi:type="index:VariableSymbol" name="port2" description="Returns port2 of the channel.">
+                <region startIndex="2795" endIndex="2799"/>
+                <inferredType name="MessagePort" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js" instance="true"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <childScopes name="MessageEvent" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region startIndex="150" endIndex="153"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="1" endIndex="153" startLine="8" endLine="10"/>
+      </childScopes>
+      <childScopes name="MessagePort" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.1/@value">
+        <region startIndex="1184" endIndex="1187"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="906" endIndex="1187" startLine="44" endLine="46"/>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1613" endIndex="1643" startLine="54" endLine="55"/>
+        <childScopes>
+          <region startIndex="1642" endIndex="1643"/>
+          <symbolMap key="message">
+            <value xsi:type="index:ParameterSymbol" name="message" description="The message you want to send through the channel. This can be of any basic data type. Multiple data items can be sent as an array." symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="1622" endIndex="1628" startLine="54" endLine="54"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+          <symbolMap key="transfers">
+            <value xsi:type="index:ParameterSymbol" name="transfers" description="Transferable objects to be transferred — these objects have their ownership transferred to the receiving browsing context, so are no longer usable by the sending browsing context." parameterIndex="1" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.1">
+              <region xsi:type="index:RegionWithLine" startIndex="1631" endIndex="1639" startLine="54" endLine="54"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1841" endIndex="1852" startLine="60" endLine="60"/>
+        <childScopes>
+          <region startIndex="1852" endIndex="1852"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.4/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="1946" endIndex="1957" startLine="65" endLine="65"/>
+        <childScopes>
+          <region startIndex="1957" endIndex="1957"/>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.5/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2162" endIndex="2174" startLine="71" endLine="71"/>
+        <childScopes>
+          <region startIndex="2174" endIndex="2174"/>
+          <symbolMap key="e">
+            <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.5/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2171" endIndex="2171" startLine="71" endLine="71"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.6/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="2399" endIndex="2411" startLine="77" endLine="77"/>
+        <childScopes>
+          <region startIndex="2411" endIndex="2411"/>
+          <symbolMap key="e">
+            <value xsi:type="index:ParameterSymbol" name="e" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.6/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="2408" endIndex="2408" startLine="77" endLine="77"/>
+              <inferredType kind="UNKNOWN"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes name="MessageChannel" relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.7/@value">
+        <region startIndex="2629" endIndex="2632"/>
+        <fullRegion xsi:type="index:RegionWithLine" startIndex="2415" endIndex="2632" startLine="83" endLine="85"/>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="MessageEvent">
+      <value xsi:type="index:FunctionSymbol" name="MessageEvent" description="The MessageEvent interface represents a message received by a target object." baseSymbolName="Event">
+        <region xsi:type="index:RegionWithLine" startIndex="135" endIndex="146" startLine="8" endLine="8"/>
+        <prototype>
+          <symbols key="data">
+            <value xsi:type="index:VariableSymbol" name="data" description="The data sent by the message emitter.">
+              <region startIndex="228" endIndex="231"/>
+              <inferredType name="Object" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="origin">
+            <value xsi:type="index:VariableSymbol" name="origin" description="A USVString representing the origin of the message emitter.">
+              <region startIndex="344" endIndex="349"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="lastEventId">
+            <value xsi:type="index:VariableSymbol" name="lastEventId" description="A DOMString representing a unique ID for the event.">
+              <region startIndex="444" endIndex="454"/>
+              <inferredType name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="source">
+            <value xsi:type="index:VariableSymbol" name="source" description="A MessageEventSource (which can be a WindowProxy, MessagePort, or ServiceWorker object) representing the message emitter.">
+              <region startIndex="619" endIndex="624"/>
+              <inferredType name="MessagePort" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="ports">
+            <value xsi:type="index:VariableSymbol" name="ports" description="An array of MessagePort objects representing the ports associated with the channel the message is being sent through (where appropriate, e.g. in channel messaging or when sending a message to a shared worker).">
+              <region startIndex="893" endIndex="897"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true">
+                <typeParameters name="Object" instance="true"/>
+              </inferredType>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="MessagePort">
+      <value xsi:type="index:FunctionSymbol" name="MessagePort" description="The MessagePort interface of the Channel Messaging API represents one of the two ports of a MessageChannel, allowing messages to be sent from one port and listening out for them arriving at the other." baseSymbolName="EventTarget">
+        <region xsi:type="index:RegionWithLine" startIndex="1170" endIndex="1180" startLine="44" endLine="44"/>
+        <prototype>
+          <symbols key="postMessage">
+            <value xsi:type="index:FunctionVariableSymbol" name="postMessage" originalSymbolName="__anonymous1">
+              <region startIndex="1599" endIndex="1609"/>
+            </value>
+          </symbols>
+          <symbols key="start">
+            <value xsi:type="index:FunctionVariableSymbol" name="start" originalSymbolName="__anonymous2">
+              <region startIndex="1833" endIndex="1837"/>
+            </value>
+          </symbols>
+          <symbols key="close">
+            <value xsi:type="index:FunctionVariableSymbol" name="close" originalSymbolName="__anonymous3">
+              <region startIndex="1938" endIndex="1942"/>
+            </value>
+          </symbols>
+          <symbols key="onmessage">
+            <value xsi:type="index:FunctionVariableSymbol" name="onmessage" originalSymbolName="__anonymous4">
+              <region startIndex="2150" endIndex="2158"/>
+            </value>
+          </symbols>
+          <symbols key="onmessageerror">
+            <value xsi:type="index:FunctionVariableSymbol" name="onmessageerror" originalSymbolName="__anonymous5">
+              <region startIndex="2382" endIndex="2395"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+    <exportedSymbols key="MessageChannel">
+      <value xsi:type="index:FunctionSymbol" name="MessageChannel" description="The MessageChannel interface of the Channel Messaging API allows us to create a new message channel and send data through it via its two MessagePort properties.">
+        <region xsi:type="index:RegionWithLine" startIndex="2612" endIndex="2625" startLine="83" endLine="83"/>
+        <prototype>
+          <symbols key="port1">
+            <value xsi:type="index:VariableSymbol" name="port1" description="Returns port1 of the channel.">
+              <region startIndex="2701" endIndex="2705"/>
+              <inferredType name="MessagePort" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js" instance="true"/>
+            </value>
+          </symbols>
+          <symbols key="port2">
+            <value xsi:type="index:VariableSymbol" name="port2" description="Returns port2 of the channel.">
+              <region startIndex="2795" endIndex="2799"/>
+              <inferredType name="MessagePort" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/message.js" instance="true"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

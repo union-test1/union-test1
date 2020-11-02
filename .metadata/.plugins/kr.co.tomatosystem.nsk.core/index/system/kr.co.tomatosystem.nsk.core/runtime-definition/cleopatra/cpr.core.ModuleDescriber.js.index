@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index:InferResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:index="kr.co.tomatosystem.nsk.core.model.index" inputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/cleopatra/cpr.core.ModuleDescriber.js" fileModificationTimestamp="-1" inferenceVersion="1.0.2437.release-20200911-1753">
+  <hotIndex>
+    <rootScope>
+      <region xsi:type="index:RegionWithLine" startIndex="91" endIndex="503" startLine="6" endLine="21"/>
+      <symbolMap key="__anonymous1">
+        <value xsi:type="index:FunctionSymbol" name="ModuleDescriber" description="모듈의 디펜던시 및 카테고리등의 특징을 기술하는 방법을 제공하는 객체." baseSymbolName="Object" anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="118" endIndex="135" startLine="6" endLine="6"/>
+          <params name="module" description="" symbolInScope="//@hotIndex/@rootScope/@childScopes.0/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="127" endIndex="132" startLine="6" endLine="6"/>
+            <inferredType name="cpr.core.Module" instance="true" documentedType="true"/>
+          </params>
+          <prototype>
+            <symbols key="category">
+              <value xsi:type="index:FunctionVariableSymbol" name="category" originalSymbolName="__anonymous2">
+                <region startIndex="309" endIndex="316"/>
+              </value>
+            </symbols>
+            <symbols key="depends">
+              <value xsi:type="index:FunctionVariableSymbol" name="depends" originalSymbolName="__anonymous3">
+                <region startIndex="468" endIndex="474"/>
+              </value>
+            </symbols>
+          </prototype>
+        </value>
+      </symbolMap>
+      <symbolMap key="cpr.core.ModuleDescriber">
+        <value xsi:type="index:FunctionVariableSymbol" name="cpr.core.ModuleDescriber" originalSymbolName="__anonymous1">
+          <region startIndex="100" endIndex="114"/>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous2">
+        <value xsi:type="index:FunctionSymbol" name="category" description="현재 선언중인 공통 모듈의 카테고리들을 지정합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="320" endIndex="341" startLine="13" endLine="13"/>
+          <params name="categories" description="포함된 카테고리 목록" symbolInScope="//@hotIndex/@rootScope/@childScopes.1/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="329" endIndex="338" startLine="13" endLine="13"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <symbolMap key="__anonymous3">
+        <value xsi:type="index:FunctionSymbol" name="depends" description="모듈이 갖는 의존성을 선언합니다." anonymousFunction="true">
+          <region xsi:type="index:RegionWithLine" startIndex="478" endIndex="500" startLine="19" endLine="19"/>
+          <params name="otherModule" description="현재 선언중인 모듈의 의존 모듈의 ID 목록" symbolInScope="//@hotIndex/@rootScope/@childScopes.2/@childScopes.0/@symbolMap.0/@value">
+            <region xsi:type="index:RegionWithLine" startIndex="487" endIndex="497" startLine="19" endLine="19"/>
+            <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+              <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+            </inferredType>
+          </params>
+        </value>
+      </symbolMap>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.0/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="118" endIndex="135" startLine="6" endLine="6"/>
+        <childScopes>
+          <region startIndex="135" endIndex="135"/>
+          <symbolMap key="module">
+            <value xsi:type="index:ParameterSymbol" name="module" description="" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.0/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="127" endIndex="132" startLine="6" endLine="6"/>
+              <inferredType name="cpr.core.Module" instance="true" documentedType="true"/>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.2/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="320" endIndex="341" startLine="13" endLine="13"/>
+        <childScopes>
+          <region startIndex="341" endIndex="341"/>
+          <symbolMap key="categories">
+            <value xsi:type="index:ParameterSymbol" name="categories" description="포함된 카테고리 목록" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.2/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="329" endIndex="338" startLine="13" endLine="13"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+      <childScopes relatedFunctionSymbol="//@hotIndex/@rootScope/@symbolMap.3/@value">
+        <region xsi:type="index:RegionWithLine" startIndex="478" endIndex="500" startLine="19" endLine="19"/>
+        <childScopes>
+          <region startIndex="500" endIndex="500"/>
+          <symbolMap key="otherModule">
+            <value xsi:type="index:ParameterSymbol" name="otherModule" description="현재 선언중인 모듈의 의존 모듈의 ID 목록" symbolInFunction="//@hotIndex/@rootScope/@symbolMap.3/@value/@params.0">
+              <region xsi:type="index:RegionWithLine" startIndex="487" endIndex="497" startLine="19" endLine="19"/>
+              <inferredType name="Array" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/Array.js?type=EXPORTED" instance="true" documentedType="true">
+                <typeParameters name="String" decalringInputURI="platform:/plugin/kr.co.tomatosystem.nsk.core/runtime-definition/system/System.js?type=EXPORTED" instance="true" documentedType="true"/>
+              </inferredType>
+            </value>
+          </symbolMap>
+        </childScopes>
+      </childScopes>
+    </rootScope>
+  </hotIndex>
+  <coldIndex>
+    <exportedSymbols key="cpr.core.ModuleDescriber">
+      <value xsi:type="index:FunctionSymbol" name="cpr.core.ModuleDescriber" description="모듈의 디펜던시 및 카테고리등의 특징을 기술하는 방법을 제공하는 객체." baseSymbolName="Object" anonymousFunction="true">
+        <region startIndex="100" endIndex="114"/>
+        <params name="module" description="">
+          <region xsi:type="index:RegionWithLine" startIndex="127" endIndex="132" startLine="6" endLine="6"/>
+          <inferredType name="cpr.core.Module" instance="true" documentedType="true"/>
+        </params>
+        <prototype>
+          <symbols key="category">
+            <value xsi:type="index:FunctionVariableSymbol" name="category" originalSymbolName="__anonymous2">
+              <region startIndex="309" endIndex="316"/>
+            </value>
+          </symbols>
+          <symbols key="depends">
+            <value xsi:type="index:FunctionVariableSymbol" name="depends" originalSymbolName="__anonymous3">
+              <region startIndex="468" endIndex="474"/>
+            </value>
+          </symbols>
+        </prototype>
+      </value>
+    </exportedSymbols>
+  </coldIndex>
+</index:InferResult>

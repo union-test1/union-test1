@@ -1,0 +1,49 @@
+ .bomb.cl-progress {
+ 	background: none;
+ 	border : none;
+	/* 진행 바 */
+	.cl-progress-bar {
+		border:none;
+		background-image:
+			// 불꽃 
+			url('fire.gif'),
+			
+			// 마지막 심지 가리개
+			linear-gradient(white, white),
+			
+			// 도화선
+			url('fuse.gif'),
+			
+			// 폭탄
+			url('bomb.gif');
+			
+		background-position:
+			right center,
+			right center,
+			25px center,
+			0px center;
+		
+		background-repeat:
+			no-repeat,
+			no-repeat,
+			repeat-x,
+			no-repeat;
+			
+		background-size:
+			25px 25px,
+			12px 25px,
+			25px 25px,
+			25px 25px;
+	}
+}
+
+.explosion {
+	background-image: url(explosion.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: ~"calc(50% - 128px)";
+	top: ~"calc(50% - 128px)";
+	width: 256px;
+	height: 256px;
+}
