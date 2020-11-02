@@ -1,0 +1,22 @@
+.bomb.cl-progress {
+  background: none;
+  border: none;
+  /* 진행 바 */
+}
+.bomb.cl-progress .cl-progress-bar {
+  border: none;
+  background-image: url("fire.gif"), linear-gradient(white, white), url("fuse.gif"), url("bomb.gif");
+  background-position: right center, right center, 25px center, 0px center;
+  background-repeat: no-repeat, no-repeat, repeat-x, no-repeat;
+  background-size: 25px 25px, 12px 25px, 25px 25px, 25px 25px;
+}
+.explosion {
+  background-image: url("explosion.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: calc(50% - 128px);
+  top: calc(50% - 128px);
+  width: 256px;
+  height: 256px;
+}
