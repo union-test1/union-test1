@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-dbc53c2b" version="1.0.0.0">
+  <head std:sid="head-60329569">
+    <title>checkcombobox</title>
+    <screen std:sid="screen-8d525b3f" id="default" active="false" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-58fa7171" id="new-screen" active="true" customHeight="600" height="600px" maxwidth="1024px" minwidth="800px" name="new-screen" width="800px"/>
+    <screen std:sid="screen-c7f92455" id="tablet" height="667px" maxwidth="800px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-43cd424e" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-64be5e86">
+      <cl:dataset std:sid="d-set-e2acfbdd" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[column11]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column11]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[column12]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column12]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[column13]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column13]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[column14]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[column14]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-b3b35fd6" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:udc std:sid="ud-control-5ccc6f79" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-4b83b1b3" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:group std:sid="group-7d0af923">
+      <cl:xylayoutdata std:sid="xyl-data-f7210ef2" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="70px" verticalAnchor="BOTH"/>
+      <cl:combobox std:sid="c-box-bc268549" id="checkCombo" multiple="true">
+        <cl:listener std:sid="listener-bf9cef2a" handler="onCheckComboBeforeSelectionChange" name="before-selection-change"/>
+        <cl:listener std:sid="listener-0a248113" handler="onCheckComboSelectionChange" name="selection-change"/>
+        <cl:formdata col="1" row="0"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+        <cl:item label="label4" value="value4"/>
+        <cl:item label="label5" value="value5"/>
+        <cl:item label="label6" value="value6"/>
+        <cl:itemset datasetid="ds1" label="label" value="value"/>
+      </cl:combobox>
+      <cl:textarea std:sid="t-area-863a795d" id="txa_print">
+        <cl:formdata col="0" colspan="2" row="1" rowspan="2"/>
+      </cl:textarea>
+      <cl:group std:sid="group-5a8cd64f">
+        <cl:formdata std:sid="f-data-9f6afc79" col="2" row="1"/>
+        <cl:output std:sid="output-9918b877" style="font-weight:bold;" value="속성 값 변경">
+          <cl:formdata col="0" colspan="2" row="0" rowspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-0614f84a" style="text-align:left;" value="multiple">
+          <cl:formdata std:sid="f-data-2ca9f777" col="0" row="1"/>
+        </cl:output>
+        <cl:checkbox std:sid="c-box-cd9ceaed" id="cbx_multiple" falsevalue="false" text="다중 선택" value="true">
+          <cl:listener std:sid="listener-d6276d1a" handler="onCbx_multipleValueChange" name="value-change"/>
+          <cl:formdata std:sid="f-data-52580ecf" col="1" row="1"/>
+        </cl:checkbox>
+        <cl:output std:sid="output-f357f512" style="text-align:left;" value="displayExp">
+          <cl:formdata std:sid="f-data-a210ed7b" col="0" row="2"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-0168d9e8" id="ipb_displayExp">
+          <cl:formdata std:sid="f-data-c3685a1c" col="1" row="2"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-79909256" value="label 표기 방식 설정">
+          <cl:listener std:sid="listener-85fbc219" handler="onButtonClick" name="click"/>
+          <cl:formdata std:sid="f-data-ca7e869a" col="2" row="2"/>
+        </cl:button>
+        <cl:output std:sid="output-fbce8588" style="text-align:left;" value="delimiter">
+          <cl:formdata std:sid="f-data-dc438db5" col="0" row="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-0532620c" id="ipb_delimiter">
+          <cl:formdata std:sid="f-data-639d33bb" col="1" row="3"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-b9bbe487" value="다중 선택 시 구분자 설정">
+          <cl:listener std:sid="listener-788c1006" handler="onButtonClick2" name="click"/>
+          <cl:formdata std:sid="f-data-b9e6dd1f" col="2" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-e7f1be65" style="font-weight:bold;" value="콤보 박스의 값 변경">
+          <cl:formdata col="0" colspan="2" row="5" rowspan="1"/>
+        </cl:output>
+        <cl:output std:sid="output-de46b88c" style="text-align:left;" value="value">
+          <cl:formdata col="0" row="6"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-792f286a" id="ipb_value">
+          <cl:formdata col="1" row="6"/>
+        </cl:inputbox>
+        <cl:button std:sid="button-a57d30fd" value="콤보 박스의 값 변경">
+          <cl:listener std:sid="listener-241701fa" handler="onButtonClick3" name="click"/>
+          <cl:formdata col="2" row="6"/>
+        </cl:button>
+        <cl:formlayout>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="70" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="150" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="2" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="200" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="2" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-4f52d393"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

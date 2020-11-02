@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-501ce4da" version="1.0.0.0">
+  <head std:sid="head-0ae80a2f">
+    <title>grid_autoRowHeight</title>
+    <screen std:sid="screen-e7673174" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-52116029" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-34285f45" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-512820e1">
+      <cl:dataset std:sid="d-set-0628affe" id="ds_autoRowHeight">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="default"/>
+          <cl:datacolumn name="output"/>
+          <cl:datacolumn name="textarea"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-e8875fe5" id="sms_autoRowHeight" action="./data/gridAutoRowData.json">
+        <cl:listener std:sid="listener-2de0ef92" handler="onSms_autoRowHeightSubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="ds_autoRowHeight"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-dae10db0" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-208a8428" handler="onBodyInit" name="init"/>
+    <cl:listener std:sid="listener-5b7ba0c4" handler="onBodyLoad" name="load"/>
+    <cl:udc std:sid="ud-control-b71fb084" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-352614f9" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:grid std:sid="grid-1f1688f5" id="grid_autoRowHeight" autorowheight="all" columnMovable="false" columnResizable="false" datasetid="ds_autoRowHeight" readonly="false">
+      <cl:xylayoutdata std:sid="xyl-data-ecaeb120" bottom="10px" horizontalAnchor="BOTH" left="10px" right="20px" top="80px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-1fa99b4b" width="50px"/>
+      <cl:gridcolumn std:sid="g-column-ae57bf62"/>
+      <cl:gridcolumn std:sid="g-column-91c6ec49"/>
+      <cl:gridcolumn std:sid="g-column-2b2534fe"/>
+      <cl:gridheader>
+        <cl:gridrow std:sid="g-row-35bb586d"/>
+        <cl:gridcell std:sid="gh-cell-3bd830de" colindex="0" rowindex="0" filterable="false" sortable="false"/>
+        <cl:gridcell std:sid="gh-cell-1430c07f" colindex="1" rowindex="0" filterable="false" sortable="false" targetcolumnname="default" text="default"/>
+        <cl:gridcell std:sid="gh-cell-8c28519e" colindex="2" rowindex="0" filterable="false" sortable="false" targetcolumnname="output" text="output"/>
+        <cl:gridcell std:sid="gh-cell-ae1997c3" colindex="3" rowindex="0" filterable="false" sortable="false" targetcolumnname="textarea" text="textarea"/>
+      </cl:gridheader>
+      <cl:griddetail>
+        <cl:gridrow std:sid="g-row-eea06d15"/>
+        <cl:gridcell std:sid="gd-cell-493accd5" colindex="0" rowindex="0" columntype="rowindex"/>
+        <cl:gridcell std:sid="gd-cell-7cfcd452" colindex="1" rowindex="0" columnname="default"/>
+        <cl:gridcell std:sid="gd-cell-5990c0c1" colindex="2" rowindex="0" columnname="output">
+          <cl:output std:sid="output-a276cda8" value="Output"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-52890f46" colindex="3" rowindex="0" columnname="textarea">
+          <cl:textarea std:sid="t-area-a5809dae" id="txa2"/>
+        </cl:gridcell>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-eab33ac2"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a47cc2d8" version="1.0.0.0">
+  <head std:sid="head-a2aa18f3">
+    <title>left</title>
+    <screen std:sid="screen-866d53b1" id="default" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-42e72af1" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-0508578b" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-d95e70cd">
+      <cl:dataset std:sid="d-set-a73a298b" id="leftMenuList">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="menuId"/>
+          <cl:datacolumn name="menuNm"/>
+          <cl:datacolumn name="upMenuId"/>
+          <cl:datacolumn name="appId"/>
+          <cl:datacolumn name="menuExplain"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-ae57f1dd" id="subGetMenuList" action="../getMenuList.do">
+        <cl:listener std:sid="listener-a7e6f3f1" handler="onSubGetMenuListSubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="leftMenuList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec>
+      <cl:event name="menu_before_select" type="cpr.events.CSelectionEvent"/>
+      <cl:event name="menu_select" type="cpr.events.CSelectionEvent"/>
+      <cl:event name="menu_click" type="cpr.events.CItemEvent"/>
+      <cl:event name="keyup" type="cpr.events.CKeyboardEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-da7736d1" style="top:0px; left:0px; width:200px; height:768px;">
+    <cl:listener std:sid="listener-0353c7cd" handler="onBodyLoad" name="load"/>
+    <cl:tree std:sid="tree-eda2349c" id="menuTree">
+      <cl:listener std:sid="listener-f0bbc8f0" handler="onMenuTreeBeforeSelectionChange" name="before-selection-change"/>
+      <cl:listener std:sid="listener-a61fdcc5" handler="onMenuTreeSelectionChange" name="selection-change"/>
+      <cl:listener std:sid="listener-b42a8b48" handler="onMenuTreeItemClick" name="item-click"/>
+      <cl:xylayoutdata std:sid="xyl-data-21fd9af8" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="25px" verticalAnchor="BOTH"/>
+      <cl:treeitemset datasetid="leftMenuList" label="menuNm" value="menuId" parent="upMenuId"/>
+    </cl:tree>
+    <cl:group std:sid="group-afe0afd4">
+      <cl:xylayoutdata std:sid="xyl-data-3b7bb4db" height="25px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-84973c76" style="border-radius:4px 4px 0px 0px; background-color:#FFFFFF; border-right-style:none; background-repeat:no-repeat; border-left-style:none; border-bottom-style:none; background-position:50% 50%; background-image:url('../../images/expand.png'); border-top-style:none;" value="">
+        <cl:listener std:sid="listener-d0e7b811" handler="onButtonClick" name="click"/>
+        <cl:formdata std:sid="f-data-87cc4f53" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-6d81c54e" style="border-radius:4px 4px 0px 0px; background-color:#FFFFFF; border-right-style:none; background-repeat:no-repeat; border-left-style:none; border-bottom-style:none; background-position:50% 50%; background-image:url('../../images/collapse.png'); border-top-style:none;" value="">
+        <cl:listener std:sid="listener-08b866ce" handler="onButtonClick2" name="click"/>
+        <cl:formdata std:sid="f-data-4c357977" col="2" row="0"/>
+      </cl:button>
+      <cl:inputbox std:sid="i-box-c236a501" id="ipb_search">
+        <cl:listener std:sid="listener-0e31538a" handler="onIpb_searchKeyup" name="keyup"/>
+        <cl:formdata std:sid="f-data-c4de3b49" col="0" halign="FILL" height="25" row="0" valign="FILL"/>
+      </cl:inputbox>
+      <cl:formlayout std:sid="f-layout-0608fac8" hspace="2" vmargin="2">
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="21" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="21" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-7efa1c82"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-60c4f220" version="1.0.0.0">
+  <head std:sid="head-8c0a6181">
+    <title>dateinput1</title>
+    <screen std:sid="screen-46d19656" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-cc538279" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-93e14915" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-4a07f9db">
+      <cl:datamap std:sid="d-map-f39ecb7e" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="dti1"/>
+          <cl:datacolumn name="dti2"/>
+          <cl:datacolumn name="dti3"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-0d182d44" id="mask">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[YYYY-MM-DD]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[YYYY-MM-DD]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[DD-MM-YYYY]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[DD-MM-YYYY]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[MM-DD-YYYY]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[MM-DD-YYYY]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[YYYY/M/D]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[YYYY/M/D]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[D/M/YYYY]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[D/M/YYYY]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[M/D/YYYY]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[M/D/YYYY]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-7a8e486a" id="format">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[YYYYMMDD]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[YYYYMMDD]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[DDMMYYYY]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[DDMMYYYY]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[MMDDYYYY]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[MMDDYYYY]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[YYYY-M-D]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[YYYY-M-D]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[D-M-YYYY]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[D-M-YYYY]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[M-D-YYYY]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[M-D-YYYY]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-adf76823" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-4a255ad1" handler="onBodyLoad" name="load"/>
+    <cl:dateinput std:sid="d-input-9ccaa9d3" id="dti1">
+      <cl:listener std:sid="listener-26e4103e" handler="onDti1ValueChange" name="value-change"/>
+      <cl:datamapbind property="value" columnname="dti1" datacontrolid="dm1"/>
+      <cl:xylayoutdata std:sid="xyl-data-6cbf630a" height="20px" horizontalAnchor="LEFT" left="166px" top="216px" verticalAnchor="TOP" width="150px"/>
+    </cl:dateinput>
+    <cl:output std:sid="output-641bf7ee" value="언어">
+      <cl:xylayoutdata std:sid="xyl-data-8234ccd0" height="20px" horizontalAnchor="LEFT" left="20px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-ef1f78ff" value="한국어">
+      <cl:xylayoutdata std:sid="xyl-data-f8edff40" height="20px" horizontalAnchor="LEFT" left="166px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-ca8a696e" value="영어">
+      <cl:xylayoutdata std:sid="xyl-data-fe3b1277" height="20px" horizontalAnchor="LEFT" left="354px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-4fb80804" value="일본어">
+      <cl:xylayoutdata std:sid="xyl-data-81abb84e" height="20px" horizontalAnchor="LEFT" left="558px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:dateinput std:sid="d-input-d767e5cf" id="dti2">
+      <cl:listener std:sid="listener-c3aad380" handler="onDti2ValueChange" name="value-change"/>
+      <cl:datamapbind property="value" columnname="dti2" datacontrolid="dm1"/>
+      <cl:xylayoutdata std:sid="xyl-data-59ae8ebe" height="20px" horizontalAnchor="LEFT" left="362px" top="216px" verticalAnchor="TOP" width="150px"/>
+    </cl:dateinput>
+    <cl:dateinput std:sid="d-input-dda76f7f" id="dti3">
+      <cl:listener std:sid="listener-cd0cf549" handler="onDti3ValueChange" name="value-change"/>
+      <cl:datamapbind property="value" columnname="dti3" datacontrolid="dm1"/>
+      <cl:xylayoutdata std:sid="xyl-data-ce2dd434" height="20px" horizontalAnchor="LEFT" left="558px" top="216px" verticalAnchor="TOP" width="150px"/>
+    </cl:dateinput>
+    <cl:output std:sid="output-51852617" value="마스크 포맷">
+      <cl:xylayoutdata std:sid="xyl-data-ff7fe3aa" height="20px" horizontalAnchor="LEFT" left="20px" top="100px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-c31abf14" value="값 포맷">
+      <cl:xylayoutdata std:sid="xyl-data-17a25a4d" height="20px" horizontalAnchor="LEFT" left="20px" top="132px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-a6be02f5" value="값">
+      <cl:xylayoutdata std:sid="xyl-data-de147c54" height="20px" horizontalAnchor="LEFT" left="20px" top="162px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-12653c83" id="opt1" value="Output">
+      <cl:datamapbind property="value" columnname="dti1" datacontrolid="dm1"/>
+      <cl:xylayoutdata std:sid="xyl-data-0924f6a0" height="20px" horizontalAnchor="LEFT" left="166px" top="162px" verticalAnchor="TOP" width="150px"/>
+    </cl:output>
+    <cl:output std:sid="output-e34c3568" id="opt2" value="Output">
+      <cl:datamapbind property="value" columnname="dti2" datacontrolid="dm1"/>
+      <cl:xylayoutdata std:sid="xyl-data-eafced5f" height="20px" horizontalAnchor="LEFT" left="362px" top="162px" verticalAnchor="TOP" width="150px"/>
+    </cl:output>
+    <cl:output std:sid="output-d78fe172" id="opt3" value="Output">
+      <cl:datamapbind property="value" columnname="dti3" datacontrolid="dm1"/>
+      <cl:xylayoutdata std:sid="xyl-data-e3cee9c5" height="20px" horizontalAnchor="LEFT" left="558px" top="162px" verticalAnchor="TOP" width="150px"/>
+    </cl:output>
+    <cl:combobox std:sid="c-box-bf14b3c5" id="cmb1">
+      <cl:listener std:sid="listener-a220df43" handler="onCmb1SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-0b75a938" height="20px" horizontalAnchor="LEFT" left="362px" top="132px" verticalAnchor="TOP" width="150px"/>
+      <cl:itemset datasetid="format" label="label" value="value"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-f80922a9" id="cmb2">
+      <cl:listener std:sid="listener-963491bf" handler="onCmb2SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-e87bfb56" height="20px" horizontalAnchor="LEFT" left="166px" top="132px" verticalAnchor="TOP" width="150px"/>
+      <cl:itemset datasetid="format" label="label" value="value"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-cca33d94" id="cmb3">
+      <cl:listener std:sid="listener-34e2e691" handler="onCmb3SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-d55adb6c" height="20px" horizontalAnchor="LEFT" left="558px" top="132px" verticalAnchor="TOP" width="150px"/>
+      <cl:itemset datasetid="format" label="label" value="value"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-5f6facc8" id="cmb4">
+      <cl:listener std:sid="listener-17e6a341" handler="onCmb4SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-2b42b8a7" height="20px" horizontalAnchor="LEFT" left="166px" top="100px" verticalAnchor="TOP" width="150px"/>
+      <cl:itemset datasetid="mask" label="label" value="value"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-c2948010" id="cmb5">
+      <cl:listener std:sid="listener-d4438dd9" handler="onCmb5SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-4f729783" height="20px" horizontalAnchor="LEFT" left="362px" top="100px" verticalAnchor="TOP" width="150px"/>
+      <cl:itemset datasetid="mask" label="label" value="value"/>
+    </cl:combobox>
+    <cl:combobox std:sid="c-box-588c0f76" id="cmb6">
+      <cl:listener std:sid="listener-650d0378" handler="onCmb6SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-6fc9534b" height="20px" horizontalAnchor="LEFT" left="558px" top="100px" verticalAnchor="TOP" width="150px"/>
+      <cl:itemset datasetid="mask" label="label" value="value"/>
+    </cl:combobox>
+    <cl:udc std:sid="ud-control-8a4f457a" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-0a6cfc58" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-f87b340f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

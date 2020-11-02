@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-96ba2cee" version="1.0.0.0">
+  <head std:sid="head-b74e37db">
+    <title>grid_contextmenu_modal</title>
+    <screen std:sid="screen-572661e4" id="default" active="true" customHeight="300" height="768px" minwidth="1024px" name="default" useCustomHeight="true" width="1024px"/>
+    <screen std:sid="screen-bf7288c8" id="tablet" customHeight="600" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-a1e39ff6" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-68fa1783">
+      <cl:dataset std:sid="d-set-01f71780" id="ds_colheaders">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="소트"/>
+  </head>
+  <body std:sid="body-df40d749" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-90527933" handler="onBodyInit" name="init"/>
+    <cl:listener std:sid="listener-18a91978" handler="onBodyLoad" name="load"/>
+    <cl:xylayout std:sid="xylayout-89dd7f9e"/>
+    <cl:group std:sid="group-4a8c347a" id="grp_wrapper">
+      <cl:xylayoutdata std:sid="xyl-data-2072458b" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-633b450c" id="grp_content">
+        <cl:xylayoutdata std:sid="xyl-data-46248dca" height="70px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="TOP"/>
+        <cl:udc std:sid="ud-control-a9c9a811" id="udc0" type="udc.grid.grid_sort">
+          <cl:xylayoutdata std:sid="xyl-data-ef0a1aed" height="30px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="240px"/>
+        </cl:udc>
+        <cl:button std:sid="button-12a7ebaa" id="btn_del" value="-">
+          <cl:listener std:sid="listener-88041256" handler="onBtn_delClick2" name="click"/>
+          <cl:xylayoutdata std:sid="xyl-data-a8e4d926" bottom="20px" height="30px" horizontalAnchor="LEFT" left="270px" verticalAnchor="BOTTOM" width="30px"/>
+        </cl:button>
+        <cl:button std:sid="button-d079e037" id="btn_add" value="+">
+          <cl:listener std:sid="listener-1cd39bc6" handler="onBtn_addClick" name="click"/>
+          <cl:xylayoutdata std:sid="xyl-data-33db75f2" bottom="20px" height="30px" horizontalAnchor="LEFT" left="310px" verticalAnchor="BOTTOM" width="30px"/>
+        </cl:button>
+        <cl:xylayout std:sid="xylayout-044abc4f"/>
+      </cl:group>
+      <cl:xylayout std:sid="xylayout-14cb68b8"/>
+    </cl:group>
+    <cl:button std:sid="button-b007f3a9" id="btn_save" value="적용">
+      <cl:listener std:sid="listener-a7f5a53b" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-63650d8b" bottom="20px" height="30px" horizontalAnchor="RIGHT" right="20px" verticalAnchor="BOTTOM" width="60px"/>
+    </cl:button>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

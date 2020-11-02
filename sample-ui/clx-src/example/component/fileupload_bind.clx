@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-04ff8987" version="1.0.0.0">
+  <head std:sid="head-2d3d5ab6">
+    <title>fileupload</title>
+    <screen std:sid="screen-408e9d68" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-2cc6213c" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-d7e19bd2" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-a31a20d8">
+      <cl:dataset std:sid="d-set-d91c20e6" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[ko]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[ko]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[en]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[en]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[ja]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[ja]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" default="" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-2e103d0f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:udc std:sid="ud-control-bf44eaec" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-b8d50e5b" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:fileupload std:sid="f-upload-95658151" id="fud1">
+      <cl:xylayoutdata std:sid="xyl-data-c9871d32" height="200px" horizontalAnchor="LEFT" left="40px" top="120px" verticalAnchor="TOP" width="500px"/>
+    </cl:fileupload>
+    <cl:combobox std:sid="c-box-352b0e30" id="cmb1" value="ko">
+      <cl:listener std:sid="listener-40469d20" handler="onCmb1SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-b904fd5d" height="30px" horizontalAnchor="LEFT" left="40px" top="80px" verticalAnchor="TOP" width="120px"/>
+      <cl:itemset datasetid="ds1" label="label" value="value"/>
+    </cl:combobox>
+    <cl:fileupload std:sid="f-upload-11bec32d" id="fud2" addlabel="추가 ~" hidesendbutton="true" removelabel="삭제 ~">
+      <cl:xylayoutdata std:sid="xyl-data-282f22eb" height="200px" horizontalAnchor="LEFT" left="40px" top="380px" verticalAnchor="TOP" width="500px"/>
+    </cl:fileupload>
+    <cl:output std:sid="output-e606119f" value="보내기 버튼 숨기기 / 추가,삭제 라벨 변경">
+      <cl:xylayoutdata std:sid="xyl-data-9b4d79cd" height="30px" horizontalAnchor="LEFT" left="40px" top="340px" verticalAnchor="TOP" width="500px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-d1dbcee7"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6df0805a" version="1.0.0.0">
+  <head std:sid="head-22670881">
+    <title>마스터/디테일</title>
+    <screen std:sid="screen-3db3b512" id="default" active="true" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-c05e8c3e" id="tablet" active="false" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-75743ad4" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-917420ef">
+      <cl:dataset std:sid="d-set-9469598a" id="ds1">
+        <cl:dataview std:sid="d-view-040f6d09" id="dv1"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn name="PD_NM"/>
+          <cl:datacolumn name="PD_COUNT"/>
+          <cl:datacolumn name="PD_DIV"/>
+          <cl:datacolumn name="PD_CLASS"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="PD_NM"><![CDATA[냉장고]]></cl:datavalue>
+            <cl:datavalue columnname="PD_COUNT"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="PD_DIV"><![CDATA[0001]]></cl:datavalue>
+            <cl:datavalue columnname="PD_CLASS"><![CDATA[가전]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="PD_NM"><![CDATA[TV]]></cl:datavalue>
+            <cl:datavalue columnname="PD_COUNT"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="PD_DIV"><![CDATA[0002]]></cl:datavalue>
+            <cl:datavalue columnname="PD_CLASS"><![CDATA[가전]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="PD_NM"><![CDATA[세탁기]]></cl:datavalue>
+            <cl:datavalue columnname="PD_COUNT"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="PD_DIV"><![CDATA[0003]]></cl:datavalue>
+            <cl:datavalue columnname="PD_CLASS"><![CDATA[가전]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="PD_NM"><![CDATA[새우깡]]></cl:datavalue>
+            <cl:datavalue columnname="PD_COUNT"><![CDATA[200]]></cl:datavalue>
+            <cl:datavalue columnname="PD_DIV"><![CDATA[0004]]></cl:datavalue>
+            <cl:datavalue columnname="PD_CLASS"><![CDATA[기호식품]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="마스터/디테일">
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-09c7f4ed" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:combobox std:sid="c-box-6314b82e" id="cmb1" value="ko">
+      <cl:listener std:sid="listener-d48c6c82" handler="onCmb1SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-56e42ce4" height="20px" horizontalAnchor="RIGHT" right="35px" top="70px" verticalAnchor="TOP" width="132px"/>
+      <cl:item label="한국어" value="ko"/>
+      <cl:item label="영어" value="en"/>
+      <cl:item label="일본어" value="ja"/>
+    </cl:combobox>
+    <cl:grid std:sid="grid-bc71a28f" id="master" datasetid="ds1" hscroll="hidden" readonly="true" vscroll="hidden">
+      <cl:listener std:sid="listener-f1b80d79" handler="onMasterSelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-c3ee06f8" height="200px" horizontalAnchor="BOTH" left="20px" right="35px" top="100px" verticalAnchor="TOP"/>
+      <cl:gridcolumn std:sid="g-column-b9f06b9d"/>
+      <cl:gridcolumn std:sid="g-column-01e8cfe0"/>
+      <cl:gridcolumn std:sid="g-column-bb29d8a3"/>
+      <cl:gridcolumn std:sid="g-column-1ad06309"/>
+      <cl:gridheader std:sid="gh-band-a6a8b3b5">
+        <cl:gridrow std:sid="g-row-c4eedf86"/>
+        <cl:gridcell std:sid="gh-cell-c10de1af" colindex="0" rowindex="0" text="상품명">
+          <cl:output std:sid="output-dd681973" value="Output">
+            <cl:langbind property="value" keypath="259"/>
+          </cl:output>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gh-cell-c809931d" colindex="1" rowindex="0" text="상품수">
+          <cl:output std:sid="output-9b43fa7b" value="Output">
+            <cl:langbind property="value" keypath="260"/>
+          </cl:output>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gh-cell-222b32f1" colindex="2" rowindex="0" text="상품구분">
+          <cl:output std:sid="output-c5c50954" value="Output">
+            <cl:langbind property="value" keypath="257"/>
+          </cl:output>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gh-cell-ad307ccc" colindex="3" rowindex="0" text="상품분류">
+          <cl:output std:sid="output-eff36626" value="Output">
+            <cl:langbind property="value" keypath="258"/>
+          </cl:output>
+        </cl:gridcell>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-e9b0748b">
+        <cl:gridrow std:sid="g-row-4790e7ba"/>
+        <cl:gridcell std:sid="gd-cell-2bdb3e8c" colindex="0" rowindex="0" columnname="PD_NM"/>
+        <cl:gridcell std:sid="gd-cell-631f4d93" colindex="1" rowindex="0" columnname="PD_COUNT"/>
+        <cl:gridcell std:sid="gd-cell-9b2e57ca" colindex="2" rowindex="0" columnname="PD_DIV"/>
+        <cl:gridcell std:sid="gd-cell-6485c5ac" colindex="3" rowindex="0" columnname="PD_CLASS"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:group std:sid="group-164c7ef5" id="detail" style="border-right-style:solid; border-top-width:1px; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-bottom-style:solid; border-left-width:1px; border-top-style:solid;">
+      <cl:datarowcontext datacontrolid="ds1" rowindex="-1"/>
+      <cl:xylayoutdata std:sid="xyl-data-75525bfc" height="160px" horizontalAnchor="BOTH" left="20px" right="35px" top="330px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-cc5fd1b9" value="상품명">
+        <cl:langbind property="value" keypath="259"/>
+        <cl:xylayoutdata std:sid="xyl-data-2f3407e2" height="20px" horizontalAnchor="LEFT" left="29px" top="26px" verticalAnchor="TOP" width="158px"/>
+      </cl:output>
+      <cl:output std:sid="output-8a0ce633" value="상품수">
+        <cl:langbind property="value" keypath="260"/>
+        <cl:xylayoutdata std:sid="xyl-data-e0de4c0f" height="20px" horizontalAnchor="LEFT" left="29px" top="56px" verticalAnchor="TOP" width="158px"/>
+      </cl:output>
+      <cl:output std:sid="output-e1b007c9" value="상품구분">
+        <cl:langbind property="value" keypath="257"/>
+        <cl:xylayoutdata std:sid="xyl-data-9822d939" height="20px" horizontalAnchor="LEFT" left="29px" top="86px" verticalAnchor="TOP" width="158px"/>
+      </cl:output>
+      <cl:output std:sid="output-b5a89d40" value="상품분류">
+        <cl:langbind property="value" keypath="258"/>
+        <cl:xylayoutdata std:sid="xyl-data-12e3feac" height="20px" horizontalAnchor="LEFT" left="29px" top="116px" verticalAnchor="TOP" width="158px"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-58db3a20" id="ipb1">
+        <cl:relativebind property="value" columnname="PD_NM"/>
+        <cl:xylayoutdata std:sid="xyl-data-ad00225c" height="20px" horizontalAnchor="LEFT" left="197px" top="26px" verticalAnchor="TOP" width="180px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-abfc1486" id="ipb2">
+        <cl:relativebind property="value" columnname="PD_COUNT"/>
+        <cl:xylayoutdata std:sid="xyl-data-0c12eb9b" height="20px" horizontalAnchor="LEFT" left="197px" top="56px" verticalAnchor="TOP" width="180px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-0463cb86" id="ipb3">
+        <cl:relativebind property="value" columnname="PD_DIV"/>
+        <cl:xylayoutdata std:sid="xyl-data-09d95559" height="20px" horizontalAnchor="LEFT" left="197px" top="86px" verticalAnchor="TOP" width="180px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-b287b031" id="ipb4">
+        <cl:relativebind property="value" columnname="PD_CLASS"/>
+        <cl:xylayoutdata std:sid="xyl-data-4f853b3d" height="20px" horizontalAnchor="LEFT" left="197px" top="116px" verticalAnchor="TOP" width="180px"/>
+      </cl:inputbox>
+      <cl:xylayout std:sid="xylayout-80960694"/>
+    </cl:group>
+    <cl:output std:sid="output-6add7bdf" value="다국어 설정">
+      <cl:xylayoutdata std:sid="xyl-data-f36c7e6a" height="20px" horizontalAnchor="RIGHT" right="177px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:udc std:sid="ud-control-257b3650" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-c737b3d2" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-81b2a4cc"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

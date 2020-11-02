@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-1cdc645c" version="1.0.0.0">
+  <head std:sid="head-e05214d2">
+    <title>listbox_ex</title>
+    <screen std:sid="screen-8398ef74" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-23aebba1" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-d7f9f7f9" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-10d2e37f">
+      <cl:dataset std:sid="d-set-1976eb40" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="parentValue"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Item 1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Item 1]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Item 2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Item 2]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Item 3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Item 3]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Item 1.1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Item 1.1]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[Item 1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Item 1.2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Item 1.2]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[Item 1]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Item 1.2.1]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Item 1.2.1]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[Item 1.2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Item 1.2.2]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Item 1.2.2]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[Item 1.2]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Item 1.2.3]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Item 1.2.3]]></cl:datavalue>
+            <cl:datavalue columnname="parentValue"><![CDATA[Item 1.2]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-d3e6279f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:linkedlistbox std:sid="ll-box-a2ae0fb2" id="llb1">
+      <cl:xylayoutdata std:sid="xyl-data-4c2f4087" height="150px" horizontalAnchor="LEFT" left="40px" top="150px" verticalAnchor="TOP" width="400px"/>
+      <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parentValue"/>
+    </cl:linkedlistbox>
+    <cl:linkedcombobox std:sid="lc-box-8e97c13b" id="lcb1">
+      <cl:xylayoutdata std:sid="xyl-data-3005085e" height="30px" horizontalAnchor="LEFT" left="40px" top="410px" verticalAnchor="TOP" width="400px"/>
+      <cl:treeitemset datasetid="ds1" label="label" value="value" parent="parentValue"/>
+    </cl:linkedcombobox>
+    <cl:udc std:sid="ud-control-eb6d6e33" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-e0682ab5" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:button std:sid="button-2305bffd" id="btn1" value="select">
+      <cl:listener std:sid="listener-8eb58ce7" handler="onBtn1Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-13176698" height="30px" horizontalAnchor="LEFT" left="40px" top="100px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:button std:sid="button-1eac0f8d" id="btn2" value="select">
+      <cl:listener std:sid="listener-44060360" handler="onBtn2Click" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2258bbbd" height="30px" horizontalAnchor="LEFT" left="40px" top="360px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:output std:sid="output-fa8cc5d8" value="select item 1.2.2">
+      <cl:xylayoutdata std:sid="xyl-data-201ddd80" height="30px" horizontalAnchor="LEFT" left="160px" top="100px" verticalAnchor="TOP" width="280px"/>
+    </cl:output>
+    <cl:output std:sid="output-50c96f80" value="select item 1.2.2">
+      <cl:xylayoutdata std:sid="xyl-data-cd212b24" height="30px" horizontalAnchor="LEFT" left="160px" top="360px" verticalAnchor="TOP" width="280px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-b934d250"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

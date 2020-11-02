@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-fcdd3469" version="1.0.0.0">
+  <head std:sid="head-d10116ad">
+    <title>navigationbar</title>
+    <screen std:sid="screen-aebca3ca" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-61ce15d9" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-467b62c0" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-e7afa713">
+      <cl:dataset std:sid="d-set-371ee50d" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="pValue"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[서울]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[001]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대전]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[002]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[대구]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[003]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[부산]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[004]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[root]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[1호선]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[00101]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[001]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[2호선]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[00102]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[001]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[3호선]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[00103]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[001]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[4호선]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[00104]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[001]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[5호선]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[00105]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[001]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[6호선]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[00106]]></cl:datavalue>
+            <cl:datavalue columnname="pValue"><![CDATA[001]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:dataset std:sid="d-set-afeda5c6" id="radio">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[true]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[true]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[false]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[false]]></cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+      <cl:datamap std:sid="d-map-bda00b48" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="string" defaultvalue="1" name="column1"/>
+          <cl:datacolumn defaultvalue="2" name="column2"/>
+          <cl:datacolumn defaultvalue="3" name="column3"/>
+          <cl:datacolumn defaultvalue="4" name="column4"/>
+          <cl:datacolumn defaultvalue="5" name="column5"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-b90c5205" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:navigationbar std:sid="n-bar-a2177c44" id="nav1" menutype="megamenu">
+      <cl:xylayoutdata std:sid="xyl-data-4c9bc82c" height="40px" horizontalAnchor="BOTH" left="10px" right="10px" top="78px" verticalAnchor="TOP"/>
+      <cl:menuitem label="신도림" value="0010101" parent="00101"/>
+      <cl:menuitem label="서울역" value="0010102" parent="00101"/>
+      <cl:menuitem label="강남역" value="0010201" parent="00102"/>
+      <cl:menuitem label="잠실역" value="0010202" parent="00102"/>
+      <cl:menuitem icon="" label="남부터미널역" value="0010301" parent="00103"/>
+      <cl:menuitem label="서초역" value="0010302" parent="00103"/>
+      <cl:menuitem label="이수역" value="0010401" parent="00104"/>
+      <cl:menuitem label="사당역" value="0010402" parent="00104"/>
+      <cl:menuitem icon="" label="시청역" value="0010103" parent="00101"/>
+      <cl:menuitem icon="" label="용산역" value="0010104" parent="00101"/>
+      <cl:menuitem icon="" label="영등포역" value="0010105" parent="00101" accessKey=""/>
+      <cl:menuitem icon="" label="노량진역" value="0010106" parent="00101" accessKey=""/>
+      <cl:menuitem icon="" label="을지로역" value="0010107" parent="00101" accessKey=""/>
+      <cl:menuitem icon="" label="종로5가역" value="0010108" parent="00101" accessKey=""/>
+      <cl:menuitem icon="" label="종로3가역" value="0010109" parent="00101" accessKey=""/>
+      <cl:menuitemset datasetid="ds1" icon="" label="label" value="value" parent="pValue"/>
+    </cl:navigationbar>
+    <cl:group std:sid="group-9f2e3479" style="border-right-style:solid; border-top-width:1px; border-bottom-color:#ebebeb; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:#ebebeb; border-top-color:#ebebeb; border-bottom-style:solid; border-right-color:#ebebeb; border-left-width:1px; border-top-style:solid;">
+      <cl:xylayoutdata std:sid="xyl-data-72524dda" height="319px" horizontalAnchor="LEFT" left="10px" top="313px" verticalAnchor="TOP" width="495px"/>
+      <cl:button std:sid="button-6a0d1649" value="Apply">
+        <cl:listener std:sid="listener-1eb0d7f8" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="1"/>
+        <cl:attribute name="property" value="enabled"/>
+        <cl:formdata std:sid="f-data-369bace2" col="2" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-beb39ef7" value="Apply">
+        <cl:listener std:sid="listener-0aefee5f" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="2"/>
+        <cl:attribute name="property" value="tooltip"/>
+        <cl:formdata std:sid="f-data-09e7b54b" col="2" row="1"/>
+      </cl:button>
+      <cl:button std:sid="button-475241e2" value="Apply">
+        <cl:listener std:sid="listener-dcba1239" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="3"/>
+        <cl:attribute name="property" value="visible"/>
+        <cl:formdata std:sid="f-data-cdd541e8" col="2" row="2"/>
+      </cl:button>
+      <cl:button std:sid="button-50c234dd" value="Apply">
+        <cl:listener std:sid="listener-98b8c71e" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="4"/>
+        <cl:attribute name="property" value="barArrowImage"/>
+        <cl:formdata std:sid="f-data-d22f0a3d" col="2" row="3"/>
+      </cl:button>
+      <cl:button std:sid="button-09a6c596" value="Apply">
+        <cl:listener std:sid="listener-cc013c21" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="5"/>
+        <cl:attribute name="property" value="displayExp"/>
+        <cl:formdata std:sid="f-data-b368b6d8" col="2" row="4"/>
+      </cl:button>
+      <cl:button std:sid="button-0b1f10ea" value="Apply">
+        <cl:listener std:sid="listener-f8142866" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="6"/>
+        <cl:attribute name="property" value="listArrowImage"/>
+        <cl:formdata std:sid="f-data-ded691a5" col="2" row="5"/>
+      </cl:button>
+      <cl:button std:sid="button-e6af7870" value="Apply">
+        <cl:listener std:sid="listener-0cfb9491" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="7"/>
+        <cl:attribute name="property" value="readOnly"/>
+        <cl:formdata std:sid="f-data-2f146a95" col="2" row="6"/>
+      </cl:button>
+      <cl:button std:sid="button-6ed65766" value="Apply">
+        <cl:listener std:sid="listener-593de7ae" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="8"/>
+        <cl:attribute name="property" value="value"/>
+        <cl:formdata std:sid="f-data-69b39e89" col="2" row="7"/>
+      </cl:button>
+      <cl:output std:sid="output-38b7806b" value="enabled">
+        <cl:formdata std:sid="f-data-eb4d31d0" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-0b57efa2" value="tooltip">
+        <cl:formdata std:sid="f-data-5f43c4cd" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-7f6b6937" value="visible">
+        <cl:formdata std:sid="f-data-500b2076" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-7397825e" value="barArrowImage">
+        <cl:formdata std:sid="f-data-b80a01c8" col="0" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-df68633d" value="displayExp">
+        <cl:formdata std:sid="f-data-1514f66a" col="0" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-99c37a6b" value="listArrowImage">
+        <cl:formdata std:sid="f-data-bf3d5a14" col="0" row="5"/>
+      </cl:output>
+      <cl:output std:sid="output-73d1eee1" value="readOnly">
+        <cl:formdata std:sid="f-data-51492374" col="0" row="6"/>
+      </cl:output>
+      <cl:output std:sid="output-27d8eb91" value="value">
+        <cl:formdata std:sid="f-data-3d6300a5" col="0" row="7"/>
+      </cl:output>
+      <cl:radiobutton std:sid="r-button-4f807806" id="col2_1" value="true">
+        <cl:formdata std:sid="f-data-b0de9678" col="1" row="0"/>
+        <cl:itemset datasetid="radio" label="label" value="value"/>
+      </cl:radiobutton>
+      <cl:radiobutton std:sid="r-button-ef5483b2" id="col2_3" value="true">
+        <cl:formdata std:sid="f-data-847b5b1c" col="1" row="2"/>
+        <cl:itemset datasetid="radio" label="label" value="value"/>
+      </cl:radiobutton>
+      <cl:radiobutton std:sid="r-button-f37fa5d6" id="col2_7" value="false">
+        <cl:formdata std:sid="f-data-e586cbea" col="1" row="6"/>
+        <cl:itemset datasetid="radio" label="label" value="value"/>
+      </cl:radiobutton>
+      <cl:inputbox std:sid="i-box-2b9eea2e" id="col2_2">
+        <cl:formdata std:sid="f-data-be0a775d" col="1" row="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-debb62c2" id="col2_4">
+        <cl:formdata std:sid="f-data-23fdcf81" col="1" row="3"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-03d53189" id="col2_5" value="'['+value+']'+label">
+        <cl:formdata std:sid="f-data-3eb9c65e" col="1" row="4"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-8b26e0c8" id="col2_6">
+        <cl:formdata std:sid="f-data-e22c252a" col="1" row="5"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-4f743f4b" id="col2_8">
+        <cl:formdata std:sid="f-data-c0da3042" col="1" row="7"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-ee301e21" value="menuType">
+        <cl:formdata std:sid="f-data-a7b59f07" col="0" row="8"/>
+      </cl:output>
+      <cl:radiobutton std:sid="r-button-7751bdf4" id="col2_9" value="megamenu">
+        <cl:formdata std:sid="f-data-13eb3183" col="1" row="8"/>
+        <cl:item label="menu" value="menu"/>
+        <cl:item label="megamenu" value="megamenu"/>
+      </cl:radiobutton>
+      <cl:button std:sid="button-d22628ed" value="Apply">
+        <cl:listener std:sid="listener-b2168c3f" handler="onBtn1Click" name="click"/>
+        <cl:attribute name="index" value="9"/>
+        <cl:attribute name="property" value="menuType"/>
+        <cl:formdata std:sid="f-data-43235d26" col="2" row="8"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-2efbe4dd" hmargin="5" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10" vmargin="5" vseparatortype="BY_CLASS" vseparatorwidth="1" vspace="10">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25"/>
+        <cl:rows length="25"/>
+        <cl:rows length="25"/>
+        <cl:rows length="25"/>
+        <cl:columns length="120" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:textarea std:sid="t-area-0f991df3" id="txa1" value="var nav = app.lookup(&quot;nav1&quot;);&#xD;&#xA;console.log(nav.value);">
+      <cl:xylayoutdata std:sid="xyl-data-82c9cd3f" height="319px" horizontalAnchor="BOTH" left="525px" right="10px" top="313px" verticalAnchor="TOP"/>
+    </cl:textarea>
+    <cl:button std:sid="button-18784e27" value="execute">
+      <cl:listener std:sid="listener-d74ead28" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-4bead5a5" height="20px" horizontalAnchor="LEFT" left="635px" top="283px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:output std:sid="output-ad5a70b8" value="스크립트">
+      <cl:xylayoutdata std:sid="xyl-data-38412827" height="20px" horizontalAnchor="LEFT" left="525px" top="283px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-2089876b" value="속성">
+      <cl:xylayoutdata std:sid="xyl-data-e8dedbf7" height="20px" horizontalAnchor="LEFT" left="10px" top="283px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:udc std:sid="ud-control-33572878" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-25ee39fb" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="20px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-2b19bd25"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

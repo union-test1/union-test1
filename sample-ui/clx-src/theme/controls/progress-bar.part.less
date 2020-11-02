@@ -1,0 +1,27 @@
+@import "../settings.part.less";
+
+/* 프로그레스 바 루트 */
+ .cl-progress {
+	font: @default-font;
+	background-image: linear-gradient(#aaa, #E6E7E9 4px);
+	border: 1px solid @default-border-color;
+	color: @default-text-color;
+
+	/* 진행 바 */
+	.cl-progress-bar {
+		border: 1px solid #2476AA;
+		background-image: linear-gradient(#99D1F1, #1C6DA0, #3397D4);
+	}
+}
+
+/* 프로그레스 바 - disabled */
+.cl-progress.cl-disabled {
+	border-color: @disabled-border-color;
+	background-image: linear-gradient(#ccc, #eee 4px);
+	
+	/* 진행 바 - disabled */
+	.cl-progress-bar {
+		border-color:#999;
+		background-image: linear-gradient(#eee, #aaa, #ddd);
+	}
+}

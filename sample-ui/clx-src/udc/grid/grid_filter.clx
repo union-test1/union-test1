@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-01ce305d" version="1.0.0.0">
+  <head std:sid="head-e2b5204f">
+    <title>grid_filter</title>
+    <screen std:sid="screen-e5a14c9b" id="default" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-e2c88106" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-8f9d8e67" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-f6ae2220">
+      <cl:datamap std:sid="d-map-916dc3fe" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="logicalOperator"/>
+          <cl:datacolumn name="columnName"/>
+          <cl:datacolumn name="compareOperator"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" default="true" name="visible_logical_operator" type="boolean"/>
+      <cl:property bindable="true" name="column_dataset" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-751c8154" style="top:0px; left:0px; width:400px; height:30px;">
+    <cl:listener std:sid="listener-a259792d" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:xylayout std:sid="xylayout-71609eea"/>
+    <cl:group std:sid="group-d4a4a2c7">
+      <cl:xylayoutdata std:sid="xyl-data-2920b71d" bottom="0px" horizontalAnchor="BOTH" left="0px" right="1px" top="0px" verticalAnchor="BOTH"/>
+      <cl:combobox std:sid="c-box-58555722" id="cmb1">
+        <cl:apppropbind category="PROPERTY" property="visible" app-property="visible_logical_operator"/>
+        <cl:datamapbind property="value" columnname="logicalOperator" datacontrolid="dm1"/>
+        <cl:formdata std:sid="f-data-042bad24" col="0" row="0"/>
+        <cl:item label="AND" value="&amp;&amp;"/>
+        <cl:item label="OR" value="||"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-e85b4528" id="cmb2">
+        <cl:datamapbind property="value" columnname="columnName" datacontrolid="dm1"/>
+        <cl:formdata std:sid="f-data-689a392a" col="1" row="0"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-9975541d" id="cmb3">
+        <cl:datamapbind property="value" columnname="compareOperator" datacontrolid="dm1"/>
+        <cl:formdata std:sid="f-data-57f144db" col="2" row="0"/>
+        <cl:item label="==" value="=="/>
+        <cl:item label="*=" value="*="/>
+        <cl:item label=">=" value=">="/>
+        <cl:item label="&lt;=" value="&lt;="/>
+        <cl:item label="^=" value="^="/>
+        <cl:item label="$=" value="$="/>
+      </cl:combobox>
+      <cl:inputbox std:sid="i-box-4398afcb" id="ipb1">
+        <cl:datamapbind property="value" columnname="value" datacontrolid="dm1"/>
+        <cl:formdata std:sid="f-data-9eb106ee" col="3" row="0"/>
+      </cl:inputbox>
+      <cl:formlayout std:sid="f-layout-7197e6c6" hspace="10">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="2" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="2" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-bcd336b5" version="1.0.0.0">
+  <head std:sid="head-5dc1a73d">
+    <title>overview</title>
+    <screen std:sid="screen-18c8c5e7" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-5d1cea95" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-e0f00521" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-a7e8899c">
+      <cl:dataset std:sid="d-set-a73a298b" id="leftMenuList">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="menuId"/>
+          <cl:datacolumn name="menuNm"/>
+          <cl:datacolumn name="upMenuId"/>
+          <cl:datacolumn name="appId"/>
+          <cl:datacolumn name="menuExplain"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-ae57f1dd" id="subGetMenuList" action="../getExampleMenuList.do">
+        <cl:listener std:sid="listener-a7e6f3f1" handler="onSubGetMenuListSubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="leftMenuList"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-259d8564" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-87bcc1a3" handler="onBodyLoad" name="load"/>
+    <cl:grid std:sid="grid-434cf9e2" id="grd1" datasetid="leftMenuList" leftsplit="1" leftsplitwidth="300" readonly="true">
+      <cl:listener std:sid="listener-b5b40c3f" handler="onGrd1RowDblclick" name="row-dblclick"/>
+      <cl:xylayoutdata std:sid="xyl-data-fcc60028" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-3455eb3e" width="30px"/>
+      <cl:gridcolumn std:sid="g-column-6093765f" width="260px"/>
+      <cl:gridcolumn std:sid="g-column-23d7614b" width="200px"/>
+      <cl:gridcolumn std:sid="g-column-d6a42aa0" width="800px"/>
+      <cl:gridheader std:sid="gh-band-e625c93a">
+        <cl:gridrow std:sid="g-row-e98692c4"/>
+        <cl:gridcell std:sid="gh-cell-7bbea7b0" colindex="0" colspan="2" rowindex="0" rowspan="1" text="메뉴명"/>
+        <cl:gridcell std:sid="gh-cell-7a339a6a" colindex="3" rowindex="0" text="설명"/>
+        <cl:gridcell std:sid="gh-cell-bd3e9643" colindex="2" rowindex="0" text="페이지경로"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-828356da">
+        <cl:gridrow std:sid="g-row-3eef8ad5"/>
+        <cl:gridcell std:sid="gd-cell-11afb17f" colindex="1" rowindex="0" columnname="menuNm"/>
+        <cl:gridcell std:sid="gd-cell-f4495e18" colindex="3" rowindex="0" columnname="menuExplain"/>
+        <cl:gridcell std:sid="gd-cell-ceda0a5c" colindex="0" rowindex="0">
+          <cl:img std:sid="image-d5f4c5bc" style="padding:4px;">
+            <cl:expbind category="PROPERTY" property="src" expression="(upMenuId == 'Example') ? 'images/tree-folder.png' : 'images/tree-file.png'"/>
+          </cl:img>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-23d4ebfe" colindex="2" rowindex="0" columnname="appId"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-37241257"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

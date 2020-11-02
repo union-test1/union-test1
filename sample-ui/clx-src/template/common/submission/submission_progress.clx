@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-91a5dcf4" version="1.0.0.0">
+  <head std:sid="head-f9779909">
+    <title>submission2</title>
+    <screen std:sid="screen-227f8b0c" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-d0b6c4b2" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-5c29fdb3" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-df3f7891">
+      <cl:submission std:sid="submission-c665ba32" id="sms1" action="../timeout.jsp" mediatype="application/x-www-form-urlencoded" responsetype="javascript"/>
+    </cl:model>
+    <cl:appspec title="프로그레스">
+      <cl:property bindable="true" name="title" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-aa976075" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-1c6ea6ac" id="btn1" value="send">
+      <cl:listener std:sid="listener-c0432f34" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-c38346f7" height="20px" horizontalAnchor="LEFT" left="10px" top="44px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:udc std:sid="ud-control-3e5cf153" type="udc.pagetitle">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-7177561c" height="24px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-39ac0e81"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

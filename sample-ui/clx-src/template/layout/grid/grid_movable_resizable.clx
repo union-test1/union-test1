@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-79bad1c3" version="1.0.0.0">
+  <head std:sid="head-6e858bfe">
+    <title>grid_movable_resizable</title>
+    <screen std:sid="screen-933aecb9" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-ec86557a" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-cdc02f8e" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-50313247">
+      <cl:dataset std:sid="d-set-ecd2b2c4" id="ds_list">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="col1"/>
+          <cl:datacolumn name="col2"/>
+          <cl:datacolumn name="col3"/>
+          <cl:datacolumn name="col4"/>
+          <cl:datacolumn name="col5"/>
+          <cl:datacolumn name="col6"/>
+          <cl:datacolumn name="col7"/>
+          <cl:datacolumn name="col8"/>
+          <cl:datacolumn name="col9"/>
+          <cl:datacolumn name="col10"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-2190d937" id="sms_list" action="../template/movableresizable/getList.do">
+        <cl:responsedata dataid="ds_list"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-04d2fac7" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-6aa3c0c5" handler="onBodyInit" name="init"/>
+    <cl:udc std:sid="ud-control-d4008726" type="udc.pagetitle">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-113ec935" height="24px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:grid std:sid="grid-97b7377f" id="grd1" columnMovable="true" columnResizable="true" datasetid="ds_list" readonly="false">
+      <cl:xylayoutdata std:sid="xyl-data-57147e4e" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="44px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-9c55b514"/>
+      <cl:gridcolumn std:sid="g-column-26b0208b"/>
+      <cl:gridcolumn std:sid="g-column-66aabeb9"/>
+      <cl:gridcolumn std:sid="g-column-32555d9a"/>
+      <cl:gridcolumn std:sid="g-column-5f243b64"/>
+      <cl:gridcolumn std:sid="g-column-dd833949"/>
+      <cl:gridcolumn std:sid="g-column-8872f789"/>
+      <cl:gridcolumn std:sid="g-column-0f198ed5"/>
+      <cl:gridcolumn std:sid="g-column-fe627b3b"/>
+      <cl:gridcolumn std:sid="g-column-7d3ccc93"/>
+      <cl:gridheader std:sid="gh-band-49a95b55">
+        <cl:gridrow std:sid="g-row-a5ed53ce" height="30px"/>
+        <cl:gridrow std:sid="g-row-cc1948e8" height="30px"/>
+        <cl:gridcell std:sid="gh-cell-8ca8e5e9" colindex="0" rowindex="1" filterable="false" sortable="false" targetcolumnname="col1" text="col1"/>
+        <cl:gridcell std:sid="gh-cell-342da873" colindex="1" rowindex="1" filterable="false" sortable="false" targetcolumnname="col2" text="col2"/>
+        <cl:gridcell std:sid="gh-cell-49a500dd" colindex="2" rowindex="1" filterable="false" sortable="false" targetcolumnname="col3" text="col3"/>
+        <cl:gridcell std:sid="gh-cell-557dd9a6" colindex="3" rowindex="1" filterable="false" sortable="false" targetcolumnname="col4" text="col4"/>
+        <cl:gridcell std:sid="gh-cell-cedbdaa7" colindex="4" colspan="1" rowindex="0" rowspan="2" filterable="false" sortable="false" targetcolumnname="col5" text="col5"/>
+        <cl:gridcell std:sid="gh-cell-ad7d0c7a" colindex="5" rowindex="1" filterable="false" sortable="false" targetcolumnname="col6" text="col6"/>
+        <cl:gridcell std:sid="gh-cell-cd59ff2f" colindex="6" rowindex="1" filterable="false" sortable="false" targetcolumnname="col7" text="col7"/>
+        <cl:gridcell std:sid="gh-cell-c4524e5b" colindex="0" colspan="4" rowindex="0" rowspan="1" text="Merge1"/>
+        <cl:gridcell std:sid="gh-cell-bb189b9c" colindex="5" colspan="2" rowindex="0" rowspan="1" text="Merge2"/>
+        <cl:gridcell colindex="7" colspan="1" rowindex="0" rowspan="2" text="col8"/>
+        <cl:gridcell colindex="8" colspan="1" rowindex="0" rowspan="2" text="col9"/>
+        <cl:gridcell colindex="9" colspan="1" rowindex="0" rowspan="2" text="col10"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-e2d511db">
+        <cl:gridrow std:sid="g-row-daf0e760" height="30px"/>
+        <cl:gridcell std:sid="gd-cell-7f0b53d0" colindex="0" rowindex="0" columnname="col1"/>
+        <cl:gridcell std:sid="gd-cell-3bddc2b1" colindex="1" rowindex="0" columnname="col2"/>
+        <cl:gridcell std:sid="gd-cell-659b5617" colindex="2" rowindex="0" columnname="col3"/>
+        <cl:gridcell std:sid="gd-cell-2b698a28" colindex="3" rowindex="0" columnname="col4"/>
+        <cl:gridcell std:sid="gd-cell-211e88ae" colindex="4" rowindex="0" columnname="col5"/>
+        <cl:gridcell std:sid="gd-cell-4444e867" colindex="5" rowindex="0" columnname="col6"/>
+        <cl:gridcell std:sid="gd-cell-646d15c9" colindex="6" rowindex="0" columnname="col7"/>
+        <cl:gridcell colindex="7" rowindex="0" columnname="col8"/>
+        <cl:gridcell colindex="8" rowindex="0" columnname="col9"/>
+        <cl:gridcell colindex="9" rowindex="0" columnname="col10"/>
+      </cl:griddetail>
+      <cl:gridfooter std:sid="gf-band-81b37dc9">
+        <cl:gridrow std:sid="g-row-f1d6d88f" height="30px"/>
+        <cl:gridcell std:sid="gf-cell-df4c8d57" colindex="0" colspan="1" rowindex="0" rowspan="1"/>
+        <cl:gridcell std:sid="gf-cell-055da854" colindex="6" rowindex="0" expr="getSum(&quot;col7&quot;)"/>
+        <cl:gridcell colindex="1" rowindex="0" expr=""/>
+        <cl:gridcell colindex="2" rowindex="0" expr=""/>
+        <cl:gridcell colindex="3" rowindex="0" expr=""/>
+        <cl:gridcell colindex="4" rowindex="0" expr=""/>
+        <cl:gridcell colindex="5" rowindex="0" expr=""/>
+        <cl:gridcell colindex="7" rowindex="0" expr="getSum(&quot;col8&quot;)"/>
+        <cl:gridcell colindex="8" rowindex="0" expr="getSum(&quot;col9&quot;)"/>
+        <cl:gridcell colindex="9" rowindex="0" expr="getSum(&quot;col10&quot;)"/>
+      </cl:gridfooter>
+    </cl:grid>
+    <cl:xylayout std:sid="xylayout-0ac93e8f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5715511c" version="1.0.0.0">
+  <head std:sid="head-ac90305d">
+    <title>grid</title>
+    <screen std:sid="screen-9ebda940" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-4ab518b9" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-d80bc8c6" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-645f9a9e">
+      <cl:datamap std:sid="d-map-3adfd8dc" id="dm_request">
+        <cl:datacolumnlist>
+          <cl:datacolumn defaultvalue="20" name="COL"/>
+          <cl:datacolumn defaultvalue="1000" name="DATA"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:dataset std:sid="d-set-288e703a" id="ds_list" altercolumnlayout="server">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="TEST_COL001"/>
+          <cl:datacolumn name="TEST_COL002"/>
+          <cl:datacolumn name="TEST_COL003"/>
+          <cl:datacolumn name="TEST_COL004"/>
+          <cl:datacolumn name="TEST_COL005"/>
+          <cl:datacolumn name="TEST_COL006"/>
+          <cl:datacolumn name="TEST_COL007"/>
+          <cl:datacolumn name="TEST_COL008"/>
+          <cl:datacolumn name="TEST_COL009"/>
+          <cl:datacolumn name="TEST_COL010"/>
+          <cl:datacolumn name="TEST_COL011"/>
+          <cl:datacolumn name="TEST_COL012"/>
+          <cl:datacolumn name="TEST_COL013"/>
+          <cl:datacolumn name="TEST_COL014"/>
+          <cl:datacolumn name="TEST_COL015"/>
+          <cl:datacolumn name="TEST_COL016"/>
+          <cl:datacolumn name="TEST_COL017"/>
+          <cl:datacolumn name="TEST_COL018"/>
+          <cl:datacolumn name="TEST_COL019"/>
+          <cl:datacolumn name="TEST_COL020"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-430bac47" id="sms_list" action="../template/dynamicgrid/massdata.do" responsetype="text">
+        <cl:listener std:sid="listener-3580e003" handler="onSms_listSubmitSuccess" name="submit-success"/>
+        <cl:listener std:sid="listener-3759fcf5" handler="onSms_listBeforeSubmit" name="before-submit"/>
+        <cl:listener std:sid="listener-cd8697cb" handler="onSms_listReceive" name="receive"/>
+        <cl:requestdata dataid="dm_request"/>
+        <cl:responsedata dataid="ds_list" isadd="false"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-9246569b" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-dc44076f">
+      <cl:xylayoutdata std:sid="xyl-data-f414311b" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="90px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-5a80e68c" style="background-color:#f4f4f4; text-align:center;" value="데이터 양">
+        <cl:formdata std:sid="f-data-3e39bbb5" col="0" row="0"/>
+      </cl:output>
+      <cl:combobox std:sid="c-box-974a89b4" id="cmb_data">
+        <cl:datamapbind category="PROPERTY" property="value" columnname="DATA" datacontrolid="dm_request"/>
+        <cl:formdata std:sid="f-data-ed72f9c7" col="1" row="0"/>
+        <cl:item label="10" value="10"/>
+        <cl:item label="20" value="20"/>
+        <cl:item label="50" value="50"/>
+        <cl:item label="100" value="100"/>
+        <cl:item label="1,000" value="1000"/>
+        <cl:item label="5,000" value="5000"/>
+        <cl:item label="10,000" value="10000"/>
+        <cl:item label="20,000" value="20000"/>
+      </cl:combobox>
+      <cl:button std:sid="button-67d5331e" id="btn_search" value="조회">
+        <cl:listener std:sid="listener-a78f2194" handler="onBtn_searchClick" name="click"/>
+        <cl:formdata std:sid="f-data-cc7c03bc" col="3" colspan="1" row="0" rowspan="1"/>
+      </cl:button>
+      <cl:button std:sid="button-351ec564" id="btn_csv" value="CSV 다운로드">
+        <cl:listener std:sid="listener-46458a96" handler="onBtn_csvClick" name="click"/>
+        <cl:formdata std:sid="f-data-a0d1f644" col="4" colspan="1" row="0" rowspan="1"/>
+      </cl:button>
+      <cl:grid std:sid="grid-908ac8f2" id="grd" datasetid="ds_list">
+        <cl:formdata std:sid="f-data-8e64c40b" col="0" colspan="5" row="1" rowspan="1"/>
+        <cl:gridcolumn std:sid="g-column-14a09ed3"/>
+        <cl:gridcolumn std:sid="g-column-f2a920c3"/>
+        <cl:gridcolumn std:sid="g-column-4d5460ae"/>
+        <cl:gridcolumn std:sid="g-column-587b846d"/>
+        <cl:gridcolumn std:sid="g-column-d001263d"/>
+        <cl:gridcolumn std:sid="g-column-5b24cf3b"/>
+        <cl:gridcolumn std:sid="g-column-930f932a"/>
+        <cl:gridcolumn std:sid="g-column-040d17f1"/>
+        <cl:gridcolumn std:sid="g-column-926e774d"/>
+        <cl:gridcolumn std:sid="g-column-c831a3ea"/>
+        <cl:gridcolumn std:sid="g-column-dd9c8162"/>
+        <cl:gridcolumn std:sid="g-column-fbe92cf4"/>
+        <cl:gridcolumn std:sid="g-column-c5e0bb00"/>
+        <cl:gridcolumn std:sid="g-column-bf312351"/>
+        <cl:gridcolumn std:sid="g-column-5cb08be2"/>
+        <cl:gridcolumn std:sid="g-column-801ab2c8"/>
+        <cl:gridcolumn std:sid="g-column-7be3d1e1"/>
+        <cl:gridcolumn std:sid="g-column-3b82da0e"/>
+        <cl:gridcolumn std:sid="g-column-572cf02e"/>
+        <cl:gridcolumn std:sid="g-column-6ddb29f8"/>
+        <cl:gridheader std:sid="gh-band-6d79db33">
+          <cl:gridrow std:sid="g-row-19041c12"/>
+          <cl:gridcell std:sid="gh-cell-270a24c3" colindex="0" rowindex="0" text="TEST_COL001"/>
+          <cl:gridcell std:sid="gh-cell-745793bb" colindex="1" rowindex="0" text="TEST_COL002"/>
+          <cl:gridcell std:sid="gh-cell-5d429e16" colindex="2" rowindex="0" text="TEST_COL003"/>
+          <cl:gridcell std:sid="gh-cell-6d3acb6e" colindex="3" rowindex="0" text="TEST_COL004"/>
+          <cl:gridcell std:sid="gh-cell-2947c575" colindex="4" rowindex="0" text="TEST_COL005"/>
+          <cl:gridcell std:sid="gh-cell-7981747d" colindex="5" rowindex="0" text="TEST_COL006"/>
+          <cl:gridcell std:sid="gh-cell-125acccd" colindex="6" rowindex="0" text="TEST_COL007"/>
+          <cl:gridcell std:sid="gh-cell-e45fb9df" colindex="7" rowindex="0" text="TEST_COL008"/>
+          <cl:gridcell std:sid="gh-cell-fe970867" colindex="8" rowindex="0" text="TEST_COL009"/>
+          <cl:gridcell std:sid="gh-cell-9a7d5413" colindex="9" rowindex="0" text="TEST_COL010"/>
+          <cl:gridcell std:sid="gh-cell-68dd2dab" colindex="10" rowindex="0" text="TEST_COL011"/>
+          <cl:gridcell std:sid="gh-cell-3e3d52fd" colindex="11" rowindex="0" text="TEST_COL012"/>
+          <cl:gridcell std:sid="gh-cell-bdb30ed7" colindex="12" rowindex="0" text="TEST_COL013"/>
+          <cl:gridcell std:sid="gh-cell-ad4ae7d5" colindex="13" rowindex="0" text="TEST_COL014"/>
+          <cl:gridcell std:sid="gh-cell-3b7853e8" colindex="14" rowindex="0" text="TEST_COL015"/>
+          <cl:gridcell std:sid="gh-cell-8400b6b4" colindex="15" rowindex="0" text="TEST_COL016"/>
+          <cl:gridcell std:sid="gh-cell-bb696f33" colindex="16" rowindex="0" text="TEST_COL017"/>
+          <cl:gridcell std:sid="gh-cell-39e7baa4" colindex="17" rowindex="0" text="TEST_COL018"/>
+          <cl:gridcell std:sid="gh-cell-c656d856" colindex="18" rowindex="0" text="TEST_COL019"/>
+          <cl:gridcell std:sid="gh-cell-27583040" colindex="19" rowindex="0" text="TEST_COL020"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-7c4591a5">
+          <cl:gridrow std:sid="g-row-149e5ade"/>
+          <cl:gridcell std:sid="gd-cell-560832e6" colindex="0" rowindex="0" columnname="TEST_COL001"/>
+          <cl:gridcell std:sid="gd-cell-3c44f0fe" colindex="1" rowindex="0" columnname="TEST_COL002"/>
+          <cl:gridcell std:sid="gd-cell-02dcc502" colindex="2" rowindex="0" columnname="TEST_COL003"/>
+          <cl:gridcell std:sid="gd-cell-6ca231f3" colindex="3" rowindex="0" columnname="TEST_COL004"/>
+          <cl:gridcell std:sid="gd-cell-b3b69a8f" colindex="4" rowindex="0" columnname="TEST_COL005"/>
+          <cl:gridcell std:sid="gd-cell-fb7fb92a" colindex="5" rowindex="0" columnname="TEST_COL006"/>
+          <cl:gridcell std:sid="gd-cell-12280709" colindex="6" rowindex="0" columnname="TEST_COL007"/>
+          <cl:gridcell std:sid="gd-cell-84c244bf" colindex="7" rowindex="0" columnname="TEST_COL008"/>
+          <cl:gridcell std:sid="gd-cell-f5f0bde5" colindex="8" rowindex="0" columnname="TEST_COL009"/>
+          <cl:gridcell std:sid="gd-cell-ce522481" colindex="9" rowindex="0" columnname="TEST_COL010"/>
+          <cl:gridcell std:sid="gd-cell-309753f0" colindex="10" rowindex="0" columnname="TEST_COL011"/>
+          <cl:gridcell std:sid="gd-cell-ba4a77e8" colindex="11" rowindex="0" columnname="TEST_COL012"/>
+          <cl:gridcell std:sid="gd-cell-baefacb0" colindex="12" rowindex="0" columnname="TEST_COL013"/>
+          <cl:gridcell std:sid="gd-cell-c3911f85" colindex="13" rowindex="0" columnname="TEST_COL014"/>
+          <cl:gridcell std:sid="gd-cell-10773bac" colindex="14" rowindex="0" columnname="TEST_COL015"/>
+          <cl:gridcell std:sid="gd-cell-0874adc2" colindex="15" rowindex="0" columnname="TEST_COL016"/>
+          <cl:gridcell std:sid="gd-cell-81e6829b" colindex="16" rowindex="0" columnname="TEST_COL017"/>
+          <cl:gridcell std:sid="gd-cell-232c04ce" colindex="17" rowindex="0" columnname="TEST_COL018"/>
+          <cl:gridcell std:sid="gd-cell-ba2baced" colindex="18" rowindex="0" columnname="TEST_COL019"/>
+          <cl:gridcell std:sid="gd-cell-1f18a005" colindex="19" rowindex="0" columnname="TEST_COL020"/>
+        </cl:griddetail>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-5a275c4d">
+        <cl:rows length="30" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="150" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="70" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:group std:sid="group-e56980c9" id="grp_loadmask" style="background-color:white;" visible="false">
+      <cl:xylayoutdata std:sid="xyl-data-a45e4571" height="200px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="400px"/>
+      <cl:progress std:sid="progress-752a7ee9" id="prg1" value="0">
+        <cl:xylayoutdata std:sid="xyl-data-d97fd553" height="20px" horizontalAnchor="CENTER" top="70px" verticalAnchor="TOP" width="360px"/>
+      </cl:progress>
+      <cl:output std:sid="output-d553503d" style="font-weight:bold; text-align:center;" value="Loading...">
+        <cl:xylayoutdata std:sid="xyl-data-a622bccf" height="20px" horizontalAnchor="CENTER" top="120px" verticalAnchor="TOP" width="140px"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-7a0b90bf"/>
+    </cl:group>
+    <cl:udc std:sid="ud-control-09cc218b" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-3b1f4809" height="70px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-f28eea3d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

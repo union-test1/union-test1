@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-48532654" version="1.0.0.0">
+  <head std:sid="head-1aa95894">
+    <title>sample4+5</title>
+    <screen std:sid="screen-083a31a1" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-812d7725" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-27b5bf47" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-7576f2c9">
+      <cl:dataset std:sid="d-set-b456b4bc" id="dataSet">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="string" name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn name="parentValue"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label1</cl:datavalue>
+            <cl:datavalue columnname="value">value1</cl:datavalue>
+            <cl:datavalue columnname="parentValue">root</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label2</cl:datavalue>
+            <cl:datavalue columnname="value">value2</cl:datavalue>
+            <cl:datavalue columnname="parentValue">root</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label3</cl:datavalue>
+            <cl:datavalue columnname="value">value3</cl:datavalue>
+            <cl:datavalue columnname="parentValue">value1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label4</cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+            <cl:datavalue columnname="parentValue">value2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label">label5</cl:datavalue>
+            <cl:datavalue columnname="value">value5</cl:datavalue>
+            <cl:datavalue columnname="parentValue">value3</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-2a41eb95" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-0aa349e3" handler="onBodyLoad" name="load"/>
+    <cl:output std:sid="output-8a0c1ff7" class="component-css" value="checkbox">
+      <cl:xylayoutdata std:sid="xyl-data-83b33d68" height="30px" horizontalAnchor="LEFT" left="610px" top="170px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:output std:sid="output-5134f4ba" class="component-css" value="number&#xD;&#xA;editor">
+      <cl:xylayoutdata std:sid="xyl-data-54a596a7" height="30px" horizontalAnchor="LEFT" left="410px" top="120px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:dateinput std:sid="d-input-ea339d65" id="dti1">
+      <cl:xylayoutdata std:sid="xyl-data-4163eb74" height="30px" horizontalAnchor="LEFT" left="690px" top="120px" verticalAnchor="TOP" width="100px"/>
+    </cl:dateinput>
+    <cl:button std:sid="button-f544aae0" id="btn" accesskey="k" value="Button">
+      <cl:listener std:sid="listener-708701e3" handler="onBtnClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-066dce42" height="30px" horizontalAnchor="LEFT" left="290px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:maskeditor std:sid="m-editor-94b953fe" id="mse1" mask="AA-0XXXX-XXXXX">
+      <cl:xylayoutdata std:sid="xyl-data-b5c9c0f0" height="30px" horizontalAnchor="LEFT" left="290px" top="120px" verticalAnchor="TOP" width="100px"/>
+    </cl:maskeditor>
+    <cl:output std:sid="output-077d7c27" value="Output">
+      <cl:xylayoutdata std:sid="xyl-data-f68230d4" height="30px" horizontalAnchor="LEFT" left="90px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:output>
+    <cl:output std:sid="output-cd5f2931" class="component-css" value="fileinput">
+      <cl:xylayoutdata std:sid="xyl-data-38dd36ea" height="30px" horizontalAnchor="LEFT" left="610px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:inputbox std:sid="i-box-2ee454b1" id="ipb1">
+      <cl:xylayoutdata std:sid="xyl-data-fa3866db" height="30px" horizontalAnchor="LEFT" left="90px" top="120px" verticalAnchor="TOP" width="100px"/>
+    </cl:inputbox>
+    <cl:output std:sid="output-b9f6d242" class="component-css" value="button">
+      <cl:xylayoutdata std:sid="xyl-data-5e22dbba" height="30px" horizontalAnchor="LEFT" left="210px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:output std:sid="output-4a10b398" class="component-css" value="inputbox">
+      <cl:xylayoutdata std:sid="xyl-data-65c7cf9e" height="30px" horizontalAnchor="LEFT" left="10px" top="120px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:button std:sid="button-fae5f45e" class="help-button" value="도움말">
+      <cl:xylayoutdata std:sid="xyl-data-842ef38b" height="30px" horizontalAnchor="LEFT" left="490px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:output std:sid="output-3e1e9b22" class="component-css" value="Output">
+      <cl:xylayoutdata std:sid="xyl-data-0f0b7f4b" height="30px" horizontalAnchor="LEFT" left="10px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:numbereditor std:sid="n-editor-a343b1ee" id="nbe1">
+      <cl:xylayoutdata std:sid="xyl-data-27a41d1a" height="30px" horizontalAnchor="LEFT" left="490px" top="120px" verticalAnchor="TOP" width="100px"/>
+    </cl:numbereditor>
+    <cl:output std:sid="output-f1d2d033" class="component-css" value="mask&#xD;&#xA;editor">
+      <cl:xylayoutdata std:sid="xyl-data-e3e37b5f" height="30px" horizontalAnchor="LEFT" left="210px" top="120px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:fileinput std:sid="f-input-00b1392f" placeholder="클릭 또는 파일을 drop 해주세요">
+      <cl:xylayoutdata std:sid="xyl-data-52f0febd" height="30px" horizontalAnchor="LEFT" left="690px" top="70px" verticalAnchor="TOP" width="300px"/>
+    </cl:fileinput>
+    <cl:output std:sid="output-427f1d02" class="component-css" value="image&#xD;&#xA;button">
+      <cl:xylayoutdata std:sid="xyl-data-d942d94a" height="30px" horizontalAnchor="LEFT" left="410px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:checkbox std:sid="c-box-8b142802" id="cbx1" text="Check">
+      <cl:xylayoutdata std:sid="xyl-data-05cd3fa7" height="30px" horizontalAnchor="LEFT" left="690px" top="170px" verticalAnchor="TOP" width="100px"/>
+    </cl:checkbox>
+    <cl:output std:sid="output-1edb8b10" class="component-css" value="dateinput">
+      <cl:xylayoutdata std:sid="xyl-data-88aea351" height="30px" horizontalAnchor="LEFT" left="610px" top="120px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:checkboxgroup std:sid="cb-group-af72d900" id="cbg1">
+      <cl:xylayoutdata std:sid="xyl-data-e8b6516a" height="50px" horizontalAnchor="LEFT" left="90px" top="170px" verticalAnchor="TOP" width="500px"/>
+      <cl:item label="pre_label1" value="pre_value1"/>
+      <cl:item label="pre_label2" value="pre_value2"/>
+      <cl:itemset datasetid="dataSet" label="label" value="value"/>
+    </cl:checkboxgroup>
+    <cl:output std:sid="output-4de4c854" class="component-css" value="checkbox&#xD;&#xA;group">
+      <cl:xylayoutdata std:sid="xyl-data-0fcba7b6" height="50px" horizontalAnchor="LEFT" left="10px" top="170px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:radiobutton std:sid="r-button-d8617d57" id="rdb1">
+      <cl:xylayoutdata std:sid="xyl-data-7570a0f3" height="50px" horizontalAnchor="LEFT" left="90px" top="240px" verticalAnchor="TOP" width="500px"/>
+      <cl:item label="pre_label1" value="pre_value1"/>
+      <cl:item label="pre_label2" value="pre_value2"/>
+      <cl:itemset datasetid="dataSet" label="label" value="value"/>
+    </cl:radiobutton>
+    <cl:output std:sid="output-95f128ed" class="component-css" value="radio&#xD;&#xA;button">
+      <cl:xylayoutdata std:sid="xyl-data-b1751a2e" height="50px" horizontalAnchor="LEFT" left="10px" top="240px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:output std:sid="output-4a96c135" class="component-css" value="combo&#xD;&#xA;box">
+      <cl:xylayoutdata std:sid="xyl-data-95d0d380" height="50px" horizontalAnchor="LEFT" left="10px" top="310px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:combobox std:sid="c-box-680837ef" id="cmb1">
+      <cl:xylayoutdata std:sid="xyl-data-f1586f44" height="30px" horizontalAnchor="LEFT" left="90px" top="310px" verticalAnchor="TOP" width="100px"/>
+      <cl:item label="pre_label1" value="pre_value1"/>
+      <cl:item label="pre_label2" value="pre_value2"/>
+      <cl:itemset datasetid="dataSet" label="label" value="value"/>
+    </cl:combobox>
+    <cl:output std:sid="output-4366d41d" class="component-css" value="textarea">
+      <cl:xylayoutdata std:sid="xyl-data-24680b0a" height="30px" horizontalAnchor="LEFT" left="810px" top="120px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:textarea std:sid="t-area-3d6e10b1" id="txa1">
+      <cl:xylayoutdata std:sid="xyl-data-49c6cd0f" height="170px" horizontalAnchor="LEFT" left="890px" top="120px" verticalAnchor="TOP" width="100px"/>
+    </cl:textarea>
+    <cl:output std:sid="output-5f2b6bea" class="component-css" value="progress">
+      <cl:xylayoutdata std:sid="xyl-data-da5ec036" height="30px" horizontalAnchor="LEFT" left="610px" top="310px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:output std:sid="output-4728563e" class="component-css" value="slider">
+      <cl:xylayoutdata std:sid="xyl-data-7e799997" height="30px" horizontalAnchor="LEFT" left="610px" top="360px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:progress std:sid="progress-e07e40d1" value="50">
+      <cl:xylayoutdata std:sid="xyl-data-8c019b27" height="30px" horizontalAnchor="LEFT" left="690px" top="310px" verticalAnchor="TOP" width="300px"/>
+    </cl:progress>
+    <cl:slider std:sid="slider-090d1eba" id="sld1">
+      <cl:xylayoutdata std:sid="xyl-data-dbf4b8ff" height="30px" horizontalAnchor="LEFT" left="690px" top="360px" verticalAnchor="TOP" width="300px"/>
+    </cl:slider>
+    <cl:output std:sid="output-792f51b1" class="component-css" value="image">
+      <cl:xylayoutdata std:sid="xyl-data-d0700348" height="30px" horizontalAnchor="LEFT" left="610px" top="220px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:img std:sid="image-14f041d7" src="../../images/Penguins.jpg">
+      <cl:xylayoutdata std:sid="xyl-data-893d2ce6" height="70px" horizontalAnchor="LEFT" left="690px" top="220px" verticalAnchor="TOP" width="100px"/>
+    </cl:img>
+    <cl:output std:sid="output-d06a99af" class="component-css" value="list&#xD;&#xA;box">
+      <cl:xylayoutdata std:sid="xyl-data-bd3d6748" height="50px" horizontalAnchor="LEFT" left="10px" top="380px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:listbox std:sid="l-box-b0b29a8d" id="lbx1">
+      <cl:xylayoutdata std:sid="xyl-data-9b4fc60f" height="100px" horizontalAnchor="LEFT" left="90px" top="380px" verticalAnchor="TOP" width="100px"/>
+      <cl:item label="pre_label1" value="pre_value1"/>
+      <cl:item label="pre_label2" value="pre_value2"/>
+      <cl:itemset datasetid="dataSet" label="label" value="value"/>
+    </cl:listbox>
+    <cl:linkedlistbox std:sid="ll-box-6b0b0b02" id="llb1">
+      <cl:xylayoutdata std:sid="xyl-data-72908166" height="100px" horizontalAnchor="LEFT" left="290px" top="380px" verticalAnchor="TOP" width="300px"/>
+      <cl:treeitem label="pre_label1" value="pre_value1" parent="root"/>
+      <cl:treeitem label="pre_label2" value="pre_value2" parent="root"/>
+      <cl:treeitem label="pre_label3" value="pre_value3" parent="pre_value1"/>
+      <cl:treeitemset datasetid="dataSet" label="label" value="value" parent="parentValue"/>
+    </cl:linkedlistbox>
+    <cl:output std:sid="output-7d97300a" class="component-css" value="linked&#xD;&#xA;listbox">
+      <cl:xylayoutdata std:sid="xyl-data-301ecc43" height="50px" horizontalAnchor="LEFT" left="210px" top="380px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:linkedcombobox std:sid="lc-box-8ca1e30b" id="lcb1">
+      <cl:xylayoutdata std:sid="xyl-data-5b3c1bee" height="30px" horizontalAnchor="LEFT" left="290px" top="310px" verticalAnchor="TOP" width="300px"/>
+      <cl:treeitem label="pre_label1" value="pre_value1" parent="root"/>
+      <cl:treeitem label="pre_label2" value="pre_value2" parent="root"/>
+      <cl:treeitem label="pre_label3" value="pre_value3" parent="pre_value1"/>
+      <cl:treeitemset datasetid="dataSet" label="label" value="value" parent="parentValue"/>
+    </cl:linkedcombobox>
+    <cl:output std:sid="output-a50d79e6" class="component-css" value="linked&#xD;&#xA;combo&#xD;&#xA;box">
+      <cl:xylayoutdata std:sid="xyl-data-31e7c075" height="50px" horizontalAnchor="LEFT" left="210px" top="310px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:output std:sid="output-a096aba8" class="component-css" value="page&#xD;&#xA;indexer">
+      <cl:xylayoutdata std:sid="xyl-data-c2011a02" height="30px" horizontalAnchor="LEFT" left="610px" top="410px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:pageindexer std:sid="p-indexer-c65f339a">
+      <cl:xylayoutdata std:sid="xyl-data-3d209d27" height="30px" horizontalAnchor="LEFT" left="690px" top="410px" verticalAnchor="TOP" width="300px"/>
+    </cl:pageindexer>
+    <cl:menu std:sid="menu-5c357dc8">
+      <cl:xylayoutdata std:sid="xyl-data-d9e1c89d" height="100px" horizontalAnchor="LEFT" left="389px" top="500px" verticalAnchor="TOP" width="150px"/>
+      <cl:menuitem label="pre_label1" value="pre_value1" parent="root"/>
+      <cl:menuitem label="pre_label2" value="pre_value2" parent="root"/>
+      <cl:menuitem label="pre_label3" value="pre_value3" parent="pre_value2"/>
+      <cl:menuitemset datasetid="dataSet" label="label" value="value" parent="parentValue"/>
+    </cl:menu>
+    <cl:navigationbar std:sid="n-bar-84a37332">
+      <cl:xylayoutdata std:sid="xyl-data-7d4e390d" height="30px" horizontalAnchor="LEFT" left="390px" top="615px" verticalAnchor="TOP" width="301px"/>
+      <cl:menuitem label="pre_label1" value="pre_value1" parent="root"/>
+      <cl:menuitem label="pre_label2" value="pre_value2" parent="root"/>
+      <cl:menuitem label="pre_label3" value="pre_value3" parent="pre_value1"/>
+      <cl:menuitemset datasetid="dataSet" label="label" value="value" parent="parentValue"/>
+    </cl:navigationbar>
+    <cl:output std:sid="output-89c65942" class="component-css" value="navigation&#xD;&#xA;bar">
+      <cl:xylayoutdata std:sid="xyl-data-ff6abbd5" height="50px" horizontalAnchor="LEFT" left="310px" top="615px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:output std:sid="output-bc3ff742" class="component-css" value="menu">
+      <cl:xylayoutdata std:sid="xyl-data-160bafef" height="30px" horizontalAnchor="LEFT" left="309px" top="500px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:output std:sid="output-d321a5e2" class="component-css" value="HTML&#xD;&#xA;Object">
+      <cl:xylayoutdata std:sid="xyl-data-bc55bc5f" height="50px" horizontalAnchor="LEFT" left="610px" top="460px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:htmlobject std:sid="htmlobject-de5ce016" id="htmlObject" data="http://tv.naver.com/">
+      <cl:xylayoutdata std:sid="xyl-data-dfa4f5d3" height="185px" horizontalAnchor="LEFT" left="700px" top="460px" verticalAnchor="TOP" width="290px"/>
+    </cl:htmlobject>
+    <cl:output std:sid="output-cce331c5" class="component-css" value="tree">
+      <cl:xylayoutdata std:sid="xyl-data-aa2f8958" height="30px" horizontalAnchor="LEFT" left="10px" top="500px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:tree std:sid="tree-f63e482c" id="tre1">
+      <cl:xylayoutdata std:sid="xyl-data-5024f85a" height="150px" horizontalAnchor="LEFT" left="90px" top="500px" verticalAnchor="TOP" width="200px"/>
+      <cl:treeitem label="pre_label1" value="pre_value1" parent="root"/>
+      <cl:treeitem label="pre_label2" value="pre_value2" parent="root"/>
+      <cl:treeitem label="pre_label3" value="pre_value3" parent="pre_value1"/>
+      <cl:treeitemset datasetid="dataSet" label="label" value="value" parent="parentValue"/>
+    </cl:tree>
+    <cl:accordion std:sid="accordion-9b177b18" id="accordion">
+      <cl:xylayoutdata std:sid="xyl-data-f4b01b47" height="133px" horizontalAnchor="LEFT" left="690px" top="675px" verticalAnchor="TOP" width="300px"/>
+      <cl:sectionitem std:sid="s-item-9a403d56" title="item 1">
+        <cl:group std:sid="group-644bcf53">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:xylayout std:sid="xylayout-786521cd"/>
+        </cl:group>
+      </cl:sectionitem>
+      <cl:sectionitem std:sid="s-item-bf1aef1f" title="item 2">
+        <std:metadata>
+          <std:property key="is-active-item" value="true"/>
+        </std:metadata>
+        <cl:group std:sid="group-38c10959">
+          <std:metadata>
+            <std:property key="locked" value="true"/>
+          </std:metadata>
+          <cl:output std:sid="output-2bda533e" value="eXbuilder6 입니다.">
+            <cl:xylayoutdata std:sid="xyl-data-d277a2e9" height="35px" horizontalAnchor="LEFT" left="20px" top="14px" verticalAnchor="TOP" width="250px"/>
+          </cl:output>
+          <cl:xylayout std:sid="xylayout-cd463e27"/>
+        </cl:group>
+      </cl:sectionitem>
+    </cl:accordion>
+    <cl:output std:sid="output-4698a706" class="component-css" value="accordion">
+      <cl:xylayoutdata std:sid="xyl-data-485ff1f9" height="30px" horizontalAnchor="LEFT" left="610px" top="673px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:fileupload std:sid="f-upload-11b750bb" id="fud1">
+      <cl:xylayoutdata std:sid="xyl-data-f2fa3d07" height="133px" horizontalAnchor="LEFT" left="10px" top="675px" verticalAnchor="TOP" width="450px"/>
+    </cl:fileupload>
+    <cl:output std:sid="output-a87e7e83" class="component-css" value="fileupload">
+      <cl:xylayoutdata std:sid="xyl-data-dd36cf30" height="30px" horizontalAnchor="LEFT" left="10px" top="644px" verticalAnchor="TOP" width="80px"/>
+    </cl:output>
+    <cl:udc std:sid="ud-control-575d7070" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-3a095081" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-04577467"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

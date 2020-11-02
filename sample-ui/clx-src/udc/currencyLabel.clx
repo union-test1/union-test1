@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-8b46f0d0" version="1.0.0.0">
+  <head std:sid="head-73c9a9e2">
+    <title>currencyLabel</title>
+    <screen std:sid="screen-cc439729" id="default" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-d0465944" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-80924f84" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-6b32e999"/>
+    <cl:appspec>
+      <cl:property bindable="true" name="value" type="string"/>
+      <cl:property bindable="true" default="₩" name="postfix" type="string"/>
+      <cl:property bindable="false" default="s000,000,000,000" name="format" type="string"/>
+      <cl:property bindable="false" default="number" name="dataType" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-2dc298a3" style="top:0px; left:0px; width:300px; height:30px;">
+    <cl:listener std:sid="listener-4383bf39" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:xylayout std:sid="xylayout-ccec2688"/>
+    <cl:output std:sid="output-7e3fa219" id="postfix" value="Output">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="postfix"/>
+      <cl:xylayoutdata std:sid="xyl-data-cd5dd9b9" bottom="0px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="BOTH" width="30px"/>
+    </cl:output>
+    <cl:output std:sid="output-6ff485db" id="label" datatype="number" format="s000,000,000,000" value="Output">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-e51f156d" bottom="0px" horizontalAnchor="BOTH" left="30px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:output>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

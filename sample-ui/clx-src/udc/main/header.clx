@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-dee1dfe3" version="1.0.0.0">
+  <head std:sid="head-1e48eb83">
+    <title>header</title>
+    <screen std:sid="screen-4b370be0" id="main" customHeight="600" height="768px" name="main" width="1024px"/>
+    <cl:model std:sid="model-2bc587f5"/>
+    <cl:appspec>
+      <cl:event name="logout" type="cpr.events.CUIEvent"/>
+      <cl:event name="close" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-8c402f56" style="background-color:#f0eeef; top:0px; left:0px; width:1024px; height:45px;">
+    <cl:xylayout std:sid="xylayout-34995afb"/>
+    <cl:notifier std:sid="notifier-e2abee64" id="glb_console" close="true" infoclose="true" successclose="true">
+      <cl:xylayoutdata std:sid="xyl-data-bdff9474" height="37px" horizontalAnchor="BOTH" left="191px" right="70px" top="5px" verticalAnchor="TOP"/>
+    </cl:notifier>
+    <cl:img std:sid="image-fa8a9059" src="../../images/exb6_logo.png">
+      <cl:xylayoutdata std:sid="xyl-data-d9094771" height="37px" horizontalAnchor="LEFT" left="5px" top="5px" verticalAnchor="TOP" width="176px"/>
+    </cl:img>
+    <cl:button std:sid="button-6febd304" value="Logout">
+      <cl:listener std:sid="listener-42479458" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-2d053ffc" height="20px" horizontalAnchor="RIGHT" right="10px" top="10px" verticalAnchor="TOP" width="50px"/>
+    </cl:button>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

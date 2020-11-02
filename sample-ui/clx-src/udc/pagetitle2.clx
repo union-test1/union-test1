@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a8caaa0c" version="1.0.0.0">
+  <head std:sid="head-44d086a9">
+    <title>pagetitle2</title>
+    <screen std:sid="screen-a8df6d98" id="default" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-b1099b64" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-424bfbaa" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-029e84df"/>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-16df8be4" style="top:0px; left:0px; width:300px; height:50px;">
+    <cl:listener std:sid="listener-40b13553" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:group std:sid="group-2fe15822">
+      <cl:xylayoutdata std:sid="xyl-data-a1f114ad" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:img std:sid="image-bcba2b02" src="../images/bullet_bodytitle.gif">
+        <cl:formdata std:sid="f-data-3449e20f" col="0" halign="CENTER" height="8" row="0" valign="CENTER" width="13"/>
+      </cl:img>
+      <cl:output std:sid="output-a7d1db63" id="opt_title" style="font-weight:bold; font-size:14px;" value="">
+        <cl:apppropbind category="PROPERTY" property="value" app-property="title"/>
+        <cl:formdata std:sid="f-data-1e6950a6" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-30b42ad2" id="opt_explain" value="">
+        <cl:apppropbind category="PROPERTY" property="value" app-property="explain"/>
+        <cl:formdata std:sid="f-data-fad55fbb" col="1" row="1"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-b22fab5a">
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="13" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-0310eecc"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

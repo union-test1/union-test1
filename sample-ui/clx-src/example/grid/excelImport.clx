@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-ebcd77fb" version="1.0.0.0">
+  <head std:sid="head-8ba3693d">
+    <title>excelimport1</title>
+    <screen std:sid="screen-671c4cbc" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-c9ed541b" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-3dccde40" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-74325e01">
+      <cl:submission std:sid="submission-7ac67ac9" id="sms1" action="../import/excel.do" mediatype="multipart/form-data">
+        <cl:listener std:sid="listener-0efcc51c" handler="onSms1SubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="ds1"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-7fb50bb6" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="USR_ID"/>
+          <cl:datacolumn name="EMP_ID"/>
+          <cl:datacolumn name="USR_NM"/>
+          <cl:datacolumn name="USR_DVS"/>
+          <cl:datacolumn name="USR_MAIL"/>
+          <cl:datacolumn name="USR_YN"/>
+          <cl:datacolumn name="PWD"/>
+          <cl:datacolumn name="WRT_PSN"/>
+          <cl:datacolumn name="WRT_TIME"/>
+          <cl:datacolumn name="WRT_IP"/>
+          <cl:datacolumn name="WRT_MENU_KEY"/>
+          <cl:datacolumn name="UPD_PSN_ID"/>
+          <cl:datacolumn name="UPD_TIME"/>
+          <cl:datacolumn name="UPD_IP"/>
+          <cl:datacolumn name="UPD_MENU_KEY"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property name="title" type="string"/>
+      <cl:property name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-fb02cc60" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-84835655" value="Import">
+      <cl:listener std:sid="listener-2af7db79" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-064bac3b" height="20px" horizontalAnchor="RIGHT" right="20px" top="70px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:grid std:sid="grid-d99b6641" id="grd1" datasetid="ds1">
+      <cl:xylayoutdata std:sid="xyl-data-277c346d" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="100px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-8b13dbfb"/>
+      <cl:gridcolumn std:sid="g-column-ecd35d59"/>
+      <cl:gridcolumn std:sid="g-column-78ed3115"/>
+      <cl:gridcolumn std:sid="g-column-0cfbf22b"/>
+      <cl:gridcolumn std:sid="g-column-0735187b"/>
+      <cl:gridcolumn std:sid="g-column-d15a0c93"/>
+      <cl:gridcolumn std:sid="g-column-175a1872"/>
+      <cl:gridcolumn std:sid="g-column-349cde31"/>
+      <cl:gridcolumn std:sid="g-column-3ed233f1"/>
+      <cl:gridcolumn std:sid="g-column-b0e51d2b"/>
+      <cl:gridcolumn std:sid="g-column-767dee36"/>
+      <cl:gridcolumn std:sid="g-column-f55033ae"/>
+      <cl:gridcolumn std:sid="g-column-7518e8a6"/>
+      <cl:gridcolumn std:sid="g-column-edf05642"/>
+      <cl:gridcolumn std:sid="g-column-1a3590c2"/>
+      <cl:gridheader std:sid="gh-band-bbad54bd">
+        <cl:gridrow std:sid="g-row-75719510"/>
+        <cl:gridcell std:sid="gh-cell-5bc68fdc" colindex="0" rowindex="0" text="USR_ID"/>
+        <cl:gridcell std:sid="gh-cell-bc07571e" colindex="1" rowindex="0" text="EMP_ID"/>
+        <cl:gridcell std:sid="gh-cell-8e6207a0" colindex="2" rowindex="0" text="USR_NM"/>
+        <cl:gridcell std:sid="gh-cell-910ff8ba" colindex="3" rowindex="0" text="USR_DVS"/>
+        <cl:gridcell std:sid="gh-cell-8b05d294" colindex="4" rowindex="0" text="USR_MAIL"/>
+        <cl:gridcell std:sid="gh-cell-b756e8d9" colindex="5" rowindex="0" text="USR_YN"/>
+        <cl:gridcell std:sid="gh-cell-5ceaa042" colindex="6" rowindex="0" text="PWD"/>
+        <cl:gridcell std:sid="gh-cell-51e961cb" colindex="7" rowindex="0" text="WRT_PSN"/>
+        <cl:gridcell std:sid="gh-cell-5716bf91" colindex="8" rowindex="0" text="WRT_TIME"/>
+        <cl:gridcell std:sid="gh-cell-5a550c09" colindex="9" rowindex="0" text="WRT_IP"/>
+        <cl:gridcell std:sid="gh-cell-2b8d267a" colindex="10" rowindex="0" text="WRT_MENU_KEY"/>
+        <cl:gridcell std:sid="gh-cell-2034e7ee" colindex="11" rowindex="0" text="UPD_PSN_ID"/>
+        <cl:gridcell std:sid="gh-cell-1d7d271c" colindex="12" rowindex="0" text="UPD_TIME"/>
+        <cl:gridcell std:sid="gh-cell-c7c110ed" colindex="13" rowindex="0" text="UPD_IP"/>
+        <cl:gridcell std:sid="gh-cell-2fde0f29" colindex="14" rowindex="0" text="UPD_MENU_KEY"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-abd79b14">
+        <cl:gridrow std:sid="g-row-fb36de67"/>
+        <cl:gridcell std:sid="gd-cell-80c055d0" colindex="0" rowindex="0" columnname="USR_ID"/>
+        <cl:gridcell std:sid="gd-cell-ccb3afd6" colindex="1" rowindex="0" columnname="EMP_ID"/>
+        <cl:gridcell std:sid="gd-cell-1478c523" colindex="2" rowindex="0" columnname="USR_NM"/>
+        <cl:gridcell std:sid="gd-cell-7d3c6fe3" colindex="3" rowindex="0" columnname="USR_DVS"/>
+        <cl:gridcell std:sid="gd-cell-fa400a81" colindex="4" rowindex="0" columnname="USR_MAIL"/>
+        <cl:gridcell std:sid="gd-cell-b666c912" colindex="5" rowindex="0" columnname="USR_YN"/>
+        <cl:gridcell std:sid="gd-cell-496afe06" colindex="6" rowindex="0" columnname="PWD"/>
+        <cl:gridcell std:sid="gd-cell-f5beb189" colindex="7" rowindex="0" columnname="WRT_PSN"/>
+        <cl:gridcell std:sid="gd-cell-ffb70734" colindex="8" rowindex="0" columnname="WRT_TIME"/>
+        <cl:gridcell std:sid="gd-cell-d40a18a1" colindex="9" rowindex="0" columnname="WRT_IP"/>
+        <cl:gridcell std:sid="gd-cell-974e7fcf" colindex="10" rowindex="0" columnname="WRT_MENU_KEY"/>
+        <cl:gridcell std:sid="gd-cell-934ea9f9" colindex="11" rowindex="0" columnname="UPD_PSN_ID"/>
+        <cl:gridcell std:sid="gd-cell-ab480efd" colindex="12" rowindex="0" columnname="UPD_TIME"/>
+        <cl:gridcell std:sid="gd-cell-9be612f2" colindex="13" rowindex="0" columnname="UPD_IP"/>
+        <cl:gridcell std:sid="gd-cell-42b0c24f" colindex="14" rowindex="0" columnname="UPD_MENU_KEY"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:udc std:sid="ud-control-e8f3385f" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-8992b5d9" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-46ac75fe"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

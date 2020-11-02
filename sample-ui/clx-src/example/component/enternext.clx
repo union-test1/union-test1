@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-0da734ff" version="1.0.0.0">
+  <head std:sid="head-a8a07fea">
+    <title>enternext</title>
+    <screen std:sid="screen-6e8094fd" id="default" height="600px" name="default" width="800px"/>
+    <cl:model std:sid="model-5b8a9a4b"/>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-410af1f6" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-b52350aa">
+      <cl:xylayoutdata std:sid="xyl-data-32da7262" height="72px" horizontalAnchor="BOTH" left="10px" right="10px" top="70px" verticalAnchor="TOP"/>
+      <cl:output std:sid="output-b435f011" value="Column1">
+        <cl:formdata std:sid="f-data-b483ab43" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-94f58a50" value="Column4">
+        <cl:formdata std:sid="f-data-5a3d195d" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-01bb6e8d" value="Column2">
+        <cl:formdata std:sid="f-data-c3081cf0" col="2" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-80928517" value="Column5">
+        <cl:formdata std:sid="f-data-199e163d" col="2" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-90208f41" value="Column3">
+        <cl:formdata std:sid="f-data-123ebb16" col="4" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-13be11e7" value="Column6">
+        <cl:formdata std:sid="f-data-46e1ff61" col="4" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-f92a8a6c" id="ipb1">
+        <cl:listener std:sid="listener-e852a7de" handler="onIpb1Keydown" name="keydown"/>
+        <cl:formdata std:sid="f-data-12d19c8b" col="1" row="0"/>
+      </cl:inputbox>
+      <cl:numbereditor std:sid="n-editor-3ea43ca8" id="nbe1">
+        <cl:listener std:sid="listener-1e3f55db" handler="onIpb1Keydown" name="keydown"/>
+        <cl:formdata std:sid="f-data-f8d80a2a" col="3" row="0"/>
+      </cl:numbereditor>
+      <cl:dateinput std:sid="d-input-9132d260" id="dti1">
+        <cl:listener std:sid="listener-d63338c3" handler="onIpb1Keydown" name="keydown"/>
+        <cl:formdata std:sid="f-data-6f06f768" col="5" row="0"/>
+      </cl:dateinput>
+      <cl:maskeditor std:sid="m-editor-de59993f" id="mse1">
+        <cl:listener std:sid="listener-033d1b3b" handler="onIpb1Keydown" name="keydown"/>
+        <cl:formdata std:sid="f-data-6b88f3e2" col="1" row="1"/>
+      </cl:maskeditor>
+      <cl:combobox std:sid="c-box-48da7a66" id="cmb1">
+        <cl:listener std:sid="listener-0f5871aa" handler="onIpb1Keydown" name="keydown"/>
+        <cl:formdata std:sid="f-data-e4c4c822" col="3" row="1"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+      </cl:combobox>
+      <cl:radiobutton std:sid="r-button-36f55f10" id="rdb1" value="value3">
+        <cl:listener std:sid="listener-a31b27f5" handler="onIpb1Keydown" name="keydown"/>
+        <cl:formdata std:sid="f-data-47bd50eb" col="5" row="1"/>
+        <cl:item label="label1" value="value1"/>
+        <cl:item label="label2" value="value2"/>
+        <cl:item label="label3" value="value3"/>
+      </cl:radiobutton>
+      <cl:formlayout std:sid="f-layout-8f6a82ef">
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-afd35d96" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-7dbe5c6c" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-16340a5f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

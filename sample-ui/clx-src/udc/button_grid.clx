@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-9dea9d4c" version="1.0.0.0">
+  <head std:sid="head-a89c87ca">
+    <title>button_crud</title>
+    <screen std:sid="screen-e5755b8d" id="default" customHeight="600" height="600px" name="default" width="800px"/>
+    <cl:model std:sid="model-7b413614"/>
+    <cl:appspec>
+      <cl:event name="insert" type="cpr.events.CUIEvent"/>
+      <cl:event name="delete" type="cpr.events.CUIEvent"/>
+      <cl:event name="reset" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-3ee6cfd3" style="top:0px; left:0px; width:43px; height:11px;">
+    <cl:listener std:sid="listener-014cab95" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:xylayout std:sid="xylayout-20b27e2b"/>
+    <cl:group std:sid="group-6e80a101">
+      <cl:xylayoutdata std:sid="xyl-data-953a42a5" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:button std:sid="button-5d1868ef" style="background-repeat:no-repeat; background-size:11px; background-position:center; background-image:url('../images/btn_grid_add.gif');" value="">
+        <cl:listener std:sid="listener-cac1d666" handler="onButtonClick" name="click"/>
+        <cl:formdata std:sid="f-data-d6e11eb4" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-2144376a" style="background-repeat:no-repeat; background-size:11px; background-image:url('../images/btn_grid_delete.gif'); background-position:center;" value="">
+        <cl:listener std:sid="listener-a849d68f" handler="onButtonClick2" name="click"/>
+        <cl:formdata std:sid="f-data-8ab71c8c" col="2" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-e44278b9" style="background-repeat:no-repeat; background-size:11px; background-image:url('../images/btn_grid_undo.gif'); background-position:center;" value="">
+        <cl:listener std:sid="listener-55ff1c51" handler="onButtonClick3" name="click"/>
+        <cl:formdata std:sid="f-data-799cc932" col="3" row="0"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-ebf1c6d7">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="11" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="11" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="11" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

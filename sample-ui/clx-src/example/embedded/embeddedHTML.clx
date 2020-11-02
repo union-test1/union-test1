@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-d39e09be" version="1.0.0.0">
+  <head std:sid="head-4343af7a">
+    <title>embedded1</title>
+    <screen std:sid="screen-14970f0f" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-16908961" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-023f7339" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-ccbc905f"/>
+    <cl:appspec title="html불러오기">
+      <cl:property name="title" type="string"/>
+      <cl:property name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-6eb88c09" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:embeddedpage std:sid="e-page-e0e4378e" id="embp1" style="border-right-style:solid; border-top-width:1px; border-bottom-color:red; border-left-style:solid; border-right-width:1px; border-bottom-width:1px; border-left-color:red; border-top-color:red; border-bottom-style:solid; border-right-color:red; border-left-width:1px; border-top-style:solid;" src="./embeddedHTML.html">
+      <cl:xylayoutdata std:sid="xyl-data-5c6d5909" height="353px" horizontalAnchor="LEFT" left="10px" top="110px" verticalAnchor="TOP" width="573px"/>
+    </cl:embeddedpage>
+    <cl:output std:sid="output-89857eed" value="html 페이지를 앱 안에 넣는 예제">
+      <cl:xylayoutdata std:sid="xyl-data-2852658d" height="20px" horizontalAnchor="LEFT" left="10px" top="80px" verticalAnchor="TOP" width="286px"/>
+    </cl:output>
+    <cl:button std:sid="button-2a0ddb6e" value="callScript">
+      <cl:listener std:sid="listener-0cc26204" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-9feb7052" height="20px" horizontalAnchor="LEFT" left="306px" top="80px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:udc std:sid="ud-control-57337b77" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-9e1fc09b" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-db003193"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c5834349" version="1.0.0.0">
+  <head std:sid="head-3287bd7b">
+    <title>screen_change</title>
+    <screen std:sid="screen-05d66e06" id="default" active="false" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-1f1acf5f" id="tablet" active="false" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-747a23e4" id="mobile" active="true" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-8e446768">
+      <cl:dataset std:sid="d-set-60796325" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Seoul]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Seoul]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Daegu]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Daegu]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Busan]]></cl:datavalue>
+            <cl:datavalue columnname="value"><![CDATA[Busan]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="label"><![CDATA[Daejeon]]></cl:datavalue>
+            <cl:datavalue columnname="value">value4</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-1f0a8897" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-0642eeb8" handler="onBodyScreenChange" name="screen-change"/>
+    <cl:group std:sid="group-4d5db1bb" id="group" style="border-right-style:solid; border-top-width:1px; border-bottom-color:lightgray; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:lightgray; border-top-color:lightgray; border-bottom-style:solid; border-right-color:lightgray; border-left-width:1px; border-top-style:solid;">
+      <cl:xylayoutdata std:sid="xyl-data-7e1d69d6" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="70px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-8a464381" id="opt_name" style="text-align:center;" value="Name">
+        <cl:formdata std:sid="f-data-45e1cfe7" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-02b56c17" id="opt_age" style="text-align:center;" value="Age">
+        <cl:formdata std:sid="f-data-5dd641a1" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-3991e164" id="opt_address" style="text-align:center;" value="Address">
+        <cl:formdata std:sid="f-data-ddece4ac" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-dce4e856" id="opt_note" style="text-align:center;" value="Note">
+        <cl:formdata std:sid="f-data-952a3f90" col="0" height="40" row="3" valign="TOP"/>
+      </cl:output>
+      <cl:output std:sid="output-7bc2f636" id="name" value="TOMATO">
+        <cl:formdata std:sid="f-data-04a87a0f" col="1" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-f0e89ba2" id="age" value="19">
+        <cl:formdata std:sid="f-data-6153dabc" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-c6701090" id="opt_Lname" style="text-align:center;" value="Last Name">
+        <cl:formdata std:sid="f-data-085e5d6b" col="2" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-41d9b4fa" id="opt_birth" style="text-align:center;" value="Birth">
+        <cl:formdata std:sid="f-data-78dce512" col="2" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-b98bfa3b" id="Lname" value="SYSTEM">
+        <cl:formdata std:sid="f-data-f4abe902" col="3" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-649ace1e" id="birth" value="2000.10.27">
+        <cl:formdata std:sid="f-data-bf78e604" col="3" row="1"/>
+      </cl:output>
+      <cl:textarea std:sid="t-area-114131b4" id="note">
+        <cl:formdata std:sid="f-data-13c50d2f" col="1" colspan="3" row="3" rowspan="1"/>
+      </cl:textarea>
+      <cl:udc std:sid="ud-control-830044a1" id="udc_address" type="udc.layout.screenChangeUdc">
+        <cl:formdata std:sid="f-data-6b0ef63c" col="1" colspan="3" row="2" rowspan="1"/>
+        <cl:property name="dataSet" type="control" value="ds1"/>
+        <cl:property name="value" type="string" value="Seoul"/>
+      </cl:udc>
+      <cl:formlayout std:sid="f-layout-b26d0b38" hseparatortype="BY_CLASS" hseparatorwidth="1" hspace="10" vseparatortype="BY_CLASS" vseparatorwidth="1">
+        <cl:rows length="40" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="40" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="40" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="100" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-822d3f8f" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-9d68e0a3" height="50px" horizontalAnchor="LEFT" left="10px" top="10px" verticalAnchor="TOP" width="1004px"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-d101b4da"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

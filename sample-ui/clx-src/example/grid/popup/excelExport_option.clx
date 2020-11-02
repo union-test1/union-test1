@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-eb922fc4" version="1.0.0.0">
+  <head std:sid="head-4e04df57">
+    <title>excelExport_option</title>
+    <screen std:sid="screen-66aa8f01" id="default" customHeight="300" height="768px" minwidth="1024px" name="default" useCustomHeight="true" width="1024px"/>
+    <screen std:sid="screen-d861d5b9" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-19cfe556" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-fd4b0a50">
+      <cl:datamap std:sid="d-map-28e1e99c" id="dm_option">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="password"/>
+          <cl:datacolumn defaultvalue="PORTRAIT" name="printPageOrientation"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="엑셀 익스포트 옵션 설정"/>
+  </head>
+  <body std:sid="body-be8ea62c" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:xylayout std:sid="xylayout-f8e4a6e4"/>
+    <cl:group std:sid="group-983718f2">
+      <cl:xylayoutdata std:sid="xyl-data-8239364a" bottom="20px" horizontalAnchor="BOTH" left="20px" right="20px" top="20px" verticalAnchor="BOTH"/>
+      <cl:button std:sid="button-be974d05" value="적용닫기">
+        <cl:listener std:sid="listener-422ae903" handler="onButtonClick" name="click"/>
+        <cl:formdata std:sid="f-data-ba1ad42d" col="2" row="3"/>
+      </cl:button>
+      <cl:output std:sid="output-3a562ef6" value="파일 암호 설정">
+        <cl:formdata std:sid="f-data-b0a92d5f" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-2b0f2837" value="출력 용지 방향">
+        <cl:formdata std:sid="f-data-ab65e97c" col="0" row="1"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-fef795cb" id="ipb1" secret="true">
+        <cl:datamapbind property="value" columnname="password" datacontrolid="dm_option"/>
+        <cl:formdata std:sid="f-data-ed3c221d" col="1" row="0"/>
+      </cl:inputbox>
+      <cl:radiobutton std:sid="r-button-bc4484d8" id="rdb1">
+        <cl:datamapbind property="value" columnname="printPageOrientation" datacontrolid="dm_option"/>
+        <cl:formdata std:sid="f-data-86872a01" col="1" row="1"/>
+        <cl:item label="세로" value="PORTRAIT"/>
+        <cl:item label="가로" value="LANDSCAPE"/>
+      </cl:radiobutton>
+      <cl:formlayout>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="120" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4d680576" version="1.0.0.0">
+  <head std:sid="head-7ef69e5a">
+    <title>type7</title>
+    <screen std:sid="screen-59d512f7" id="default" height="600px" name="default" width="800px"/>
+    <cl:model std:sid="model-5df36c04">
+      <cl:datamap std:sid="d-map-c3e42a79" id="reqKey" altercolumnlayout="client">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="column1"/>
+          <cl:datacolumn name="column2"/>
+          <cl:datacolumn name="column3"/>
+          <cl:datacolumn name="column4"/>
+          <cl:datacolumn name="column5"/>
+          <cl:datacolumn name="column6"/>
+          <cl:datacolumn name="column7"/>
+          <cl:datacolumn name="column8"/>
+          <cl:datacolumn name="column9"/>
+          <cl:datacolumn name="column10"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-496f9d34" id="subMain" action="../template/freeform/getMainList.do">
+        <cl:listener std:sid="listener-b1b9b048" handler="onSubMainSubmitSuccess" name="submit-success"/>
+        <cl:requestdata dataid="reqKey"/>
+        <cl:responsedata dataid="resMain"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-a24b67e9" id="subSave" action="../template/freeform/save.do">
+        <cl:listener std:sid="listener-4c6d871c" handler="onSubSaveSubmitSuccess" name="submit-success"/>
+        <cl:requestdata dataid="resMain"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-4a4c34ae" id="resMain">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="column1"/>
+          <cl:datacolumn name="column2"/>
+          <cl:datacolumn name="column3"/>
+          <cl:datacolumn name="column4"/>
+          <cl:datacolumn name="column5"/>
+          <cl:datacolumn name="column6"/>
+          <cl:datacolumn name="column7"/>
+          <cl:datacolumn name="column8"/>
+          <cl:datacolumn name="column9"/>
+          <cl:datacolumn name="column10"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-6ecf855d" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-803c2425" handler="onBodyInit" name="init"/>
+    <cl:udc std:sid="ud-control-f9235da8" type="udc.pagetitle">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-fda621fc" height="24px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:group std:sid="group-8bc0cdcb" id="grp_freeform">
+      <cl:xylayoutdata std:sid="xyl-data-a2d1a9b4" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="44px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-7da9dca6" id="grp_search_cond" class="grp-search">
+        <cl:listener std:sid="listener-944328c0" handler="onGrp_search_condKeydown" name="keydown"/>
+        <cl:datamapcontext datacontrolid="reqKey"/>
+        <cl:formdata std:sid="f-data-08392db4" col="0" row="0"/>
+        <cl:output std:sid="output-cc010497" value="column1">
+          <cl:formdata std:sid="f-data-7e4b3323" col="0" halign="FILL" row="0" valign="FILL"/>
+        </cl:output>
+        <cl:udc std:sid="ud-control-f2e62fed" id="ipdColumn1" type="udc.search.search_type1">
+          <cl:listener std:sid="listener-8fb2fac0" handler="onSearch_type1Search" name="search"/>
+          <cl:attribute name="required" value="Y"/>
+          <cl:attribute name="name" value="컬럼1"/>
+          <cl:relativebind category="PROPERTY" property="value" columnname="column1"/>
+          <cl:formdata std:sid="f-data-ca45afed" col="1" row="0"/>
+          <cl:property name="required" type="string" value="required"/>
+        </cl:udc>
+        <cl:button std:sid="button-b0c6c6b4" value="검색">
+          <cl:listener std:sid="listener-bd05f174" handler="onButtonClick2" name="click"/>
+          <cl:formdata std:sid="f-data-5f78159c" col="3" row="0" valign="FILL"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-0e238dde">
+          <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="100" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="150" shadecolor="#000000" shadetype="NONE"/>
+          <cl:columns length="5" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="90" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-316747ab" id="grp_frm" class="grp-freeform">
+        <cl:datarowcontext datacontrolid="resMain" rowindex="0"/>
+        <cl:formdata std:sid="f-data-3dc93837" col="0" row="1"/>
+        <cl:output std:sid="output-40b6c681" class="ctl-header" value="column1">
+          <cl:formdata std:sid="f-data-ca4bc822" col="0" row="0" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-85ebdb77" id="ipdFrmColumn1" class="required" autoselect="true">
+          <cl:attribute name="required" value="Y"/>
+          <cl:attribute name="name" value="컬럼1"/>
+          <cl:relativebind category="PROPERTY" property="value" columnname="column1"/>
+          <cl:expbind category="PROPERTY" property="enabled" expression="getStateString() *= &quot;I&quot;"/>
+          <cl:formdata std:sid="f-data-db014412" col="1" row="0" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-1eb0bd4e" class="ctl-header" value="column2">
+          <cl:formdata std:sid="f-data-277235ae" col="2" row="0" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-887eb862" id="ipdFrmColumn2" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column2"/>
+          <cl:formdata std:sid="f-data-79af5a22" col="3" row="0" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-1c4e8157" class="ctl-header" value="column3">
+          <cl:formdata std:sid="f-data-344d9e45" col="0" row="1" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-c5931a37" id="ipdFrmColumn3" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column3"/>
+          <cl:formdata std:sid="f-data-454e315d" col="1" row="1" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-f61ddf0b" class="ctl-header" value="column4">
+          <cl:formdata std:sid="f-data-65743bbb" col="2" row="1" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-5c06afb0" id="ipdFrmColumn4" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column4"/>
+          <cl:formdata std:sid="f-data-a92b5e64" col="3" row="1" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-614d14f4" class="ctl-header" value="column5">
+          <cl:formdata std:sid="f-data-0e6ebe0f" col="0" row="2" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-837ed0a7" id="ipdFrmColumn5" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column5"/>
+          <cl:formdata std:sid="f-data-8f8d2084" col="1" row="2" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-6e203e4b" class="ctl-header" value="column6">
+          <cl:formdata std:sid="f-data-608727d9" col="2" row="2" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-712a7b59" id="ipdFrmColumn6" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column6"/>
+          <cl:formdata std:sid="f-data-827f9c4b" col="3" row="2" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-94384377" class="ctl-header" value="column7">
+          <cl:formdata std:sid="f-data-c684432b" col="0" row="3" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-7b041331" id="ipdFrmColumn7" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column7"/>
+          <cl:formdata std:sid="f-data-060e2334" col="1" row="3" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-16cd4dad" class="ctl-header" value="column8">
+          <cl:formdata std:sid="f-data-cc7e303f" col="2" row="3" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-1377463a" id="ipdFrmColumn8" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column8"/>
+          <cl:formdata std:sid="f-data-16cbdc29" col="3" row="3" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-9fa72934" class="ctl-header" value="column9">
+          <cl:formdata std:sid="f-data-9ad134ea" col="0" row="4" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-6a2b9acd" id="ipdFrmColumn9" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column9"/>
+          <cl:formdata std:sid="f-data-3bdceb96" col="1" row="4" valign="FILL"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-b5567588" class="ctl-header" value="column10">
+          <cl:formdata std:sid="f-data-3b0f39c5" col="2" row="4" valign="FILL"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-a9e2b07d" id="ipdFrmColumn10" autoselect="true">
+          <cl:relativebind category="PROPERTY" property="value" columnname="column10"/>
+          <cl:formdata std:sid="f-data-db87c12a" col="3" row="4" valign="FILL"/>
+        </cl:inputbox>
+        <cl:group std:sid="group-7be4f232">
+          <cl:formdata std:sid="f-data-829d2492" col="0" colspan="4" row="5" rowspan="1" valign="FILL"/>
+          <cl:xylayout std:sid="xylayout-3e19f419"/>
+        </cl:group>
+        <cl:formlayout std:sid="f-layout-87816a79" hseparatorclass="frm-hseparator" hseparatortype="BY_CLASS" hseparatorwidth="1" vseparatorclass="frm-vseparator" vseparatortype="BY_CLASS" vseparatorwidth="1">
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:rows length="25"/>
+          <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-c75f1141" class="grp-buttons">
+        <cl:formdata std:sid="f-data-232bf64f" col="0" row="2"/>
+        <cl:button std:sid="button-2dfbc5f6" class="cl-button-box" value="저장">
+          <cl:listener std:sid="listener-744e1cf2" handler="onButtonClick3" name="click"/>
+          <cl:formdata std:sid="f-data-de5165a4" col="3" halign="FILL" row="0" valign="FILL"/>
+        </cl:button>
+        <cl:button std:sid="button-f1fa9268" value="초기화">
+          <cl:listener std:sid="listener-16a34ef0" handler="onButtonClick" name="click"/>
+          <cl:formdata std:sid="f-data-2573ee0d" col="1" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-36f1d757" value="신규">
+          <cl:listener std:sid="listener-6612288e" handler="onButtonClick4" name="click"/>
+          <cl:formdata std:sid="f-data-1df2fc91" col="2" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-49e69995" value="삭제">
+          <cl:listener std:sid="listener-555a6782" handler="onButtonClick5" name="click"/>
+          <cl:formdata std:sid="f-data-ee2d26cc" col="4" row="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-307d4f79">
+          <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="90" unit="PIXEL"/>
+          <cl:columns length="90" unit="PIXEL"/>
+          <cl:columns length="90" unit="PIXEL"/>
+          <cl:columns length="90" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-32701c98">
+        <cl:rows length="40" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="40" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-a56a2f7a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

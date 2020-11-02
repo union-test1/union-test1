@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-80dec4c2" version="1.0.0.0">
+  <head std:sid="head-3e8102f6">
+    <title>gridvalidation</title>
+    <screen std:sid="screen-4148e454" id="default" height="600px" name="default" width="800px"/>
+    <cl:model std:sid="model-0be25bac">
+      <cl:datamap std:sid="d-map-ef7dfd03" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn defaultvalue="홍길동" name="column1"/>
+          <cl:datacolumn defaultvalue="honggildong@yahoo.com" name="column2"/>
+          <cl:datacolumn defaultvalue="data3" name="column3"/>
+          <cl:datacolumn defaultvalue="data4" name="column4"/>
+          <cl:datacolumn defaultvalue="data5" name="column5"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-c09ae9f5" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-34520ae4">
+      <cl:xylayoutdata std:sid="xyl-data-91d5f386" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="44px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-cd80b78c">
+        <cl:formdata std:sid="f-data-62cdc543" col="0" row="0"/>
+        <cl:button std:sid="button-a94ed3a6" value="초기화">
+          <cl:listener std:sid="listener-f749c84f" handler="onButtonClick2" name="click"/>
+          <cl:formdata std:sid="f-data-514a334e" col="4" row="0"/>
+        </cl:button>
+        <cl:button std:sid="button-b460baab" value="검증">
+          <cl:listener std:sid="listener-1c78e1c3" handler="onButtonClick3" name="click"/>
+          <cl:formdata std:sid="f-data-978c8176" col="5" row="0"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-8e510ecd">
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="100" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="100" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="100" unit="PIXEL"/>
+          <cl:columns length="100" unit="PIXEL"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:group std:sid="group-a97f85df" id="freeform">
+        <cl:formdata std:sid="f-data-559d416f" col="0" row="1"/>
+        <cl:output std:sid="output-9ac708d1" value="column1 (required)">
+          <cl:formdata std:sid="f-data-c570b91d" col="0" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-32e5fbb3" value="column3 (minLength=10)">
+          <cl:formdata std:sid="f-data-d3deedaa" col="0" row="1"/>
+        </cl:output>
+        <cl:output std:sid="output-98fe43de" value="column5 (lpad=#)">
+          <cl:formdata std:sid="f-data-3654352d" col="0" row="2"/>
+        </cl:output>
+        <cl:output std:sid="output-4ecbb43b" value="column2 (email)">
+          <cl:formdata std:sid="f-data-9ab6c316" col="2" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-43402baa" value="column4 (fixLength=10)">
+          <cl:formdata std:sid="f-data-ae546292" col="2" row="1"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-f0424209" id="ipb1" class="required">
+          <cl:attribute name="required" value="Y"/>
+          <cl:attribute name="name" value="column1"/>
+          <cl:datamapbind property="value" columnname="column1" datacontrolid="dm1"/>
+          <cl:formdata std:sid="f-data-ad96fde5" col="1" row="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-4a6e675e" id="ipb2">
+          <cl:attribute name="minlength" value="10"/>
+          <cl:attribute name="name" value="column3"/>
+          <cl:datamapbind property="value" columnname="column3" datacontrolid="dm1"/>
+          <cl:formdata std:sid="f-data-807caa9b" col="1" row="1"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-e8613792" id="ipb3">
+          <cl:listener std:sid="listener-f0706d34" handler="onIpb3ValueChange" name="value-change"/>
+          <cl:attribute name="name" value="column5"/>
+          <cl:attribute name="fixlength" value="10"/>
+          <cl:attribute name="minlength" value="5"/>
+          <cl:attribute name="lpad" value="#"/>
+          <cl:datamapbind property="value" columnname="column5" datacontrolid="dm1"/>
+          <cl:formdata std:sid="f-data-940adfc3" col="1" row="2"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-9b48268f" id="ipb4">
+          <cl:attribute name="type" value="email"/>
+          <cl:attribute name="name" value="column2"/>
+          <cl:datamapbind property="value" columnname="column2" datacontrolid="dm1"/>
+          <cl:formdata std:sid="f-data-49b1b139" col="3" row="0"/>
+        </cl:inputbox>
+        <cl:inputbox std:sid="i-box-80f28baf" id="ipb5">
+          <cl:attribute name="fixlength" value="10"/>
+          <cl:attribute name="name" value="column4"/>
+          <cl:datamapbind property="value" columnname="column4" datacontrolid="dm1"/>
+          <cl:formdata std:sid="f-data-be01d85e" col="3" row="1"/>
+        </cl:inputbox>
+        <cl:formlayout std:sid="f-layout-559ec389">
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="150" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+          <cl:columns length="150" shadecolor="#000000" shadetype="BY_CLASS" unit="PIXEL"/>
+          <cl:columns length="1" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:formlayout std:sid="f-layout-61d5ec12">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-9855dc07" type="udc.pagetitle">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-d7942f56" height="24px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-30f292d0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

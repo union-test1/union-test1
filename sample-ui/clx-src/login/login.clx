@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-eb386ffc" version="1.0.0.0">
+  <head std:sid="head-59afb709">
+    <title>login</title>
+    <screen std:sid="screen-7484e0b2" id="main" height="768px" name="main" width="1024px"/>
+    <cl:model std:sid="model-e3259305">
+      <cl:datamap std:sid="d-map-087d1b50" id="dm_login">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="user_id"/>
+          <cl:datacolumn name="user_pass"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+      <cl:submission std:sid="submission-5b413b26" id="sub_login" action="login.do">
+        <cl:listener std:sid="listener-79e90fc9" handler="onSub_loginSubmitSuccess" name="submit-success"/>
+        <cl:listener std:sid="listener-9aa59957" handler="onSub_loginSubmitError" name="submit-error"/>
+        <cl:requestdata dataid="dm_login"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="로그인"/>
+  </head>
+  <body std:sid="body-4ce9e0c1" class="cl-main" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-0e829648" style="background-color:#efefef;">
+      <cl:xylayoutdata std:sid="xyl-data-8e006681" height="350px" horizontalAnchor="CENTER" verticalAnchor="CENTER" width="350px"/>
+      <cl:img std:sid="image-37a9221e" alt="eXbuilder6 로고" src="../images/exb6_logo.png">
+        <cl:formdata std:sid="f-data-576bdf2f" col="0" colspan="1" halign="CENTER" height="36" row="0" rowspan="1" valign="CENTER" width="176"/>
+      </cl:img>
+      <cl:inputbox std:sid="i-box-a2a037e2" id="ipb1" placeholder="ID" tooltip="ID를 입력하세요">
+        <cl:datamapbind property="value" columnname="user_id" datacontrolid="dm_login"/>
+        <cl:formdata std:sid="f-data-04d0f0b0" col="0" row="1" valign="CENTER"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-e1d92f20" id="ipb2" placeholder="PW" secret="true" tooltip="비밀번호를 입력하세요">
+        <cl:listener std:sid="listener-2801a25b" handler="onIpb2Keydown" name="keydown"/>
+        <cl:datamapbind property="value" columnname="user_pass" datacontrolid="dm_login"/>
+        <cl:formdata std:sid="f-data-c304d72b" col="0" colspan="1" row="2" rowspan="1" valign="CENTER"/>
+      </cl:inputbox>
+      <cl:checkbox std:sid="c-box-a54b7192" id="cbx1" style="text-align:left;" text="ID 저장" value="">
+        <cl:formdata std:sid="f-data-e5f71f85" col="0" colspan="1" row="3" rowspan="1"/>
+      </cl:checkbox>
+      <cl:button std:sid="button-b76d85c5" id="btnLogin" value="LOGIN">
+        <cl:listener std:sid="listener-ffb0c87c" handler="onButtonClick" name="click"/>
+        <cl:formdata std:sid="f-data-2e92fd42" col="0" row="4" valign="CENTER"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-2b37edc8" hmargin="50" vmargin="50">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="30" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="30" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="30" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="30" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-e6a24a7f"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

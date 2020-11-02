@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-948f177d" version="1.0.0.0">
+  <head std:sid="head-1230a64e">
+    <title>grid_split</title>
+    <screen std:sid="screen-e1c8fa1c" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-473081e3" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-1ef609c5" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-44b8e422">
+      <cl:dataset std:sid="d-set-8d10b33e" id="mainDS">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="string" displayonly="false" name="column1"/>
+          <cl:datacolumn name="column2"/>
+          <cl:datacolumn name="column3"/>
+          <cl:datacolumn name="column4"/>
+          <cl:datacolumn name="column5"/>
+          <cl:datacolumn datatype="number" name="column6"/>
+          <cl:datacolumn datatype="number" name="column7"/>
+          <cl:datacolumn datatype="number" name="column8"/>
+          <cl:datacolumn datatype="number" name="column9"/>
+          <cl:datacolumn datatype="number" name="column10"/>
+          <cl:datacolumn name="column11"/>
+          <cl:datacolumn name="column12"/>
+          <cl:datacolumn name="column13"/>
+          <cl:datacolumn name="column14"/>
+          <cl:datacolumn name="column15"/>
+          <cl:datacolumn name="column16"/>
+          <cl:datacolumn name="column17"/>
+          <cl:datacolumn name="column18"/>
+          <cl:datacolumn name="column19"/>
+          <cl:datacolumn name="column20"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-83ff7495" id="subMain" action="../example/gridcrud/splitData.do">
+        <cl:listener std:sid="listener-5cfd91df" handler="onSubMainSubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="mainDS"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-4b754043" id="subExport" action="../export/그리드.xlsx" responsetype="blob"/>
+    </cl:model>
+    <cl:appspec title="그리드(스플릿)">
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-0404faaa" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-58f618ea" value="조회">
+      <cl:listener std:sid="listener-e469e9b2" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-ca9c95dd" height="20px" horizontalAnchor="RIGHT" right="90px" top="70px" verticalAnchor="TOP" width="70px"/>
+    </cl:button>
+    <cl:grid std:sid="grid-632dc44f" id="grd1" columnMovable="true" columnResizable="true" datasetid="mainDS" leftsplit="5" leftsplitwidth="550" readonly="true">
+      <cl:xylayoutdata std:sid="xyl-data-b7e8d9b0" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="100px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-bbd9cb80" width="40px"/>
+      <cl:gridcolumn std:sid="g-column-12b1d321"/>
+      <cl:gridcolumn std:sid="g-column-c02346d5"/>
+      <cl:gridcolumn std:sid="g-column-f2a407be"/>
+      <cl:gridcolumn std:sid="g-column-6c019f41"/>
+      <cl:gridcolumn std:sid="g-column-7c74a9cd"/>
+      <cl:gridcolumn std:sid="g-column-c1a7b873" width="110px"/>
+      <cl:gridcolumn std:sid="g-column-f21dc671" width="110px"/>
+      <cl:gridcolumn std:sid="g-column-3a9f8c74" width="110px"/>
+      <cl:gridcolumn std:sid="g-column-19f8e01d" width="110px"/>
+      <cl:gridcolumn std:sid="g-column-5c7e375a" width="110px"/>
+      <cl:gridcolumn std:sid="g-column-850730c1"/>
+      <cl:gridcolumn std:sid="g-column-24fbb40a"/>
+      <cl:gridcolumn std:sid="g-column-c5c17571" width="230px"/>
+      <cl:gridcolumn std:sid="g-column-168349df"/>
+      <cl:gridcolumn std:sid="g-column-7d9e1fef"/>
+      <cl:gridcolumn std:sid="g-column-b9da6c13" width="200px"/>
+      <cl:gridcolumn std:sid="g-column-5ceca6d8"/>
+      <cl:gridcolumn std:sid="g-column-b0b384f4"/>
+      <cl:gridcolumn std:sid="g-column-b15fa76c"/>
+      <cl:gridcolumn std:sid="g-column-a74e1651" width="187px"/>
+      <cl:gridheader std:sid="gh-band-e00c6da2">
+        <cl:gridrow std:sid="g-row-60f2305b"/>
+        <cl:gridcell std:sid="gh-cell-bf867efc" colindex="0" colspan="2" rowindex="0" rowspan="1" style="text-align:center;" text="헤더1"/>
+        <cl:gridcell std:sid="gh-cell-2e1e9508" colindex="2" rowindex="0" style="text-align:center;" text="헤더2"/>
+        <cl:gridcell std:sid="gh-cell-3efd7318" colindex="3" rowindex="0" style="text-align:center;" text="헤더3"/>
+        <cl:gridcell std:sid="gh-cell-52fa6fcd" colindex="4" rowindex="0" style="text-align:center;" text="헤더4"/>
+        <cl:gridcell std:sid="gh-cell-b93f6aa5" colindex="5" rowindex="0" style="text-align:center;" text="헤더5"/>
+        <cl:gridcell std:sid="gh-cell-907234b0" colindex="6" rowindex="0" style="text-align:center;" text="헤더6"/>
+        <cl:gridcell std:sid="gh-cell-f70f0d1b" colindex="7" rowindex="0" style="text-align:center;" text="헤더7"/>
+        <cl:gridcell std:sid="gh-cell-1963d41a" colindex="8" rowindex="0" style="text-align:center;" text="헤더8"/>
+        <cl:gridcell std:sid="gh-cell-48e08229" colindex="9" rowindex="0" style="text-align:center;" text="헤더9"/>
+        <cl:gridcell std:sid="gh-cell-9305945a" colindex="10" rowindex="0" style="text-align:center;" text="헤더10"/>
+        <cl:gridcell std:sid="gh-cell-0550f02d" colindex="11" rowindex="0" style="text-align:center;" text="헤더11" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-bff57914" colindex="12" rowindex="0" style="text-align:center;" text="헤더12" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-e8fb05ce" colindex="13" rowindex="0" style="text-align:center;" text="헤더13" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-96b5ba34" colindex="14" rowindex="0" style="text-align:center;" text="헤더14" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-c2503dcf" colindex="15" rowindex="0" style="text-align:center;" text="헤더15" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-1d237656" colindex="16" rowindex="0" style="text-align:center;" text="헤더16" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-9fa0d363" colindex="17" rowindex="0" style="text-align:center;" text="헤더17" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-0c9e2ce1" colindex="18" rowindex="0" style="text-align:center;" text="헤더18" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-b4ee6ab5" colindex="19" rowindex="0" style="text-align:center;" text="헤더19" visible="false"/>
+        <cl:gridcell std:sid="gh-cell-f4deea4c" colindex="20" rowindex="0" style="text-align:center;" text="헤더20" visible="false"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-cc4c2e10">
+        <cl:gridrow std:sid="g-row-44ac4a0b"/>
+        <cl:gridcell std:sid="gd-cell-754314db" colindex="1" rowindex="0" style="text-align:center;" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-4385e69a" colindex="2" rowindex="0" style="text-align:center;" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-2ed80e4d" colindex="3" rowindex="0" style="text-align:center;" columnname="column3"/>
+        <cl:gridcell std:sid="gd-cell-df93f486" colindex="4" rowindex="0" style="text-align:center;" columnname="column4"/>
+        <cl:gridcell std:sid="gd-cell-ecd643d7" colindex="5" rowindex="0" style="text-align:center;" columnname="column5"/>
+        <cl:gridcell std:sid="gd-cell-2b25666f" colindex="6" rowindex="0" columnname="column6">
+          <cl:output std:sid="output-a061209d" style="text-align:right;" datatype="number" format="000,000,000,000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-69bb3275" colindex="7" rowindex="0" columnname="column7" columntype="normal" suppressible="false" suppressref="-1">
+          <cl:output std:sid="output-966fc3eb" style="text-align:right;" datatype="number" format="000,000,000,000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-63bd4f31" colindex="8" rowindex="0" columnname="column8" columntype="normal" suppressible="false" suppressref="-1">
+          <cl:output std:sid="output-427026a6" style="text-align:right;" datatype="number" format="000,000,000,000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-5a3c98a2" colindex="9" rowindex="0" columnname="column9" columntype="normal" suppressible="false" suppressref="-1">
+          <cl:output std:sid="output-8b6ad83a" style="text-align:right;" datatype="number" format="000,000,000,000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-e2098609" colindex="10" rowindex="0" columnname="column10" columntype="normal" suppressible="false" suppressref="-1">
+          <cl:output std:sid="output-e37b1c7a" style="text-align:right;" datatype="number" format="000,000,000,000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-40e5a5aa" colindex="11" rowindex="0" columnname="column11">
+          <cl:output std:sid="output-189ff6f7" style="text-align:center;" format="0000-00-00"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-1a84d11c" colindex="12" rowindex="0" style="text-align:center;" columnname="column12"/>
+        <cl:gridcell std:sid="gd-cell-1ebc9329" colindex="13" rowindex="0" columnname="column13"/>
+        <cl:gridcell std:sid="gd-cell-8f04dc1d" colindex="14" rowindex="0" columnname="column14">
+          <cl:output std:sid="output-5fb55e0c" style="text-align:center;" format="0000-00-00"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-12ac45a3" colindex="15" rowindex="0" style="text-align:center;" columnname="column15"/>
+        <cl:gridcell std:sid="gd-cell-049114b9" colindex="16" rowindex="0" columnname="column16"/>
+        <cl:gridcell std:sid="gd-cell-9746d934" colindex="17" rowindex="0" columnname="column17">
+          <cl:output std:sid="output-5a3e4144" style="text-align:center;" format="0000-00-00" value="Output"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-5c2ec28e" colindex="18" rowindex="0" style="text-align:center;" columnname="column18"/>
+        <cl:gridcell std:sid="gd-cell-de090d7b" colindex="19" rowindex="0" style="text-align:center;" columnname="column19"/>
+        <cl:gridcell std:sid="gd-cell-86a840a1" colindex="20" rowindex="0" columnname="column20"/>
+        <cl:gridcell std:sid="gd-cell-b586435d" colindex="0" rowindex="0" style="text-align:center;" columntype="rowindex"/>
+      </cl:griddetail>
+      <cl:gridfooter std:sid="gf-band-1889e9ff">
+        <cl:gridrow std:sid="g-row-bce47272" height="24px"/>
+        <cl:gridcell std:sid="gf-cell-b51bda9d" colindex="0" colspan="6" rowindex="0" rowspan="1" expr="총계"/>
+        <cl:gridcell std:sid="gf-cell-eb3a5132" colindex="6" rowindex="0" expr="getSum(&quot;column6&quot;)">
+          <cl:output std:sid="output-eec0522a" datatype="number" format="999,999,999,999"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gf-cell-2fea74f1" colindex="7" rowindex="0" expr="getSum(&quot;column7&quot;)">
+          <cl:output std:sid="output-9c9b3790" datatype="number" format="999,999,999,999"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gf-cell-7eda3143" colindex="8" rowindex="0" expr="getSum(&quot;column8&quot;)">
+          <cl:output std:sid="output-37503e34" datatype="number" format="999,999,999,999"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gf-cell-08b3215a" colindex="9" rowindex="0" expr="getSum(&quot;column9&quot;)">
+          <cl:output std:sid="output-b46b0575" datatype="number" format="999,999,999,999"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gf-cell-9328c6c0" colindex="10" rowindex="0" expr="getSum(&quot;column10&quot;)">
+          <cl:output std:sid="output-663a6f9c" datatype="number" format="999,999,999,999"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gf-cell-e4639a09" colindex="11" rowindex="0" expr=""/>
+        <cl:gridcell std:sid="gf-cell-5e938093" colindex="12" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-d2f0d405" colindex="13" rowindex="0" expr=""/>
+        <cl:gridcell std:sid="gf-cell-e6e5da5d" colindex="14" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-5602c585" colindex="15" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-cf774998" colindex="16" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-93744629" colindex="17" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-dda0bbd2" colindex="18" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-e1b42cd3" colindex="19" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-09979224" colindex="20" rowindex="0" expr="0"/>
+      </cl:gridfooter>
+    </cl:grid>
+    <cl:button std:sid="button-24695db9" value="초기화">
+      <cl:listener std:sid="listener-662bd59e" handler="onButtonClick2" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-50507838" height="20px" horizontalAnchor="RIGHT" right="10px" top="70px" verticalAnchor="TOP" width="70px"/>
+    </cl:button>
+    <cl:udc std:sid="ud-control-08ac59a7" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-2ca07398" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-13a3a7c6"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

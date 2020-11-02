@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-2147906e" version="1.0.0.0">
+  <head std:sid="head-e70a92a8">
+    <title>main</title>
+    <screen std:sid="screen-2c38826a" id="main" height="768px" name="main" width="1024px"/>
+    <cl:model std:sid="model-42c22627">
+      <cl:submission std:sid="submission-71cd3281" id="subLogout" action="../logout.do">
+        <cl:listener std:sid="listener-638eac7e" handler="onSubLogoutSubmitSuccess" name="submit-success"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec title="메인"/>
+  </head>
+  <body std:sid="body-3ebd0c8b" class="cl-main" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:udc std:sid="ud-control-a31ab21d" type="udc.main.header">
+      <cl:listener std:sid="listener-aad0f961" handler="onHeaderLogout" name="logout"/>
+      <cl:listener std:sid="listener-7c3c0608" handler="onHeaderClose" name="close"/>
+      <cl:xylayoutdata std:sid="xyl-data-84800ac9" height="45px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:mdifolder std:sid="mdifolder-1803bf5a" id="main_mdi">
+      <cl:xylayoutdata std:sid="xyl-data-9abaae07" bottom="0px" horizontalAnchor="BOTH" left="310px" right="0px" top="50px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-05ef220e">
+        <cl:horizontalData std:sid="h-data-2b01e747" width="185"/>
+        <cl:button std:sid="button-e546f760" id="btn1" class="button-close-icon" value="All">
+          <cl:listener std:sid="listener-bcd41a70" handler="onButtonClick4" name="click"/>
+          <cl:formdata std:sid="f-data-da0ddc65" col="0" halign="FILL" row="0" valign="FILL" width="90"/>
+        </cl:button>
+        <cl:button std:sid="button-67cb2b59" id="btn2" class="button-close-icon" value="Others">
+          <cl:listener std:sid="listener-f666a0b6" handler="onButtonClick5" name="click"/>
+          <cl:formdata std:sid="f-data-25e21209" col="1" halign="FILL" row="0" valign="FILL" width="90"/>
+        </cl:button>
+        <cl:formlayout std:sid="f-layout-b4d40fa5" vmargin="3">
+          <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="90" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="90"/>
+        </cl:formlayout>
+      </cl:group>
+    </cl:mdifolder>
+    <cl:udc std:sid="ud-control-a168a5ba" id="left_menu" type="udc.main.left">
+      <cl:listener std:sid="listener-d29373d7" handler="onLeftMenu_before_select" name="menu_before_select"/>
+      <cl:listener std:sid="listener-60285985" handler="onLeftMenu_select" name="menu_select"/>
+      <cl:listener std:sid="listener-cfb52f5b" handler="onLeftMenu_click" name="menu_click"/>
+      <cl:listener std:sid="listener-a1e89663" handler="onLeft_menuSearch" name="search"/>
+      <cl:listener std:sid="listener-b5447da4" handler="onLeft_menuKeyup" name="keyup"/>
+      <cl:xylayoutdata std:sid="xyl-data-92f79e6a" bottom="0px" horizontalAnchor="LEFT" left="0px" top="50px" verticalAnchor="BOTH" width="300px"/>
+    </cl:udc>
+    <cl:button std:sid="button-6bed63fc" style="border-radius:0px;" value="">
+      <cl:listener std:sid="listener-46bd3276" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-441a6fef" bottom="0px" horizontalAnchor="LEFT" left="300px" top="75px" verticalAnchor="BOTH" width="10px"/>
+    </cl:button>
+    <cl:xylayout std:sid="xylayout-828b860d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler>
+      <std:guide position="287"/>
+    </std:vruler>
+  </std:studiosetting>
+</html>

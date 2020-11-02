@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-f7219c67" version="1.0.0.0">
+  <head std:sid="head-56f5b68e">
+    <title>thricecombo</title>
+    <screen std:sid="screen-1c5e6400" id="default" height="600px" name="default" width="800px"/>
+    <cl:model std:sid="model-226507f0">
+      <cl:dataset std:sid="d-set-313866cf" id="deptList" filtercondition="">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="code"/>
+          <cl:datacolumn datatype="string" name="name"/>
+          <cl:datacolumn name="parent"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-86d08631" id="subDeptList" action="../example/getDeptList.do">
+        <cl:listener std:sid="listener-9c2ae389" handler="onSubDeptListSubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="deptList"/>
+      </cl:submission>
+      <cl:datamap std:sid="d-map-f42161e3" id="dept">
+        <cl:datacolumnlist>
+          <cl:datacolumn defaultvalue="11000" name="ldept"/>
+          <cl:datacolumn defaultvalue="11100" name="mdept"/>
+          <cl:datacolumn defaultvalue="21040" name="sdept"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-44cb82b4" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-e85b549a" handler="onBodyInit" name="init"/>
+    <cl:group std:sid="group-acf21e53" id="grp">
+      <cl:xylayoutdata std:sid="xyl-data-58c2b4d3" height="30px" horizontalAnchor="BOTH" left="10px" right="10px" top="70px" verticalAnchor="TOP"/>
+      <cl:combobox std:sid="c-box-c2d12ae7" id="cmb1" placeholder="선택하세요">
+        <cl:listener std:sid="listener-d81b7eb4" handler="onCmb1SelectionChange" name="selection-change"/>
+        <cl:datamapbind property="value" columnname="ldept" datacontrolid="dept"/>
+        <cl:formdata std:sid="f-data-cc047fd7" col="0" row="0"/>
+        <cl:itemset datasetid="deptList" label="name" value="code"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-40887af0" id="cmb2" placeholder="선택하세요">
+        <cl:listener std:sid="listener-3380851b" handler="onCmb2SelectionChange" name="selection-change"/>
+        <cl:datamapbind property="value" columnname="mdept" datacontrolid="dept"/>
+        <cl:formdata std:sid="f-data-601a8671" col="1" row="0"/>
+        <cl:itemset datasetid="deptList" label="name" value="code"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-01d18084" id="cmb3" placeholder="선택하세요">
+        <cl:datamapbind property="value" columnname="sdept" datacontrolid="dept"/>
+        <cl:formdata std:sid="f-data-8e7c5966" col="2" row="0" valign="FILL"/>
+        <cl:itemset datasetid="deptList" label="name" value="code"/>
+      </cl:combobox>
+      <cl:formlayout std:sid="f-layout-da5f4539">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="200" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="200" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="200" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-43aa47cc" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-4ea37826" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-b072898a"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

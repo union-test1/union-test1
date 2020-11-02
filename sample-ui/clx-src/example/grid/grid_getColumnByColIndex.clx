@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-5f6a8537" version="1.0.0.0">
+  <head std:sid="head-46c29829">
+    <title>grid_getColumnByColIndex</title>
+    <screen std:sid="screen-03246ae4" id="default" active="false" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-267ba2ed" id="new-screen" active="true" height="600px" maxwidth="1024px" minwidth="800px" name="new-screen" width="800px"/>
+    <screen std:sid="screen-0bd78058" id="tablet" height="667px" maxwidth="800px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-13d80db5" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-08c56bf1">
+      <cl:dataset std:sid="d-set-26c7dfa0" id="ds_list">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="year"/>
+          <cl:datacolumn name="quarter"/>
+          <cl:datacolumn name="month"/>
+          <cl:datacolumn name="f_half_budget"/>
+          <cl:datacolumn name="s_half_budget"/>
+          <cl:datacolumn name="f_half_expenditure"/>
+          <cl:datacolumn name="s_half_expenditure"/>
+          <cl:datacolumn datatype="expression" expression="(s_half_expenditure+f_half_expenditure)-(s_half_budget+f_half_budget)" name="excess"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[55500000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[2244000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[11457220]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[789400000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[2271000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[2390000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[24245700]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[5472000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[2789000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[2222000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[757582720]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[579440000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[4575724]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[52572010]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[2252670]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[25397340]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess11</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[224242400]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[242427242]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[242424780]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[739754000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess12</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[50400000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[47000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[401001000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess16</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[20000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[5700000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[22500000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[7000000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess17</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[2798700]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[1247000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[22575727]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[520000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[1133300]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[88880000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[45752504]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[5200000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[8888470]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[222720]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[249872400]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[78850000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[7000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[5000000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[25725040]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[75758350]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess13</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[9000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[74747140]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[20553500]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess14</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[9800000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[20000000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[4000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[5000000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess15</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[2222000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[7899990]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[2220000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[6892000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[99990000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[88784100]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[25500000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[36520000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[9634220]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[6642140]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[50000000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[2580000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[57996000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[24579620]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[24040000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[24414000]]></cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[11100000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[2222000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[444000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[5500000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess18</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[10000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[1200000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[55555000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess19</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[1111100000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[70000000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[41000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[22200000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess20</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_budget"><![CDATA[1000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_budget"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="f_half_expenditure"><![CDATA[8000000]]></cl:datavalue>
+            <cl:datavalue columnname="s_half_expenditure"><![CDATA[9990000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess21</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-ce6feb7f" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-981c29df">
+      <cl:xylayoutdata std:sid="xyl-data-7d99eac6" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="70px" verticalAnchor="BOTH"/>
+      <cl:grid std:sid="grid-ee6de3c2" id="grd1" datasetid="ds_list" selectionunit="cell">
+        <cl:listener std:sid="listener-b66edbab" handler="onGrd1CellClick" name="cell-click"/>
+        <cl:listener std:sid="listener-5ba66865" handler="onGrd1RowgroupClick" name="rowgroup-click"/>
+        <cl:formdata std:sid="f-data-4ce8a5c7" col="0" row="0"/>
+        <cl:gridcolumn std:sid="g-column-72e304da" width="30px"/>
+        <cl:gridcolumn std:sid="g-column-a2033af4" width="60px"/>
+        <cl:gridcolumn std:sid="g-column-7b9cdba8" width="60px"/>
+        <cl:gridcolumn std:sid="g-column-cfdf8842" width="60px"/>
+        <cl:gridcolumn std:sid="g-column-0dad031f"/>
+        <cl:gridcolumn std:sid="g-column-a179e307"/>
+        <cl:gridcolumn std:sid="g-column-d60da620"/>
+        <cl:gridcolumn std:sid="g-column-0b45b42f"/>
+        <cl:gridcolumn std:sid="g-column-4cda87a7"/>
+        <cl:gridheader std:sid="gh-band-1a71d713">
+          <cl:gridrow std:sid="g-row-fc97e432"/>
+          <cl:gridrow std:sid="g-row-3b065e35"/>
+          <cl:gridcell std:sid="gh-cell-4e5593d1" colindex="1" colspan="1" rowindex="0" rowspan="2" text="년도"/>
+          <cl:gridcell std:sid="gh-cell-c6ff1db4" colindex="2" colspan="1" rowindex="0" rowspan="2" text="분기"/>
+          <cl:gridcell std:sid="gh-cell-8e55b15e" colindex="3" colspan="1" rowindex="0" rowspan="2" text="월"/>
+          <cl:gridcell std:sid="gh-cell-1a0d515f" colindex="4" colspan="2" rowindex="0" rowspan="1" text="예산"/>
+          <cl:gridcell std:sid="gh-cell-da63a30a" colindex="6" colspan="2" rowindex="0" rowspan="1" text="지출"/>
+          <cl:gridcell std:sid="gh-cell-93fdc127" colindex="0" colspan="1" rowindex="0" rowspan="2" text=""/>
+          <cl:gridcell std:sid="gh-cell-6af09a9c" colindex="8" colspan="1" rowindex="0" rowspan="2" text="초과액"/>
+          <cl:gridcell std:sid="gh-cell-f8d5eb92" colindex="5" rowindex="1" text="후반기"/>
+          <cl:gridcell std:sid="gh-cell-09ddae34" colindex="7" rowindex="1" text="후반기"/>
+          <cl:gridcell std:sid="gh-cell-71687277" colindex="4" rowindex="1" text="전반기"/>
+          <cl:gridcell std:sid="gh-cell-0b61143e" colindex="6" rowindex="1" text="전반기"/>
+        </cl:gridheader>
+        <cl:griddetail std:sid="gd-band-ab92df7a">
+          <cl:gridrow std:sid="g-row-1a2bde1b"/>
+          <cl:gridcell std:sid="gd-cell-3518cf27" colindex="1" rowindex="0" columnname="year"/>
+          <cl:gridcell std:sid="gd-cell-3e8b76d7" colindex="2" rowindex="0" columnname="quarter"/>
+          <cl:gridcell std:sid="gd-cell-3da5a3a8" colindex="3" rowindex="0" columnname="month"/>
+          <cl:gridcell std:sid="gd-cell-27f6a764" colindex="5" rowindex="0" columnname="s_half_budget">
+            <cl:numbereditor std:sid="n-editor-5e8e59ea" id="nbe1" format="s000,000,000,000"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-9592493b" colindex="7" rowindex="0" columnname="s_half_expenditure">
+            <cl:numbereditor std:sid="n-editor-53c28f36" id="nbe2" format="s000,000,000,000"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-69937e29" colindex="0" rowindex="0" style="text-align:center;" columntype="rowindex"/>
+          <cl:gridcell std:sid="gd-cell-ae0beb2e" colindex="8" rowindex="0" columnname="excess">
+            <cl:numbereditor std:sid="n-editor-b40524cc" id="nbe3" format="s000,000,000,000"/>
+          </cl:gridcell>
+          <cl:gridcell std:sid="gd-cell-cd66212e" colindex="4" rowindex="0" columnname="f_half_budget"/>
+          <cl:gridcell std:sid="gd-cell-d83e5ee1" colindex="6" rowindex="0" columnname="f_half_expenditure"/>
+        </cl:griddetail>
+        <cl:gridrowgrouplist std:sid="grg-list-86d92cd5">
+          <cl:gridrowgroup std:sid="gr-group-315aec24" groupcondition="year">
+            <cl:gridgroupheader std:sid="gf-band-9e68d378">
+              <cl:gridrow std:sid="g-row-e9550616" height="24px"/>
+              <cl:gridcell std:sid="gf-cell-1c3efcd1" colindex="0" colspan="9" rowindex="0" rowspan="1" style="text-align:center;" expr="year +'년도 ' + month + '월'"/>
+            </cl:gridgroupheader>
+            <cl:gridgroupfooter std:sid="gf-band-4af4b6d9">
+              <cl:gridrow std:sid="g-row-2d366f92" height="30px"/>
+              <cl:gridcell std:sid="gf-cell-94eb3ae2" colindex="5" rowindex="0" expr="getSum('s_half_budget')">
+                <cl:numbereditor std:sid="n-editor-31b060b0" id="nbe4" format="s000,000,000,000"/>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gf-cell-06ae68b2" colindex="7" rowindex="0" expr="getSum('s_half_expenditure')">
+                <cl:numbereditor std:sid="n-editor-1632f68b" id="nbe5" format="s000,000,000,000"/>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gf-cell-39a881ef" colindex="0" colspan="4" rowindex="0" rowspan="1" style="background-color:#C0C0C0;" expr=""/>
+              <cl:gridcell std:sid="gf-cell-c7688262" colindex="8" rowindex="0" expr="getSum('excess')">
+                <cl:numbereditor std:sid="n-editor-74e3c4d0" id="nbe6" format="s000,000,000,000"/>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gf-cell-cfe872be" colindex="4" rowindex="0" expr="getSum('f_half_budget')">
+                <cl:numbereditor std:sid="n-editor-22017ef2" id="nbe7"/>
+              </cl:gridcell>
+              <cl:gridcell std:sid="gf-cell-6af957e3" colindex="6" rowindex="0" expr="getSum('f_half_expenditure')">
+                <cl:numbereditor std:sid="n-editor-529ee3c9" id="nbe8"/>
+              </cl:gridcell>
+            </cl:gridgroupfooter>
+          </cl:gridrowgroup>
+        </cl:gridrowgrouplist>
+      </cl:grid>
+      <cl:formlayout std:sid="f-layout-9426a86b">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-55001cef" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-82cc6b6c" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-659cb1b9"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

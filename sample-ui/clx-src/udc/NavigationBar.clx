@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3b70f455" version="1.0.0.0">
+  <head std:sid="head-79d99133">
+    <title>NavigationBar</title>
+    <screen std:sid="screen-31809fec" id="default" active="false" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-405506a2" id="tablet" active="false" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-0eeb357b" id="mobile" active="true" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-36a24502">
+      <cl:dataset std:sid="d-set-a5b17511" id="items">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="label"/>
+          <cl:datacolumn name="value"/>
+          <cl:datacolumn datatype="string" name="parentValue"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist/>
+      </cl:dataset>
+      <cl:submission std:sid="submission-76a4e4fa" id="sms1">
+        <cl:listener std:sid="listener-c88229c3" handler="onSms1SubmitSuccess" name="submit-success"/>
+        <cl:responsedata dataid="items"/>
+      </cl:submission>
+    </cl:model>
+    <cl:appspec>
+      <cl:event name="selection-change" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-b2a276b5" style="top:0px; left:0px; width:300px; height:50px;">
+    <cl:listener std:sid="listener-6505001b" handler="onBodyLoad" name="load"/>
+    <cl:listener std:sid="listener-23df9428" handler="onBodyDispose" name="dispose"/>
+    <cl:navigationbar std:sid="n-bar-da9fda29" id="navi">
+      <cl:listener std:sid="listener-6542652f" handler="onNaviItemClick" name="item-click"/>
+      <cl:responsivexylayoutdata>
+        <cl:xylayoutdata bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-b85aee98" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH" screenid="tablet"/>
+        <cl:xylayoutdata std:sid="sxyl-data-b85aee98" height="0px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="TOP" width="0px" screenid="mobile"/>
+      </cl:responsivexylayoutdata>
+    </cl:navigationbar>
+    <cl:button std:sid="button-3114d0ea" value="&amp;#9776;">
+      <cl:listener std:sid="listener-2b7d2d6a" handler="onButtonClick" name="click"/>
+      <cl:responsivexylayoutdata std:sid="rxyl-data-126e1010">
+        <cl:xylayoutdata std:sid="sxyl-data-dd5f7a9a" bottom="0px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="BOTH" width="67px" screenid="mobile"/>
+        <cl:xylayoutdata std:sid="sxyl-data-dd5f7a9a" height="0px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="TOP" width="0px" screenid="tablet"/>
+        <cl:xylayoutdata std:sid="sxyl-data-dd5f7a9a" height="0px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="TOP" width="0px" screenid="default"/>
+      </cl:responsivexylayoutdata>
+    </cl:button>
+    <cl:output std:sid="output-bcd98f7c" style="background-color:#ffffff;" removeOnBuild="true" value="#UDC 컨트롤입니다. UDC폴더에 넣어 사용하세요.&#xD;&#xA;&#xD;&#xA;사용하는 페이지에 맞추어 screen을 추가해 주세요. UDC를 사용하는 페이지에서 없는 screen을 설정한 경우 컨트롤이 안보일 수 있습니다.&#xD;&#xA;&#xD;&#xA;1. 스크립트에서 DATASET_COLUMN_NAME을 데이터셋의 컬럼 이름과 동일하게 설정합니다.&#xD;&#xA;2. 서브미션으로 데이터를 받는 경우 onload 이벤트에서 처리 합니다.&#xD;&#xA;#스크립트에 //TODO를 참고하시기 바랍니다.">
+      <cl:responsivexylayoutdata std:sid="rxyl-data-a695fcba">
+        <cl:xylayoutdata std:sid="sxyl-data-d24a9ae8" height="184px" horizontalAnchor="LEFT" left="150px" top="93px" verticalAnchor="TOP" width="552px" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-d24a9ae8" height="212px" horizontalAnchor="LEFT" left="77px" top="99px" verticalAnchor="TOP" width="652px" screenid="mobile"/>
+        <cl:xylayoutdata std:sid="sxyl-data-d24a9ae8" height="171px" horizontalAnchor="LEFT" left="110px" top="99px" verticalAnchor="TOP" width="668px" screenid="tablet"/>
+      </cl:responsivexylayoutdata>
+    </cl:output>
+    <cl:responsivexylayout/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

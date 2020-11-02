@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-3ad26fb4" version="1.0.0.0">
+  <head std:sid="head-612bed18">
+    <title>submission</title>
+    <screen std:sid="screen-d44793a8" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-a688d1bf" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-8f65c9f1" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-662602ff">
+      <cl:submission std:sid="submission-219fa371" id="sms1" action="../timeout.jsp" responsetype="javascript" timeout="1000">
+        <cl:listener std:sid="listener-1eb22ee3" handler="onSms1SubmitTimeout" name="submit-timeout"/>
+      </cl:submission>
+      <cl:dataset std:sid="d-set-b9d4c5f9" id="ds1" altercolumnlayout="server">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="column1"/>
+          <cl:datacolumn name="column2"/>
+          <cl:datacolumn name="column3"/>
+          <cl:datacolumn name="column4"/>
+          <cl:datacolumn name="column5"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="타임아웃">
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-fe391c72" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-87f4de6c" value="send">
+      <cl:listener std:sid="listener-63890e5d" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-f297144b" height="20px" horizontalAnchor="LEFT" left="243px" top="102px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:output std:sid="output-a26b5135" value="submission-timeout 1000ms">
+      <cl:xylayoutdata std:sid="xyl-data-a736573b" height="20px" horizontalAnchor="LEFT" left="38px" top="102px" verticalAnchor="TOP" width="195px"/>
+    </cl:output>
+    <cl:output std:sid="output-d796ab95" value="클라이언트에서 1000ms가 지나면 연결을 끊는 기능">
+      <cl:xylayoutdata std:sid="xyl-data-af5d728e" height="20px" horizontalAnchor="LEFT" left="38px" top="72px" verticalAnchor="TOP" width="351px"/>
+    </cl:output>
+    <cl:udc std:sid="ud-control-6bd7e8fa" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-b82a618f" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-9a6362b9"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

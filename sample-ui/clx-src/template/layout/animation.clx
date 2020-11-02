@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4d474f1b" version="1.0.0.0">
+  <head std:sid="head-de55075f">
+    <title>animation</title>
+    <screen std:sid="screen-3d7a3fa4" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-658a2544" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-ac545240" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-2d151e64"/>
+    <cl:appspec>
+      <cl:property name="title" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-d8299eb2" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-1baca208">
+      <cl:xylayoutdata std:sid="xyl-data-9bd6d44b" height="300px" horizontalAnchor="BOTH" left="40px" right="384px" top="55px" verticalAnchor="TOP"/>
+      <cl:button std:sid="button-4caf6057" value="나타나기">
+        <cl:listener std:sid="listener-4be8e06b" handler="onBtn1Click" name="click"/>
+        <cl:formdata std:sid="f-data-233922ea" col="0" row="1"/>
+      </cl:button>
+      <cl:button std:sid="button-46a5f755" value="강조">
+        <cl:listener std:sid="listener-203eecc1" handler="onBtn2Click" name="click"/>
+        <cl:formdata std:sid="f-data-f8c20a61" col="1" row="1"/>
+      </cl:button>
+      <cl:button std:sid="button-ced81184" value="사라지기">
+        <cl:listener std:sid="listener-5b678a3d" handler="onBtn3Click" name="click"/>
+        <cl:formdata std:sid="f-data-92c38baf" col="2" row="1"/>
+      </cl:button>
+      <cl:button std:sid="button-0b409eec" id="btn1" value="Button" visible="false">
+        <cl:formdata std:sid="f-data-ac1fdaef" col="0" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-bd80e7eb" id="btn2" value="Button">
+        <cl:formdata std:sid="f-data-e23b1d33" col="1" row="0"/>
+      </cl:button>
+      <cl:button std:sid="button-6c953397" id="btn3" value="Button">
+        <cl:formdata std:sid="f-data-ce0e5c3e" col="2" row="0"/>
+      </cl:button>
+      <cl:formlayout hmargin="5" hseparatorwidth="1" hspace="10" vmargin="5" vseparatorwidth="1" vspace="10">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="30" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-7fdeaa18" type="udc.pagetitle">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-5e14bb5b" height="24px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:group std:sid="group-05164877" id="grp" style="border-right-style:solid; border-top-width:1px; border-bottom-color:gray; border-right-width:1px; border-left-color:gray; border-right-color:gray; border-left-width:1px; border-top-style:solid; background-color:#eeeeee; border-left-style:solid; border-bottom-width:1px; border-top-color:gray; border-bottom-style:solid; background-image:none;">
+      <cl:xylayoutdata std:sid="xyl-data-28521be8" height="350px" horizontalAnchor="LEFT" left="40px" top="375px" verticalAnchor="TOP" width="600px"/>
+      <cl:button std:sid="button-c3682088" id="btn7" value="EASE_IN_BACK">
+        <cl:listener std:sid="listener-80b17724" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-6e1741e5" height="30px" horizontalAnchor="LEFT" left="35px" top="230px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-9cc45750" id="btn8" value="EASE_IN_CUBIC">
+        <cl:listener std:sid="listener-af590abc" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-5cee287a" height="30px" horizontalAnchor="LEFT" left="35px" top="140px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-9d1049ed" id="btn9" value="EASE_OUT_BACK">
+        <cl:listener std:sid="listener-59ba0b9d" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-c943740d" height="30px" horizontalAnchor="LEFT" left="35px" top="260px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-ee603e4c" id="btn10" value="EASE_OUT_CUBIC">
+        <cl:listener std:sid="listener-09557fab" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-36b1d05f" height="30px" horizontalAnchor="LEFT" left="35px" top="170px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-7aa79004" id="btn11" value="LINEAR">
+        <cl:listener std:sid="listener-e8a37c3e" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-e789dbcb" height="30px" horizontalAnchor="LEFT" left="35px" top="20px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-5d97aaab" id="btn12" value="EASE_IN">
+        <cl:listener std:sid="listener-3342ca3b" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-f66e450e" height="30px" horizontalAnchor="LEFT" left="35px" top="50px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-af1804cf" id="btn13" value="EASE_IN_OUT">
+        <cl:listener std:sid="listener-2c9001f6" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-d211d39e" height="30px" horizontalAnchor="LEFT" left="35px" top="110px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-0ee5a6ee" id="btn14" value="EASE_IN_OUT_CUBIC">
+        <cl:listener std:sid="listener-9f1fa002" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-64e825d5" height="30px" horizontalAnchor="LEFT" left="35px" top="200px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-cc437c2d" id="btn15" value="EASE_OUT">
+        <cl:listener std:sid="listener-dba9e031" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-325d5575" height="30px" horizontalAnchor="LEFT" left="35px" top="80px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:button std:sid="button-cece469a" id="btn16" value="EASE_IN_OUT_BACK">
+        <cl:listener std:sid="listener-8614e294" handler="animateButton" name="click"/>
+        <cl:xylayoutdata std:sid="xyl-data-3441ba56" height="30px" horizontalAnchor="LEFT" left="35px" top="290px" verticalAnchor="TOP" width="180px"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-08b2a73a"/>
+    </cl:group>
+    <cl:xylayout std:sid="xylayout-5375f862"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-6c09f02c" version="1.0.0.0">
+  <head std:sid="head-3d65810d">
+    <title>다이얼로그</title>
+    <screen std:sid="screen-e1560bd2" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-801cb2fd" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-3eb3efc4" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-cdd79d8c">
+      <cl:datamap std:sid="d-map-4685ed46" id="dm1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn name="age"/>
+          <cl:datacolumn name="address"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="모달">
+      <cl:property bindable="true" name="title" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-2138aa20" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:button std:sid="button-03ba21a2" value="open">
+      <cl:listener std:sid="listener-2c66ba2d" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-e5cf8b77" height="20px" horizontalAnchor="LEFT" left="300px" top="54px" verticalAnchor="TOP" width="100px"/>
+    </cl:button>
+    <cl:group std:sid="group-2d7a5bad" id="grp1">
+      <cl:xylayoutdata std:sid="xyl-data-b1e6f138" height="100px" horizontalAnchor="LEFT" left="10px" top="44px" verticalAnchor="TOP" width="280px"/>
+      <cl:output std:sid="output-431b0d7e" value="Output">
+        <cl:datamapbind property="value" columnname="name" datacontrolid="dm1"/>
+        <cl:xylayoutdata std:sid="xyl-data-b515b27c" height="20px" horizontalAnchor="LEFT" left="110px" top="10px" verticalAnchor="TOP" width="150px"/>
+      </cl:output>
+      <cl:output std:sid="output-cfd177ab" value="Output">
+        <cl:datamapbind property="value" columnname="age" datacontrolid="dm1"/>
+        <cl:xylayoutdata std:sid="xyl-data-bf625397" height="20px" horizontalAnchor="LEFT" left="110px" top="40px" verticalAnchor="TOP" width="150px"/>
+      </cl:output>
+      <cl:output std:sid="output-5bd48ea5" class="modal-output" value="이름">
+        <cl:xylayoutdata std:sid="xyl-data-6000dbc0" height="20px" horizontalAnchor="LEFT" left="20px" top="10px" verticalAnchor="TOP" width="70px"/>
+      </cl:output>
+      <cl:output std:sid="output-8f8dff15" value="Output">
+        <cl:datamapbind property="value" columnname="address" datacontrolid="dm1"/>
+        <cl:xylayoutdata std:sid="xyl-data-edfbb239" height="20px" horizontalAnchor="LEFT" left="110px" top="70px" verticalAnchor="TOP" width="150px"/>
+      </cl:output>
+      <cl:output std:sid="output-1a11c87c" class="modal-output" value="나이">
+        <cl:xylayoutdata std:sid="xyl-data-5654db48" height="20px" horizontalAnchor="LEFT" left="20px" top="40px" verticalAnchor="TOP" width="70px"/>
+      </cl:output>
+      <cl:output std:sid="output-6f2b4abc" class="modal-output" value="주소">
+        <cl:xylayoutdata std:sid="xyl-data-7cb2e8f1" height="20px" horizontalAnchor="LEFT" left="20px" top="70px" verticalAnchor="TOP" width="70px"/>
+      </cl:output>
+      <cl:xylayout std:sid="xylayout-045eeee8"/>
+    </cl:group>
+    <cl:udc std:sid="ud-control-10292504" type="udc.pagetitle">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:xylayoutdata std:sid="xyl-data-3b235602" height="24px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-3888eef2"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c3476748" version="1.0.0.0">
+  <head std:sid="head-d1dd3277">
+    <title>SearchButton</title>
+    <screen std:sid="screen-e6574498" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-999399fc" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-7db72fe7" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-559c6328"/>
+    <cl:appspec>
+      <cl:property bindable="true" default="" name="value" type="string"/>
+      <cl:event name="search" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-cdb27095" style="top:0px; left:0px; width:100px; height:20px;">
+    <cl:xylayout std:sid="xylayout-47334a88"/>
+    <cl:inputbox std:sid="i-box-e9817cef" id="ipb_input">
+      <cl:apppropbind property="value" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-b0591ae8" bottom="0px" horizontalAnchor="BOTH" left="0px" right="21px" top="0px" verticalAnchor="BOTH"/>
+    </cl:inputbox>
+    <cl:button std:sid="button-c6f14001" style="border-right-style:solid; background-size:auto; border-bottom-color:#b4b4b4; border-top-width:1px; border-right-width:1px; border-left-color:#b4b4b4; border-right-color:#b4b4b4; background-position:center; border-left-width:1px; border-top-style:solid; background-color:#ffffff; border-radius:2px 2px 2px 2px; background-repeat:no-repeat; border-left-style:solid; border-bottom-width:1px; border-top-color:#b4b4b4; border-bottom-style:solid; background-image:url('../images/icon_search.jpg');" value="">
+      <cl:listener std:sid="listener-0b05e825" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-6910ef84" bottom="0px" horizontalAnchor="RIGHT" right="0px" top="0px" verticalAnchor="BOTH" width="20px"/>
+    </cl:button>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

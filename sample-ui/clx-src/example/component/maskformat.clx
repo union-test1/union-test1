@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a0c5c755" version="1.0.0.0">
+  <head std:sid="head-4ade2ccf">
+    <title>maskformat</title>
+    <screen std:sid="screen-02f01f0e" id="default" active="true" height="600px" name="default" width="800px"/>
+    <cl:model std:sid="model-bbabeb60">
+      <cl:datamap std:sid="d-map-e10f3e28" id="resKey">
+        <cl:datacolumnlist>
+          <cl:datacolumn defaultvalue="20171204" name="column1"/>
+          <cl:datacolumn defaultvalue="20170101" name="column2"/>
+          <cl:datacolumn defaultvalue="20170315053025" name="column3"/>
+          <cl:datacolumn defaultvalue="60" name="column4"/>
+          <cl:datacolumn defaultvalue="1000" name="column5"/>
+          <cl:datacolumn defaultvalue="01234.56780" name="column6"/>
+          <cl:datacolumn defaultvalue="2348301453" name="column7"/>
+          <cl:datacolumn defaultvalue="1234567891023456" name="column8"/>
+          <cl:datacolumn defaultvalue="hello!!!" name="column9"/>
+          <cl:datacolumn defaultvalue="12fd4" name="column10"/>
+          <cl:datacolumn defaultvalue="입력하세요!" name="column11"/>
+          <cl:datacolumn defaultvalue="2018" name="column12"/>
+          <cl:datacolumn defaultvalue="201801" name="column13"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-dfe2b510" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:group std:sid="group-30a2e40d" id="grp_frm">
+      <cl:datamapcontext datacontrolid="resKey"/>
+      <cl:xylayoutdata std:sid="xyl-data-c1f1be57" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="70px" verticalAnchor="BOTH"/>
+      <cl:output std:sid="output-63eaa52c" value="분류">
+        <cl:formdata std:sid="f-data-69b6ed60" col="0" colspan="3" row="0" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-e88b75a7" value="컨트롤">
+        <cl:formdata std:sid="f-data-ebdc0fd3" col="3" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-2fb95ae1" value="값">
+        <cl:formdata std:sid="f-data-daf838c7" col="4" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-945d8aef" value="날짜">
+        <cl:formdata std:sid="f-data-fa731331" col="0" colspan="1" row="1" rowspan="5"/>
+      </cl:output>
+      <cl:output std:sid="output-689086e0" value="숫자">
+        <cl:formdata std:sid="f-data-72aa204d" col="0" colspan="1" row="6" rowspan="3"/>
+      </cl:output>
+      <cl:output std:sid="output-b412ae05" value="마스킹">
+        <cl:formdata std:sid="f-data-26b77842" col="0" colspan="1" row="9" rowspan="2"/>
+      </cl:output>
+      <cl:output std:sid="output-4b3e0120" value="필터">
+        <cl:formdata std:sid="f-data-4263d783" col="0" colspan="1" row="11" rowspan="2"/>
+      </cl:output>
+      <cl:output std:sid="output-e37d18d4" value="최소/최대&#xD;&#xA;(2017-12-01 ~ 2017-12-31)">
+        <cl:formdata std:sid="f-data-97e656a3" col="1" colspan="2" row="1" rowspan="1" valign="FILL"/>
+      </cl:output>
+      <cl:output std:sid="output-cfdf143e" value="형식&#xD;&#xA;(mask)">
+        <cl:formdata std:sid="f-data-e6a195fc" col="1" colspan="1" row="2" rowspan="4" valign="FILL"/>
+      </cl:output>
+      <cl:output std:sid="output-62229040" value="최대/최소&#xD;&#xA;(-100 ~ 100)">
+        <cl:formdata std:sid="f-data-ae99b5db" col="1" colspan="2" row="6" rowspan="1" valign="FILL"/>
+      </cl:output>
+      <cl:output std:sid="output-4bc9efc1" value="형식&#xD;&#xA;(format)">
+        <cl:formdata std:sid="f-data-78191c5e" col="1" colspan="1" row="7" rowspan="2" valign="FILL"/>
+      </cl:output>
+      <cl:output std:sid="output-000b6a63" value="바이트 최대 길이">
+        <cl:formdata std:sid="f-data-3c24ff1d" col="0" row="13"/>
+      </cl:output>
+      <cl:output std:sid="output-1181e8b3" value="date&#xD;&#xA;(YYYY-MM-DD)">
+        <cl:formdata std:sid="f-data-b0d9e31b" col="2" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-58b6e9d0" value="datetime&#xD;&#xA;(YYYY-MM-DD HH:mm:ss)">
+        <cl:formdata std:sid="f-data-63dc7b20" col="2" row="3"/>
+      </cl:output>
+      <cl:output std:sid="output-9a2461f3" value="integer&#xD;&#xA;(s00000)">
+        <cl:formdata std:sid="f-data-3bb0821b" col="2" row="7"/>
+      </cl:output>
+      <cl:output std:sid="output-5d42ebad" value="float&#xD;&#xA;(s00000.99999)">
+        <cl:formdata std:sid="f-data-104d7eb1" col="2" colspan="1" row="8" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-d0a2107e" value="사업자등록번호&#xD;&#xA;(000-00-00000)">
+        <cl:formdata std:sid="f-data-7fec3ae5" col="1" colspan="2" row="9" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-66cc1c91" value="카드 mask&#xD;&#xA;(0000-0000-0000-0000)">
+        <cl:formdata std:sid="f-data-db9e24dc" col="1" colspan="2" row="10" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-85f96a2c" value="형식&#xD;&#xA;(inputFilter)">
+        <cl:formdata std:sid="f-data-3c72235c" col="1" colspan="1" row="11" rowspan="2"/>
+      </cl:output>
+      <cl:output std:sid="output-5fe8aeba" value="alphabetic&#xD;&#xA;([a-zA-Z])">
+        <cl:formdata std:sid="f-data-b3186251" col="2" row="11"/>
+      </cl:output>
+      <cl:output std:sid="output-e054e991" value="hexa&#xD;&#xA;([0-9a-fA-F])">
+        <cl:formdata std:sid="f-data-8ab2393b" col="2" row="12"/>
+      </cl:output>
+      <cl:output std:sid="output-66c434eb" value="lengthUnit / MaxLength&#xD;&#xA;(utf8 / 10)">
+        <cl:formdata std:sid="f-data-79790a32" col="1" colspan="2" row="13" rowspan="1"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-58866689" id="dti1" autoselect="true" maxdate="2017-12-31" mindate="2017-12-01">
+        <cl:listener std:sid="listener-83f8c0b4" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind category="PROPERTY" property="value" columnname="column1"/>
+        <cl:formdata std:sid="f-data-cb4de576" col="3" row="1"/>
+      </cl:dateinput>
+      <cl:output std:sid="output-111ed1f6" value="">
+        <cl:relativebind property="value" columnname="column1"/>
+        <cl:formdata std:sid="f-data-465cae67" col="4" row="1"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-0400f3a3" id="dti2" autoselect="true">
+        <cl:listener std:sid="listener-0110eb2a" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column2"/>
+        <cl:formdata std:sid="f-data-d52d3291" col="3" row="2"/>
+      </cl:dateinput>
+      <cl:output std:sid="output-26cbb46b" value="">
+        <cl:relativebind property="value" columnname="column2"/>
+        <cl:formdata std:sid="f-data-742ee550" col="4" row="2"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-22733ab7" id="dti3" autoselect="true" format="YYYYMMDDHHmmss" hidebutton="true" mask="YYYY-MM-DD HH:mm:ss">
+        <cl:listener std:sid="listener-de389082" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column3"/>
+        <cl:formdata std:sid="f-data-edcfda0f" col="3" row="3"/>
+      </cl:dateinput>
+      <cl:output std:sid="output-4abb9f8b" value="">
+        <cl:relativebind property="value" columnname="column3"/>
+        <cl:formdata std:sid="f-data-f485b23e" col="4" row="3"/>
+      </cl:output>
+      <cl:dateinput std:sid="d-input-807b4605" id="dti4" autoselect="true" calendartype="year" format="YYYY" mask="YYYY" maxdate="2099-12-31">
+        <cl:listener std:sid="listener-0c75cc91" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column12"/>
+        <cl:formdata std:sid="f-data-1f4478fd" col="3" row="4"/>
+      </cl:dateinput>
+      <cl:dateinput std:sid="d-input-759005e2" id="dti5" autoselect="true" calendartype="yearmonth" format="YYYYMM" mask="YYYY-MM">
+        <cl:listener std:sid="listener-7c5da14b" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column13"/>
+        <cl:formdata std:sid="f-data-e50248e5" col="3" row="5"/>
+      </cl:dateinput>
+      <cl:numbereditor std:sid="n-editor-3ab19cfe" id="nbe1" autoselect="true" format="s000" max="100.0" min="-100.0">
+        <cl:listener std:sid="listener-83c01845" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column4"/>
+        <cl:formdata std:sid="f-data-612fbf75" col="3" row="6"/>
+      </cl:numbereditor>
+      <cl:output std:sid="output-ca388fe6" value="">
+        <cl:relativebind property="value" columnname="column4"/>
+        <cl:formdata std:sid="f-data-143d8f26" col="4" row="6"/>
+      </cl:output>
+      <cl:numbereditor std:sid="n-editor-9cd9d12e" id="nbe2" autoselect="true" format="s00000">
+        <cl:listener std:sid="listener-a70fd4d8" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column5"/>
+        <cl:formdata std:sid="f-data-d470e58c" col="3" row="7"/>
+      </cl:numbereditor>
+      <cl:output std:sid="output-2cdd279a" value="">
+        <cl:relativebind property="value" columnname="column5"/>
+        <cl:formdata std:sid="f-data-cdebb17a" col="4" row="7"/>
+      </cl:output>
+      <cl:numbereditor std:sid="n-editor-810f66b8" id="nbe3" autoselect="true" format="s00000.99999" step="1.0E-5">
+        <cl:listener std:sid="listener-92ac29e6" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column6"/>
+        <cl:formdata std:sid="f-data-55fd8033" col="3" colspan="1" row="8" rowspan="1"/>
+      </cl:numbereditor>
+      <cl:output std:sid="output-a0fd0d1a" value="">
+        <cl:relativebind property="value" columnname="column6"/>
+        <cl:formdata std:sid="f-data-f99cbecf" col="4" row="8"/>
+      </cl:output>
+      <cl:output std:sid="output-e7a3633d" value="">
+        <cl:relativebind property="value" columnname="column7"/>
+        <cl:formdata std:sid="f-data-3ee70ef1" col="4" row="9"/>
+      </cl:output>
+      <cl:output std:sid="output-e47ecd8c" value="">
+        <cl:relativebind property="value" columnname="column8"/>
+        <cl:formdata std:sid="f-data-f1a8d848" col="4" row="10"/>
+      </cl:output>
+      <cl:output std:sid="output-5b1631f2" value="">
+        <cl:relativebind property="value" columnname="column9"/>
+        <cl:formdata std:sid="f-data-44502482" col="4" row="11"/>
+      </cl:output>
+      <cl:output std:sid="output-4e98f130" value="">
+        <cl:relativebind property="value" columnname="column10"/>
+        <cl:formdata std:sid="f-data-3258eed7" col="4" row="12"/>
+      </cl:output>
+      <cl:output std:sid="output-0576b1c3" value="">
+        <cl:relativebind property="value" columnname="column11"/>
+        <cl:formdata std:sid="f-data-72822268" col="4" row="13"/>
+      </cl:output>
+      <cl:maskeditor std:sid="m-editor-92b0e4e0" id="mse2" autoselect="true" mask="000-00-00000">
+        <cl:relativebind category="PROPERTY" property="value" columnname="column7"/>
+        <cl:formdata std:sid="f-data-404d0bfa" col="3" row="9"/>
+      </cl:maskeditor>
+      <cl:maskeditor std:sid="m-editor-189224c3" id="mse1" autoselect="true" mask="0000-0000-0000-0000">
+        <cl:listener std:sid="listener-b3070699" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column8"/>
+        <cl:formdata std:sid="f-data-27f62d87" col="3" row="10"/>
+      </cl:maskeditor>
+      <cl:inputbox std:sid="i-box-608835f1" id="ipb1" autoselect="true" inputfilter="[a-zA-Z]">
+        <cl:listener std:sid="listener-d97f1438" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column9"/>
+        <cl:formdata std:sid="f-data-3329d1ca" col="3" row="11"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-08c2ce47" id="ipb2" autoselect="true" inputfilter="[0-9a-fA-F]">
+        <cl:listener std:sid="listener-b6d4adb3" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column10"/>
+        <cl:formdata std:sid="f-data-c7ffe814" col="3" row="12"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-adbd6d14" id="ipb3" autoselect="true" lengthunit="utf8" maxlength="10">
+        <cl:listener std:sid="listener-ff4add5f" handler="onDti1ValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column11"/>
+        <cl:formdata std:sid="f-data-f4809a69" col="3" row="13"/>
+      </cl:inputbox>
+      <cl:output std:sid="output-90e65195" value="연도">
+        <cl:formdata std:sid="f-data-39def90b" col="2" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-a8707f9e" value="월">
+        <cl:formdata std:sid="f-data-6f765523" col="2" row="5"/>
+      </cl:output>
+      <cl:output std:sid="output-7bdd79f5" value="Output">
+        <cl:relativebind property="value" columnname="column12"/>
+        <cl:formdata std:sid="f-data-eab87945" col="4" row="4"/>
+      </cl:output>
+      <cl:output std:sid="output-71b63312" value="Output">
+        <cl:relativebind property="value" columnname="column13"/>
+        <cl:formdata std:sid="f-data-1680ed64" col="4" row="5"/>
+      </cl:output>
+      <cl:formlayout std:sid="f-layout-52c7581b" hseparatorclass="frm-hseparator" hseparatortype="BY_CLASS" hseparatorwidth="1" vseparatorclass="frm-vseparator" vseparatortype="BY_CLASS" vseparatorwidth="1">
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="100" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="70" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="100" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-27d612ad" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-dedd5ef1" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-9953d309"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-e8feceea" version="1.0.0.0">
+  <head std:sid="head-614b24ca">
+    <title>embedded2</title>
+    <screen std:sid="screen-fe82a5ec" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-91931fb7" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-1e56bdb6" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-6b9d8dc4"/>
+    <cl:appspec title="jsp불러오기">
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-24756d97" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:embeddedpage std:sid="e-page-5c8e23f4" style="border-right-style:solid; border-top-width:1px; border-bottom-color:red; border-right-width:1px; border-left-style:solid; border-bottom-width:1px; border-left-color:red; border-top-color:red; border-bottom-style:solid; border-right-color:red; border-left-width:1px; border-top-style:solid;" src="http://localhost:8080/embedded.jsp">
+      <cl:xylayoutdata std:sid="xyl-data-ad15bc82" height="350px" horizontalAnchor="LEFT" left="20px" top="110px" verticalAnchor="TOP" width="984px"/>
+    </cl:embeddedpage>
+    <cl:output std:sid="output-cfc66ed4" value="jsp페이지를 앱 안에 불러오는 예제">
+      <cl:xylayoutdata std:sid="xyl-data-5eaaa6e0" height="20px" horizontalAnchor="LEFT" left="20px" top="80px" verticalAnchor="TOP" width="308px"/>
+    </cl:output>
+    <cl:udc std:sid="ud-control-5b129899" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-05108fe6" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-99e23cb0"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

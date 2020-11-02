@@ -1,0 +1,35 @@
+
+/* Grid Cell의 border 스타일을 주기 위해 padding 처리  */
+.cl-grid .cl-viewing .cl-grid-cell {
+  padding : 2px 2px 2px 2px;
+}
+
+/* 편집 불가 셀 스타일 설정 */
+.cl-grid .cl-viewing .cl-grid-cell .cl-default-cell,
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-output,
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-image,
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-button,
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-progress {
+  border : 0;
+  overflow : hidden;
+}
+
+/* 편집 가능 셀 스타일 설정 */
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-inputbox:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-dateinput:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-maskeditor:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-numbereditor:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-textarea:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-fileinput:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-combobox:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-checkbox:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-checkboxgroup:not(.cl-disabled),
+.cl-grid .cl-viewing .cl-grid-cell .cl-control.cl-radiobutton:not(.cl-disabled) {
+  border : 1px solid #c0c0c0;
+  overflow : hidden;
+}
+
+/* 그리드 포커스 셀 스타일 설정 */
+.cl-grid .cl-selected :focus {
+  outline: 2px solid orange;
+}

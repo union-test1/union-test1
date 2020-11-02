@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-fec38698" version="1.0.0.0">
+  <head std:sid="head-a4e189fd">
+    <title>range_time</title>
+    <screen std:sid="screen-d73ca838" id="sisw-main" customHeight="600" height="600px" minwidth="1600px" name="sisw-main" width="1600px"/>
+    <screen std:sid="screen-d03fee57" id="default" height="768px" maxwidth="1599px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-617cd072" id="main" height="730px" maxwidth="1023px" minwidth="1024px" name="main" width="1024px"/>
+    <screen std:sid="screen-5e359c9a" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-03e66a2c" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-fbd487ca"/>
+    <cl:appspec>
+      <cl:property bindable="true" default="00:00" name="value" type="string"/>
+      <cl:event name="selection-change" type="cpr.events.CUIEvent"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-d9f6292c" style="top:0px; left:0px; width:160px; height:30px;">
+    <cl:listener std:sid="listener-19000901" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:group std:sid="group-dd171809">
+      <cl:xylayoutdata std:sid="xyl-data-ef2baa7d" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+      <cl:combobox std:sid="c-box-21da1474" id="hour">
+        <cl:listener std:sid="listener-f78a47e1" handler="onMinBeforeSelectionChange" name="before-selection-change"/>
+        <cl:attribute name="type" value="hour"/>
+        <cl:expbind category="PROPERTY" property="value" expression="val(#opt1,0)"/>
+        <cl:formdata std:sid="f-data-41165be4" col="0" row="0"/>
+        <cl:item label="00" value="00"/>
+        <cl:item label="01" value="01"/>
+        <cl:item label="02" value="02"/>
+        <cl:item label="03" value="03"/>
+        <cl:item label="04" value="04"/>
+        <cl:item label="05" value="05"/>
+        <cl:item label="06" value="06"/>
+        <cl:item label="07" value="07"/>
+        <cl:item label="08" value="08"/>
+        <cl:item label="09" value="09"/>
+        <cl:item label="10" value="10"/>
+        <cl:item label="11" value="11"/>
+        <cl:item label="12" value="12"/>
+        <cl:item label="13" value="13"/>
+        <cl:item label="14" value="14"/>
+        <cl:item label="15" value="15"/>
+        <cl:item label="16" value="16"/>
+        <cl:item label="17" value="17"/>
+        <cl:item label="18" value="18"/>
+        <cl:item label="19" value="19"/>
+        <cl:item label="20" value="20"/>
+        <cl:item label="21" value="21"/>
+        <cl:item label="22" value="22"/>
+        <cl:item label="23" value="23"/>
+      </cl:combobox>
+      <cl:combobox std:sid="c-box-8384aaa8" id="min">
+        <cl:listener std:sid="listener-bfa6f1c3" handler="onMinBeforeSelectionChange" name="before-selection-change"/>
+        <cl:attribute name="type" value="min"/>
+        <cl:expbind category="PROPERTY" property="value" expression="val(#opt1,1)"/>
+        <cl:formdata std:sid="f-data-8892055c" col="1" colspan="1" row="0" rowspan="1"/>
+        <cl:item label="00" value="00"/>
+        <cl:item label="30" value="30"/>
+      </cl:combobox>
+      <cl:formlayout std:sid="f-layout-d5702d32" scrollable="false">
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:output std:sid="output-5df22d68" id="opt1">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-a8bd3ccf" height="0px" horizontalAnchor="LEFT" left="0px" top="0px" verticalAnchor="TOP" width="0px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-b5098429" scrollable="false"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

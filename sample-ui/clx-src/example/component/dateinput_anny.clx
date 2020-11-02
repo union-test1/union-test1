@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-987c3889" version="1.0.0.0">
+  <head std:sid="head-86821077">
+    <title>dateinput_anny</title>
+    <screen std:sid="screen-ed4e7531" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-72e5a8d6" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-a8f0036a" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <link std:sid="link-4cbb50aa" href="../../theme/dateinput-anny.css" rel="stylesheet" type="text/css"/>
+    <cl:model std:sid="model-38fb9b1d"/>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-bd34d891" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:listener std:sid="listener-8e6d188b" handler="onBodyLoad" name="load"/>
+    <cl:group std:sid="group-aa664199">
+      <cl:xylayoutdata std:sid="xyl-data-82d82615" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="70px" verticalAnchor="BOTH"/>
+      <cl:group std:sid="group-875d2369">
+        <cl:formdata col="0" colspan="1" row="1" rowspan="2"/>
+        <cl:output std:sid="output-5fdabeae" style="font-weight:bold;" value="글로벌 기념일 추가">
+          <cl:formdata std:sid="f-data-740a3006" col="0" row="0"/>
+        </cl:output>
+        <cl:output std:sid="output-5bc1a36f" style="text-align:right;" value="날짜">
+          <cl:formdata std:sid="f-data-aee8c11c" col="0" row="1"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-01d042db" id="dti_global" format="YYYY.MM.DD" mask="YYYY.MM.DD" value="2018.01.01">
+          <cl:formdata std:sid="f-data-a0ea3455" col="1" row="1"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-f45a9243" style="text-align:right;" value="기념일 명">
+          <cl:formdata col="0" row="3"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-0a440672" id="label_global">
+          <cl:formdata col="1" row="3"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-9a3fa7f2" style="text-align:right;" value="선택가능">
+          <cl:formdata std:sid="f-data-47b94a88" col="0" row="2"/>
+        </cl:output>
+        <cl:checkbox std:sid="c-box-f560d18e" id="unselectable_global" style="text-align:middle;" text="" value="">
+          <cl:formdata std:sid="f-data-010c1239" col="1" row="2"/>
+        </cl:checkbox>
+        <cl:button std:sid="button-1d8ec1c8" id="btn_global" value="글로벌기념일 추가">
+          <cl:listener std:sid="listener-439e0ad8" handler="onBtn_globalClick" name="click"/>
+          <cl:formdata col="2" row="3"/>
+        </cl:button>
+        <cl:output std:sid="output-ef1d717c" style="font-weight:bold;" value="dti1의 기념일 추가">
+          <cl:formdata col="0" row="5"/>
+        </cl:output>
+        <cl:output std:sid="output-fe7a59c3" style="text-align:right;" value="날짜">
+          <cl:formdata col="0" row="6"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-5cf8fc87" id="dti_local" format="YYYY.MM.DD" mask="YYYY.MM.DD" value="2018.01.01">
+          <cl:formdata col="1" row="6"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-5b59520f" style="text-align:right;" value="기념일 명">
+          <cl:formdata col="0" row="8"/>
+        </cl:output>
+        <cl:inputbox std:sid="i-box-fa2acf2f" id="label_local">
+          <cl:formdata col="1" row="8"/>
+        </cl:inputbox>
+        <cl:output std:sid="output-92403b06" style="text-align:right;" value="선택가능">
+          <cl:formdata col="0" row="7"/>
+        </cl:output>
+        <cl:checkbox std:sid="c-box-598f9e5b" id="unselectable_local" style="text-align:middle;" text="" value="">
+          <cl:formdata col="1" row="7"/>
+        </cl:checkbox>
+        <cl:button std:sid="button-a6d782de" id="btn_local" value="개별 기념일 추가">
+          <cl:listener std:sid="listener-dfac2fe9" handler="onButtonClick" name="click"/>
+          <cl:formdata col="2" row="8"/>
+        </cl:button>
+        <cl:output std:sid="output-f7b0806a" style="font-weight:bold;" value="기념일 추가 확인">
+          <cl:formdata std:sid="f-data-d4541d61" col="0" row="10"/>
+        </cl:output>
+        <cl:output std:sid="output-16d594d7" value="dti1">
+          <cl:formdata std:sid="f-data-569b9cac" col="0" row="11"/>
+        </cl:output>
+        <cl:dateinput std:sid="d-input-36388e7a" id="dti1" format="YYYY.MM.DD" mask="YYYY.MM.DD" value="2018.01.01">
+          <cl:formdata std:sid="f-data-cd103cdd" col="1" row="11"/>
+        </cl:dateinput>
+        <cl:dateinput std:sid="d-input-5aa5df87" id="dti2" format="MM/DD/YYYY" mask="MM/DD/YYYY" value="01/01/2018">
+          <cl:formdata col="1" row="13"/>
+        </cl:dateinput>
+        <cl:output std:sid="output-690183da" value="dti2">
+          <cl:formdata col="0" row="13"/>
+        </cl:output>
+        <cl:output std:sid="output-adee2f9f" value="format: YYYY.MM.DD">
+          <cl:formdata std:sid="f-data-d51cceb3" col="1" row="12"/>
+        </cl:output>
+        <cl:output std:sid="output-8d7d7808" value="format: MM/DD/YYYY">
+          <cl:formdata col="1" row="14"/>
+        </cl:output>
+        <cl:formlayout>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="25" unit="PIXEL"/>
+          <cl:rows length="1" unit="FRACTION"/>
+          <cl:columns length="120" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+          <cl:columns length="120" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+          <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        </cl:formlayout>
+      </cl:group>
+      <cl:output std:sid="output-41bb0807" style="font-weight:bold;" value="기념일 목록">
+        <cl:formdata std:sid="f-data-5f22e2eb" col="1" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-d45523f3" id="opt" style="border-right-style:solid; padding:5px; border-top-width:1px; border-bottom-color:black; border-right-width:1px; border-left-color:black; vertical-align:top; border-right-color:black; border-left-width:1px; border-top-style:solid; overflow:auto; border-left-style:solid; border-bottom-width:1px; border-top-color:black; border-bottom-style:solid;" value="글로벌(format= &quot;YYYY-MM-DD&quot;) : &#xD;&#xA;&#x9;    &quot;2018-01-31&quot;, &#xD;&#xA;&#x9;    {date: &quot;2018-01-30&quot;, label: &quot;글로벌 일월삼십일&quot;, class: &quot;global&quot;, unselectable: false },&#xD;&#xA;&#x9;    {date: &quot;*0130&quot;, label: &quot;글로벌 와일드카드&quot;, class: &quot;wildcard&quot;, unselectable: false }&#xD;&#xA;&#x9;&#xD;&#xA;개별(dti1) : &#xD;&#xA;&#x9;  &quot;2018.04.06&quot;,&#xD;&#xA;&#x9;  &quot;2018.03.31&quot;,&#xD;&#xA;&#x9;  {date: &quot;2018.06.24&quot;, label: &quot;로컬 유월이십사일&quot;},&#xD;&#xA;&#x9;  {date: &quot;2018.09.09&quot;, label: &quot;로컬 구월구일&quot;}, &#xD;&#xA;&#x9;  {date: &quot;2018.01.30&quot;, label: &quot;로컬 일월삼십일&quot;},&#xD;&#xA;&#x9;  &quot;2018.11.11&quot;,&#xD;&#xA;&#x9;  {date: &quot;2018.12.15&quot;, class: &quot;december&quot;}&#xD;&#xA;&#x9;  // [*] 와일드카드 적용&#xD;&#xA;&#x9;  {date: &quot;*.12.25&quot;, label: &quot;크리스마스&quot;, class: &quot;christmas&quot;, unselectable: false },&#xD;&#xA;&#x9;  {date: &quot;2018.*.06&quot;, label: &quot;입금일&quot;, class: &quot;money&quot;, unselectable: false },&#xD;&#xA;&#x9;  {date: &quot;2018.05.*&quot;, label: &quot;오월&quot;, class: &quot;may&quot;, unselectable: false },&#xD;&#xA;&#x9;">
+        <cl:formdata std:sid="f-data-1c130c2d" col="1" row="2"/>
+      </cl:output>
+      <cl:formlayout>
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:rows length="1" unit="FRACTION"/>
+        <cl:columns length="1" shadecolor="#000000" shadetype="NONE" unit="FRACTION"/>
+        <cl:columns length="1" unit="FRACTION"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:udc std:sid="ud-control-778f56b4" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-22e33216" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-a5b21264"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

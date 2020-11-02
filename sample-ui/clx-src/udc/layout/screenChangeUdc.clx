@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-c617a9c0" version="1.0.0.0">
+  <head std:sid="head-b9a33760">
+    <title>screenChangeUdc</title>
+    <screen std:sid="screen-d191b25b" id="default" customHeight="600" customWidth="800" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-ac987f9b" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-a342b31d" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-d70ad5b1"/>
+    <cl:appspec>
+      <cl:property name="dataSet" type="control"/>
+      <cl:property name="value" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-4c150dda" style="top:0px; left:0px; width:200px; height:50px;">
+    <cl:listener std:sid="listener-2ffb09c8" handler="onBodyScreenChange" name="screen-change"/>
+    <cl:listener std:sid="listener-cdeaa749" handler="onBodyPropertyChange" name="property-change"/>
+    <cl:combobox std:sid="c-box-afc76403" id="cmb1" visible="false">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-3928b95b" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:combobox>
+    <cl:radiobutton std:sid="r-button-c1180575" id="rdb1">
+      <cl:apppropbind category="PROPERTY" property="value" app-property="value"/>
+      <cl:xylayoutdata std:sid="xyl-data-78bfc5d4" bottom="0px" horizontalAnchor="BOTH" left="0px" right="0px" top="0px" verticalAnchor="BOTH"/>
+    </cl:radiobutton>
+    <cl:xylayout std:sid="xylayout-b36c576d"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

@@ -1,0 +1,39 @@
+@import "../settings.part.less";
+
+ /* 다이얼로그 루트 */
+.cl-dialog {
+	border: solid 1px @focus-border-color;
+
+	/* 다이얼로그 헤더 */
+	.cl-dialog-header {
+		background-color: #1D7FDC;
+		color: white;
+		border-bottom:1px solid #e5e5e5;
+
+		/* 다이얼로그 헤더 텍스트 */
+		.cl-text {
+		}
+
+		/* 다이얼로그 닫기 버튼 */
+		.cl-dialog-close {
+			// background-image: url(icons/dialog-close.png);
+		}
+
+		/* 다이얼로그 닫기 버튼 - 호버 */
+		.cl-dialog-close:hover{
+			background-color: #FE2E2E;
+			color:#fff;
+		}
+
+		/* 다이얼로그 닫기 버튼 - 액티브 */
+		.cl-dialog-close:active {
+			// background-image: url(icons/dialog-close-active.png);
+		}
+	}
+
+}
+
+.cl-overlay {
+	background-color : rgba(0, 0, 0, 0.4);
+}
+

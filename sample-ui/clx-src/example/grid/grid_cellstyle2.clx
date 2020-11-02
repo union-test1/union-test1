@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-a16475e8" version="1.0.0.0">
+  <head std:sid="head-a86f58ff">
+    <title>qweqe</title>
+    <screen std:sid="screen-29c4d31e" id="default" active="true" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-4aea30e5" id="tablet" active="false" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-02e6eaa9" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-9b4bba6e">
+      <cl:dataset std:sid="d-set-f2d57327" id="sampleDatas" filtercondition="" sortcondition="scoreGroup DESC">
+        <cl:dataview std:sid="d-view-5e5d456d" id="dv1" filtercondition="score >= 40"/>
+        <cl:datacolumnlist>
+          <cl:datacolumn name="name"/>
+          <cl:datacolumn datatype="number" name="score"/>
+          <cl:datacolumn name="tel"/>
+          <cl:datacolumn name="address"/>
+          <cl:datacolumn name="color"/>
+          <cl:datacolumn datatype="expression" expression="floor(score / 10) * 10" name="scoreGroup"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="name">홍길동</cl:datavalue>
+            <cl:datavalue columnname="score">100</cl:datavalue>
+            <cl:datavalue columnname="tel">1234</cl:datavalue>
+            <cl:datavalue columnname="address">서울</cl:datavalue>
+            <cl:datavalue columnname="color">tomato</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name">스티브</cl:datavalue>
+            <cl:datavalue columnname="score">95</cl:datavalue>
+            <cl:datavalue columnname="tel">2345</cl:datavalue>
+            <cl:datavalue columnname="address">대전</cl:datavalue>
+            <cl:datavalue columnname="color">orange</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name">김빌더</cl:datavalue>
+            <cl:datavalue columnname="score">91</cl:datavalue>
+            <cl:datavalue columnname="tel">6789</cl:datavalue>
+            <cl:datavalue columnname="address">대구</cl:datavalue>
+            <cl:datavalue columnname="color">blue</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name">토마토</cl:datavalue>
+            <cl:datavalue columnname="score">40</cl:datavalue>
+            <cl:datavalue columnname="tel">3212</cl:datavalue>
+            <cl:datavalue columnname="address">부산</cl:datavalue>
+            <cl:datavalue columnname="color">magenta</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name">이지율</cl:datavalue>
+            <cl:datavalue columnname="score">43</cl:datavalue>
+            <cl:datavalue columnname="tel">4578</cl:datavalue>
+            <cl:datavalue columnname="address">광주</cl:datavalue>
+            <cl:datavalue columnname="color">green</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name">박빌더</cl:datavalue>
+            <cl:datavalue columnname="score">75</cl:datavalue>
+            <cl:datavalue columnname="tel">2164</cl:datavalue>
+            <cl:datavalue columnname="address">제주</cl:datavalue>
+            <cl:datavalue columnname="color">brown</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="name">머시깽이</cl:datavalue>
+            <cl:datavalue columnname="score">85</cl:datavalue>
+            <cl:datavalue columnname="tel">1234-1234</cl:datavalue>
+            <cl:datavalue columnname="address">어딘가</cl:datavalue>
+            <cl:datavalue columnname="color">aliceblue</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec title="마스터/디테일2">
+      <cl:property name="title" type="string"/>
+      <cl:property name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-4efdf150" style="background-repeat:no-repeat; background-size:100px auto; top:0px; left:0px; width:800px; background-image:url('../../images/air.png'); background-position:90% 90%; height:600px;">
+    <cl:grid std:sid="grid-6e0c4ed6" id="grd1" collapsible="true" datasetid="sampleDatas">
+      <cl:listener std:sid="listener-3c7a107a" handler="onGrd1SelectionChange" name="selection-change"/>
+      <cl:responsivexylayoutdata std:sid="rxyl-data-c31cda36">
+        <cl:xylayoutdata std:sid="sxyl-data-b08969f3" bottom="20px" horizontalAnchor="BOTH" left="20px" right="532px" top="70px" verticalAnchor="BOTH" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-6c2dc3f5" height="261px" horizontalAnchor="BOTH" left="9px" right="20px" top="20px" verticalAnchor="TOP" screenid="tablet"/>
+      </cl:responsivexylayoutdata>
+      <cl:gridcolumn std:sid="g-column-0799c280" width="161px"/>
+      <cl:gridcolumn std:sid="g-column-f43db59c"/>
+      <cl:gridcolumn std:sid="g-column-2083a3dc" width="79px"/>
+      <cl:gridcolumn std:sid="g-column-f2ecb5cd"/>
+      <cl:gridcolumn std:sid="g-column-da19c6a5"/>
+      <cl:gridcolumn std:sid="g-column-790229ce"/>
+      <cl:gridheader std:sid="gh-band-fe07462e">
+        <cl:gridrow std:sid="g-row-c3b42f13"/>
+        <cl:gridcell std:sid="gh-cell-14e0509b" colindex="0" rowindex="0" text="이름"/>
+        <cl:gridcell std:sid="gh-cell-c2cd4d27" colindex="2" rowindex="0" text="평점"/>
+        <cl:gridcell std:sid="gh-cell-f7b6f61e" colindex="3" rowindex="0" text="전화번호"/>
+        <cl:gridcell std:sid="gh-cell-8278693c" colindex="4" rowindex="0" text="주소"/>
+        <cl:gridcell std:sid="gh-cell-59aae7ef" colindex="5" rowindex="0" text="선호 색상"/>
+        <cl:gridcell std:sid="gh-cell-e06c0764" colindex="1" rowindex="0" text="-"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-81182995">
+        <cl:gridrow std:sid="g-row-e1f4eb36"/>
+        <cl:gridcell std:sid="gd-cell-8bafc2f3" colindex="0" rowindex="0" style="padding:0px 0px 0px 30px;" columnname="name"/>
+        <cl:gridcell std:sid="gd-cell-df6e9b13" colindex="2" rowindex="0" columnname="score">
+          <cl:output std:sid="output-1e4b83f6" style="padding:0px 5px; background-repeat:no-repeat; color:#ffffff; background-image:linear-gradient(orange, red); text-align:left;" value="Output">
+            <cl:expbind category="STYLER" property="background-size" expression="score + &quot;% 100%&quot;"/>
+          </cl:output>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-e39afe23" colindex="3" rowindex="0" columnname="tel"/>
+        <cl:gridcell std:sid="gd-cell-c012467e" colindex="4" rowindex="0" columnname="address"/>
+        <cl:gridcell std:sid="gd-cell-2ad7d21a" colindex="5" rowindex="0" columnname="color">
+          <cl:output std:sid="output-6beebd0d" value="Output">
+            <cl:relativebind category="STYLER" property="color" columnname="color"/>
+          </cl:output>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-83485b8b" colindex="1" rowindex="0" columnname="score"/>
+      </cl:griddetail>
+      <cl:gridfooter std:sid="gf-band-16eb0d21">
+        <cl:gridrow std:sid="g-row-946a04e0" height="20px"/>
+        <cl:gridcell std:sid="gf-cell-c0e2b759" colindex="0" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-7422e9ba" colindex="2" rowindex="0" expr="&quot;총계: &quot; + getSum(&quot;score&quot;)"/>
+        <cl:gridcell std:sid="gf-cell-73809285" colindex="3" rowindex="0" expr="getSum(&quot;tel&quot;)"/>
+        <cl:gridcell std:sid="gf-cell-9608d035" colindex="4" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-74b257dc" colindex="5" rowindex="0" expr="0"/>
+        <cl:gridcell std:sid="gf-cell-cbc26945" colindex="1" rowindex="0" expr="0"/>
+      </cl:gridfooter>
+      <cl:gridrowgrouplist std:sid="grg-list-d7940624">
+        <cl:gridrowgroup std:sid="gr-group-11184169" groupcondition="scoreGroup">
+          <cl:gridgroupheader std:sid="gf-band-b1251339">
+            <cl:gridrow std:sid="g-row-abc9c66c" height="20px"/>
+            <cl:gridcell std:sid="gf-cell-23d9c751" colindex="0" colspan="6" rowindex="0" rowspan="1" expr="scoreGroup + &quot;점 대&quot;"/>
+          </cl:gridgroupheader>
+        </cl:gridrowgroup>
+      </cl:gridrowgrouplist>
+    </cl:grid>
+    <cl:group std:sid="group-30dad67f" id="detailGroup" style="border-right-style:solid; border-top-width:4px; border-right-width:4px; border-left-width:4px; border-top-style:solid; border-radius:10px; border-left-style:solid; border-bottom-width:4px; border-bottom-style:solid;">
+      <cl:relativebind category="STYLER" property="border-color" columnname="color"/>
+      <cl:datarowcontext datacontrolid="sampleDatas" rowindex="0"/>
+      <cl:responsivexylayoutdata std:sid="rxyl-data-02e39f0f">
+        <cl:xylayoutdata std:sid="sxyl-data-d675e465" bottom="20px" horizontalAnchor="RIGHT" right="20px" top="70px" verticalAnchor="BOTH" width="502px" screenid="default"/>
+        <cl:xylayoutdata std:sid="sxyl-data-62192c1a" height="261px" horizontalAnchor="BOTH" left="9px" right="20px" top="291px" verticalAnchor="TOP" screenid="tablet"/>
+      </cl:responsivexylayoutdata>
+      <cl:output std:sid="output-227fa3c4" value="이름">
+        <cl:xylayoutdata std:sid="xyl-data-61ee48d7" height="20px" horizontalAnchor="LEFT" left="20px" top="20px" verticalAnchor="TOP" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-6c1e7a72" value="평점">
+        <cl:xylayoutdata std:sid="xyl-data-fd660ef2" height="20px" horizontalAnchor="LEFT" left="20px" top="50px" verticalAnchor="TOP" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-73ef625b" value="전화번호">
+        <cl:xylayoutdata std:sid="xyl-data-caff01de" height="20px" horizontalAnchor="LEFT" left="20px" top="80px" verticalAnchor="TOP" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-10e3fd1d" value="주소">
+        <cl:xylayoutdata std:sid="xyl-data-b47eb64a" height="20px" horizontalAnchor="LEFT" left="20px" top="110px" verticalAnchor="TOP" width="100px"/>
+      </cl:output>
+      <cl:output std:sid="output-94436116" value="선호색상">
+        <cl:relativebind category="STYLER" property="color" columnname="color"/>
+        <cl:xylayoutdata std:sid="xyl-data-3c67f253" height="20px" horizontalAnchor="LEFT" left="20px" top="140px" verticalAnchor="TOP" width="100px"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-1910a4d6" id="ipb1">
+        <cl:relativebind property="value" columnname="name"/>
+        <cl:xylayoutdata std:sid="xyl-data-172e7c23" height="20px" horizontalAnchor="LEFT" left="130px" top="20px" verticalAnchor="TOP" width="100px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-ce585c8b" id="ipb2">
+        <cl:relativebind property="value" columnname="score"/>
+        <cl:xylayoutdata std:sid="xyl-data-91653f53" height="20px" horizontalAnchor="LEFT" left="130px" top="50px" verticalAnchor="TOP" width="100px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-d28b3a2c" id="ipb3">
+        <cl:relativebind category="PROPERTY" property="value" columnname="tel"/>
+        <cl:xylayoutdata std:sid="xyl-data-695d3e25" height="20px" horizontalAnchor="LEFT" left="130px" top="80px" verticalAnchor="TOP" width="100px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-9e77a27c" id="ipb4">
+        <cl:relativebind property="value" columnname="address"/>
+        <cl:xylayoutdata std:sid="xyl-data-125eec0c" height="20px" horizontalAnchor="LEFT" left="130px" top="110px" verticalAnchor="TOP" width="100px"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-7ee5ac18" id="ipb5">
+        <cl:relativebind category="PROPERTY" property="value" columnname="color"/>
+        <cl:xylayoutdata std:sid="xyl-data-1fb59124" height="20px" horizontalAnchor="LEFT" left="130px" top="140px" verticalAnchor="TOP" width="100px"/>
+      </cl:inputbox>
+      <cl:button std:sid="button-82bf26bb" id="btn1" value="Button">
+        <cl:expbind category="PROPERTY" property="tooltip" expression="name + &quot;에 관한 정보입니다, &quot; + tel + &quot;로 연락 주십시오.&quot;"/>
+        <cl:expbind category="PROPERTY" property="value" expression="name + &quot;(&quot; + address + &quot;), &quot; + tel"/>
+        <cl:xylayoutdata std:sid="xyl-data-90e0aa07" height="20px" horizontalAnchor="LEFT" left="255px" top="20px" verticalAnchor="TOP" width="146px"/>
+      </cl:button>
+      <cl:xylayout std:sid="xylayout-a623f976"/>
+    </cl:group>
+    <cl:udc std:sid="ud-control-8384ff4e" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:responsivexylayoutdata std:sid="rxyl-data-9c3c106f">
+        <cl:xylayoutdata std:sid="sxyl-data-04a22789" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP" screenid="default"/>
+      </cl:responsivexylayoutdata>
+    </cl:udc>
+    <cl:responsivexylayout std:sid="r-xylayout-21050726"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

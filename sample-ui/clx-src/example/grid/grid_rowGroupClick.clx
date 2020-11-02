@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-59f43952" version="1.0.0.0">
+  <head std:sid="head-787a89ec">
+    <title>grid_rowgroupclick</title>
+    <screen std:sid="screen-568b3f8c" id="default" active="false" customHeight="600" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-7ebb9e15" id="new-screen" active="true" customHeight="600" height="600px" maxwidth="1024px" minwidth="800px" name="new-screen" width="800px"/>
+    <screen std:sid="screen-7d876fda" id="tablet" customHeight="600" height="667px" maxwidth="800px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-7f544701" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-60af6ea4">
+      <cl:dataset std:sid="d-set-6df8407f" id="ds1">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="year"/>
+          <cl:datacolumn name="quarter"/>
+          <cl:datacolumn name="month"/>
+          <cl:datacolumn name="budget"/>
+          <cl:datacolumn name="expenditure"/>
+          <cl:datacolumn datatype="expression" expression="expenditure-budget" name="excess"/>
+        </cl:datacolumnlist>
+        <cl:datarowlist>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4500000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess1</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3220000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess2</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess3</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[150000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4500000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess4</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[4000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[5000000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess5</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[1000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[1200000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess6</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[1500000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[1560000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess7</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[3200000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess8</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[9]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[4200000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4600000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess9</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2400000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess10</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2016]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[11]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess11</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4500000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess12</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3220000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess13</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess14</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[150000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4500000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess15</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[4000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[5000000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess16</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[1000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[1200000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess17</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[1500000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[1560000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess18</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[3200000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess19</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[9]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[4200000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4600000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess20</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2400000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess21</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2017]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[11]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess22</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4500000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess23</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3220000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess24</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[1]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess25</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[150000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4500000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess26</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[5]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[4000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[5000000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess27</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[2]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[6]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[1000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[1200000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess28</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[7]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[1500000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[1560000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess29</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[8]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[3000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[3200000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess30</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[3]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[9]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[4200000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[4600000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess31</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[10]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2400000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess32</cl:datavalue>
+          </cl:datarow>
+          <cl:datarow>
+            <cl:datavalue columnname="year"><![CDATA[2018]]></cl:datavalue>
+            <cl:datavalue columnname="quarter"><![CDATA[4]]></cl:datavalue>
+            <cl:datavalue columnname="month"><![CDATA[11]]></cl:datavalue>
+            <cl:datavalue columnname="budget"><![CDATA[2000000]]></cl:datavalue>
+            <cl:datavalue columnname="expenditure"><![CDATA[2300000]]></cl:datavalue>
+            <cl:datavalue columnname="excess">excess33</cl:datavalue>
+          </cl:datarow>
+        </cl:datarowlist>
+      </cl:dataset>
+    </cl:model>
+    <cl:appspec>
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-77bf9b9b" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-f220aad5" id="grd1" collapsible="true" datasetid="ds1" selectionmulti="multi" showdeletedrow="false">
+      <cl:listener std:sid="listener-d986f9e2" handler="onGrd1RowgroupClick" name="rowgroup-click"/>
+      <cl:xylayoutdata std:sid="xyl-data-22b7fb5b" bottom="10px" horizontalAnchor="BOTH" left="10px" right="10px" top="70px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-979ce420" width="30px"/>
+      <cl:gridcolumn std:sid="g-column-7ee6273b" width="30px"/>
+      <cl:gridcolumn std:sid="g-column-e7077d38" width="60px"/>
+      <cl:gridcolumn std:sid="g-column-9553b859" width="60px"/>
+      <cl:gridcolumn std:sid="g-column-618c6483" width="60px"/>
+      <cl:gridcolumn std:sid="g-column-ac376d6c"/>
+      <cl:gridcolumn std:sid="g-column-cedc83d7"/>
+      <cl:gridcolumn std:sid="g-column-b68edbf9"/>
+      <cl:gridheader std:sid="gh-band-29ff9a98">
+        <cl:gridrow std:sid="g-row-e696c4cc"/>
+        <cl:gridcell std:sid="gh-cell-2dc15c5d" colindex="2" rowindex="0" sortcolumnname="year" text="년도"/>
+        <cl:gridcell std:sid="gh-cell-96fb0736" colindex="3" rowindex="0" sortcolumnname="quarter" text="분기"/>
+        <cl:gridcell std:sid="gh-cell-fee18fe7" colindex="4" rowindex="0" sortcolumnname="month" text="월"/>
+        <cl:gridcell std:sid="gh-cell-3c190e95" colindex="5" rowindex="0" sortcolumnname="budget" text="예산"/>
+        <cl:gridcell std:sid="gh-cell-adcb7218" colindex="6" rowindex="0" sortcolumnname="expenditure" text="지출"/>
+        <cl:gridcell std:sid="gh-cell-98fa9a2a" colindex="7" rowindex="0" sortcolumnname="excess" text="초과액"/>
+        <cl:gridcell std:sid="gh-cell-9083586f" colindex="1" rowindex="0"/>
+        <cl:gridcell std:sid="gh-cell-3348b6a6" colindex="0" rowindex="0"/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-bcc9b567">
+        <cl:gridrow std:sid="g-row-644f4074"/>
+        <cl:gridcell std:sid="gd-cell-6cdc9ab7" colindex="2" rowindex="0" columnname="year"/>
+        <cl:gridcell std:sid="gd-cell-434b9a35" colindex="3" rowindex="0" columnname="quarter"/>
+        <cl:gridcell std:sid="gd-cell-9433ce3e" colindex="4" rowindex="0" columnname="month"/>
+        <cl:gridcell std:sid="gd-cell-f7d278c7" colindex="5" rowindex="0" columnname="budget">
+          <cl:numbereditor std:sid="n-editor-95260f5c" id="nbe1" format="s000,000,000,000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-62c432b6" colindex="6" rowindex="0" columnname="expenditure">
+          <cl:numbereditor std:sid="n-editor-173cb5ce" id="nbe2" format="s000,000,000,000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-6aaa287a" colindex="7" rowindex="0" columnname="excess">
+          <cl:numbereditor std:sid="n-editor-dd0a04fc" id="nbe3" format="s000,000,000,000"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-0b45be39" colindex="1" rowindex="0" style="text-align:center;" columntype="checkbox"/>
+        <cl:gridcell std:sid="gd-cell-31005c00" colindex="0" rowindex="0" style="text-align:center;" columntype="rowindex"/>
+      </cl:griddetail>
+      <cl:gridfooter std:sid="gf-band-6b8d9b7e">
+        <cl:gridrow std:sid="g-row-fa89dc61" height="24px"/>
+        <cl:gridcell std:sid="gf-cell-090824d2" colindex="5" rowindex="0" expr="getSum('budget')">
+          <cl:udc std:sid="ud-control-a66d35cb" type="udc.currencyLabel"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gf-cell-385b4499" colindex="6" rowindex="0" expr="getSum('expenditure')">
+          <cl:udc std:sid="ud-control-d9a8bebc" type="udc.currencyLabel"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gf-cell-05a69217" colindex="7" rowindex="0" expr="getSum('excess')">
+          <cl:udc std:sid="ud-control-bceceb9e" type="udc.currencyLabel"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gf-cell-baa988a5" colindex="0" colspan="5" rowindex="0" rowspan="1" expr=""/>
+      </cl:gridfooter>
+      <cl:gridrowgrouplist std:sid="grg-list-87a98c92">
+        <cl:gridrowgroup std:sid="gr-group-8786b953" groupcondition="year">
+          <cl:gridgroupheader std:sid="gf-band-aada1bbb">
+            <cl:gridrow std:sid="g-row-b37256ed" height="24px"/>
+            <cl:gridcell std:sid="gf-cell-b650b090" colindex="0" colspan="8" rowindex="0" rowspan="1" style="text-align:center;" expr="year +'년도 ' + month + '월'"/>
+          </cl:gridgroupheader>
+          <cl:gridgroupfooter std:sid="gf-band-af31497c">
+            <cl:gridrow std:sid="g-row-c20d24d3" height="30px"/>
+            <cl:gridcell std:sid="gf-cell-b35a8ab9" colindex="5" rowindex="0" style="text-align:right;" expr="getSum('budget')">
+              <cl:numbereditor std:sid="n-editor-37037d9f" id="nbe4" format="s000,000,000,000"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gf-cell-a7fe4a66" colindex="6" rowindex="0" style="text-align:right;" expr="getSum('expenditure')">
+              <cl:numbereditor std:sid="n-editor-1522300f" id="nbe5" format="s000,000,000,000"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gf-cell-f3bc11f8" colindex="7" rowindex="0" style="text-align:right;" expr="getSum('excess')">
+              <cl:numbereditor std:sid="n-editor-69ede43e" id="nbe6" format="s000,000,000,000"/>
+            </cl:gridcell>
+            <cl:gridcell std:sid="gf-cell-9ca74d49" colindex="0" colspan="5" rowindex="0" rowspan="1" expr=""/>
+          </cl:gridgroupfooter>
+        </cl:gridrowgroup>
+      </cl:gridrowgrouplist>
+    </cl:grid>
+    <cl:udc std:sid="ud-control-19a6a1c7" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-03860fc4" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-0d9b4ba5"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

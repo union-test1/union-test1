@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-dc7352a8" version="1.0.0.0">
+  <head std:sid="head-fc0d9547">
+    <title>singlefileupload</title>
+    <screen std:sid="screen-20950d0e" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-c924f608" id="tablet" height="667px" maxwidth="1024px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-fd588aff" id="mobile" height="525px" maxwidth="500px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-9a91881f">
+      <cl:dataset std:sid="d-set-019decc0" id="ds_main">
+        <cl:datacolumnlist>
+          <cl:datacolumn name="column1"/>
+          <cl:datacolumn name="column2"/>
+          <cl:datacolumn name="column3"/>
+          <cl:datacolumn name="column4"/>
+          <cl:datacolumn name="column5"/>
+        </cl:datacolumnlist>
+      </cl:dataset>
+      <cl:submission std:sid="submission-f6acefbe" id="sub_list" action="../example/crud/list.do">
+        <cl:listener std:sid="listener-183bb8b8" handler="onSub_listSubmitSuccess" name="submit-success"/>
+        <cl:listener std:sid="listener-994df2f7" handler="onSub_listSubmitError" name="submit-error"/>
+        <cl:responsedata dataid="ds_main"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-41fc6817" id="sub_save" action="../example/crud/save.do">
+        <cl:listener std:sid="listener-e39d011b" handler="onSub_listSubmitSuccess" name="submit-success"/>
+        <cl:listener std:sid="listener-fd12c69f" handler="onSub_listSubmitError" name="submit-error"/>
+        <cl:listener std:sid="listener-d9b2946d" handler="onSub_saveSubmitDone" name="submit-done"/>
+        <cl:requestdata dataid="ds_main"/>
+        <cl:responsedata dataid="ds_main"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-23544269" id="sms_download" action="../example/crud/file.do" mediatype="application/x-www-form-urlencoded" responsetype="filedownload">
+        <cl:listener std:sid="listener-445a6a63" handler="onSms_downloadSubmitDone" name="submit-done"/>
+      </cl:submission>
+      <cl:submission std:sid="submission-f3874545" id="sms_check_file" action="../example/crud/checkfile.do">
+        <cl:listener std:sid="listener-7a428727" handler="onSms_check_fileSubmitSuccess" name="submit-success"/>
+        <cl:requestdata dataid="dm_check_file"/>
+        <cl:responsedata dataid="dm_check_file"/>
+      </cl:submission>
+      <cl:datamap std:sid="d-map-e7805259" id="dm_check_file">
+        <cl:datacolumnlist>
+          <cl:datacolumn datatype="string" name="file_key"/>
+          <cl:datacolumn datatype="string" name="has_file"/>
+          <cl:datacolumn name="file_real_name"/>
+        </cl:datacolumnlist>
+      </cl:datamap>
+    </cl:model>
+    <cl:appspec title="프리폼파일업로드">
+      <cl:property bindable="true" name="title" type="string"/>
+      <cl:property bindable="true" name="explain" type="string"/>
+    </cl:appspec>
+  </head>
+  <body std:sid="body-d617befb" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:grid std:sid="grid-26463e69" id="grd1" bufferedscroll="true" datasetid="ds_main" readonly="true">
+      <cl:listener std:sid="listener-df9e6a11" handler="onGrd1SelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-59a7babb" bottom="10px" horizontalAnchor="BOTH" left="10px" right="460px" top="100px" verticalAnchor="BOTH"/>
+      <cl:gridcolumn std:sid="g-column-a9229595" width="49px"/>
+      <cl:gridcolumn std:sid="g-column-57f4fe1c"/>
+      <cl:gridcolumn std:sid="g-column-c847b75a"/>
+      <cl:gridcolumn std:sid="g-column-8debaea3"/>
+      <cl:gridcolumn std:sid="g-column-091b4d2c" width="291px"/>
+      <cl:gridheader std:sid="gh-band-c4a9fb18">
+        <cl:gridrow std:sid="g-row-f0729613"/>
+        <cl:gridrow std:sid="g-row-a2c11454"/>
+        <cl:gridcell std:sid="gh-cell-e9ed8446" colindex="1" rowindex="0" text="컬럼1"/>
+        <cl:gridcell std:sid="gh-cell-fa3a46ac" colindex="2" rowindex="0" text="컬럼2"/>
+        <cl:gridcell std:sid="gh-cell-0da0dc98" colindex="3" rowindex="0" text="컬럼3"/>
+        <cl:gridcell std:sid="gh-cell-dd451a92" colindex="4" colspan="1" rowindex="0" rowspan="2" text="컬럼4"/>
+        <cl:gridcell std:sid="gh-cell-112eb934" colindex="1" colspan="3" rowindex="1" rowspan="1" text="컬럼5"/>
+        <cl:gridcell std:sid="gh-cell-875dbd52" colindex="0" colspan="1" rowindex="0" rowspan="2" text="No."/>
+      </cl:gridheader>
+      <cl:griddetail std:sid="gd-band-0c97a26e">
+        <cl:gridrow std:sid="g-row-bb871cf5" height="30px"/>
+        <cl:gridrow std:sid="g-row-d7bd47f2" height="30px"/>
+        <cl:gridcell std:sid="gd-cell-8d2ec019" colindex="1" rowindex="0" style="text-align:center;" columnname="column1"/>
+        <cl:gridcell std:sid="gd-cell-7f144df0" colindex="2" rowindex="0" style="text-align:center;" columnname="column2"/>
+        <cl:gridcell std:sid="gd-cell-8ee501e7" colindex="3" rowindex="0" columnname="column3">
+          <cl:dateinput std:sid="d-input-45d611c6" id="dti1" style="text-align:center;" format="YYYYMMDD"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-fd470993" colindex="4" colspan="1" rowindex="0" rowspan="2" columnname="column4">
+          <cl:textarea std:sid="t-area-518185e9" id="txa2"/>
+        </cl:gridcell>
+        <cl:gridcell std:sid="gd-cell-46a6534d" colindex="1" colspan="3" rowindex="1" rowspan="1" columnname="column5"/>
+        <cl:gridcell std:sid="gd-cell-29ad3b78" colindex="0" colspan="1" rowindex="0" rowspan="2" style="text-align:center;" columntype="rowindex"/>
+      </cl:griddetail>
+    </cl:grid>
+    <cl:group std:sid="group-59d3cfa1" id="freeform">
+      <cl:expbind category="PROPERTY" property="enabled" expression="rowIndex > -1"/>
+      <cl:datarowcontext datacontrolid="ds_main" rowindex="-1"/>
+      <cl:xylayoutdata std:sid="xyl-data-3e4db2bd" bottom="10px" horizontalAnchor="RIGHT" right="10px" top="100px" verticalAnchor="BOTH" width="440px"/>
+      <cl:output std:sid="output-c65d57c0" style="text-align:center;" value="컬럼1">
+        <cl:formdata std:sid="f-data-b17ac2e0" col="0" row="0"/>
+      </cl:output>
+      <cl:output std:sid="output-102e55ee" style="text-align:center;" value="컬럼2">
+        <cl:formdata std:sid="f-data-c9187afc" col="0" row="1"/>
+      </cl:output>
+      <cl:output std:sid="output-2c7ceb14" style="text-align:center;" value="컬럼3">
+        <cl:formdata std:sid="f-data-3a4bdcee" col="0" row="2"/>
+      </cl:output>
+      <cl:output std:sid="output-7fba4a3e" style="text-align:center;" value="컬럼4">
+        <cl:formdata std:sid="f-data-36aef018" col="0" colspan="1" row="3" rowspan="1"/>
+      </cl:output>
+      <cl:output std:sid="output-84f4d247" style="text-align:center;" value="컬럼5">
+        <cl:formdata std:sid="f-data-f53a7488" col="0" row="4"/>
+      </cl:output>
+      <cl:inputbox std:sid="i-box-1691684b" id="ipb1">
+        <cl:expbind category="PROPERTY" property="enabled" expression="getStateString() == &quot;I&quot;"/>
+        <cl:relativebind category="PROPERTY" property="value" columnname="column1"/>
+        <cl:formdata std:sid="f-data-6f841602" col="1" colspan="3" row="0" rowspan="1"/>
+      </cl:inputbox>
+      <cl:inputbox std:sid="i-box-b7b61557" id="ipb2">
+        <cl:relativebind category="PROPERTY" property="value" columnname="column2"/>
+        <cl:formdata std:sid="f-data-e4922a28" col="1" colspan="3" row="1" rowspan="1"/>
+      </cl:inputbox>
+      <cl:fileinput std:sid="f-input-1235a673" id="fin" placeholder="파일을 드래그하거나 여기를 클릭하세요">
+        <cl:listener std:sid="listener-3aae21f1" handler="onFinValueChange" name="value-change"/>
+        <cl:relativebind property="value" columnname="column5"/>
+        <cl:formdata std:sid="f-data-57762865" col="2" colspan="1" row="4" rowspan="1"/>
+      </cl:fileinput>
+      <cl:textarea std:sid="t-area-62511353" id="txa1">
+        <cl:relativebind property="value" columnname="column4"/>
+        <cl:formdata std:sid="f-data-219d1bb1" col="1" colspan="3" row="3" rowspan="1"/>
+      </cl:textarea>
+      <cl:dateinput std:sid="d-input-0cd83403" id="dti2">
+        <cl:relativebind property="value" columnname="column3"/>
+        <cl:formdata std:sid="f-data-bdeaf169" col="1" colspan="3" row="2" rowspan="1"/>
+      </cl:dateinput>
+      <cl:button std:sid="button-e5570d39" value="취소">
+        <cl:listener std:sid="listener-f414db1b" handler="onButtonClick5" name="click"/>
+        <cl:formdata std:sid="f-data-e7197e33" col="3" row="4"/>
+      </cl:button>
+      <cl:button std:sid="button-041b2b29" value="download">
+        <cl:listener std:sid="listener-a8ce8503" handler="onButtonClick7" name="click"/>
+        <cl:formdata std:sid="f-data-7f1bcaf4" col="1" row="4"/>
+      </cl:button>
+      <cl:formlayout std:sid="f-layout-410a0e17" hseparatortype="CUSTOM" hseparatorwidth="1" vseparatortype="CUSTOM" vseparatorwidth="1">
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="25" unit="PIXEL"/>
+        <cl:rows length="1" shadecolor="transparent" shadetype="NONE" unit="FRACTION"/>
+        <cl:rows length="25" shadecolor="transparent" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="50" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="60" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+        <cl:columns length="1" unit="FRACTION"/>
+        <cl:columns length="40" shadecolor="#000000" shadetype="NONE" unit="PIXEL"/>
+      </cl:formlayout>
+    </cl:group>
+    <cl:button std:sid="button-ad117108" value="초기화">
+      <cl:listener std:sid="listener-8b0246fa" handler="onButtonClick4" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-3704de48" height="20px" horizontalAnchor="RIGHT" right="10px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:button>
+    <cl:button std:sid="button-614958cd" value="조회">
+      <cl:listener std:sid="listener-fa1ca8b8" handler="onButtonClick" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-53fb6288" height="20px" horizontalAnchor="RIGHT" right="370px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:button>
+    <cl:button std:sid="button-77071bf7" value="신규">
+      <cl:listener std:sid="listener-3e676f4b" handler="onButtonClick2" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-4c3c3e99" height="20px" horizontalAnchor="RIGHT" right="280px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:button>
+    <cl:button std:sid="button-0a34d3f6" value="저장">
+      <cl:listener std:sid="listener-e1e6c2a9" handler="onButtonClick6" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-17fac96d" height="20px" horizontalAnchor="RIGHT" right="100px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:button>
+    <cl:button std:sid="button-cd6bc727" value="삭제">
+      <cl:listener std:sid="listener-cfc27dfc" handler="onButtonClick3" name="click"/>
+      <cl:xylayoutdata std:sid="xyl-data-4058ec71" height="20px" horizontalAnchor="RIGHT" right="190px" top="70px" verticalAnchor="TOP" width="80px"/>
+    </cl:button>
+    <cl:udc std:sid="ud-control-0a87ef48" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-24bbc17a" height="50px" horizontalAnchor="BOTH" left="10px" right="10px" top="10px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:xylayout std:sid="xylayout-cc3d0de4"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>

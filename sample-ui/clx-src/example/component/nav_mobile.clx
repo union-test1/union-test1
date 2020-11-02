@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cl="http://tomatosystem.co.kr/cleopatra" xmlns:std="http://tomatosystem.co.kr/cleopatra/studio" std:sid="html-4797095a" version="1.0.0.0">
+  <head std:sid="head-6114abf7">
+    <title>navigation_menu</title>
+    <screen std:sid="screen-3a7bdd3b" id="default" height="768px" minwidth="1024px" name="default" width="1024px"/>
+    <screen std:sid="screen-c898ecd1" id="tablet" height="667px" maxwidth="1023px" minwidth="500px" name="tablet" width="500px"/>
+    <screen std:sid="screen-a7d6372f" id="mobile" height="525px" maxwidth="499px" name="mobile" width="350px"/>
+    <cl:model std:sid="model-921c6372"/>
+    <cl:appspec/>
+  </head>
+  <body std:sid="body-443d5dbb" style="top:0px; left:0px; width:800px; height:600px;">
+    <cl:udc std:sid="ud-control-6a7015d7" type="udc.NavigationBar">
+      <cl:listener std:sid="listener-6d6607c6" handler="onNavigationBarSelectionChange" name="selection-change"/>
+      <cl:xylayoutdata std:sid="xyl-data-7bc6fe15" height="50px" horizontalAnchor="BOTH" left="20px" right="0px" top="80px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:udc std:sid="ud-control-17d79a24" type="udc.pagetitle2">
+      <cl:apppropbind category="PROPERTY" property="title" app-property="title"/>
+      <cl:apppropbind category="PROPERTY" property="explain" app-property="explain"/>
+      <cl:xylayoutdata std:sid="xyl-data-cb7c6a68" height="50px" horizontalAnchor="BOTH" left="20px" right="0px" top="20px" verticalAnchor="TOP"/>
+    </cl:udc>
+    <cl:output std:sid="output-47a036e1" id="opt1" value="Output">
+      <cl:xylayoutdata std:sid="xyl-data-f3e115f3" height="20px" horizontalAnchor="LEFT" left="111px" top="204px" verticalAnchor="TOP" width="253px"/>
+    </cl:output>
+    <cl:output std:sid="output-4dcc714a" value="선택된 메뉴:">
+      <cl:xylayoutdata std:sid="xyl-data-78bfe7ae" height="20px" horizontalAnchor="LEFT" left="20px" top="204px" verticalAnchor="TOP" width="81px"/>
+    </cl:output>
+    <cl:xylayout std:sid="xylayout-7d6ca682"/>
+  </body>
+  <std:studiosetting>
+    <std:hruler/>
+    <std:vruler/>
+  </std:studiosetting>
+</html>
